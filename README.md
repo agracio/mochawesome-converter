@@ -1,2 +1,2 @@
-# mocha-xml-to-mochawesome
-Mocha XML to mochawesome.json converter
+# xml2mochawesome
+XML to mochawesome.json converter
