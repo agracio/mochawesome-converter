@@ -4,7 +4,7 @@ declare module 'xml2mochawesome' {
 
     interface Options{
         testFile: string
-        reportType: ReportType
+        testType: TestType
         skippedAsPending?: boolean
         switchClassnameAndName?: boolean
         reportDir? : string
@@ -15,7 +15,7 @@ declare module 'xml2mochawesome' {
         saveIntermediateFiles?: boolean
     }
 
-    enum ReportType {
+    enum TestType {
         JUnit,
         NUnit,
         XUnit,

@@ -1,0 +1,10 @@
+node_modules/
+src/**/*.js
+src/**/*.map
+coverage.json
+lib/
+coverage/
+publish/
+*.tgz
+.idea
+.github

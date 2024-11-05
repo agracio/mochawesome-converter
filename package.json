@@ -10,11 +10,9 @@
   "author": "agracio",
   "license": "MIT",
   "dependencies": {
+    "mochawesome-report-generator": "^6.2.0",
     "p3x-xml2json": "^2024.4.121",
     "xml-formatter": "^3.6.3",
-    "xslt-processor": "^3.2.2",
-    "mochawesome-report-generator": "^6.2.0"
-  },
-  "devDependencies": {
+    "xslt-processor": "^3.2.2"
   }
 }
