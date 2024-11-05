@@ -1,0 +1,20 @@
+{
+  "name": "xml2mochawesome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scr/converter.js",
+  "types": "xml2mochawesome.d.ts",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "agracio",
+  "license": "MIT",
+  "dependencies": {
+    "p3x-xml2json": "^2024.4.121",
+    "xml-formatter": "^3.6.3",
+    "xslt-processor": "^3.2.2",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "devDependencies": {
+  }
+}
