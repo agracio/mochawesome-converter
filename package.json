@@ -13,6 +13,9 @@
     "mochawesome-report-generator": "^6.2.0",
     "p3x-xml2json": "^2024.4.121",
     "xml-formatter": "^3.6.3",
-    "xslt-processor": "^3.2.2"
+    "xslt-processor": "^3.2.3"
+  },
+  "peerDependencies": {
+    "whatwg-url": "14.x"
   }
 }
