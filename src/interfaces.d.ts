@@ -2,13 +2,15 @@
 interface ConverterOptions{
     testFile: string,
     testType: string,
-    skippedAsPending: boolean,
-    switchClassnameAndName: boolean,
-    reportPath : string,
-    html: boolean,
+    skippedAsPending?: boolean
+    switchClassnameAndName?: boolean
+    reportDir? : string
+    reportPath: string
+    reportFilename? : string
+    html?: boolean
     htmlReportDir? : string
     htmlReportFilename? : string
-    saveIntermediateFiles: boolean,
+    saveIntermediateFiles?: boolean
 }
 
 interface TestSuites{

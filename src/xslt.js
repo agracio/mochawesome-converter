@@ -24,7 +24,7 @@ function convert(options, xsltFile){
         if(options.saveIntermediateFiles){
             let parsed = path.parse(options.testFile);
             let fileName =  `${path.parse(options.testFile).name}-converted-junit.xml`;
-            fs.writeFileSync(path.join(parsed.dir, fileName), xmlFormat(outXmlString))
+            fs.writeFileSync(path.join(options.reportDir, fileName), xmlFormat(outXmlString))
         }
         let suitesRoot = junit.parseXml(options, outXmlString);
         junit.convert(options, suitesRoot);

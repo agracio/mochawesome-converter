@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const parser = require('p3x-xml2json');
 const crypto = require("crypto");
-const marge = require('mochawesome-report-generator')
+const marge = require('mochawesome-report-generator');
+const testTypes = require('./config').TestType;
 
 /**
  * @param {TestCase} testcase
@@ -100,14 +101,20 @@ function parseXml(options, xml){
         throw `Could not convert xml file ${options.testFile} to valid json.\n ${e.message}`;
     }
 
-    if(options.saveIntermediateFiles){
-        let parsed = path.parse(options.testFile);
-        let fileName =  `${path.parse(options.testFile).name}-converted-junit.json`;
-        fs.writeFileSync(path.join(parsed.dir, fileName), JSON.stringify(json, null, 2))
+    if(!json || !json.testsuites || !json.testsuites.length){
+        throw `Could not find valid testsuites element in converted ${options.testFile}`;
     }
 
-    if(!json || !json.testsuites || !json.testsuites.length){
-        throw `Could not find valid testsuites element in ${options.testFile}`;
+    if(options.testType === testTypes.junit && json.testsuites[0].testsuite[0].file){
+        json.testsuites[0].testsuite.sort((a,b) => (a.file > b.file) ? 1 : ((b.file > a.file) ? -1 : 0))
+    }
+    else{
+        json.testsuites[0].testsuite.sort((a,b) => (a.classname > b.classname) ? 1 : ((b.classname > a.classname) ? -1 : 0))
+    }
+
+    if(options.saveIntermediateFiles){
+        let fileName = `${path.parse(options.testFile).name}-converted-junit.json`;
+        fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2))
     }
 
     return json.testsuites[0];
@@ -195,11 +202,14 @@ function convert(options, suitesRoot){
             if(test.pending || test.skipped){pending.push(uuid);}
         });
 
+        let suiteFile = suite.file ? path.basename(suite.file) : undefined
+        if(!suiteFile && suite.classname){suiteFile = suite.classname; }
+
         suites.push({
             "uuid": parentUUID,
             "title": suite.name,
             "fullFile": suite.file,
-            "file": suite.file ? path.basename(suite.file) : "",
+            "file": suiteFile ?? "",
             "beforeHooks": [],
             "afterHooks": [],
             "tests": tests,

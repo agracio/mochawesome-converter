@@ -10,7 +10,7 @@ const TestType = {
 /**
  * @returns {ConverterOptions} options
  */
-module.exports = function (options) {
+function config (options) {
     
   if(!options.testFile) {
     throw "Option 'testFile' is required.";
@@ -76,10 +76,13 @@ module.exports = function (options) {
     testType: testType,
     skippedAsPending: skippedAsPending,
     switchClassnameAndName: switchClassnameAndName,
+    reportDir: reportDir,
     reportPath: path.join(reportDir, reportFilename),
     saveIntermediateFiles: saveIntermediateFiles,
     html: html,
     htmlReportDir: htmlReportDir,
     htmlReportFilename: htmlReportFilename
   }
-};
+}
+
+module.exports = {config, TestType}

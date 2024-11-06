@@ -1,15 +1,13 @@
 ## XML test reports to Mochawesome converter
 
 ### What is Mochawesome
-Mochawesome is a custom test reporter originally designed to for Mocha Javascript testing framework.
+Mochawesome is a custom test reporter originally designed for Mocha Javascript testing framework.
 It features a clean modern interface allowing users to easily view and navigate test runs.  
 https://github.com/adamgruber/mochawesome
 
 ### Overview
 - Convert your XML test reports to Mochawesome for easy viewing and troubleshooting.
 - Generate Mochawesome JSON and optional HTML output.
-- Converts &lt;properties&gt;, &lt;traits&gt;, &lt;system-out&gt; and &lt;system-err&gt; XML tags to Mochawesome test context values.
-- Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 
 ### Supported report formats
 
@@ -36,9 +34,26 @@ https://github.com/adamgruber/mochawesome
 - Displays before and after hooks
 - Review test code inline
 
+### All XML test types
+- Converts &lt;skipped&gt; test messages to Mochawesome test context values.
+- Test suites are displayed in alphabetical order by `file` or `classname` attribute.
 
-  
-### Project implementation and documentation are being updated ... 
+### JUnit 
+
+- Converts `testcase` &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; elements to Mochawesome test context.
+- Does not use `testsuite` &lt;properties&gt; as it is not supported by Mochawesome.
+- Nested tests and test suites are not supported.
+
+### NUnit
+- NUnit XML version 3 and higher is supported.
+- Converts `test-case` &lt;properties&gt; elements to Mochawesome 'Properties' test context.
+- Converts `test-case` &lt;output&gt; elements to Mochawesome 'system-out' test context.
+- Does not use `test-suite` &lt;properties&gt; as it is not supported by Mochawesome.
+
+### xUnit  
+- xUnit.net v2+ XML is supported.
+- Converts `test` &lt;traits&gt; elements to Mochawesome 'Properties' test context.
+- Supports single &lt;assembly&gt; element per XML test file.
 
 
 

@@ -15,7 +15,7 @@ function xsltConverter(config) {
  * @param {Options} options
  */
 function convert(options){
-    let config = conf(options);
+    let config = conf.config(options);
     switch (config.testType) {
         case 'junit':
             junit.convert(config, null);
