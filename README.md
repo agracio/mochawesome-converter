@@ -25,12 +25,12 @@ https://github.com/adamgruber/mochawesome
 - Review test code inline
 - Support for adding context information to tests  
   There is no programmatic support to add context to tests,  
-  instead contexts is added from XML artifacts
+  instead contexts is added from XML artifacts as described in overview
 
 ### Overview
 - **Convert your XML test reports to Mochawesome for easy viewing and troubleshooting.**  
-- **Generate Mochawesome JSON and HTML output.**
-- **Converts &lt;properties&gt; and &lt;traits&gt; XML tags to Mochawesome context values.**
+- **Generate Mochawesome JSON and optional HTML output.**
+- **Converts &lt;properties&gt;,  &lt;traits&gt;, &lt;system-out&gt; and &lt;system-err&gt; XML tags to Mochawesome context values.**
 - **Converts skipped test messages to Mochawesome context values.**
 
 ### Supported report formats
@@ -39,7 +39,7 @@ https://github.com/adamgruber/mochawesome
 * NUnit 3.0+ XML Format
 * xUnit.net v2+ XML Format
   
-### Project implementation and documentation is being updated ... 
+### Project implementation and documentation are being updated ... 
 
 
 
