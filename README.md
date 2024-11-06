@@ -17,9 +17,9 @@ https://github.com/adamgruber/mochawesome
 * NUnit 3.0+ XML Format
 * xUnit.net v2+ XML Format
 
-<img align="right" src="./docs/NUnit-mock-assembly-dll5.png" style="padding-top: 12px" alt="Mochawesome Report" width="55%" />
+<img align="right" src="./docs/NUnit-mock-assembly-dll5.png" style="padding-top: 25px" alt="Mochawesome Report" width="55%" />
 
-### List of supported Mochawesome features
+### List of supported features
 
 - Simple, clean, and modern design
 - Per suite charts (via ChartJS)
