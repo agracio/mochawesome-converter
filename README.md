@@ -6,10 +6,10 @@ It features a clean modern interface allowing users to easily view and navigate 
 https://github.com/adamgruber/mochawesome
 
 ### Overview
-- **Convert your XML test reports to Mochawesome for easy viewing and troubleshooting.**
-- **Generate Mochawesome JSON and optional HTML output.**
-- **Converts &lt;properties&gt;, &lt;traits&gt;, &lt;system-out&gt; and &lt;system-err&gt; XML tags to Mochawesome context values.**
-- **Converts &lt;skipped&gt; test messages to Mochawesome context values.**
+- Convert your XML test reports to Mochawesome for easy viewing and troubleshooting.
+- Generate Mochawesome JSON and optional HTML output.
+- Converts &lt;properties&gt;, &lt;traits&gt;, &lt;system-out&gt; and &lt;system-err&gt; XML tags to Mochawesome test context values.
+- Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 
 ### Supported report formats
 
@@ -24,6 +24,7 @@ https://github.com/adamgruber/mochawesome
 - Simple, clean, and modern design
 - Per suite charts (via ChartJS)
 - Stack trace for failed tests
+- Support for adding context information to tests
 - Support for displaying context information
 - Filters to display only the tests you want 
 - Responsive and mobile-friendly
@@ -34,7 +35,6 @@ https://github.com/adamgruber/mochawesome
 - Support for test and suite nesting
 - Displays before and after hooks
 - Review test code inline
-- Support for adding context information to tests - there is no programmatic support to add context to tests, instead context is added from XML artifacts as described in overview
 
 
   
