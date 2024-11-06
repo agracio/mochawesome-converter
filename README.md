@@ -21,12 +21,12 @@ https://github.com/adamgruber/mochawesome
 
 ### List of supported features:
 
-- Simple, clean, and modern design - HTML view
-- Per suite charts (via ChartJS) - HTML view
-- Stack trace for failed tests - JSON and HTML
-- Support for displaying context information - JSON and HTML
-- Filters to display only the tests you want - HTML view
-- Responsive and mobile-friendly - HTML view
+- Simple, clean, and modern design
+- Per suite charts (via ChartJS)
+- Stack trace for failed tests
+- Support for displaying context information
+- Filters to display only the tests you want 
+- Responsive and mobile-friendly
 - Offline viewing
 
 ### Features not supported by converter
