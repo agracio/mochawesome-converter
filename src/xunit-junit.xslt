@@ -21,7 +21,15 @@
   </xsl:template>
 
   <xsl:template match="test">
-    <testcase name="{@method}" classname="{@type}" time="{@time}" status="{replace(replace(replace(@result,'Fail','Failed'),'Pass','Passed'),'Skip','Skipped')}">
+    <testcase classname="{@type}" time="{@time}" status="{replace(replace(replace(@result,'Fail','Failed'),'Pass','Passed'),'Skip','Skipped')}">
+      <xsl:choose>
+        <xsl:when test="substring-after(@name, @type)=''">
+          <xsl:attribute name="name"><xsl:value-of select="@name"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="name"><xsl:value-of select="substring(substring-after(@name, @type), 2)"/></xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:if test="@result = 'Skip'">
         <xsl:choose>
           <xsl:when test="reason">
@@ -33,39 +41,31 @@
         </xsl:choose>
       </xsl:if>
       <xsl:if test="@result = 'Fail'">
-        <failure message="{failure/message}">
+        <failure type="{failure/@exception-type}" message="{failure/message}">
           <xsl:value-of select="failure/stack-trace"/>
         </failure>
       </xsl:if>
-      <xsl:if test="traits/trait">
-        <properties>
-          <xsl:for-each select="traits/trait">
-            <property name="{@name}" value="{@value}"/>
-          </xsl:for-each>
-        </properties>
-      </xsl:if>
+      <xsl:apply-templates select="traits"/>
+      <xsl:apply-templates select="output"/>
       <xsl:apply-templates select="test"/>
     </testcase>
   </xsl:template>
 
-  <xsl:template match="command-line"/>
-  <xsl:template match="settings"/>
-  <xsl:template match="filter"/>
-
-  <!-- <xsl:template match="output">
+  <xsl:template match="output">
     <system-out>
       <xsl:value-of select="."/>
     </system-out>
-  </xsl:template> -->
+  </xsl:template>
 
-  <xsl:template match="stack-trace"/>
+  <xsl:template match="traits">
+    <xsl:if test="trait">
+      <properties>
+        <xsl:for-each select="trait">
+          <property name="{@name}" value="{@value}"/>
+        </xsl:for-each>
+      </properties>
+    </xsl:if>
+  </xsl:template>
 
-  <xsl:template match="test-suite/failure"/>
-
-  <xsl:template match="test-case/assertions"/>
-
-  <xsl:template match="test-suite/reason"/>
-
-  <xsl:template match="properties"/>
 </xsl:stylesheet>
 

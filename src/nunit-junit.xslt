@@ -37,21 +37,29 @@
           <xsl:value-of select="./failure/stack-trace"/>
         </failure>
       </xsl:if>
-      <xsl:if test="properties/property">
+
+      <xsl:apply-templates select="output"/>
+      <xsl:apply-templates select="properties"/>
+      <xsl:apply-templates select="test-case"/>
+<!--      <xsl:apply-templates/>-->
+    </testcase>
+  </xsl:template>
+
+  <xsl:template match="output">
+    <system-out>
+      <xsl:value-of select="."/>
+    </system-out>
+  </xsl:template>
+
+  <xsl:template match="properties">
+    <xsl:if test="property">
         <properties>
-          <xsl:for-each select="properties/property">
+          <xsl:for-each select="property">
             <property name="{@name}" value="{@value}"/>
           </xsl:for-each>
         </properties>
-      </xsl:if>
-      <xsl:if test="output">
-        <system-out>
-          <xsl:value-of select="./output"/>
-        </system-out>
-      </xsl:if>
-
-      <xsl:apply-templates select="test-case"/>
-    </testcase>
+    </xsl:if>
   </xsl:template>
+
 </xsl:stylesheet>
 

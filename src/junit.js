@@ -36,12 +36,14 @@ function getContext(testcase){
     let context;
 
     if((testcase.skipped && testcase.skipped[0].message)
-        || (testcase.properties && testcase.properties.length !== 0)
+        || (testcase.properties && testcase.properties.length !== 0 && testcase.properties[0].property)
         || (testcase["system-out"] && testcase["system-out"].length !== 0)
         || (testcase["system-err"] && testcase["system-err"].length !== 0)){
 
         context = [];
-        if(testcase.properties && testcase.properties.length !== 0){
+        let skipped = '';
+
+        if(testcase.properties && testcase.properties.length !== 0 && testcase.properties[0].property){
             let properties = [];
             testcase.properties[0].property.forEach((property) => {
                 properties.push(`${property.name}: ${property.value}`);
@@ -55,16 +57,19 @@ function getContext(testcase){
         }
 
         if(testcase.skipped && testcase.skipped[0].message){
+            skipped = testcase.skipped[0].message;
             context.push(`skipped: ${testcase.skipped[0].message}`);
         }
 
         if(testcase["system-out"] && testcase["system-out"].length !== 0){
-            context.push(
-                {
-                    title: 'system-out',
-                    value: testcase["system-out"]
-                }
-            );
+            if(testcase["system-out"][0] !== skipped){
+                context.push(
+                    {
+                        title: 'system-out',
+                        value: testcase["system-out"]
+                    }
+                );
+            }
         }
 
         if(testcase["system-err"] && testcase["system-err"].length !== 0){
@@ -105,11 +110,15 @@ function parseXml(options, xml){
         throw `Could not find valid testsuites element in converted ${options.testFile}`;
     }
 
+    // sort test suites
     if(options.testType === testTypes.junit && json.testsuites[0].testsuite[0].file){
         json.testsuites[0].testsuite.sort((a,b) => (a.file > b.file) ? 1 : ((b.file > a.file) ? -1 : 0))
     }
-    else{
+    else if(json.testsuites[0].testsuite[0].classname){
         json.testsuites[0].testsuite.sort((a,b) => (a.classname > b.classname) ? 1 : ((b.classname > a.classname) ? -1 : 0))
+    }
+    else{
+        json.testsuites[0].testsuite.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
     }
 
     if(options.saveIntermediateFiles){

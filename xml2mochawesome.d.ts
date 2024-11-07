@@ -1,10 +1,10 @@
 declare module 'xml2mochawesome' {
     
-    function convert(options: Options): void
+    function xml2mochawesome(options: Options): void
 
     interface Options{
         testFile: string
-        testType: TestType
+        testType: string|TestType
         skippedAsPending?: boolean
         switchClassnameAndName?: boolean
         reportDir? : string

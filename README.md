@@ -35,25 +35,37 @@ https://github.com/adamgruber/mochawesome
 - Review test code inline
 
 ### All XML test types
+
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
-- Test suites are displayed in alphabetical order by `file` or `classname` attribute.
+- Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
+- Test suites are displayed in alphabetical order by `file`, `classname` attribute.
+- Tests suites without any tests are not displayed.
+- Attachments currently not supported.
 
 ### JUnit 
 
 - Converts `testcase` &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; elements to Mochawesome test context.
 - Does not use `testsuite` &lt;properties&gt; as it is not supported by Mochawesome.
-- Nested tests and test suites are not supported.
+- Nested tests and test suites currently not supported.
 
 ### NUnit
+
 - NUnit XML version 3 and higher is supported.
 - Converts `test-case` &lt;properties&gt; elements to Mochawesome 'Properties' test context.
 - Converts `test-case` &lt;output&gt; elements to Mochawesome 'system-out' test context.
 - Does not use `test-suite` &lt;properties&gt; as it is not supported by Mochawesome.
+- Nested `test-suite` elements are flattened and appear in `classname` order.
 
 ### xUnit  
+
 - xUnit.net v2+ XML is supported.
 - Converts `test` &lt;traits&gt; elements to Mochawesome 'Properties' test context.
-- Supports single &lt;assembly&gt; element per XML test file.
+
+### Usage
+
+
+
+## Implementation and documentation in progress...
 
 
 
