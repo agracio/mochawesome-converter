@@ -5,6 +5,7 @@ const TestType = {
   junit: 'junit',
   nunit: 'nunit',
   xunit: 'xunit',
+  trx: 'trx'
 };
 
 /**
@@ -32,12 +33,13 @@ function config (options) {
 
   let skippedAsPending = true;
   let switchClassnameAndName = false;
-  let reportDir = '';
+  let reportDir = './report';
   let reportFilename = 'mochawesome.json';
   let html = false;
-  let htmlReportDir = '';
   let htmlReportFilename = 'mochawesome.html';
   let saveIntermediateFiles = false;
+  let junit = false;
+  let junitReportFilename = `${path.parse(options.testFile).name}-junit.xml`;
 
   if(options.skippedAsPending === false || options.skippedAsPending === 'false'){
     skippedAsPending = false;
@@ -63,12 +65,16 @@ function config (options) {
     reportFilename = options.reportFilename;
   }
 
-   if(options.htmlReportDir){
-    htmlReportDir = options.htmlReportDir;
-  }
-
   if(options.htmlReportFilename){
     htmlReportFilename = options.htmlReportFilename;
+  }
+
+  if(options.junit === true || options.junit === 'true'){
+    junit = true;
+  }
+
+  if(!fs.existsSync(reportDir)){
+    fs.mkdirSync(reportDir);
   }
 
   return{
@@ -79,8 +85,9 @@ function config (options) {
     reportDir: reportDir,
     reportPath: path.join(reportDir, reportFilename),
     saveIntermediateFiles: saveIntermediateFiles,
+    junit: junit,
+    junitReportFilename: junitReportFilename,
     html: html,
-    htmlReportDir: htmlReportDir,
     htmlReportFilename: htmlReportFilename
   }
 }

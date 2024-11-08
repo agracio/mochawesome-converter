@@ -7,3 +7,5 @@ publish/
 .idea/workspace.xml
 *.tgz
 .idea
+out/
+report/

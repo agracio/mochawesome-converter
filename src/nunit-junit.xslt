@@ -37,11 +37,7 @@
           <xsl:value-of select="./failure/stack-trace"/>
         </failure>
       </xsl:if>
-
-      <xsl:apply-templates select="output"/>
-      <xsl:apply-templates select="properties"/>
-      <xsl:apply-templates select="test-case"/>
-<!--      <xsl:apply-templates/>-->
+      <xsl:apply-templates/>
     </testcase>
   </xsl:template>
 

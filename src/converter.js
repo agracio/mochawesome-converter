@@ -14,7 +14,7 @@ function xsltConverter(config) {
  *
  * @param {Options} options
  */
-function xml2mochawesome(options){
+function converter(options){
     let config = conf.config(options);
     switch (config.testType) {
         case 'junit':
@@ -26,7 +26,10 @@ function xml2mochawesome(options){
         case 'xunit':
             xsltConverter(config);
             break;
+        case 'trx':
+            xsltConverter(config);
+            break;
     }
 }
 
-module.exports = xml2mochawesome;
+module.exports = converter;

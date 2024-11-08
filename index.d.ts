@@ -1,17 +1,18 @@
-declare module 'xml2mochawesome' {
+declare module 'mochawesome-converter' {
     
     function xml2mochawesome(options: Options): void
 
     interface Options{
         testFile: string
         testType: string|TestType
-        skippedAsPending?: boolean
-        switchClassnameAndName?: boolean
         reportDir? : string
         reportFilename? : string
+        junit?: boolean
+        junitReportFilename? : string
         html?: boolean
-        htmlReportDir? : string
         htmlReportFilename? : string
+        skippedAsPending?: boolean
+        switchClassnameAndName?: boolean
         saveIntermediateFiles?: boolean
     }
 

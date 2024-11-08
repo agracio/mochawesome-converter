@@ -21,14 +21,27 @@ function convert(options, xsltFile){
         xmlParser.xmlParse(xsltString),
     ).then(outXmlString => {
 
-        if(options.saveIntermediateFiles){
-            let parsed = path.parse(options.testFile);
-            let fileName =  `${path.parse(options.testFile).name}-converted-junit.xml`;
-            fs.writeFileSync(path.join(options.reportDir, fileName), xmlFormat(outXmlString))
-        }
-        let suitesRoot = junit.parseXml(options, outXmlString);
-        junit.convert(options, suitesRoot);
+        let parsedXml;
 
+        if(options.saveIntermediateFiles){
+            let fileName =  `${path.parse(options.testFile).name}-converted.xml`;
+            fs.writeFileSync(path.join(options.reportDir, fileName), outXmlString)
+        }
+
+        try{
+            parsedXml = xmlFormat(outXmlString)
+        }
+        catch (e) {
+            throw `\nCould not parse Xml file ${options.testFile} using Xslt processor ${xsltFile} \n${e.message}`;
+        }
+
+        if(options.junit){
+            fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), parsedXml)
+        }
+
+        let suitesRoot = junit.parseXml(options, parsedXml);
+
+        junit.convert(options, suitesRoot);
     });
 }
 module.exports = convert;

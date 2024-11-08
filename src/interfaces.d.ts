@@ -7,8 +7,9 @@ interface ConverterOptions{
     reportDir? : string
     reportPath: string
     reportFilename? : string
+    junit?: boolean
+    junitReportFilename? : string
     html?: boolean
-    htmlReportDir? : string
     htmlReportFilename? : string
     saveIntermediateFiles?: boolean
 }

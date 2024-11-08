@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "scr/converter.js",
-  "types": "xml2mochawesome.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "start": "node index.js"
   },
@@ -12,7 +12,8 @@
   "dependencies": {
     "mochawesome-report-generator": "^6.2.0",
     "p3x-xml2json": "^2024.4.121",
+    "thenby": "^1.3.4",
     "xml-formatter": "^3.6.3",
-    "xslt-processor": "^3.2.3"
+    "xslt-processor": "^3.3.1"
   }
 }

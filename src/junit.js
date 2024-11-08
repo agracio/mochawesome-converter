@@ -4,6 +4,17 @@ const parser = require('p3x-xml2json');
 const crypto = require("crypto");
 const marge = require('mochawesome-report-generator');
 const testTypes = require('./config').TestType;
+const thenby = require('thenby');
+
+let totalTests = 0;
+let results = [];
+let suites = [];
+let suiteTests = 0;
+let pending = 0;
+let pendingPercent = 0;
+let suiteTime = 0;
+let suiteFailures = 0;
+
 
 /**
  * @param {TestCase} testcase
@@ -87,7 +98,7 @@ function getContext(testcase){
 /**
  * @param {ConverterOptions} options
  * @param {string|Buffer} xml
- * @returns {TestSuites}
+ * @returns {[TestSuites]}
  */
 function parseXml(options, xml){
 
@@ -98,58 +109,75 @@ function parseXml(options, xml){
     }
 
     let json;
+    let testSuites;
 
     try{
         json = parser.toJson(xml, xmlParserOptions);
     }
     catch (e){
-        throw `Could not convert xml file ${options.testFile} to valid json.\n ${e.message}`;
+        throw `\nCould not read JSON from converted input ${options.testFile}.\n ${e.message}`;
     }
 
-    if(!json || !json.testsuites || !json.testsuites.length){
-        throw `Could not find valid testsuites element in converted ${options.testFile}`;
+    // if(!json && !json.testsuites && !json.testsuitscollection){
+    //     throw `\nCould not find valid <testsuitscollection> or <testsuites> element in converted ${options.testFile}`;
+    // }
+
+    if(!json && !json.testsuites && !json.testsuites.length){
+        throw `\nCould not find valid <testsuites> element in converted ${options.testFile}`;
     }
 
-    // sort test suites
-    if(options.testType === testTypes.junit && json.testsuites[0].testsuite[0].file){
-        json.testsuites[0].testsuite.sort((a,b) => (a.file > b.file) ? 1 : ((b.file > a.file) ? -1 : 0))
-    }
-    else if(json.testsuites[0].testsuite[0].classname){
-        json.testsuites[0].testsuite.sort((a,b) => (a.classname > b.classname) ? 1 : ((b.classname > a.classname) ? -1 : 0))
-    }
-    else{
-        json.testsuites[0].testsuite.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
-    }
+    testSuites = json.testsuites;
+
+    // if(json.testsuitscollection){
+    //     testSuites = json.testsuitscollection[0].testsuites;
+    // }
+    // else{
+    //     testSuites = json.testsuites;
+    // }
 
     if(options.saveIntermediateFiles){
-        let fileName = `${path.parse(options.testFile).name}-converted-junit.json`;
+        let fileName = `${path.parse(options.testFile).name}-converted.json`;
         fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2))
     }
 
-    return json.testsuites[0];
+    // sort test suites
+
+    for (let i = 0; i < testSuites.length; i++) {
+
+        if(testSuites[i].testsuite[0].file && testSuites[i].testsuite[0].classname){
+            testSuites[i].testsuite.sort(
+                thenby.firstBy('file', {ignoreCase:true})
+                    .thenBy('classname', {ignoreCase:true})
+                    .thenBy('name', {ignoreCase:true})
+            );
+        }
+        else if(testSuites[i].testsuite[0].classname){
+            testSuites[i].testsuite.sort(
+                    thenby.firstBy('classname', {ignoreCase:true})
+                        .thenBy('name', {ignoreCase:true})
+            );
+        }
+        else{
+            testSuites[i].testsuite.sort(thenby.firstBy('name', {ignoreCase:true}));
+        }
+    }
+
+    return testSuites;
 }
 
 /**
  * @param {ConverterOptions} options
- * @param {TestSuites} suitesRoot
+ * @param {[TestSuite]} testSuites
+ * @param {any} totalSuitTime
+ * @param {any} avgSuitTime
  */
-function convert(options, suitesRoot){
 
-    if(!suitesRoot){
-        suitesRoot = parseXml(options, fs.readFileSync(options.testFile));
-    }
+function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
-    // filter out empty test suites
-    let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
-
-    let totalTests = 0;
-    let results = [];
-    let suites = [];
-
-    let avg = Math.ceil(suitesRoot.time * 1000)/Number(suitesRoot.tests);
-    let medium = Math.ceil(avg/2);
+    let mediumTime = Math.ceil(avgSuitTime/2);
 
     testSuites.forEach((suite) => {
+
         totalTests += suite.testcase.length;
         let tests = [];
         let passes = [];
@@ -173,10 +201,10 @@ function convert(options, suitesRoot){
             let speed = null;
             let duration = testcase.time ? Math.ceil(testcase.time * 1000) : 0;
             if(!testcase.skipped){
-                if(suitesRoot.time && testcase.time){
-                    if(duration >= avg){
+                if(totalSuitTime && testcase.time){
+                    if(duration >= avgSuitTime){
                         speed = "slow";
-                    }else if(duration >= medium){
+                    }else if(duration >= mediumTime){
                         speed = "medium";
                     }else{
                         speed = "fast";
@@ -234,47 +262,72 @@ function convert(options, suitesRoot){
         });
 
     });
+}
 
-    results.push(
-        {
-            "uuid": crypto.randomUUID(),
-            "title": suitesRoot.name ?? '' ,
-            "fullFile": "",
-            "file": "",
-            "beforeHooks": [],
-            "afterHooks": [],
-            "tests": [],
-            "suites": suites,
-            "passes": [],
-            "failures": [],
-            "pending": [],
-            "skipped": [],
-            "duration": 0,
-            "root": true,
-            "rootEmpty": true,
-            "_timeout": 10000
-        }
-    );
+/**
+ * @param {ConverterOptions} options
+ * @param {[TestSuites]} allTestsuites
+ */
+function convert(options, allTestsuites){
 
-    let skipped = suitesRoot.skipped
-    let pending = skipped ? Number(skipped) : suitesRoot.tests - totalTests;
-    let pendingPercent = (pending/suitesRoot.tests*100);
+    if(!allTestsuites){
+        allTestsuites = parseXml(options, fs.readFileSync(options.testFile));
+    }
+
+    allTestsuites.forEach((suitesRoot) => {
+
+        let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
+
+        let avg = Math.ceil(suitesRoot.time * 1000)/Number(suitesRoot.tests);
+
+        parseTestSuites(options, testSuites, suitesRoot.time, avg);
+
+        results.push(
+            {
+                "uuid": crypto.randomUUID(),
+                "title": suitesRoot.name ?? '' ,
+                "fullFile": "",
+                "file": "",
+                "beforeHooks": [],
+                "afterHooks": [],
+                "tests": [],
+                "suites": suites,
+                "passes": [],
+                "failures": [],
+                "pending": [],
+                "skipped": [],
+                "duration": 0,
+                "root": true,
+                "rootEmpty": true,
+                "_timeout": 10000
+            }
+        );
+
+        pending += suitesRoot.skipped ? Number(suitesRoot.skipped) :  Number(suitesRoot.tests) - totalTests;
+        pendingPercent += (pending/suitesRoot.tests*100);
+        suiteTests += Number(suitesRoot.tests);
+        suiteTime += Number(suitesRoot.time);
+        suiteFailures += Number(suitesRoot.failures);
+
+    });
+
+    // filter out empty test suites
 
     let mochawesome = {
         "stats": {
             "suites": suites.length,
-            "tests": Number(suitesRoot.tests),
-            "passes": totalTests - suitesRoot.failures - pending,
+            "tests": Number(suiteTests),
+            "passes": totalTests - suiteFailures - pending,
             "pending": options.skippedAsPending ? pending : 0,
-            "failures": Number(suitesRoot.failures),
-            "testsRegistered": Number(suitesRoot.tests),
-            "passPercent": Math.abs((suitesRoot.failures/totalTests*100)-100) - pendingPercent,
+            "failures": Number(suiteFailures),
+            "testsRegistered": Number(suiteTests),
+            "passPercent": Math.abs((suiteFailures/totalTests*100)-100) - pendingPercent,
             "pendingPercent": pendingPercent,
             "other": 0,
             "hasOther": false,
             "skipped": !options.skippedAsPending ? pending : 0,
             "hasSkipped": !options.skippedAsPending && pending > 0,
-            "duration": suitesRoot.time? Math.ceil(suitesRoot.time * 1000) : 0,
+            "duration": suiteTime? Math.ceil(suiteTime * 1000) : 0,
         },
         "results": results
     }
@@ -284,7 +337,7 @@ function convert(options, suitesRoot){
     if(options.html){
         const margeOptions = {
             reportFilename: options.htmlReportFilename,
-            reportDir: options.htmlReportDir,
+            reportDir: options.reportDir,
             showSkipped: true,
         }
 

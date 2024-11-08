@@ -7,3 +7,5 @@ publish/
 *.tgz
 .idea
 .github
+out/
+report/
