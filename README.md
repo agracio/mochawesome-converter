@@ -1,21 +1,23 @@
-## XML test reports to Mochawesome and JUnit converter
+## Test report to Mochawesome and JUnit converter
 
 ### Overview
-- Convert your XML test reports to Mochawesome for easy viewing and troubleshooting.
-- Generate Mochawesome JSON and optional HTML output.
+
+- Convert your XML/TRX test reports to Mochawesome for easy viewing and troubleshooting.
 - Convert test reports to JUnit format.
 
+### Supported report formats
+
+- JUnit XML Format  
+- NUnit 3.0+ XML Format  
+- xUnit.net v2+ XML Format  
+- Visual Studio TRX Format  
+
 ### What is Mochawesome
+
 Mochawesome is a custom test reporter originally designed for Mocha Javascript testing framework.
 It features a clean modern interface allowing users to easily view and navigate test runs.  
 https://github.com/adamgruber/mochawesome
 
-### Supported report formats
-
-* JUnit XML Format
-* NUnit 3.0+ XML Format
-* xUnit.net v2+ XML Format
-* Visual Studio TRX Format
 
 <img align="right" src="./docs/NUnit-mock-assembly-dll5.png" style="padding-top: 25px" alt="Mochawesome Report" width="55%" />
 

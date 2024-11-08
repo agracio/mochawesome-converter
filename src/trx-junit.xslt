@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Credit: https://gist.github.com/Alegrowin/ec10e804d4ccfbe5d154c0eca79d5de6-->
+<!--Based on: https://gist.github.com/Alegrowin/ec10e804d4ccfbe5d154c0eca79d5de6-->
 <xsl:stylesheet
         version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:vs="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" >
-    <xsl:output method="xml" indent="yes" />
+    <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
     <xsl:template match="/">
         <testsuites>
             <xsl:variable name="buildName" select="//vs:TestRun/@name"/>
@@ -24,18 +24,14 @@
                     <xsl:variable name="testName" select="@testName"/>
                     <xsl:variable name="executionId" select="@executionId"/>
                     <xsl:variable name="testId" select="@testId"/>
-                    <xsl:variable name="totalduration">
+                    <xsl:variable name="testduration">
                         <xsl:choose>
                             <xsl:when test="@duration">
-                                <xsl:variable name="duration" select="xs:dateTime(@endTime) - xs:dateTime(@startTime)" />
-                                <xsl:variable name="milisecond" select="substring-after(@duration, '.')"/>
-                                <xsl:value-of select="hours-from-duration($duration)*3600 + minutes-from-duration($duration)*60 + seconds-from-duration($duration)"/>
-                                <xsl:text>.</xsl:text>
+                                <xsl:variable name="milisecond" select="number(translate(@duration, ':', ''))" />
                                 <xsl:value-of select="$milisecond"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:variable name="duration" select="xs:dateTime(@endTime) - xs:dateTime(@startTime)" />
-                                <xsl:value-of select="hours-from-duration($duration)*3600 + minutes-from-duration($duration)*60 + seconds-from-duration($duration)"/>
+                                <xsl:value-of select="0" />
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
@@ -51,13 +47,16 @@
                     </xsl:variable>
                     <xsl:variable name="message" select="vs:Output/vs:ErrorInfo/vs:Message"/>
                     <xsl:variable name="stacktrace" select="vs:Output/vs:ErrorInfo/vs:StackTrace"/>
+                    <xsl:variable name="stderr" select="vs:Output/vs:StdErr"/>
+                    <xsl:variable name="stdout" select="vs:Output/vs:StdOut"/>
                     <xsl:for-each select="//vs:UnitTest">
                         <xsl:variable name="currentTestId" select="@id"/>
                         <xsl:if test="$currentTestId = $testId" >
                             <xsl:variable name="className" select="vs:TestMethod/@className"/>
-                            <testcase classname="{$className}"
-                                      name="{$testName}"
-                                      time="0"
+                            <testcase
+                                    classname="{$className}"
+                                    name="{$testName}"
+                                    time="{$testduration}"
                             >
                                 <xsl:if test="contains($outcome, 'Failed')">
                                     <failure message="{$message}">
@@ -68,6 +67,16 @@
                                     <error message="{$message}">
                                         <xsl:value-of select="$stacktrace" />
                                     </error>
+                                </xsl:if>
+                                <xsl:if test="$stderr">
+                                    <system-err>
+                                        <xsl:value-of select="$stderr" />
+                                    </system-err>
+                                </xsl:if>
+                                <xsl:if test="$stdout">
+                                    <system-out>
+                                        <xsl:value-of select="$stdout" />
+                                    </system-out>
                                 </xsl:if>
                             </testcase>
                         </xsl:if>
