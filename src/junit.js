@@ -3,8 +3,7 @@ const path = require('path');
 const parser = require('p3x-xml2json');
 const crypto = require("crypto");
 const marge = require('mochawesome-report-generator');
-const testTypes = require('./config').TestType;
-const thenby = require('thenby');
+const thenBy = require('thenby');
 
 let totalTests = 0;
 let results = [];
@@ -14,7 +13,6 @@ let pending = 0;
 let pendingPercent = 0;
 let suiteTime = 0;
 let suiteFailures = 0;
-
 
 /**
  * @param {TestCase} testcase
@@ -118,22 +116,11 @@ function parseXml(options, xml){
         throw `\nCould not read JSON from converted input ${options.testFile}.\n ${e.message}`;
     }
 
-    // if(!json && !json.testsuites && !json.testsuitscollection){
-    //     throw `\nCould not find valid <testsuitscollection> or <testsuites> element in converted ${options.testFile}`;
-    // }
-
     if(!json && !json.testsuites && !json.testsuites.length){
         throw `\nCould not find valid <testsuites> element in converted ${options.testFile}`;
     }
 
     testSuites = json.testsuites;
-
-    // if(json.testsuitscollection){
-    //     testSuites = json.testsuitscollection[0].testsuites;
-    // }
-    // else{
-    //     testSuites = json.testsuites;
-    // }
 
     if(options.saveIntermediateFiles){
         let fileName = `${path.parse(options.testFile).name}-converted.json`;
@@ -146,19 +133,19 @@ function parseXml(options, xml){
 
         if(testSuites[i].testsuite[0].file && testSuites[i].testsuite[0].classname){
             testSuites[i].testsuite.sort(
-                thenby.firstBy('file', {ignoreCase:true})
+                thenBy.firstBy('file', {ignoreCase:true})
                     .thenBy('classname', {ignoreCase:true})
                     .thenBy('name', {ignoreCase:true})
             );
         }
         else if(testSuites[i].testsuite[0].classname){
             testSuites[i].testsuite.sort(
-                    thenby.firstBy('classname', {ignoreCase:true})
+                    thenBy.firstBy('classname', {ignoreCase:true})
                         .thenBy('name', {ignoreCase:true})
             );
         }
         else{
-            testSuites[i].testsuite.sort(thenby.firstBy('name', {ignoreCase:true}));
+            testSuites[i].testsuite.sort(thenBy.firstBy('name', {ignoreCase:true}));
         }
     }
 
@@ -246,7 +233,7 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
             "uuid": parentUUID,
             "title": suite.name,
             "fullFile": suite.file,
-            "file": suiteFile ?? "",
+            "file": suiteFile ?? '',
             "beforeHooks": [],
             "afterHooks": [],
             "tests": tests,

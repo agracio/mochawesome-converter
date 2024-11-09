@@ -1,9 +1,9 @@
-## Test report to Mochawesome and JUnit converter
+## Test report files to Mochawesome and JUnit converter
 
 ### Overview
 
-- Convert your XML/TRX test reports to Mochawesome for easy viewing and troubleshooting.
-- Convert test reports to JUnit format.
+- Convert your XML/TRX test report files to Mochawesome for easy viewing and troubleshooting.
+- Convert test report files to JUnit format.
 
 ### Supported report formats
 
@@ -37,7 +37,7 @@ https://github.com/adamgruber/mochawesome
 - Displays before and after hooks
 - Review test code inline
 
-### All XML test types
+### All test types
 
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 - Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
@@ -69,6 +69,19 @@ https://github.com/adamgruber/mochawesome
 
 ### Usage
 
+### Options
+
+| Option                    | Type    | Default                   | Description                             |
+|:--------------------------|:--------|:--------------------------|:----------------------------------------|
+| `testFile` **(required)** | string  |                           | Path to test file for conversion        |
+| `testType` **(required)** | string  |                           | **(required)** File test type           |
+| `reportDir`               | string  | ./report                  | Converted report output path            |
+| `reportFilename`          | string  | mochawesome.json          | Mochawesome report name                 |
+| `junit`                   | boolean | false                     | Generate JUnit report?                  |
+| `junitReportFilename`     | string  | {testFile.name}-junit.xml | JUnit report file name                  |
+| `html`                    | boolean | false                     | Generate Mochawesome HTML?              |
+| `htmlReportFilename`      | boolean | mochawesome.html          | Mochawesome HTML file name              |
+| `skippedAsPending`        | boolean | true                      | Show skipped reports as pending in HTML |
 
 
 ## Implementation and documentation in progress...

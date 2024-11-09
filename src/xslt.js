@@ -32,7 +32,7 @@ function convert(options, xsltFile){
             parsedXml = xmlFormat(outXmlString)
         }
         catch (e) {
-            throw `\nCould not parse Xml file ${options.testFile} using Xslt processor ${xsltFile} \n${e.message}`;
+            throw `\nXml parsed from ${options.testFile} is invalid \n${e.message}`;
         }
 
         if(options.junit){
@@ -42,6 +42,9 @@ function convert(options, xsltFile){
         let suitesRoot = junit.parseXml(options, parsedXml);
 
         junit.convert(options, suitesRoot);
+
+    }).catch((e) => {
+        throw `\nCould not parse Xml file ${options.testFile} using Xslt processor ${xsltFile} \n${e.message}`;
     });
 }
 module.exports = convert;

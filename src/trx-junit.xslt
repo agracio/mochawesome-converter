@@ -9,7 +9,6 @@
     <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
     <xsl:template match="/">
         <testsuites>
-            <xsl:variable name="buildName" select="//vs:TestRun/@name"/>
             <xsl:variable name="numberOfTests" select="count(//vs:UnitTestResult/@testId)"/>
             <xsl:variable name="numberOfFailures" select="count(//vs:UnitTestResult/@outcome[.='Failed'])" />
             <xsl:variable name="numberOfErrors" select="count(//vs:UnitTestResult[not(@outcome)])" />
@@ -76,8 +75,7 @@
                                     </error>
                                 </xsl:if>
                                 <xsl:if test="contains($outcome, 'NotExecuted')">
-                                    <skipped message="{$message}">
-                                    </skipped>
+                                    <skipped message="{$message}"/>
                                 </xsl:if>
                                 <xsl:if test="$stderr">
                                     <system-err>

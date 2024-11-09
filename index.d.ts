@@ -1,6 +1,6 @@
 declare module 'mochawesome-converter' {
     
-    function xml2mochawesome(options: Options): void
+    function convert(options: Options): void
 
     interface Options{
         testFile: string
@@ -20,5 +20,6 @@ declare module 'mochawesome-converter' {
         JUnit,
         NUnit,
         XUnit,
+        TRX
     }
 }

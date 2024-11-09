@@ -2,6 +2,26 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
+<!--  <xsl:template match="/assemblies">-->
+<!--    <xsl:variable name="tests" select="sum(assembly/@total)"/>-->
+<!--    <xsl:variable name="time" select="format-number(sum(assembly/@time), '0.0000')"/>-->
+<!--    <xsl:variable name="errors" select="sum(assembly/@errors)"/>-->
+<!--    <xsl:variable name="failed" select="sum(assembly/@failed)"/>-->
+<!--    <xsl:variable name="skipped" select="sum(assembly/@skipped)"/>-->
+
+<!--    <testsuites tests="{$tests}" time="{$time}" errors="{$errors}" failures="{$failed}" skipped="{$skipped}">-->
+
+<!--        <xsl:apply-templates select="assembly">-->
+<!--          <xsl:sort select="@name" />-->
+<!--        </xsl:apply-templates>-->
+
+<!--    </testsuites>-->
+<!--  </xsl:template>-->
+
+<!--  <xsl:template match="assembly">-->
+<!--      <xsl:apply-templates/>-->
+<!--  </xsl:template>-->
+
   <xsl:template match="assemblies/assembly">
     <testsuites name="{@name}" classname="{@fullname}" tests="{@total}" time="{@time}" errors="{@errors}" failures="{@failed}" skipped="{@skipped}" timestamp="{@start-time}">
       <xsl:apply-templates/>
