@@ -71,17 +71,32 @@ https://github.com/adamgruber/mochawesome
 
 ### Options
 
-| Option                    | Type    | Default                   | Description                             |
-|:--------------------------|:--------|:--------------------------|:----------------------------------------|
-| `testFile` **(required)** | string  |                           | Path to test file for conversion        |
-| `testType` **(required)** | string  |                           | **(required)** File test type           |
-| `reportDir`               | string  | ./report                  | Converted report output path            |
-| `reportFilename`          | string  | mochawesome.json          | Mochawesome report name                 |
-| `junit`                   | boolean | false                     | Generate JUnit report?                  |
-| `junitReportFilename`     | string  | {testFile.name}-junit.xml | JUnit report file name                  |
-| `html`                    | boolean | false                     | Generate Mochawesome HTML?              |
-| `htmlReportFilename`      | boolean | mochawesome.html          | Mochawesome HTML file name              |
-| `skippedAsPending`        | boolean | true                      | Show skipped reports as pending in HTML |
+| Option                    | Type    | Default                   | Description                           |
+|:--------------------------|:--------|:--------------------------|:--------------------------------------|
+| `testFile` **(required)** | string  |                           | Path to test file for conversion      |
+| `testType` **(required)** | string  |                           | Test report type                      |
+| `reportDir`               | string  | ./report                  | Converted report output path          |
+| `reportFilename`          | string  | mochawesome.json          | Mochawesome report name               |
+| `junit`                   | boolean | false                     | Create JUnit report?                  |
+| `junitReportFilename`     | string  | `testFile.name`-junit.xml | JUnit report file name                |
+| `html`                    | boolean | false                     | Create Mochawesome HTML?              |
+| `htmlReportFilename`      | string  | mochawesome.html          | Mochawesome HTML file name            |
+| `skippedAsPending`        | boolean | true                      | Show skipped tests as pending in HTML |
+
+- `testFile` - relative or absolute path to input test file.
+- `testType` - type of test report, not case-sensitive.
+- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. 
+
+#### Supported `testType` options.
+
+| testType   |
+|:-----------|
+| JUnit      |
+| NUnit      |
+| xUnit      |
+| TRX        |
+
+
 
 
 ## Implementation and documentation in progress...
