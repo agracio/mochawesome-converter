@@ -37,11 +37,16 @@ https://github.com/adamgruber/mochawesome
 - Displays before and after hooks
 - Review test code inline
 
+### Conversion process
+
+ - All test types except JUnit are converted to JUnit format first using XSLT.
+ - Set `junit` option to `true` if you want to review JUnit conversion results.
+
 ### All test types
 
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 - Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
-- Test suites are displayed in alphabetical order by `file`, `classname` and `name` attributes.
+- Test suites are displayed in alphabetical order by `file` and `classname` attributes.
 - Tests suites without any tests are not displayed.
 - Attachments currently not supported.
 
@@ -53,19 +58,19 @@ https://github.com/adamgruber/mochawesome
 ### NUnit
 
 - NUnit XML version 3 and higher is supported.
-- Converts `test-case` **&lt;properties&gt;** elements to Mochawesome 'Properties' test context.
-- Converts `test-case` **&lt;output&gt;** elements to Mochawesome 'system-out' test context.
-- Nested `test-suite` elements are flattened and appear in `classname->name` order.
+- Converts `test-case` **&lt;properties&gt;** elements to JUnit **&lt;properties&gt;**.
+- Converts `test-case` **&lt;output&gt;** elements to JUnit **&lt;system-out&gt;**.
+- Nested `test-suite` elements are flattened and appear in `classname` order.
 
 ### xUnit  
 
 - xUnit.net v2+ XML is supported.
-- Converts `test` **&lt;traits&gt;** elements to Mochawesome 'Properties' test context.
+- Converts `test` **&lt;traits&gt;** elements to  to JUnit **&lt;properties&gt;**.
 - Supports single **&lt;assembly&gt;** per file, if multiple assemblies are present only first will be converted.
 
 ### Visual Studio TRX
 
- - Does not resolve test suite and test times.
+ - Does not resolve test suite times in JUnit output.
 
 ### Usage
 
@@ -85,16 +90,16 @@ https://github.com/adamgruber/mochawesome
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
-- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. 
+- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. Set to `false` to display tests as skipped.
 
 #### Supported `testType` options.
 
-| testType   |
-|:-----------|
-| JUnit      |
-| NUnit      |
-| xUnit      |
-| TRX        |
+| `testType` | File Type         |
+|:-----------|:------------------|
+| JUnit      | JUnit             |
+| NUnit      | NUnit 3.0+ XML    |
+| xUnit      | xUnit.net v2+ XML |
+| TRX        | Visual Studio TRX |
 
 
 

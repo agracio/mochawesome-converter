@@ -3,7 +3,7 @@ const path = require('path');
 const parser = require('p3x-xml2json');
 const crypto = require("crypto");
 const marge = require('mochawesome-report-generator');
-const thenBy = require('thenby');
+const firstBy = require('thenby').firstBy;
 
 let totalTests = 0;
 let results = [];
@@ -13,6 +13,7 @@ let pending = 0;
 let pendingPercent = 0;
 let suiteTime = 0;
 let suiteFailures = 0;
+let testTimes = 0;
 
 /**
  * @param {TestCase} testcase
@@ -75,7 +76,7 @@ function getContext(testcase){
                 context.push(
                     {
                         title: 'system-out',
-                        value: testcase["system-out"]
+                        value: testcase["system-out"][0]
                     }
                 );
             }
@@ -85,7 +86,7 @@ function getContext(testcase){
             context.push(
                 {
                     title: 'system-err',
-                    value: testcase["system-err"]
+                    value: testcase["system-err"][0]
                 }
             );
         }
@@ -96,7 +97,7 @@ function getContext(testcase){
 /**
  * @param {ConverterOptions} options
  * @param {string|Buffer} xml
- * @returns {[TestSuites]}
+ * @returns {TestSuites}
  */
 function parseXml(options, xml){
 
@@ -107,7 +108,6 @@ function parseXml(options, xml){
     }
 
     let json;
-    let testSuites;
 
     try{
         json = parser.toJson(xml, xmlParserOptions);
@@ -116,47 +116,45 @@ function parseXml(options, xml){
         throw `\nCould not read JSON from converted input ${options.testFile}.\n ${e.message}`;
     }
 
-    if(!json && !json.testsuites && !json.testsuites.length){
+    if(!json || !json.testsuites || !json.testsuites.length){
         throw `\nCould not find valid <testsuites> element in converted ${options.testFile}`;
     }
 
-    testSuites = json.testsuites;
+    if(!json.testsuites[0].testsuite){
+        throw `\nNo <testsuite> elements in <testsuites> element in converted ${options.testFile}`;
+    }
+
+    // sort test suites
+    if(json.testsuites[0].testsuite[0].file && testSuites[i].testsuite[0].classname){
+        json.testsuites[0].testsuite.sort(
+            firstBy('file', {ignoreCase:true})
+                .thenBy('classname', {ignoreCase:true})
+                .thenBy('name', {ignoreCase:true})
+        );
+    }
+    else if(json.testsuites[0].testsuite[0].classname){
+        json.testsuites[0].testsuite.sort(
+            firstBy('classname', {ignoreCase:true})
+                .thenBy('name', {ignoreCase:true})
+        );
+    }
+    else{
+        json.testsuites[0].testsuite.sort(firstBy('name', {ignoreCase:true}));
+    }
 
     if(options.saveIntermediateFiles){
         let fileName = `${path.parse(options.testFile).name}-converted.json`;
         fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2))
     }
 
-    // sort test suites
-
-    for (let i = 0; i < testSuites.length; i++) {
-
-        if(testSuites[i].testsuite[0].file && testSuites[i].testsuite[0].classname){
-            testSuites[i].testsuite.sort(
-                thenBy.firstBy('file', {ignoreCase:true})
-                    .thenBy('classname', {ignoreCase:true})
-                    .thenBy('name', {ignoreCase:true})
-            );
-        }
-        else if(testSuites[i].testsuite[0].classname){
-            testSuites[i].testsuite.sort(
-                    thenBy.firstBy('classname', {ignoreCase:true})
-                        .thenBy('name', {ignoreCase:true})
-            );
-        }
-        else{
-            testSuites[i].testsuite.sort(thenBy.firstBy('name', {ignoreCase:true}));
-        }
-    }
-
-    return testSuites;
+    return json.testsuites[0];
 }
 
 /**
  * @param {ConverterOptions} options
  * @param {[TestSuite]} testSuites
- * @param {any} totalSuitTime
- * @param {any} avgSuitTime
+ * @param {Number} totalSuitTime
+ * @param {Number} avgSuitTime
  */
 
 function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
@@ -187,8 +185,9 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
             let speed = null;
             let duration = testcase.time ? Math.ceil(testcase.time * 1000) : 0;
+
             if(!testcase.skipped){
-                if(totalSuitTime && testcase.time){
+                if(totalSuitTime && totalSuitTime !==0 && testcase.time){
                     if(duration >= avgSuitTime){
                         speed = "slow";
                     }else if(duration >= mediumTime){
@@ -197,6 +196,10 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
                         speed = "fast";
                     }
                 }
+            }
+
+            if(testcase.time){
+                testTimes += Number(testcase.time);
             }
 
             let test = {
@@ -253,57 +256,60 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
 /**
  * @param {ConverterOptions} options
- * @param {[TestSuites]} allTestsuites
+ * @param {TestSuites} suitesRoot
  */
-function convert(options, allTestsuites){
+function convert(options, suitesRoot){
 
-    if(!allTestsuites){
-        allTestsuites = parseXml(options, fs.readFileSync(options.testFile));
+    if(!suitesRoot){
+        suitesRoot = parseXml(options, fs.readFileSync(options.testFile));
     }
 
-    allTestsuites.forEach((suitesRoot) => {
+    let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
 
-        let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
+    let avg = 0;
+    let rootTime = suitesRoot.time ? Number(suitesRoot.time) : 0;
+    if(suitesRoot.tests && Number(suitesRoot.tests) !== 0){
+        avg = Math.ceil(rootTime * 1000)/Number(suitesRoot.tests);
+    }
 
-        let avg = Math.ceil(suitesRoot.time * 1000)/Number(suitesRoot.tests);
+    parseTestSuites(options, testSuites, rootTime, avg);
 
-        parseTestSuites(options, testSuites, suitesRoot.time, avg);
+    results.push(
+        {
+            "uuid": crypto.randomUUID(),
+            "title": suitesRoot.name ?? '' ,
+            "fullFile": "",
+            "file": "",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [],
+            "suites": suites,
+            "passes": [],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": true,
+            "rootEmpty": true,
+            "_timeout": 10000
+        }
+    );
 
-        results.push(
-            {
-                "uuid": crypto.randomUUID(),
-                "title": suitesRoot.name ?? '' ,
-                "fullFile": "",
-                "file": "",
-                "beforeHooks": [],
-                "afterHooks": [],
-                "tests": [],
-                "suites": suites,
-                "passes": [],
-                "failures": [],
-                "pending": [],
-                "skipped": [],
-                "duration": 0,
-                "root": true,
-                "rootEmpty": true,
-                "_timeout": 10000
-            }
-        );
+    pending += suitesRoot.skipped ? Number(suitesRoot.skipped) :  Number(suitesRoot.tests) - totalTests;
 
-        pending += suitesRoot.skipped ? Number(suitesRoot.skipped) :  Number(suitesRoot.tests) - totalTests;
+    suiteTests += Number(suitesRoot.tests);
+    suiteTime += suitesRoot.time? Number(suitesRoot.time) : 0;
+    suiteFailures += Number(suitesRoot.failures);
+    if(suitesRoot.tests && Number(suitesRoot.tests) !== 0){
         pendingPercent += (pending/suitesRoot.tests*100);
-        suiteTests += Number(suitesRoot.tests);
-        suiteTime += Number(suitesRoot.time);
-        suiteFailures += Number(suitesRoot.failures);
+    }
 
-    });
-
-    // filter out empty test suites
+    let duration = suiteTime !==0 ? suiteTime : testTimes;
 
     let mochawesome = {
         "stats": {
             "suites": suites.length,
-            "tests": Number(suiteTests),
+            "tests": suiteTests,
             "passes": totalTests - suiteFailures - pending,
             "pending": options.skippedAsPending ? pending : 0,
             "failures": Number(suiteFailures),
@@ -314,7 +320,7 @@ function convert(options, allTestsuites){
             "hasOther": false,
             "skipped": !options.skippedAsPending ? pending : 0,
             "hasSkipped": !options.skippedAsPending && pending > 0,
-            "duration": suiteTime? Math.ceil(suiteTime * 1000) : 0,
+            "duration": Math.ceil(duration * 1000),
         },
         "results": results
     }

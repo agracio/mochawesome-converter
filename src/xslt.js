@@ -29,7 +29,7 @@ function convert(options, xsltFile){
         }
 
         try{
-            parsedXml = xmlFormat(outXmlString)
+            parsedXml = xmlFormat(outXmlString, {forceSelfClosingEmptyTag: true})
         }
         catch (e) {
             throw `\nXml parsed from ${options.testFile} is invalid \n${e.message}`;
@@ -43,8 +43,6 @@ function convert(options, xsltFile){
 
         junit.convert(options, suitesRoot);
 
-    }).catch((e) => {
-        throw `\nCould not parse Xml file ${options.testFile} using Xslt processor ${xsltFile} \n${e.message}`;
     });
 }
 module.exports = convert;

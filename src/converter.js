@@ -21,11 +21,7 @@ function converter(options){
             junit.convert(config, null);
             break;
         case 'nunit':
-            xsltConverter(config);
-            break;
         case 'xunit':
-            xsltConverter(config);
-            break;
         case 'trx':
             xsltConverter(config);
             break;

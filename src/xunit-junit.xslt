@@ -8,13 +8,8 @@
 <!--    <xsl:variable name="errors" select="sum(assembly/@errors)"/>-->
 <!--    <xsl:variable name="failed" select="sum(assembly/@failed)"/>-->
 <!--    <xsl:variable name="skipped" select="sum(assembly/@skipped)"/>-->
-
 <!--    <testsuites tests="{$tests}" time="{$time}" errors="{$errors}" failures="{$failed}" skipped="{$skipped}">-->
-
-<!--        <xsl:apply-templates select="assembly">-->
-<!--          <xsl:sort select="@name" />-->
-<!--        </xsl:apply-templates>-->
-
+<!--      <xsl:apply-templates/>-->
 <!--    </testsuites>-->
 <!--  </xsl:template>-->
 

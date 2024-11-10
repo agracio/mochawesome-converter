@@ -8,13 +8,18 @@
         xmlns:vs="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" >
     <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
     <xsl:template match="/">
-        <testsuites>
-            <xsl:variable name="numberOfTests" select="count(//vs:UnitTestResult/@testId)"/>
-            <xsl:variable name="numberOfFailures" select="count(//vs:UnitTestResult/@outcome[.='Failed'])" />
-            <xsl:variable name="numberOfErrors" select="count(//vs:UnitTestResult[not(@outcome)])" />
-            <xsl:variable name="numberSkipped" select="count(//vs:UnitTestResult/@outcome[.!='Passed' and .!='Failed'])" />
-            <xsl:variable name="duration" select="xs:dateTime(//vs:Times/@finish) - xs:dateTime(//vs:Times/@start)" />
-            <xsl:variable name="totalDuration" select="hours-from-duration($duration)*3600 + minutes-from-duration($duration)*60 + seconds-from-duration($duration)" />
+        <xsl:variable name="numberOfTests" select="count(//vs:UnitTestResult/@testId)"/>
+        <xsl:variable name="numberOfFailures" select="count(//vs:UnitTestResult/@outcome[.='Failed'])" />
+        <xsl:variable name="numberOfErrors" select="count(//vs:UnitTestResult[not(@outcome)])" />
+        <xsl:variable name="numberSkipped" select="count(//vs:UnitTestResult/@outcome[.!='Passed' and .!='Failed'])" />
+        <xsl:variable name="duration" select="xs:dateTime(//vs:Times/@finish) - xs:dateTime(//vs:Times/@start)" />
+        <xsl:variable name="totalDuration" select="hours-from-duration($duration)*3600 + minutes-from-duration($duration)*60 + seconds-from-duration($duration)" />
+        <testsuites
+                tests="{$numberOfTests}"
+                time="{$totalDuration}"
+                failures="{$numberOfFailures}"
+                errors="{$numberOfErrors}"
+                skipped="{$numberSkipped}">
             <testsuite name="MSTestSuite"
                        tests="{$numberOfTests}"
                        time="{$totalDuration}"
@@ -28,9 +33,13 @@
                     <xsl:variable name="testDuration">
                         <xsl:choose>
                             <xsl:when test="@duration">
-                                <xsl:variable name="duration" select="xs:dateTime(@endTime) - xs:dateTime(@startTime)" />
+                                <xsl:variable name="time" select="substring-before(@duration, '.')" />
+                                <xsl:variable name="hours" select="substring-before($time, ':')" />
+                                <xsl:variable name="minutesSeconds" select="substring-after($time, ':')" />
+                                <xsl:variable name="minutes" select="substring-before($minutesSeconds, ':')" />
+                                <xsl:variable name="seconds" select="substring-after($minutesSeconds, ':')" />
                                 <xsl:variable name="millisecond" select="substring-after(@duration, '.')"/>
-                                <xsl:value-of select="hours-from-duration($duration)*3600 + minutes-from-duration($duration)*60 + seconds-from-duration($duration)"/>
+                                <xsl:value-of select="$hours*3600 + $minutes*60 + $seconds"/>
                                 <xsl:text>.</xsl:text>
                                 <xsl:value-of select="$millisecond"/>
                             </xsl:when>
@@ -50,8 +59,8 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:variable name="message" select="vs:Output/vs:ErrorInfo/vs:Message"/>
-                    <xsl:variable name="stacktrace" select="vs:Output/vs:ErrorInfo/vs:StackTrace"/>
+                    <xsl:variable name="message" select="replace(vs:Output/vs:ErrorInfo/vs:Message, '&#xD;', '')"/>
+                    <xsl:variable name="stacktrace" select="replace(vs:Output/vs:ErrorInfo/vs:StackTrace, '&#xD;', '')"/>
                     <xsl:variable name="stderr" select="vs:Output/vs:StdErr"/>
                     <xsl:variable name="stdout" select="vs:Output/vs:StdOut"/>
                     <xsl:for-each select="//vs:UnitTest">
@@ -62,7 +71,7 @@
                                     classname="{$className}"
                                     name="{$testName}"
                                     status="{replace(replace($outcome,'Error','Failed'),'NotExecuted','Skipped')}"
-                                    time="0"
+                                    time="{$testDuration}"
                             >
                                 <xsl:if test="contains($outcome, 'Failed')">
                                     <failure message="{$message}">
