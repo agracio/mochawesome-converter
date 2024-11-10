@@ -79,6 +79,22 @@ https://github.com/adamgruber/mochawesome
 
 ### Usage
 
+```bash
+npm i mochawesome-converter
+```
+
+```js
+const converter = require('mochawesome-converter');
+
+let options = {
+    testFile: 'mytesfiles/nunit.xml',
+    testType: 'nunit',
+    junit: true
+}
+
+converter(options);
+```
+
 ### Options
 
 | Option                    | Type    | Default                   | Description                           |
