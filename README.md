@@ -39,7 +39,7 @@ https://github.com/adamgruber/mochawesome
 
 ### Conversion process
 
- - All test types except JUnit are converted to JUnit format first using XSLT.
+ - All test types reports except JUnit are converted to JUnit format first using XSLT.
  - Set `junit` option to `true` if you want to review JUnit conversion results.
 
 ### All test types
@@ -66,11 +66,16 @@ https://github.com/adamgruber/mochawesome
 
 - xUnit.net v2+ XML is supported.
 - Converts `test` **&lt;traits&gt;** elements to  to JUnit **&lt;properties&gt;**.
+- Converts `test` **&lt;reason&gt;** elements to JUnit **&lt;skipped&gt;**.
 - Supports single **&lt;assembly&gt;** per file, if multiple assemblies are present only first will be converted.
 
 ### Visual Studio TRX
 
- - Does not resolve test suite times in JUnit output.
+- Converts &lt;Output&gt;&lt;ErrorInfo&gt;&lt;Message&gt; to JUnit &lt;failure&gt; message.
+- Converts &lt;Output&gt;&lt;ErrorInfo&gt;&lt;StackTrace&gt; to JUnit &lt;failure&gt; stack trace.
+- Converts &lt;Output&gt;&lt;StdErr&gt; to JUnit &lt;system-err&gt;.
+- Converts &lt;Output&gt;&lt;StdOut&gt; to JUnit &lt;system-out&gt;.
+- Does not resolve test suite times in JUnit output.
 
 ### Usage
 
