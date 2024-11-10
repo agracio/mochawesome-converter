@@ -9,3 +9,5 @@ publish/
 .idea
 out/
 report/
+report1/
+tests/data/tmp/

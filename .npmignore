@@ -9,3 +9,5 @@ publish/
 .github
 out/
 report/
+report1/
+tests/

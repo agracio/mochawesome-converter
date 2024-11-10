@@ -12,7 +12,11 @@ const TestType = {
  * @returns {ConverterOptions} options
  */
 function config (options) {
-    
+
+  if(!options) {
+    throw "options are required.";
+  }
+
   if(!options.testFile) {
     throw "Option 'testFile' is required.";
   }
@@ -73,6 +77,10 @@ function config (options) {
     junit = true;
   }
 
+  if(options.junitReportFilename){
+    junitReportFilename = options.junitReportFilename;
+  }
+
   if(!fs.existsSync(reportDir)){
     fs.mkdirSync(reportDir);
   }
@@ -84,11 +92,11 @@ function config (options) {
     switchClassnameAndName: switchClassnameAndName,
     reportDir: reportDir,
     reportPath: path.join(reportDir, reportFilename),
-    saveIntermediateFiles: saveIntermediateFiles,
     junit: junit,
     junitReportFilename: junitReportFilename,
     html: html,
-    htmlReportFilename: htmlReportFilename
+    htmlReportFilename: htmlReportFilename,
+    saveIntermediateFiles: saveIntermediateFiles,
   }
 }
 

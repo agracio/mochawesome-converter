@@ -1,0 +1,1676 @@
+﻿<assemblies timestamp="09/27/2024 15:56:46">
+  <assembly name="C:\projecrs\QLNet\tests\QLNet.Tests\bin\Debug\net8.0\QLNet.Tests.dll" run-date="2024-09-27" run-time="15:56:46" total="476" passed="462" failed="1" skipped="13" time="112.827" errors="0">
+    <errors />
+    <collection total="25" passed="25" failed="0" skipped="0" name="Test collection for QLNet.Tests.T_DayCounters" time="0.031">
+      <test name="QLNet.Tests.T_DayCounters.testThirty365" type="QLNet.Tests.T_DayCounters" method="testThirty365" time="0.0004152" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;1999-07-30&quot;, d2AsString: &quot;2000-01-30&quot;, expectedYearFraction: 0.5)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;1999-07-30&quot;, d2AsString: &quot;2000-01-30&quot;, expectedYearFraction: 0.5)" time="0.0011084" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2003-05-01&quot;, maturityDateAsString: &quot;2005-05-01&quot;, firstCouponDateAsString: &quot;2003-11-01&quot;, penultimateCouponDateAsString: &quot;2004-11-01&quot;, d1AsString: &quot;2003-11-01&quot;, d2AsString: &quot;2004-05-01&quot;, expectedYearFraction: 0.5)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2003-05-01&quot;, maturityDateAsString: &quot;2005-05-01&quot;, firstCouponDateAsString: &quot;2003-11-01&quot;, penultimateCouponDateAsString: &quot;2004-11-01&quot;, d1AsString: &quot;2003-11-01&quot;, d2AsString: &quot;2004-05-01&quot;, expectedYearFraction: 0.5)" time="0.0002379" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41944444444444445)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41944444444444445)" time="0.0000102" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: True, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41576086956521741)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: True, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41576086956521741)" time="0.0000093" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2002-08-15&quot;, d2AsString: &quot;2003-07-15&quot;, expectedYearFraction: 0.91576086956521741)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2002-08-15&quot;, d2AsString: &quot;2003-07-15&quot;, expectedYearFraction: 0.91576086956521741)" time="0.0000093" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-07-01&quot;, d2AsString: &quot;2000-07-01&quot;, expectedYearFraction: 1)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-07-01&quot;, d2AsString: &quot;2000-07-01&quot;, expectedYearFraction: 1)" time="0.0000073" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;2000-01-30&quot;, d2AsString: &quot;2000-06-30&quot;, expectedYearFraction: 0.4175824175824176)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;2000-01-30&quot;, d2AsString: &quot;2000-06-30&quot;, expectedYearFraction: 0.4175824175824176)" time="0.0000060" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-02-01&quot;, d2AsString: &quot;1999-07-01&quot;, expectedYearFraction: 0.41095890410958902)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-02-01&quot;, d2AsString: &quot;1999-07-01&quot;, expectedYearFraction: 0.41095890410958902)" time="0.0000064" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2003-07-15&quot;, d2AsString: &quot;2004-01-15&quot;, expectedYearFraction: 0.5)" type="QLNet.Tests.T_DayCounters" method="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2003-07-15&quot;, d2AsString: &quot;2004-01-15&quot;, expectedYearFraction: 0.5)" time="0.0000071" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualOutOfScheduleRange" type="QLNet.Tests.T_DayCounters" method="testActualActualOutOfScheduleRange" time="0.0010661" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testThirty360_ISDA" type="QLNet.Tests.T_DayCounters" method="testThirty360_ISDA" time="0.0011633" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testThirty360_EurobondBasis" type="QLNet.Tests.T_DayCounters" method="testThirty360_EurobondBasis" time="0.0007681" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualWithSchedule" type="QLNet.Tests.T_DayCounters" method="testActualActualWithSchedule" time="0.0008413" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testIntraday" type="QLNet.Tests.T_DayCounters" method="testIntraday" time="0.0001759" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testAct36525" type="QLNet.Tests.T_DayCounters" method="testAct36525" time="0.0004096" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualWithSemiannualSchedule" type="QLNet.Tests.T_DayCounters" method="testActualActualWithSemiannualSchedule" time="0.0168880" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testAct366" type="QLNet.Tests.T_DayCounters" method="testAct366" time="0.0005249" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActualWithAnnualSchedule" type="QLNet.Tests.T_DayCounters" method="testActualActualWithAnnualSchedule" time="0.0007104" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testOne" type="QLNet.Tests.T_DayCounters" method="testOne" time="0.0004276" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActualActual" type="QLNet.Tests.T_DayCounters" method="testActualActual" time="0.0010552" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testSimple" type="QLNet.Tests.T_DayCounters" method="testSimple" time="0.0006537" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testBusiness252" type="QLNet.Tests.T_DayCounters" method="testBusiness252" time="0.0031261" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testActual365_Canadian" type="QLNet.Tests.T_DayCounters" method="testActual365_Canadian" time="0.0004408" result="Pass">
+        <traits />
+      </test>
+      <test name="QLNet.Tests.T_DayCounters.testThirty360_BondBasis" type="QLNet.Tests.T_DayCounters" method="testThirty360_BondBasis" time="0.0006832" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="7" failed="0" skipped="1" name="Test collection for TestSuite.CallableBondsTests" time="1.862">
+      <test name="TestSuite.CallableBondsTests.testImpliedVol" type="TestSuite.CallableBondsTests" method="testImpliedVol" time="0.0139857" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.CallableBondsTests.testInterplay" type="TestSuite.CallableBondsTests" method="testInterplay" time="0.6572349" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.CallableBondsTests.testConsistency" type="TestSuite.CallableBondsTests" method="testConsistency" time="0.2171308" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.CallableBondsTests.testObservability" type="TestSuite.CallableBondsTests" method="testObservability" time="0.2202954" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.CallableBondsTests.testDegenerate" type="TestSuite.CallableBondsTests" method="testDegenerate" time="0.4407925" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.CallableBondsTests.testCached" type="TestSuite.CallableBondsTests" method="testCached" time="0.3115768" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.CallableBondsTests.testBlackEngine" type="TestSuite.CallableBondsTests" method="testBlackEngine" time="0.0004816" result="Pass">
+        <traits>
+          <trait name="Category" value="Callable Bonds" />
+        </traits>
+      </test>
+      <test name="TestSuite.CallableBondsTests.testSnappingExerciseDate2ClosestCouponDate" type="TestSuite.CallableBondsTests" method="testSnappingExerciseDate2ClosestCouponDate" time="0.0010000" result="Skip">
+        <reason><![CDATA[To be fixed, Callable bond NPV looks wrong]]></reason>
+        <output>To be fixed, Callable bond NPV looks wrong
+</output>
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for TestSuite.T_AmericanOption" time="7.126">
+      <test name="TestSuite.T_AmericanOption.testJuValues" type="TestSuite.T_AmericanOption" method="testJuValues" time="0.0164072" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testBjerksundStenslandValues" type="TestSuite.T_AmericanOption" method="testBjerksundStenslandValues" time="0.0015697" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testFDDividendAmericanEngine" type="TestSuite.T_AmericanOption" method="testFDDividendAmericanEngine" time="0.0173595" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testFdImpliedVol" type="TestSuite.T_AmericanOption" method="testFdImpliedVol" time="0.0306043" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testFdValues" type="TestSuite.T_AmericanOption" method="testFdValues" time="0.1474310" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testFdAmericanGreeks" type="TestSuite.T_AmericanOption" method="testFdAmericanGreeks" time="3.4890783" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testBaroneAdesiWhaleyValues" type="TestSuite.T_AmericanOption" method="testBaroneAdesiWhaleyValues" time="0.0027459" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AmericanOption.testFdShoutGreeks" type="TestSuite.T_AmericanOption" method="testFdShoutGreeks" time="3.4204835" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="5" failed="1" skipped="1" name="Test collection for TestSuite.T_AsianOptions" time="0.083">
+      <test name="TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePriceGreeks" type="TestSuite.T_AsianOptions" method="testAnalyticContinuousGeometricAveragePriceGreeks" time="0.0261092" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testMCDiscreteGeometricAveragePrice" type="TestSuite.T_AsianOptions" method="testMCDiscreteGeometricAveragePrice" time="0.0010000" result="Skip">
+        <reason><![CDATA[Incomplete]]></reason>
+        <output>Incomplete
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticDiscreteGeometricAveragePrice" type="TestSuite.T_AsianOptions" method="testAnalyticDiscreteGeometricAveragePrice" time="0.0033230" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testIssue115" type="TestSuite.T_AsianOptions" method="testIssue115" time="0.0116095" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticDiscreteGeometricAveragePriceGreeks" type="TestSuite.T_AsianOptions" method="testAnalyticDiscreteGeometricAveragePriceGreeks" time="0.0371806" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticDiscreteGeometricAverageStrike" type="TestSuite.T_AsianOptions" method="testAnalyticDiscreteGeometricAverageStrike" time="0.0013519" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice" type="TestSuite.T_AsianOptions" method="testAnalyticContinuousGeometricAveragePrice" time="0.0023712" result="Fail">
+        <failure exception-type="exception-type asfafgasg">
+          <message>QLNet.EuropeanExercise QLNet.EuropeanExercise Asian option with Geometric and QLNet.PlainVanillaPayoff payoff:
+    running variable: 
+    past fixings:     
+    future fixings:   0
+    underlying value: 80
+    strike:           85
+    dividend yield:   -0.03
+    risk-free rate:   0.055
+    reference date:   27/09/2024
+    maturity:         26/12/2024
+    volatility:       0.2
+
+    expected   value: 4.6922
+    calculated value: 4.64631729808559
+    error:            0.04588270191440991
+    tolerance:        0.0001
+Expected: True
+Actual:   False</message>
+          <stack-trace>   at TestSuite.QAssert.Fail(String message) in C:\projects\QLNet\tests\QLNet.Tests\Utilities.cs:line 187
+   at TestSuite.T_AsianOptions.REPORT_FAILURE(String greekName, Type averageType, Nullable`1 runningAccumulator, Nullable`1 pastFixings, List`1 fixingDates, StrikedTypePayoff payoff, Exercise exercise, Double s, Double q, Double r, Date today, Double v, Double expected, Double calculated, Double tolerance) in C:\projects\QLNet\tests\QLNet.Tests\T_AsianOptions.cs:line 39
+   at TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice() in C:\projects\QLNet\tests\QLNet.Tests\T_AsianOptions.cs:line 122
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</stack-trace>
+        </failure>
+        <traits />
+      </test>
+    </collection>
+    <collection total="9" passed="9" failed="0" skipped="0" name="Test collection for TestSuite.T_AssetSwap" time="0.256">
+      <test name="TestSuite.T_AssetSwap.testSpecializedBondVsGenericBondUsingAsw" type="TestSuite.T_AssetSwap" method="testSpecializedBondVsGenericBondUsingAsw" time="0.0956217" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testImpliedValue" type="TestSuite.T_AssetSwap" method="testImpliedValue" time="0.0214637" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testConsistency" type="TestSuite.T_AssetSwap" method="testConsistency" time="0.0078791" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testZSpread" type="TestSuite.T_AssetSwap" method="testZSpread" time="0.0210021" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testGenericBondImplied" type="TestSuite.T_AssetSwap" method="testGenericBondImplied" time="0.0287449" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testMarketASWSpread" type="TestSuite.T_AssetSwap" method="testMarketASWSpread" time="0.0156932" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testMASWWithGenericBond" type="TestSuite.T_AssetSwap" method="testMASWWithGenericBond" time="0.0159731" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testSpecializedBondVsGenericBond" type="TestSuite.T_AssetSwap" method="testSpecializedBondVsGenericBond" time="0.0276692" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AssetSwap.testZSpreadWithGenericBond" type="TestSuite.T_AssetSwap" method="testZSpreadWithGenericBond" time="0.0214692" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_BarrierOption" time="10.405">
+      <test name="TestSuite.T_BarrierOption.testBabsiriValues" type="TestSuite.T_BarrierOption" method="testBabsiriValues" time="2.8834129" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BarrierOption.testVannaVolgaSimpleBarrierValues" type="TestSuite.T_BarrierOption" method="testVannaVolgaSimpleBarrierValues" time="0.0356251" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BarrierOption.testBeagleholeValues" type="TestSuite.T_BarrierOption" method="testBeagleholeValues" time="0.2442616" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BarrierOption.testHaugValues" type="TestSuite.T_BarrierOption" method="testHaugValues" time="5.8407088" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BarrierOption.testLocalVolAndHestonComparison" type="TestSuite.T_BarrierOption" method="testLocalVolAndHestonComparison" time="1.4014705" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_BasisSwapRateHelpers" time="0.482">
+      <test name="TestSuite.T_BasisSwapRateHelpers.testIborIborBaseCurveBootstrap" type="TestSuite.T_BasisSwapRateHelpers" method="testIborIborBaseCurveBootstrap" time="0.0256534" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BasisSwapRateHelpers.testIborIborOtherCurveBootstrap" type="TestSuite.T_BasisSwapRateHelpers" method="testIborIborOtherCurveBootstrap" time="0.0151213" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BasisSwapRateHelpers.testOvernightIborBootstrapNoDiscountCurve" type="TestSuite.T_BasisSwapRateHelpers" method="testOvernightIborBootstrapNoDiscountCurve" time="0.2407477" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BasisSwapRateHelpers.testOvernightIborBootstrapWithDiscountCurve" type="TestSuite.T_BasisSwapRateHelpers" method="testOvernightIborBootstrapWithDiscountCurve" time="0.2000375" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_BasketOption" time="0.011">
+      <test name="TestSuite.T_BasketOption.testEuroTwoValues" type="TestSuite.T_BasketOption" method="testEuroTwoValues" time="0.0110662" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_Batch" time="0.128">
+      <test name="TestSuite.T_Batch.testBatchDurationCalculation" type="TestSuite.T_Batch" method="testBatchDurationCalculation" time="0.0620903" result="Pass">
+        <output>Calculated 2 duration in 4ms
+
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_Batch.testBatchAccruedDaysAndAmountCalculation" type="TestSuite.T_Batch" method="testBatchAccruedDaysAndAmountCalculation" time="0.0189581" result="Pass">
+        <output>Calculated 2 accrued days and amount in 2ms
+
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_Batch.testBatchWalCalculation" type="TestSuite.T_Batch" method="testBatchWalCalculation" time="0.0124385" result="Pass">
+        <output>Calculated 2 wal in 3ms
+
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_Batch.testBatchYieldCalculation" type="TestSuite.T_Batch" method="testBatchYieldCalculation" time="0.0180626" result="Pass">
+        <output>Calculated 2 yields in 3ms
+
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_Batch.testBatchAllBondFunctionsCalculation" type="TestSuite.T_Batch" method="testBatchAllBondFunctionsCalculation" time="0.0159785" result="Pass">
+        <output>Calculated 2 bond functions in 3ms
+
+</output>
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_Bermudanswaption" time="0.194">
+      <test name="TestSuite.T_Bermudanswaption.testCachedValues" type="TestSuite.T_Bermudanswaption" method="testCachedValues" time="0.1944670" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_BinaryOption" time="0.005">
+      <test name="TestSuite.T_BinaryOption.testAssetOrNothingHaugValues" type="TestSuite.T_BinaryOption" method="testAssetOrNothingHaugValues" time="0.0022796" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BinaryOption.testCashOrNothingHaugValues" type="TestSuite.T_BinaryOption" method="testCashOrNothingHaugValues" time="0.0026782" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_BlackDeltaCalculator" time="0.004">
+      <test name="TestSuite.T_BlackDeltaCalculator.testDeltaValues" type="TestSuite.T_BlackDeltaCalculator" method="testDeltaValues" time="0.0010543" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BlackDeltaCalculator.testPutCallParity" type="TestSuite.T_BlackDeltaCalculator" method="testPutCallParity" time="0.0013116" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BlackDeltaCalculator.testDeltaPriceConsistency" type="TestSuite.T_BlackDeltaCalculator" method="testDeltaPriceConsistency" time="0.0011672" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BlackDeltaCalculator.testAtmCalcs" type="TestSuite.T_BlackDeltaCalculator" method="testAtmCalcs" time="0.0006495" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_BlackFormula" time="0.027">
+      <test name="TestSuite.T_BlackFormula.testChambersImpliedVol" type="TestSuite.T_BlackFormula" method="testChambersImpliedVol" time="0.0266622" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_BlackFormula.testBachelierImpliedVol" type="TestSuite.T_BlackFormula" method="testBachelierImpliedVol" time="0.0007356" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="41" passed="41" failed="0" skipped="0" name="Test collection for TestSuite.T_Bonds" time="0.757">
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 5.375, AccrualDate: &quot;08/26/2010&quot;, MaturityDate: &quot;03/01/2023&quot;, SettlementDate: &quot;7/16/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 20.155999999999999, expectedAccruedDays: 135)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 5.375, AccrualDate: &quot;08/26/2010&quot;, MaturityDate: &quot;03/01/2023&quot;, SettlementDate: &quot;7/16/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 20.155999999999999, expectedAccruedDays: 135)" time="0.0057243" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 5.25, AccrualDate: &quot;2/13/2018&quot;, MaturityDate: &quot;12/01/2032&quot;, SettlementDate: &quot;3/23/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 5.8330000000000002, expectedAccruedDays: 40)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 5.25, AccrualDate: &quot;2/13/2018&quot;, MaturityDate: &quot;12/01/2032&quot;, SettlementDate: &quot;3/23/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 5.8330000000000002, expectedAccruedDays: 40)" time="0.0003165" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 0, AccrualDate: &quot;3/15/2018&quot;, MaturityDate: &quot;1/1/2054&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 0, expectedAccruedDays: 0)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 0, AccrualDate: &quot;3/15/2018&quot;, MaturityDate: &quot;1/1/2054&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 0, expectedAccruedDays: 0)" time="0.0001706" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 4, AccrualDate: &quot;2/20/2018&quot;, MaturityDate: &quot;10/1/2036&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 4, expectedAccruedDays: 36)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 4, AccrualDate: &quot;2/20/2018&quot;, MaturityDate: &quot;10/1/2036&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 4, expectedAccruedDays: 36)" time="0.0001026" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 1.8500000000000001, AccrualDate: &quot;2/1/2018&quot;, MaturityDate: &quot;2/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 2.8300000000000001, expectedAccruedDays: 55)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 1.8500000000000001, AccrualDate: &quot;2/1/2018&quot;, MaturityDate: &quot;2/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 2.8300000000000001, expectedAccruedDays: 55)" time="0.0000717" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 2.2000000000000002, AccrualDate: &quot;3/1/2018&quot;, MaturityDate: &quot;3/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 1.53, expectedAccruedDays: 25)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 2.2000000000000002, AccrualDate: &quot;3/1/2018&quot;, MaturityDate: &quot;3/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 1.53, expectedAccruedDays: 25)" time="0.0000674" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 2.8500000000000001, AccrualDate: &quot;2/15/2018&quot;, MaturityDate: &quot;2/15/2031&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 3.25, expectedAccruedDays: 41)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 2.8500000000000001, AccrualDate: &quot;2/15/2018&quot;, MaturityDate: &quot;2/15/2031&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 3.25, expectedAccruedDays: 41)" time="0.0000794" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 4, AccrualDate: &quot;2/1/2018&quot;, MaturityDate: &quot;2/15/2027&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;08/15/2018&quot;, expectedAccruedInterest: 6.1100000000000003, expectedAccruedDays: 55)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 4, AccrualDate: &quot;2/1/2018&quot;, MaturityDate: &quot;2/15/2027&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;08/15/2018&quot;, expectedAccruedInterest: 6.1100000000000003, expectedAccruedDays: 55)" time="0.0000911" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 3, AccrualDate: &quot;2/15/2018&quot;, MaturityDate: &quot;2/15/2031&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 3.4199999999999999, expectedAccruedDays: 41)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 3, AccrualDate: &quot;2/15/2018&quot;, MaturityDate: &quot;2/15/2031&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 3.4199999999999999, expectedAccruedDays: 41)" time="0.0000801" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAccruedInterest(Coupon: 2.25, AccrualDate: &quot;3/1/2018&quot;, MaturityDate: &quot;3/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 1.5600000000000001, expectedAccruedDays: 25)" type="TestSuite.T_Bonds" method="testAccruedInterest(Coupon: 2.25, AccrualDate: &quot;3/1/2018&quot;, MaturityDate: &quot;3/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 1.5600000000000001, expectedAccruedDays: 25)" time="0.0000729" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondEquivalentYield(price: 98.5826771, IssueDate: &quot;02/23/2022&quot;, MaturityDate: &quot;02/23/2023&quot;, SettlementDate: &quot;02/01/2023&quot;, expectedYield: 0.23852746)" type="TestSuite.T_Bonds" method="testBondEquivalentYield(price: 98.5826771, IssueDate: &quot;02/23/2022&quot;, MaturityDate: &quot;02/23/2023&quot;, SettlementDate: &quot;02/01/2023&quot;, expectedYield: 0.23852746)" time="0.0008880" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondEquivalentYield(price: 96.323, IssueDate: &quot;02/22/2023&quot;, MaturityDate: &quot;02/22/2024&quot;, SettlementDate: &quot;05/17/2023&quot;, expectedYield: 0.049161389999999999)" type="TestSuite.T_Bonds" method="testBondEquivalentYield(price: 96.323, IssueDate: &quot;02/22/2023&quot;, MaturityDate: &quot;02/22/2024&quot;, SettlementDate: &quot;05/17/2023&quot;, expectedYield: 0.049161389999999999)" time="0.0002656" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondEquivalentYield(price: 98.5826771, IssueDate: &quot;02/23/2023&quot;, MaturityDate: &quot;02/23/2023&quot;, SettlementDate: &quot;05/20/2022&quot;, expectedYield: 0.01874783)" type="TestSuite.T_Bonds" method="testBondEquivalentYield(price: 98.5826771, IssueDate: &quot;02/23/2023&quot;, MaturityDate: &quot;02/23/2023&quot;, SettlementDate: &quot;05/20/2022&quot;, expectedYield: 0.01874783)" time="0.0000734" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondEquivalentYield(price: 99.9195, IssueDate: &quot;06/09/2021&quot;, MaturityDate: &quot;06/09/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0040841899999999997)" type="TestSuite.T_Bonds" method="testBondEquivalentYield(price: 99.9195, IssueDate: &quot;06/09/2021&quot;, MaturityDate: &quot;06/09/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0040841899999999997)" time="0.0000724" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondEquivalentYield(price: 99.5947639, IssueDate: &quot;09/08/2021&quot;, MaturityDate: &quot;09/08/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0091112299999999997)" type="TestSuite.T_Bonds" method="testBondEquivalentYield(price: 99.5947639, IssueDate: &quot;09/08/2021&quot;, MaturityDate: &quot;09/08/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0091112299999999997)" time="0.0000709" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondEquivalentYield(price: 99.9788542, IssueDate: &quot;01/01/2022&quot;, MaturityDate: &quot;05/10/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0018380600000000001)" type="TestSuite.T_Bonds" method="testBondEquivalentYield(price: 99.9788542, IssueDate: &quot;01/01/2022&quot;, MaturityDate: &quot;05/10/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0018380600000000001)" time="0.0000702" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testExCouponAustralianBond" type="TestSuite.T_Bonds" method="testExCouponAustralianBond" time="0.0028820" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testWeightedAverageLife" type="TestSuite.T_Bonds" method="testWeightedAverageLife" time="0.0004571" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testMBSFixedBondCached" type="TestSuite.T_Bonds" method="testMBSFixedBondCached" time="0.0083256" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testDurations(Cusip: &quot;64990C5B3&quot;, MaturityDate: &quot;07/01/2047&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 103.90000000000001, ExpectedModifiedDuration: 17.295999999999999, ExpectedOASDuration: 12.869999999999999)" type="TestSuite.T_Bonds" method="testDurations(Cusip: &quot;64990C5B3&quot;, MaturityDate: &quot;07/01/2047&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 103.90000000000001, ExpectedModifiedDuration: 17.295999999999999, ExpectedOASDuration: 12.869999999999999)" time="0.0015962" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testDurations(Cusip: &quot;70024PCW7&quot;, MaturityDate: &quot;06/15/2028&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 110.839, ExpectedModifiedDuration: 8.2569999999999997, ExpectedOASDuration: 7.8200000000000003)" type="TestSuite.T_Bonds" method="testDurations(Cusip: &quot;70024PCW7&quot;, MaturityDate: &quot;06/15/2028&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 110.839, ExpectedModifiedDuration: 8.2569999999999997, ExpectedOASDuration: 7.8200000000000003)" time="0.0007540" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testDurations(Cusip: &quot;546415L40&quot;, MaturityDate: &quot;05/15/2033&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 104.239, ExpectedModifiedDuration: 11.154, ExpectedOASDuration: 7.71)" type="TestSuite.T_Bonds" method="testDurations(Cusip: &quot;546415L40&quot;, MaturityDate: &quot;05/15/2033&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 104.239, ExpectedModifiedDuration: 11.154, ExpectedOASDuration: 7.71)" time="0.0007601" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testDurations(Cusip: &quot;64990C4X6&quot;, MaturityDate: &quot;07/01/2035&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 106.599, ExpectedModifiedDuration: 12.417, ExpectedOASDuration: 10.24)" type="TestSuite.T_Bonds" method="testDurations(Cusip: &quot;64990C4X6&quot;, MaturityDate: &quot;07/01/2035&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 106.599, ExpectedModifiedDuration: 12.417, ExpectedOASDuration: 10.24)" time="0.0008209" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testDurations(Cusip: &quot;646140CN1&quot;, MaturityDate: &quot;01/01/2035&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 105.262, ExpectedModifiedDuration: 12.118, ExpectedOASDuration: 10.59)" type="TestSuite.T_Bonds" method="testDurations(Cusip: &quot;646140CN1&quot;, MaturityDate: &quot;01/01/2035&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 105.262, ExpectedModifiedDuration: 12.118, ExpectedOASDuration: 10.59)" time="0.0008187" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testThirty360BondWithSettlementOn31st" type="TestSuite.T_Bonds" method="testThirty360BondWithSettlementOn31st" time="0.0006887" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testCachedFloating" type="TestSuite.T_Bonds" method="testCachedFloating" time="0.0010426" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAmortizingFixedBond" type="TestSuite.T_Bonds" method="testAmortizingFixedBond" time="0.0005703" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBondFromScheduleWithDateVector" type="TestSuite.T_Bonds" method="testBondFromScheduleWithDateVector" time="0.0012003" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testExCouponGilt" type="TestSuite.T_Bonds" method="testExCouponGilt" time="0.0039733" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testYield" type="TestSuite.T_Bonds" method="testYield" time="0.6535568" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testTheoretical" type="TestSuite.T_Bonds" method="testTheoretical" time="0.0384150" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testQLNetExceptions(Coupon: 2.2000000000000002, AccrualDate: &quot;10/22/2014&quot;, MaturityDate: &quot;10/22/2019&quot;, SettlementDate: &quot;12/24/2018&quot;, FirstCouponDate: &quot;4/22/2015&quot;, Price: 994.26300000000003)" type="TestSuite.T_Bonds" method="testQLNetExceptions(Coupon: 2.2000000000000002, AccrualDate: &quot;10/22/2014&quot;, MaturityDate: &quot;10/22/2019&quot;, SettlementDate: &quot;12/24/2018&quot;, FirstCouponDate: &quot;4/22/2015&quot;, Price: 994.26300000000003)" time="0.0011534" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testQLNetExceptions(Coupon: 1.8500000000000001, AccrualDate: &quot;11/23/2015&quot;, MaturityDate: &quot;11/23/2018&quot;, SettlementDate: &quot;11/23/2018&quot;, FirstCouponDate: &quot;5/23/2016&quot;, Price: 100.85469999999999)" type="TestSuite.T_Bonds" method="testQLNetExceptions(Coupon: 1.8500000000000001, AccrualDate: &quot;11/23/2015&quot;, MaturityDate: &quot;11/23/2018&quot;, SettlementDate: &quot;11/23/2018&quot;, FirstCouponDate: &quot;5/23/2016&quot;, Price: 100.85469999999999)" time="0.0004700" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testSteppedCoupon" type="TestSuite.T_Bonds" method="testSteppedCoupon" time="0.0051624" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAmortizingBond1" type="TestSuite.T_Bonds" method="testAmortizingBond1" time="0.0014015" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testCached" type="TestSuite.T_Bonds" method="testCached" time="0.0027219" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testCachedZero" type="TestSuite.T_Bonds" method="testCachedZero" time="0.0003729" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testCachedFixed" type="TestSuite.T_Bonds" method="testCachedFixed" time="0.0005380" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testBrazilianCached" type="TestSuite.T_Bonds" method="testBrazilianCached" time="0.0086015" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAmortizingFixedRateBond" type="TestSuite.T_Bonds" method="testAmortizingFixedRateBond" time="0.0114232" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Bonds.testAmortizingBond2" type="TestSuite.T_Bonds" method="testAmortizingBond2" time="0.0012321" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_BusinessDayConvention" time="0.002">
+      <test name="TestSuite.T_BusinessDayConvention.testConventions" type="TestSuite.T_BusinessDayConvention" method="testConventions" time="0.0023214" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="38" passed="38" failed="0" skipped="0" name="Test collection for TestSuite.T_Calendars" time="0.080">
+      <test name="TestSuite.T_Calendars.testTARGET" type="TestSuite.T_Calendars" method="testTARGET" time="0.0013658" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/03/28&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/03/28&quot;)" time="0.0002948" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/05/24&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/05/24&quot;)" time="0.0001262" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/04/07&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/04/07&quot;)" time="0.0000029" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/12/22&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/12/22&quot;)" time="0.0000016" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2022/12/30&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2022/12/30&quot;)" time="0.0000012" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/11/29&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/11/29&quot;)" time="0.0000012" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/05/26&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/05/26&quot;)" time="0.0000013" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/12/24&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/12/24&quot;)" time="0.0000011" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/12/31&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/12/31&quot;)" time="0.0000012" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/12/29&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/12/29&quot;)" time="0.0000012" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/07/03&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/07/03&quot;)" time="0.0000012" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/11/24&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/11/24&quot;)" time="0.0000013" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/07/03&quot;)" type="TestSuite.T_Calendars" method="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/07/03&quot;)" time="0.0000012" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testSouthKoreanSettlement" type="TestSuite.T_Calendars" method="testSouthKoreanSettlement" time="0.0015364" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testGermanyEurex" type="TestSuite.T_Calendars" method="testGermanyEurex" time="0.0006290" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testJointCalendars" type="TestSuite.T_Calendars" method="testJointCalendars" time="0.0018792" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testChinaIB" type="TestSuite.T_Calendars" method="testChinaIB" time="0.0166769" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUSNewYorkStockExchange" type="TestSuite.T_Calendars" method="testUSNewYorkStockExchange" time="0.0011251" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testModifiedCalendars" type="TestSuite.T_Calendars" method="testModifiedCalendars" time="0.0006306" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testBespokeCalendars" type="TestSuite.T_Calendars" method="testBespokeCalendars" time="0.0018385" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testGermanyFrankfurt" type="TestSuite.T_Calendars" method="testGermanyFrankfurt" time="0.0005241" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testBrazil" type="TestSuite.T_Calendars" method="testBrazil" time="0.0004518" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUKMetals" type="TestSuite.T_Calendars" method="testUKMetals" time="0.0008078" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUSGovernmentBondMarket" type="TestSuite.T_Calendars" method="testUSGovernmentBondMarket" time="0.0003597" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testChinaSSE" type="TestSuite.T_Calendars" method="testChinaSSE" time="0.0023381" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testBusinessDaysBetween" type="TestSuite.T_Calendars" method="testBusinessDaysBetween" time="0.0013133" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testKoreaStockExchange" type="TestSuite.T_Calendars" method="testKoreaStockExchange" time="0.0010617" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testEndOfMonth" type="TestSuite.T_Calendars" method="testEndOfMonth" time="0.0412864" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testItalyExchange" type="TestSuite.T_Calendars" method="testItalyExchange" time="0.0008738" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testGermanyXetra" type="TestSuite.T_Calendars" method="testGermanyXetra" time="0.0005239" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testNZIB_matarikiDay(day: &quot;2022-06-25&quot;, expectedIsBusinessDay: False, expectedIsHoliday: True)" type="TestSuite.T_Calendars" method="testNZIB_matarikiDay(day: &quot;2022-06-25&quot;, expectedIsBusinessDay: False, expectedIsHoliday: True)" time="0.0007672" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testNZIB_matarikiDay(day: &quot;2022-07-08&quot;, expectedIsBusinessDay: True, expectedIsHoliday: False)" type="TestSuite.T_Calendars" method="testNZIB_matarikiDay(day: &quot;2022-07-08&quot;, expectedIsBusinessDay: True, expectedIsHoliday: False)" time="0.0003250" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testNZIB_matarikiDay(day: &quot;2022-06-24&quot;, expectedIsBusinessDay: False, expectedIsHoliday: True)" type="TestSuite.T_Calendars" method="testNZIB_matarikiDay(day: &quot;2022-06-24&quot;, expectedIsBusinessDay: False, expectedIsHoliday: True)" time="0.0000060" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUSSettlement" type="TestSuite.T_Calendars" method="testUSSettlement" time="0.0014069" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUKExchange" type="TestSuite.T_Calendars" method="testUKExchange" time="0.0006539" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testUKSettlement" type="TestSuite.T_Calendars" method="testUKSettlement" time="0.0006573" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Calendars.testDenmark" type="TestSuite.T_Calendars" method="testDenmark" time="0.0007376" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for TestSuite.T_CapFloor" time="0.990">
+      <test name="TestSuite.T_CapFloor.testImpliedVolatility" type="TestSuite.T_CapFloor" method="testImpliedVolatility" time="0.0510419" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFloor.testConsistency" type="TestSuite.T_CapFloor" method="testConsistency" time="0.3579381" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFloor.testATMRate" type="TestSuite.T_CapFloor" method="testATMRate" time="0.0699855" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFloor.testParity" type="TestSuite.T_CapFloor" method="testParity" time="0.0988636" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFloor.testVega" type="TestSuite.T_CapFloor" method="testVega" time="0.3617807" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFloor.testStrikeDependency" type="TestSuite.T_CapFloor" method="testStrikeDependency" time="0.0493805" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFloor.testCachedValue" type="TestSuite.T_CapFloor" method="testCachedValue" time="0.0011350" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_CapFlooredCoupon" time="0.011">
+      <test name="TestSuite.T_CapFlooredCoupon.testDecomposition" type="TestSuite.T_CapFlooredCoupon" method="testDecomposition" time="0.0096121" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CapFlooredCoupon.testLargeRates" type="TestSuite.T_CapFlooredCoupon" method="testLargeRates" time="0.0010359" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_CashFlows" time="0.002">
+      <test name="TestSuite.T_CashFlows.testSettings" type="TestSuite.T_CashFlows" method="testSettings" time="0.0007010" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CashFlows.testDefaultSettlementDate" type="TestSuite.T_CashFlows" method="testDefaultSettlementDate" time="0.0007084" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CashFlows.testAccessViolation" type="TestSuite.T_CashFlows" method="testAccessViolation" time="0.0007278" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CashFlows.testNullFixingDays" type="TestSuite.T_CashFlows" method="testNullFixingDays" time="0.0001644" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for TestSuite.T_CatBonds" time="0.012">
+      <test name="TestSuite.T_CatBonds.testCatBondWithDoomOnceInTenYears" type="TestSuite.T_CatBonds" method="testCatBondWithDoomOnceInTenYears" time="0.0060679" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CatBonds.testCatBondInDoomScenario" type="TestSuite.T_CatBonds" method="testCatBondInDoomScenario" time="0.0009545" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CatBonds.testEventSetForWholeYears" type="TestSuite.T_CatBonds" method="testEventSetForWholeYears" time="0.0011197" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CatBonds.testRiskFreeAgainstFloatingRateBond" type="TestSuite.T_CatBonds" method="testRiskFreeAgainstFloatingRateBond" time="0.0014552" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CatBonds.testCatBondWithDoomOnceInTenYearsProportional" type="TestSuite.T_CatBonds" method="testCatBondWithDoomOnceInTenYearsProportional" time="0.0020843" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CatBonds.testEventSetForIrregularPeriods" type="TestSuite.T_CatBonds" method="testEventSetForIrregularPeriods" time="0.0002341" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CatBonds.testEventSetForNoEvents" type="TestSuite.T_CatBonds" method="testEventSetForNoEvents" time="0.0001260" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_CliquetOption" time="0.437">
+      <test name="TestSuite.T_CliquetOption.testPerformanceGreeks" type="TestSuite.T_CliquetOption" method="testPerformanceGreeks" time="0.2237890" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CliquetOption.testGreeks" type="TestSuite.T_CliquetOption" method="testGreeks" time="0.2124470" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CliquetOption.testValues" type="TestSuite.T_CliquetOption" method="testValues" time="0.0003781" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_Cms" time="0.544">
+      <test name="TestSuite.T_Cms.testCmsSwap" type="TestSuite.T_Cms" method="testCmsSwap" time="0.3218593" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Cms.testParity" type="TestSuite.T_Cms" method="testParity" time="0.2175035" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Cms.testFairRate" type="TestSuite.T_Cms" method="testFairRate" time="0.0048557" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_ConvertibleBond" time="0.427">
+      <test name="TestSuite.T_ConvertibleBond.testBond" type="TestSuite.T_ConvertibleBond" method="testBond" time="0.2946028" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ConvertibleBond.testRegression" type="TestSuite.T_ConvertibleBond" method="testRegression" time="0.0111348" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ConvertibleBond.testOption" type="TestSuite.T_ConvertibleBond" method="testOption" time="0.1210658" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_CPISwap" time="0.025">
+      <test name="TestSuite.T_CPISwap.cpibondconsistency" type="TestSuite.T_CPISwap" method="cpibondconsistency" time="0.0157648" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CPISwap.zciisconsistency" type="TestSuite.T_CPISwap" method="zciisconsistency" time="0.0023891" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CPISwap.consistency" type="TestSuite.T_CPISwap" method="consistency" time="0.0069347" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for TestSuite.T_CreditDefaultSwap" time="0.106">
+      <test name="TestSuite.T_CreditDefaultSwap.testIsdaEngine" type="TestSuite.T_CreditDefaultSwap" method="testIsdaEngine" time="0.0415601" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CreditDefaultSwap.testFairUpfront" type="TestSuite.T_CreditDefaultSwap" method="testFairUpfront" time="0.0140779" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CreditDefaultSwap.testCachedValue" type="TestSuite.T_CreditDefaultSwap" method="testCachedValue" time="0.0170727" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CreditDefaultSwap.testCachedMarketValue" type="TestSuite.T_CreditDefaultSwap" method="testCachedMarketValue" time="0.0112709" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CreditDefaultSwap.testImpliedHazardRate" type="TestSuite.T_CreditDefaultSwap" method="testImpliedHazardRate" time="0.0136548" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_CreditDefaultSwap.testFairSpread" type="TestSuite.T_CreditDefaultSwap" method="testFairSpread" time="0.0085704" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_Dates" time="6.810">
+      <test name="TestSuite.T_Dates.testIMMDates" type="TestSuite.T_Dates" method="testIMMDates" time="1.6348840" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Dates.testConsistency" type="TestSuite.T_Dates" method="testConsistency" time="0.0102599" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Dates.testECBDates" type="TestSuite.T_Dates" method="testECBDates" time="0.0028262" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Dates.testASXDates" type="TestSuite.T_Dates" method="testASXDates" time="5.1616314" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Dates.testIntraday" type="TestSuite.T_Dates" method="testIntraday" time="0.0004407" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_DefaultProbabilityCurves" time="0.001">
+      <test name="TestSuite.T_DefaultProbabilityCurves.testDefaultProbability" type="TestSuite.T_DefaultProbabilityCurves" method="testDefaultProbability" time="0.0004784" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DefaultProbabilityCurves.testFlatHazardConsistency" type="TestSuite.T_DefaultProbabilityCurves" method="testFlatHazardConsistency" time="0.0000192" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DefaultProbabilityCurves.testFlatHazardRate" type="TestSuite.T_DefaultProbabilityCurves" method="testFlatHazardRate" time="0.0001859" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for TestSuite.T_DigitalCoupon" time="0.087">
+      <test name="TestSuite.T_DigitalCoupon.testAssetOrNothingDeepInTheMoney" type="TestSuite.T_DigitalCoupon" method="testAssetOrNothingDeepInTheMoney" time="0.0030402" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testReplicationType" type="TestSuite.T_DigitalCoupon" method="testReplicationType" time="0.0405027" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testCashOrNothingDeepInTheMoney" type="TestSuite.T_DigitalCoupon" method="testCashOrNothingDeepInTheMoney" time="0.0023339" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testCashOrNothing" type="TestSuite.T_DigitalCoupon" method="testCashOrNothing" time="0.0148376" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testCashOrNothingDeepOutTheMoney" type="TestSuite.T_DigitalCoupon" method="testCashOrNothingDeepOutTheMoney" time="0.0016232" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testCallPutParity" type="TestSuite.T_DigitalCoupon" method="testCallPutParity" time="0.0194717" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testAssetOrNothing" type="TestSuite.T_DigitalCoupon" method="testAssetOrNothing" time="0.0038252" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalCoupon.testAssetOrNothingDeepOutTheMoney" type="TestSuite.T_DigitalCoupon" method="testAssetOrNothingDeepOutTheMoney" time="0.0014865" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for TestSuite.T_DigitalOption" time="0.035">
+      <test name="TestSuite.T_DigitalOption.testCashOrNothingEuropeanValues" type="TestSuite.T_DigitalOption" method="testCashOrNothingEuropeanValues" time="0.0004748" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testCashAtHitOrNothingAmericanGreeks" type="TestSuite.T_DigitalOption" method="testCashAtHitOrNothingAmericanGreeks" time="0.0174920" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testGapEuropeanValues" type="TestSuite.T_DigitalOption" method="testGapEuropeanValues" time="0.0006004" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testCashAtExpiryOrNothingAmericanValues" type="TestSuite.T_DigitalOption" method="testCashAtExpiryOrNothingAmericanValues" time="0.0142235" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testAssetOrNothingEuropeanValues" type="TestSuite.T_DigitalOption" method="testAssetOrNothingEuropeanValues" time="0.0003836" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testAssetAtExpiryOrNothingAmericanValues" type="TestSuite.T_DigitalOption" method="testAssetAtExpiryOrNothingAmericanValues" time="0.0005780" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testCashAtHitOrNothingAmericanValues" type="TestSuite.T_DigitalOption" method="testCashAtHitOrNothingAmericanValues" time="0.0005798" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DigitalOption.testAssetAtHitOrNothingAmericanValues" type="TestSuite.T_DigitalOption" method="testAssetAtHitOrNothingAmericanValues" time="0.0005946" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for TestSuite.T_DividendOption" time="14.608">
+      <test name="TestSuite.T_DividendOption.testEuropeanValues" type="TestSuite.T_DividendOption" method="testEuropeanValues" time="0.0087262" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testFdAmericanDegenerate" type="TestSuite.T_DividendOption" method="testFdAmericanDegenerate" time="0.2861674" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testFdAmericanGreeks" type="TestSuite.T_DividendOption" method="testFdAmericanGreeks" time="7.3159060" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testFdEuropeanGreeks" type="TestSuite.T_DividendOption" method="testFdEuropeanGreeks" time="5.7959137" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testEuropeanStartLimit" type="TestSuite.T_DividendOption" method="testEuropeanStartLimit" time="0.0078566" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testFdEuropeanValues" type="TestSuite.T_DividendOption" method="testFdEuropeanValues" time="0.9127866" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testFdEuropeanDegenerate" type="TestSuite.T_DividendOption" method="testFdEuropeanDegenerate" time="0.2380798" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DividendOption.testEuropeanGreeks" type="TestSuite.T_DividendOption" method="testEuropeanGreeks" time="0.0425262" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_DoubleBarrierOption" time="0.054">
+      <test name="TestSuite.T_DoubleBarrierOption.testEuropeanHaugValues" type="TestSuite.T_DoubleBarrierOption" method="testEuropeanHaugValues" time="0.0163347" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_DoubleBarrierOption.testVannaVolgaDoubleBarrierValues" type="TestSuite.T_DoubleBarrierOption" method="testVannaVolgaDoubleBarrierValues" time="0.0374412" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_DoubleBinaryOption" time="1.046">
+      <test name="TestSuite.T_DoubleBinaryOption.testHaugValues" type="TestSuite.T_DoubleBinaryOption" method="testHaugValues" time="1.0464106" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for TestSuite.T_EuropeanOption" time="1.774">
+      <test name="TestSuite.T_EuropeanOption.testEQPBinomialEngines" type="TestSuite.T_EuropeanOption" method="testEQPBinomialEngines" time="0.2610697" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testFdEngines" type="TestSuite.T_EuropeanOption" method="testFdEngines" time="0.8824439" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testJOSHIBinomialEngines" type="TestSuite.T_EuropeanOption" method="testJOSHIBinomialEngines" time="0.0755352" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testTGEOBinomialEngines" type="TestSuite.T_EuropeanOption" method="testTGEOBinomialEngines" time="0.0721473" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testTIANBinomialEngines" type="TestSuite.T_EuropeanOption" method="testTIANBinomialEngines" time="0.0738338" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testJRBinomialEngines" type="TestSuite.T_EuropeanOption" method="testJRBinomialEngines" time="0.0717745" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testCRRBinomialEngines" type="TestSuite.T_EuropeanOption" method="testCRRBinomialEngines" time="0.2589705" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_EuropeanOption.testLRBinomialEngines" type="TestSuite.T_EuropeanOption" method="testLRBinomialEngines" time="0.0784334" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_ExchangeRate" time="0.006">
+      <test name="TestSuite.T_ExchangeRate.testTriangulatedLookup" type="TestSuite.T_ExchangeRate" method="testTriangulatedLookup" time="0.0039777" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ExchangeRate.testDirectLookup" type="TestSuite.T_ExchangeRate" method="testDirectLookup" time="0.0003968" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ExchangeRate.testDerived" type="TestSuite.T_ExchangeRate" method="testDerived" time="0.0001988" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ExchangeRate.testDirect" type="TestSuite.T_ExchangeRate" method="testDirect" time="0.0001747" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ExchangeRate.testSmartLookup" type="TestSuite.T_ExchangeRate" method="testSmartLookup" time="0.0016243" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_FastFourierTransform" time="0.002">
+      <test name="TestSuite.T_FastFourierTransform.testFFTInverse" type="TestSuite.T_FastFourierTransform" method="testFFTInverse" time="0.0015308" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FastFourierTransform.testFFTSimple" type="TestSuite.T_FastFourierTransform" method="testFFTSimple" time="0.0005035" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for TestSuite.T_FdmLinearOp" time="1.977">
+      <test name="TestSuite.T_FdmLinearOp.testSpareMatrixReference" type="TestSuite.T_FdmLinearOp" method="testSpareMatrixReference" time="0.0025186" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testFdmMesherIntegral" type="TestSuite.T_FdmLinearOp" method="testFdmMesherIntegral" time="0.0024131" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testSecondOrderMixedDerivativesMapApply" type="TestSuite.T_FdmLinearOp" method="testSecondOrderMixedDerivativesMapApply" time="0.5833585" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testUniformGridMesher" type="TestSuite.T_FdmLinearOp" method="testUniformGridMesher" time="0.0004856" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testFdmLinearOpLayout" type="TestSuite.T_FdmLinearOp" method="testFdmLinearOpLayout" time="0.0006269" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testTripleBandMapSolve" type="TestSuite.T_FdmLinearOp" method="testTripleBandMapSolve" time="0.0893906" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testSecondDerivativesMapApply" type="TestSuite.T_FdmLinearOp" method="testSecondDerivativesMapApply" time="0.1343206" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testDerivativeWeightsOnNonUniformGrids" type="TestSuite.T_FdmLinearOp" method="testDerivativeWeightsOnNonUniformGrids" time="0.3367113" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testFirstDerivativesMapApply" type="TestSuite.T_FdmLinearOp" method="testFirstDerivativesMapApply" time="0.8207169" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_FdmLinearOp.testCrankNicolsonWithDamping" type="TestSuite.T_FdmLinearOp" method="testCrankNicolsonWithDamping" time="0.0063682" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_ForwardOption" time="2.220">
+      <test name="TestSuite.T_ForwardOption.testPerformanceGreeks" type="TestSuite.T_ForwardOption" method="testPerformanceGreeks" time="1.0776226" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ForwardOption.testGreeks" type="TestSuite.T_ForwardOption" method="testGreeks" time="1.1351618" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ForwardOption.testGreeksInitialization" type="TestSuite.T_ForwardOption" method="testGreeksInitialization" time="0.0034306" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ForwardOption.testValues" type="TestSuite.T_ForwardOption" method="testValues" time="0.0006689" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ForwardOption.testPerformanceValues" type="TestSuite.T_ForwardOption" method="testPerformanceValues" time="0.0029499" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_Functions" time="0.056">
+      <test name="TestSuite.T_Functions.testWeightedModifiedBesselFunctions" type="TestSuite.T_Functions" method="testWeightedModifiedBesselFunctions" time="0.0534395" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Functions.testGammaValues" type="TestSuite.T_Functions" method="testGammaValues" time="0.0003785" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Functions.testGammaFunction" type="TestSuite.T_Functions" method="testGammaFunction" time="0.0006931" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Functions.testFactorial" type="TestSuite.T_Functions" method="testFactorial" time="0.0002419" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Functions.testModifiedBesselFunctions" type="TestSuite.T_Functions" method="testModifiedBesselFunctions" time="0.0010977" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for TestSuite.T_HestonModel" time="11.495">
+      <test name="TestSuite.T_HestonModel.testExpansionOnFordeReference" type="TestSuite.T_HestonModel" method="testExpansionOnFordeReference" time="0.0076632" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testBlackCalibration" type="TestSuite.T_HestonModel" method="testBlackCalibration" time="0.4487361" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testMcVsCached" type="TestSuite.T_HestonModel" method="testMcVsCached" time="0.4048229" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testAnalyticPiecewiseTimeDependent" type="TestSuite.T_HestonModel" method="testAnalyticPiecewiseTimeDependent" time="0.0116577" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testExpansionOnAlanLewisReference" type="TestSuite.T_HestonModel" method="testExpansionOnAlanLewisReference" time="0.0015454" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testDifferentIntegrals" type="TestSuite.T_HestonModel" method="testDifferentIntegrals" time="5.7447642" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testDAXCalibration" type="TestSuite.T_HestonModel" method="testDAXCalibration" time="0.5642410" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testAlanLewisReferencePrices" type="TestSuite.T_HestonModel" method="testAlanLewisReferencePrices" time="0.0749054" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testDAXCalibrationOfTimeDependentModel" type="TestSuite.T_HestonModel" method="testDAXCalibrationOfTimeDependentModel" time="4.2074958" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HestonModel.testAnalyticVsCached" type="TestSuite.T_HestonModel" method="testAnalyticVsCached" time="0.0289420" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="9" passed="9" failed="0" skipped="0" name="Test collection for TestSuite.T_HybridHestonHullWhiteProcess" time="9.974">
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testH1HWPricingEngine" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testH1HWPricingEngine" time="0.0732494" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testZeroBondPricing" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testZeroBondPricing" time="6.0155589" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testBsmHullWhiteEngine" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testBsmHullWhiteEngine" time="0.0018900" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testMcPureHestonPricing" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testMcPureHestonPricing" time="0.5597527" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testCallableEquityPricing" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testCallableEquityPricing" time="0.8697930" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testAnalyticHestonHullWhitePricing" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testAnalyticHestonHullWhitePricing" time="0.1181627" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testDiscretizationError" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testDiscretizationError" time="1.7924615" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testMcVanillaPricing" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testMcVanillaPricing" time="0.5098130" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_HybridHestonHullWhiteProcess.testCompareBsmHWandHestonHW" type="TestSuite.T_HybridHestonHullWhiteProcess" method="testCompareBsmHWandHestonHW" time="0.0329671" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_Inflation" time="0.036">
+      <test name="TestSuite.T_Inflation.testZeroTermStructure" type="TestSuite.T_Inflation" method="testZeroTermStructure" time="0.0155030" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Inflation.testZeroIndex" type="TestSuite.T_Inflation" method="testZeroIndex" time="0.0021397" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Inflation.testYYIndex" type="TestSuite.T_Inflation" method="testYYIndex" time="0.0062726" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Inflation.testYYTermStructure" type="TestSuite.T_Inflation" method="testYYTermStructure" time="0.0116154" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_InflationCapFlooredCouponTest" time="0.313">
+      <test name="TestSuite.T_InflationCapFlooredCouponTest.testDecomposition" type="TestSuite.T_InflationCapFlooredCouponTest" method="testDecomposition" time="0.0126731" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_InflationCapFlooredCouponTest.testInstrumentEquality" type="TestSuite.T_InflationCapFlooredCouponTest" method="testInstrumentEquality" time="0.3003988" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_InflationCapFloorTest" time="2.929">
+      <test name="TestSuite.T_InflationCapFloorTest.testCachedValue" type="TestSuite.T_InflationCapFloorTest" method="testCachedValue" time="0.0077005" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_InflationCapFloorTest.testParity" type="TestSuite.T_InflationCapFloorTest" method="testParity" time="0.1582011" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_InflationCapFloorTest.testConsistency" type="TestSuite.T_InflationCapFloorTest" method="testConsistency" time="2.7629449" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_InflationCPICapFloor" time="0.022">
+      <test name="TestSuite.T_InflationCPICapFloor.cpicapfloorpricesurface" type="TestSuite.T_InflationCPICapFloor" method="cpicapfloorpricesurface" time="0.0177568" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_InflationCPICapFloor.cpicapfloorpricer" type="TestSuite.T_InflationCPICapFloor" method="cpicapfloorpricer" time="0.0038452" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_Instruments" time="0.001">
+      <test name="TestSuite.T_Instruments.testObservable" type="TestSuite.T_Instruments" method="testObservable" time="0.0006692" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_InterestRate" time="0.002">
+      <test name="TestSuite.T_InterestRate.testConversions" type="TestSuite.T_InterestRate" method="testConversions" time="0.0015541" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="18" passed="18" failed="0" skipped="0" name="Test collection for TestSuite.T_Interpolations" time="1.657">
+      <test name="TestSuite.T_Interpolations.testSimmetricEndConditions" type="TestSuite.T_Interpolations" method="testSimmetricEndConditions" time="0.0008540" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testForwardFlat" type="TestSuite.T_Interpolations" method="testForwardFlat" time="0.0009483" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testNormalSabrInterpolation" type="TestSuite.T_Interpolations" method="testNormalSabrInterpolation" time="0.2761082" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testDerivativeEndConditions" type="TestSuite.T_Interpolations" method="testDerivativeEndConditions" time="0.0009294" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testSplineOnGaussianValues" type="TestSuite.T_Interpolations" method="testSplineOnGaussianValues" time="0.0002860" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testSabrInterpolation" type="TestSuite.T_Interpolations" method="testSabrInterpolation" time="0.6334708" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testSplineErrorOnGaussianValues" type="TestSuite.T_Interpolations" method="testSplineErrorOnGaussianValues" time="0.0026287" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testBicubicDerivatives" type="TestSuite.T_Interpolations" method="testBicubicDerivatives" time="0.7195290" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testKernelInterpolation" type="TestSuite.T_Interpolations" method="testKernelInterpolation" time="0.0028953" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testNonRestrictiveHymanFilter" type="TestSuite.T_Interpolations" method="testNonRestrictiveHymanFilter" time="0.0002801" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testSplineOnGenericValues" type="TestSuite.T_Interpolations" method="testSplineOnGenericValues" time="0.0004747" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testSplineOnRPN15AValues" type="TestSuite.T_Interpolations" method="testSplineOnRPN15AValues" time="0.0005524" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testSabrSingleCases" type="TestSuite.T_Interpolations" method="testSabrSingleCases" time="0.0098418" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testBicubicUpdate" type="TestSuite.T_Interpolations" method="testBicubicUpdate" time="0.0003654" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testAsFunctor" type="TestSuite.T_Interpolations" method="testAsFunctor" time="0.0004081" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testKernelInterpolation2D" type="TestSuite.T_Interpolations" method="testKernelInterpolation2D" time="0.0058699" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testBackwardFlat" type="TestSuite.T_Interpolations" method="testBackwardFlat" time="0.0007256" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Interpolations.testRichardsonExtrapolation" type="TestSuite.T_Interpolations" method="testRichardsonExtrapolation" time="0.0006561" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="0" failed="0" skipped="4" name="Test collection for TestSuite.T_LiborMarketModel" time="0.004">
+      <test name="TestSuite.T_LiborMarketModel.testCapletPricing" type="TestSuite.T_LiborMarketModel" method="testCapletPricing" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_LiborMarketModel.testSwaptionPricing" type="TestSuite.T_LiborMarketModel" method="testSwaptionPricing" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_LiborMarketModel.testSimpleCovarianceModels" type="TestSuite.T_LiborMarketModel" method="testSimpleCovarianceModels" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_LiborMarketModel.testCalibration" type="TestSuite.T_LiborMarketModel" method="testCalibration" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="0" failed="0" skipped="3" name="Test collection for TestSuite.T_LiborMarketModelProcess" time="0.003">
+      <test name="TestSuite.T_LiborMarketModelProcess.testMonteCarloCapletPricing" type="TestSuite.T_LiborMarketModelProcess" method="testMonteCarloCapletPricing" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_LiborMarketModelProcess.testInitialisation" type="TestSuite.T_LiborMarketModelProcess" method="testInitialisation" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_LiborMarketModelProcess.testLambdaBootstrapping" type="TestSuite.T_LiborMarketModelProcess" method="testLambdaBootstrapping" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_LinearLeastSquaresRegression" time="1.325">
+      <test name="TestSuite.T_LinearLeastSquaresRegression.testMultiDimRegression" type="TestSuite.T_LinearLeastSquaresRegression" method="testMultiDimRegression" time="0.2924911" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LinearLeastSquaresRegression.test1dLinearRegression" type="TestSuite.T_LinearLeastSquaresRegression" method="test1dLinearRegression" time="0.0009549" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LinearLeastSquaresRegression.testRegression" type="TestSuite.T_LinearLeastSquaresRegression" method="testRegression" time="1.0312937" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_LookbackOption" time="0.012">
+      <test name="TestSuite.T_LookbackOption.testAnalyticContinuousFixedLookback" type="TestSuite.T_LookbackOption" method="testAnalyticContinuousFixedLookback" time="0.0034349" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LookbackOption.testAnalyticContinuousFloatingLookback" type="TestSuite.T_LookbackOption" method="testAnalyticContinuousFloatingLookback" time="0.0018752" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LookbackOption.testAnalyticContinuousPartialFloatingLookback" type="TestSuite.T_LookbackOption" method="testAnalyticContinuousPartialFloatingLookback" time="0.0032413" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LookbackOption.testAnalyticContinuousPartialFixedLookback" type="TestSuite.T_LookbackOption" method="testAnalyticContinuousPartialFixedLookback" time="0.0030458" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_LowDiscrepancySequences" time="3.968">
+      <test name="TestSuite.T_LowDiscrepancySequences.testSobolSkipping" type="TestSuite.T_LowDiscrepancySequences" method="testSobolSkipping" time="3.7667085" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LowDiscrepancySequences.testHalton" type="TestSuite.T_LowDiscrepancySequences" method="testHalton" time="0.0848228" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LowDiscrepancySequences.testSobol" type="TestSuite.T_LowDiscrepancySequences" method="testSobol" time="0.1158626" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_LowDiscrepancySequences.testPolynomialsModuloTwo" type="TestSuite.T_LowDiscrepancySequences" method="testPolynomialsModuloTwo" time="0.0002878" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for TestSuite.T_Matrices" time="0.218">
+      <test name="TestSuite.T_Matrices.testSqrt" type="TestSuite.T_Matrices" method="testSqrt" time="0.0010811" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Matrices.testSVD" type="TestSuite.T_Matrices" method="testSVD" time="0.0003742" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Matrices.testQRDecomposition" type="TestSuite.T_Matrices" method="testQRDecomposition" time="0.0004903" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Matrices.testQRSolve" type="TestSuite.T_Matrices" method="testQRSolve" time="0.2146413" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Matrices.testHighamSqrt" type="TestSuite.T_Matrices" method="testHighamSqrt" time="0.0010085" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Matrices.testEigenvectors" type="TestSuite.T_Matrices" method="testEigenvectors" time="0.0002503" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Matrices.testInverse" type="TestSuite.T_Matrices" method="testInverse" time="0.0002124" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_Money" time="0.001">
+      <test name="TestSuite.T_Money.testBaseCurrency" type="TestSuite.T_Money" method="testBaseCurrency" time="0.0010368" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Money.testAutomated" type="TestSuite.T_Money" method="testAutomated" time="0.0002237" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Money.testNone" type="TestSuite.T_Money" method="testNone" time="0.0001466" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_Operators" time="0.006">
+      <test name="TestSuite.T_Operators.testBSMOperatorConsistency" type="TestSuite.T_Operators" method="testBSMOperatorConsistency" time="0.0010805" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Operators.testOperatorConsistency" type="TestSuite.T_Operators" method="testOperatorConsistency" time="0.0048794" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_Optimizers" time="6.443">
+      <test name="TestSuite.T_Optimizers.OptimizersTest" type="TestSuite.T_Optimizers" method="OptimizersTest" time="0.0041811" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Optimizers.testDifferentialEvolution" type="TestSuite.T_Optimizers" method="testDifferentialEvolution" time="6.4368466" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Optimizers.nestedOptimizationTest" type="TestSuite.T_Optimizers" method="nestedOptimizationTest" time="0.0004745" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Optimizers.testFunctionValueEqualsCostFunctionAtCurrentValue" type="TestSuite.T_Optimizers" method="testFunctionValueEqualsCostFunctionAtCurrentValue" time="0.0012430" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_OptionletStripper" time="1.226">
+      <test name="TestSuite.T_OptionletStripper.testFlatTermVolatilityStripping2" type="TestSuite.T_OptionletStripper" method="testFlatTermVolatilityStripping2" time="0.0489230" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OptionletStripper.testFlatTermVolatilityStripping1" type="TestSuite.T_OptionletStripper" method="testFlatTermVolatilityStripping1" time="0.0574381" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OptionletStripper.testTermVolatilityStripping1" type="TestSuite.T_OptionletStripper" method="testTermVolatilityStripping1" time="0.5903135" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OptionletStripper.testTermVolatilityStripping2" type="TestSuite.T_OptionletStripper" method="testTermVolatilityStripping2" time="0.5292656" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="9" passed="9" failed="0" skipped="0" name="Test collection for TestSuite.T_OvernightIndexedCoupon" time="0.136">
+      <test name="TestSuite.T_OvernightIndexedCoupon.testAccruedAmountSpanningToday" type="TestSuite.T_OvernightIndexedCoupon" method="testAccruedAmountSpanningToday" time="0.0171413" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testCurrentCouponRate" type="TestSuite.T_OvernightIndexedCoupon" method="testCurrentCouponRate" time="0.0138516" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testAccruedAmountOnFutureHoliday" type="TestSuite.T_OvernightIndexedCoupon" method="testAccruedAmountOnFutureHoliday" time="0.0139016" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testFutureCouponRate" type="TestSuite.T_OvernightIndexedCoupon" method="testFutureCouponRate" time="0.0155716" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testAccruedAmountOnPastHoliday" type="TestSuite.T_OvernightIndexedCoupon" method="testAccruedAmountOnPastHoliday" time="0.0140414" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testPastCouponRate" type="TestSuite.T_OvernightIndexedCoupon" method="testPastCouponRate" time="0.0138090" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testRateWhenTodayIsHoliday" type="TestSuite.T_OvernightIndexedCoupon" method="testRateWhenTodayIsHoliday" time="0.0199052" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testAccruedAmountInTheFuture" type="TestSuite.T_OvernightIndexedCoupon" method="testAccruedAmountInTheFuture" time="0.0141926" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedCoupon.testAccruedAmountInThePast" type="TestSuite.T_OvernightIndexedCoupon" method="testAccruedAmountInThePast" time="0.0136737" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_OvernightIndexedSwap" time="5.258">
+      <test name="TestSuite.T_OvernightIndexedSwap.testCachedValue" type="TestSuite.T_OvernightIndexedSwap" method="testCachedValue" time="0.0251251" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedSwap.testBootstrap" type="TestSuite.T_OvernightIndexedSwap" method="testBootstrap" time="1.4314735" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedSwap.testFairRate" type="TestSuite.T_OvernightIndexedSwap" method="testFairRate" time="1.9947407" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_OvernightIndexedSwap.testFairSpread" type="TestSuite.T_OvernightIndexedSwap" method="testFairSpread" time="1.8067608" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="0" failed="0" skipped="2" name="Test collection for TestSuite.T_Pathgenerator" time="0.002">
+      <test name="TestSuite.T_Pathgenerator.testMultiPathGenerator" type="TestSuite.T_Pathgenerator" method="testMultiPathGenerator" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_Pathgenerator.testPathGenerator" type="TestSuite.T_Pathgenerator" method="testPathGenerator" time="0.0010000" result="Skip">
+        <reason><![CDATA[LongRun]]></reason>
+        <output>LongRun
+</output>
+        <traits />
+      </test>
+    </collection>
+    <collection total="16" passed="15" failed="0" skipped="1" name="Test collection for TestSuite.T_PiecewiseyieldCurve" time="5.062">
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLinearDiscountConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testLinearDiscountConsistency" time="1.2843339" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testObservability" type="TestSuite.T_PiecewiseyieldCurve" method="testObservability" time="0.0010000" result="Skip">
+        <reason><![CDATA[ToCheck]]></reason>
+        <output>ToCheck
+</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLinearZeroConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testLinearZeroConsistency" time="0.6974072" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLocalBootstrapConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testLocalBootstrapConsistency" time="0.6794422" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testZeroCopy" type="TestSuite.T_PiecewiseyieldCurve" method="testZeroCopy" time="0.0537823" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testForwardCopy" type="TestSuite.T_PiecewiseyieldCurve" method="testForwardCopy" time="0.0475234" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLogLinearZeroConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testLogLinearZeroConsistency" time="0.0001876" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testFlatForwardConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testFlatForwardConsistency" time="0.2086793" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testSplineZeroConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testSplineZeroConsistency" time="0.5305305" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testForwardRateDayCounter" type="TestSuite.T_PiecewiseyieldCurve" method="testForwardRateDayCounter" time="0.0413740" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLiborFixing" type="TestSuite.T_PiecewiseyieldCurve" method="testLiborFixing" time="0.0631617" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLinearForwardConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testLinearForwardConsistency" time="0.1997008" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testJpyLibor" type="TestSuite.T_PiecewiseyieldCurve" method="testJpyLibor" time="0.0686737" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testLogLinearDiscountConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testLogLinearDiscountConsistency" time="0.3638687" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testDiscountCopy" type="TestSuite.T_PiecewiseyieldCurve" method="testDiscountCopy" time="0.0741885" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseyieldCurve.testConvexMonotoneForwardConsistency" type="TestSuite.T_PiecewiseyieldCurve" method="testConvexMonotoneForwardConsistency" time="0.7484305" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.065">
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testDefaultInterpolation" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testDefaultInterpolation" time="0.0227384" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testFlatInterpolationRight" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testFlatInterpolationRight" time="0.0064327" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testFlatInterpolationLeft" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testFlatInterpolationLeft" time="0.0039566" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testLinearInterpolation" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testLinearInterpolation" time="0.0048656" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testMaxDate" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testMaxDate" time="0.0042905" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testQuoteChanging" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testQuoteChanging" time="0.0049483" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testSetInterpolationFactory" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testSetInterpolationFactory" time="0.0045870" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testLinearInterpolationMultipleSpreads" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testLinearInterpolationMultipleSpreads" time="0.0043422" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testBackwardFlatInterpolation" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testBackwardFlatInterpolation" time="0.0040811" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_PiecewiseZeroSpreadedTermStructure.testForwardFlatInterpolation" type="TestSuite.T_PiecewiseZeroSpreadedTermStructure" method="testForwardFlatInterpolation" time="0.0045709" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_PSACurve" time="0.000">
+      <test name="TestSuite.T_PSACurve.testCashedValues" type="TestSuite.T_PSACurve" method="testCashedValues" time="0.0004453" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_Quotes" time="0.001">
+      <test name="TestSuite.T_Quotes.testDerived" type="TestSuite.T_Quotes" method="testDerived" time="0.0005113" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Quotes.testObservable" type="TestSuite.T_Quotes" method="testObservable" time="0.0000894" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Quotes.testComposite" type="TestSuite.T_Quotes" method="testComposite" time="0.0005790" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Quotes.testObservableHandle" type="TestSuite.T_Quotes" method="testObservableHandle" time="0.0001218" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_RiskStats" time="0.854">
+      <test name="TestSuite.T_RiskStats.RiskStatisticsTest" type="TestSuite.T_RiskStats" method="RiskStatisticsTest" time="0.8538826" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_RNGTraits" time="0.001">
+      <test name="TestSuite.T_RNGTraits.testCustomPoisson" type="TestSuite.T_RNGTraits" method="testCustomPoisson" time="0.0007972" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_RNGTraits.testGaussian" type="TestSuite.T_RNGTraits" method="testGaussian" time="0.0001550" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_RNGTraits.testDefaultPoisson" type="TestSuite.T_RNGTraits" method="testDefaultPoisson" time="0.0001579" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for TestSuite.T_Rounding" time="0.001">
+      <test name="TestSuite.T_Rounding.testDown" type="TestSuite.T_Rounding" method="testDown" time="0.0004884" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Rounding.testUp" type="TestSuite.T_Rounding" method="testUp" time="0.0001486" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Rounding.testClosest" type="TestSuite.T_Rounding" method="testClosest" time="0.0001337" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Rounding.testFloor" type="TestSuite.T_Rounding" method="testFloor" time="0.0001533" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Rounding.testCeiling" type="TestSuite.T_Rounding" method="testCeiling" time="0.0001541" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_SampledCurve" time="0.001">
+      <test name="TestSuite.T_SampledCurve.testConstruction" type="TestSuite.T_SampledCurve" method="testConstruction" time="0.0006832" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for TestSuite.T_Schedule" time="0.003">
+      <test name="TestSuite.T_Schedule.testDatesPastEndDateWithEomAdjustment" type="TestSuite.T_Schedule" method="testDatesPastEndDateWithEomAdjustment" time="0.0004354" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testDatesSameAsEndDateWithEomAdjustment" type="TestSuite.T_Schedule" method="testDatesSameAsEndDateWithEomAdjustment" time="0.0001409" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testEndDateWithEomAdjustment" type="TestSuite.T_Schedule" method="testEndDateWithEomAdjustment" time="0.0002365" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testDailySchedule" type="TestSuite.T_Schedule" method="testDailySchedule" time="0.0001392" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testDateConstructor" type="TestSuite.T_Schedule" method="testDateConstructor" time="0.0006019" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testDoubleFirstDateWithEomAdjustment" type="TestSuite.T_Schedule" method="testDoubleFirstDateWithEomAdjustment" time="0.0001372" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testForwardDatesWithEomAdjustment" type="TestSuite.T_Schedule" method="testForwardDatesWithEomAdjustment" time="0.0001276" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testPreviousDateAndNextDate" type="TestSuite.T_Schedule" method="testPreviousDateAndNextDate" time="0.0007198" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testCDS2015Convention" type="TestSuite.T_Schedule" method="testCDS2015Convention" time="0.0002986" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Schedule.testBackwardDatesWithEomAdjustment" type="TestSuite.T_Schedule" method="testBackwardDatesWithEomAdjustment" time="0.0001371" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for TestSuite.T_ShortRateModels" time="1.291">
+      <test name="TestSuite.T_ShortRateModels.testCachedHullWhite" type="TestSuite.T_ShortRateModels" method="testCachedHullWhite" time="0.0309533" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ShortRateModels.testFuturesConvexityBias" type="TestSuite.T_ShortRateModels" method="testFuturesConvexityBias" time="0.0003509" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_ShortRateModels.testSwaps" type="TestSuite.T_ShortRateModels" method="testSwaps" time="1.2595562" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_SofrFutures" time="0.004">
+      <test name="TestSuite.T_SofrFutures.testBootstrap" type="TestSuite.T_SofrFutures" method="testBootstrap" time="0.0038270" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for TestSuite.T_Solvers" time="0.001">
+      <test name="TestSuite.T_Solvers.testBrent" type="TestSuite.T_Solvers" method="testBrent" time="0.0003082" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Solvers.testNewton" type="TestSuite.T_Solvers" method="testNewton" time="0.0000551" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Solvers.testSecant" type="TestSuite.T_Solvers" method="testSecant" time="0.0001815" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Solvers.testRidder" type="TestSuite.T_Solvers" method="testRidder" time="0.0003236" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Solvers.testBisection" type="TestSuite.T_Solvers" method="testBisection" time="0.0001715" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Solvers.testFalsePosition" type="TestSuite.T_Solvers" method="testFalsePosition" time="0.0001886" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for TestSuite.T_SpreadOption" time="0.002">
+      <test name="TestSuite.T_SpreadOption.testKirkEngine" type="TestSuite.T_SpreadOption" method="testKirkEngine" time="0.0015812" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_Stats" time="0.046">
+      <test name="TestSuite.T_Stats.testConvergenceStatistics" type="TestSuite.T_Stats" method="testConvergenceStatistics" time="0.0017391" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Stats.testIncrementalStatistics" type="TestSuite.T_Stats" method="testIncrementalStatistics" time="0.0425247" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Stats.testSequenceStatistics" type="TestSuite.T_Stats" method="testSequenceStatistics" time="0.0016664" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Stats.testStatistics" type="TestSuite.T_Stats" method="testStatistics" time="0.0005180" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="0" failed="0" skipped="1" name="Test collection for TestSuite.T_SVI" time="0.001">
+      <test name="TestSuite.T_SVI.testCalibration" type="TestSuite.T_SVI" method="testCalibration" time="0.0010000" result="Skip">
+        <reason><![CDATA[Failing]]></reason>
+        <output>Failing
+</output>
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for TestSuite.T_Swaps" time="0.052">
+      <test name="TestSuite.T_Swaps.testSpreadDependency" type="TestSuite.T_Swaps" method="testSpreadDependency" time="0.0182409" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaps.testFixing" type="TestSuite.T_Swaps" method="testFixing" time="0.0009447" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaps.testInArrears" type="TestSuite.T_Swaps" method="testInArrears" time="0.0010202" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaps.testCachedValue" type="TestSuite.T_Swaps" method="testCachedValue" time="0.0008948" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaps.testFairRate" type="TestSuite.T_Swaps" method="testFairRate" time="0.0078413" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaps.testFairSpread" type="TestSuite.T_Swaps" method="testFairSpread" time="0.0052371" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaps.testRateDependency" type="TestSuite.T_Swaps" method="testRateDependency" time="0.0174963" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for TestSuite.T_Swaption" time="6.789">
+      <test name="TestSuite.T_Swaption.testVega" type="TestSuite.T_Swaption" method="testVega" time="0.9144575" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaption.testStrikeDependency" type="TestSuite.T_Swaption" method="testStrikeDependency" time="0.1516075" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaption.testSpreadDependency" type="TestSuite.T_Swaption" method="testSpreadDependency" time="0.1501036" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaption.testCachedValue" type="TestSuite.T_Swaption" method="testCachedValue" time="0.0007651" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaption.testSpreadTreatment" type="TestSuite.T_Swaption" method="testSpreadTreatment" time="0.3363490" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaption.testCashSettledSwaptions" type="TestSuite.T_Swaption" method="testCashSettledSwaptions" time="0.0646815" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Swaption.testImpliedVolatility" type="TestSuite.T_Swaption" method="testImpliedVolatility" time="5.1709360" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_SwaptionVolatilityMatrix" time="0.114">
+      <test name="TestSuite.T_SwaptionVolatilityMatrix.testSwaptionVolMatrixObservability" type="TestSuite.T_SwaptionVolatilityMatrix" method="testSwaptionVolMatrixObservability" time="0.0031157" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_SwaptionVolatilityMatrix.testSwaptionVolMatrixCoherence" type="TestSuite.T_SwaptionVolatilityMatrix" method="testSwaptionVolMatrixCoherence" time="0.1105164" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="9" passed="9" failed="0" skipped="0" name="Test collection for TestSuite.T_TermStructures" time="0.054">
+      <test name="TestSuite.T_TermStructures.testZSpreaded" type="TestSuite.T_TermStructures" method="testZSpreaded" time="0.0063730" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testImplied" type="TestSuite.T_TermStructures" method="testImplied" time="0.0083416" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testReferenceChange" type="TestSuite.T_TermStructures" method="testReferenceChange" time="0.0055021" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testCompositeZeroYieldStructures" type="TestSuite.T_TermStructures" method="testCompositeZeroYieldStructures" time="0.0049856" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testFSpreaded" type="TestSuite.T_TermStructures" method="testFSpreaded" time="0.0099585" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testInterpolatedZeroCurveWithRefDateAndTenorDates" type="TestSuite.T_TermStructures" method="testInterpolatedZeroCurveWithRefDateAndTenorDates" time="0.0027961" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testImpliedObs" type="TestSuite.T_TermStructures" method="testImpliedObs" time="0.0037691" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testZSpreadedObs" type="TestSuite.T_TermStructures" method="testZSpreadedObs" time="0.0054158" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TermStructures.testFSpreadedObs" type="TestSuite.T_TermStructures" method="testFSpreadedObs" time="0.0073447" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for TestSuite.T_TimeGrid" time="0.003">
+      <test name="TestSuite.T_TimeGrid.testConstructorAdditionalSteps" type="TestSuite.T_TimeGrid" method="testConstructorAdditionalSteps" time="0.0020137" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testMandatoryTimes" type="TestSuite.T_TimeGrid" method="testMandatoryTimes" time="0.0000914" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testConstructorMandatorySteps" type="TestSuite.T_TimeGrid" method="testConstructorMandatorySteps" time="0.0001081" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testConstructorEvenSteps" type="TestSuite.T_TimeGrid" method="testConstructorEvenSteps" time="0.0000755" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testClosestTime" type="TestSuite.T_TimeGrid" method="testClosestTime" time="0.0000927" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testConstructorNegativeValuesInIterator" type="TestSuite.T_TimeGrid" method="testConstructorNegativeValuesInIterator" time="0.0003254" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testClosestIndex" type="TestSuite.T_TimeGrid" method="testClosestIndex" time="0.0000891" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_TimeGrid.testConstructorEmptyIterator" type="TestSuite.T_TimeGrid" method="testConstructorEmptyIterator" time="0.0001293" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for TestSuite.T_Vector" time="0.001">
+      <test name="TestSuite.T_Vector.testEquals" type="TestSuite.T_Vector" method="testEquals" time="0.0003164" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Vector.testCloneICloneable" type="TestSuite.T_Vector" method="testCloneICloneable" time="0.0003170" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Vector.testClone" type="TestSuite.T_Vector" method="testClone" time="0.0000768" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_Vector.testHashCode" type="TestSuite.T_Vector" method="testHashCode" time="0.0002930" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
