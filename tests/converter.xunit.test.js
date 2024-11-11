@@ -33,7 +33,7 @@ describe("xUnit.net converter tests", () => {
     }
 
     /**
-     * @returns {MargeConverterOptions} options
+     * @returns {TestReportConverterOptions} options
      */
     function createOptions(file, type){
         return {
@@ -46,7 +46,7 @@ describe("xUnit.net converter tests", () => {
     }
 
     /**
-     * @param {MargeConverterOptions} options
+     * @param {TestReportConverterOptions} options
      */
     async function compare(options){
         let createdReport = fs.readFileSync(path.join(outDir, options.reportFilename), 'utf8');

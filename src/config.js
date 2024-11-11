@@ -9,7 +9,7 @@ const TestType = {
 };
 
 /**
- * @param {MargeConverterOptions} options
+ * @param {TestReportConverterOptions} options
  * @returns {ConverterOptions}
  */
 function config (options) {

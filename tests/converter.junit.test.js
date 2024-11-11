@@ -32,7 +32,7 @@ describe("JUnit converter tests", () => {
     }
 
     /**
-     * @returns {MargeConverterOptions} options
+     * @returns {TestReportConverterOptions} options
      */
     function createOptions(file, type){
         return {
@@ -44,7 +44,7 @@ describe("JUnit converter tests", () => {
     }
 
     /**
-     * @param {MargeConverterOptions} options
+     * @param {TestReportConverterOptions} options
      */
     function compare(options){
         let createdReport = fs.readFileSync(path.join(outDir, options.reportFilename), 'utf8');

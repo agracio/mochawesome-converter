@@ -84,7 +84,7 @@ npm i mochawesome-converter
 ```
 
 ```js
-const margeConvert = require('mochawesome-converter');
+const convert = require('mochawesome-converter');
 
 let options = {
     testFile: 'mytesfiles/nunit.xml',
@@ -92,7 +92,7 @@ let options = {
     junit: true
 }
 
-margeConvert(options).then(() => console.log(`Report created: ${options.reportDir}/${options.reportFilename}`));
+convert(options).then(() => console.log(`Report created: ${options.reportDir}/${options.reportFilename}`));
 ```
 
 ### Options

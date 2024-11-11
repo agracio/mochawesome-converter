@@ -12,7 +12,7 @@ async function xsltConverter(config) {
 /**
  * Convert test report to mochawesome.
  *
- * @param {MargeConverterOptions} options
+ * @param {TestReportConverterOptions} options
  */
 async function convert(options){
 
