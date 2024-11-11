@@ -5,27 +5,29 @@ const xslt = require('./xslt');
 /**
  * @param {ConverterOptions} config
  */
-function xsltConverter(config) {
-    xslt(config, `${config.testType}-junit.xslt`);
+async function xsltConverter(config) {
+    await xslt(config, `${config.testType}-junit.xslt`);
 }
 
 /**
  * Convert test report to mochawesome.
  *
- * @param {Options} options
+ * @param {MargeConverterOptions} options
  */
-function converter(options){
+async function convert(options){
+
     let config = conf.config(options);
+
     switch (config.testType) {
         case 'junit':
-            junit.convert(config, null);
+            await junit.convert(config, null);
             break;
         case 'nunit':
         case 'xunit':
         case 'trx':
-            xsltConverter(config);
+            await xsltConverter(config);
             break;
     }
 }
 
-module.exports = converter;
+module.exports = convert;

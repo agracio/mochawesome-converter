@@ -1,0 +1,150 @@
+<assemblies timestamp="09/27/2024 15:56:46">
+  <assembly name="C:\Users\calliopeuser\projects\LiveResults\MWM2.LiveResults.Tests\bin\Debug\MWM2.LiveResults.Tests.dll"
+            run-date="2019-06-06" run-time="11:58:16"
+            config-file="C:\Users\calliopeuser\projects\LiveResults\MWM2.LiveResults.Tests\bin\Debug\MWM2.LiveResults.Tests.dll.config"
+            total="329" passed="316" failed="13" skipped="0" time="8.004" errors="0">
+    <errors>
+      <error type="test error" name="something went wrong during boot">
+        <failure exception-type="Exception type">
+          <message>Error message</message>
+          <stack-trace>Error stack trace
+            1
+            2
+            3
+          </stack-trace>
+        </failure>
+      </error>
+      <error type="test error2" name="something went wrong during boot again">
+        <failure exception-type="Exception 2">
+          <message>Error 2</message>
+          <stack-trace>Error stack trace2
+            1
+            2
+            3
+          </stack-trace>
+        </failure>
+      </error>
+    </errors>
+    <collection total="7" passed="7" failed="0" skipped="0"
+                name="Test collection for MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+                time="0.054">
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_WithoutLabel_NullValue_MissingValueReturned"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_WithoutLabel_NullValue_MissingValueReturned" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_WithoutLabel_OpenValueReturned"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_WithoutLabel_OpenValueReturned" time="0.0480000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_WithAnswerLabel_AnswerLabelReturned"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_WithAnswerLabel_AnswerLabelReturned" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_GivenEmptyValue_EmptySettingReturned"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_GivenEmptyValue_EmptySettingReturned" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_WithLabel_ColumnNameIsLabel"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_WithLabel_ColumnNameIsLabel" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_NotGiven_MissingValueReturned"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_NotGiven_MissingValueReturned" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests.OpenQuestion_WithoutLabel_CorrectColumnName"
+            type="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests"
+            method="OpenQuestion_WithoutLabel_CorrectColumnName" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0"
+                name="Test collection for MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests"
+                time="0.213">
+      <test name="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests.PointDistributionQuestion_WithAnswerLabels_GetValues"
+            type="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests"
+            method="PointDistributionQuestion_WithAnswerLabels_GetValues" time="0.0260000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests.PointDistributionQuestion_GetColumnNames"
+            type="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests"
+            method="PointDistributionQuestion_GetColumnNames" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests.PointDistributionQuestion_GetValues"
+            type="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests"
+            method="PointDistributionQuestion_GetValues" time="0.1850000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests.PointDistributionQuestion_WithQuestionLabel_GetColumnNames"
+            type="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests"
+            method="PointDistributionQuestion_WithQuestionLabel_GetColumnNames" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0"
+                name="Test collection for MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests"
+                time="0.210">
+      <test name="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests.RankingQuestionWithoutLabels_GetColumnNames"
+            type="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests"
+            method="RankingQuestionWithoutLabels_GetColumnNames" time="0.0250000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests.RankingQuestionWithLabels_GetColumnNames"
+            type="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests"
+            method="RankingQuestionWithLabels_GetColumnNames" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests.RankingQuestion_WithAnswerLabels_GetValues"
+            type="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests"
+            method="RankingQuestion_WithAnswerLabels_GetValues" time="0.0010000" result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests.RankingQuestion_GetValues"
+            type="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests"
+            method="RankingQuestion_GetValues" time="0.1830000" result="Pass">
+        <traits/>
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0"
+                name="Test collection for MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" time="0.006">
+      <test name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests.GetRuntimeType(dbType: &quot;nvarchar(max)&quot;, type: typeof(string))"
+            type="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" method="GetRuntimeType" time="0.0010000"
+            result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests.GetRuntimeType(dbType: &quot;datetime&quot;, type: typeof(System.DateTime))"
+            type="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" method="GetRuntimeType" time="0.0010000"
+            result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests.GetRuntimeType(dbType: &quot;varchar(50)&quot;, type: typeof(string))"
+            type="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" method="GetRuntimeType" time="0.0010000"
+            result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests.GetRuntimeType(dbType: &quot;int&quot;, type: typeof(int))"
+            type="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" method="GetRuntimeType" time="0.0010000"
+            result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests.CreateColumnDefinition"
+            type="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" method="CreateColumnDefinition"
+            time="0.0010000"
+            result="Pass">
+        <traits/>
+      </test>
+      <test name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests.ResultColumnIsSameAs"
+            type="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" method="ResultColumnIsSameAs" time="0.0010000"
+            result="Pass">
+        <traits/>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

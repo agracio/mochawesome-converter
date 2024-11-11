@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 37
+  },
+  "results": [
+    {
+      "uuid": "fb7d8707-a801-47bc-b1a6-9ef17737d540",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+          "title": "PatientRegistration.Patient Registration (Example)",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create patient",
+              "fullTitle": "PatientRegistration.Patient Registration (Example)",
+              "duration": 16,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n\\n  @tc:62\\n  Scenario: Create patient\\n    When I create a patient with name \\\"John Doe\\\" on the host ... passed in 0.005s\\n    Then the patient \\\"John Doe\\\" should also be created in the application. ... passed in 0.011s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "475d5a7e-6af8-45cb-a91a-5eb3318fd798",
+              "parentUUID": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Close patient",
+              "fullTitle": "PatientRegistration.Patient Registration (Example)",
+              "duration": 15,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n\\n  @tc:63\\n  Scenario: Close patient\\n    Given a patient is opened in the application ... passed in 0.005s\\n    When I close the patient on the host ... passed in 0.005s\\n    Then the patient should also be closed in the application. ... passed in 0.005s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "4531d410-f408-46c1-b7d9-4efe641108dd",
+              "parentUUID": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit patient",
+              "fullTitle": "PatientRegistration.Patient Registration (Example)",
+              "duration": 6,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n  Scenario: Edit patient\\n    Given a patient is opened in the application ... passed in 0.005s\\n    When I change the patient name to \\\"John Doe\\\" on the host ... failed in 0.001s\\n    Then the patient name should also be changed to \\\"John Doe\\\" in the application. ... skipped in 0.000s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
+              "code": null,
+              "err": {
+                "message": "TypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
+                "estack": "Failing step: When I change the patient name to \"John Doe\" on the host ... failed in 0.001s\nLocation: tests/features/PatientRegistration.feature:20\nTraceback (most recent call last):\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"tests\\features\\steps\\step_patient_registration.py\", line 33, in step_impl\n    context.patient.edit(first_name=\"John\", last_name=\"Doe\")\nTypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
+                "diff": "edit() missing 2 required positional arguments: 'birth_date' and 'sex'"
+              },
+              "uuid": "e70ba736-1f3e-4a5f-9ff3-b627ed45c28a",
+              "parentUUID": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "475d5a7e-6af8-45cb-a91a-5eb3318fd798",
+            "4531d410-f408-46c1-b7d9-4efe641108dd"
+          ],
+          "failures": [
+            "e70ba736-1f3e-4a5f-9ff3-b627ed45c28a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

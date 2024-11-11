@@ -84,7 +84,7 @@ npm i mochawesome-converter
 ```
 
 ```js
-const converter = require('mochawesome-converter');
+const margeConvert = require('mochawesome-converter');
 
 let options = {
     testFile: 'mytesfiles/nunit.xml',
@@ -92,7 +92,7 @@ let options = {
     junit: true
 }
 
-converter(options);
+margeConvert(options).then(() => console.log(`Report created: ${options.reportDir}/${options.reportFilename}`));
 ```
 
 ### Options
@@ -111,6 +111,7 @@ converter(options);
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
+- `reportDir` - will be created if path does not exist.
 - `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. Set to `false` to display tests as skipped.
 
 #### Supported `testType` options.

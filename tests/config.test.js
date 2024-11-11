@@ -1,62 +1,66 @@
 const path = require('path');
 const config = require('../src/config');
+const fs = require('fs');
+const expect = require('@jest/globals').expect;
+const test = require('@jest/globals').test;
+const describe = require('@jest/globals').describe;
 
 describe("Config tests", () => {
 
-    test('should throw if no options are provided', () => {
+    test('throw if no options are provided', () => {
         expect(() => config.config()).toThrow(/^options are required/);
     });
 
-    test('should throw if testFile is not provided', () => {
+    test('throw if testFile is not provided', () => {
         expect(() => config.config({})).toThrow(/^Option 'testFile' is required/);
     });
 
-    test('should throw if testFile cannot be resolved', () => {
+    test('throw if testFile cannot be resolved', () => {
         let options = {
             testFile: 'mytestfile.xml'
         }
         expect(() => config.config(options)).toThrow(/^Could not find file/);
     });
 
-    test('should throw if testType is not provided', () => {
+    test('throw if testType is not provided', () => {
         let options = {
-            testFile: path.join(__dirname, 'data/source/xunit.xml')
+            testFile: path.join(__dirname, 'data/source/xunit-qlnet.xml')
         }
         expect(() => config.config(options)).toThrow(/^Option 'testType' is required/);
     });
 
-    test('should throw if testType is incorrect', () => {
+    test('throw if testType is incorrect', () => {
         let options = {
-            testFile: path.join(__dirname, 'data/source/xunit.xml'),
+            testFile: path.join(__dirname, 'data/source/xunit-qlnet.xml'),
             testType: 'xunit123'
         }
         expect(() => config.config(options)).toThrow(/^Test type 'xunit123' is not supported/);
     });
 
-    test('should return correct default values', () => {
+    test('return correct default values', () => {
         let options = {
-            testFile: path.join(__dirname, 'data/source/xunit.xml'),
+            testFile: path.join(__dirname, 'data/source/xunit-qlnet.xml'),
             testType: 'xunit'
         }
 
         let result = config.config(options)
 
-        expect(result.testFile).toBe(path.join(__dirname, 'data/source/xunit.xml'));
+        expect(result.testFile).toBe(path.join(__dirname, 'data/source/xunit-qlnet.xml'));
         expect(result.testType).toBe('xunit');
         expect(result.skippedAsPending).toBe(true);
         expect(result.switchClassnameAndName).toBe(false);
         expect(result.reportDir).toBe('./report');
         expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome.json'));
         expect(result.junit).toBe(false);
-        expect(result.junitReportFilename).toBe('xunit-junit.xml');
+        expect(result.junitReportFilename).toBe('xunit-qlnet-junit.xml');
         expect(result.html).toBe(false);
         expect(result.htmlReportFilename).toBe('mochawesome.html');
         expect(result.saveIntermediateFiles).toBe(false);
     });
 
-    test('should have correct values from assigned options', () => {
+    test('return correct values from assigned options', () => {
         let options = {
-            testFile: path.join(__dirname, 'data/source/xunit.xml'),
+            testFile: path.join(__dirname, 'data/source/xunit-qlnet.xml'),
             testType: 'xunit',
             skippedAsPending: false,
             switchClassnameAndName: true,
@@ -71,7 +75,7 @@ describe("Config tests", () => {
 
         let result = config.config(options)
 
-        expect(result.testFile).toBe(path.join(__dirname, 'data/source/xunit.xml'));
+        expect(result.testFile).toBe(path.join(__dirname, 'data/source/xunit-qlnet.xml'));
         expect(result.testType).toBe('xunit');
         expect(result.skippedAsPending).toBe(false);
         expect(result.switchClassnameAndName).toBe(true);
@@ -82,18 +86,11 @@ describe("Config tests", () => {
         expect(result.html).toBe(true);
         expect(result.htmlReportFilename).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
+
+        expect(fs.existsSync(result.reportDir)).toBe(true)
+
+        if(fs.existsSync(result.reportDir)){
+            fs.rmdirSync(result.reportDir);
+        }
     });
-
-    // test('[5] should result in "buzz"', () => {
-    //     expect(fizz_buzz([5])).toBe('buzz');
-    // });
-    //
-    // test('[15] should result in "fizzbuzz"', () => {
-    //     expect(fizz_buzz([15])).toBe('fizzbuzz');
-    // });
-    //
-    // test('[1,2,3] should result in "1, 2, fizz"', () => {
-    //     expect(fizz_buzz([3])).toBe('fizz');
-    // });
-
 });

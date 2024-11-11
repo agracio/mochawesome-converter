@@ -2,7 +2,7 @@
   "name": "mochawesome-converter",
   "version": "1.0.0",
   "description": "Test report files to Mochawesome and JUnit converter",
-  "main": "scr/converter.js",
+  "main": "src/converter.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "jest"

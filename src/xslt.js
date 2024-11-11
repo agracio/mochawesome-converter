@@ -6,44 +6,82 @@ const junit = require('./junit');
 
 /**
  * @param {ConverterOptions} options
+ * @param {string} xmlString
+ */
+
+async function processXml(options, xmlString){
+    let parsedXml;
+
+    if(options.saveIntermediateFiles){
+        let fileName =  `${path.parse(options.testFile).name}-converted.xml`;
+        fs.writeFileSync(path.join(options.reportDir, fileName), xmlString, 'utf8');
+    }
+
+    try{
+        parsedXml = xmlFormat(xmlString, {forceSelfClosingEmptyTag: true})
+    }
+    catch (e) {
+        throw `\nXML parsed from ${options.testFile} is invalid \n${e.message}`;
+    }
+
+    if(options.junit){
+        fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), parsedXml, 'utf8');
+    }
+
+    let suitesRoot = junit.parseXml(options, parsedXml);
+
+    await junit.convert(options, suitesRoot);
+}
+
+/**
+ * @param {ConverterOptions} options
  * @param {string} xsltFile
  */
-function convert(options, xsltFile){
+async function convert(options, xsltFile){
 
     let xsltString = fs.readFileSync(path.join(__dirname,xsltFile)).toString();
-
     let xmlString = fs.readFileSync(options.testFile).toString();
 
     const xslt = new xsltProcessor.Xslt();
     const xmlParser = new xsltProcessor.XmlParser();
-    xslt.xsltProcess(
-        xmlParser.xmlParse(xmlString),
-        xmlParser.xmlParse(xsltString),
-    ).then(outXmlString => {
+    let xml;
+    try{
+        xml = await xslt.xsltProcess(xmlParser.xmlParse(xmlString), xmlParser.xmlParse(xsltString));
+    }
+    catch (e) {
+        throw `\nCould not process XML file ${xmlString} using XSLT ${xsltString} \n${e.message}`;
+    }
 
-        let parsedXml;
+    await processXml(options, xml);
 
-        if(options.saveIntermediateFiles){
-            let fileName =  `${path.parse(options.testFile).name}-converted.xml`;
-            fs.writeFileSync(path.join(options.reportDir, fileName), outXmlString)
-        }
 
-        try{
-            parsedXml = xmlFormat(outXmlString, {forceSelfClosingEmptyTag: true})
-        }
-        catch (e) {
-            throw `\nXml parsed from ${options.testFile} is invalid \n${e.message}`;
-        }
 
-        if(options.junit){
-            fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), parsedXml)
-        }
-
-        let suitesRoot = junit.parseXml(options, parsedXml);
-
-        junit.convert(options, suitesRoot);
-
-    });
+    // ).then(outXmlString => {
+    //     console.log('2---------------------------------------------------------------------');
+    //     let parsedXml;
+    //
+    //     if(options.saveIntermediateFiles){
+    //         let fileName =  `${path.parse(options.testFile).name}-converted.xml`;
+    //         fs.writeFileSync(path.join(options.reportDir, fileName), outXmlString, 'utf8');
+    //     }
+    //
+    //     try{
+    //         parsedXml = xmlFormat(outXmlString, {forceSelfClosingEmptyTag: true})
+    //     }
+    //     catch (e) {
+    //         throw `\nXml parsed from ${options.testFile} is invalid \n${e.message}`;
+    //     }
+    //
+    //     if(options.junit){
+    //         fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), parsedXml, 'utf8');
+    //     }
+    //
+    //     let suitesRoot = junit.parseXml(options, parsedXml);
+    //
+    //     junit.convert(options, suitesRoot);
+    //
+    // });
+    // console.log('3---------------------------------------------------------------------');
 }
 module.exports = convert;
 

@@ -6,7 +6,6 @@ const marge = require('mochawesome-report-generator');
 const firstBy = require('thenby').firstBy;
 
 let totalTests = 0;
-let results = [];
 let suites = [];
 let suiteTests = 0;
 let pending = 0;
@@ -144,7 +143,7 @@ function parseXml(options, xml){
 
     if(options.saveIntermediateFiles){
         let fileName = `${path.parse(options.testFile).name}-converted.json`;
-        fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2))
+        fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8')
     }
 
     return json.testsuites[0];
@@ -258,10 +257,21 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
  * @param {ConverterOptions} options
  * @param {TestSuites} suitesRoot
  */
-function convert(options, suitesRoot){
+async function convert(options, suitesRoot){
+
+    let results = [];
+
+    totalTests = 0;
+    suites = [];
+    suiteTests = 0;
+    pending = 0;
+    pendingPercent = 0;
+    suiteTime = 0;
+    suiteFailures = 0;
+    testTimes = 0;
 
     if(!suitesRoot){
-        suitesRoot = parseXml(options, fs.readFileSync(options.testFile));
+        suitesRoot = parseXml(options, fs.readFileSync(options.testFile, 'utf8'));
     }
 
     let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
@@ -325,7 +335,7 @@ function convert(options, suitesRoot){
         "results": results
     }
 
-    fs.writeFileSync(options.reportPath, JSON.stringify(mochawesome, null, 2))
+    fs.writeFileSync(options.reportPath, JSON.stringify(mochawesome, null, 2), 'utf8' )
 
     if(options.html){
         const margeOptions = {
@@ -338,8 +348,6 @@ function convert(options, suitesRoot){
             //console.log(`Mochawesome report created: ${margeOptions.reportDir}/${margeOptions.reportFilename}`)
         })
     }
-
-
 }
 
 module.exports = {
