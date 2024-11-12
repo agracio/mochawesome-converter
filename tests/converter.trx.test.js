@@ -10,7 +10,7 @@ const describe = require('@jest/globals').describe;
 const converter = require('../src/converter');
 const config = require('../src/config');
 
-describe("xUnit.net converter tests", () => {
+describe("TRX converter tests", () => {
 
     const outDir= './tests/data/tmp';
     const reportDir= './tests/data/result';
@@ -54,14 +54,20 @@ describe("xUnit.net converter tests", () => {
         await expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
     }
 
-    test('convert xunit-sample.xml', async() => {
-        let options = createOptions('xunit-sample.xml', 'xunit')
+    test('convert trx-mstest-datadriven.trx', async() => {
+        let options = createOptions('trx-mstest-datadriven.trx', 'trx')
         await converter(options);
         await compare(options);
     });
 
-    test('convert xunit-qlnet.xml', async() => {
-        let options = createOptions('xunit-qlnet.xml', 'xunit')
+    test('convert trx-nunit-datadriven.trx', async() => {
+        let options = createOptions('trx-nunit-datadriven.trx', 'trx')
+        await converter(options);
+        await compare(options);
+    });
+
+    test('convert trx-xunit-datadriven.trx', async() => {
+        let options = createOptions('trx-xunit-datadriven.trx', 'trx')
         await converter(options);
         await compare(options);
     });

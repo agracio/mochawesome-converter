@@ -18,7 +18,6 @@ Mochawesome is a custom test reporter originally designed for Mocha Javascript t
 It features a clean modern interface allowing users to easily view and navigate test runs.  
 https://github.com/adamgruber/mochawesome
 
-
 <img align="right" src="./docs/NUnit-mock-assembly-dll5.png" style="padding-top: 25px" alt="Mochawesome Report" width="55%" />
 
 ### List of supported features
@@ -75,6 +74,7 @@ https://github.com/adamgruber/mochawesome
 - Converts **&lt;Output&gt;&lt;ErrorInfo&gt;&lt;StackTrace&gt;** to JUnit **&lt;failure&gt;** stack trace.
 - Converts **&lt;Output&gt;&lt;StdErr&gt;** to JUnit **&lt;system-err&gt;**.
 - Converts **&lt;Output&gt;&lt;StdOut&gt;** to JUnit **&lt;system-out&gt;**.
+- Tests are ordered by name in Mochawesome.
 - Does not resolve test suite times in JUnit output.
 
 ### Usage
@@ -122,8 +122,6 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 | NUnit      | NUnit 3.0+ XML    |
 | xUnit      | xUnit.net v2+ XML |
 | TRX        | Visual Studio TRX |
-
-
 
 
 ## Implementation and documentation in progress...

@@ -1,0 +1,156 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 3,
+    "pending": 0,
+    "failures": 3,
+    "testsRegistered": 6,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 1035
+  },
+  "results": [
+    {
+      "uuid": "8df1ebfb-24f1-40d4-b07f-b093244dbf8d",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "78f30052-7c14-459d-8bb2-279fba17290b",
+          "title": "MSTestSuite",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 1,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Assert.Fail failed. Failing for demo purposes",
+                "estack": "at MsTestSample.DataDriven.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25\n",
+                "diff": null
+              },
+              "uuid": "ae79fd6a-4a64-4540-9266-071d0287eda3",
+              "parentUUID": "78f30052-7c14-459d-8bb2-279fba17290b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 1001,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "ed0b688b-a43a-4b4b-9b9e-efe7fb394b26",
+              "parentUUID": "78f30052-7c14-459d-8bb2-279fba17290b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails (0)",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "504e0602-0a51-4707-a331-a5e989bb26f7",
+              "parentUUID": "78f30052-7c14-459d-8bb2-279fba17290b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails (1)",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 28,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Assert.Fail failed. Failing for demo purposes",
+                "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16\n",
+                "diff": null
+              },
+              "uuid": "12b53913-bf42-4108-b8dc-9bb7969ac7f4",
+              "parentUUID": "78f30052-7c14-459d-8bb2-279fba17290b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails (2)",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "15330716-d804-47d5-bd1f-7db8a3f55f9e",
+              "parentUUID": "78f30052-7c14-459d-8bb2-279fba17290b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed0b688b-a43a-4b4b-9b9e-efe7fb394b26",
+            "504e0602-0a51-4707-a331-a5e989bb26f7",
+            "15330716-d804-47d5-bd1f-7db8a3f55f9e"
+          ],
+          "failures": [
+            "ae79fd6a-4a64-4540-9266-071d0287eda3",
+            "12b53913-bf42-4108-b8dc-9bb7969ac7f4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

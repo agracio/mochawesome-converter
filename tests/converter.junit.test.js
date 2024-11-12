@@ -7,8 +7,7 @@ const beforeAll = require('@jest/globals').beforeAll;
 const afterAll = require('@jest/globals').afterAll;
 const describe = require('@jest/globals').describe;
 
-const margeConvert = require('../src/converter');
-const config = require('../src/config');
+const converter = require('../src/converter');
 
 describe("JUnit converter tests", () => {
 
@@ -57,28 +56,28 @@ describe("JUnit converter tests", () => {
     test('convert junit-jenkins.xml', async() => {
         let options = createOptions('junit-jenkins.xml', 'junit');
 
-        await margeConvert(options);
+        await converter(options);
         compare(options);
     });
 
     test('convert junit-notestsuites.xml', async() => {
         let options = createOptions('junit-notestsuites.xml', 'junit');
 
-        await margeConvert(options);
+        await converter(options);
         compare(options, 'junit-jenkins-mochawesome.json');
     });
 
     test('convert junit-testsuites-noattributes.xml', async() => {
         let options = createOptions('junit-testsuites-noattributes.xml', 'junit');
 
-        await margeConvert(options);
+        await converter(options);
         compare(options, 'junit-jenkins-mochawesome.json');
     });
 
     test('convert junit-mocha-xunit.xml', async() => {
         let options = createOptions('junit-mocha-xunit.xml', 'junit')
 
-        await margeConvert(options);
+        await converter(options);
         compare(options);
     });
 

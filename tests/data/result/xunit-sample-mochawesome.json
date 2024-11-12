@@ -2,11 +2,11 @@
   "stats": {
     "suites": 4,
     "tests": 329,
-    "passes": 8,
+    "passes": 316,
     "pending": 0,
     "failures": 13,
     "testsRegistered": 329,
-    "passPercent": 38.095238095238095,
+    "passPercent": 96.04863221884499,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
