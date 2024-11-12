@@ -75,4 +75,11 @@ describe("JUnit converter tests", () => {
         compare(options, 'junit-jenkins-mochawesome.json');
     });
 
+    test('convert junit-mocha-xunit.xml', async() => {
+        let options = createOptions('junit-mocha-xunit.xml', 'junit')
+
+        await margeConvert(options);
+        compare(options);
+    });
+
 });

@@ -19,12 +19,19 @@ function getError(testcase){
     if(!testcase.failure && !testcase.error){
         return {};
     }
+    let estack;
+    let message
     let failure = testcase.failure ? testcase.failure : testcase.error
     let fail = failure[0];
     let prefix = fail.type ? `${fail.type}: ` : ''
     let diff = !fail.type || fail.type === 'Error' ? null : `${fail.message}`;
-    let message = `${prefix}${fail.message}`;
-    let estack = fail.$t;
+    if(fail.message || fail.$t){
+        message = `${prefix}${fail.message}`;
+        estack = fail.$t;
+    }
+    else if(typeof fail === 'string'){
+        estack = fail;
+    }
 
     return {
         message: message,
@@ -167,10 +174,12 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
         suite.testcase.forEach((testcase) => {
 
             let context = getContext(testcase);
+            let err={};
 
             let uuid = crypto.randomUUID();
             let state = "passed";
             if(testcase.failure || testcase.error){
+                err = getError(testcase);
                 state = "failed";
                 failedTests++;
             }
@@ -205,7 +214,7 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
                 "pending": options.skippedAsPending ? testcase.skipped ? true : false : false,
                 "context": context ? JSON.stringify(context) : null,
                 "code": null,
-                "err": getError(testcase),
+                "err": err,
                 "uuid": uuid,
                 "parentUUID": parentUUID,
                 "isHook": false,
