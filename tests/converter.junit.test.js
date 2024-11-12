@@ -55,21 +55,21 @@ describe("JUnit converter tests", () => {
     }
 
     test('convert junit-jenkins.xml', async() => {
-        let options = createOptions('junit-jenkins.xml', 'junit')
+        let options = createOptions('junit-jenkins.xml', 'junit');
 
         await margeConvert(options);
         compare(options);
     });
 
     test('convert junit-notestsuites.xml', async() => {
-        let options = createOptions('junit-notestsuites.xml', 'junit')
+        let options = createOptions('junit-notestsuites.xml', 'junit');
 
         await margeConvert(options);
         compare(options, 'junit-jenkins-mochawesome.json');
     });
 
     test('convert junit-testsuites-noattributes.xml', async() => {
-        let options = createOptions('junit-testsuites-noattributes.xml', 'junit')
+        let options = createOptions('junit-testsuites-noattributes.xml', 'junit');
 
         await margeConvert(options);
         compare(options, 'junit-jenkins-mochawesome.json');

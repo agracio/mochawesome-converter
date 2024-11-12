@@ -1,0 +1,69 @@
+name: Test
+
+on:
+  push:
+    paths-ignore:
+      - '.github/FUNDING.YML'
+      - '**/*.md'
+      - '**/*.d.ts'
+      - '.gitconfig'
+      - '.gitignore'
+      - '.npmignore'
+      - 'LICENSE*'
+      - '.idea/**'
+      - '.vscode/**'
+      - '.circleci'
+      - '.circleci/*'
+      - 'README.md'
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    name: test-${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-2022]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}${{ hashFiles('package-lock.json') }}
+
+      - name: npm install
+        run: npm i
+
+      - name: "Run tests"
+        run: npm test
+
+#      - name: Upload artifacts
+#        uses: actions/upload-artifact@v4.3.3
+#        if: success()
+#        with:
+#          name: ${{ matrix.os }}-${{ matrix.node }}
+#          path: |
+#            test-results.xml
+#            mochawesome.json
+#
+#      - name: Test Report
+#        uses: phoenix-actions/test-reporting@v15
+#        if: success()
+#        with:
+#          name: test-results-${{ matrix.os }}-node-${{ matrix.node }}
+#          fail-on-error: true
+#          path: mochawesome.json   # Path to test results
+#          reporter: mochawesome-json
+
