@@ -32,7 +32,7 @@ describe("JUnit converter tests", () => {
     }
 
     /**
-     * @returns {TestReportConverterOptions} options
+     * @returns {TestReportConverterOptions}
      */
     function createOptions(file, type){
         return {
@@ -45,10 +45,11 @@ describe("JUnit converter tests", () => {
 
     /**
      * @param {TestReportConverterOptions} options
+     * @param {string?} reportFilename
      */
-    function compare(options){
+    function compare(options, reportFilename){
         let createdReport = fs.readFileSync(path.join(outDir, options.reportFilename), 'utf8');
-        let report = fs.readFileSync(path.join(reportDir, options.reportFilename), 'utf8');
+        let report = fs.readFileSync(path.join(reportDir, reportFilename ?? options.reportFilename), 'utf8');
 
         expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
     }
@@ -60,5 +61,18 @@ describe("JUnit converter tests", () => {
         compare(options);
     });
 
+    test('convert junit-notestsuites.xml', async() => {
+        let options = createOptions('junit-notestsuites.xml', 'junit')
+
+        await margeConvert(options);
+        compare(options, 'junit-jenkins-mochawesome.json');
+    });
+
+    test('convert junit-testsuites-noattributes.xml', async() => {
+        let options = createOptions('junit-testsuites-noattributes.xml', 'junit')
+
+        await margeConvert(options);
+        compare(options, 'junit-jenkins-mochawesome.json');
+    });
 
 });

@@ -3,16 +3,12 @@ const path = require('path');
 const parser = require('p3x-xml2json');
 const crypto = require("crypto");
 const marge = require('mochawesome-report-generator');
-const firstBy = require('thenby').firstBy;
+const _ = require('lodash');
 
-let totalTests = 0;
+let skippedTests = 0;
+let failedTests = 0;
+
 let suites = [];
-let suiteTests = 0;
-let pending = 0;
-let pendingPercent = 0;
-let suiteTime = 0;
-let suiteFailures = 0;
-let testTimes = 0;
 
 /**
  * @param {TestCase} testcase
@@ -115,8 +111,20 @@ function parseXml(options, xml){
         throw `\nCould not read JSON from converted input ${options.testFile}.\n ${e.message}`;
     }
 
+
     if(!json || !json.testsuites || !json.testsuites.length){
-        throw `\nCould not find valid <testsuites> element in converted ${options.testFile}`;
+        if(json && json.testsuite){
+            json.testsuites = [{testsuite: json.testsuite}];
+            delete json['testsuite'];
+        }
+        else{
+            throw `\nCould not find valid <testsuites> or <testsuite> element in converted ${options.testFile}`;
+        }
+    }
+
+    if(options.saveIntermediateFiles){
+        let fileName = `${path.parse(options.testFile).name}-converted.json`;
+        fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8')
     }
 
     if(!json.testsuites[0].testsuite){
@@ -124,26 +132,14 @@ function parseXml(options, xml){
     }
 
     // sort test suites
-    if(json.testsuites[0].testsuite[0].file && testSuites[i].testsuite[0].classname){
-        json.testsuites[0].testsuite.sort(
-            firstBy('file', {ignoreCase:true})
-                .thenBy('classname', {ignoreCase:true})
-                .thenBy('name', {ignoreCase:true})
-        );
+    if(json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].classname){
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'classname'])
     }
     else if(json.testsuites[0].testsuite[0].classname){
-        json.testsuites[0].testsuite.sort(
-            firstBy('classname', {ignoreCase:true})
-                .thenBy('name', {ignoreCase:true})
-        );
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['classname'])
     }
     else{
-        json.testsuites[0].testsuite.sort(firstBy('name', {ignoreCase:true}));
-    }
-
-    if(options.saveIntermediateFiles){
-        let fileName = `${path.parse(options.testFile).name}-converted.json`;
-        fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8')
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['name'])
     }
 
     return json.testsuites[0];
@@ -162,7 +158,6 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
     testSuites.forEach((suite) => {
 
-        totalTests += suite.testcase.length;
         let tests = [];
         let passes = [];
         let failures = [];
@@ -177,12 +172,14 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
             let state = "passed";
             if(testcase.failure || testcase.error){
                 state = "failed";
+                failedTests++;
             }
             if(testcase.skipped){
                 state = options.skippedAsPending ? "pending" : "skipped";
+                skippedTests++;
             }
 
-            let speed = null;
+            let speed = "fast";
             let duration = testcase.time ? Math.ceil(testcase.time * 1000) : 0;
 
             if(!testcase.skipped){
@@ -195,10 +192,6 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
                         speed = "fast";
                     }
                 }
-            }
-
-            if(testcase.time){
-                testTimes += Number(testcase.time);
             }
 
             let test = {
@@ -261,14 +254,12 @@ async function convert(options, suitesRoot){
 
     let results = [];
 
-    totalTests = 0;
+    skippedTests = 0;
+    failedTests = 0;
     suites = [];
-    suiteTests = 0;
-    pending = 0;
-    pendingPercent = 0;
-    suiteTime = 0;
-    suiteFailures = 0;
-    testTimes = 0;
+    let pending = 0;
+    let pendingPercent = 0;
+    let suiteFailures = 0;
 
     if(!suitesRoot){
         suitesRoot = parseXml(options, fs.readFileSync(options.testFile, 'utf8'));
@@ -276,13 +267,22 @@ async function convert(options, suitesRoot){
 
     let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
 
+    let duration =
+        suitesRoot.time
+            ? Number(suitesRoot.time)
+            : _.sumBy(testSuites, suite => _.sumBy(suite.testcase, function(testCase) { return Number(testCase.time); }));
+
+    let tests = suitesRoot.tests
+        ? Number(suitesRoot.tests)
+        : _.sumBy(testSuites,function(suite) { return Number(suite.tests); });
+
     let avg = 0;
-    let rootTime = suitesRoot.time ? Number(suitesRoot.time) : 0;
-    if(suitesRoot.tests && Number(suitesRoot.tests) !== 0){
-        avg = Math.ceil(rootTime * 1000)/Number(suitesRoot.tests);
+
+    if(tests !== 0){
+        avg = Math.ceil(duration * 1000)/tests;
     }
 
-    parseTestSuites(options, testSuites, rootTime, avg);
+    parseTestSuites(options, testSuites, duration, avg);
 
     results.push(
         {
@@ -305,32 +305,37 @@ async function convert(options, suitesRoot){
         }
     );
 
-    pending += suitesRoot.skipped ? Number(suitesRoot.skipped) :  Number(suitesRoot.tests) - totalTests;
+    pending = suitesRoot.skipped ? Number(suitesRoot.skipped) : skippedTests;
 
-    suiteTests += Number(suitesRoot.tests);
-    suiteTime += suitesRoot.time? Number(suitesRoot.time) : 0;
-    suiteFailures += Number(suitesRoot.failures);
-    if(suitesRoot.tests && Number(suitesRoot.tests) !== 0){
-        pendingPercent += (pending/suitesRoot.tests*100);
+    if(suitesRoot.failures){
+        suiteFailures += Number(suitesRoot.failures)
+    }
+    if(suitesRoot.errors){
+        suiteFailures += Number(suitesRoot.errors)
+    }
+    if(!suitesRoot.failures && !suitesRoot.errors){
+        suiteFailures = failedTests;
     }
 
-    let duration = suiteTime !==0 ? suiteTime : testTimes;
+    if(tests !== 0){
+        pendingPercent = (pending/tests*100);
+    }
 
     let mochawesome = {
         "stats": {
             "suites": suites.length,
-            "tests": suiteTests,
-            "passes": totalTests - suiteFailures - pending,
+            "tests": tests,
+            "passes": tests - suiteFailures - pending,
             "pending": options.skippedAsPending ? pending : 0,
             "failures": Number(suiteFailures),
-            "testsRegistered": Number(suiteTests),
-            "passPercent": Math.abs((suiteFailures/totalTests*100)-100) - pendingPercent,
+            "testsRegistered": tests,
+            "passPercent": Math.abs((suiteFailures/tests*100)-100) - pendingPercent,
             "pendingPercent": pendingPercent,
             "other": 0,
             "hasOther": false,
             "skipped": !options.skippedAsPending ? pending : 0,
             "hasSkipped": !options.skippedAsPending && pending > 0,
-            "duration": Math.ceil(duration * 1000),
+            "duration": Math.ceil(duration * 1000)
         },
         "results": results
     }

@@ -53,35 +53,6 @@ async function convert(options, xsltFile){
     }
 
     await processXml(options, xml);
-
-
-
-    // ).then(outXmlString => {
-    //     console.log('2---------------------------------------------------------------------');
-    //     let parsedXml;
-    //
-    //     if(options.saveIntermediateFiles){
-    //         let fileName =  `${path.parse(options.testFile).name}-converted.xml`;
-    //         fs.writeFileSync(path.join(options.reportDir, fileName), outXmlString, 'utf8');
-    //     }
-    //
-    //     try{
-    //         parsedXml = xmlFormat(outXmlString, {forceSelfClosingEmptyTag: true})
-    //     }
-    //     catch (e) {
-    //         throw `\nXml parsed from ${options.testFile} is invalid \n${e.message}`;
-    //     }
-    //
-    //     if(options.junit){
-    //         fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), parsedXml, 'utf8');
-    //     }
-    //
-    //     let suitesRoot = junit.parseXml(options, parsedXml);
-    //
-    //     junit.convert(options, suitesRoot);
-    //
-    // });
-    // console.log('3---------------------------------------------------------------------');
 }
 module.exports = convert;
 

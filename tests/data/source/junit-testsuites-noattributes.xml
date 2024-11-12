@@ -1,4 +1,4 @@
-<testsuites errors="1" failures="0" skipped="0" tests="3" time="0.036988">
+<testsuites>
     <testsuite errors="1" failures="0" hostname="samplename" name="PatientRegistration.Patient Registration (Example)" skipped="0" tests="3" time="0.036988" timestamp="2019-11-08T09:10:24.803951">
         <testcase classname="PatientRegistration.Patient Registration (Example)" name="Create patient" status="passed" time="0.015996">
             <system-out>

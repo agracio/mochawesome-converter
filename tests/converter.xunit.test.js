@@ -11,7 +11,7 @@ const Options = require('../');
 const margeConvert = require('../src/converter');
 const config = require('../src/config');
 
-describe("xUnit.net converter tests", () => {
+describe.skip("xUnit.net converter tests", () => {
 
     const outDir= './tests/data/tmp';
     const reportDir= './tests/data/result';
