@@ -1,0 +1,127 @@
+<test-run id="0" name="TestLibrary.Example.dll"
+          fullname="...\tests\TestLibrary.Example.dll"
+          runstate="Runnable" testcasecount="5" result="Passed" total="5" passed="5" failed="0"
+          inconclusive="0" skipped="0" asserts="5" engine-version="3.11.1.0"
+          clr-version="4.0.30319.42000" start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z"
+          duration="0.133984">
+    <command-line><![CDATA["myexe.exe"]]></command-line>
+    <test-suite type="Assembly" id="0-1008" name="TestLibrary.Example.dll"
+                fullname="TestLibrary.Example.dll" runstate="Runnable" testcasecount="5" result="Passed"
+                start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z" duration="0.053977"
+                total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000"
+                     os-version="Microsoft Windows NT 10.0.19045.0" platform="Win32NT"
+                     cwd="..." machine-name="machine"
+                     user="user" user-domain="domain" culture="it-IT" uiculture="en-US"
+                     os-architecture="x64" />
+        <settings>
+            <setting name="ImageRuntimeVersion" value="4.0.30319" />
+            <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+            <setting name="ImageRequiresX86" value="False" />
+            <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+            <setting name="RuntimeFramework" value="net-4.0" />
+            <setting name="NumberOfTestWorkers" value="16" />
+        </settings>
+        <properties>
+            <property name="_PID" value="8204" />
+            <property name="_APPDOMAIN" value="domain-4461bdb5-TestLibrary.Example.dll" />
+        </properties>
+        <test-suite type="TestSuite" id="0-1009" name="TestLibrary" fullname="TestLibrary"
+                    runstate="Runnable" testcasecount="5" result="Passed"
+                    start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z" duration="0.038980"
+                    total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+            <test-suite type="TestSuite" id="0-1010" name="Example"
+                        fullname="TestLibrary.Example" runstate="Runnable" testcasecount="5"
+                        result="Passed" start-time="2023-01-11 13:53:13Z"
+                        end-time="2023-01-11 13:53:13Z" duration="0.038561" total="5" passed="5"
+                        failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+                <test-suite type="TestFixture" id="0-1000" name="ExampleTestFixture"
+                            fullname="TestLibrary.Example.ExampleTestFixture"
+                            classname="TestLibrary.Example.ExampleTestFixture" runstate="Runnable"
+                            testcasecount="5" result="Passed" start-time="2023-01-11 13:53:13Z"
+                            end-time="2023-01-11 13:53:13Z" duration="0.035698" total="5" passed="5"
+                            failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+                    <test-suite type="ParameterizedMethod" id="0-1004" name="ParameterizedTest"
+                                fullname="TestLibrary.Example.ExampleTestFixture.ParameterizedTest"
+                                classname="TestLibrary.Example.ExampleTestFixture" runstate="Runnable"
+                                testcasecount="2" result="Passed" start-time="2023-01-11 13:53:13Z"
+                                end-time="2023-01-11 13:53:13Z" duration="0.028787" total="2"
+                                passed="2" failed="0" warnings="0" inconclusive="0" skipped="0"
+                                asserts="2">
+                        <test-case id="0-1002" name="Example1"
+                                   fullname="TestLibrary.Example.ExampleTestFixture.Example1"
+                                   methodname="ParameterizedTest"
+                                   classname="TestLibrary.Example.ExampleTestFixture"
+                                   runstate="Runnable" seed="1295788249" result="Passed"
+                                   start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z"
+                                   duration="0.022636" asserts="1">
+                            <properties>
+                                <property name="_JOINTYPE" value="Combinatorial" />
+                                <property name="_PID" value="8204" />
+                                <property name="_APPDOMAIN" value="domain-4461bdb5-TestLibrary.Example.dll" />
+
+                            </properties>
+                            <output><![CDATA[Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.ParameterizedTest
+     ]]></output>
+                        </test-case>
+                        <test-case id="0-1003" name="ParameterizedTest(2,3,5)"
+                                   fullname="TestLibrary.Example.ExampleTestFixture.ParameterizedTest(2,3,5)"
+                                   methodname="ParameterizedTest"
+                                   classname="TestLibrary.Example.ExampleTestFixture"
+                                   runstate="Runnable" seed="891989160" result="Passed"
+                                   start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z"
+                                   duration="0.000241" asserts="1">
+                            <properties>
+                                <property name="Description" value="Ensures aria-label is not present instead of empty string" />
+                            </properties>
+                            <output><![CDATA[Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.ParameterizedTest
+     ]]></output>
+                        </test-case>
+                    </test-suite>
+                    <test-case id="0-1001" name="SimpleTest"
+                               fullname="TestLibrary.Example.ExampleTestFixture.SimpleTest"
+                               methodname="SimpleTest"
+                               classname="TestLibrary.Example.ExampleTestFixture" runstate="Runnable"
+                               seed="202878501" result="Passed" start-time="2023-01-11 13:53:13Z"
+                               end-time="2023-01-11 13:53:13Z" duration="0.001015" asserts="1">
+                        <output><![CDATA[Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.SimpleTest
+     ]]></output>
+                    </test-case>
+                    <test-suite type="ParameterizedMethod" id="0-1007" name="TestWithSource"
+                                fullname="TestLibrary.Example.ExampleTestFixture.TestWithSource"
+                                classname="TestLibrary.Example.ExampleTestFixture" runstate="Runnable"
+                                testcasecount="2" result="Passed" start-time="2023-01-11 13:53:13Z"
+                                end-time="2023-01-11 13:53:13Z" duration="0.000261" total="2"
+                                passed="2" failed="0" warnings="0" inconclusive="0" skipped="0"
+                                asserts="2">
+                        <test-case id="0-1005" name="Example1"
+                                   fullname="TestLibrary.Example.ExampleTestFixture.Example1"
+                                   methodname="TestWithSource"
+                                   classname="TestLibrary.Example.ExampleTestFixture"
+                                   runstate="Runnable" seed="1768044693" result="Passed"
+                                   start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z"
+                                   duration="0.000162" asserts="1">
+                            <output><![CDATA[Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.TestWithSource
+     ]]></output>
+                        </test-case>
+                        <test-case id="0-1006" name="TestWithSource(2,3,5)"
+                                   fullname="TestLibrary.Example.ExampleTestFixture.TestWithSource(2,3,5)"
+                                   methodname="TestWithSource"
+                                   classname="TestLibrary.Example.ExampleTestFixture"
+                                   runstate="Runnable" seed="858491452" result="Passed"
+                                   start-time="2023-01-11 13:53:13Z" end-time="2023-01-11 13:53:13Z"
+                                   duration="0.000051" asserts="1">
+                            <output><![CDATA[Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.TestWithSource
+     ]]></output>
+                        </test-case>
+                    </test-suite>
+                </test-suite>
+            </test-suite>
+        </test-suite>
+    </test-suite>
+</test-run>

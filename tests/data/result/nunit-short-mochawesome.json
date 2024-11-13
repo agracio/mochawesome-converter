@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 134
+  },
+  "results": [
+    {
+      "uuid": "30440d83-1ecf-4510-a95f-bdec8ab16315",
+      "title": "TestLibrary.Example.dll",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "575be30b-7d08-4f3e-9786-eb3f98663a1d",
+          "title": "ExampleTestFixture",
+          "file": "TestLibrary.Example.ExampleTestFixture",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "SimpleTest",
+              "fullTitle": "TestLibrary.Example.ExampleTestFixture.SimpleTest",
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.SimpleTest\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "c857820b-0bc3-4e9b-a438-686de9a804e8",
+              "parentUUID": "575be30b-7d08-4f3e-9786-eb3f98663a1d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c857820b-0bc3-4e9b-a438-686de9a804e8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "967ebcb8-642c-4fc8-aec5-2b5f85e16b6c",
+          "title": "ParameterizedTest",
+          "file": "TestLibrary.Example.ExampleTestFixture.ParameterizedTest",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Example1",
+              "fullTitle": "TestLibrary.Example.ExampleTestFixture.Example1",
+              "duration": 23,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: Combinatorial\",\"_PID: 8204\",\"_APPDOMAIN: domain-4461bdb5-TestLibrary.Example.dll\"]},{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.ParameterizedTest\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "e688973d-bf8e-4dcb-a11d-9591880b645e",
+              "parentUUID": "967ebcb8-642c-4fc8-aec5-2b5f85e16b6c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ParameterizedTest(2,3,5)",
+              "fullTitle": "TestLibrary.Example.ExampleTestFixture.ParameterizedTest(2,3,5)",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"Description: Ensures aria-label is not present instead of empty string\"]},{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.ParameterizedTest\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "1ce3ad5d-e796-422f-87a5-2214fea970ad",
+              "parentUUID": "967ebcb8-642c-4fc8-aec5-2b5f85e16b6c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e688973d-bf8e-4dcb-a11d-9591880b645e",
+            "1ce3ad5d-e796-422f-87a5-2214fea970ad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "5b9ae9a7-a6e8-4dec-b7d7-cb43e13e57db",
+          "title": "TestWithSource",
+          "file": "TestLibrary.Example.ExampleTestFixture.TestWithSource",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Example1",
+              "fullTitle": "TestLibrary.Example.ExampleTestFixture.Example1",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.TestWithSource\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "bf115fdd-4525-48b0-8465-47eeff2456e9",
+              "parentUUID": "5b9ae9a7-a6e8-4dec-b7d7-cb43e13e57db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TestWithSource(2,3,5)",
+              "fullTitle": "TestLibrary.Example.ExampleTestFixture.TestWithSource(2,3,5)",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.TestWithSource\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "14845f6a-b75f-4f0f-bf7a-c6d1c7aa0f78",
+              "parentUUID": "5b9ae9a7-a6e8-4dec-b7d7-cb43e13e57db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf115fdd-4525-48b0-8465-47eeff2456e9",
+            "14845f6a-b75f-4f0f-bf7a-c6d1c7aa0f78"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

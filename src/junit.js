@@ -126,7 +126,7 @@ function parseXml(options, xml){
     if(options.testType === 'trx' && json.testsuites[0].testsuite[0].testcase.length !== 0){
         json = parseTrx(options, json);
     }
-
+    //console.log(_.sumBy(json.testsuites[0].testsuite, function(suite) { return Number(suite.tests); }));
     return json.testsuites[0];
 }
 
