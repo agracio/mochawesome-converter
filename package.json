@@ -27,6 +27,14 @@
     "xUnit",
     "TRX"
   ],
+  "tags": [
+    "mochawesome",
+    "mocha",
+    "JUnit",
+    "NUnit",
+    "xUnit",
+    "TRX"
+  ],
   "dependencies": {
     "lodash": "^4.17.21",
     "mochawesome-report-generator": "^6.2.0",
