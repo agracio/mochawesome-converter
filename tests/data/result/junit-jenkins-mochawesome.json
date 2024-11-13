@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "fb7d8707-a801-47bc-b1a6-9ef17737d540",
+      "uuid": "f0a8889a-a3a3-44ca-a98b-c56b44a2820c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+          "uuid": "4e9d6c4e-e0d0-4edf-8641-e659b8521ea3",
           "title": "PatientRegistration.Patient Registration (Example)",
           "file": "",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n\\n  @tc:62\\n  Scenario: Create patient\\n    When I create a patient with name \\\"John Doe\\\" on the host ... passed in 0.005s\\n    Then the patient \\\"John Doe\\\" should also be created in the application. ... passed in 0.011s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
               "code": null,
               "err": {},
-              "uuid": "475d5a7e-6af8-45cb-a91a-5eb3318fd798",
-              "parentUUID": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+              "uuid": "f1cfcfd4-7a47-4eb7-8980-100f94f85ce6",
+              "parentUUID": "4e9d6c4e-e0d0-4edf-8641-e659b8521ea3",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n\\n  @tc:63\\n  Scenario: Close patient\\n    Given a patient is opened in the application ... passed in 0.005s\\n    When I close the patient on the host ... passed in 0.005s\\n    Then the patient should also be closed in the application. ... passed in 0.005s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
               "code": null,
               "err": {},
-              "uuid": "4531d410-f408-46c1-b7d9-4efe641108dd",
-              "parentUUID": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+              "uuid": "b6496130-9548-44ff-b7de-954ed06af71d",
+              "parentUUID": "4e9d6c4e-e0d0-4edf-8641-e659b8521ea3",
               "isHook": false,
               "skipped": false
             },
@@ -79,21 +79,21 @@
               "err": {
                 "message": "TypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
                 "estack": "Failing step: When I change the patient name to \"John Doe\" on the host ... failed in 0.001s\nLocation: tests/features/PatientRegistration.feature:20\nTraceback (most recent call last):\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"tests\\features\\steps\\step_patient_registration.py\", line 33, in step_impl\n    context.patient.edit(first_name=\"John\", last_name=\"Doe\")\nTypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
-                "diff": "edit() missing 2 required positional arguments: 'birth_date' and 'sex'"
+                "diff": null
               },
-              "uuid": "e70ba736-1f3e-4a5f-9ff3-b627ed45c28a",
-              "parentUUID": "6e750215-897a-4c32-90a7-e54c5485f5fd",
+              "uuid": "0571e92b-63e8-4b1d-a573-4af8b0c50365",
+              "parentUUID": "4e9d6c4e-e0d0-4edf-8641-e659b8521ea3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "475d5a7e-6af8-45cb-a91a-5eb3318fd798",
-            "4531d410-f408-46c1-b7d9-4efe641108dd"
+            "f1cfcfd4-7a47-4eb7-8980-100f94f85ce6",
+            "b6496130-9548-44ff-b7de-954ed06af71d"
           ],
           "failures": [
-            "e70ba736-1f3e-4a5f-9ff3-b627ed45c28a"
+            "0571e92b-63e8-4b1d-a573-4af8b0c50365"
           ],
           "pending": [],
           "skipped": [],

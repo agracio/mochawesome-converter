@@ -1,0 +1,135 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 1,
+    "failures": 1,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 25,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 1038
+  },
+  "results": [
+    {
+      "uuid": "5bfacde0-6678-4e02-be65-cb8b3e101a63",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+          "title": "MsTestSample.SimpleTests",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 31,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Assert.Fail failed. Failing for demo purposes",
+                "estack": "at MsTestSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20\n",
+                "diff": null
+              },
+              "uuid": "ebbb254d-c704-4523-8941-d874b5b09f34",
+              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ignored_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 0,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped: Ignoring for testing ;-)\"]",
+              "code": null,
+              "err": {},
+              "uuid": "46214756-ce84-426a-a7ca-dd743c179cc9",
+              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Passing_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "c9989c6b-bd33-4983-8098-6cd452e9437c",
+              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 1002,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "49ccd87d-09b4-49cf-ae9d-d6ec0344f029",
+              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c9989c6b-bd33-4983-8098-6cd452e9437c",
+            "49ccd87d-09b4-49cf-ae9d-d6ec0344f029"
+          ],
+          "failures": [
+            "ebbb254d-c704-4523-8941-d874b5b09f34"
+          ],
+          "pending": [
+            "46214756-ce84-426a-a7ca-dd743c179cc9"
+          ],
+          "skipped": [],
+          "duration": 1038,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

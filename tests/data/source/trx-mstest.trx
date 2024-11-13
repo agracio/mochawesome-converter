@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="bcd0e795-29d5-4c08-a56e-188729a4793d" name="dev@DEV-DESKTOP 2024-11-12 22:59:43" runUser="DEV-DESKTOP\dev" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-11-12T22:59:43.7870055+00:00" queuing="2024-11-12T22:59:43.7870056+00:00" start="2024-11-12T22:59:41.8946009+00:00" finish="2024-11-12T22:59:44.4347336+00:00" />
+  <TestSettings name="default" id="a46386e3-d8fa-451c-bc0c-e1a205415e10">
+    <Deployment runDeploymentRoot="dev_DEV-DESKTOP_2024-11-12_22_59_43" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a7921989-067e-42e0-a577-be3757efc5cd" testId="01407a96-f35d-d87c-d1a5-6558ca255a72" testName="Slow_test" computerName="DEV-DESKTOP" duration="00:00:01.0081967" startTime="2024-11-12T22:59:42.3695009+00:00" endTime="2024-11-12T22:59:43.3780136+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7921989-067e-42e0-a577-be3757efc5cd" />
+    <UnitTestResult executionId="5d15d5b3-664c-4995-8b72-aeebc08f2d41" testId="b853b9dd-7241-77d0-4ca6-9e6096ae8baf" testName="Two_pass_one_fails (0)" computerName="DEV-DESKTOP" duration="00:00:00.0014969" startTime="2024-11-12T22:59:42.3379601+00:00" endTime="2024-11-12T22:59:42.3492810+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d15d5b3-664c-4995-8b72-aeebc08f2d41" />
+    <UnitTestResult executionId="128c2c23-5d4a-46e4-bc3c-ef6cb95708d6" testId="40db5806-5b80-535a-b5bb-e7a804a1dab2" testName="Two_pass_one_fails (2)" computerName="DEV-DESKTOP" duration="00:00:00.0000065" startTime="2024-11-12T22:59:42.3681522+00:00" endTime="2024-11-12T22:59:42.3682822+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="128c2c23-5d4a-46e4-bc3c-ef6cb95708d6" />
+    <UnitTestResult executionId="3097f994-87f6-4494-9fce-8650b61d0e77" testId="6ddb1154-0e99-d9a2-ed12-fce50b95ccdd" testName="Failing_test" computerName="DEV-DESKTOP" duration="00:00:00.0003432" startTime="2024-11-12T22:59:43.3784123+00:00" endTime="2024-11-12T22:59:43.3788121+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3097f994-87f6-4494-9fce-8650b61d0e77">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Failing for demo purposes</Message>
+          <StackTrace>   at MsTestSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\MsTestSample\SimpleTests.cs:line 20&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f729d86-f005-4a0a-bd46-bc85c8367982" testId="27e51588-5739-0cd4-f525-ef547937e566" testName="Slow_test" computerName="DEV-DESKTOP" duration="00:00:01.0127312" startTime="2024-11-12T22:59:43.3788427+00:00" endTime="2024-11-12T22:59:44.3917437+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f729d86-f005-4a0a-bd46-bc85c8367982" />
+    <UnitTestResult executionId="4545017a-1dd9-4f32-962c-b6d0cb486cd2" testId="372ecba8-ecf3-805f-c081-8e97885c92b6" testName="Failing_test" computerName="DEV-DESKTOP" duration="00:00:00.0002595" startTime="2024-11-12T22:59:42.3684495+00:00" endTime="2024-11-12T22:59:42.3694774+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4545017a-1dd9-4f32-962c-b6d0cb486cd2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Failing for demo purposes</Message>
+          <StackTrace>   at MsTestSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\MsTestSample\DataDriven.cs:line 25&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4390d64a-ab19-4baa-809f-007e4b2859b9" testId="877cd18f-4c55-970a-1c15-feba664fff72" testName="Ignored_test" computerName="DEV-DESKTOP" startTime="2024-11-12T22:59:44.3918711+00:00" endTime="2024-11-12T22:59:44.3922727+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4390d64a-ab19-4baa-809f-007e4b2859b9">
+      <Output>
+        <ErrorInfo>
+          <Message>Ignoring for testing ;-)</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b1e2eb2c-ceb0-419d-a1cd-3b310d3620e5" testId="ab27d66b-a601-ec03-d263-283b72d1eae1" testName="Passing_test" computerName="DEV-DESKTOP" duration="00:00:00.0000685" startTime="2024-11-12T22:59:43.3780963+00:00" endTime="2024-11-12T22:59:43.3783818+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1e2eb2c-ceb0-419d-a1cd-3b310d3620e5" />
+    <UnitTestResult executionId="d1c963d4-37be-4410-9730-cefb69fc5b9e" testId="54257242-ab00-dcd6-12f8-35dde0a52d3d" testName="Two_pass_one_fails (1)" computerName="DEV-DESKTOP" duration="00:00:00.0154092" startTime="2024-11-12T22:59:42.3522893+00:00" endTime="2024-11-12T22:59:42.3680411+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1c963d4-37be-4410-9730-cefb69fc5b9e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Failing for demo purposes</Message>
+          <StackTrace>   at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\MsTestSample\DataDriven.cs:line 16&#xD;
+   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Passing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="ab27d66b-a601-ec03-d263-283b72d1eae1">
+      <Execution id="b1e2eb2c-ceb0-419d-a1cd-3b310d3620e5" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.SimpleTests" name="Passing_test" />
+    </UnitTest>
+    <UnitTest name="Slow_test" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="27e51588-5739-0cd4-f525-ef547937e566">
+      <Execution id="7f729d86-f005-4a0a-bd46-bc85c8367982" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.SimpleTests" name="Slow_test" />
+    </UnitTest>
+    <UnitTest name="Slow_test" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="01407a96-f35d-d87c-d1a5-6558ca255a72">
+      <Execution id="a7921989-067e-42e0-a577-be3757efc5cd" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.DataDriven" name="Slow_test" />
+    </UnitTest>
+    <UnitTest name="Failing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="372ecba8-ecf3-805f-c081-8e97885c92b6">
+      <Execution id="4545017a-1dd9-4f32-962c-b6d0cb486cd2" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.DataDriven" name="Failing_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails (1)" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="54257242-ab00-dcd6-12f8-35dde0a52d3d">
+      <Execution id="d1c963d4-37be-4410-9730-cefb69fc5b9e" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.DataDriven" name="Two_pass_one_fails" />
+    </UnitTest>
+    <UnitTest name="Failing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="6ddb1154-0e99-d9a2-ed12-fce50b95ccdd">
+      <Execution id="3097f994-87f6-4494-9fce-8650b61d0e77" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.SimpleTests" name="Failing_test" />
+    </UnitTest>
+    <UnitTest name="Ignored_test" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="877cd18f-4c55-970a-1c15-feba664fff72">
+      <Execution id="4390d64a-ab19-4baa-809f-007e4b2859b9" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.SimpleTests" name="Ignored_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails (0)" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="b853b9dd-7241-77d0-4ca6-9e6096ae8baf">
+      <Execution id="5d15d5b3-664c-4995-8b72-aeebc08f2d41" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.DataDriven" name="Two_pass_one_fails" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails (2)" storage="c:\projects\trx2junit\samples\artifacts\bin\mstestsample\debug\mstestsample.dll" id="40db5806-5b80-535a-b5bb-e7a804a1dab2">
+      <Execution id="128c2c23-5d4a-46e4-bc3c-ef6cb95708d6" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\MsTestSample\debug\MsTestSample.dll" adapterTypeName="executor://mstestadapter/v2" className="MsTestSample.DataDriven" name="Two_pass_one_fails" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="01407a96-f35d-d87c-d1a5-6558ca255a72" executionId="a7921989-067e-42e0-a577-be3757efc5cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b853b9dd-7241-77d0-4ca6-9e6096ae8baf" executionId="5d15d5b3-664c-4995-8b72-aeebc08f2d41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40db5806-5b80-535a-b5bb-e7a804a1dab2" executionId="128c2c23-5d4a-46e4-bc3c-ef6cb95708d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ddb1154-0e99-d9a2-ed12-fce50b95ccdd" executionId="3097f994-87f6-4494-9fce-8650b61d0e77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27e51588-5739-0cd4-f525-ef547937e566" executionId="7f729d86-f005-4a0a-bd46-bc85c8367982" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="372ecba8-ecf3-805f-c081-8e97885c92b6" executionId="4545017a-1dd9-4f32-962c-b6d0cb486cd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="877cd18f-4c55-970a-1c15-feba664fff72" executionId="4390d64a-ab19-4baa-809f-007e4b2859b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab27d66b-a601-ec03-d263-283b72d1eae1" executionId="b1e2eb2c-ceb0-419d-a1cd-3b310d3620e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54257242-ab00-dcd6-12f8-35dde0a52d3d" executionId="d1c963d4-37be-4410-9730-cefb69fc5b9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="8" passed="5" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test 'Ignored_test' was skipped in the test run.&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

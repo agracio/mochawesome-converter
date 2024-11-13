@@ -1,75 +1,75 @@
-const path = require('path');
 const fs = require("fs");
 
-const expect = require('@jest/globals').expect;
 const test = require('@jest/globals').test;
 const beforeAll = require('@jest/globals').beforeAll;
 const afterAll = require('@jest/globals').afterAll;
 const describe = require('@jest/globals').describe;
 
+const setup = require('./setup');
 const converter = require('../src/converter');
-const config = require('../src/config');
 
-describe("TRX converter tests", () => {
-
-    const outDir= './tests/data/tmp';
-    const reportDir= './tests/data/result';
+describe.only("TRX converter tests", () => {
 
     beforeAll(() => {
-        if(fs.existsSync(outDir)){
-            fs.rmSync(outDir, { recursive: true, force: true });
-        }
+        setup.removeTempDir();
     });
 
     // afterAll(() => {
-    //     if(fs.existsSync(outDir)){
-    //         fs.rmSync(outDir, { recursive: true, force: true });
-    //     }
+    //     setup.removeTempDir();
     // });
 
-    function getFilename(file){
-        return `${path.parse(file).name}-mochawesome.json`
-    }
-
-    /**
-     * @returns {TestReportConverterOptions} options
-     */
-    function createOptions(file, type){
-        return {
-            testFile: path.join(__dirname, `data/source/${file}`),
-            testType: type,
-            reportDir: outDir,
-            reportFilename: getFilename(file),
-            junit: true
-        }
-    }
-
-    /**
-     * @param {TestReportConverterOptions} options
-     */
-    async function compare(options){
-        let createdReport = fs.readFileSync(path.join(outDir, options.reportFilename), 'utf8');
-        let report = fs.readFileSync(path.join(reportDir, options.reportFilename), 'utf8');
-
-        await expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
-    }
-
     test('convert trx-mstest-datadriven.trx', async() => {
-        let options = createOptions('trx-mstest-datadriven.trx', 'trx')
+        let options = setup.createOptions('trx-mstest-datadriven.trx', 'trx')
         await converter(options);
-        await compare(options);
+        setup.compare(options);
     });
 
     test('convert trx-nunit-datadriven.trx', async() => {
-        let options = createOptions('trx-nunit-datadriven.trx', 'trx')
+        let options = setup.createOptions('trx-nunit-datadriven.trx', 'trx')
         await converter(options);
-        await compare(options);
+        setup.compare(options);
     });
 
     test('convert trx-xunit-datadriven.trx', async() => {
-        let options = createOptions('trx-xunit-datadriven.trx', 'trx')
+        let options = setup.createOptions('trx-xunit-datadriven.trx', 'trx')
         await converter(options);
-        await compare(options);
+        setup.compare(options);
+    });
+
+    test('convert trx-mstest-ignore.trx', async() => {
+        let options = setup.createOptions('trx-mstest-ignore.trx', 'trx')
+        await converter(options);
+        setup.compare(options);
+    });
+
+    test('convert trx-nunit-ignore.trx', async() => {
+        let options = setup.createOptions('trx-nunit-ignore.trx', 'trx')
+        await converter(options);
+        setup.compare(options);
+    });
+
+    test('convert trx-xunit-ignore.trx', async() => {
+        let options = setup.createOptions('trx-xunit-ignore.trx', 'trx')
+        await converter(options);
+        setup.compare(options);
+    });
+
+    test('convert trx-mstest.trx', async() => {
+        let options = setup.createOptions('trx-mstest.trx', 'trx')
+        await converter(options);
+        setup.compare(options);
+    });
+
+    test('convert trx-nunit.trx', async() => {
+        let options = setup.createOptions('trx-nunit.trx', 'trx')
+        await converter(options);
+        setup.compare(options);
+    });
+
+    test('convert trx-xunit.trx', async() => {
+        let options = setup.createOptions('trx-xunit.trx', 'trx')
+        await converter(options);
+        setup.compare(options);
     });
 
 });

@@ -1,0 +1,371 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 14,
+    "passes": 8,
+    "pending": 1,
+    "failures": 5,
+    "testsRegistered": 14,
+    "passPercent": 57.14285714285714,
+    "pendingPercent": 7.142857142857142,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 3064
+  },
+  "results": [
+    {
+      "uuid": "cca1775c-ca78-464c-b944-2acab1ddbb2e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "02f7c8eb-d67e-4f8c-9b82-85b17701391d",
+          "title": "XUnitSample.DataDriven",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "XUnitSample.DataDriven",
+              "duration": 1,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes Expected: True Actual:   False",
+                "estack": "at XUnitSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\XUnitSample\\DataDriven.cs:line 26\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
+                "diff": null
+              },
+              "uuid": "ef1c0374-b71e-4b58-a844-e2fcf4408ef1",
+              "parentUUID": "02f7c8eb-d67e-4f8c-9b82-85b17701391d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "XUnitSample.DataDriven",
+              "duration": 1008,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "0ebc0f61-7412-41bb-9acd-86fb62a4a4f0",
+              "parentUUID": "02f7c8eb-d67e-4f8c-9b82-85b17701391d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails(arg: 0)",
+              "fullTitle": "XUnitSample.DataDriven",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "4be3d477-3340-4e6b-94d5-6730b296bce2",
+              "parentUUID": "02f7c8eb-d67e-4f8c-9b82-85b17701391d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails(arg: 1)",
+              "fullTitle": "XUnitSample.DataDriven",
+              "duration": 1,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes Expected: True Actual:   False",
+                "estack": "at XUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\XUnitSample\\DataDriven.cs:line 17\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)",
+                "diff": null
+              },
+              "uuid": "c015f8d3-55c5-46cb-abe3-cfb912537938",
+              "parentUUID": "02f7c8eb-d67e-4f8c-9b82-85b17701391d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails(arg: 2)",
+              "fullTitle": "XUnitSample.DataDriven",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "83c24feb-8e4b-46d2-9372-fe526f0dd424",
+              "parentUUID": "02f7c8eb-d67e-4f8c-9b82-85b17701391d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ebc0f61-7412-41bb-9acd-86fb62a4a4f0",
+            "4be3d477-3340-4e6b-94d5-6730b296bce2",
+            "83c24feb-8e4b-46d2-9372-fe526f0dd424"
+          ],
+          "failures": [
+            "ef1c0374-b71e-4b58-a844-e2fcf4408ef1",
+            "c015f8d3-55c5-46cb-abe3-cfb912537938"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1009,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "664448ab-7054-46d2-a50b-0acd60dd785c",
+          "title": "XUnitSample.MemberData",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "XUnitSample.MemberData",
+              "duration": 2,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes Expected: True Actual:   False",
+                "estack": "at XUnitSample.MemberData.Failing_test() in C:\\projects\\trx2junit\\samples\\XUnitSample\\MemberData.cs:line 32\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
+                "diff": null
+              },
+              "uuid": "dd25b2d5-031c-4801-99c0-ac33a89f1542",
+              "parentUUID": "664448ab-7054-46d2-a50b-0acd60dd785c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "XUnitSample.MemberData",
+              "duration": 1014,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "3825b6e4-2d5e-492f-aa59-1deb88f138a5",
+              "parentUUID": "664448ab-7054-46d2-a50b-0acd60dd785c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails(obj: { index = 0 })",
+              "fullTitle": "XUnitSample.MemberData",
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "2570f649-4be9-4b7c-87b6-96c6a51096b7",
+              "parentUUID": "664448ab-7054-46d2-a50b-0acd60dd785c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails(obj: { index = 1 })",
+              "fullTitle": "XUnitSample.MemberData",
+              "duration": 1,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes Expected: True Actual:   False",
+                "estack": "at XUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\\projects\\trx2junit\\samples\\XUnitSample\\MemberData.cs:line 23\n\n   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)",
+                "diff": null
+              },
+              "uuid": "d3da71af-fc26-4d45-9c43-387dce501a45",
+              "parentUUID": "664448ab-7054-46d2-a50b-0acd60dd785c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails(obj: { index = 2 })",
+              "fullTitle": "XUnitSample.MemberData",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "5b4e45e2-9156-4138-b48d-900d99d91ed3",
+              "parentUUID": "664448ab-7054-46d2-a50b-0acd60dd785c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3825b6e4-2d5e-492f-aa59-1deb88f138a5",
+            "2570f649-4be9-4b7c-87b6-96c6a51096b7",
+            "5b4e45e2-9156-4138-b48d-900d99d91ed3"
+          ],
+          "failures": [
+            "dd25b2d5-031c-4801-99c0-ac33a89f1542",
+            "d3da71af-fc26-4d45-9c43-387dce501a45"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1039,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "17ba9e39-6fd5-4b77-bca3-9793a007dc2f",
+          "title": "XUnitSample.SimpleTests",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 2,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes Expected: True Actual:   False",
+                "estack": "at XUnitSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\XUnitSample\\SimpleTests.cs:line 20\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
+                "diff": null
+              },
+              "uuid": "d17691f0-5d73-489d-a6dc-6dbea3677f4e",
+              "parentUUID": "17ba9e39-6fd5-4b77-bca3-9793a007dc2f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ignored_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 1,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped: Ignoring for testing ;-)\"]",
+              "code": null,
+              "err": {},
+              "uuid": "36bc829e-ebeb-4815-b1ea-8a0b954a0622",
+              "parentUUID": "17ba9e39-6fd5-4b77-bca3-9793a007dc2f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Passing_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "6ccfeacf-6807-4d50-a7f6-3a9610c0d76b",
+              "parentUUID": "17ba9e39-6fd5-4b77-bca3-9793a007dc2f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 1014,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "e40a19b6-2c75-4fe2-9c7b-145edca0ed51",
+              "parentUUID": "17ba9e39-6fd5-4b77-bca3-9793a007dc2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6ccfeacf-6807-4d50-a7f6-3a9610c0d76b",
+            "e40a19b6-2c75-4fe2-9c7b-145edca0ed51"
+          ],
+          "failures": [
+            "d17691f0-5d73-489d-a6dc-6dbea3677f4e"
+          ],
+          "pending": [
+            "36bc829e-ebeb-4815-b1ea-8a0b954a0622"
+          ],
+          "skipped": [],
+          "duration": 1016,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

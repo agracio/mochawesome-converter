@@ -12,11 +12,14 @@
     <xsl:if test="test-case">
       <testsuite name="{@name}" classname="{@fullname}" tests="{@testcasecount}" time="{@duration}" failures="{@failed}" skipped="{@skipped}" timestamp="{@start-time}">
         <xsl:apply-templates select="test-case"/>
+        <xsl:apply-templates select="properties"/>
+        <xsl:apply-templates select="output"/>
       </testsuite>
       <xsl:apply-templates select="test-suite"/>
     </xsl:if>
+
     <xsl:if test="not(test-case)">
-      <xsl:apply-templates/>
+      <xsl:apply-templates select="test-suite"/>
     </xsl:if>
   </xsl:template>
 
@@ -37,7 +40,8 @@
           <xsl:value-of select="./failure/stack-trace"/>
         </failure>
       </xsl:if>
-      <xsl:apply-templates/>
+      <xsl:apply-templates select="properties"/>
+      <xsl:apply-templates select="output"/>
     </testcase>
   </xsl:template>
 

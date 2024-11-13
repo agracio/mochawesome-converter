@@ -46,8 +46,8 @@ https://github.com/adamgruber/mochawesome
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 - Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
 - Test suites are displayed in alphabetical order by `file` and `classname` attributes.
-- Tests suites without any tests are not displayed.
-- Attachments currently not supported.
+- Tests suites without any tests are excluded from Mochawesome and JUnit.
+- Attachments are not supported.
 
 ### JUnit 
 
@@ -70,10 +70,10 @@ https://github.com/adamgruber/mochawesome
 
 ### Visual Studio TRX
 
-- Converts **&lt;Output&gt;&lt;ErrorInfo&gt;&lt;Message&gt;** to JUnit **&lt;failure&gt;** message.
-- Converts **&lt;Output&gt;&lt;ErrorInfo&gt;&lt;StackTrace&gt;** to JUnit **&lt;failure&gt;** stack trace.
-- Converts **&lt;Output&gt;&lt;StdErr&gt;** to JUnit **&lt;system-err&gt;**.
-- Converts **&lt;Output&gt;&lt;StdOut&gt;** to JUnit **&lt;system-out&gt;**.
+- Converts `Output/ErrorInfo/Message` to JUnit **&lt;failure&gt;** message.
+- Converts `Output/ErrorInfo/StackTrace` to JUnit **&lt;failure&gt;** stack trace.
+- Converts `Output/StdErr` to JUnit **&lt;system-err&gt;**.
+- Converts `Output/StdOut` to JUnit **&lt;system-out&gt;**.
 - Tests are ordered by name in Mochawesome.
 - Does not resolve test suite times in JUnit output.
 

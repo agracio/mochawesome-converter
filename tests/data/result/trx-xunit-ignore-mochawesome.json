@@ -1,0 +1,135 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 1,
+    "failures": 1,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 25,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 1028
+  },
+  "results": [
+    {
+      "uuid": "39e58b31-bc7a-460c-88a4-c2d14bc3cab8",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a24ee37d-80ff-4305-a6b5-30da74474f7b",
+          "title": "XUnitSample.SimpleTests",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 6,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes Expected: True Actual:   False",
+                "estack": "at XUnitSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\XUnitSample\\SimpleTests.cs:line 20",
+                "diff": null
+              },
+              "uuid": "24d31871-4617-4af7-bcbd-0d021b1e0155",
+              "parentUUID": "a24ee37d-80ff-4305-a6b5-30da74474f7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ignored_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 1,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped: Ignoring for testing ;-)\"]",
+              "code": null,
+              "err": {},
+              "uuid": "13dfb96e-392e-46c4-917e-0750bff1e578",
+              "parentUUID": "a24ee37d-80ff-4305-a6b5-30da74474f7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Passing_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "0c851e75-7089-43a4-bb42-e5c4987b95a6",
+              "parentUUID": "a24ee37d-80ff-4305-a6b5-30da74474f7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "XUnitSample.SimpleTests",
+              "duration": 1019,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "3b222557-e005-49e5-b09d-dccb3bd8618f",
+              "parentUUID": "a24ee37d-80ff-4305-a6b5-30da74474f7b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c851e75-7089-43a4-bb42-e5c4987b95a6",
+            "3b222557-e005-49e5-b09d-dccb3bd8618f"
+          ],
+          "failures": [
+            "24d31871-4617-4af7-bcbd-0d021b1e0155"
+          ],
+          "pending": [
+            "13dfb96e-392e-46c4-917e-0750bff1e578"
+          ],
+          "skipped": [],
+          "duration": 1028,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

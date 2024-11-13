@@ -27,11 +27,13 @@
     <xsl:if test="test">
       <testsuite name="{replace(replace(@name, 'Test collection for ', ''),'TestSuite.','')}" tests="{@total}" time="{@time}" passed="{@passed}" failed="{@failed}" skipped="{@skipped}">
         <xsl:apply-templates select="test"/>
+        <xsl:apply-templates select="traits"/>
+        <xsl:apply-templates select="output"/>
       </testsuite>
       <xsl:apply-templates select="collection"/>
     </xsl:if>
     <xsl:if test="not(test)">
-      <xsl:apply-templates/>
+      <xsl:apply-templates select="collection"/>
     </xsl:if>
   </xsl:template>
 

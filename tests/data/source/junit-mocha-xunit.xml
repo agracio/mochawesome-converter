@@ -1,13 +1,13 @@
 <testsuite name="Mocha Tests" tests="14" failures="0" errors="5" skipped="2" timestamp="Mon, 23 Sep 2024 14:37:42 GMT" time="0.056">
-<testcase classname="edge.func" name="[CoreCLR] exists" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"/>
-<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile as string" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"><skipped/></testcase>
-<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile as options property" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"><skipped/></testcase>
-<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile and type name" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0.046"><failure>Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.
+<testcase classname="edge.func" name="[CoreCLR] exists" file="C:\project\edge-js\test\101_edge_func.js" time="0"/>
+<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile as string" file="C:\project\edge-js\test\101_edge_func.js" time="0"><skipped/></testcase>
+<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile as options property" file="C:\project\edge-js\test\101_edge_func.js" time="0"><skipped/></testcase>
+<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile and type name" file="C:\project\edge-js\test\101_edge_func.js" time="0.046"><failure>Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.
 Error: Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.
     at exports.func (lib\edge.js:174:17)
     at Context.&#x3C;anonymous&#x3E; (test\101_edge_func.js:82:19)
     at process.processImmediate (node:internal/timers:491:21)</failure></testcase>
-<testcase classname="edge.func" name="[CoreCLR] fails with assemblyFile and nonexisting type name" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0.002"><failure>The input did not match the regular expression /Could not load type &#x27;Edge.Tests.idontexist&#x27;/. Input:
+<testcase classname="edge.func" name="[CoreCLR] fails with assemblyFile and nonexisting type name" file="C:\project\edge-js\test\101_edge_func.js" time="0.002"><failure>The input did not match the regular expression /Could not load type &#x27;Edge.Tests.idontexist&#x27;/. Input:
 
 &#x22;System.IO.FileNotFoundException: Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.&#x22;
 
@@ -17,12 +17,12 @@ AssertionError [ERR_ASSERTION]: The input did not match the regular expression /
 
     at Context.&#x3C;anonymous&#x3E; (test\101_edge_func.js:90:10)
     at process.processImmediate (node:internal/timers:491:21)</failure></testcase>
-<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile, type name, and method name" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0.001"><failure>Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.
+<testcase classname="edge.func" name="[CoreCLR] succeeds with assemblyFile, type name, and method name" file="C:\project\edge-js\test\101_edge_func.js" time="0.001"><failure>Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.
 Error: Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.
     at exports.func (lib\edge.js:174:17)
     at Context.&#x3C;anonymous&#x3E; (test\101_edge_func.js:102:19)
     at process.processImmediate (node:internal/timers:491:21)</failure></testcase>
-<testcase classname="edge.func" name="[CoreCLR] fails with assemblyFile, type name and nonexisting method name" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"><failure>The input did not match the regular expression /Unable to access the CLR method to wrap through reflection/. Input:
+<testcase classname="edge.func" name="[CoreCLR] fails with assemblyFile, type name and nonexisting method name" file="C:\project\edge-js\test\101_edge_func.js" time="0"><failure>The input did not match the regular expression /Unable to access the CLR method to wrap through reflection/. Input:
 
 &#x22;System.IO.FileNotFoundException: Could not load file or assembly &#x27;test, Culture=neutral, PublicKeyToken=null&#x27;. The system cannot find the file specified.&#x22;
 
@@ -32,13 +32,13 @@ AssertionError [ERR_ASSERTION]: The input did not match the regular expression /
 
     at Context.&#x3C;anonymous&#x3E; (test\101_edge_func.js:111:10)
     at process.processImmediate (node:internal/timers:491:21)</failure></testcase>
-<testcase classname="edge.func failures" name="[CoreCLR] fails without parameters" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"/>
-<testcase classname="edge.func failures" name="[CoreCLR] fails with a wrong parameter" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"/>
-<testcase classname="edge.func failures" name="[CoreCLR] fails with a wrong language parameter" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"/>
-<testcase classname="edge.func failures" name="[CoreCLR] fails with a unsupported language parameter" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0.001"/>
-<testcase classname="edge.func failures" name="[CoreCLR] fails with missing assemblyFile or source" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0.001"/>
-<testcase classname="edge.func failures" name="[CoreCLR] fails with both assemblyFile or source" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"/>
-<testcase classname="edge.func failures" name="[CoreCLR] fails with nonexisting assemblyFile" file="C:\Users\anton\Dev\edge-js\test\101_edge_func.js" time="0"><failure>the string &#x22;new exception&#x22; was thrown, throw an Error :)
+<testcase classname="edge.func failures" name="[CoreCLR] fails without parameters" file="C:\project\edge-js\test\101_edge_func.js" time="0"/>
+<testcase classname="edge.func failures" name="[CoreCLR] fails with a wrong parameter" file="C:\project\edge-js\test\101_edge_func.js" time="0"/>
+<testcase classname="edge.func failures" name="[CoreCLR] fails with a wrong language parameter" file="C:\project\edge-js\test\101_edge_func.js" time="0"/>
+<testcase classname="edge.func failures" name="[CoreCLR] fails with a unsupported language parameter" file="C:\project\edge-js\test\101_edge_func.js" time="0.001"/>
+<testcase classname="edge.func failures" name="[CoreCLR] fails with missing assemblyFile or source" file="C:\project\edge-js\test\101_edge_func.js" time="0.001"/>
+<testcase classname="edge.func failures" name="[CoreCLR] fails with both assemblyFile or source" file="C:\project\edge-js\test\101_edge_func.js" time="0"/>
+<testcase classname="edge.func failures" name="[CoreCLR] fails with nonexisting assemblyFile" file="C:\project\edge-js\test\101_edge_func.js" time="0"><failure>the string &#x22;new exception&#x22; was thrown, throw an Error :)
 Error: the string &#x22;new exception&#x22; was thrown, throw an Error :)
     at process.processImmediate (node:internal/timers:491:21)</failure></testcase>
 </testsuite>

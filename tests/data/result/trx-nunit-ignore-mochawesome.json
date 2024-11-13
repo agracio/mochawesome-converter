@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 2,
+    "pending": 2,
+    "failures": 1,
+    "testsRegistered": 5,
+    "passPercent": 40,
+    "pendingPercent": 40,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 1074
+  },
+  "results": [
+    {
+      "uuid": "a7b58f9a-1b72-42a9-baea-eae3d6a65b11",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+          "title": "NUnitSample.SimpleTests",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "NUnitSample.SimpleTests",
+              "duration": 59,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Failing for demo purposes",
+                "estack": "at NUnitSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21\n",
+                "diff": null
+              },
+              "uuid": "13f1b4f8-3843-4118-ac8f-2a3025cfd493",
+              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ignored_test",
+              "fullTitle": "NUnitSample.SimpleTests",
+              "duration": 1,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped: Ignoring for testing ;-)\"]",
+              "code": null,
+              "err": {},
+              "uuid": "49ee5955-75fc-4c1f-911e-a8d7ad68e968",
+              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Passing_test",
+              "fullTitle": "NUnitSample.SimpleTests",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "2eab89ae-7a62-48bd-9fef-57163138e7ce",
+              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "NUnitSample.SimpleTests",
+              "duration": 1002,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "0f922e21-d5d5-44a0-9b29-713463de6c60",
+              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test_with_failed_assumption",
+              "fullTitle": "NUnitSample.SimpleTests",
+              "duration": 11,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped:   Expected: True&#xD;   But was:  False&#xD; \"]",
+              "code": null,
+              "err": {},
+              "uuid": "d9c144ed-606b-445a-9c71-77db30ed82a1",
+              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2eab89ae-7a62-48bd-9fef-57163138e7ce",
+            "0f922e21-d5d5-44a0-9b29-713463de6c60"
+          ],
+          "failures": [
+            "13f1b4f8-3843-4118-ac8f-2a3025cfd493"
+          ],
+          "pending": [
+            "49ee5955-75fc-4c1f-911e-a8d7ad68e968",
+            "d9c144ed-606b-445a-9c71-77db30ed82a1"
+          ],
+          "skipped": [],
+          "duration": 1074,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

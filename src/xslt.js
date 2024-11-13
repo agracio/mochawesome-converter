@@ -24,7 +24,7 @@ async function processXml(options, xmlString){
         throw `\nXML parsed from ${options.testFile} is invalid \n${e.message}`;
     }
 
-    if(options.junit){
+    if(options.junit && options.testType !== 'trx'){
         fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), parsedXml, 'utf8');
     }
 

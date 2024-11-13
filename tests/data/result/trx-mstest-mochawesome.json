@@ -1,0 +1,253 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 9,
+    "passes": 5,
+    "pending": 1,
+    "failures": 3,
+    "testsRegistered": 9,
+    "passPercent": 55.55555555555556,
+    "pendingPercent": 11.11111111111111,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 2039
+  },
+  "results": [
+    {
+      "uuid": "43c2db80-5a5d-44ef-af7e-544e0284014f",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+          "title": "MsTestSample.DataDriven",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 1,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Assert.Fail failed. Failing for demo purposes",
+                "estack": "at MsTestSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n",
+                "diff": null
+              },
+              "uuid": "cadf2d76-c740-4bc1-aa4c-5e4823d53704",
+              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 1009,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "264d14b7-e130-480f-925b-1fec730d2056",
+              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails (0)",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "d903755c-ce27-4ef9-b319-b92f0217f290",
+              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails (1)",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 16,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Assert.Fail failed. Failing for demo purposes",
+                "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16\n\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n",
+                "diff": null
+              },
+              "uuid": "133a378c-dc11-436c-8cc8-115601b31ea5",
+              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Two_pass_one_fails (2)",
+              "fullTitle": "MsTestSample.DataDriven",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "25b127dc-8354-4b96-90a0-ccc95dede296",
+              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "264d14b7-e130-480f-925b-1fec730d2056",
+            "d903755c-ce27-4ef9-b319-b92f0217f290",
+            "25b127dc-8354-4b96-90a0-ccc95dede296"
+          ],
+          "failures": [
+            "cadf2d76-c740-4bc1-aa4c-5e4823d53704",
+            "133a378c-dc11-436c-8cc8-115601b31ea5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1026,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+          "title": "MsTestSample.SimpleTests",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Failing_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 1,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "Assert.Fail failed. Failing for demo purposes",
+                "estack": "at MsTestSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n",
+                "diff": null
+              },
+              "uuid": "3d3f5a62-1856-4154-890c-332ebee2fba7",
+              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ignored_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 0,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped: Ignoring for testing ;-)\"]",
+              "code": null,
+              "err": {},
+              "uuid": "b5394269-55a4-4e19-9095-fcb991be0d29",
+              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Passing_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "0a9975cd-35c5-4c92-a23a-015272ebed72",
+              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Slow_test",
+              "fullTitle": "MsTestSample.SimpleTests",
+              "duration": 1013,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "89f783cc-e982-42d2-b4d3-4a06a133d8cf",
+              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a9975cd-35c5-4c92-a23a-015272ebed72",
+            "89f783cc-e982-42d2-b4d3-4a06a133d8cf"
+          ],
+          "failures": [
+            "3d3f5a62-1856-4154-890c-332ebee2fba7"
+          ],
+          "pending": [
+            "b5394269-55a4-4e19-9095-fcb991be0d29"
+          ],
+          "skipped": [],
+          "duration": 1014,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

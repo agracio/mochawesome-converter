@@ -94,7 +94,15 @@
                                             </error>
                                         </xsl:if>
                                         <xsl:if test="contains($outcome, 'NotExecuted')">
-                                            <skipped message="{$message}"/>
+                                            <xsl:if test="$message != ''">
+                                                <skipped message="{$message}"/>
+                                            </xsl:if>
+                                            <xsl:if test="$stdout != ''">
+                                                <skipped message="{$stdout}"/>
+                                            </xsl:if>
+                                            <xsl:if test="$stdout = '' and $message = ''">
+                                                <skipped/>
+                                            </xsl:if>
                                         </xsl:if>
                                         <xsl:if test="$stderr">
                                             <system-err>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="c46382b9-603a-4ad7-956e-75f80f3e3d88" name="dev@DEV-DESKTOP 2024-11-12 22:58:43" runUser="DEV-DESKTOP\dev" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-11-12T22:58:43.1433186+00:00" queuing="2024-11-12T22:58:43.1433188+00:00" start="2024-11-12T22:58:41.1459554+00:00" finish="2024-11-12T22:58:45.1212797+00:00" />
+  <TestSettings name="default" id="438a8759-b9b9-487a-9888-0c7b567cc0f5">
+    <Deployment runDeploymentRoot="dev_DEV-DESKTOP_2024-11-12_22_58_43" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="41b609f9-141d-4e83-9db0-a5844b436609" testId="1ae860fb-c5c3-ece0-a3ea-c06750b2605e" testName="Passing_test" computerName="DEV-DESKTOP" duration="00:00:00.0001440" startTime="2024-11-12T22:58:44.0677485+00:00" endTime="2024-11-12T22:58:44.0678924+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41b609f9-141d-4e83-9db0-a5844b436609" />
+    <UnitTestResult executionId="e0872d97-d2f7-49c5-8db0-04aa142367e5" testId="4fcc63d5-bc6d-51a7-7b33-5cb8b1fcc16e" testName="Test_with_failed_assumption" computerName="DEV-DESKTOP" duration="00:00:00.0008150" startTime="2024-11-12T22:58:45.0736923+00:00" endTime="2024-11-12T22:58:45.0745067+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0872d97-d2f7-49c5-8db0-04aa142367e5">
+      <Output>
+        <StdOut>Expected: True&#xD;
+  But was:  False</StdOut>
+        <ErrorInfo>
+          <Message>  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4898845c-289d-4cad-99d4-76b91c5e2725" testId="22e9731c-f94b-1e68-c603-e8257c73f73e" testName="Failing_test" computerName="DEV-DESKTOP" duration="00:00:00.0002430" startTime="2024-11-12T22:58:44.0671958+00:00" endTime="2024-11-12T22:58:44.0674388+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4898845c-289d-4cad-99d4-76b91c5e2725">
+      <Output>
+        <ErrorInfo>
+          <Message>Failing for demo purposes</Message>
+          <StackTrace>   at NUnitSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\SimpleTests.cs:line 21&#xD;
+
+1)    at NUnitSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\SimpleTests.cs:line 21&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d8383d1e-5afd-4174-8594-4846823676a4" testId="1ae179c8-1e4d-8323-22f3-7a6effc191b2" testName="Two_pass_one_fails({ index = 0 })" computerName="DEV-DESKTOP" duration="00:00:00.0215080" startTime="2024-11-12T22:58:44.0450890+00:00" endTime="2024-11-12T22:58:44.0665970+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8383d1e-5afd-4174-8594-4846823676a4" />
+    <UnitTestResult executionId="eddb98ac-d9cc-49a5-8367-b8aa2934192f" testId="4ab809ed-d1dd-4959-feb3-82dd63da5cf7" testName="Two_pass_one_fails(1)" computerName="DEV-DESKTOP" duration="00:00:00.0006260" startTime="2024-11-12T22:58:43.0242897+00:00" endTime="2024-11-12T22:58:43.0249156+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eddb98ac-d9cc-49a5-8367-b8aa2934192f">
+      <Output>
+        <ErrorInfo>
+          <Message>Failing for demo purposes</Message>
+          <StackTrace>   at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 18&#xD;
+   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)&#xD;
+
+1)    at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 18&#xD;
+   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="324014b1-a7a9-4cb5-a2f9-3bd1264f1d97" testId="a40db929-baba-33fb-ad84-d4bfd1d41265" testName="Slow_test" computerName="DEV-DESKTOP" duration="00:00:01.0146970" startTime="2024-11-12T22:58:43.0303182+00:00" endTime="2024-11-12T22:58:44.0450145+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="324014b1-a7a9-4cb5-a2f9-3bd1264f1d97" />
+    <UnitTestResult executionId="30913531-a439-4836-a5fc-6376e21997bd" testId="d78cb6ab-bd6a-38fe-a1c4-6d2b41046edd" testName="Two_pass_one_fails(0)" computerName="DEV-DESKTOP" duration="00:00:00.0005590" startTime="2024-11-12T22:58:43.0237129+00:00" endTime="2024-11-12T22:58:43.0242716+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30913531-a439-4836-a5fc-6376e21997bd" />
+    <UnitTestResult executionId="033d509b-8f14-44b0-88bc-95e0992da02f" testId="87bc93a4-2111-8222-0780-a5af7519588e" testName="Test_with_StdOut" computerName="DEV-DESKTOP" duration="00:00:00.0001190" startTime="2024-11-12T22:58:45.0745206+00:00" endTime="2024-11-12T22:58:45.0746394+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="033d509b-8f14-44b0-88bc-95e0992da02f">
+      <Output>
+        <StdOut>message written to stdout</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bff6c6de-95ca-4d31-99cf-e07a3e37536b" testId="e16e2dca-a433-59fe-beb8-03d460bf2792" testName="Ignored_test" computerName="DEV-DESKTOP" duration="00:00:00.0002930" startTime="2024-11-12T22:58:44.0674467+00:00" endTime="2024-11-12T22:58:44.0677393+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bff6c6de-95ca-4d31-99cf-e07a3e37536b">
+      <Output>
+        <StdOut>Ignoring for testing ;-)</StdOut>
+        <ErrorInfo>
+          <Message>Ignoring for testing ;-)</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1775af43-3309-4d86-b6c9-3037c6014671" testId="e22eef01-3b40-d918-c394-21a8831983f9" testName="Two_pass_one_fails({ index = 2 })" computerName="DEV-DESKTOP" duration="00:00:00.0000100" startTime="2024-11-12T22:58:44.0670920+00:00" endTime="2024-11-12T22:58:44.0671014+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1775af43-3309-4d86-b6c9-3037c6014671" />
+    <UnitTestResult executionId="c49d3481-5e13-499f-9f71-3674889aa2ab" testId="20f1a492-03ca-1626-383f-635b1924925b" testName="Two_pass_one_fails({ index = 1 })" computerName="DEV-DESKTOP" duration="00:00:00.0004520" startTime="2024-11-12T22:58:44.0666244+00:00" endTime="2024-11-12T22:58:44.0670765+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c49d3481-5e13-499f-9f71-3674889aa2ab">
+      <Output>
+        <ErrorInfo>
+          <Message>  Failing for demo purposes&#xD;
+  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+          <StackTrace>   at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 22&#xD;
+   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)&#xD;
+
+1)    at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 22&#xD;
+   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="75329874-5474-4d56-a33c-93a93e413642" testId="7b99ef36-e869-4abb-0e2c-e794f5784ce3" testName="Slow_test" computerName="DEV-DESKTOP" duration="00:00:01.0057470" startTime="2024-11-12T22:58:44.0679006+00:00" endTime="2024-11-12T22:58:45.0736471+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75329874-5474-4d56-a33c-93a93e413642" />
+    <UnitTestResult executionId="189e3120-1802-4b5d-a3b1-8c96df352c2b" testId="6127a87d-9df7-610b-34ed-6c130d5c58a5" testName="Two_pass_one_fails(2)" computerName="DEV-DESKTOP" duration="00:00:00.0001090" startTime="2024-11-12T22:58:43.0249245+00:00" endTime="2024-11-12T22:58:43.0250331+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="189e3120-1802-4b5d-a3b1-8c96df352c2b" />
+    <UnitTestResult executionId="51b5ea59-24de-4c6f-ba22-5bd5b69b3bce" testId="76e95e5d-6798-dfad-cd8d-c1dfd14face7" testName="Failing_test" computerName="DEV-DESKTOP" duration="00:00:00.0034690" startTime="2024-11-12T22:58:43.0268318+00:00" endTime="2024-11-12T22:58:43.0303006+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51b5ea59-24de-4c6f-ba22-5bd5b69b3bce">
+      <Output>
+        <ErrorInfo>
+          <Message>  Failing for demo purposes&#xD;
+  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+          <StackTrace>   at NUnitSample.MemberData.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 31&#xD;
+
+1)    at NUnitSample.MemberData.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 31&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="23f9ddc9-449a-4280-8756-575f292b6656" testId="bea9a224-b89c-f42e-1ef9-ae95ca6feb4b" testName="Slow_test" computerName="DEV-DESKTOP" duration="00:00:01.0082870" startTime="2024-11-12T22:58:42.0153003+00:00" endTime="2024-11-12T22:58:43.0235863+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23f9ddc9-449a-4280-8756-575f292b6656" />
+    <UnitTestResult executionId="3a5b317f-f7b7-42ce-8014-9c3365c8d93b" testId="c242437e-9509-044f-a4fa-4671fc31fe32" testName="Failing_test" computerName="DEV-DESKTOP" duration="00:00:00.0223250" startTime="2024-11-12T22:58:41.9920931+00:00" endTime="2024-11-12T22:58:42.0143733+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a5b317f-f7b7-42ce-8014-9c3365c8d93b">
+      <Output>
+        <ErrorInfo>
+          <Message>Failing for demo purposes</Message>
+          <StackTrace>   at NUnitSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 27&#xD;
+
+1)    at NUnitSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 27&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Failing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="c242437e-9509-044f-a4fa-4671fc31fe32">
+      <Execution id="3a5b317f-f7b7-42ce-8014-9c3365c8d93b" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.DataDriven" name="Failing_test" />
+    </UnitTest>
+    <UnitTest name="Ignored_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="e16e2dca-a433-59fe-beb8-03d460bf2792">
+      <Execution id="bff6c6de-95ca-4d31-99cf-e07a3e37536b" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.SimpleTests" name="Ignored_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails(0)" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="d78cb6ab-bd6a-38fe-a1c4-6d2b41046edd">
+      <Execution id="30913531-a439-4836-a5fc-6376e21997bd" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.DataDriven" name="Two_pass_one_fails(0)" />
+    </UnitTest>
+    <UnitTest name="Test_with_StdOut" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="87bc93a4-2111-8222-0780-a5af7519588e">
+      <Execution id="033d509b-8f14-44b0-88bc-95e0992da02f" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.SimpleTests" name="Test_with_StdOut" />
+    </UnitTest>
+    <UnitTest name="Slow_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="a40db929-baba-33fb-ad84-d4bfd1d41265">
+      <Execution id="324014b1-a7a9-4cb5-a2f9-3bd1264f1d97" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.MemberData" name="Slow_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails({ index = 1 })" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="20f1a492-03ca-1626-383f-635b1924925b">
+      <Execution id="c49d3481-5e13-499f-9f71-3674889aa2ab" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.MemberData" name="Two_pass_one_fails({ index = 1 })" />
+    </UnitTest>
+    <UnitTest name="Slow_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="bea9a224-b89c-f42e-1ef9-ae95ca6feb4b">
+      <Execution id="23f9ddc9-449a-4280-8756-575f292b6656" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.DataDriven" name="Slow_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails({ index = 0 })" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="1ae179c8-1e4d-8323-22f3-7a6effc191b2">
+      <Execution id="d8383d1e-5afd-4174-8594-4846823676a4" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.MemberData" name="Two_pass_one_fails({ index = 0 })" />
+    </UnitTest>
+    <UnitTest name="Failing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="22e9731c-f94b-1e68-c603-e8257c73f73e">
+      <Execution id="4898845c-289d-4cad-99d4-76b91c5e2725" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.SimpleTests" name="Failing_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails(2)" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="6127a87d-9df7-610b-34ed-6c130d5c58a5">
+      <Execution id="189e3120-1802-4b5d-a3b1-8c96df352c2b" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.DataDriven" name="Two_pass_one_fails(2)" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails(1)" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="4ab809ed-d1dd-4959-feb3-82dd63da5cf7">
+      <Execution id="eddb98ac-d9cc-49a5-8367-b8aa2934192f" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.DataDriven" name="Two_pass_one_fails(1)" />
+    </UnitTest>
+    <UnitTest name="Failing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="76e95e5d-6798-dfad-cd8d-c1dfd14face7">
+      <Execution id="51b5ea59-24de-4c6f-ba22-5bd5b69b3bce" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.MemberData" name="Failing_test" />
+    </UnitTest>
+    <UnitTest name="Passing_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="1ae860fb-c5c3-ece0-a3ea-c06750b2605e">
+      <Execution id="41b609f9-141d-4e83-9db0-a5844b436609" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.SimpleTests" name="Passing_test" />
+    </UnitTest>
+    <UnitTest name="Test_with_failed_assumption" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="4fcc63d5-bc6d-51a7-7b33-5cb8b1fcc16e">
+      <Execution id="e0872d97-d2f7-49c5-8db0-04aa142367e5" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.SimpleTests" name="Test_with_failed_assumption" />
+    </UnitTest>
+    <UnitTest name="Slow_test" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="7b99ef36-e869-4abb-0e2c-e794f5784ce3">
+      <Execution id="75329874-5474-4d56-a33c-93a93e413642" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.SimpleTests" name="Slow_test" />
+    </UnitTest>
+    <UnitTest name="Two_pass_one_fails({ index = 2 })" storage="c:\projects\trx2junit\samples\artifacts\bin\nunitsample\debug\nunitsample.dll" id="e22eef01-3b40-d918-c394-21a8831983f9">
+      <Execution id="1775af43-3309-4d86-b6c9-3037c6014671" />
+      <TestMethod codeBase="C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitSample.MemberData" name="Two_pass_one_fails({ index = 2 })" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1ae860fb-c5c3-ece0-a3ea-c06750b2605e" executionId="41b609f9-141d-4e83-9db0-a5844b436609" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fcc63d5-bc6d-51a7-7b33-5cb8b1fcc16e" executionId="e0872d97-d2f7-49c5-8db0-04aa142367e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22e9731c-f94b-1e68-c603-e8257c73f73e" executionId="4898845c-289d-4cad-99d4-76b91c5e2725" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ae179c8-1e4d-8323-22f3-7a6effc191b2" executionId="d8383d1e-5afd-4174-8594-4846823676a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ab809ed-d1dd-4959-feb3-82dd63da5cf7" executionId="eddb98ac-d9cc-49a5-8367-b8aa2934192f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a40db929-baba-33fb-ad84-d4bfd1d41265" executionId="324014b1-a7a9-4cb5-a2f9-3bd1264f1d97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d78cb6ab-bd6a-38fe-a1c4-6d2b41046edd" executionId="30913531-a439-4836-a5fc-6376e21997bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87bc93a4-2111-8222-0780-a5af7519588e" executionId="033d509b-8f14-44b0-88bc-95e0992da02f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e16e2dca-a433-59fe-beb8-03d460bf2792" executionId="bff6c6de-95ca-4d31-99cf-e07a3e37536b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e22eef01-3b40-d918-c394-21a8831983f9" executionId="1775af43-3309-4d86-b6c9-3037c6014671" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20f1a492-03ca-1626-383f-635b1924925b" executionId="c49d3481-5e13-499f-9f71-3674889aa2ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b99ef36-e869-4abb-0e2c-e794f5784ce3" executionId="75329874-5474-4d56-a33c-93a93e413642" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6127a87d-9df7-610b-34ed-6c130d5c58a5" executionId="189e3120-1802-4b5d-a3b1-8c96df352c2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76e95e5d-6798-dfad-cd8d-c1dfd14face7" executionId="51b5ea59-24de-4c6f-ba22-5bd5b69b3bce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bea9a224-b89c-f42e-1ef9-ae95ca6feb4b" executionId="23f9ddc9-449a-4280-8756-575f292b6656" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c242437e-9509-044f-a4fa-4671fc31fe32" executionId="3a5b317f-f7b7-42ce-8014-9c3365c8d93b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="16" executed="14" passed="9" failed="5" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.3.0.0: Test execution started&#xD;
+Running all tests in C:\projects\trx2junit\samples\artifacts\bin\NUnitSample\debug\NUnitSample.dll&#xD;
+   NUnit3TestExecutor discovered 16 of 16 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Ignored_test: Ignoring for testing ;-)&#xD;
+Test 'Ignored_test' was skipped in the test run.&#xD;
+Test_with_failed_assumption:   Expected: True&#xD;
+  But was:  False&#xD;
+&#xD;
+NUnit Adapter 4.3.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DEV-DESKTOP" outcome="Warning" timestamp="2024-11-12T22:58:45.0754741+00:00">
+        <Text>message written to stdout&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
