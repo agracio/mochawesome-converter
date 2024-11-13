@@ -10,8 +10,60 @@ let skippedTests = 0;
 let failedTests = 0;
 let suites = [];
 
-function parseTrx(){
+/**
+* @param {ConverterOptions} options
+* @param {any} json
+* @returns {any}
+*/
+function parseTrx(options, json){
 
+    json.testsuites[0].testsuite[0].testcase = _.sortBy(json.testsuites[0].testsuite[0].testcase, ['classname' ,'name']);
+
+    let classnames = _.map(json.testsuites[0].testsuite[0].testcase, 'classname')
+        .filter((value, index, array) => array.indexOf(value) === index);
+
+    classnames = _.sortBy(classnames, [function(o) { return o; }]);
+
+    let time = _.sumBy(json.testsuites[0].testsuite, suite => _.sumBy(suite.testcase, function(testCase) { return Number(testCase.time); }));
+
+    json.testsuites[0].time = time;
+    json.testsuites[0].testsuite[0].time = time;
+
+    if(classnames.length > 1){
+
+        let testSuites = [];
+        classnames.forEach((classname) =>  {
+
+            let testcases = _.filter(json.testsuites[0].testsuite[0].testcase, { 'classname': classname});
+            let time = _.sumBy(testcases, function(testCase) { return Number(testCase.time); });
+            const failures = testcases.filter((testCase) => testCase.status === 'Failed').length;
+            const skipped = testcases.filter((testCase) => testCase.status === 'Skipped').length;
+
+            testSuites.push(
+                {
+                    name: classname,
+                    tests: `${testcases.length}`,
+                    failures: `${failures}`,
+                    skipped: `${skipped}`,
+                    time: `${time}`,
+                    testcase: testcases,
+                }
+            );
+        });
+
+        json.testsuites[0].testsuite = testSuites;
+    }
+
+    else{
+        json.testsuites[0].testsuite[0].time = time;
+        json.testsuites[0].testsuite[0].name = json.testsuites[0].testsuite[0].testcase[0].classname;
+    }
+
+    if(options.junit){
+        fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), xmlFormat(parser.toXml(json), {forceSelfClosingEmptyTag: true}), 'utf8');
+    }
+
+    return json;
 }
 
 /**
@@ -42,8 +94,11 @@ function parseXml(options, xml){
             json.testsuites = [{testsuite: json.testsuite}];
             delete json['testsuite'];
         }
-        else{
-            throw `\nCould not find valid <testsuites> or <testsuite> element in converted ${options.testFile}`;
+        if(json && json.testsuites && json.testsuites.length && json.testsuites.length === 0){
+            console.log('No test suites found, skipping Mochawesome file creation.');
+        }
+        else if(!json || !json.testsuites || !json.testsuites.length){
+            throw `\nCould not find valid <testsuites> or <testsuite> root element in converted ${options.testFile}`;
         }
     }
 
@@ -52,17 +107,8 @@ function parseXml(options, xml){
         fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8');
     }
 
-    // if(options.saveIntermediateFiles){
-    //     let jsonString =  JSON.stringify(json, null, 2).replaceAll('&#xD;', '').replaceAll('&#xA;', '');
-    //
-    //     json = JSON.parse(jsonString);
-    //     let fileName = `${path.parse(options.testFile).name}-converted.xml`;
-    //     fs.writeFileSync(path.join(options.reportDir, fileName), xmlFormat(parser.toXml(json), {forceSelfClosingEmptyTag: true}), 'utf8');
-    //
-    // }
-
-    if(!json.testsuites[0].testsuite){
-        throw `\nNo <testsuite> elements in <testsuites> element in converted ${options.testFile}`;
+    if(!json.testsuites[0].testsuite || !json.testsuites[0].testsuite.length || json.testsuites[0].testsuite.length ===0){
+        console.log('No test suites found, skipping Mochawesome file creation.');
     }
 
     // sort test suites
@@ -78,53 +124,7 @@ function parseXml(options, xml){
     }
 
     if(options.testType === 'trx' && json.testsuites[0].testsuite[0].testcase.length !== 0){
-
-        json.testsuites[0].testsuite[0].testcase = _.sortBy(json.testsuites[0].testsuite[0].testcase, ['name']);
-
-        let classnames = _.map(json.testsuites[0].testsuite[0].testcase, 'classname')
-            .filter((value, index, array) => array.indexOf(value) === index);
-
-        classnames = _.sortBy(classnames, [function(o) { return o; }]);
-
-        let time = _.sumBy(json.testsuites[0].testsuite, suite => _.sumBy(suite.testcase, function(testCase) { return Number(testCase.time); }));
-
-        json.testsuites[0].time = time;
-        json.testsuites[0].testsuite[0].time = time;
-
-        if(classnames.length > 1){
-
-            let testSuites = [];
-            classnames.forEach((classname) =>  {
-
-                let testcases = _.filter(json.testsuites[0].testsuite[0].testcase, { 'classname': classname});
-                let time = _.sumBy(testcases, function(testCase) { return Number(testCase.time); });
-                const failures = testcases.filter((testCase) => testCase.status === 'Failed').length;
-                const skipped = testcases.filter((testCase) => testCase.status === 'Skipped').length;
-
-                testSuites.push(
-                    {
-                        name: classname,
-                        tests: `${testcases.length}`,
-                        failures: `${failures}`,
-                        skipped: `${skipped}`,
-                        time: `${time}`,
-                        testcase: testcases,
-                    }
-                );
-            });
-
-            json.testsuites[0].testsuite = testSuites;
-        }
-
-        else{
-            json.testsuites[0].testsuite[0].time = time;
-            json.testsuites[0].testsuite[0].name = json.testsuites[0].testsuite[0].testcase[0].classname;
-
-        }
-
-        if(options.junit){
-            fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), xmlFormat(parser.toXml(json), {forceSelfClosingEmptyTag: true}), 'utf8');
-        }
+        json = parseTrx(options, json);
     }
 
     return json.testsuites[0];

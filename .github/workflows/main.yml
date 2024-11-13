@@ -22,7 +22,7 @@ jobs:
     name: test-${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-13, macos-latest, ubuntu-latest]
+        os: [macos-latest, ubuntu-latest]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: node_modules
-          key: ${{ matrix.os }}${{ hashFiles('package-lock.json') }}
+          key: ${{ matrix.os }}-${{ hashFiles('package-lock.json') }}
 
       - name: npm install
         run: npm i
@@ -58,12 +58,3 @@ jobs:
 #            test-results.xml
 #            mochawesome.json
 #
-#      - name: Test Report
-#        uses: phoenix-actions/test-reporting@v15
-#        if: success()
-#        with:
-#          name: test-results-${{ matrix.os }}-node-${{ matrix.node }}
-#          fail-on-error: true
-#          path: mochawesome.json   # Path to test results
-#          reporter: mochawesome-json
-

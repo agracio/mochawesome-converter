@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "881352d5-c372-45d3-a05c-91ba1f20b5ca",
+      "uuid": "61a38f80-d4a7-4a6f-ab3d-5231860687a6",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "55532edc-4879-48f5-880c-f01dcbd67cc1",
+          "uuid": "1038ff8c-2ae9-4391-930a-8bb1dcec04e0",
           "title": "NUnitSample.DataDriven",
           "file": "",
           "beforeHooks": [],
@@ -44,11 +44,11 @@
               "code": null,
               "err": {
                 "message": "Failing for demo purposes",
-                "estack": "at NUnitSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 27\n\n\n1)    at NUnitSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 27\n",
+                "estack": "at NUnitSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 27\n\n1)    at NUnitSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 27",
                 "diff": null
               },
-              "uuid": "96aebed4-9d7d-4672-86a9-21f636f19c98",
-              "parentUUID": "55532edc-4879-48f5-880c-f01dcbd67cc1",
+              "uuid": "d71c556b-0b9c-47ba-9078-8a59effc263a",
+              "parentUUID": "1038ff8c-2ae9-4391-930a-8bb1dcec04e0",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "153c7f00-3978-4fe1-a346-f9040f9abc05",
-              "parentUUID": "55532edc-4879-48f5-880c-f01dcbd67cc1",
+              "uuid": "adc5d910-41a8-494d-9ec2-46e91b11079e",
+              "parentUUID": "1038ff8c-2ae9-4391-930a-8bb1dcec04e0",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "08cce3c9-3454-428a-822b-7c8c62bb776a",
-              "parentUUID": "55532edc-4879-48f5-880c-f01dcbd67cc1",
+              "uuid": "4ea060fc-1579-4052-8e4f-646f0977b225",
+              "parentUUID": "1038ff8c-2ae9-4391-930a-8bb1dcec04e0",
               "isHook": false,
               "skipped": false
             },
@@ -99,11 +99,11 @@
               "code": null,
               "err": {
                 "message": "Failing for demo purposes",
-                "estack": "at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 18\n\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n\n\n1)    at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 18\n\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n",
+                "estack": "at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 18\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n\n1)    at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 18\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)",
                 "diff": null
               },
-              "uuid": "b2cd8c21-fd1f-44ef-9e1a-09d7942d9cfa",
-              "parentUUID": "55532edc-4879-48f5-880c-f01dcbd67cc1",
+              "uuid": "e3c26343-1a46-48e6-954a-d71ca6fc1473",
+              "parentUUID": "1038ff8c-2ae9-4391-930a-8bb1dcec04e0",
               "isHook": false,
               "skipped": false
             },
@@ -119,21 +119,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "31572dd8-6a5f-4762-86f4-08971c909e23",
-              "parentUUID": "55532edc-4879-48f5-880c-f01dcbd67cc1",
+              "uuid": "12dfabaf-5e71-473b-bab5-d386165b1b72",
+              "parentUUID": "1038ff8c-2ae9-4391-930a-8bb1dcec04e0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "153c7f00-3978-4fe1-a346-f9040f9abc05",
-            "08cce3c9-3454-428a-822b-7c8c62bb776a",
-            "31572dd8-6a5f-4762-86f4-08971c909e23"
+            "adc5d910-41a8-494d-9ec2-46e91b11079e",
+            "4ea060fc-1579-4052-8e4f-646f0977b225",
+            "12dfabaf-5e71-473b-bab5-d386165b1b72"
           ],
           "failures": [
-            "96aebed4-9d7d-4672-86a9-21f636f19c98",
-            "b2cd8c21-fd1f-44ef-9e1a-09d7942d9cfa"
+            "d71c556b-0b9c-47ba-9078-8a59effc263a",
+            "e3c26343-1a46-48e6-954a-d71ca6fc1473"
           ],
           "pending": [],
           "skipped": [],
@@ -143,7 +143,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "2e2817ad-e50d-412b-8314-3183775e50d4",
+          "uuid": "04dd9c79-cada-45e5-b01d-6c7c1117ae37",
           "title": "NUnitSample.MemberData",
           "file": "",
           "beforeHooks": [],
@@ -162,11 +162,11 @@
               "code": null,
               "err": {
                 "message": "  Failing for demo purposes   Expected: True   But was:  False ",
-                "estack": "at NUnitSample.MemberData.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 31\n\n\n1)    at NUnitSample.MemberData.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 31\n",
+                "estack": "at NUnitSample.MemberData.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 31\n\n1)    at NUnitSample.MemberData.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 31",
                 "diff": null
               },
-              "uuid": "d18cbadc-aaf9-4d61-aeea-7474f369cd9d",
-              "parentUUID": "2e2817ad-e50d-412b-8314-3183775e50d4",
+              "uuid": "ea734507-2fb6-47fe-b972-9d58ee780ebf",
+              "parentUUID": "04dd9c79-cada-45e5-b01d-6c7c1117ae37",
               "isHook": false,
               "skipped": false
             },
@@ -182,8 +182,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d5ac2557-fe3c-428e-9b06-998560fb69a6",
-              "parentUUID": "2e2817ad-e50d-412b-8314-3183775e50d4",
+              "uuid": "5764aaa3-c6ec-43e0-a83f-d1794c9135c3",
+              "parentUUID": "04dd9c79-cada-45e5-b01d-6c7c1117ae37",
               "isHook": false,
               "skipped": false
             },
@@ -199,8 +199,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a422961e-e7a6-4bda-95bd-efd37a49a282",
-              "parentUUID": "2e2817ad-e50d-412b-8314-3183775e50d4",
+              "uuid": "3b37e0d9-930d-435b-8e4a-75ca60079a2a",
+              "parentUUID": "04dd9c79-cada-45e5-b01d-6c7c1117ae37",
               "isHook": false,
               "skipped": false
             },
@@ -217,11 +217,11 @@
               "code": null,
               "err": {
                 "message": "  Failing for demo purposes   Expected: True   But was:  False ",
-                "estack": "at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 22\n\n   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)\n\n\n1)    at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 22\n\n   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)\n",
+                "estack": "at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 22\n   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)\n\n1)    at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\\projects\\trx2junit\\samples\\NUnitSample\\MemberData.cs:line 22\n   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)",
                 "diff": null
               },
-              "uuid": "0de2d861-2269-4fcb-8764-6c94fd8c8a74",
-              "parentUUID": "2e2817ad-e50d-412b-8314-3183775e50d4",
+              "uuid": "b0bc339c-821b-42ca-9a16-6c407ee548b4",
+              "parentUUID": "04dd9c79-cada-45e5-b01d-6c7c1117ae37",
               "isHook": false,
               "skipped": false
             },
@@ -237,21 +237,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a593c959-21ea-4734-87bf-fec06240ce2a",
-              "parentUUID": "2e2817ad-e50d-412b-8314-3183775e50d4",
+              "uuid": "4b167ee9-baf7-40e5-a3e2-d0e7183d070e",
+              "parentUUID": "04dd9c79-cada-45e5-b01d-6c7c1117ae37",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d5ac2557-fe3c-428e-9b06-998560fb69a6",
-            "a422961e-e7a6-4bda-95bd-efd37a49a282",
-            "a593c959-21ea-4734-87bf-fec06240ce2a"
+            "5764aaa3-c6ec-43e0-a83f-d1794c9135c3",
+            "3b37e0d9-930d-435b-8e4a-75ca60079a2a",
+            "4b167ee9-baf7-40e5-a3e2-d0e7183d070e"
           ],
           "failures": [
-            "d18cbadc-aaf9-4d61-aeea-7474f369cd9d",
-            "0de2d861-2269-4fcb-8764-6c94fd8c8a74"
+            "ea734507-2fb6-47fe-b972-9d58ee780ebf",
+            "b0bc339c-821b-42ca-9a16-6c407ee548b4"
           ],
           "pending": [],
           "skipped": [],
@@ -261,7 +261,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+          "uuid": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
           "title": "NUnitSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -280,11 +280,11 @@
               "code": null,
               "err": {
                 "message": "Failing for demo purposes",
-                "estack": "at NUnitSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21\n\n\n1)    at NUnitSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21\n",
+                "estack": "at NUnitSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21\n\n1)    at NUnitSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21",
                 "diff": null
               },
-              "uuid": "d20019aa-15e7-4c33-8481-a35bf2c2eaff",
-              "parentUUID": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+              "uuid": "ba2f6887-bab5-414a-90de-a8d61461f8b8",
+              "parentUUID": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
               "isHook": false,
               "skipped": false
             },
@@ -300,8 +300,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "14547c95-d3cd-4b3d-98bf-9e25e11893db",
-              "parentUUID": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+              "uuid": "dede8916-c409-4bde-aed0-fce64493902c",
+              "parentUUID": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
               "isHook": false,
               "skipped": false
             },
@@ -317,8 +317,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "928dc1c7-77f7-4552-b679-e2e28daa52d9",
-              "parentUUID": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+              "uuid": "382727b3-bfc6-4f32-a4a8-78599f360ea0",
+              "parentUUID": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
               "isHook": false,
               "skipped": false
             },
@@ -334,8 +334,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "03fe00bc-24c2-42a2-b684-ca486edbd417",
-              "parentUUID": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+              "uuid": "c0a5d6a4-5cc0-4d0a-9470-262bbce4c8b2",
+              "parentUUID": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
               "isHook": false,
               "skipped": false
             },
@@ -351,8 +351,8 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"message written to stdout\"}]",
               "code": null,
               "err": {},
-              "uuid": "a34a9255-4e21-421b-b4e1-46f8ad15b7c5",
-              "parentUUID": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+              "uuid": "2a56349d-0448-45a8-917f-7af7a821902d",
+              "parentUUID": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
               "isHook": false,
               "skipped": false
             },
@@ -365,27 +365,27 @@
               "pass": false,
               "fail": false,
               "pending": true,
-              "context": "[\"skipped:   Expected: True&#xD;   But was:  False&#xD; \",{\"title\":\"system-out\",\"value\":\"Expected: True&#xD;\\n  But was:  False\"}]",
+              "context": "[\"skipped:   Expected: True   But was:  False \",{\"title\":\"system-out\",\"value\":\"Expected: True&#xD;\\n  But was:  False\"}]",
               "code": null,
               "err": {},
-              "uuid": "bd4f8e96-063a-4844-8b34-533530f27d2a",
-              "parentUUID": "16213fa7-03d5-4c92-a045-01ea6012d3fe",
+              "uuid": "b0a8f81a-9db9-4af8-bf36-7613b0df0450",
+              "parentUUID": "f8afc5c6-4a80-44f9-aece-8faaa4342627",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "928dc1c7-77f7-4552-b679-e2e28daa52d9",
-            "03fe00bc-24c2-42a2-b684-ca486edbd417",
-            "a34a9255-4e21-421b-b4e1-46f8ad15b7c5"
+            "382727b3-bfc6-4f32-a4a8-78599f360ea0",
+            "c0a5d6a4-5cc0-4d0a-9470-262bbce4c8b2",
+            "2a56349d-0448-45a8-917f-7af7a821902d"
           ],
           "failures": [
-            "d20019aa-15e7-4c33-8481-a35bf2c2eaff"
+            "ba2f6887-bab5-414a-90de-a8d61461f8b8"
           ],
           "pending": [
-            "14547c95-d3cd-4b3d-98bf-9e25e11893db",
-            "bd4f8e96-063a-4844-8b34-533530f27d2a"
+            "dede8916-c409-4bde-aed0-fce64493902c",
+            "b0a8f81a-9db9-4af8-bf36-7613b0df0450"
           ],
           "skipped": [],
           "duration": 1008,

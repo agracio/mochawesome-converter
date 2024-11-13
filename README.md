@@ -39,11 +39,13 @@ https://github.com/adamgruber/mochawesome
 ### Conversion process
 
  - All test reports except JUnit are first converted to JUnit format using XSLT.
- - Set `junit` option to `true` if you want to review JUnit conversion results.
+ - TRX files undergo additional processing to enhance JUnit output.
+ - Set `junit` option to `true` to get JUnit conversion results.
 
 ### All test types
 
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
+- Converts &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; to Mochawesome context values.
 - Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
 - Test suites are displayed in alphabetical order by `file` and `classname` attributes.
 - Tests suites without any tests are excluded from Mochawesome and JUnit.
@@ -52,7 +54,7 @@ https://github.com/adamgruber/mochawesome
 ### JUnit 
 
 - Converts `testcase` **&lt;properties&gt;**, **&lt;system-out&gt;** and **&lt;system-err&gt;** elements to Mochawesome test context.
-- Nested tests and test suites currently not supported.
+- Nested test suites currently not supported.
 
 ### NUnit
 
@@ -74,8 +76,9 @@ https://github.com/adamgruber/mochawesome
 - Converts `Output/ErrorInfo/StackTrace` to JUnit **&lt;failure&gt;** stack trace.
 - Converts `Output/StdErr` to JUnit **&lt;system-err&gt;**.
 - Converts `Output/StdOut` to JUnit **&lt;system-out&gt;**.
-- Tests are ordered by name in Mochawesome.
-- Does not resolve test suite times in JUnit output.
+- Test suites are split into multiple **&lt;testsuite&gt;** elements by test classname.
+- Tests are ordered by name.
+- Test suit times are not 100% accurate - displayed as a sum() of all test times. 
 
 ### Usage
 
@@ -112,14 +115,15 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
 - `reportDir` - will be created if path does not exist.
-- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. Set to `false` to display tests as skipped.
+- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. 
+  Set to `false` to display tests as skipped.
 
 #### Supported `testType` options.
 
 | `testType` | File Type         |
 |:-----------|:------------------|
 | JUnit      | JUnit             |
-| NUnit      | NUnit 3.0+ XML    |
+| NUnit      | NUnit 3+ XML      |
 | xUnit      | xUnit.net v2+ XML |
 | TRX        | Visual Studio TRX |
 

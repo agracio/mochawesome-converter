@@ -59,8 +59,8 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:variable>
-                        <xsl:variable name="message" select="replace(vs:Output/vs:ErrorInfo/vs:Message, '&#xD;', '')"/>
-                        <xsl:variable name="stacktrace" select="replace(vs:Output/vs:ErrorInfo/vs:StackTrace, '&#xD;', '')"/>
+                        <xsl:variable name="message" select="replace(replace(vs:Output/vs:ErrorInfo/vs:Message, '&amp;', ''), '#xD;', '') "/>
+                        <xsl:variable name="stacktrace" select="replace(replace(vs:Output/vs:ErrorInfo/vs:StackTrace, '&amp;', ''), '#xD;', '') "/>
                         <xsl:variable name="stderr" select="vs:Output/vs:StdErr"/>
                         <xsl:variable name="stdout" select="vs:Output/vs:StdOut"/>
                         <xsl:for-each select="//vs:UnitTest">

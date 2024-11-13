@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "5bfacde0-6678-4e02-be65-cb8b3e101a63",
+      "uuid": "02323a8a-7dab-49fd-a714-9e785db279a8",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+          "uuid": "cfdd10e9-7272-447a-859f-aff3a23e8f9b",
           "title": "MsTestSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -44,11 +44,11 @@
               "code": null,
               "err": {
                 "message": "Assert.Fail failed. Failing for demo purposes",
-                "estack": "at MsTestSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20\n",
+                "estack": "at MsTestSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20",
                 "diff": null
               },
-              "uuid": "ebbb254d-c704-4523-8941-d874b5b09f34",
-              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "uuid": "0631a80b-0091-400e-ae05-62fa8a71231e",
+              "parentUUID": "cfdd10e9-7272-447a-859f-aff3a23e8f9b",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "46214756-ce84-426a-a7ca-dd743c179cc9",
-              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "uuid": "8f6d5c6b-c51a-4213-8273-f84d238f236c",
+              "parentUUID": "cfdd10e9-7272-447a-859f-aff3a23e8f9b",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c9989c6b-bd33-4983-8098-6cd452e9437c",
-              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "uuid": "8beee494-bd7c-442c-a24b-f767b6dbf581",
+              "parentUUID": "cfdd10e9-7272-447a-859f-aff3a23e8f9b",
               "isHook": false,
               "skipped": false
             },
@@ -98,22 +98,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "49ccd87d-09b4-49cf-ae9d-d6ec0344f029",
-              "parentUUID": "8325ba23-0a67-444d-a926-cb4d40cf94ae",
+              "uuid": "b739bdb0-563e-4678-b51b-491589b357fa",
+              "parentUUID": "cfdd10e9-7272-447a-859f-aff3a23e8f9b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c9989c6b-bd33-4983-8098-6cd452e9437c",
-            "49ccd87d-09b4-49cf-ae9d-d6ec0344f029"
+            "8beee494-bd7c-442c-a24b-f767b6dbf581",
+            "b739bdb0-563e-4678-b51b-491589b357fa"
           ],
           "failures": [
-            "ebbb254d-c704-4523-8941-d874b5b09f34"
+            "0631a80b-0091-400e-ae05-62fa8a71231e"
           ],
           "pending": [
-            "46214756-ce84-426a-a7ca-dd743c179cc9"
+            "8f6d5c6b-c51a-4213-8273-f84d238f236c"
           ],
           "skipped": [],
           "duration": 1038,

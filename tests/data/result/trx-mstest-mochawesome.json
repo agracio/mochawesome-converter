@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "43c2db80-5a5d-44ef-af7e-544e0284014f",
+      "uuid": "3bce5cde-fc42-469b-a9a5-3ab3edc47c78",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+          "uuid": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
           "title": "MsTestSample.DataDriven",
           "file": "",
           "beforeHooks": [],
@@ -44,11 +44,11 @@
               "code": null,
               "err": {
                 "message": "Assert.Fail failed. Failing for demo purposes",
-                "estack": "at MsTestSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n",
+                "estack": "at MsTestSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "cadf2d76-c740-4bc1-aa4c-5e4823d53704",
-              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "uuid": "ba9a3c92-353e-4ca9-948a-369f7889043f",
+              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "264d14b7-e130-480f-925b-1fec730d2056",
-              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "uuid": "a75a603b-d1b1-4f5f-8953-30ce0c5a0daf",
+              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d903755c-ce27-4ef9-b319-b92f0217f290",
-              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "uuid": "ff5e1f51-21ad-46a4-9ba0-463d7dc785de",
+              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
               "isHook": false,
               "skipped": false
             },
@@ -99,11 +99,11 @@
               "code": null,
               "err": {
                 "message": "Assert.Fail failed. Failing for demo purposes",
-                "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16\n\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n",
+                "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)",
                 "diff": null
               },
-              "uuid": "133a378c-dc11-436c-8cc8-115601b31ea5",
-              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "uuid": "61a33bb3-baa6-4276-99db-903649087fba",
+              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
               "isHook": false,
               "skipped": false
             },
@@ -119,21 +119,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "25b127dc-8354-4b96-90a0-ccc95dede296",
-              "parentUUID": "7a5dffe6-3874-43cb-b791-d7edcc10c793",
+              "uuid": "b664da20-a215-48c7-8b18-81bb72365407",
+              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "264d14b7-e130-480f-925b-1fec730d2056",
-            "d903755c-ce27-4ef9-b319-b92f0217f290",
-            "25b127dc-8354-4b96-90a0-ccc95dede296"
+            "a75a603b-d1b1-4f5f-8953-30ce0c5a0daf",
+            "ff5e1f51-21ad-46a4-9ba0-463d7dc785de",
+            "b664da20-a215-48c7-8b18-81bb72365407"
           ],
           "failures": [
-            "cadf2d76-c740-4bc1-aa4c-5e4823d53704",
-            "133a378c-dc11-436c-8cc8-115601b31ea5"
+            "ba9a3c92-353e-4ca9-948a-369f7889043f",
+            "61a33bb3-baa6-4276-99db-903649087fba"
           ],
           "pending": [],
           "skipped": [],
@@ -143,7 +143,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+          "uuid": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
           "title": "MsTestSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -162,11 +162,11 @@
               "code": null,
               "err": {
                 "message": "Assert.Fail failed. Failing for demo purposes",
-                "estack": "at MsTestSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20\n\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n",
+                "estack": "at MsTestSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "3d3f5a62-1856-4154-890c-332ebee2fba7",
-              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "uuid": "eb926280-b18b-42eb-9176-6d6aa04b6d25",
+              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
               "isHook": false,
               "skipped": false
             },
@@ -182,8 +182,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "b5394269-55a4-4e19-9095-fcb991be0d29",
-              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "uuid": "e5b87d4f-c654-4289-9e5a-031b4c090a04",
+              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
               "isHook": false,
               "skipped": false
             },
@@ -199,8 +199,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0a9975cd-35c5-4c92-a23a-015272ebed72",
-              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "uuid": "3281b294-211b-4442-b86d-85b34018b15a",
+              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
               "isHook": false,
               "skipped": false
             },
@@ -216,22 +216,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "89f783cc-e982-42d2-b4d3-4a06a133d8cf",
-              "parentUUID": "5acb9fda-7db2-4a7b-a887-929884117ad6",
+              "uuid": "76d84f40-315e-48bf-bfd2-b0d95b624932",
+              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0a9975cd-35c5-4c92-a23a-015272ebed72",
-            "89f783cc-e982-42d2-b4d3-4a06a133d8cf"
+            "3281b294-211b-4442-b86d-85b34018b15a",
+            "76d84f40-315e-48bf-bfd2-b0d95b624932"
           ],
           "failures": [
-            "3d3f5a62-1856-4154-890c-332ebee2fba7"
+            "eb926280-b18b-42eb-9176-6d6aa04b6d25"
           ],
           "pending": [
-            "b5394269-55a4-4e19-9095-fcb991be0d29"
+            "e5b87d4f-c654-4289-9e5a-031b4c090a04"
           ],
           "skipped": [],
           "duration": 1014,

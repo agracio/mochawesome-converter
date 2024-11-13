@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "a7b58f9a-1b72-42a9-baea-eae3d6a65b11",
+      "uuid": "efea1354-1db9-48eb-bb01-ddf3beb0eeb9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+          "uuid": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
           "title": "NUnitSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -44,11 +44,11 @@
               "code": null,
               "err": {
                 "message": "Failing for demo purposes",
-                "estack": "at NUnitSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21\n",
+                "estack": "at NUnitSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21",
                 "diff": null
               },
-              "uuid": "13f1b4f8-3843-4118-ac8f-2a3025cfd493",
-              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "uuid": "9b48169b-3536-482d-820e-581541dd54a3",
+              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "49ee5955-75fc-4c1f-911e-a8d7ad68e968",
-              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "uuid": "851a89c0-4e9e-4376-993a-68821d1b4d4d",
+              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2eab89ae-7a62-48bd-9fef-57163138e7ce",
-              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "uuid": "52a38360-ce34-4269-9240-aee235aa3ada",
+              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
               "isHook": false,
               "skipped": false
             },
@@ -98,8 +98,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0f922e21-d5d5-44a0-9b29-713463de6c60",
-              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "uuid": "73a57671-647a-4eee-98cd-9b80353da5ec",
+              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
               "isHook": false,
               "skipped": false
             },
@@ -112,26 +112,26 @@
               "pass": false,
               "fail": false,
               "pending": true,
-              "context": "[\"skipped:   Expected: True&#xD;   But was:  False&#xD; \"]",
+              "context": "[\"skipped:   Expected: True   But was:  False \"]",
               "code": null,
               "err": {},
-              "uuid": "d9c144ed-606b-445a-9c71-77db30ed82a1",
-              "parentUUID": "66cdcf2d-72b5-4c0b-95f6-877db1d5c2f1",
+              "uuid": "ec4986d3-259e-4b9d-a1cd-6a072df5db05",
+              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2eab89ae-7a62-48bd-9fef-57163138e7ce",
-            "0f922e21-d5d5-44a0-9b29-713463de6c60"
+            "52a38360-ce34-4269-9240-aee235aa3ada",
+            "73a57671-647a-4eee-98cd-9b80353da5ec"
           ],
           "failures": [
-            "13f1b4f8-3843-4118-ac8f-2a3025cfd493"
+            "9b48169b-3536-482d-820e-581541dd54a3"
           ],
           "pending": [
-            "49ee5955-75fc-4c1f-911e-a8d7ad68e968",
-            "d9c144ed-606b-445a-9c71-77db30ed82a1"
+            "851a89c0-4e9e-4376-993a-68821d1b4d4d",
+            "ec4986d3-259e-4b9d-a1cd-6a072df5db05"
           ],
           "skipped": [],
           "duration": 1074,

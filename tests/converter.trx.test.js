@@ -8,7 +8,7 @@ const describe = require('@jest/globals').describe;
 const setup = require('./setup');
 const converter = require('../src/converter');
 
-describe.only("TRX converter tests", () => {
+describe("TRX converter tests", () => {
 
     beforeAll(() => {
         setup.removeTempDir();

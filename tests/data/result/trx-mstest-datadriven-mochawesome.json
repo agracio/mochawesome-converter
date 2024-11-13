@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "ca4e8d53-07a4-4095-9467-f3fe651b7647",
+      "uuid": "d5e11b20-37c0-443a-9b20-5328702a0e82",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "933cb7c7-61ec-45c3-9498-876edcdf2f3f",
+          "uuid": "d7132400-d019-4ae5-9742-d7704fe5111a",
           "title": "MsTestSample.DataDriven",
           "file": "",
           "beforeHooks": [],
@@ -44,11 +44,11 @@
               "code": null,
               "err": {
                 "message": "Assert.Fail failed. Failing for demo purposes",
-                "estack": "at MsTestSample.DataDriven.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25\n",
+                "estack": "at MsTestSample.DataDriven.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25",
                 "diff": null
               },
-              "uuid": "bdbafc09-acba-42dc-87ad-b6b3a1cac70c",
-              "parentUUID": "933cb7c7-61ec-45c3-9498-876edcdf2f3f",
+              "uuid": "67131c07-9855-486e-b448-a02ab66d59bc",
+              "parentUUID": "d7132400-d019-4ae5-9742-d7704fe5111a",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "fce746fd-7f78-4efb-967b-27ba7e7256c0",
-              "parentUUID": "933cb7c7-61ec-45c3-9498-876edcdf2f3f",
+              "uuid": "09b49361-a256-4295-bf86-17cec2e6ab4a",
+              "parentUUID": "d7132400-d019-4ae5-9742-d7704fe5111a",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a126d245-fcd5-491f-b6d5-d3c709f95105",
-              "parentUUID": "933cb7c7-61ec-45c3-9498-876edcdf2f3f",
+              "uuid": "15171883-7cb1-4819-9fce-d7a714d65b36",
+              "parentUUID": "d7132400-d019-4ae5-9742-d7704fe5111a",
               "isHook": false,
               "skipped": false
             },
@@ -99,11 +99,11 @@
               "code": null,
               "err": {
                 "message": "Assert.Fail failed. Failing for demo purposes",
-                "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16\n",
+                "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16",
                 "diff": null
               },
-              "uuid": "478a767f-f510-47d3-a2bb-7c77bbf0e3fc",
-              "parentUUID": "933cb7c7-61ec-45c3-9498-876edcdf2f3f",
+              "uuid": "e2a746b5-7384-4601-afbf-dcd08c88441a",
+              "parentUUID": "d7132400-d019-4ae5-9742-d7704fe5111a",
               "isHook": false,
               "skipped": false
             },
@@ -119,21 +119,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c3949b19-32b3-4092-89fd-18e4e5ac9254",
-              "parentUUID": "933cb7c7-61ec-45c3-9498-876edcdf2f3f",
+              "uuid": "f011c430-db85-4cae-b771-27c116259e9e",
+              "parentUUID": "d7132400-d019-4ae5-9742-d7704fe5111a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fce746fd-7f78-4efb-967b-27ba7e7256c0",
-            "a126d245-fcd5-491f-b6d5-d3c709f95105",
-            "c3949b19-32b3-4092-89fd-18e4e5ac9254"
+            "09b49361-a256-4295-bf86-17cec2e6ab4a",
+            "15171883-7cb1-4819-9fce-d7a714d65b36",
+            "f011c430-db85-4cae-b771-27c116259e9e"
           ],
           "failures": [
-            "bdbafc09-acba-42dc-87ad-b6b3a1cac70c",
-            "478a767f-f510-47d3-a2bb-7c77bbf0e3fc"
+            "67131c07-9855-486e-b448-a02ab66d59bc",
+            "e2a746b5-7384-4601-afbf-dcd08c88441a"
           ],
           "pending": [],
           "skipped": [],
