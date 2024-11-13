@@ -12,3 +12,4 @@ report/
 report1/
 tests/
 index.js
+jest.config.js

@@ -123,12 +123,11 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 | `testType` | File Type         |
 |:-----------|:------------------|
 | JUnit      | JUnit             |
-| NUnit      | NUnit 3+ XML      |
+| NUnit      | NUnit 3.0+ XML    |
 | xUnit      | xUnit.net v2+ XML |
 | TRX        | Visual Studio TRX |
 
 
-## Implementation and documentation in progress...
 
 
 
