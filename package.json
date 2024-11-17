@@ -1,6 +1,6 @@
 {
   "name": "mochawesome-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test report files to Mochawesome and JUnit converter",
   "main": "src/converter.js",
   "types": "index.d.ts",
@@ -14,7 +14,7 @@
     "url": "git@github.com:agracio/mochawesome-converter.git"
   },
   "bugs": {
-    "url": "http://github.com/agracio/mochawesome-converter/issues"
+    "url": "https://github.com/agracio/mochawesome-converter/issues"
   },
   "engines": {
     "node": ">= 18"

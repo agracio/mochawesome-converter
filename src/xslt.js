@@ -49,7 +49,7 @@ async function convert(options, xsltFile){
         xml = await xslt.xsltProcess(xmlParser.xmlParse(xmlString), xmlParser.xmlParse(xsltString));
     }
     catch (e) {
-        throw `\nCould not process XML file ${xmlString} using XSLT ${xsltString} \n${e.message}`;
+        throw `\nCould not process XML file ${options.testFile} using XSLT ${xsltFile} \n${e}`;
     }
 
     await processXml(options, xml);
