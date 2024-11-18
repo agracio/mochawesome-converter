@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "ce52cd34-79a8-4af4-a8f0-d8e0afcddbbf",
+      "uuid": "418b62ed-f90d-4fc1-b3cf-5a1f61aaebdf",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "354f86dc-683f-491b-a5c0-13be7e3f41d1",
+          "uuid": "b90982dc-96e6-4699-837c-f715ad97fae0",
           "title": "NUnitSample.DataDriven",
           "file": "",
           "beforeHooks": [],
@@ -47,8 +47,8 @@
                 "estack": "at NUnitSample.DataDriven.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 27",
                 "diff": null
               },
-              "uuid": "3ad8d84a-a83a-4f36-8b28-fa7bb9deb731",
-              "parentUUID": "354f86dc-683f-491b-a5c0-13be7e3f41d1",
+              "uuid": "1e38cd8e-c7f5-48bd-91ee-2b825335d6cc",
+              "parentUUID": "b90982dc-96e6-4699-837c-f715ad97fae0",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "49e33ee8-4f36-48cd-8051-f0792f81d207",
-              "parentUUID": "354f86dc-683f-491b-a5c0-13be7e3f41d1",
+              "uuid": "4d5db964-cd60-475f-bfa6-407fb2ed354d",
+              "parentUUID": "b90982dc-96e6-4699-837c-f715ad97fae0",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "55b273c7-12a9-40e6-a876-01c753bdaf33",
-              "parentUUID": "354f86dc-683f-491b-a5c0-13be7e3f41d1",
+              "uuid": "4de5c7ab-6590-4f6a-a5f9-6ee3be749c67",
+              "parentUUID": "b90982dc-96e6-4699-837c-f715ad97fae0",
               "isHook": false,
               "skipped": false
             },
@@ -102,8 +102,8 @@
                 "estack": "at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\NUnitSample\\DataDriven.cs:line 18",
                 "diff": null
               },
-              "uuid": "6d8f7d50-60b4-4f23-a507-090ed962f58d",
-              "parentUUID": "354f86dc-683f-491b-a5c0-13be7e3f41d1",
+              "uuid": "56d613aa-8d52-4760-afc5-e68c9637050a",
+              "parentUUID": "b90982dc-96e6-4699-837c-f715ad97fae0",
               "isHook": false,
               "skipped": false
             },
@@ -119,21 +119,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a1eb3a7b-0818-46a8-8d18-1ab5b3a09b97",
-              "parentUUID": "354f86dc-683f-491b-a5c0-13be7e3f41d1",
+              "uuid": "0f88b99d-c40a-4b1e-8c06-1c325419bd93",
+              "parentUUID": "b90982dc-96e6-4699-837c-f715ad97fae0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "49e33ee8-4f36-48cd-8051-f0792f81d207",
-            "55b273c7-12a9-40e6-a876-01c753bdaf33",
-            "a1eb3a7b-0818-46a8-8d18-1ab5b3a09b97"
+            "4d5db964-cd60-475f-bfa6-407fb2ed354d",
+            "4de5c7ab-6590-4f6a-a5f9-6ee3be749c67",
+            "0f88b99d-c40a-4b1e-8c06-1c325419bd93"
           ],
           "failures": [
-            "3ad8d84a-a83a-4f36-8b28-fa7bb9deb731",
-            "6d8f7d50-60b4-4f23-a507-090ed962f58d"
+            "1e38cd8e-c7f5-48bd-91ee-2b825335d6cc",
+            "56d613aa-8d52-4760-afc5-e68c9637050a"
           ],
           "pending": [],
           "skipped": [],

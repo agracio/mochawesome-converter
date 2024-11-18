@@ -1,0 +1,17 @@
+<testsuites tests="5" failures="2" errors="0" skipped="0" time="1.0139999999999996">
+    <testsuite name="XUnitSample.DataDriven" tests="5" time="1.0139999999999996" failures="2" errors="0" skipped="0">
+        <testcase classname="XUnitSample.DataDriven" name="Failing_test" status="Failed" time="0.0030000">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.DataDriven.Failing_test() in D:\Work-Git\github\Mini\trx2junit\samples\XUnitSample\DataDriven.cs:line 26
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.DataDriven" name="Slow_test" status="Passed" time="1.0070000"/>
+        <testcase classname="XUnitSample.DataDriven" name="Two_pass_one_fails(arg: 0)" status="Passed" time="0.0010000"/>
+        <testcase classname="XUnitSample.DataDriven" name="Two_pass_one_fails(arg: 1)" status="Failed" time="0.0010000">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\Work-Git\github\Mini\trx2junit\samples\XUnitSample\DataDriven.cs:line 17
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.DataDriven" name="Two_pass_one_fails(arg: 2)" status="Passed" time="0.0020000"/>
+    </testsuite>
+</testsuites>

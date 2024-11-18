@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "30440d83-1ecf-4510-a95f-bdec8ab16315",
+      "uuid": "ebdd810b-51df-4cc2-8c0c-7d916f063792",
       "title": "TestLibrary.Example.dll",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "575be30b-7d08-4f3e-9786-eb3f98663a1d",
+          "uuid": "70bd0f0b-0416-4dec-9eb2-523952256a09",
           "title": "ExampleTestFixture",
           "file": "TestLibrary.Example.ExampleTestFixture",
           "beforeHooks": [],
@@ -43,15 +43,15 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.SimpleTest\"}]",
               "code": null,
               "err": {},
-              "uuid": "c857820b-0bc3-4e9b-a438-686de9a804e8",
-              "parentUUID": "575be30b-7d08-4f3e-9786-eb3f98663a1d",
+              "uuid": "2900926d-6583-4000-bef0-7a0b02faceca",
+              "parentUUID": "70bd0f0b-0416-4dec-9eb2-523952256a09",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c857820b-0bc3-4e9b-a438-686de9a804e8"
+            "2900926d-6583-4000-bef0-7a0b02faceca"
           ],
           "failures": [],
           "pending": [],
@@ -62,7 +62,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "967ebcb8-642c-4fc8-aec5-2b5f85e16b6c",
+          "uuid": "ccebb45c-8b38-4247-a8d6-fd4bd6e8b37e",
           "title": "ParameterizedTest",
           "file": "TestLibrary.Example.ExampleTestFixture.ParameterizedTest",
           "beforeHooks": [],
@@ -80,8 +80,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: Combinatorial\",\"_PID: 8204\",\"_APPDOMAIN: domain-4461bdb5-TestLibrary.Example.dll\"]},{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.ParameterizedTest\"}]",
               "code": null,
               "err": {},
-              "uuid": "e688973d-bf8e-4dcb-a11d-9591880b645e",
-              "parentUUID": "967ebcb8-642c-4fc8-aec5-2b5f85e16b6c",
+              "uuid": "f2f83528-fed0-482f-86cb-741ca02584ef",
+              "parentUUID": "ccebb45c-8b38-4247-a8d6-fd4bd6e8b37e",
               "isHook": false,
               "skipped": false
             },
@@ -97,16 +97,16 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Description: Ensures aria-label is not present instead of empty string\"]},{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.ParameterizedTest\"}]",
               "code": null,
               "err": {},
-              "uuid": "1ce3ad5d-e796-422f-87a5-2214fea970ad",
-              "parentUUID": "967ebcb8-642c-4fc8-aec5-2b5f85e16b6c",
+              "uuid": "4af565ac-2e4d-44be-b80b-fcbeb5486d88",
+              "parentUUID": "ccebb45c-8b38-4247-a8d6-fd4bd6e8b37e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e688973d-bf8e-4dcb-a11d-9591880b645e",
-            "1ce3ad5d-e796-422f-87a5-2214fea970ad"
+            "f2f83528-fed0-482f-86cb-741ca02584ef",
+            "4af565ac-2e4d-44be-b80b-fcbeb5486d88"
           ],
           "failures": [],
           "pending": [],
@@ -117,7 +117,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "5b9ae9a7-a6e8-4dec-b7d7-cb43e13e57db",
+          "uuid": "3cc7660c-bf45-42c5-9238-9709f78de30b",
           "title": "TestWithSource",
           "file": "TestLibrary.Example.ExampleTestFixture.TestWithSource",
           "beforeHooks": [],
@@ -135,8 +135,8 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.TestWithSource\"}]",
               "code": null,
               "err": {},
-              "uuid": "bf115fdd-4525-48b0-8465-47eeff2456e9",
-              "parentUUID": "5b9ae9a7-a6e8-4dec-b7d7-cb43e13e57db",
+              "uuid": "6761285c-364c-4fc0-8c39-97184b5a09dc",
+              "parentUUID": "3cc7660c-bf45-42c5-9238-9709f78de30b",
               "isHook": false,
               "skipped": false
             },
@@ -152,16 +152,16 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"Running ExampleTestFixture.SetupMethod\\n     Running ExampleTestFixture.TestWithSource\"}]",
               "code": null,
               "err": {},
-              "uuid": "14845f6a-b75f-4f0f-bf7a-c6d1c7aa0f78",
-              "parentUUID": "5b9ae9a7-a6e8-4dec-b7d7-cb43e13e57db",
+              "uuid": "123b2bbb-161a-4333-8d2b-3f550b8b229b",
+              "parentUUID": "3cc7660c-bf45-42c5-9238-9709f78de30b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bf115fdd-4525-48b0-8465-47eeff2456e9",
-            "14845f6a-b75f-4f0f-bf7a-c6d1c7aa0f78"
+            "6761285c-364c-4fc0-8c39-97184b5a09dc",
+            "123b2bbb-161a-4333-8d2b-3f550b8b229b"
           ],
           "failures": [],
           "pending": [],

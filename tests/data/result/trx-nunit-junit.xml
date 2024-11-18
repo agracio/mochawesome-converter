@@ -1,0 +1,75 @@
+<testsuites tests="16" failures="5" errors="0" skipped="2" time="3.079403">
+    <testsuite name="NUnitSample.DataDriven" tests="5" failures="2" skipped="0" time="1.0319059999999998">
+        <testcase classname="NUnitSample.DataDriven" name="Failing_test" status="Failed" time="0.0223250">
+            <failure message="Failing for demo purposes">
+                at NUnitSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 27
+
+1)    at NUnitSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 27
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.DataDriven" name="Slow_test" status="Passed" time="1.0082870"/>
+        <testcase classname="NUnitSample.DataDriven" name="Two_pass_one_fails(0)" status="Passed" time="0.0005590"/>
+        <testcase classname="NUnitSample.DataDriven" name="Two_pass_one_fails(1)" status="Failed" time="0.0006260">
+            <failure message="Failing for demo purposes">
+                at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 18
+   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)
+
+1)    at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\NUnitSample\DataDriven.cs:line 18
+   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.DataDriven" name="Two_pass_one_fails(2)" status="Passed" time="0.0001090"/>
+    </testsuite>
+    <testsuite name="NUnitSample.MemberData" tests="5" failures="2" skipped="0" time="1.040136">
+        <testcase classname="NUnitSample.MemberData" name="Failing_test" status="Failed" time="0.0034690">
+            <failure message="  Failing for demo purposes   Expected: True   But was:  False ">
+                at NUnitSample.MemberData.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 31
+
+1)    at NUnitSample.MemberData.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 31
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.MemberData" name="Slow_test" status="Passed" time="1.0146970"/>
+        <testcase classname="NUnitSample.MemberData" name="Two_pass_one_fails({ index = 0 })" status="Passed" time="0.0215080"/>
+        <testcase classname="NUnitSample.MemberData" name="Two_pass_one_fails({ index = 1 })" status="Failed" time="0.0004520">
+            <failure message="  Failing for demo purposes   Expected: True   But was:  False ">
+                at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 22
+   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)
+
+1)    at NUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\projects\trx2junit\samples\NUnitSample\MemberData.cs:line 22
+   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.MemberData" name="Two_pass_one_fails({ index = 2 })" status="Passed" time="0.0000100"/>
+    </testsuite>
+    <testsuite name="NUnitSample.SimpleTests" tests="6" failures="1" skipped="2" time="1.007361">
+        <testcase classname="NUnitSample.SimpleTests" name="Failing_test" status="Failed" time="0.0002430">
+            <failure message="Failing for demo purposes">
+                at NUnitSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\SimpleTests.cs:line 21
+
+1)    at NUnitSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\NUnitSample\SimpleTests.cs:line 21
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.SimpleTests" name="Ignored_test" status="Skipped" time="0.0002930">
+            <skipped message="Ignoring for testing ;-)"/>
+            <skipped message="Ignoring for testing ;-)"/>
+            <system-out>
+                Ignoring for testing ;-)
+            </system-out>
+        </testcase>
+        <testcase classname="NUnitSample.SimpleTests" name="Passing_test" status="Passed" time="0.0001440"/>
+        <testcase classname="NUnitSample.SimpleTests" name="Slow_test" status="Passed" time="1.0057470"/>
+        <testcase classname="NUnitSample.SimpleTests" name="Test_with_StdOut" status="Passed" time="0.0001190">
+            <system-out>
+                message written to stdout
+            </system-out>
+        </testcase>
+        <testcase classname="NUnitSample.SimpleTests" name="Test_with_failed_assumption" status="Skipped" time="0.0008150">
+            <skipped message="  Expected: True   But was:  False "/>
+            <skipped message="Expected: True&#xD;   But was:  False"/>
+            <system-out>
+                Expected: True&#xD;
+  But was:  False
+            </system-out>
+        </testcase>
+    </testsuite>
+</testsuites>

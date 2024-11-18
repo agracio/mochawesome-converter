@@ -1,0 +1,17 @@
+<testsuites tests="4" failures="1" errors="0" skipped="1" time="1.0279999999999998">
+    <testsuite name="XUnitSample.SimpleTests" tests="4" time="1.0279999999999998" failures="1" errors="0" skipped="1">
+        <testcase classname="XUnitSample.SimpleTests" name="Failing_test" status="Failed" time="0.0060000">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.SimpleTests.Failing_test() in D:\Work-Git\github\Mini\trx2junit\samples\XUnitSample\SimpleTests.cs:line 20
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.SimpleTests" name="Ignored_test" status="Skipped" time="0.0010000">
+            <skipped message="Ignoring for testing ;-)"/>
+            <system-out>
+                Ignoring for testing ;-)
+            </system-out>
+        </testcase>
+        <testcase classname="XUnitSample.SimpleTests" name="Passing_test" status="Passed" time="0.0020000"/>
+        <testcase classname="XUnitSample.SimpleTests" name="Slow_test" status="Passed" time="1.0190000"/>
+    </testsuite>
+</testsuites>

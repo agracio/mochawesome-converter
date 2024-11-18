@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "3bce5cde-fc42-469b-a9a5-3ab3edc47c78",
+      "uuid": "9456ff7e-f3c8-4765-8bbc-f40a428f9d0a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
+          "uuid": "51539e32-3a79-4285-a886-476a344801af",
           "title": "MsTestSample.DataDriven",
           "file": "",
           "beforeHooks": [],
@@ -47,8 +47,8 @@
                 "estack": "at MsTestSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 25\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "ba9a3c92-353e-4ca9-948a-369f7889043f",
-              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
+              "uuid": "909fefda-ae40-4df5-b035-45956eb983d3",
+              "parentUUID": "51539e32-3a79-4285-a886-476a344801af",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a75a603b-d1b1-4f5f-8953-30ce0c5a0daf",
-              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
+              "uuid": "34125e30-7ddf-4eb4-9a9c-2ddf9bd602ed",
+              "parentUUID": "51539e32-3a79-4285-a886-476a344801af",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ff5e1f51-21ad-46a4-9ba0-463d7dc785de",
-              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
+              "uuid": "bd1b2992-3378-4d98-b62b-89baf1aa0b78",
+              "parentUUID": "51539e32-3a79-4285-a886-476a344801af",
               "isHook": false,
               "skipped": false
             },
@@ -102,8 +102,8 @@
                 "estack": "at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\MsTestSample\\DataDriven.cs:line 16\n   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)",
                 "diff": null
               },
-              "uuid": "61a33bb3-baa6-4276-99db-903649087fba",
-              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
+              "uuid": "abc64658-8675-4d22-bb7d-080a30a17b68",
+              "parentUUID": "51539e32-3a79-4285-a886-476a344801af",
               "isHook": false,
               "skipped": false
             },
@@ -119,21 +119,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b664da20-a215-48c7-8b18-81bb72365407",
-              "parentUUID": "4d33b0fb-6cbf-4b15-881b-f01adef81d6e",
+              "uuid": "cf1aac2b-ccfd-451c-9470-f0c0e131fb79",
+              "parentUUID": "51539e32-3a79-4285-a886-476a344801af",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a75a603b-d1b1-4f5f-8953-30ce0c5a0daf",
-            "ff5e1f51-21ad-46a4-9ba0-463d7dc785de",
-            "b664da20-a215-48c7-8b18-81bb72365407"
+            "34125e30-7ddf-4eb4-9a9c-2ddf9bd602ed",
+            "bd1b2992-3378-4d98-b62b-89baf1aa0b78",
+            "cf1aac2b-ccfd-451c-9470-f0c0e131fb79"
           ],
           "failures": [
-            "ba9a3c92-353e-4ca9-948a-369f7889043f",
-            "61a33bb3-baa6-4276-99db-903649087fba"
+            "909fefda-ae40-4df5-b035-45956eb983d3",
+            "abc64658-8675-4d22-bb7d-080a30a17b68"
           ],
           "pending": [],
           "skipped": [],
@@ -143,7 +143,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
+          "uuid": "a9257f74-b40b-49d7-ae16-b8606e29b806",
           "title": "MsTestSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -165,8 +165,8 @@
                 "estack": "at MsTestSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\MsTestSample\\SimpleTests.cs:line 20\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "eb926280-b18b-42eb-9176-6d6aa04b6d25",
-              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
+              "uuid": "d7bb517d-547a-453f-899e-b719be674bd3",
+              "parentUUID": "a9257f74-b40b-49d7-ae16-b8606e29b806",
               "isHook": false,
               "skipped": false
             },
@@ -182,8 +182,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "e5b87d4f-c654-4289-9e5a-031b4c090a04",
-              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
+              "uuid": "0ae6391a-2463-4674-b1f4-345b3494afc5",
+              "parentUUID": "a9257f74-b40b-49d7-ae16-b8606e29b806",
               "isHook": false,
               "skipped": false
             },
@@ -199,8 +199,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3281b294-211b-4442-b86d-85b34018b15a",
-              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
+              "uuid": "fbc41ace-abd9-49ba-a9f7-dd7ecf1cdbef",
+              "parentUUID": "a9257f74-b40b-49d7-ae16-b8606e29b806",
               "isHook": false,
               "skipped": false
             },
@@ -216,22 +216,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "76d84f40-315e-48bf-bfd2-b0d95b624932",
-              "parentUUID": "acd14821-bdf3-4121-a1f2-0a0fc8a4044f",
+              "uuid": "ffd48d74-c2ab-428e-95ea-12f14e498edd",
+              "parentUUID": "a9257f74-b40b-49d7-ae16-b8606e29b806",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3281b294-211b-4442-b86d-85b34018b15a",
-            "76d84f40-315e-48bf-bfd2-b0d95b624932"
+            "fbc41ace-abd9-49ba-a9f7-dd7ecf1cdbef",
+            "ffd48d74-c2ab-428e-95ea-12f14e498edd"
           ],
           "failures": [
-            "eb926280-b18b-42eb-9176-6d6aa04b6d25"
+            "d7bb517d-547a-453f-899e-b719be674bd3"
           ],
           "pending": [
-            "e5b87d4f-c654-4289-9e5a-031b4c090a04"
+            "0ae6391a-2463-4674-b1f4-345b3494afc5"
           ],
           "skipped": [],
           "duration": 1014,

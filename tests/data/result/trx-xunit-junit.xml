@@ -1,0 +1,57 @@
+<testsuites tests="14" failures="5" errors="0" skipped="1" time="3.0630075">
+    <testsuite name="XUnitSample.DataDriven" tests="5" failures="2" skipped="0" time="1.0084297">
+        <testcase classname="XUnitSample.DataDriven" name="Failing_test" status="Failed" time="0.0001631">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\XUnitSample\DataDriven.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.DataDriven" name="Slow_test" status="Passed" time="1.0076727"/>
+        <testcase classname="XUnitSample.DataDriven" name="Two_pass_one_fails(arg: 0)" status="Passed" time="0.0000045"/>
+        <testcase classname="XUnitSample.DataDriven" name="Two_pass_one_fails(arg: 1)" status="Failed" time="0.0001237">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\XUnitSample\DataDriven.cs:line 17
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.DataDriven" name="Two_pass_one_fails(arg: 2)" status="Passed" time="0.0004657"/>
+    </testsuite>
+    <testsuite name="XUnitSample.MemberData" tests="5" failures="2" skipped="0" time="1.03873">
+        <testcase classname="XUnitSample.MemberData" name="Failing_test" status="Failed" time="0.0015195">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.MemberData.Failing_test() in C:\projects\trx2junit\samples\XUnitSample\MemberData.cs:line 32
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.MemberData" name="Slow_test" status="Passed" time="1.0134813"/>
+        <testcase classname="XUnitSample.MemberData" name="Two_pass_one_fails(obj: { index = 0 })" status="Passed" time="0.0235430"/>
+        <testcase classname="XUnitSample.MemberData" name="Two_pass_one_fails(obj: { index = 1 })" status="Failed" time="0.0001797">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\projects\trx2junit\samples\XUnitSample\MemberData.cs:line 23
+   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.MemberData" name="Two_pass_one_fails(obj: { index = 2 })" status="Passed" time="0.0000065"/>
+    </testsuite>
+    <testsuite name="XUnitSample.SimpleTests" tests="4" failures="1" skipped="1" time="1.0158478">
+        <testcase classname="XUnitSample.SimpleTests" name="Failing_test" status="Failed" time="0.0015077">
+            <failure message="Failing for demo purposes Expected: True Actual:   False">
+                at XUnitSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\XUnitSample\SimpleTests.cs:line 20
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase classname="XUnitSample.SimpleTests" name="Ignored_test" status="Skipped" time="0.0010000">
+            <skipped message="Ignoring for testing ;-)"/>
+            <system-out>
+                Ignoring for testing ;-)
+            </system-out>
+        </testcase>
+        <testcase classname="XUnitSample.SimpleTests" name="Passing_test" status="Passed" time="0.0000810"/>
+        <testcase classname="XUnitSample.SimpleTests" name="Slow_test" status="Passed" time="1.0132591"/>
+    </testsuite>
+</testsuites>

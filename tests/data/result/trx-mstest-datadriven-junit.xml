@@ -1,0 +1,17 @@
+<testsuites tests="6" failures="3" errors="0" skipped="0" time="1.0342903">
+    <testsuite name="MsTestSample.DataDriven" tests="6" time="1.0342903" failures="3" errors="0" skipped="0">
+        <testcase classname="MsTestSample.DataDriven" name="Failing_test" status="Failed" time="0.0006181">
+            <failure message="Assert.Fail failed. Failing for demo purposes">
+                at MsTestSample.DataDriven.Failing_test() in D:\Work-Git\github\Mini\trx2junit\samples\MsTestSample\DataDriven.cs:line 25
+            </failure>
+        </testcase>
+        <testcase classname="MsTestSample.DataDriven" name="Slow_test" status="Passed" time="1.0009908"/>
+        <testcase classname="MsTestSample.DataDriven" name="Two_pass_one_fails (0)" status="Passed" time="0.0051356"/>
+        <testcase classname="MsTestSample.DataDriven" name="Two_pass_one_fails (1)" status="Failed" time="0.0275393">
+            <failure message="Assert.Fail failed. Failing for demo purposes">
+                at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\Work-Git\github\Mini\trx2junit\samples\MsTestSample\DataDriven.cs:line 16
+            </failure>
+        </testcase>
+        <testcase classname="MsTestSample.DataDriven" name="Two_pass_one_fails (2)" status="Passed" time="0.0000065"/>
+    </testsuite>
+</testsuites>

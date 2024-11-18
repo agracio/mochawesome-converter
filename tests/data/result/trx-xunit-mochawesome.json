@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "7e822901-08f7-4f82-a503-01930c795cd1",
+      "uuid": "80cef2da-f2d9-4635-aeed-5158cdefdd80",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0d4f493c-2f42-46ae-9393-9d41b37eb505",
+          "uuid": "6b08db60-45b2-464a-bb39-8d2c3939fd5e",
           "title": "XUnitSample.DataDriven",
           "file": "",
           "beforeHooks": [],
@@ -47,8 +47,8 @@
                 "estack": "at XUnitSample.DataDriven.Failing_test() in C:\\projects\\trx2junit\\samples\\XUnitSample\\DataDriven.cs:line 26\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "f31ef260-8001-4aae-85de-943cb7051541",
-              "parentUUID": "0d4f493c-2f42-46ae-9393-9d41b37eb505",
+              "uuid": "7497d3ab-4dd1-4778-ad3b-be3f188d2863",
+              "parentUUID": "6b08db60-45b2-464a-bb39-8d2c3939fd5e",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3c3ea49f-3e76-415f-b5ca-37c72e63fadf",
-              "parentUUID": "0d4f493c-2f42-46ae-9393-9d41b37eb505",
+              "uuid": "642e5da2-a1c8-409b-9644-1d4756eb2f83",
+              "parentUUID": "6b08db60-45b2-464a-bb39-8d2c3939fd5e",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "dcf346e6-7d68-4cbf-8f6b-13497e28d61c",
-              "parentUUID": "0d4f493c-2f42-46ae-9393-9d41b37eb505",
+              "uuid": "3e04ed68-7249-4ec8-9069-63fab45bfba2",
+              "parentUUID": "6b08db60-45b2-464a-bb39-8d2c3939fd5e",
               "isHook": false,
               "skipped": false
             },
@@ -102,8 +102,8 @@
                 "estack": "at XUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\\projects\\trx2junit\\samples\\XUnitSample\\DataDriven.cs:line 17\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "07675389-6a24-4387-92ee-50ae4ea00e2f",
-              "parentUUID": "0d4f493c-2f42-46ae-9393-9d41b37eb505",
+              "uuid": "ab8b2a2e-1170-43bd-b9fd-ec4afd29ab55",
+              "parentUUID": "6b08db60-45b2-464a-bb39-8d2c3939fd5e",
               "isHook": false,
               "skipped": false
             },
@@ -119,21 +119,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "12ebda0a-1aee-4643-8ddc-7ca349b3f5b7",
-              "parentUUID": "0d4f493c-2f42-46ae-9393-9d41b37eb505",
+              "uuid": "47d6f890-9409-468e-b473-590221951bed",
+              "parentUUID": "6b08db60-45b2-464a-bb39-8d2c3939fd5e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3c3ea49f-3e76-415f-b5ca-37c72e63fadf",
-            "dcf346e6-7d68-4cbf-8f6b-13497e28d61c",
-            "12ebda0a-1aee-4643-8ddc-7ca349b3f5b7"
+            "642e5da2-a1c8-409b-9644-1d4756eb2f83",
+            "3e04ed68-7249-4ec8-9069-63fab45bfba2",
+            "47d6f890-9409-468e-b473-590221951bed"
           ],
           "failures": [
-            "f31ef260-8001-4aae-85de-943cb7051541",
-            "07675389-6a24-4387-92ee-50ae4ea00e2f"
+            "7497d3ab-4dd1-4778-ad3b-be3f188d2863",
+            "ab8b2a2e-1170-43bd-b9fd-ec4afd29ab55"
           ],
           "pending": [],
           "skipped": [],
@@ -143,7 +143,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "a2629716-4495-4895-a2d0-122b3910c551",
+          "uuid": "726f53e5-0225-469b-90a6-eb457bb714d7",
           "title": "XUnitSample.MemberData",
           "file": "",
           "beforeHooks": [],
@@ -165,8 +165,8 @@
                 "estack": "at XUnitSample.MemberData.Failing_test() in C:\\projects\\trx2junit\\samples\\XUnitSample\\MemberData.cs:line 32\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "dfc7b1f5-03f6-4e98-96d1-57d8808b6741",
-              "parentUUID": "a2629716-4495-4895-a2d0-122b3910c551",
+              "uuid": "f6b61709-5106-4273-90b5-e31fd116c196",
+              "parentUUID": "726f53e5-0225-469b-90a6-eb457bb714d7",
               "isHook": false,
               "skipped": false
             },
@@ -182,8 +182,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d2ad0036-3412-4283-a9e2-bd83d9610412",
-              "parentUUID": "a2629716-4495-4895-a2d0-122b3910c551",
+              "uuid": "33f7ece7-a649-4841-bda5-cad4177c8eca",
+              "parentUUID": "726f53e5-0225-469b-90a6-eb457bb714d7",
               "isHook": false,
               "skipped": false
             },
@@ -199,8 +199,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2f8e2d64-d0b7-4352-be02-a111b743c336",
-              "parentUUID": "a2629716-4495-4895-a2d0-122b3910c551",
+              "uuid": "014452ab-2c54-462c-b2fa-ca07c254e667",
+              "parentUUID": "726f53e5-0225-469b-90a6-eb457bb714d7",
               "isHook": false,
               "skipped": false
             },
@@ -220,8 +220,8 @@
                 "estack": "at XUnitSample.MemberData.Two_pass_one_fails(Object obj) in C:\\projects\\trx2junit\\samples\\XUnitSample\\MemberData.cs:line 23\n   at InvokeStub_MemberData.Two_pass_one_fails(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)",
                 "diff": null
               },
-              "uuid": "feeaff5c-a373-49ce-ab56-0ae9c1675c89",
-              "parentUUID": "a2629716-4495-4895-a2d0-122b3910c551",
+              "uuid": "50eed001-d724-4641-b0b7-cd87e5245ebc",
+              "parentUUID": "726f53e5-0225-469b-90a6-eb457bb714d7",
               "isHook": false,
               "skipped": false
             },
@@ -237,21 +237,21 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2986ea9a-841d-4937-bb65-5d0f72413d20",
-              "parentUUID": "a2629716-4495-4895-a2d0-122b3910c551",
+              "uuid": "8936b1bd-ff43-4619-b35b-7415d133bdab",
+              "parentUUID": "726f53e5-0225-469b-90a6-eb457bb714d7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d2ad0036-3412-4283-a9e2-bd83d9610412",
-            "2f8e2d64-d0b7-4352-be02-a111b743c336",
-            "2986ea9a-841d-4937-bb65-5d0f72413d20"
+            "33f7ece7-a649-4841-bda5-cad4177c8eca",
+            "014452ab-2c54-462c-b2fa-ca07c254e667",
+            "8936b1bd-ff43-4619-b35b-7415d133bdab"
           ],
           "failures": [
-            "dfc7b1f5-03f6-4e98-96d1-57d8808b6741",
-            "feeaff5c-a373-49ce-ab56-0ae9c1675c89"
+            "f6b61709-5106-4273-90b5-e31fd116c196",
+            "50eed001-d724-4641-b0b7-cd87e5245ebc"
           ],
           "pending": [],
           "skipped": [],
@@ -261,7 +261,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "ac061bc4-5f64-474e-89d2-7e5656fcfb75",
+          "uuid": "f507c77d-da04-4ba0-b7ca-68dafc8092d1",
           "title": "XUnitSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -283,8 +283,8 @@
                 "estack": "at XUnitSample.SimpleTests.Failing_test() in C:\\projects\\trx2junit\\samples\\XUnitSample\\SimpleTests.cs:line 20\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "2c9a8d57-5a91-433b-8702-02e1f8473df1",
-              "parentUUID": "ac061bc4-5f64-474e-89d2-7e5656fcfb75",
+              "uuid": "4b7490bc-ea3b-45df-83df-fd643e4e7dbe",
+              "parentUUID": "f507c77d-da04-4ba0-b7ca-68dafc8092d1",
               "isHook": false,
               "skipped": false
             },
@@ -300,8 +300,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "d5b5febe-7cd0-4bdf-a08a-60b7c44ad49d",
-              "parentUUID": "ac061bc4-5f64-474e-89d2-7e5656fcfb75",
+              "uuid": "79938fbb-e1ee-4b6a-b70c-2af0e710286b",
+              "parentUUID": "f507c77d-da04-4ba0-b7ca-68dafc8092d1",
               "isHook": false,
               "skipped": false
             },
@@ -317,8 +317,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "8ce97093-67f0-408e-b388-775ba0486527",
-              "parentUUID": "ac061bc4-5f64-474e-89d2-7e5656fcfb75",
+              "uuid": "db2388a3-c615-4ebe-8fe4-423e02a78c43",
+              "parentUUID": "f507c77d-da04-4ba0-b7ca-68dafc8092d1",
               "isHook": false,
               "skipped": false
             },
@@ -334,22 +334,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7dd90bbd-2c82-4fc2-9392-edb8d9a9b826",
-              "parentUUID": "ac061bc4-5f64-474e-89d2-7e5656fcfb75",
+              "uuid": "82b1bb3e-94dd-4853-b861-eac7384ef657",
+              "parentUUID": "f507c77d-da04-4ba0-b7ca-68dafc8092d1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8ce97093-67f0-408e-b388-775ba0486527",
-            "7dd90bbd-2c82-4fc2-9392-edb8d9a9b826"
+            "db2388a3-c615-4ebe-8fe4-423e02a78c43",
+            "82b1bb3e-94dd-4853-b861-eac7384ef657"
           ],
           "failures": [
-            "2c9a8d57-5a91-433b-8702-02e1f8473df1"
+            "4b7490bc-ea3b-45df-83df-fd643e4e7dbe"
           ],
           "pending": [
-            "d5b5febe-7cd0-4bdf-a08a-60b7c44ad49d"
+            "79938fbb-e1ee-4b6a-b70c-2af0e710286b"
           ],
           "skipped": [],
           "duration": 1016,

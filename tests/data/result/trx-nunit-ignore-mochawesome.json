@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "efea1354-1db9-48eb-bb01-ddf3beb0eeb9",
+      "uuid": "c1df39aa-42b8-4764-8279-1cdd353ddd17",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
+          "uuid": "2ebc9388-43ef-45ee-9430-b1666707f75f",
           "title": "NUnitSample.SimpleTests",
           "file": "",
           "beforeHooks": [],
@@ -47,8 +47,8 @@
                 "estack": "at NUnitSample.SimpleTests.Failing_test() in D:\\Work-Git\\github\\Mini\\trx2junit\\samples\\NUnitSample\\SimpleTests.cs:line 21",
                 "diff": null
               },
-              "uuid": "9b48169b-3536-482d-820e-581541dd54a3",
-              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
+              "uuid": "b79ca8a5-96c5-4c7a-a55f-c67c4dd241c2",
+              "parentUUID": "2ebc9388-43ef-45ee-9430-b1666707f75f",
               "isHook": false,
               "skipped": false
             },
@@ -64,8 +64,8 @@
               "context": "[\"skipped: Ignoring for testing ;-)\"]",
               "code": null,
               "err": {},
-              "uuid": "851a89c0-4e9e-4376-993a-68821d1b4d4d",
-              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
+              "uuid": "7f88cbf4-ebfc-41fa-948f-77777ee0bf35",
+              "parentUUID": "2ebc9388-43ef-45ee-9430-b1666707f75f",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +81,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "52a38360-ce34-4269-9240-aee235aa3ada",
-              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
+              "uuid": "32fa64fa-a394-4d6c-a0ac-f936818de177",
+              "parentUUID": "2ebc9388-43ef-45ee-9430-b1666707f75f",
               "isHook": false,
               "skipped": false
             },
@@ -98,8 +98,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "73a57671-647a-4eee-98cd-9b80353da5ec",
-              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
+              "uuid": "392c9de3-1c54-47d9-acb3-30101d260c7e",
+              "parentUUID": "2ebc9388-43ef-45ee-9430-b1666707f75f",
               "isHook": false,
               "skipped": false
             },
@@ -115,23 +115,23 @@
               "context": "[\"skipped:   Expected: True   But was:  False \"]",
               "code": null,
               "err": {},
-              "uuid": "ec4986d3-259e-4b9d-a1cd-6a072df5db05",
-              "parentUUID": "05a2313b-3ef4-4162-a3da-5e5ef326f19b",
+              "uuid": "d163a94c-d70c-4e22-acf7-3d93d110fd20",
+              "parentUUID": "2ebc9388-43ef-45ee-9430-b1666707f75f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "52a38360-ce34-4269-9240-aee235aa3ada",
-            "73a57671-647a-4eee-98cd-9b80353da5ec"
+            "32fa64fa-a394-4d6c-a0ac-f936818de177",
+            "392c9de3-1c54-47d9-acb3-30101d260c7e"
           ],
           "failures": [
-            "9b48169b-3536-482d-820e-581541dd54a3"
+            "b79ca8a5-96c5-4c7a-a55f-c67c4dd241c2"
           ],
           "pending": [
-            "851a89c0-4e9e-4376-993a-68821d1b4d4d",
-            "ec4986d3-259e-4b9d-a1cd-6a072df5db05"
+            "7f88cbf4-ebfc-41fa-948f-77777ee0bf35",
+            "d163a94c-d70c-4e22-acf7-3d93d110fd20"
           ],
           "skipped": [],
           "duration": 1074,

@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "c61c583a-2445-40ec-b1bb-60bbac98fce9",
+      "uuid": "5a4a9a88-88d2-41fa-96ab-9ce9265680b6",
       "title": "mock-assembly.dll",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+          "uuid": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
           "title": "MockTestFixture",
           "file": "NUnit.Tests.Assemblies.MockTestFixture",
           "beforeHooks": [],
@@ -47,8 +47,8 @@
                 "estack": "at NUnit.Framework.Assert.Fail(String message, Object[] args) in D:\\Dev\\NUnit\\nunit-3.0\\work\\NUnitFramework\\src\\framework\\Assert.cs:line 142\n   at NUnit.Framework.Assert.Fail(String message) in D:\\Dev\\NUnit\\nunit-3.0\\work\\NUnitFramework\\src\\framework\\Assert.cs:line 152\n   at NUnit.Tests.Assemblies.MockTestFixture.FailingTest() in D:\\Dev\\NUnit\\nunit-3.0\\work\\NUnitFramework\\src\\mock-assembly\\MockAssembly.cs:line 121",
                 "diff": null
               },
-              "uuid": "039e1556-8e71-41d4-9ce8-be2128a8a100",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "0ecacb5d-222d-4641-b1e2-53dfd869797a",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -56,16 +56,19 @@
               "title": "InconclusiveTest",
               "fullTitle": "NUnit.Tests.Assemblies.MockTestFixture.InconclusiveTest",
               "duration": 1,
-              "state": "passed",
+              "state": "failed",
               "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": null,
-              "err": {},
-              "uuid": "bea771d8-e195-4af1-add8-6f2afc0c275a",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "err": {
+                "message": "Inconclusive test",
+                "diff": null
+              },
+              "uuid": "2c8bcf2d-9ba3-4a73-acdc-22d349d8efa7",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -81,8 +84,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Description: Mock Test #1\"]}]",
               "code": null,
               "err": {},
-              "uuid": "b495359b-120d-41d2-a957-9b15d810acda",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "84d21d7b-72b0-4907-baba-73735e952d54",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -98,8 +101,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Severity: Critical\",\"Description: This is a really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really long description\",\"Category: MockCategory\"]}]",
               "code": null,
               "err": {},
-              "uuid": "da71245b-13c5-465c-93cd-067d6f622853",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "901a88f6-1a42-47ed-ab6f-75efdeda5dab",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -115,8 +118,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Category: AnotherCategory\",\"Category: MockCategory\"]}]",
               "code": null,
               "err": {},
-              "uuid": "af5ba899-7d70-4a16-9d01-2256102d33cc",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "719b57d9-49d3-4eee-a04c-32b1f14f1a39",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -132,8 +135,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Category: Foo\",\"_SKIPREASON: ignoring this test method for now\"]},\"skipped: ignoring this test method for now\"]",
               "code": null,
               "err": {},
-              "uuid": "454f2e93-e878-4cab-8b3f-bbda74f21e2e",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "9e424c13-2fb2-46c7-a256-40f98ef1412f",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -149,8 +152,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"_SKIPREASON: Method is not public\"]},\"skipped: Method is not public\"]",
               "code": null,
               "err": {},
-              "uuid": "1390f644-b659-410a-9b5a-e047c9dd9985",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "3e7430d7-5eb6-4a6a-adcb-5fcafdaec8da",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -166,8 +169,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"_SKIPREASON: No arguments were provided\"]},\"skipped: No arguments were provided\"]",
               "code": null,
               "err": {},
-              "uuid": "f8eb13e1-793b-4967-9554-6fbb8f36559c",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "567f5ea1-b2e6-4450-95d7-2f56a40a5e15",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -187,8 +190,8 @@
                 "estack": "at NUnit.Tests.Assemblies.MockTestFixture.MethodThrowsException() in D:\\Dev\\NUnit\\nunit-3.0\\work\\NUnitFramework\\src\\mock-assembly\\MockAssembly.cs:line 158\n   at NUnit.Tests.Assemblies.MockTestFixture.TestWithException() in D:\\Dev\\NUnit\\nunit-3.0\\work\\NUnitFramework\\src\\mock-assembly\\MockAssembly.cs:line 153",
                 "diff": null
               },
-              "uuid": "71683748-eeb8-4890-a231-6534e481bf36",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "8f6e4719-2176-45f3-b772-8191a7c3a51c",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             },
@@ -204,28 +207,28 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"TargetMethod: SomeClassName\",\"Size: 5\"]}]",
               "code": null,
               "err": {},
-              "uuid": "5c862906-7e71-4f73-a9bc-6cbdd2d2bd14",
-              "parentUUID": "e7256a0f-5713-4a44-b7e4-674d70d404d7",
+              "uuid": "199460f4-3c0e-41cb-b09b-6120161aa1f7",
+              "parentUUID": "048bd3b2-5e68-4da9-8e61-85ebb4187cb2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bea771d8-e195-4af1-add8-6f2afc0c275a",
-            "b495359b-120d-41d2-a957-9b15d810acda",
-            "da71245b-13c5-465c-93cd-067d6f622853",
-            "af5ba899-7d70-4a16-9d01-2256102d33cc",
-            "5c862906-7e71-4f73-a9bc-6cbdd2d2bd14"
+            "84d21d7b-72b0-4907-baba-73735e952d54",
+            "901a88f6-1a42-47ed-ab6f-75efdeda5dab",
+            "719b57d9-49d3-4eee-a04c-32b1f14f1a39",
+            "199460f4-3c0e-41cb-b09b-6120161aa1f7"
           ],
           "failures": [
-            "039e1556-8e71-41d4-9ce8-be2128a8a100",
-            "71683748-eeb8-4890-a231-6534e481bf36"
+            "0ecacb5d-222d-4641-b1e2-53dfd869797a",
+            "2c8bcf2d-9ba3-4a73-acdc-22d349d8efa7",
+            "8f6e4719-2176-45f3-b772-8191a7c3a51c"
           ],
           "pending": [
-            "454f2e93-e878-4cab-8b3f-bbda74f21e2e",
-            "1390f644-b659-410a-9b5a-e047c9dd9985",
-            "f8eb13e1-793b-4967-9554-6fbb8f36559c"
+            "9e424c13-2fb2-46c7-a256-40f98ef1412f",
+            "3e7430d7-5eb6-4a6a-adcb-5fcafdaec8da",
+            "567f5ea1-b2e6-4450-95d7-2f56a40a5e15"
           ],
           "skipped": [],
           "duration": 119,
@@ -234,7 +237,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "6855d726-ebd6-46f2-ba6d-5be8439bbc50",
+          "uuid": "e1f9a47e-14fa-488c-8fcd-7a2570df5c8c",
           "title": "MethodWithParameters",
           "file": "NUnit.Tests.FixtureWithTestCases.MethodWithParameters",
           "beforeHooks": [],
@@ -252,8 +255,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7731c5aa-a3c4-4edd-82c2-6ecdcc87cce0",
-              "parentUUID": "6855d726-ebd6-46f2-ba6d-5be8439bbc50",
+              "uuid": "71f28993-1192-4ab6-babc-67e4dbdb677e",
+              "parentUUID": "e1f9a47e-14fa-488c-8fcd-7a2570df5c8c",
               "isHook": false,
               "skipped": false
             },
@@ -269,16 +272,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9555942b-d939-4087-b2d4-806f0cbf386c",
-              "parentUUID": "6855d726-ebd6-46f2-ba6d-5be8439bbc50",
+              "uuid": "4892bcdf-9b26-4560-bebb-acaccb053ae5",
+              "parentUUID": "e1f9a47e-14fa-488c-8fcd-7a2570df5c8c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7731c5aa-a3c4-4edd-82c2-6ecdcc87cce0",
-            "9555942b-d939-4087-b2d4-806f0cbf386c"
+            "71f28993-1192-4ab6-babc-67e4dbdb677e",
+            "4892bcdf-9b26-4560-bebb-acaccb053ae5"
           ],
           "failures": [],
           "pending": [],
@@ -289,7 +292,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "f7a7208f-5e11-4fa2-ae24-ddf1c9d2dfe3",
+          "uuid": "6f38a982-3659-4215-bfe8-4bb57133eaca",
           "title": "ParameterizedFixture(42)",
           "file": "NUnit.Tests.ParameterizedFixture(42)",
           "beforeHooks": [],
@@ -307,8 +310,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0a9ffd60-2dec-471a-b219-68ff0f463287",
-              "parentUUID": "f7a7208f-5e11-4fa2-ae24-ddf1c9d2dfe3",
+              "uuid": "9f974f5e-879d-474f-9cd2-fe7a3e5d4f1e",
+              "parentUUID": "6f38a982-3659-4215-bfe8-4bb57133eaca",
               "isHook": false,
               "skipped": false
             },
@@ -324,16 +327,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e5c55e7e-7eb5-47e8-83de-38ca84035a6a",
-              "parentUUID": "f7a7208f-5e11-4fa2-ae24-ddf1c9d2dfe3",
+              "uuid": "8819d5fe-2ff4-479c-95cf-d5a1266019d0",
+              "parentUUID": "6f38a982-3659-4215-bfe8-4bb57133eaca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0a9ffd60-2dec-471a-b219-68ff0f463287",
-            "e5c55e7e-7eb5-47e8-83de-38ca84035a6a"
+            "9f974f5e-879d-474f-9cd2-fe7a3e5d4f1e",
+            "8819d5fe-2ff4-479c-95cf-d5a1266019d0"
           ],
           "failures": [],
           "pending": [],
@@ -344,7 +347,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "895be304-efd6-42fb-a1fb-0a6ddc1e9776",
+          "uuid": "4c6b192d-ff99-43e1-827a-3d266cec66e2",
           "title": "ParameterizedFixture(5)",
           "file": "NUnit.Tests.ParameterizedFixture(5)",
           "beforeHooks": [],
@@ -362,8 +365,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3d1fb1af-4450-418d-bedc-1804079163a2",
-              "parentUUID": "895be304-efd6-42fb-a1fb-0a6ddc1e9776",
+              "uuid": "eb01a7f6-6b1b-4e0d-b149-a9655d510483",
+              "parentUUID": "4c6b192d-ff99-43e1-827a-3d266cec66e2",
               "isHook": false,
               "skipped": false
             },
@@ -379,16 +382,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e4604f88-12f0-4af1-950f-fb096b1540c1",
-              "parentUUID": "895be304-efd6-42fb-a1fb-0a6ddc1e9776",
+              "uuid": "969f71e6-7f62-4b85-b1db-150038e0095f",
+              "parentUUID": "4c6b192d-ff99-43e1-827a-3d266cec66e2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3d1fb1af-4450-418d-bedc-1804079163a2",
-            "e4604f88-12f0-4af1-950f-fb096b1540c1"
+            "eb01a7f6-6b1b-4e0d-b149-a9655d510483",
+            "969f71e6-7f62-4b85-b1db-150038e0095f"
           ],
           "failures": [],
           "pending": [],
@@ -399,7 +402,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "f450004f-864d-4531-8b6b-1b6a5058d55d",
+          "uuid": "ca37c2fa-b9c3-413f-ba99-203f7d75f6b1",
           "title": "OneTestCase",
           "file": "NUnit.Tests.Singletons.OneTestCase",
           "beforeHooks": [],
@@ -417,15 +420,15 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9252412b-142f-4d13-b3d4-c88e153ae42b",
-              "parentUUID": "f450004f-864d-4531-8b6b-1b6a5058d55d",
+              "uuid": "d587f9b4-fe1d-42eb-a13d-95990d6ab63f",
+              "parentUUID": "ca37c2fa-b9c3-413f-ba99-203f7d75f6b1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9252412b-142f-4d13-b3d4-c88e153ae42b"
+            "d587f9b4-fe1d-42eb-a13d-95990d6ab63f"
           ],
           "failures": [],
           "pending": [],
@@ -436,7 +439,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "9d9ce964-327b-42eb-b050-857b91603175",
+          "uuid": "dd37ac8f-7a9c-407d-9b9a-76ea798e1dc2",
           "title": "MockTestFixture",
           "file": "NUnit.Tests.TestAssembly.MockTestFixture",
           "beforeHooks": [],
@@ -454,15 +457,15 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "55785af3-ac40-44e2-850f-a12b62a6e817",
-              "parentUUID": "9d9ce964-327b-42eb-b050-857b91603175",
+              "uuid": "3bb92924-11dc-43e1-9825-fb4c9cfdcab8",
+              "parentUUID": "dd37ac8f-7a9c-407d-9b9a-76ea798e1dc2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "55785af3-ac40-44e2-850f-a12b62a6e817"
+            "3bb92924-11dc-43e1-9825-fb4c9cfdcab8"
           ],
           "failures": [],
           "pending": [],

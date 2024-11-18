@@ -1,0 +1,17 @@
+<testsuites tests="5" failures="2" errors="0" skipped="0" time="1.0619999999999996">
+    <testsuite name="NUnitSample.DataDriven" tests="5" time="1.0619999999999996" failures="2" errors="0" skipped="0">
+        <testcase classname="NUnitSample.DataDriven" name="Failing_test" status="Failed" time="0.0550000">
+            <failure message="Failing for demo purposes">
+                at NUnitSample.DataDriven.Failing_test() in D:\Work-Git\github\Mini\trx2junit\samples\NUnitSample\DataDriven.cs:line 27
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.DataDriven" name="Slow_test" status="Passed" time="1.0020000"/>
+        <testcase classname="NUnitSample.DataDriven" name="Two_pass_one_fails(0)" status="Passed" time="0.0010000"/>
+        <testcase classname="NUnitSample.DataDriven" name="Two_pass_one_fails(1)" status="Failed" time="0.0030000">
+            <failure message="Failing for demo purposes">
+                at NUnitSample.DataDriven.Two_pass_one_fails(Int32 arg) in D:\Work-Git\github\Mini\trx2junit\samples\NUnitSample\DataDriven.cs:line 18
+            </failure>
+        </testcase>
+        <testcase classname="NUnitSample.DataDriven" name="Two_pass_one_fails(2)" status="Passed" time="0.0010000"/>
+    </testsuite>
+</testsuites>

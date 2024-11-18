@@ -1,0 +1,46 @@
+<testsuites name="TestLibrary.Example.dll" classname="...\tests\TestLibrary.Example.dll" tests="5" failures="0" skipped="0" assertions="5" time="0.133984">
+    <testsuite name="ExampleTestFixture" classname="TestLibrary.Example.ExampleTestFixture" tests="5" time="0.035698" failures="0" skipped="0" timestamp="2023-01-11 13:53:13Z">
+        <testcase name="SimpleTest" classname="TestLibrary.Example.ExampleTestFixture.SimpleTest" time="0.001015" status="Passed">
+            <system-out>
+                Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.SimpleTest
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="ParameterizedTest" classname="TestLibrary.Example.ExampleTestFixture.ParameterizedTest" tests="2" time="0.028787" failures="0" skipped="0" timestamp="2023-01-11 13:53:13Z">
+        <testcase name="Example1" classname="TestLibrary.Example.ExampleTestFixture.Example1" time="0.022636" status="Passed">
+            <properties>
+                <property name="_JOINTYPE" value="Combinatorial"/>
+                <property name="_PID" value="8204"/>
+                <property name="_APPDOMAIN" value="domain-4461bdb5-TestLibrary.Example.dll"/>
+            </properties>
+            <system-out>
+                Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.ParameterizedTest
+            </system-out>
+        </testcase>
+        <testcase name="ParameterizedTest(2,3,5)" classname="TestLibrary.Example.ExampleTestFixture.ParameterizedTest(2,3,5)" time="0.000241" status="Passed">
+            <properties>
+                <property name="Description" value="Ensures aria-label is not present instead of empty string"/>
+            </properties>
+            <system-out>
+                Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.ParameterizedTest
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestWithSource" classname="TestLibrary.Example.ExampleTestFixture.TestWithSource" tests="2" time="0.000261" failures="0" skipped="0" timestamp="2023-01-11 13:53:13Z">
+        <testcase name="Example1" classname="TestLibrary.Example.ExampleTestFixture.Example1" time="0.000162" status="Passed">
+            <system-out>
+                Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.TestWithSource
+            </system-out>
+        </testcase>
+        <testcase name="TestWithSource(2,3,5)" classname="TestLibrary.Example.ExampleTestFixture.TestWithSource(2,3,5)" time="0.000051" status="Passed">
+            <system-out>
+                Running ExampleTestFixture.SetupMethod
+     Running ExampleTestFixture.TestWithSource
+            </system-out>
+        </testcase>
+    </testsuite>
+</testsuites>

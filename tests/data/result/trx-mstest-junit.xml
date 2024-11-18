@@ -1,0 +1,35 @@
+<testsuites tests="9" failures="3" errors="0" skipped="1" time="2.0385117">
+    <testsuite name="MsTestSample.DataDriven" tests="5" failures="2" skipped="0" time="1.0253688">
+        <testcase classname="MsTestSample.DataDriven" name="Failing_test" status="Failed" time="0.0002595">
+            <failure message="Assert.Fail failed. Failing for demo purposes">
+                at MsTestSample.DataDriven.Failing_test() in C:\projects\trx2junit\samples\MsTestSample\DataDriven.cs:line 25
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase classname="MsTestSample.DataDriven" name="Slow_test" status="Passed" time="1.0081967"/>
+        <testcase classname="MsTestSample.DataDriven" name="Two_pass_one_fails (0)" status="Passed" time="0.0014969"/>
+        <testcase classname="MsTestSample.DataDriven" name="Two_pass_one_fails (1)" status="Failed" time="0.0154092">
+            <failure message="Assert.Fail failed. Failing for demo purposes">
+                at MsTestSample.DataDriven.Two_pass_one_fails(Int32 arg) in C:\projects\trx2junit\samples\MsTestSample\DataDriven.cs:line 16
+   at InvokeStub_DataDriven.Two_pass_one_fails(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+            </failure>
+        </testcase>
+        <testcase classname="MsTestSample.DataDriven" name="Two_pass_one_fails (2)" status="Passed" time="0.0000065"/>
+    </testsuite>
+    <testsuite name="MsTestSample.SimpleTests" tests="4" failures="1" skipped="1" time="1.0131428999999998">
+        <testcase classname="MsTestSample.SimpleTests" name="Failing_test" status="Failed" time="0.0003432">
+            <failure message="Assert.Fail failed. Failing for demo purposes">
+                at MsTestSample.SimpleTests.Failing_test() in C:\projects\trx2junit\samples\MsTestSample\SimpleTests.cs:line 20
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase classname="MsTestSample.SimpleTests" name="Ignored_test" status="Skipped" time="0">
+            <skipped message="Ignoring for testing ;-)"/>
+        </testcase>
+        <testcase classname="MsTestSample.SimpleTests" name="Passing_test" status="Passed" time="0.0000685"/>
+        <testcase classname="MsTestSample.SimpleTests" name="Slow_test" status="Passed" time="1.0127312"/>
+    </testsuite>
+</testsuites>

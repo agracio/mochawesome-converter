@@ -8,10 +8,10 @@
         xmlns:vs="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" >
     <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
     <xsl:template match="/">
-        <xsl:variable name="numberOfTests" select="count(//vs:UnitTestResult/@testId)"/>
-        <xsl:variable name="numberOfFailures" select="count(//vs:UnitTestResult/@outcome[.='Failed'])" />
-        <xsl:variable name="numberOfErrors" select="count(//vs:UnitTestResult[not(@outcome)])" />
-        <xsl:variable name="numberSkipped" select="count(//vs:UnitTestResult/@outcome[.!='Passed' and .!='Failed'])" />
+        <xsl:variable name="numberOfTests" select="//vs:TestRun/ResultSummary/Counters/@total"/>
+        <xsl:variable name="numberOfFailures" select="//vs:TestRun/ResultSummary/Counters/@failed" />
+        <xsl:variable name="numberOfErrors" select="//vs:TestRun/ResultSummary/Counters/@error + //vs:TestRun/ResultSummary/Counters/@timeout" />
+        <xsl:variable name="numberSkipped" select="//vs:TestRun/ResultSummary/Counters/@inconclusive + //vs:TestRun/ResultSummary/Counters/@total - //vs:TestRun/ResultSummary/Counters/@executed" />
         <xsl:variable name="duration" select="xs:dateTime(//vs:Times/@finish) - xs:dateTime(//vs:Times/@start)" />
         <xsl:variable name="totalDuration" select="hours-from-duration($duration)*3600 + minutes-from-duration($duration)*60 + seconds-from-duration($duration)" />
         <testsuites
@@ -80,7 +80,7 @@
                                     <testcase
                                             classname="{$className}"
                                             name="{$name}"
-                                            status="{replace(replace($outcome,'Error','Failed'),'NotExecuted','Skipped')}"
+                                            status="{replace(replace(replace($outcome,'Error','Failed'),'NotExecuted','Skipped'), 'Inconclusive', 'Failed')}"
                                             time="{$testDuration}"
                                     >
                                         <xsl:if test="contains($outcome, 'Failed')">
@@ -89,6 +89,11 @@
                                             </failure>
                                         </xsl:if>
                                         <xsl:if test="contains($outcome, 'Error')">
+                                            <error message="{$message}">
+                                                <xsl:value-of select="$stacktrace" />
+                                            </error>
+                                        </xsl:if>
+                                        <xsl:if test="contains($outcome, 'Inconclusive')">
                                             <error message="{$message}">
                                                 <xsl:value-of select="$stacktrace" />
                                             </error>

@@ -1,0 +1,208 @@
+<testsuites tests="187" failures="0" skipped="0" assertions="80" time="116.830957">
+    <testsuite name="BarChartTests" classname="MudBlazor.UnitTests.Charts.BarChartTests" tests="4" time="0.991643" failures="0" skipped="0" timestamp="2024-11-06T18:58:00.8256603Z">
+        <testcase name="BarChartColoring" classname="MudBlazor.UnitTests.Charts.BarChartTests.BarChartColoring" time="0.967536" status="Passed"/>
+        <testcase name="BarChartEmptyData" classname="MudBlazor.UnitTests.Charts.BarChartTests.BarChartEmptyData" time="0.002979" status="Passed"/>
+        <testcase name="BarChartExampleData" classname="MudBlazor.UnitTests.Charts.BarChartTests.BarChartExampleData" time="0.014572" status="Passed"/>
+        <testcase name="BarChartExampleSingleXAxis" classname="MudBlazor.UnitTests.Charts.BarChartTests.BarChartExampleSingleXAxis" time="0.003345" status="Passed"/>
+    </testsuite>
+    <testsuite name="ContainerClass_PropertyRelations" classname="MudBlazor.UnitTests.Components.ToolTipTests.ContainerClass_PropertyRelations" tests="2" time="0.002812" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8810640Z">
+        <testcase name="ContainerClass_PropertyRelations(False,[&quot;mud-tooltip-root&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.ContainerClass_PropertyRelations(False,[&quot;mud-tooltip-root&quot;])" time="0.002054" status="Passed"/>
+        <testcase name="ContainerClass_PropertyRelations(True,[&quot;mud-tooltip-root&quot;, &quot;mud-tooltip-inline&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.ContainerClass_PropertyRelations(True,[&quot;mud-tooltip-root&quot;, &quot;mud-tooltip-inline&quot;])" time="0.000738" status="Passed"/>
+    </testsuite>
+    <testsuite name="DonutChartTests" classname="MudBlazor.UnitTests.Charts.DonutChartTests" tests="6" time="0.053594" failures="0" skipped="0" timestamp="2024-11-06T18:58:01.8180983Z">
+        <testcase name="DonutChartColoring" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutChartColoring" time="0.019186" status="Passed"/>
+        <testcase name="DonutChartEmptyData" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutChartEmptyData" time="0.001461" status="Passed"/>
+    </testsuite>
+    <testsuite name="LineChartTests" classname="MudBlazor.UnitTests.Charts.LineChartTests" tests="18" time="0.159712" failures="0" skipped="0" timestamp="2024-11-06T18:58:01.8717145Z">
+        <testcase name="LineChartColoring" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartColoring" time="0.017701" status="Passed"/>
+        <testcase name="LineChartEmptyData" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartEmptyData" time="0.001254" status="Passed"/>
+    </testsuite>
+    <testsuite name="AlertTests" classname="MudBlazor.UnitTests.Components.AlertTests" tests="3" time="0.089285" failures="0" skipped="0" timestamp="2024-11-06T18:58:02.1668243Z">
+        <testcase name="AlertTest" classname="MudBlazor.UnitTests.Components.AlertTests.AlertTest" time="0.017695" status="Passed"/>
+        <testcase name="AlertTest_Click" classname="MudBlazor.UnitTests.Components.AlertTests.AlertTest_Click" time="0.068986" status="Passed"/>
+        <testcase name="AlertTest2" classname="MudBlazor.UnitTests.Components.AlertTests.AlertTest2" time="0.002466" status="Passed"/>
+    </testsuite>
+    <testsuite name="DonutChartExampleData" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutChartExampleData" tests="2" time="0.003747" failures="0" skipped="0" timestamp="2024-11-06T18:58:01.8390049Z">
+        <testcase name="DonutChartExampleData([50.0d, 25.0d, 20.0d, 5.0d])" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutChartExampleData([50.0d, 25.0d, 20.0d, 5.0d])" time="0.002280" status="Passed"/>
+        <testcase name="DonutChartExampleData([50.0d, 25.0d, 20.0d, 5.0d, 12.0d])" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutChartExampleData([50.0d, 25.0d, 20.0d, 5.0d, 12.0d])" time="0.001321" status="Passed"/>
+    </testsuite>
+    <testsuite name="LineChartExampleData" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData" tests="8" time="0.128543" failures="0" skipped="0" timestamp="2024-11-06T18:58:01.8909204Z">
+        <properties>
+            <property name="_JOINTYPE" value="Combinatorial"/>
+        </properties>
+        <testcase name="LineChartExampleData(NaturalSpline)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(NaturalSpline)" time="0.051788" status="Passed"/>
+        <testcase name="LineChartExampleData(EndSlope)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(EndSlope)" time="0.011594" status="Passed"/>
+        <testcase name="LineChartExampleData(Periodic)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(Periodic)" time="0.012205" status="Passed"/>
+        <testcase name="LineChartExampleData(Straight)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(Straight)" time="0.009693" status="Passed"/>
+        <testcase name="LineChartExampleData(NaturalSpline)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(NaturalSpline)" time="0.010446" status="Passed"/>
+        <testcase name="LineChartExampleData(EndSlope)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(EndSlope)" time="0.012188" status="Passed"/>
+        <testcase name="LineChartExampleData(Periodic)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(Periodic)" time="0.010491" status="Passed"/>
+        <testcase name="LineChartExampleData(Straight)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData(Straight)" time="0.009666" status="Passed"/>
+    </testsuite>
+    <testsuite name="PieChartExampleData" classname="MudBlazor.UnitTests.Charts.PieChartTests.PieChartExampleData" tests="2" time="0.003475" failures="0" skipped="0" timestamp="2024-11-06T18:58:02.0514505Z">
+        <properties>
+            <property name="_JOINTYPE" value="Combinatorial"/>
+        </properties>
+        <testcase name="PieChartExampleData([77.0d, 25.0d, 20.0d, 5.0d])" classname="MudBlazor.UnitTests.Charts.PieChartTests.PieChartExampleData([77.0d, 25.0d, 20.0d, 5.0d])" time="0.002154" status="Passed"/>
+        <testcase name="PieChartExampleData([77.0d, 25.0d, 20.0d, 5.0d, 8.0d])" classname="MudBlazor.UnitTests.Charts.PieChartTests.PieChartExampleData([77.0d, 25.0d, 20.0d, 5.0d, 8.0d])" time="0.001284" status="Passed"/>
+    </testsuite>
+    <testsuite name="GetColor_ShouldReturnCorrectValue" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetColor_ShouldReturnCorrectValue" tests="2" time="0.001534" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8649138Z">
+        <testcase name="GetColor_ShouldReturnCorrectValue(Tertiary,Secondary,Tertiary,Secondary)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetColor_ShouldReturnCorrectValue(Tertiary,Secondary,Tertiary,Secondary)" time="0.000942" status="Passed"/>
+        <testcase name="GetColor_ShouldReturnCorrectValue(Tertiary,null,Tertiary,Tertiary)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetColor_ShouldReturnCorrectValue(Tertiary,null,Tertiary,Tertiary)" time="0.000565" status="Passed"/>
+    </testsuite>
+    <testsuite name="PieChartTests" classname="MudBlazor.UnitTests.Charts.PieChartTests" tests="4" time="0.023497" failures="0" skipped="0" timestamp="2024-11-06T18:58:02.0314434Z">
+        <testcase name="PieChartColoring" classname="MudBlazor.UnitTests.Charts.PieChartTests.PieChartColoring" time="0.017714" status="Passed"/>
+        <testcase name="PieChartEmptyData" classname="MudBlazor.UnitTests.Charts.PieChartTests.PieChartEmptyData" time="0.001989" status="Passed"/>
+    </testsuite>
+    <testsuite name="AppBarTests" classname="MudBlazor.UnitTests.Components.AppBarTests" tests="5" time="0.005860" failures="0" skipped="0" timestamp="2024-11-06T18:58:20.0574116Z">
+        <testcase name="AppBar_WrapContent_ShouldBeFalseByDefault" classname="MudBlazor.UnitTests.Components.AppBarTests.AppBar_WrapContent_ShouldBeFalseByDefault" time="0.002101" status="Passed"/>
+        <testcase name="AppBarWithBottomSetFalse" classname="MudBlazor.UnitTests.Components.AppBarTests.AppBarWithBottomSetFalse" time="0.000933" status="Passed"/>
+        <testcase name="AppBarWithBottomSetTrue" classname="MudBlazor.UnitTests.Components.AppBarTests.AppBarWithBottomSetTrue" time="0.000419" status="Passed"/>
+        <testcase name="AppBarWithBottomUnset" classname="MudBlazor.UnitTests.Components.AppBarTests.AppBarWithBottomUnset" time="0.000419" status="Passed"/>
+        <testcase name="AppBarWithModifiedToolBarClass" classname="MudBlazor.UnitTests.Components.AppBarTests.AppBarWithModifiedToolBarClass" time="0.001836" status="Passed"/>
+    </testsuite>
+    <testsuite name="DonutCirclePosition" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutCirclePosition" tests="2" time="0.028883" failures="0" skipped="0" timestamp="2024-11-06T18:58:01.8427667Z">
+        <testcase name="DonutCirclePosition([50.0d, 25.0d, 20.0d, 5.0d])" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutCirclePosition([50.0d, 25.0d, 20.0d, 5.0d])" time="0.026380" status="Passed"/>
+        <testcase name="DonutCirclePosition([50.0d, 25.0d, 20.0d, 5.0d, 12.0d])" classname="MudBlazor.UnitTests.Charts.DonutChartTests.DonutCirclePosition([50.0d, 25.0d, 20.0d, 5.0d, 12.0d])" time="0.002451" status="Passed"/>
+    </testsuite>
+    <testsuite name="LineChartExampleZeroValues" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues" tests="8" time="0.011919" failures="0" skipped="0" timestamp="2024-11-06T18:58:02.0194892Z">
+        <properties>
+            <property name="_JOINTYPE" value="Combinatorial"/>
+        </properties>
+        <testcase name="LineChartExampleZeroValues(NaturalSpline)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(NaturalSpline)" time="0.002356" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(EndSlope)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(EndSlope)" time="0.001337" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(Periodic)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(Periodic)" time="0.001131" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(Straight)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(Straight)" time="0.001057" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(NaturalSpline)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(NaturalSpline)" time="0.001165" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(EndSlope)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(EndSlope)" time="0.002475" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(Periodic)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(Periodic)" time="0.001170" status="Passed"/>
+        <testcase name="LineChartExampleZeroValues(Straight)" classname="MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues(Straight)" time="0.001082" status="Passed"/>
+    </testsuite>
+    <testsuite name="ChartCustomGraphics" classname="MudBlazor.UnitTests.Components.ChartTests.ChartCustomGraphics" tests="4" time="0.005437" failures="0" skipped="0" timestamp="2024-11-06T18:58:27.1796404Z">
+        <testcase name="ChartCustomGraphics(Line,&quot;Hello&quot;)" classname="MudBlazor.UnitTests.Components.ChartTests.ChartCustomGraphics(Line,&quot;Hello&quot;)" time="0.003811" status="Passed"/>
+        <testcase name="ChartCustomGraphics(Bar,&quot;123&quot;)" classname="MudBlazor.UnitTests.Components.ChartTests.ChartCustomGraphics(Bar,&quot;123&quot;)" time="0.000577" status="Passed"/>
+        <testcase name="ChartCustomGraphics(Donut,&quot;Garderoben&quot;)" classname="MudBlazor.UnitTests.Components.ChartTests.ChartCustomGraphics(Donut,&quot;Garderoben&quot;)" time="0.000524" status="Passed"/>
+        <testcase name="ChartCustomGraphics(Pie,&quot;henon&quot;)" classname="MudBlazor.UnitTests.Components.ChartTests.ChartCustomGraphics(Pie,&quot;henon&quot;)" time="0.000458" status="Passed"/>
+    </testsuite>
+    <testsuite name="GetIcon_ShouldReturnCorrectValue" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetIcon_ShouldReturnCorrectValue" tests="2" time="0.001292" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8664626Z">
+        <testcase name="GetIcon_ShouldReturnCorrectValue(&quot;icon-default&quot;,&quot;icon-toggled&quot;,&quot;icon-default&quot;,&quot;icon-toggled&quot;)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetIcon_ShouldReturnCorrectValue(&quot;icon-default&quot;,&quot;icon-toggled&quot;,&quot;icon-default&quot;,&quot;icon-toggled&quot;)" time="0.000780" status="Passed"/>
+        <testcase name="GetIcon_ShouldReturnCorrectValue(&quot;icon-default&quot;,null,&quot;icon-default&quot;,&quot;icon-default&quot;)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetIcon_ShouldReturnCorrectValue(&quot;icon-default&quot;,null,&quot;icon-default&quot;,&quot;icon-default&quot;)" time="0.000488" status="Passed"/>
+    </testsuite>
+    <testsuite name="StackedBarChartTests" classname="MudBlazor.UnitTests.Charts.StackedBarChartTests" tests="3" time="0.044482" failures="0" skipped="0" timestamp="2024-11-06T18:58:02.0549570Z">
+        <testcase name="BarChartEmptyData" classname="MudBlazor.UnitTests.Charts.StackedBarChartTests.BarChartEmptyData" time="0.003518" status="Passed"/>
+        <testcase name="BarChartExampleData" classname="MudBlazor.UnitTests.Charts.StackedBarChartTests.BarChartExampleData" time="0.004444" status="Passed"/>
+        <testcase name="StackedBarChartColoring" classname="MudBlazor.UnitTests.Charts.StackedBarChartTests.StackedBarChartColoring" time="0.036285" status="Passed"/>
+    </testsuite>
+    <testsuite name="CarouselTests" classname="MudBlazor.UnitTests.Components.CarouselTests" tests="6" time="1.524280" failures="0" skipped="0" timestamp="2024-11-06T18:58:25.6459059Z">
+        <testcase name="CarouselTest_AutoCycle" classname="MudBlazor.UnitTests.Components.CarouselTests.CarouselTest_AutoCycle" time="1.411597" status="Passed"/>
+        <testcase name="CarouselTest_DataBinding" classname="MudBlazor.UnitTests.Components.CarouselTests.CarouselTest_DataBinding" time="0.022492" status="Passed"/>
+        <testcase name="CarouselTest_DisableSwipeGesture" classname="MudBlazor.UnitTests.Components.CarouselTests.CarouselTest_DisableSwipeGesture" time="0.020442" status="Passed"/>
+        <testcase name="CarouselTest_RenderingOptions" classname="MudBlazor.UnitTests.Components.CarouselTests.CarouselTest_RenderingOptions" time="0.020011" status="Passed"/>
+        <testcase name="CarouselTest_SelectedIndexTransition" classname="MudBlazor.UnitTests.Components.CarouselTests.CarouselTest_SelectedIndexTransition" time="0.020248" status="Passed"/>
+        <testcase name="CarouselTest1" classname="MudBlazor.UnitTests.Components.CarouselTests.CarouselTest1" time="0.029333" status="Passed"/>
+    </testsuite>
+    <testsuite name="ResizeOptionsExtensionsTests" classname="MudBlazor.UnitTests.ResizeOptionsExtensionsTests" tests="1" time="0.004354" failures="0" skipped="0" timestamp="2024-11-06T18:59:47.4470014Z">
+        <testcase name="Clone_ShouldCreateNewInstanceWithSamePropertyValues" classname="MudBlazor.UnitTests.ResizeOptionsExtensionsTests.Clone_ShouldCreateNewInstanceWithSamePropertyValues" time="0.004285" status="Passed"/>
+    </testsuite>
+    <testsuite name="GetSize_ShouldReturnCorrectValue" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetSize_ShouldReturnCorrectValue" tests="2" time="0.001954" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8677610Z">
+        <testcase name="GetSize_ShouldReturnCorrectValue(Small,Large,Small,Large)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetSize_ShouldReturnCorrectValue(Small,Large,Small,Large)" time="0.001383" status="Passed"/>
+        <testcase name="GetSize_ShouldReturnCorrectValue(Small,null,Small,Small)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetSize_ShouldReturnCorrectValue(Small,null,Small,Small)" time="0.000548" status="Passed"/>
+    </testsuite>
+    <testsuite name="PopoverClass_PropertyArrow" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyArrow" tests="2" time="0.002775" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.9021350Z">
+        <testcase name="PopoverClass_PropertyArrow(False,[&quot;mud-tooltip&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyArrow(False,[&quot;mud-tooltip&quot;])" time="0.001793" status="Passed"/>
+        <testcase name="PopoverClass_PropertyArrow(True,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-arrow&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyArrow(True,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-arrow&quot;])" time="0.000950" status="Passed"/>
+    </testsuite>
+    <testsuite name="TimeSeriesChartTests" classname="MudBlazor.UnitTests.Charts.TimeSeriesChartTests" tests="2" time="0.013720" failures="0" skipped="0" timestamp="2024-11-06T18:58:02.0994611Z">
+        <testcase name="TimeSeriesChartEmptyData" classname="MudBlazor.UnitTests.Charts.TimeSeriesChartTests.TimeSeriesChartEmptyData" time="0.006031" status="Passed"/>
+        <testcase name="TimeSeriesChartLabelFormats" classname="MudBlazor.UnitTests.Charts.TimeSeriesChartTests.TimeSeriesChartLabelFormats" time="0.007516" status="Passed"/>
+    </testsuite>
+    <testsuite name="ChartTests" classname="MudBlazor.UnitTests.Components.ChartTests" tests="12" time="0.027235" failures="0" skipped="0" timestamp="2024-11-06T18:58:27.1702092Z">
+        <testcase name="BarChartSelectionTest" classname="MudBlazor.UnitTests.Components.ChartTests.BarChartSelectionTest" time="0.004452" status="Passed"/>
+        <testcase name="BarChartWithSingleXAxisValue" classname="MudBlazor.UnitTests.Components.ChartTests.BarChartWithSingleXAxisValue" time="0.001371" status="Passed"/>
+        <testcase name="BarChartYAxisFormat" classname="MudBlazor.UnitTests.Components.ChartTests.BarChartYAxisFormat" time="0.003461" status="Passed"/>
+        <testcase name="DonutChartSelectionTest" classname="MudBlazor.UnitTests.Components.ChartTests.DonutChartSelectionTest" time="0.003807" status="Passed"/>
+        <testcase name="LineChartSelectionTest" classname="MudBlazor.UnitTests.Components.ChartTests.LineChartSelectionTest" time="0.002977" status="Passed"/>
+        <testcase name="LineChartWithBigValues" classname="MudBlazor.UnitTests.Components.ChartTests.LineChartWithBigValues" time="0.001408" status="Passed">
+            <properties>
+                <property name="Timeout" value="5000"/>
+                <property name="UseCancellation" value="True"/>
+            </properties>
+        </testcase>
+        <testcase name="LineChartWithZeroValues" classname="MudBlazor.UnitTests.Components.ChartTests.LineChartWithZeroValues" time="0.000928" status="Passed"/>
+        <testcase name="PieChartSelectionTest" classname="MudBlazor.UnitTests.Components.ChartTests.PieChartSelectionTest" time="0.003169" status="Passed"/>
+    </testsuite>
+    <testsuite name="GetVariant_ShouldReturnCorrectValue" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetVariant_ShouldReturnCorrectValue" tests="2" time="0.004124" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8697203Z">
+        <testcase name="GetVariant_ShouldReturnCorrectValue(Outlined,Filled,Outlined,Filled)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetVariant_ShouldReturnCorrectValue(Outlined,Filled,Outlined,Filled)" time="0.003447" status="Passed"/>
+        <testcase name="GetVariant_ShouldReturnCorrectValue(Outlined,null,Outlined,Outlined)" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetVariant_ShouldReturnCorrectValue(Outlined,null,Outlined,Outlined)" time="0.000654" status="Passed"/>
+    </testsuite>
+    <testsuite name="PopoverClass_PropertyColor" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColor" tests="4" time="0.003545" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.9049177Z">
+        <testcase name="PopoverClass_PropertyColor(Default,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-default&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColor(Default,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-default&quot;])" time="0.001361" status="Passed"/>
+        <testcase name="PopoverClass_PropertyColor(Tertiary,[&quot;mud-tooltip&quot;, &quot;mud-theme-tertiary&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColor(Tertiary,[&quot;mud-tooltip&quot;, &quot;mud-theme-tertiary&quot;])" time="0.000895" status="Passed"/>
+        <testcase name="PopoverClass_PropertyColor(Success,[&quot;mud-tooltip&quot;, &quot;mud-theme-success&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColor(Success,[&quot;mud-tooltip&quot;, &quot;mud-theme-success&quot;])" time="0.000625" status="Passed"/>
+        <testcase name="PopoverClass_PropertyColor(Dark,[&quot;mud-tooltip&quot;, &quot;mud-theme-dark&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColor(Dark,[&quot;mud-tooltip&quot;, &quot;mud-theme-dark&quot;])" time="0.000621" status="Passed"/>
+    </testsuite>
+    <testsuite name="ToggleGroupTests" classname="MudBlazor.UnitTests.Components.ToggleGroupTests" tests="13" time="0.039359" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8227843Z">
+        <testcase name="ToggleGroup_Bind_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_Bind_Test" time="0.006660" status="Passed"/>
+        <testcase name="ToggleGroup_CheckMarkClass" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_CheckMarkClass" time="0.002392" status="Passed">
+            <properties>
+                <property name="Description" value="Ensures the checkmark is a direct descendant of the button label, is using the right name, and correctly contains a custom class definition"/>
+            </properties>
+        </testcase>
+        <testcase name="ToggleGroup_CustomFragmentBind_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_CustomFragmentBind_Test" time="0.002871" status="Passed"/>
+        <testcase name="ToggleGroup_Disabled_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_Disabled_Test" time="0.004224" status="Passed"/>
+        <testcase name="ToggleGroup_Initialize_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_Initialize_Test" time="0.003417" status="Passed"/>
+        <testcase name="ToggleGroup_ItemRegistration_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_ItemRegistration_Test" time="0.001713" status="Passed"/>
+        <testcase name="ToggleGroup_SelectionMode_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SelectionMode_Test" time="0.007030" status="Passed"/>
+        <testcase name="ToggleGroup_SelectionModeWarning_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SelectionModeWarning_Test" time="0.003402" status="Passed"/>
+        <testcase name="ToggleGroup_ToggleRemove_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_ToggleRemove_Test" time="0.002725" status="Passed"/>
+        <testcase name="ToggleGroup_ToggleSelection_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_ToggleSelection_Test" time="0.002169" status="Passed"/>
+    </testsuite>
+    <testsuite name="PopoverClass_PropertyColorAndArrow" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColorAndArrow" tests="4" time="0.006845" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.9084710Z">
+        <testcase name="PopoverClass_PropertyColorAndArrow(Default,False,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-default&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColorAndArrow(Default,False,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-default&quot;])" time="0.001236" status="Passed"/>
+        <testcase name="PopoverClass_PropertyColorAndArrow(Default,True,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-default&quot;, &quot;mud-tooltip-arrow&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColorAndArrow(Default,True,[&quot;mud-tooltip&quot;, &quot;mud-tooltip-default&quot;, &quot;mud-tooltip-arrow&quot;])" time="0.003874" status="Passed"/>
+        <testcase name="PopoverClass_PropertyColorAndArrow(Success,True,[&quot;mud-tooltip&quot;, &quot;mud-theme-success&quot;, &quot;mud-tooltip-arrow&quot;, &quot;mud-border-success&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColorAndArrow(Success,True,[&quot;mud-tooltip&quot;, &quot;mud-theme-success&quot;, &quot;mud-tooltip-arrow&quot;, &quot;mud-border-success&quot;])" time="0.001040" status="Passed"/>
+        <testcase name="PopoverClass_PropertyColorAndArrow(Success,False,[&quot;mud-tooltip&quot;, &quot;mud-theme-success&quot;])" classname="MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColorAndArrow(Success,False,[&quot;mud-tooltip&quot;, &quot;mud-theme-success&quot;])" time="0.000652" status="Passed"/>
+    </testsuite>
+    <testsuite name="ToggleIconButtonTest" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest" tests="13" time="0.016263" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8621537Z">
+        <testcase name="DefaultState" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.DefaultState" time="0.001628" status="Passed"/>
+        <testcase name="Disabled_ShouldPreventInteraction" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.Disabled_ShouldPreventInteraction" time="0.001051" status="Passed"/>
+        <testcase name="ShouldSetAriaPressedAttribute" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.ShouldSetAriaPressedAttribute" time="0.000669" status="Passed"/>
+        <testcase name="ShouldSynchronizeStateWithOtherComponent" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.ShouldSynchronizeStateWithOtherComponent" time="0.002264" status="Passed"/>
+        <testcase name="ShouldToggleOnClick" classname="MudBlazor.UnitTests.Components.ToggleIconButtonTest.ShouldToggleOnClick" time="0.001600" status="Passed"/>
+    </testsuite>
+    <testsuite name="RenderContent" classname="MudBlazor.UnitTests.Components.ToolTipTests.RenderContent" tests="2" time="0.004047" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.9153261Z">
+        <testcase name="RenderContent(False)" classname="MudBlazor.UnitTests.Components.ToolTipTests.RenderContent(False)" time="0.002853" status="Passed"/>
+        <testcase name="RenderContent(True)" classname="MudBlazor.UnitTests.Components.ToolTipTests.RenderContent(True)" time="0.001161" status="Passed"/>
+    </testsuite>
+    <testsuite name="ToolBarTests" classname="MudBlazor.UnitTests.Components.ToolBarTests" tests="2" time="0.002582" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8784257Z">
+        <testcase name="ToolBar_WrapContent_ShouldBeFalseByDefault" classname="MudBlazor.UnitTests.Components.ToolBarTests.ToolBar_WrapContent_ShouldBeFalseByDefault" time="0.000382" status="Passed"/>
+        <testcase name="ToolBarWrapContentTest" classname="MudBlazor.UnitTests.Components.ToolBarTests.ToolBarWrapContentTest" time="0.002128" status="Passed"/>
+    </testsuite>
+    <testsuite name="ToggleGroup_SizeClasses_Test" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SizeClasses_Test" tests="3" time="0.002508" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8547076Z">
+        <testcase name="ToggleGroup_SizeClasses_Test(Small)" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SizeClasses_Test(Small)" time="0.001333" status="Passed"/>
+        <testcase name="ToggleGroup_SizeClasses_Test(Medium)" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SizeClasses_Test(Medium)" time="0.000632" status="Passed"/>
+        <testcase name="ToggleGroup_SizeClasses_Test(Large)" classname="MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SizeClasses_Test(Large)" time="0.000505" status="Passed"/>
+    </testsuite>
+    <testsuite name="RenderTooltipFragment" classname="MudBlazor.UnitTests.Components.ToolTipTests.RenderTooltipFragment" tests="2" time="0.003802" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.9193838Z">
+        <testcase name="RenderTooltipFragment(False)" classname="MudBlazor.UnitTests.Components.ToolTipTests.RenderTooltipFragment(False)" time="0.002832" status="Passed"/>
+        <testcase name="RenderTooltipFragment(True)" classname="MudBlazor.UnitTests.Components.ToolTipTests.RenderTooltipFragment(True)" time="0.000943" status="Passed"/>
+    </testsuite>
+    <testsuite name="ToolTipTests" classname="MudBlazor.UnitTests.Components.ToolTipTests" tests="39" time="0.059573" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.8810170Z">
+        <testcase name="DefaultValue" classname="MudBlazor.UnitTests.Components.ToolTipTests.DefaultValue" time="0.000561" status="Passed"/>
+        <testcase name="InnerClass_ChildContentWrapper" classname="MudBlazor.UnitTests.Components.ToolTipTests.InnerClass_ChildContentWrapper" time="0.002104" status="Passed"/>
+        <testcase name="NoPopoverIfThereIsNoContent" classname="MudBlazor.UnitTests.Components.ToolTipTests.NoPopoverIfThereIsNoContent" time="0.001742" status="Passed"/>
+        <testcase name="Tooltip_Disabled_Button_OnFocusIn_NoPopover" classname="MudBlazor.UnitTests.Components.ToolTipTests.Tooltip_Disabled_Button_OnFocusIn_NoPopover" time="0.004464" status="Passed"/>
+        <testcase name="Tooltip_Disabled_Button_OnPointerEnter_NoPopover" classname="MudBlazor.UnitTests.Components.ToolTipTests.Tooltip_Disabled_Button_OnPointerEnter_NoPopover" time="0.001691" status="Passed"/>
+        <testcase name="Tooltip_Disabled_Default_False" classname="MudBlazor.UnitTests.Components.ToolTipTests.Tooltip_Disabled_Default_False" time="0.000714" status="Passed"/>
+        <testcase name="Tooltip_On_Click" classname="MudBlazor.UnitTests.Components.ToolTipTests.Tooltip_On_Click" time="0.002079" status="Passed"/>
+        <testcase name="Tooltip_On_Focus" classname="MudBlazor.UnitTests.Components.ToolTipTests.Tooltip_On_Focus" time="0.000954" status="Passed"/>
+        <testcase name="Tooltip_Style_Respected" classname="MudBlazor.UnitTests.Components.ToolTipTests.Tooltip_Style_Respected" time="0.001578" status="Passed"/>
+    </testsuite>
+    <testsuite name="VirtualizeTests" classname="MudBlazor.UnitTests.Components.VirtualizeTests" tests="1" time="0.002389" failures="0" skipped="0" timestamp="2024-11-06T18:59:47.2321853Z">
+        <testcase name="VirtualizeRenderTest" classname="MudBlazor.UnitTests.Components.VirtualizeTests.VirtualizeRenderTest" time="0.002317" status="Passed"/>
+    </testsuite>
+    <testsuite name="Visible_ByDefault" classname="MudBlazor.UnitTests.Components.ToolTipTests.Visible_ByDefault" tests="2" time="0.005852" failures="0" skipped="0" timestamp="2024-11-06T18:59:46.9347261Z">
+        <testcase name="Visible_ByDefault(True)" classname="MudBlazor.UnitTests.Components.ToolTipTests.Visible_ByDefault(True)" time="0.002384" status="Passed"/>
+        <testcase name="Visible_ByDefault(False)" classname="MudBlazor.UnitTests.Components.ToolTipTests.Visible_ByDefault(False)" time="0.003442" status="Passed"/>
+    </testsuite>
+</testsuites>

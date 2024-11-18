@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "6913692c-50a7-4cc9-a0cf-53a7f3b08f42",
+      "uuid": "43224ebc-ecfc-44ef-8a63-0de9eb610f12",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f40a5e3a-db84-4c5c-8626-a871980fa94e",
+          "uuid": "81939de3-bf06-45d2-a803-53530d258ad7",
           "title": "BarChartTests",
           "file": "MudBlazor.UnitTests.Charts.BarChartTests",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "60ba92c0-9479-4a31-aa5a-e298aaf71559",
-              "parentUUID": "f40a5e3a-db84-4c5c-8626-a871980fa94e",
+              "uuid": "342c3110-4732-4471-bd21-088a5d321724",
+              "parentUUID": "81939de3-bf06-45d2-a803-53530d258ad7",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0f25bb66-1b37-4199-be1d-7f616e696717",
-              "parentUUID": "f40a5e3a-db84-4c5c-8626-a871980fa94e",
+              "uuid": "8e66e292-ec43-42f0-9481-2b686d3f00b1",
+              "parentUUID": "81939de3-bf06-45d2-a803-53530d258ad7",
               "isHook": false,
               "skipped": false
             },
@@ -77,8 +77,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "38bbb844-1075-4e63-8bb5-01f77af6fb58",
-              "parentUUID": "f40a5e3a-db84-4c5c-8626-a871980fa94e",
+              "uuid": "463993fd-112f-4d2c-a8a3-c8dd8647cf4f",
+              "parentUUID": "81939de3-bf06-45d2-a803-53530d258ad7",
               "isHook": false,
               "skipped": false
             },
@@ -94,18 +94,18 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0b630d7e-665f-42f3-8037-cc3bb6cb249e",
-              "parentUUID": "f40a5e3a-db84-4c5c-8626-a871980fa94e",
+              "uuid": "9f4ff0e8-5131-4f08-b438-a94ff63b7995",
+              "parentUUID": "81939de3-bf06-45d2-a803-53530d258ad7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "60ba92c0-9479-4a31-aa5a-e298aaf71559",
-            "0f25bb66-1b37-4199-be1d-7f616e696717",
-            "38bbb844-1075-4e63-8bb5-01f77af6fb58",
-            "0b630d7e-665f-42f3-8037-cc3bb6cb249e"
+            "342c3110-4732-4471-bd21-088a5d321724",
+            "8e66e292-ec43-42f0-9481-2b686d3f00b1",
+            "463993fd-112f-4d2c-a8a3-c8dd8647cf4f",
+            "9f4ff0e8-5131-4f08-b438-a94ff63b7995"
           ],
           "failures": [],
           "pending": [],
@@ -116,7 +116,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "3a63a8ab-7484-447f-98b0-23a6b6ca9cc6",
+          "uuid": "061b5506-8ac0-4a5b-9925-b3e0345b57ac",
           "title": "DonutChartTests",
           "file": "MudBlazor.UnitTests.Charts.DonutChartTests",
           "beforeHooks": [],
@@ -134,8 +134,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "1f64299a-5c1e-47b7-a54f-b36a20844fb8",
-              "parentUUID": "3a63a8ab-7484-447f-98b0-23a6b6ca9cc6",
+              "uuid": "bc6057af-745b-4db3-b3d8-6f329e99b94f",
+              "parentUUID": "061b5506-8ac0-4a5b-9925-b3e0345b57ac",
               "isHook": false,
               "skipped": false
             },
@@ -151,16 +151,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "24d13e62-582a-4cf6-b4d3-ce24646f3373",
-              "parentUUID": "3a63a8ab-7484-447f-98b0-23a6b6ca9cc6",
+              "uuid": "a24908ea-8f65-4b66-9f79-c27956e0c709",
+              "parentUUID": "061b5506-8ac0-4a5b-9925-b3e0345b57ac",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1f64299a-5c1e-47b7-a54f-b36a20844fb8",
-            "24d13e62-582a-4cf6-b4d3-ce24646f3373"
+            "bc6057af-745b-4db3-b3d8-6f329e99b94f",
+            "a24908ea-8f65-4b66-9f79-c27956e0c709"
           ],
           "failures": [],
           "pending": [],
@@ -171,7 +171,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "cd252bf7-636d-45f5-a4d5-eaac9cb1a2a0",
+          "uuid": "9b642eef-d6df-4a1c-8e03-52166cb8f097",
           "title": "DonutChartExampleData",
           "file": "MudBlazor.UnitTests.Charts.DonutChartTests.DonutChartExampleData",
           "beforeHooks": [],
@@ -189,8 +189,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "6342be61-5802-408a-a05a-fe4b6662360e",
-              "parentUUID": "cd252bf7-636d-45f5-a4d5-eaac9cb1a2a0",
+              "uuid": "6279e12c-367f-4539-b0ec-5b738ad21dc3",
+              "parentUUID": "9b642eef-d6df-4a1c-8e03-52166cb8f097",
               "isHook": false,
               "skipped": false
             },
@@ -206,16 +206,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "1318df2b-3376-4ef0-bce3-07db5b93ba06",
-              "parentUUID": "cd252bf7-636d-45f5-a4d5-eaac9cb1a2a0",
+              "uuid": "bd40fae8-7a1d-4af4-b530-506103aa03c9",
+              "parentUUID": "9b642eef-d6df-4a1c-8e03-52166cb8f097",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6342be61-5802-408a-a05a-fe4b6662360e",
-            "1318df2b-3376-4ef0-bce3-07db5b93ba06"
+            "6279e12c-367f-4539-b0ec-5b738ad21dc3",
+            "bd40fae8-7a1d-4af4-b530-506103aa03c9"
           ],
           "failures": [],
           "pending": [],
@@ -226,7 +226,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "1345200f-6245-4cef-80ea-f4f947b1420f",
+          "uuid": "2c0eef8e-cc96-4193-a23f-10f68ef4cc2c",
           "title": "DonutCirclePosition",
           "file": "MudBlazor.UnitTests.Charts.DonutChartTests.DonutCirclePosition",
           "beforeHooks": [],
@@ -244,8 +244,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "bec6076a-6d39-4a98-bc49-821e4e143d95",
-              "parentUUID": "1345200f-6245-4cef-80ea-f4f947b1420f",
+              "uuid": "87dfe510-d0b0-4efe-9a46-74087bd0e0c8",
+              "parentUUID": "2c0eef8e-cc96-4193-a23f-10f68ef4cc2c",
               "isHook": false,
               "skipped": false
             },
@@ -261,16 +261,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f8338d6e-4937-48b1-9d74-29affea4c5f8",
-              "parentUUID": "1345200f-6245-4cef-80ea-f4f947b1420f",
+              "uuid": "be83338e-a5ac-4fb5-b5ed-4495ad2711ee",
+              "parentUUID": "2c0eef8e-cc96-4193-a23f-10f68ef4cc2c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bec6076a-6d39-4a98-bc49-821e4e143d95",
-            "f8338d6e-4937-48b1-9d74-29affea4c5f8"
+            "87dfe510-d0b0-4efe-9a46-74087bd0e0c8",
+            "be83338e-a5ac-4fb5-b5ed-4495ad2711ee"
           ],
           "failures": [],
           "pending": [],
@@ -281,7 +281,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "35a18b5e-924a-4077-a4d0-07fc16afca35",
+          "uuid": "35a6a86f-06c2-407d-8150-0689c67f974b",
           "title": "LineChartTests",
           "file": "MudBlazor.UnitTests.Charts.LineChartTests",
           "beforeHooks": [],
@@ -299,8 +299,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "59a9df6d-c395-439b-be1d-456145f0ed14",
-              "parentUUID": "35a18b5e-924a-4077-a4d0-07fc16afca35",
+              "uuid": "214a85d1-3296-4186-af59-525786b65767",
+              "parentUUID": "35a6a86f-06c2-407d-8150-0689c67f974b",
               "isHook": false,
               "skipped": false
             },
@@ -316,16 +316,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d677909a-c81d-4348-b7c0-4cfee7636244",
-              "parentUUID": "35a18b5e-924a-4077-a4d0-07fc16afca35",
+              "uuid": "d89ccf65-7746-4ab4-8621-6f953d310f0c",
+              "parentUUID": "35a6a86f-06c2-407d-8150-0689c67f974b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "59a9df6d-c395-439b-be1d-456145f0ed14",
-            "d677909a-c81d-4348-b7c0-4cfee7636244"
+            "214a85d1-3296-4186-af59-525786b65767",
+            "d89ccf65-7746-4ab4-8621-6f953d310f0c"
           ],
           "failures": [],
           "pending": [],
@@ -336,7 +336,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+          "uuid": "51b401ae-eb97-410e-9552-e278e7522566",
           "title": "LineChartExampleData",
           "file": "MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleData",
           "beforeHooks": [],
@@ -354,8 +354,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9cac6fcf-aa93-4d85-8858-c39bbd408e47",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "a2042160-a278-4359-967a-986063cf6826",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -371,8 +371,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c95b701e-b4cb-4198-868f-eda9c2e07a1e",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "d3e6972c-2a8d-464f-b418-6597720b9b81",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -388,8 +388,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e7e7029e-4e8b-4548-908c-f432c48f83b8",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "9249b617-9c27-43a6-b8a4-7429cd0e4d83",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -405,8 +405,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "972acd7c-f3f8-4b81-9913-b1fe686057ab",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "e90a1cad-6745-49f5-98be-23a2eb1ff585",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -422,8 +422,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0fc63f51-980c-440b-b096-984bce9cfd66",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "526b9acd-b2e5-4821-8077-dc8b2580872c",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -439,8 +439,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "612de378-739f-4c48-8261-8c19ace9565f",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "ed594688-5942-4651-8362-eabf6ae0921e",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -456,8 +456,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ab2fc377-4a35-439f-833b-9a0593cb1677",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "88285208-da93-4f88-9351-a3f731d87abd",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             },
@@ -473,22 +473,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "659a42ff-8287-4888-abda-3f5f3b0091f7",
-              "parentUUID": "98ac2185-2cc8-41c4-9d2f-d361ab739592",
+              "uuid": "7a1ddd19-fa1d-41c6-a913-e63e696104e3",
+              "parentUUID": "51b401ae-eb97-410e-9552-e278e7522566",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9cac6fcf-aa93-4d85-8858-c39bbd408e47",
-            "c95b701e-b4cb-4198-868f-eda9c2e07a1e",
-            "e7e7029e-4e8b-4548-908c-f432c48f83b8",
-            "972acd7c-f3f8-4b81-9913-b1fe686057ab",
-            "0fc63f51-980c-440b-b096-984bce9cfd66",
-            "612de378-739f-4c48-8261-8c19ace9565f",
-            "ab2fc377-4a35-439f-833b-9a0593cb1677",
-            "659a42ff-8287-4888-abda-3f5f3b0091f7"
+            "a2042160-a278-4359-967a-986063cf6826",
+            "d3e6972c-2a8d-464f-b418-6597720b9b81",
+            "9249b617-9c27-43a6-b8a4-7429cd0e4d83",
+            "e90a1cad-6745-49f5-98be-23a2eb1ff585",
+            "526b9acd-b2e5-4821-8077-dc8b2580872c",
+            "ed594688-5942-4651-8362-eabf6ae0921e",
+            "88285208-da93-4f88-9351-a3f731d87abd",
+            "7a1ddd19-fa1d-41c6-a913-e63e696104e3"
           ],
           "failures": [],
           "pending": [],
@@ -499,7 +499,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+          "uuid": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
           "title": "LineChartExampleZeroValues",
           "file": "MudBlazor.UnitTests.Charts.LineChartTests.LineChartExampleZeroValues",
           "beforeHooks": [],
@@ -517,8 +517,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "62d02845-b6dd-4ff7-a496-f6e3f6f5455a",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "84b958da-2b64-4f3d-9880-2e50570258f2",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -534,8 +534,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ccf41933-5e9d-44da-a8fd-4bb26c7c94ca",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "0d03e55b-63aa-4234-bfb2-ca74521e4236",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -551,8 +551,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f5d0d45a-50ab-4c76-a7f2-d4864e60f6ff",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "dc6d65ac-8be1-4292-b90a-44409442e5a1",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -568,8 +568,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "8f50ffef-98bb-47f9-b432-bc070f2cc54e",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "fde4b6d2-a3ea-471d-bc41-19017298ac7e",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -585,8 +585,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f424bfcc-4395-401b-ba82-9292e49494f3",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "1c40faa2-1858-4eb2-9e73-d7b745b3871c",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -602,8 +602,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f45b3a1d-d587-4d49-96b9-222d266fbccb",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "ae2f98ac-ac7d-4614-a87d-a9a6fef45a73",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -619,8 +619,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "20958500-e463-440a-bcd8-f2e5c2df9b38",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "9232d637-2809-4ac2-928b-63ac15007067",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             },
@@ -636,22 +636,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "97330427-cba1-45a5-bf8c-103ab4aff38d",
-              "parentUUID": "c193403a-70ef-47fc-8f3e-27f7f5ed083a",
+              "uuid": "7a603e81-bd7c-46c1-ba8c-b20a56e4969a",
+              "parentUUID": "3dd1d7bb-549a-4e45-b041-913fa167bd15",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "62d02845-b6dd-4ff7-a496-f6e3f6f5455a",
-            "ccf41933-5e9d-44da-a8fd-4bb26c7c94ca",
-            "f5d0d45a-50ab-4c76-a7f2-d4864e60f6ff",
-            "8f50ffef-98bb-47f9-b432-bc070f2cc54e",
-            "f424bfcc-4395-401b-ba82-9292e49494f3",
-            "f45b3a1d-d587-4d49-96b9-222d266fbccb",
-            "20958500-e463-440a-bcd8-f2e5c2df9b38",
-            "97330427-cba1-45a5-bf8c-103ab4aff38d"
+            "84b958da-2b64-4f3d-9880-2e50570258f2",
+            "0d03e55b-63aa-4234-bfb2-ca74521e4236",
+            "dc6d65ac-8be1-4292-b90a-44409442e5a1",
+            "fde4b6d2-a3ea-471d-bc41-19017298ac7e",
+            "1c40faa2-1858-4eb2-9e73-d7b745b3871c",
+            "ae2f98ac-ac7d-4614-a87d-a9a6fef45a73",
+            "9232d637-2809-4ac2-928b-63ac15007067",
+            "7a603e81-bd7c-46c1-ba8c-b20a56e4969a"
           ],
           "failures": [],
           "pending": [],
@@ -662,7 +662,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "9b334b87-1fb2-447d-adc2-d6a8033a779f",
+          "uuid": "d46a54b4-c532-4c10-b6cc-8bc2c6b8d776",
           "title": "PieChartTests",
           "file": "MudBlazor.UnitTests.Charts.PieChartTests",
           "beforeHooks": [],
@@ -680,8 +680,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "6b26ada0-82b0-461f-9140-a3b4a3caefa2",
-              "parentUUID": "9b334b87-1fb2-447d-adc2-d6a8033a779f",
+              "uuid": "3e1a32d0-1054-44a0-9f3f-d57d3a19d150",
+              "parentUUID": "d46a54b4-c532-4c10-b6cc-8bc2c6b8d776",
               "isHook": false,
               "skipped": false
             },
@@ -697,16 +697,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "de583079-813c-4331-8437-4f08253f8e6f",
-              "parentUUID": "9b334b87-1fb2-447d-adc2-d6a8033a779f",
+              "uuid": "6af2cd14-e75e-4698-aabd-02e270434014",
+              "parentUUID": "d46a54b4-c532-4c10-b6cc-8bc2c6b8d776",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6b26ada0-82b0-461f-9140-a3b4a3caefa2",
-            "de583079-813c-4331-8437-4f08253f8e6f"
+            "3e1a32d0-1054-44a0-9f3f-d57d3a19d150",
+            "6af2cd14-e75e-4698-aabd-02e270434014"
           ],
           "failures": [],
           "pending": [],
@@ -717,7 +717,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "aaecbfed-9bda-4788-b08f-ef6a691acd9d",
+          "uuid": "a7cee905-58bc-4627-814a-f15a45b9607c",
           "title": "PieChartExampleData",
           "file": "MudBlazor.UnitTests.Charts.PieChartTests.PieChartExampleData",
           "beforeHooks": [],
@@ -735,8 +735,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3130740c-3f52-4d4e-9ae8-dcf5bde9ed80",
-              "parentUUID": "aaecbfed-9bda-4788-b08f-ef6a691acd9d",
+              "uuid": "e7280da3-c421-4f6d-a61d-f6b8a0734382",
+              "parentUUID": "a7cee905-58bc-4627-814a-f15a45b9607c",
               "isHook": false,
               "skipped": false
             },
@@ -752,16 +752,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "60d1883a-2116-4f13-b23c-3218baf03d2a",
-              "parentUUID": "aaecbfed-9bda-4788-b08f-ef6a691acd9d",
+              "uuid": "0a1b575f-1c0a-4368-8ed4-5bfbddd5bc50",
+              "parentUUID": "a7cee905-58bc-4627-814a-f15a45b9607c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3130740c-3f52-4d4e-9ae8-dcf5bde9ed80",
-            "60d1883a-2116-4f13-b23c-3218baf03d2a"
+            "e7280da3-c421-4f6d-a61d-f6b8a0734382",
+            "0a1b575f-1c0a-4368-8ed4-5bfbddd5bc50"
           ],
           "failures": [],
           "pending": [],
@@ -772,7 +772,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "cff3bcfb-b085-4c45-8ad3-df39e059a3af",
+          "uuid": "ddf4c623-a533-410e-b7f4-896ee1bb8bdc",
           "title": "StackedBarChartTests",
           "file": "MudBlazor.UnitTests.Charts.StackedBarChartTests",
           "beforeHooks": [],
@@ -790,8 +790,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ce340a89-f3e9-46bd-bf2e-3b16dc2d08b7",
-              "parentUUID": "cff3bcfb-b085-4c45-8ad3-df39e059a3af",
+              "uuid": "c016bf8d-afdf-4e59-beda-573eafb22879",
+              "parentUUID": "ddf4c623-a533-410e-b7f4-896ee1bb8bdc",
               "isHook": false,
               "skipped": false
             },
@@ -807,8 +807,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d0ce1cb9-1af5-4c4e-ae4b-8934ba141646",
-              "parentUUID": "cff3bcfb-b085-4c45-8ad3-df39e059a3af",
+              "uuid": "d6fcf5ae-904c-427d-a0eb-a6361ccbb3ee",
+              "parentUUID": "ddf4c623-a533-410e-b7f4-896ee1bb8bdc",
               "isHook": false,
               "skipped": false
             },
@@ -824,17 +824,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9053607e-8be4-46d1-b57f-a70172a52452",
-              "parentUUID": "cff3bcfb-b085-4c45-8ad3-df39e059a3af",
+              "uuid": "878570b3-745b-48a8-b2dd-8ce0d1adb78a",
+              "parentUUID": "ddf4c623-a533-410e-b7f4-896ee1bb8bdc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ce340a89-f3e9-46bd-bf2e-3b16dc2d08b7",
-            "d0ce1cb9-1af5-4c4e-ae4b-8934ba141646",
-            "9053607e-8be4-46d1-b57f-a70172a52452"
+            "c016bf8d-afdf-4e59-beda-573eafb22879",
+            "d6fcf5ae-904c-427d-a0eb-a6361ccbb3ee",
+            "878570b3-745b-48a8-b2dd-8ce0d1adb78a"
           ],
           "failures": [],
           "pending": [],
@@ -845,7 +845,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "eaba7a31-3b81-436f-a71a-5a07df1ec007",
+          "uuid": "36ee2f4c-1a70-4c96-8ea5-7f8511148bc0",
           "title": "TimeSeriesChartTests",
           "file": "MudBlazor.UnitTests.Charts.TimeSeriesChartTests",
           "beforeHooks": [],
@@ -863,8 +863,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9fb5cd7c-1c2e-4fe8-823f-07185896b8d0",
-              "parentUUID": "eaba7a31-3b81-436f-a71a-5a07df1ec007",
+              "uuid": "cf364150-2705-47bf-9431-b4a737a88c1b",
+              "parentUUID": "36ee2f4c-1a70-4c96-8ea5-7f8511148bc0",
               "isHook": false,
               "skipped": false
             },
@@ -880,16 +880,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b3fccce5-28e9-4014-8641-a356eacb8c97",
-              "parentUUID": "eaba7a31-3b81-436f-a71a-5a07df1ec007",
+              "uuid": "1a6223fa-5088-4c54-b5bb-a9a95f193d0d",
+              "parentUUID": "36ee2f4c-1a70-4c96-8ea5-7f8511148bc0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9fb5cd7c-1c2e-4fe8-823f-07185896b8d0",
-            "b3fccce5-28e9-4014-8641-a356eacb8c97"
+            "cf364150-2705-47bf-9431-b4a737a88c1b",
+            "1a6223fa-5088-4c54-b5bb-a9a95f193d0d"
           ],
           "failures": [],
           "pending": [],
@@ -900,7 +900,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "fd622e98-45b7-45bd-a063-ac849bfc9f25",
+          "uuid": "30de0985-0985-42f9-aecd-98c59ae5b3f9",
           "title": "AlertTests",
           "file": "MudBlazor.UnitTests.Components.AlertTests",
           "beforeHooks": [],
@@ -918,8 +918,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5b01c61f-bde8-43ea-b8da-daf2b8c17bf7",
-              "parentUUID": "fd622e98-45b7-45bd-a063-ac849bfc9f25",
+              "uuid": "3af9e8ad-729e-4a30-9063-bf44899cefde",
+              "parentUUID": "30de0985-0985-42f9-aecd-98c59ae5b3f9",
               "isHook": false,
               "skipped": false
             },
@@ -935,8 +935,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3d457b0b-ef65-400a-abbf-7016b6f01f88",
-              "parentUUID": "fd622e98-45b7-45bd-a063-ac849bfc9f25",
+              "uuid": "63b599d0-44a5-40ad-b988-b144e828ec7b",
+              "parentUUID": "30de0985-0985-42f9-aecd-98c59ae5b3f9",
               "isHook": false,
               "skipped": false
             },
@@ -952,17 +952,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c3d7f47e-5c4c-4564-8cf5-60cb83695fb1",
-              "parentUUID": "fd622e98-45b7-45bd-a063-ac849bfc9f25",
+              "uuid": "80f89529-6b15-499a-84a0-d44a7f78fbbb",
+              "parentUUID": "30de0985-0985-42f9-aecd-98c59ae5b3f9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5b01c61f-bde8-43ea-b8da-daf2b8c17bf7",
-            "3d457b0b-ef65-400a-abbf-7016b6f01f88",
-            "c3d7f47e-5c4c-4564-8cf5-60cb83695fb1"
+            "3af9e8ad-729e-4a30-9063-bf44899cefde",
+            "63b599d0-44a5-40ad-b988-b144e828ec7b",
+            "80f89529-6b15-499a-84a0-d44a7f78fbbb"
           ],
           "failures": [],
           "pending": [],
@@ -973,7 +973,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c90a4b34-997d-44fb-ace1-b6b7090f7abe",
+          "uuid": "649a1099-01c2-441b-9d00-57a992780e3e",
           "title": "AppBarTests",
           "file": "MudBlazor.UnitTests.Components.AppBarTests",
           "beforeHooks": [],
@@ -991,8 +991,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "bd874060-14c2-4ee9-bc11-80152dd4cf38",
-              "parentUUID": "c90a4b34-997d-44fb-ace1-b6b7090f7abe",
+              "uuid": "b1f90952-7487-421f-9d86-6774b6dc07de",
+              "parentUUID": "649a1099-01c2-441b-9d00-57a992780e3e",
               "isHook": false,
               "skipped": false
             },
@@ -1008,8 +1008,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "513c6175-b91c-4380-af40-ed441fece37b",
-              "parentUUID": "c90a4b34-997d-44fb-ace1-b6b7090f7abe",
+              "uuid": "c0b84b17-5713-4d0c-a34c-4f7c5157850c",
+              "parentUUID": "649a1099-01c2-441b-9d00-57a992780e3e",
               "isHook": false,
               "skipped": false
             },
@@ -1025,8 +1025,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a4566ef3-df45-4f71-9525-7dec3b6ef731",
-              "parentUUID": "c90a4b34-997d-44fb-ace1-b6b7090f7abe",
+              "uuid": "2007f505-e6b1-4d52-9aa9-bd62d71db38e",
+              "parentUUID": "649a1099-01c2-441b-9d00-57a992780e3e",
               "isHook": false,
               "skipped": false
             },
@@ -1042,8 +1042,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9f99d6c9-297b-4dd1-8e8e-c5b15ee405d9",
-              "parentUUID": "c90a4b34-997d-44fb-ace1-b6b7090f7abe",
+              "uuid": "35f83313-cac9-4723-9e79-8147357c755c",
+              "parentUUID": "649a1099-01c2-441b-9d00-57a992780e3e",
               "isHook": false,
               "skipped": false
             },
@@ -1059,19 +1059,19 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d6f021be-9cc1-47c7-921e-d036ed026332",
-              "parentUUID": "c90a4b34-997d-44fb-ace1-b6b7090f7abe",
+              "uuid": "48f8992a-81df-4718-abb1-08ef7c84d445",
+              "parentUUID": "649a1099-01c2-441b-9d00-57a992780e3e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bd874060-14c2-4ee9-bc11-80152dd4cf38",
-            "513c6175-b91c-4380-af40-ed441fece37b",
-            "a4566ef3-df45-4f71-9525-7dec3b6ef731",
-            "9f99d6c9-297b-4dd1-8e8e-c5b15ee405d9",
-            "d6f021be-9cc1-47c7-921e-d036ed026332"
+            "b1f90952-7487-421f-9d86-6774b6dc07de",
+            "c0b84b17-5713-4d0c-a34c-4f7c5157850c",
+            "2007f505-e6b1-4d52-9aa9-bd62d71db38e",
+            "35f83313-cac9-4723-9e79-8147357c755c",
+            "48f8992a-81df-4718-abb1-08ef7c84d445"
           ],
           "failures": [],
           "pending": [],
@@ -1082,7 +1082,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+          "uuid": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
           "title": "CarouselTests",
           "file": "MudBlazor.UnitTests.Components.CarouselTests",
           "beforeHooks": [],
@@ -1100,8 +1100,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7cd7e2af-e04f-42b0-aba5-9e2598f2eb2f",
-              "parentUUID": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+              "uuid": "588cf956-84aa-4f08-ac46-8d8967374ad7",
+              "parentUUID": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
               "isHook": false,
               "skipped": false
             },
@@ -1117,8 +1117,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9039f755-5bfc-4955-8e98-39b34d09da64",
-              "parentUUID": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+              "uuid": "5b9b2055-e25e-42eb-9912-76e32a78f7fc",
+              "parentUUID": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
               "isHook": false,
               "skipped": false
             },
@@ -1134,8 +1134,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c0eafab8-b0c9-4349-9e54-67f3d396534d",
-              "parentUUID": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+              "uuid": "1d4551fc-bd1b-40ee-8681-f7fddf794db6",
+              "parentUUID": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
               "isHook": false,
               "skipped": false
             },
@@ -1151,8 +1151,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "291d55fd-a1be-410b-a08d-4bfb614054ca",
-              "parentUUID": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+              "uuid": "a3daf095-d2f1-4355-9ec3-cb8d2b682979",
+              "parentUUID": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
               "isHook": false,
               "skipped": false
             },
@@ -1168,8 +1168,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "07efd50b-796b-4ea8-9775-d3ee3c4e3bb2",
-              "parentUUID": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+              "uuid": "bfcda9f7-4fff-4030-a66c-5a612b90b684",
+              "parentUUID": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
               "isHook": false,
               "skipped": false
             },
@@ -1185,20 +1185,20 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a284c512-cb00-4868-970f-1dd034ec92fb",
-              "parentUUID": "76c62b02-661f-4aa5-997c-91d0ccc48d1b",
+              "uuid": "517cbd9a-2eeb-4e42-993b-eff0e2a2163f",
+              "parentUUID": "3571f826-1bb8-40d7-aefa-1a1345b825cd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7cd7e2af-e04f-42b0-aba5-9e2598f2eb2f",
-            "9039f755-5bfc-4955-8e98-39b34d09da64",
-            "c0eafab8-b0c9-4349-9e54-67f3d396534d",
-            "291d55fd-a1be-410b-a08d-4bfb614054ca",
-            "07efd50b-796b-4ea8-9775-d3ee3c4e3bb2",
-            "a284c512-cb00-4868-970f-1dd034ec92fb"
+            "588cf956-84aa-4f08-ac46-8d8967374ad7",
+            "5b9b2055-e25e-42eb-9912-76e32a78f7fc",
+            "1d4551fc-bd1b-40ee-8681-f7fddf794db6",
+            "a3daf095-d2f1-4355-9ec3-cb8d2b682979",
+            "bfcda9f7-4fff-4030-a66c-5a612b90b684",
+            "517cbd9a-2eeb-4e42-993b-eff0e2a2163f"
           ],
           "failures": [],
           "pending": [],
@@ -1209,7 +1209,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "148447af-08f5-4714-a330-c51b5e5b1a01",
+          "uuid": "77389856-e870-46fc-ac07-df08b23601da",
           "title": "ChartTests",
           "file": "MudBlazor.UnitTests.Components.ChartTests",
           "beforeHooks": [],
@@ -1227,8 +1227,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d78ebf79-d833-40e5-8acb-ffa89f400fa5",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "438af7dd-a67f-40bb-a165-161f9d6e0d9c",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1244,8 +1244,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "af0d837d-ce84-46a7-baa5-20d8409dcb5b",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "a1c56587-90c5-4bac-a0f2-8fe80ad182eb",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1261,8 +1261,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3d4530cc-f948-4fd6-b6e8-a23b11730483",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "eb2ab81e-0391-488b-b7d2-9498948dfb99",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1278,8 +1278,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d87a312d-92b9-485f-a0c2-2473913fbeed",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "7e4411f3-8527-4ac5-a75e-93b0104218ef",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1295,8 +1295,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "94aae5ea-1903-4c93-96c3-dd647d3d62db",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "be27045b-9c99-489d-8ef2-164c40fff7b5",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1312,8 +1312,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Timeout: 5000\",\"UseCancellation: True\"]}]",
               "code": null,
               "err": {},
-              "uuid": "65511e59-8860-453e-8e42-c6d756ce9f62",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "dfb259ce-86e5-403e-8b27-97d383d3d178",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1329,8 +1329,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7ba4d8a2-d45c-4df3-a220-66b27188b08a",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "7a35696a-3831-4153-8500-391050ed6966",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             },
@@ -1346,22 +1346,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "687e2429-f73c-466e-9a94-d18c5e448a22",
-              "parentUUID": "148447af-08f5-4714-a330-c51b5e5b1a01",
+              "uuid": "211a8545-7b3b-4cb1-b77a-4f7a830dfbfc",
+              "parentUUID": "77389856-e870-46fc-ac07-df08b23601da",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d78ebf79-d833-40e5-8acb-ffa89f400fa5",
-            "af0d837d-ce84-46a7-baa5-20d8409dcb5b",
-            "3d4530cc-f948-4fd6-b6e8-a23b11730483",
-            "d87a312d-92b9-485f-a0c2-2473913fbeed",
-            "94aae5ea-1903-4c93-96c3-dd647d3d62db",
-            "65511e59-8860-453e-8e42-c6d756ce9f62",
-            "7ba4d8a2-d45c-4df3-a220-66b27188b08a",
-            "687e2429-f73c-466e-9a94-d18c5e448a22"
+            "438af7dd-a67f-40bb-a165-161f9d6e0d9c",
+            "a1c56587-90c5-4bac-a0f2-8fe80ad182eb",
+            "eb2ab81e-0391-488b-b7d2-9498948dfb99",
+            "7e4411f3-8527-4ac5-a75e-93b0104218ef",
+            "be27045b-9c99-489d-8ef2-164c40fff7b5",
+            "dfb259ce-86e5-403e-8b27-97d383d3d178",
+            "7a35696a-3831-4153-8500-391050ed6966",
+            "211a8545-7b3b-4cb1-b77a-4f7a830dfbfc"
           ],
           "failures": [],
           "pending": [],
@@ -1372,7 +1372,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "4a800a5d-489b-4441-97db-52504a14170a",
+          "uuid": "b47ae783-3618-4f57-8981-769619c7696f",
           "title": "ChartCustomGraphics",
           "file": "MudBlazor.UnitTests.Components.ChartTests.ChartCustomGraphics",
           "beforeHooks": [],
@@ -1390,8 +1390,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d2cfa1dd-3bbf-45b1-9cae-8971431af269",
-              "parentUUID": "4a800a5d-489b-4441-97db-52504a14170a",
+              "uuid": "3dee59a2-1c5f-4249-8650-56932823cfd3",
+              "parentUUID": "b47ae783-3618-4f57-8981-769619c7696f",
               "isHook": false,
               "skipped": false
             },
@@ -1407,8 +1407,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4d1e4176-cf3e-40af-aa61-dbd06bab8079",
-              "parentUUID": "4a800a5d-489b-4441-97db-52504a14170a",
+              "uuid": "3a6bed1e-b23c-4544-a461-53d74305a34a",
+              "parentUUID": "b47ae783-3618-4f57-8981-769619c7696f",
               "isHook": false,
               "skipped": false
             },
@@ -1424,8 +1424,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9b268947-5d55-4368-bdce-d070e33153a4",
-              "parentUUID": "4a800a5d-489b-4441-97db-52504a14170a",
+              "uuid": "b475dbc8-f151-476b-af0e-809e14749035",
+              "parentUUID": "b47ae783-3618-4f57-8981-769619c7696f",
               "isHook": false,
               "skipped": false
             },
@@ -1441,18 +1441,18 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "37f942d8-2450-42f8-8e2f-b8e0ad12d41f",
-              "parentUUID": "4a800a5d-489b-4441-97db-52504a14170a",
+              "uuid": "17594f10-8ae8-4c79-9a56-e2c04846242d",
+              "parentUUID": "b47ae783-3618-4f57-8981-769619c7696f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d2cfa1dd-3bbf-45b1-9cae-8971431af269",
-            "4d1e4176-cf3e-40af-aa61-dbd06bab8079",
-            "9b268947-5d55-4368-bdce-d070e33153a4",
-            "37f942d8-2450-42f8-8e2f-b8e0ad12d41f"
+            "3dee59a2-1c5f-4249-8650-56932823cfd3",
+            "3a6bed1e-b23c-4544-a461-53d74305a34a",
+            "b475dbc8-f151-476b-af0e-809e14749035",
+            "17594f10-8ae8-4c79-9a56-e2c04846242d"
           ],
           "failures": [],
           "pending": [],
@@ -1463,7 +1463,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+          "uuid": "2de7d960-a9a1-4486-a521-1b0724db759f",
           "title": "ToggleGroupTests",
           "file": "MudBlazor.UnitTests.Components.ToggleGroupTests",
           "beforeHooks": [],
@@ -1481,8 +1481,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "949dae38-3e0f-4398-a5cc-e7584771b45f",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "43ae5ca6-049e-4b1f-86e4-b367f0013d69",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1498,8 +1498,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"Description: Ensures the checkmark is a direct descendant of the button label, is using the right name, and correctly contains a custom class definition\"]}]",
               "code": null,
               "err": {},
-              "uuid": "173316e0-2027-451b-89f6-c225b5bb635e",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "7eb4805b-d786-4a1d-922d-3dc3b4e2ff36",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1515,8 +1515,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9df9867c-a227-4818-8635-ca554ea1a26c",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "66d43d25-4be8-4b59-9bea-64cddd3b1c1a",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1532,8 +1532,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "6408024e-b2a9-4d7d-b736-01f8dff6475b",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "7c83d3c6-cfff-4d4f-b7a4-dbe2319bef12",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1549,8 +1549,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d5ddfba9-2dc4-47c4-a001-044f9e2c6cb5",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "006be7fe-6108-44f5-b907-188e2e5975b5",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1566,8 +1566,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4f210981-d9e5-4fda-9a54-98632aecc21a",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "3f51a784-9065-4c96-a7e3-b26a0abdec88",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1583,8 +1583,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "15ba4163-6b43-4509-a234-bd80847b0486",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "27d86211-f6e2-4374-9c77-df30eaf0dd76",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1600,8 +1600,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "563745b3-cf91-4941-9120-567dab3317c0",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "bc584346-7b97-4856-aec6-25cfb59fe2fd",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1617,8 +1617,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "567515b4-ad3c-455f-a60f-cdc6b1e1c4be",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "dcc13f62-07a8-4f40-9296-2189b3e68faf",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             },
@@ -1634,24 +1634,24 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "50e3fa5a-dead-43b5-9efa-174f7740178a",
-              "parentUUID": "ff660fae-ee6d-4e4a-a4dc-4bdc28659702",
+              "uuid": "416a150c-102d-4862-9cc8-4b0aa4dc61d5",
+              "parentUUID": "2de7d960-a9a1-4486-a521-1b0724db759f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "949dae38-3e0f-4398-a5cc-e7584771b45f",
-            "173316e0-2027-451b-89f6-c225b5bb635e",
-            "9df9867c-a227-4818-8635-ca554ea1a26c",
-            "6408024e-b2a9-4d7d-b736-01f8dff6475b",
-            "d5ddfba9-2dc4-47c4-a001-044f9e2c6cb5",
-            "4f210981-d9e5-4fda-9a54-98632aecc21a",
-            "15ba4163-6b43-4509-a234-bd80847b0486",
-            "563745b3-cf91-4941-9120-567dab3317c0",
-            "567515b4-ad3c-455f-a60f-cdc6b1e1c4be",
-            "50e3fa5a-dead-43b5-9efa-174f7740178a"
+            "43ae5ca6-049e-4b1f-86e4-b367f0013d69",
+            "7eb4805b-d786-4a1d-922d-3dc3b4e2ff36",
+            "66d43d25-4be8-4b59-9bea-64cddd3b1c1a",
+            "7c83d3c6-cfff-4d4f-b7a4-dbe2319bef12",
+            "006be7fe-6108-44f5-b907-188e2e5975b5",
+            "3f51a784-9065-4c96-a7e3-b26a0abdec88",
+            "27d86211-f6e2-4374-9c77-df30eaf0dd76",
+            "bc584346-7b97-4856-aec6-25cfb59fe2fd",
+            "dcc13f62-07a8-4f40-9296-2189b3e68faf",
+            "416a150c-102d-4862-9cc8-4b0aa4dc61d5"
           ],
           "failures": [],
           "pending": [],
@@ -1662,7 +1662,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "117408cc-85ff-4f85-a382-89095bb54455",
+          "uuid": "890fc207-8c47-4448-b279-719e881b286d",
           "title": "ToggleGroup_SizeClasses_Test",
           "file": "MudBlazor.UnitTests.Components.ToggleGroupTests.ToggleGroup_SizeClasses_Test",
           "beforeHooks": [],
@@ -1680,8 +1680,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e8e25fb4-3b4e-46f3-82ae-0e7b1f9fa841",
-              "parentUUID": "117408cc-85ff-4f85-a382-89095bb54455",
+              "uuid": "35895d09-9fda-4cdf-8c42-2b50f4ff5b98",
+              "parentUUID": "890fc207-8c47-4448-b279-719e881b286d",
               "isHook": false,
               "skipped": false
             },
@@ -1697,8 +1697,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "35a366b4-94cf-4e83-af7e-b6e7fced15c5",
-              "parentUUID": "117408cc-85ff-4f85-a382-89095bb54455",
+              "uuid": "3c7bdfde-7c0e-4ee0-84c6-cb8898d9c706",
+              "parentUUID": "890fc207-8c47-4448-b279-719e881b286d",
               "isHook": false,
               "skipped": false
             },
@@ -1714,17 +1714,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "eefa8817-45a9-42af-a887-bb7077e909d4",
-              "parentUUID": "117408cc-85ff-4f85-a382-89095bb54455",
+              "uuid": "3166ac42-193b-44a8-85e2-6fbe6b0d6f9f",
+              "parentUUID": "890fc207-8c47-4448-b279-719e881b286d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e8e25fb4-3b4e-46f3-82ae-0e7b1f9fa841",
-            "35a366b4-94cf-4e83-af7e-b6e7fced15c5",
-            "eefa8817-45a9-42af-a887-bb7077e909d4"
+            "35895d09-9fda-4cdf-8c42-2b50f4ff5b98",
+            "3c7bdfde-7c0e-4ee0-84c6-cb8898d9c706",
+            "3166ac42-193b-44a8-85e2-6fbe6b0d6f9f"
           ],
           "failures": [],
           "pending": [],
@@ -1735,7 +1735,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "ee1e6952-5efc-4e42-9e1c-82987b9ee20a",
+          "uuid": "7f127d8e-8041-4bf2-a0f7-5bcf6391ebe6",
           "title": "ToggleIconButtonTest",
           "file": "MudBlazor.UnitTests.Components.ToggleIconButtonTest",
           "beforeHooks": [],
@@ -1753,8 +1753,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "fab01da5-0c47-4303-b0da-e924f67f2144",
-              "parentUUID": "ee1e6952-5efc-4e42-9e1c-82987b9ee20a",
+              "uuid": "dbe009c3-bf89-44ab-8355-7034646f67e0",
+              "parentUUID": "7f127d8e-8041-4bf2-a0f7-5bcf6391ebe6",
               "isHook": false,
               "skipped": false
             },
@@ -1770,8 +1770,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4ae44f82-eb15-422d-a790-747d4cdc7e4e",
-              "parentUUID": "ee1e6952-5efc-4e42-9e1c-82987b9ee20a",
+              "uuid": "efe8c413-7342-4e4e-94ca-df53eeea7d7d",
+              "parentUUID": "7f127d8e-8041-4bf2-a0f7-5bcf6391ebe6",
               "isHook": false,
               "skipped": false
             },
@@ -1787,8 +1787,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5c4cac57-8467-4295-8d1d-aefebcf92dd5",
-              "parentUUID": "ee1e6952-5efc-4e42-9e1c-82987b9ee20a",
+              "uuid": "aa97997a-b9d3-45f0-ad35-bcaffb5d2856",
+              "parentUUID": "7f127d8e-8041-4bf2-a0f7-5bcf6391ebe6",
               "isHook": false,
               "skipped": false
             },
@@ -1804,8 +1804,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "100888e0-c009-4c64-8e6c-bd52876d7036",
-              "parentUUID": "ee1e6952-5efc-4e42-9e1c-82987b9ee20a",
+              "uuid": "8d4b8042-abe8-4f44-a6d7-da779982ac2c",
+              "parentUUID": "7f127d8e-8041-4bf2-a0f7-5bcf6391ebe6",
               "isHook": false,
               "skipped": false
             },
@@ -1821,19 +1821,19 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "bc7f9351-6500-4a61-9a22-65c27d721e1d",
-              "parentUUID": "ee1e6952-5efc-4e42-9e1c-82987b9ee20a",
+              "uuid": "b096124e-e2fb-4858-bd84-cea53d646274",
+              "parentUUID": "7f127d8e-8041-4bf2-a0f7-5bcf6391ebe6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fab01da5-0c47-4303-b0da-e924f67f2144",
-            "4ae44f82-eb15-422d-a790-747d4cdc7e4e",
-            "5c4cac57-8467-4295-8d1d-aefebcf92dd5",
-            "100888e0-c009-4c64-8e6c-bd52876d7036",
-            "bc7f9351-6500-4a61-9a22-65c27d721e1d"
+            "dbe009c3-bf89-44ab-8355-7034646f67e0",
+            "efe8c413-7342-4e4e-94ca-df53eeea7d7d",
+            "aa97997a-b9d3-45f0-ad35-bcaffb5d2856",
+            "8d4b8042-abe8-4f44-a6d7-da779982ac2c",
+            "b096124e-e2fb-4858-bd84-cea53d646274"
           ],
           "failures": [],
           "pending": [],
@@ -1844,7 +1844,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "9ea69091-6b77-4c6d-ad04-6c92b5d39741",
+          "uuid": "86b1c251-4389-487f-abda-c23ff6392a77",
           "title": "GetColor_ShouldReturnCorrectValue",
           "file": "MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetColor_ShouldReturnCorrectValue",
           "beforeHooks": [],
@@ -1862,8 +1862,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "32781850-8d69-45c6-9fb0-75e7afbf9623",
-              "parentUUID": "9ea69091-6b77-4c6d-ad04-6c92b5d39741",
+              "uuid": "a43f705d-2793-4a62-bc35-890d226feabb",
+              "parentUUID": "86b1c251-4389-487f-abda-c23ff6392a77",
               "isHook": false,
               "skipped": false
             },
@@ -1879,16 +1879,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b7b02e7a-4b0d-459e-94a1-f9407a07e0fd",
-              "parentUUID": "9ea69091-6b77-4c6d-ad04-6c92b5d39741",
+              "uuid": "96758818-0630-453c-b0e0-bbc1f5fa337b",
+              "parentUUID": "86b1c251-4389-487f-abda-c23ff6392a77",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "32781850-8d69-45c6-9fb0-75e7afbf9623",
-            "b7b02e7a-4b0d-459e-94a1-f9407a07e0fd"
+            "a43f705d-2793-4a62-bc35-890d226feabb",
+            "96758818-0630-453c-b0e0-bbc1f5fa337b"
           ],
           "failures": [],
           "pending": [],
@@ -1899,7 +1899,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "be725678-2abc-45b0-acc6-5e97a8fff07d",
+          "uuid": "6e773fd9-0a17-4bd5-b23a-323135a3dfdf",
           "title": "GetIcon_ShouldReturnCorrectValue",
           "file": "MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetIcon_ShouldReturnCorrectValue",
           "beforeHooks": [],
@@ -1917,8 +1917,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c616f9fc-655c-4578-b643-58c5c47f7c37",
-              "parentUUID": "be725678-2abc-45b0-acc6-5e97a8fff07d",
+              "uuid": "8934f6fb-0fdc-4ffc-8f90-f7d5b0dfb96d",
+              "parentUUID": "6e773fd9-0a17-4bd5-b23a-323135a3dfdf",
               "isHook": false,
               "skipped": false
             },
@@ -1934,16 +1934,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4ea96ae2-e3ba-4578-a843-1ff953f388ac",
-              "parentUUID": "be725678-2abc-45b0-acc6-5e97a8fff07d",
+              "uuid": "3b811857-3d00-41c0-b1d8-c4a6450b908e",
+              "parentUUID": "6e773fd9-0a17-4bd5-b23a-323135a3dfdf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c616f9fc-655c-4578-b643-58c5c47f7c37",
-            "4ea96ae2-e3ba-4578-a843-1ff953f388ac"
+            "8934f6fb-0fdc-4ffc-8f90-f7d5b0dfb96d",
+            "3b811857-3d00-41c0-b1d8-c4a6450b908e"
           ],
           "failures": [],
           "pending": [],
@@ -1954,7 +1954,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "9e9def1f-3a9a-4e61-8737-b64602b509ea",
+          "uuid": "e3db68f5-1458-46ef-a88f-99ba84055048",
           "title": "GetSize_ShouldReturnCorrectValue",
           "file": "MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetSize_ShouldReturnCorrectValue",
           "beforeHooks": [],
@@ -1972,8 +1972,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a26652ba-8fbb-4e55-bc6c-92becada1c85",
-              "parentUUID": "9e9def1f-3a9a-4e61-8737-b64602b509ea",
+              "uuid": "471e93e7-6450-4c70-869a-1e896c8d672d",
+              "parentUUID": "e3db68f5-1458-46ef-a88f-99ba84055048",
               "isHook": false,
               "skipped": false
             },
@@ -1989,16 +1989,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "93a73c4d-302a-458c-bcd8-c4ef4f77ff4c",
-              "parentUUID": "9e9def1f-3a9a-4e61-8737-b64602b509ea",
+              "uuid": "e9f0e506-c191-4ca4-a170-c076ef4ac9a6",
+              "parentUUID": "e3db68f5-1458-46ef-a88f-99ba84055048",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a26652ba-8fbb-4e55-bc6c-92becada1c85",
-            "93a73c4d-302a-458c-bcd8-c4ef4f77ff4c"
+            "471e93e7-6450-4c70-869a-1e896c8d672d",
+            "e9f0e506-c191-4ca4-a170-c076ef4ac9a6"
           ],
           "failures": [],
           "pending": [],
@@ -2009,7 +2009,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "86c23e18-d3a5-43c9-a1fc-a3ab4ea937bd",
+          "uuid": "328e1f10-8b1e-4b6a-b368-fadc4b7b4d28",
           "title": "GetVariant_ShouldReturnCorrectValue",
           "file": "MudBlazor.UnitTests.Components.ToggleIconButtonTest.GetVariant_ShouldReturnCorrectValue",
           "beforeHooks": [],
@@ -2027,8 +2027,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "034329b5-9d25-4e54-95d6-00c98dee4e02",
-              "parentUUID": "86c23e18-d3a5-43c9-a1fc-a3ab4ea937bd",
+              "uuid": "a7c07c66-0c4d-457b-93e1-532afac35a29",
+              "parentUUID": "328e1f10-8b1e-4b6a-b368-fadc4b7b4d28",
               "isHook": false,
               "skipped": false
             },
@@ -2044,16 +2044,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "bb78101b-b111-4301-99dd-43aa3b11b2e9",
-              "parentUUID": "86c23e18-d3a5-43c9-a1fc-a3ab4ea937bd",
+              "uuid": "c1e42285-bd09-4609-a67c-9bafc53963b7",
+              "parentUUID": "328e1f10-8b1e-4b6a-b368-fadc4b7b4d28",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "034329b5-9d25-4e54-95d6-00c98dee4e02",
-            "bb78101b-b111-4301-99dd-43aa3b11b2e9"
+            "a7c07c66-0c4d-457b-93e1-532afac35a29",
+            "c1e42285-bd09-4609-a67c-9bafc53963b7"
           ],
           "failures": [],
           "pending": [],
@@ -2064,7 +2064,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "56d45dbf-dead-4aae-ac2a-449955f834fb",
+          "uuid": "20973a3d-e6f0-490b-aa75-55cbb9c5a011",
           "title": "ToolBarTests",
           "file": "MudBlazor.UnitTests.Components.ToolBarTests",
           "beforeHooks": [],
@@ -2082,8 +2082,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "33eaf53c-81ab-4fc8-af08-203604dfa5da",
-              "parentUUID": "56d45dbf-dead-4aae-ac2a-449955f834fb",
+              "uuid": "e8ec072e-ce28-416f-bcc5-30e387771226",
+              "parentUUID": "20973a3d-e6f0-490b-aa75-55cbb9c5a011",
               "isHook": false,
               "skipped": false
             },
@@ -2099,16 +2099,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "bb5966b7-0ae3-47f4-bb1e-bf6c9998b642",
-              "parentUUID": "56d45dbf-dead-4aae-ac2a-449955f834fb",
+              "uuid": "78b61e91-ed49-4313-8ab1-f67884478efa",
+              "parentUUID": "20973a3d-e6f0-490b-aa75-55cbb9c5a011",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "33eaf53c-81ab-4fc8-af08-203604dfa5da",
-            "bb5966b7-0ae3-47f4-bb1e-bf6c9998b642"
+            "e8ec072e-ce28-416f-bcc5-30e387771226",
+            "78b61e91-ed49-4313-8ab1-f67884478efa"
           ],
           "failures": [],
           "pending": [],
@@ -2119,7 +2119,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+          "uuid": "7f27d238-3806-4e44-bc80-2c678941b32a",
           "title": "ToolTipTests",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests",
           "beforeHooks": [],
@@ -2137,8 +2137,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f286dcad-4dc3-4ea5-a3b9-1b20218ad029",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "0b15387d-3d1e-4c3e-bce0-83658342c430",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2154,8 +2154,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ab907d26-b2d0-44bf-be0b-d8339ef86b24",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "a3ad578e-e9bd-4112-a857-23768536d3b0",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2171,8 +2171,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c29f5241-78ec-4bb6-be7c-c7876ccbc45e",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "a44cca20-b852-4b79-b513-26f56d8858b0",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2188,8 +2188,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0b49b6d0-bca0-41b7-9d85-4307485afec1",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "dc3638a3-d76d-4248-a029-42c1561ca1c4",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2205,8 +2205,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c2207093-0fd2-4b81-bc06-4150c0cf2a3f",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "96ec910b-0535-48f9-b62d-d724f7b0a559",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2222,8 +2222,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b58bf168-56fd-49a8-99ab-7a92ba67a452",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "f39adf9d-d4ce-47b2-9839-f2b38d7c0f3c",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2239,8 +2239,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4a2781bf-ef81-4b57-9d6d-1613aa28bc34",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "20e148e0-7c64-4a0c-a15f-84208e3e901a",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2256,8 +2256,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7bca880c-17ee-4844-9490-b79bc15609ce",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "e8ab8e2b-30e3-419e-8fba-49c8c2afb9cf",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             },
@@ -2273,23 +2273,23 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "1b909f5d-dfc0-4e11-8dc7-e2f6f6f76ec7",
-              "parentUUID": "1aa8234b-9fc6-4f63-b265-5f065b52b5d2",
+              "uuid": "f20fa1cd-80db-4fb0-b20c-d646e047b423",
+              "parentUUID": "7f27d238-3806-4e44-bc80-2c678941b32a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f286dcad-4dc3-4ea5-a3b9-1b20218ad029",
-            "ab907d26-b2d0-44bf-be0b-d8339ef86b24",
-            "c29f5241-78ec-4bb6-be7c-c7876ccbc45e",
-            "0b49b6d0-bca0-41b7-9d85-4307485afec1",
-            "c2207093-0fd2-4b81-bc06-4150c0cf2a3f",
-            "b58bf168-56fd-49a8-99ab-7a92ba67a452",
-            "4a2781bf-ef81-4b57-9d6d-1613aa28bc34",
-            "7bca880c-17ee-4844-9490-b79bc15609ce",
-            "1b909f5d-dfc0-4e11-8dc7-e2f6f6f76ec7"
+            "0b15387d-3d1e-4c3e-bce0-83658342c430",
+            "a3ad578e-e9bd-4112-a857-23768536d3b0",
+            "a44cca20-b852-4b79-b513-26f56d8858b0",
+            "dc3638a3-d76d-4248-a029-42c1561ca1c4",
+            "96ec910b-0535-48f9-b62d-d724f7b0a559",
+            "f39adf9d-d4ce-47b2-9839-f2b38d7c0f3c",
+            "20e148e0-7c64-4a0c-a15f-84208e3e901a",
+            "e8ab8e2b-30e3-419e-8fba-49c8c2afb9cf",
+            "f20fa1cd-80db-4fb0-b20c-d646e047b423"
           ],
           "failures": [],
           "pending": [],
@@ -2300,7 +2300,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "0c79fd11-1942-445f-a306-80ec2dbf8b20",
+          "uuid": "04a88314-d313-4224-9605-f31c06d6659f",
           "title": "ContainerClass_PropertyRelations",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.ContainerClass_PropertyRelations",
           "beforeHooks": [],
@@ -2318,8 +2318,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2fa57638-3508-4056-a190-34fef69f86b1",
-              "parentUUID": "0c79fd11-1942-445f-a306-80ec2dbf8b20",
+              "uuid": "692a956e-afcc-4ff5-a9ec-0a71bda3378f",
+              "parentUUID": "04a88314-d313-4224-9605-f31c06d6659f",
               "isHook": false,
               "skipped": false
             },
@@ -2335,16 +2335,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d8077b55-634f-42eb-a101-8a23264401f3",
-              "parentUUID": "0c79fd11-1942-445f-a306-80ec2dbf8b20",
+              "uuid": "eba3aa2f-bab3-40ff-a258-cc2f29eaaeb1",
+              "parentUUID": "04a88314-d313-4224-9605-f31c06d6659f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2fa57638-3508-4056-a190-34fef69f86b1",
-            "d8077b55-634f-42eb-a101-8a23264401f3"
+            "692a956e-afcc-4ff5-a9ec-0a71bda3378f",
+            "eba3aa2f-bab3-40ff-a258-cc2f29eaaeb1"
           ],
           "failures": [],
           "pending": [],
@@ -2355,7 +2355,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c4e8ff83-df21-4d02-a37e-90c508d18b82",
+          "uuid": "9119f1ac-dcea-41ff-900a-51f832c8c592",
           "title": "PopoverClass_PropertyArrow",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyArrow",
           "beforeHooks": [],
@@ -2373,8 +2373,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "8e4dcda9-905d-4350-be7b-38358ebc86ba",
-              "parentUUID": "c4e8ff83-df21-4d02-a37e-90c508d18b82",
+              "uuid": "85edc6f6-8217-4a85-8826-00ea3ac11e41",
+              "parentUUID": "9119f1ac-dcea-41ff-900a-51f832c8c592",
               "isHook": false,
               "skipped": false
             },
@@ -2390,16 +2390,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7c4112cd-cf4d-4929-a06a-7f545285d88f",
-              "parentUUID": "c4e8ff83-df21-4d02-a37e-90c508d18b82",
+              "uuid": "19e7fa66-52a8-4856-b401-4693a8406b88",
+              "parentUUID": "9119f1ac-dcea-41ff-900a-51f832c8c592",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8e4dcda9-905d-4350-be7b-38358ebc86ba",
-            "7c4112cd-cf4d-4929-a06a-7f545285d88f"
+            "85edc6f6-8217-4a85-8826-00ea3ac11e41",
+            "19e7fa66-52a8-4856-b401-4693a8406b88"
           ],
           "failures": [],
           "pending": [],
@@ -2410,7 +2410,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "42d3272a-97fe-44b5-9be6-08a86e2b7cd0",
+          "uuid": "fbaf73ca-7adc-429f-9c5d-f08ce26648b1",
           "title": "PopoverClass_PropertyColor",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColor",
           "beforeHooks": [],
@@ -2428,8 +2428,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a19bbab2-664c-4fd3-92ff-4e4db06f0ad4",
-              "parentUUID": "42d3272a-97fe-44b5-9be6-08a86e2b7cd0",
+              "uuid": "17dba2af-bd01-4070-9612-61085cf0e744",
+              "parentUUID": "fbaf73ca-7adc-429f-9c5d-f08ce26648b1",
               "isHook": false,
               "skipped": false
             },
@@ -2445,8 +2445,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ec9555bb-56de-4fce-aa19-50e3f6adc46f",
-              "parentUUID": "42d3272a-97fe-44b5-9be6-08a86e2b7cd0",
+              "uuid": "16fbe626-1e93-4fe1-98c6-81726076660d",
+              "parentUUID": "fbaf73ca-7adc-429f-9c5d-f08ce26648b1",
               "isHook": false,
               "skipped": false
             },
@@ -2462,8 +2462,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "94129181-e3d3-49a5-9a75-757a33cb1335",
-              "parentUUID": "42d3272a-97fe-44b5-9be6-08a86e2b7cd0",
+              "uuid": "659e649e-25b9-400b-a42d-fe6fa3323608",
+              "parentUUID": "fbaf73ca-7adc-429f-9c5d-f08ce26648b1",
               "isHook": false,
               "skipped": false
             },
@@ -2479,18 +2479,18 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4b8a0361-64bc-4b7e-acef-59da180bc041",
-              "parentUUID": "42d3272a-97fe-44b5-9be6-08a86e2b7cd0",
+              "uuid": "4543a9f8-d718-4a83-a504-a2490eb22ff0",
+              "parentUUID": "fbaf73ca-7adc-429f-9c5d-f08ce26648b1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a19bbab2-664c-4fd3-92ff-4e4db06f0ad4",
-            "ec9555bb-56de-4fce-aa19-50e3f6adc46f",
-            "94129181-e3d3-49a5-9a75-757a33cb1335",
-            "4b8a0361-64bc-4b7e-acef-59da180bc041"
+            "17dba2af-bd01-4070-9612-61085cf0e744",
+            "16fbe626-1e93-4fe1-98c6-81726076660d",
+            "659e649e-25b9-400b-a42d-fe6fa3323608",
+            "4543a9f8-d718-4a83-a504-a2490eb22ff0"
           ],
           "failures": [],
           "pending": [],
@@ -2501,7 +2501,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "36a4f810-11ee-40c7-88b1-771d9124fbe5",
+          "uuid": "1275037c-85df-4b8c-a652-24cebc34fc94",
           "title": "PopoverClass_PropertyColorAndArrow",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.PopoverClass_PropertyColorAndArrow",
           "beforeHooks": [],
@@ -2519,8 +2519,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2d056009-4014-49ff-920a-bc9b2979cd8c",
-              "parentUUID": "36a4f810-11ee-40c7-88b1-771d9124fbe5",
+              "uuid": "726a5bee-f906-4c79-8f20-ca9772333db7",
+              "parentUUID": "1275037c-85df-4b8c-a652-24cebc34fc94",
               "isHook": false,
               "skipped": false
             },
@@ -2536,8 +2536,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "92aee0e2-87e2-45dd-a3c3-285dbb56a849",
-              "parentUUID": "36a4f810-11ee-40c7-88b1-771d9124fbe5",
+              "uuid": "8f17adf8-c7b8-41a2-9ba4-3c1903f6e01c",
+              "parentUUID": "1275037c-85df-4b8c-a652-24cebc34fc94",
               "isHook": false,
               "skipped": false
             },
@@ -2553,8 +2553,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5e0d7fda-187b-4125-bbe5-22de239f8151",
-              "parentUUID": "36a4f810-11ee-40c7-88b1-771d9124fbe5",
+              "uuid": "3e3729bc-249a-42d5-9168-7c4ceacc8d6d",
+              "parentUUID": "1275037c-85df-4b8c-a652-24cebc34fc94",
               "isHook": false,
               "skipped": false
             },
@@ -2570,18 +2570,18 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "8659fea0-d4dd-42d5-9998-d332385ec76e",
-              "parentUUID": "36a4f810-11ee-40c7-88b1-771d9124fbe5",
+              "uuid": "c6cf1de8-d39b-4e27-b1df-4c4f7417e979",
+              "parentUUID": "1275037c-85df-4b8c-a652-24cebc34fc94",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2d056009-4014-49ff-920a-bc9b2979cd8c",
-            "92aee0e2-87e2-45dd-a3c3-285dbb56a849",
-            "5e0d7fda-187b-4125-bbe5-22de239f8151",
-            "8659fea0-d4dd-42d5-9998-d332385ec76e"
+            "726a5bee-f906-4c79-8f20-ca9772333db7",
+            "8f17adf8-c7b8-41a2-9ba4-3c1903f6e01c",
+            "3e3729bc-249a-42d5-9168-7c4ceacc8d6d",
+            "c6cf1de8-d39b-4e27-b1df-4c4f7417e979"
           ],
           "failures": [],
           "pending": [],
@@ -2592,7 +2592,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c14c755f-6166-4592-871a-987f9ffb9950",
+          "uuid": "5bd4279e-9893-4fdd-a768-dbd4a441890a",
           "title": "RenderContent",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.RenderContent",
           "beforeHooks": [],
@@ -2610,8 +2610,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "082ed729-c21f-47d1-b13d-6e1b2bdb132b",
-              "parentUUID": "c14c755f-6166-4592-871a-987f9ffb9950",
+              "uuid": "684f5a80-c6f3-4bcf-ab2c-a2eec55b6dc3",
+              "parentUUID": "5bd4279e-9893-4fdd-a768-dbd4a441890a",
               "isHook": false,
               "skipped": false
             },
@@ -2627,16 +2627,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c8432ac9-1cdd-400a-8b84-f138489905d1",
-              "parentUUID": "c14c755f-6166-4592-871a-987f9ffb9950",
+              "uuid": "7dd1d23b-59b2-404a-b151-58ce78e8ff70",
+              "parentUUID": "5bd4279e-9893-4fdd-a768-dbd4a441890a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "082ed729-c21f-47d1-b13d-6e1b2bdb132b",
-            "c8432ac9-1cdd-400a-8b84-f138489905d1"
+            "684f5a80-c6f3-4bcf-ab2c-a2eec55b6dc3",
+            "7dd1d23b-59b2-404a-b151-58ce78e8ff70"
           ],
           "failures": [],
           "pending": [],
@@ -2647,7 +2647,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "7242a50f-e49a-4cbe-a19e-e2fc505c7cda",
+          "uuid": "d23547d1-4955-4b68-9147-3d3217fdae3b",
           "title": "RenderTooltipFragment",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.RenderTooltipFragment",
           "beforeHooks": [],
@@ -2665,8 +2665,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "cc1c0340-86c3-467e-926b-a8dc0a794999",
-              "parentUUID": "7242a50f-e49a-4cbe-a19e-e2fc505c7cda",
+              "uuid": "1e01e98d-7e73-43d6-9484-b9a9a99df885",
+              "parentUUID": "d23547d1-4955-4b68-9147-3d3217fdae3b",
               "isHook": false,
               "skipped": false
             },
@@ -2682,16 +2682,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "62dfd4ac-093c-4099-b599-a88f06446a25",
-              "parentUUID": "7242a50f-e49a-4cbe-a19e-e2fc505c7cda",
+              "uuid": "428ac099-8b0b-47db-9088-2d10940a9fbf",
+              "parentUUID": "d23547d1-4955-4b68-9147-3d3217fdae3b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cc1c0340-86c3-467e-926b-a8dc0a794999",
-            "62dfd4ac-093c-4099-b599-a88f06446a25"
+            "1e01e98d-7e73-43d6-9484-b9a9a99df885",
+            "428ac099-8b0b-47db-9088-2d10940a9fbf"
           ],
           "failures": [],
           "pending": [],
@@ -2702,7 +2702,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "5aec91ca-5170-490d-86a0-74f37fb03be2",
+          "uuid": "83b2140f-cc22-44fc-8a24-45ecb8479d4e",
           "title": "Visible_ByDefault",
           "file": "MudBlazor.UnitTests.Components.ToolTipTests.Visible_ByDefault",
           "beforeHooks": [],
@@ -2720,8 +2720,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "41f66a54-8af2-4308-af99-ddd64407e1c1",
-              "parentUUID": "5aec91ca-5170-490d-86a0-74f37fb03be2",
+              "uuid": "ba0189ae-ab96-4b26-9f37-4e76fc5bab3b",
+              "parentUUID": "83b2140f-cc22-44fc-8a24-45ecb8479d4e",
               "isHook": false,
               "skipped": false
             },
@@ -2737,16 +2737,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "17919d1e-2fe1-4eb3-85aa-1adf7249f7ed",
-              "parentUUID": "5aec91ca-5170-490d-86a0-74f37fb03be2",
+              "uuid": "93e36715-4688-4b30-8e67-7ba2851e453d",
+              "parentUUID": "83b2140f-cc22-44fc-8a24-45ecb8479d4e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "41f66a54-8af2-4308-af99-ddd64407e1c1",
-            "17919d1e-2fe1-4eb3-85aa-1adf7249f7ed"
+            "ba0189ae-ab96-4b26-9f37-4e76fc5bab3b",
+            "93e36715-4688-4b30-8e67-7ba2851e453d"
           ],
           "failures": [],
           "pending": [],
@@ -2757,7 +2757,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "5bd26ba7-c91c-42ae-9605-ef44b461254f",
+          "uuid": "5b5882bf-2376-4bd5-b2b1-7c6c17aaa2d5",
           "title": "VirtualizeTests",
           "file": "MudBlazor.UnitTests.Components.VirtualizeTests",
           "beforeHooks": [],
@@ -2775,15 +2775,15 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "53b27e64-835b-493f-95ff-4e450cde4545",
-              "parentUUID": "5bd26ba7-c91c-42ae-9605-ef44b461254f",
+              "uuid": "ea4f8fd0-fc47-41a6-aca1-10228e1de9a7",
+              "parentUUID": "5b5882bf-2376-4bd5-b2b1-7c6c17aaa2d5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "53b27e64-835b-493f-95ff-4e450cde4545"
+            "ea4f8fd0-fc47-41a6-aca1-10228e1de9a7"
           ],
           "failures": [],
           "pending": [],
@@ -2794,7 +2794,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "9e5410cf-03ad-4e0b-8521-118815740b9c",
+          "uuid": "562ff06d-6b8f-4b24-aae4-98edaecb365d",
           "title": "ResizeOptionsExtensionsTests",
           "file": "MudBlazor.UnitTests.ResizeOptionsExtensionsTests",
           "beforeHooks": [],
@@ -2812,15 +2812,15 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e9a06bf3-8fa5-4014-8133-2981ae9b8c69",
-              "parentUUID": "9e5410cf-03ad-4e0b-8521-118815740b9c",
+              "uuid": "d5290070-6cc4-450c-b62e-f656722bb0ab",
+              "parentUUID": "562ff06d-6b8f-4b24-aae4-98edaecb365d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e9a06bf3-8fa5-4014-8133-2981ae9b8c69"
+            "d5290070-6cc4-450c-b62e-f656722bb0ab"
           ],
           "failures": [],
           "pending": [],

@@ -1,0 +1,14 @@
+<testsuites tests="4" failures="1" errors="0" skipped="1" time="1.0379524">
+    <testsuite name="MsTestSample.SimpleTests" tests="4" time="1.0379524" failures="1" errors="0" skipped="1">
+        <testcase classname="MsTestSample.SimpleTests" name="Failing_test" status="Failed" time="0.0309223">
+            <failure message="Assert.Fail failed. Failing for demo purposes">
+                at MsTestSample.SimpleTests.Failing_test() in D:\Work-Git\github\Mini\trx2junit\samples\MsTestSample\SimpleTests.cs:line 20
+            </failure>
+        </testcase>
+        <testcase classname="MsTestSample.SimpleTests" name="Ignored_test" status="Skipped" time="0">
+            <skipped message="Ignoring for testing ;-)"/>
+        </testcase>
+        <testcase classname="MsTestSample.SimpleTests" name="Passing_test" status="Passed" time="0.0054354"/>
+        <testcase classname="MsTestSample.SimpleTests" name="Slow_test" status="Passed" time="1.0015947"/>
+    </testsuite>
+</testsuites>
