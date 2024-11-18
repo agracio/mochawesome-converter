@@ -15,19 +15,15 @@ function removeTempDir(){
     }
 }
 
-function getFilename(file){
-    return `${path.parse(file).name}-mochawesome.json`
-}
-
 /**
- * @returns {TestReportConverterOptions} options
+ * @returns {TestReportConverterOptions}
  */
 function createOptions(file, type){
     return {
         testFile: path.join(__dirname, `data/source/${file}`),
         testType: type,
         reportDir: outDir,
-        reportFilename: getFilename(file),
+        reportFilename:`${path.parse(file).name}-mochawesome.json`,
         junit: true,
         junitReportFilename: `${path.parse(file).name}-junit.xml`,
     }
@@ -65,6 +61,7 @@ function compare(options, reportFilename, compareJunit){
 
     let createdReport = fs.readFileSync(path.join(compareDir, reportFilename ?? options.reportFilename), 'utf8');
     let report = fs.readFileSync(path.join(reportDir, reportFilename ?? options.reportFilename), 'utf8');
+
 
     expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
 

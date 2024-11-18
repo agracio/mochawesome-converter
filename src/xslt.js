@@ -21,7 +21,7 @@ async function processXml(options, xmlString){
         parsedXml = xmlFormat(xmlString, {forceSelfClosingEmptyTag: true})
     }
     catch (e) {
-        throw `\nXML parsed from ${options.testFile} is invalid \n${e.message}`;
+        throw `\nXML parsed from ${options.testFile} is empty or invalid \n${e.message}`;
     }
 
     if(options.junit && options.testType !== 'trx'){
@@ -38,8 +38,8 @@ async function processXml(options, xmlString){
  * @param {string} xsltFile
  */
 async function convert(options, xsltFile){
-
-    let xsltString = fs.readFileSync(path.join(__dirname,xsltFile)).toString();
+    //console.log(`Processing ${options.testFile} using XSLT ${xsltFile}`);
+    let xsltString = fs.readFileSync(path.join(__dirname, xsltFile)).toString();
     let xmlString = fs.readFileSync(options.testFile).toString();
 
     const xslt = new xsltProcessor.Xslt();

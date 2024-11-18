@@ -66,7 +66,20 @@
                         <xsl:for-each select="//vs:UnitTest">
                             <xsl:variable name="currentTestId" select="@id"/>
                                 <xsl:if test="$currentTestId = $testId" >
-                                    <xsl:variable name="className" select="vs:TestMethod/@className"/>
+                                    <xsl:variable name="className">
+                                        <xsl:choose>
+                                            <xsl:when test="contains(vs:TestMethod/@className, ',')">
+                                                <xsl:value-of select="substring-before(vs:TestMethod/@className, ',')" />
+                                            </xsl:when>
+                                            <xsl:when test="vs:TestMethod/storage">
+                                                <xsl:value-of select="vs:TestMethod/@storage" />
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="vs:TestMethod/@className" />
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:variable>
+<!--                                    <xsl:variable name="className" select="vs:TestMethod/@className"/>-->
                                     <xsl:variable name="name">
                                         <xsl:choose>
                                             <xsl:when test="substring-after($testName, $className)=''">
@@ -80,7 +93,7 @@
                                     <testcase
                                             classname="{$className}"
                                             name="{$name}"
-                                            status="{replace(replace(replace($outcome,'Error','Failed'),'NotExecuted','Skipped'), 'Inconclusive', 'Failed')}"
+                                            status="{replace(replace(replace($outcome,'Error','Failed'),'NotExecuted','Skipped'), 'Inconclusive', 'Skipped')}"
                                             time="{$testDuration}"
                                     >
                                         <xsl:if test="contains($outcome, 'Failed')">
@@ -94,20 +107,28 @@
                                             </error>
                                         </xsl:if>
                                         <xsl:if test="contains($outcome, 'Inconclusive')">
-                                            <error message="{$message}">
+                                            <skipped message="{$message}">
                                                 <xsl:value-of select="$stacktrace" />
-                                            </error>
+                                            </skipped>
                                         </xsl:if>
                                         <xsl:if test="contains($outcome, 'NotExecuted')">
-                                            <xsl:if test="$message != ''">
-                                                <skipped message="{$message}"/>
-                                            </xsl:if>
-                                            <xsl:if test="$stdout != ''">
-                                                <skipped message="{$stdout}"/>
-                                            </xsl:if>
-                                            <xsl:if test="$stdout = '' and $message = ''">
-                                                <skipped/>
-                                            </xsl:if>
+                                            <xsl:choose>
+                                                <xsl:when test="$stdout != ''">
+                                                    <skipped message="{$stdout}"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <skipped message="{$message}"/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+<!--                                            <xsl:if test="$message != ''">-->
+<!--                                                <skipped message="{$message}"/>-->
+<!--                                            </xsl:if>-->
+<!--                                            <xsl:if test="$stdout != ''">-->
+<!--                                                <skipped message="{$stdout}"/>-->
+<!--                                            </xsl:if>-->
+<!--                                            <xsl:if test="$stdout = '' and $message = ''">-->
+<!--                                                <skipped/>-->
+<!--                                            </xsl:if>-->
                                         </xsl:if>
                                         <xsl:if test="$stderr">
                                             <system-err>

@@ -18,6 +18,8 @@ async function convert(options){
 
     let config = conf.config(options);
 
+    //console.log(`Converting file ${options.testFile} using '${options.testType}' converter.`);
+
     switch (config.testType) {
         case 'junit':
             await junit.convert(config, null);

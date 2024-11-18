@@ -60,4 +60,10 @@ describe("TRX converter tests", () => {
         common.compare(options, undefined, true);
     });
 
+    test('convert trx-sample.trx', async() => {
+        let options = common.createOptions('trx-sample.trx', 'trx')
+        await converter(options);
+        common.compare(options, undefined, true);
+    });
+
 });

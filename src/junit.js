@@ -86,7 +86,7 @@ function parseXml(options, xml){
         json = parser.toJson(xml, xmlParserOptions);
     }
     catch (e){
-        throw `\nCould not read JSON from converted input ${options.testFile}.\n ${e.message}`;
+        throw `\nCould not parse JSON from converted XML ${options.testFile}.\n ${e.message}`;
     }
 
     if(!json || !json.testsuites || !json.testsuites.length){
@@ -107,7 +107,7 @@ function parseXml(options, xml){
         fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8');
     }
 
-    if(!json.testsuites[0].testsuite || !json.testsuites[0].testsuite.length || json.testsuites[0].testsuite.length ===0){
+    if(!json.testsuites[0].testsuite || !json.testsuites[0].testsuite.length || json.testsuites[0].testsuite.length === 0){
         console.log('No test suites found, skipping Mochawesome file creation.');
     }
 
