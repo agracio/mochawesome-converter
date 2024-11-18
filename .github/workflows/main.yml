@@ -21,8 +21,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     name: test-${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
-        os: [macos-latest, ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, windows-2022]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
