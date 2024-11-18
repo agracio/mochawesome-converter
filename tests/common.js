@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require("fs");
-const expect = require('@jest/globals').expect;
+//const expect = require('@jest/globals').expect;
 
 const reportDir= './tests/data/result';
 const outDir= './tests/data/tmp';
