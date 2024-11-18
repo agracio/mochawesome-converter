@@ -45,7 +45,7 @@ jobs:
           key: ${{ matrix.os }}-${{ hashFiles('package-lock.json') }}
 
       - name: npm install
-        run: npm i
+        run: npm ci
 
       - name: "Run tests"
         run: npm test
