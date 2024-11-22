@@ -250,12 +250,13 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
             let uuid = crypto.randomUUID();
             let state = "passed";
-            if(testcase.failure || testcase.error){
+            if((testcase.status && testcase.status.toLowerCase() === 'failed') || testcase.failure || testcase.error)
+            {
                 err = getError(testcase);
                 state = "failed";
                 failedTests++;
             }
-            if(testcase.skipped){
+            if((testcase.status && testcase.status.toLowerCase() === 'skipped') || testcase.skipped){
                 state = options.skippedAsPending ? "pending" : "skipped";
                 skippedTests++;
             }
@@ -263,15 +264,13 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
             let speed = "fast";
             let duration = testcase.time ? Math.ceil(testcase.time * 1000) : 0;
 
-            if(!testcase.skipped){
-                if(totalSuitTime && totalSuitTime !==0 && testcase.time){
-                    if(duration >= avgSuitTime){
-                        speed = "slow";
-                    }else if(duration >= mediumTime){
-                        speed = "medium";
-                    }else{
-                        speed = "fast";
-                    }
+            if(totalSuitTime && totalSuitTime !==0 && testcase.time){
+                if(duration >= avgSuitTime){
+                    speed = "slow";
+                }else if(duration >= mediumTime){
+                    speed = "medium";
+                }else{
+                    speed = "fast";
                 }
             }
 
