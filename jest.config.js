@@ -1,4 +1,8 @@
 module.exports = {
     verbose: true,
-    globalTeardown: "./tests/teardown.js"
+    globalTeardown: "./tests/teardown.js",
+    reporters: [
+        'default',
+        'github-actions',
+    ],
 }
