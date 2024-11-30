@@ -111,12 +111,14 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 | `html`                    | boolean | false                     | Create Mochawesome HTML?              |
 | `htmlReportFilename`      | string  | mochawesome.html          | Mochawesome HTML file name            |
 | `skippedAsPending`        | boolean | true                      | Show skipped tests as pending in HTML |
+| `switchClassnameAndName`  | boolean | false                     | Switch test case classname and name   |
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
 - `reportDir` - will be created if path does not exist.
 - `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. 
   Set to `false` to display tests as skipped.
+- `switchClassnameAndName` - Switches classname and name attributes of testcase in case your test naming data is generated in reverse order.
 
 #### Supported `testType` options.
 

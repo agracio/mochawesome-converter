@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const parser = require('p3x-xml2json');
 const crypto = require("crypto");
+const parser = require('p3x-xml2json');
 const marge = require('mochawesome-report-generator');
 const xmlFormat = require('xml-formatter');
 const _ = require('lodash');
@@ -126,7 +126,6 @@ function parseXml(options, xml){
     if(options.testType === 'trx' && json.testsuites[0].testsuite[0].testcase.length !== 0){
         json = parseTrx(options, json);
     }
-    //console.log(_.sumBy(json.testsuites[0].testsuite, function(suite) { return Number(suite.tests); }));
     return json.testsuites[0];
 }
 
