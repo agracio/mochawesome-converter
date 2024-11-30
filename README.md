@@ -1,5 +1,9 @@
 ## Test report files to Mochawesome and JUnit converter
 
+[![Actions Status][github-img]][github-url]
+[![Git Issues][issues-img]][issues-url]
+[![Closed Issues][closed-issues-img]][closed-issues-url]
+
 ### Overview
 
 - Convert your XML/TRX test report files to Mochawesome for easy viewing and troubleshooting.
@@ -132,4 +136,15 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 
 
 
+[issues-img]: https://img.shields.io/github/issues-raw/agracio/mochawesome-converter.svg?style=flat-square
+[issues-url]: https://github.com/agracio/mochawesome-converter/issues
+[closed-issues-img]: https://img.shields.io/github/issues-closed-raw/agracio/mochawesome-converter.svg?style=flat-square&color=brightgreen
+[closed-issues-url]: https://github.com/agracio/mochawesome-converter/issues?q=is%3Aissue+is%3Aclosed
+
+[//]: # ([codacy-img]: https://app.codacy.com/project/badge/Grade/3833e15b273d4add8d2030764e8977d9)
+
+[//]: # ([codacy-url]: https://app.codacy.com/gh/agracio/mochawesome-converter/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
+[github-img]: https://github.com/agracio/mochawesome-converter/workflows/Test/badge.svg
+[github-url]: https://github.com/agracio/edge-js/mochawesome-converter/workflows/main.yml
 
