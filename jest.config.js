@@ -3,15 +3,16 @@ module.exports = {
     globalTeardown: "./tests/teardown.js",
     reporters: [
         'default',
-        'github-actions',
-        ["jest-html-reporters", {
-            publicPath: './tests/report',
-            filename: 'report.html',
-            darkTheme: true,
-            pageTitle: 'mochawesome-converter',
-            expand: true,
-            urlForTestFiles: 'https://github.com/agracio/mochawesome-converter/blob/main'
-          }
-        ]
+        ['github-actions', {silent: false}],
+        'summary',
+        // ["jest-html-reporters", {
+        //     publicPath: './tests/report',
+        //     filename: 'report.html',
+        //     darkTheme: true,
+        //     pageTitle: 'mochawesome-converter',
+        //     expand: true,
+        //     urlForTestFiles: 'https://github.com/agracio/mochawesome-converter/blob/main'
+        //   }
+        // ]
     ],
 }

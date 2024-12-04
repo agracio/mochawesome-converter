@@ -12,9 +12,9 @@ on:
       - 'LICENSE*'
       - '.idea/**'
       - '.vscode/**'
-      - '.circleci'
-      - '.circleci/*'
       - 'README.md'
+      - '.github/dependabot.yml'
+      - '.github/FUNDING.yml'
 
 jobs:
   test:

@@ -1,11 +1,11 @@
 {
   "name": "mochawesome-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test report files to Mochawesome and JUnit converter",
   "main": "src/converter.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest --json --outputFile=jest.json"
   },
   "author": "agracio",
   "license": "MIT",
