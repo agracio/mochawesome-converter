@@ -44,9 +44,6 @@
                 <xsl:when test="reason and reason/message/text()">
                     <xsl:attribute name="message" select="reason/message" />
                 </xsl:when>
-                <xsl:otherwise>
-                    <xsl:attribute name="message">Inconclusive test</xsl:attribute>
-                </xsl:otherwise>
             </xsl:choose>
         </xsl:element>
       </xsl:if>
