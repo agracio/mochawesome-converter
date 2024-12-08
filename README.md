@@ -58,20 +58,20 @@ https://github.com/adamgruber/mochawesome
 
 ### JUnit 
 
-- Converts `testcase` **&lt;properties&gt;**, **&lt;system-out&gt;** and **&lt;system-err&gt;** elements to Mochawesome test context.
+- Converts  **&lt;properties&gt;**, **&lt;system-out&gt;** and **&lt;system-err&gt;** elements to Mochawesome test context.
 - Nested test suites currently not supported.
 
 ### NUnit
 
 - NUnit XML version 3 and higher is supported.
-- Converts `test-case` **&lt;properties&gt;** elements to JUnit **&lt;properties&gt;**.
-- Converts `test-case` **&lt;output&gt;** elements to JUnit **&lt;system-out&gt;**.
-- Nested `test-suite` elements are flattened and appear in `classname` order.
+- Converts **&lt;properties&gt;** elements to JUnit **&lt;properties&gt;**.
+- Converts **&lt;output&gt;** elements to JUnit **&lt;system-out&gt;**.
+- Nested `test-suite` elements are flattened.
 
 ### xUnit  
 
 - xUnit.net v2+ XML is supported.
-- Converts `test` **&lt;traits&gt;** elements to  to JUnit **&lt;properties&gt;**.
+- Converts **&lt;traits&gt;** elements to  to JUnit **&lt;properties&gt;**.
 - Converts `test` **&lt;reason&gt;** elements to JUnit **&lt;skipped&gt;**.
 - Supports single **&lt;assembly&gt;** per file, if multiple assemblies are present only first will be converted.
 
@@ -81,6 +81,7 @@ https://github.com/adamgruber/mochawesome
 - Converts `Output/ErrorInfo/StackTrace` to JUnit **&lt;failure&gt;** stack trace.
 - Converts `Output/StdErr` to JUnit **&lt;system-err&gt;**.
 - Converts `Output/StdOut` to JUnit **&lt;system-out&gt;**.
+- Converts Inconclusive and NotExecuted tests to **&lt;skipped&gt;** with message.
 - Test suites are split into multiple **&lt;testsuite&gt;** elements by test classname.
 - Tests are ordered by name.
 - Test suit times are not 100% accurate - displayed as a sum() of all test times. 

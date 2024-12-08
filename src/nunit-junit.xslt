@@ -24,7 +24,7 @@
   </xsl:template>
 
   <xsl:template match="test-case">
-    <testcase name="{@name}" classname="{@fullname}" time="{@duration}" status="{replace(replace(replace(@result,'Inconclusive','Failed'),'Error','Failed'),'Ignored','Skipped')}">
+    <testcase name="{@name}" classname="{@fullname}" time="{@duration}" status="{replace(replace(replace(@result,'Inconclusive','Skipped'),'Error','Failed'),'Ignored','Skipped')}">
       <xsl:if test="@result = 'Skipped' or @result = 'Ignored'">
           <skipped message="{./reason/message}"/>
       </xsl:if>
@@ -38,7 +38,7 @@
           </system-out>
         </xsl:if>
       </xsl:if>
-      <xsl:if test="@result='Inconclusive' or @result='Error'">
+      <xsl:if test="@result='Error'">
         <xsl:element name="error">
             <xsl:choose>
                 <xsl:when test="reason and reason/message/text()">
@@ -48,6 +48,18 @@
                     <xsl:attribute name="message">Inconclusive test</xsl:attribute>
                 </xsl:otherwise>
             </xsl:choose>
+        </xsl:element>
+      </xsl:if>
+      <xsl:if test="@result='Inconclusive'">
+        <xsl:element name="skipped">
+          <xsl:choose>
+            <xsl:when test="reason and reason/message/text()">
+              <xsl:attribute name="message" select="reason/message" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:attribute name="message">Inconclusive test</xsl:attribute>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:element>
       </xsl:if>
       <xsl:apply-templates select="properties"/>

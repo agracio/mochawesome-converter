@@ -222,7 +222,6 @@ function getContext(testcase){
     return context;
 }
 
-
 /**
  * @param {ConverterOptions} options
  * @param {[TestSuite]} testSuites

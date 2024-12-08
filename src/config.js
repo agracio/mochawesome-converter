@@ -83,7 +83,7 @@ function config (options) {
   }
 
   if(!fs.existsSync(reportDir)){
-    fs.mkdirSync(reportDir);
+    fs.mkdirSync(reportDir, { recursive: true });
   }
 
   return{
