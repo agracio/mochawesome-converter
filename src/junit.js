@@ -96,6 +96,7 @@ function parseXml(options, xml){
         }
         if(json && json.testsuites && json.testsuites.length && json.testsuites.length === 0){
             console.log('No test suites found, skipping Mochawesome file creation.');
+            return undefined;
         }
         else if(!json || !json.testsuites || !json.testsuites.length){
             throw `\nCould not find valid <testsuites> or <testsuite> root element in converted ${options.testFile}`;
@@ -109,6 +110,7 @@ function parseXml(options, xml){
 
     if(!json.testsuites[0].testsuite || !json.testsuites[0].testsuite.length || json.testsuites[0].testsuite.length === 0){
         console.log('No test suites found, skipping Mochawesome file creation.');
+        return undefined;
     }
 
     // sort test suites
@@ -342,6 +344,7 @@ async function convert(options, suitesRoot){
     if(!suitesRoot){
         suitesRoot = parseXml(options, fs.readFileSync(options.testFile, 'utf8'));
     }
+    if(!suitesRoot) return;
 
     let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
 

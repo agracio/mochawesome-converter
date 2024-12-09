@@ -9,6 +9,7 @@ interface ConverterOptions{
     reportFilename? : string
     junit?: boolean
     junitReportFilename? : string
+    transformJunit? : boolean
     html?: boolean
     htmlReportFilename? : string
     saveIntermediateFiles?: boolean

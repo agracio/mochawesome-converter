@@ -22,7 +22,7 @@ async function convert(options){
 
     switch (config.testType) {
         case 'junit':
-            await junit.convert(config, null);
+            config.transformJunit ? await xsltConverter(config) : await junit.convert(config, null);
             break;
         case 'nunit':
         case 'xunit':

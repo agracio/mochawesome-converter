@@ -12,7 +12,7 @@
 
 ### Supported report formats
 
-- JUnit XML Format  
+- JUnit/xUnit XML Format  
 - NUnit 3.0+ XML Format  
 - xUnit.net v2+ XML Format  
 - Visual Studio TRX Format  
@@ -52,11 +52,10 @@ https://github.com/adamgruber/mochawesome
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 - Converts &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; to Mochawesome context values.
 - Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
-- Test suites are displayed in alphabetical order by `file` and `classname` attributes.
 - Tests suites without any tests are excluded from Mochawesome and JUnit.
 - Attachments are not supported.
 
-### JUnit 
+### JUnit
 
 - Converts  **&lt;properties&gt;**, **&lt;system-out&gt;** and **&lt;system-err&gt;** elements to Mochawesome test context.
 - Nested test suites currently not supported.
@@ -68,7 +67,7 @@ https://github.com/adamgruber/mochawesome
 - Converts **&lt;output&gt;** elements to JUnit **&lt;system-out&gt;**.
 - Nested `test-suite` elements are flattened.
 
-### xUnit  
+### xUnit.net  
 
 - xUnit.net v2+ XML is supported.
 - Converts **&lt;traits&gt;** elements to  to JUnit **&lt;properties&gt;**.
@@ -106,18 +105,18 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 
 ### Options
 
-| Option                    | Type    | Default                   | Description                           |
-|:--------------------------|:--------|:--------------------------|:--------------------------------------|
-| `testFile` **(required)** | string  |                           | Path to test file for conversion      |
-| `testType` **(required)** | string  |                           | Test report type                      |
-| `reportDir`               | string  | ./report                  | Converted report output path          |
-| `reportFilename`          | string  | mochawesome.json          | Mochawesome report name               |
-| `junit`                   | boolean | false                     | Create JUnit report?                  |
-| `junitReportFilename`     | string  | `testFile.name`-junit.xml | JUnit report file name                |
-| `html`                    | boolean | false                     | Create Mochawesome HTML?              |
-| `htmlReportFilename`      | string  | mochawesome.html          | Mochawesome HTML file name            |
-| `skippedAsPending`        | boolean | true                      | Show skipped tests as pending in HTML |
-| `switchClassnameAndName`  | boolean | false                     | Switch test case classname and name   |
+| Option                    | Type    | Default                   | Description                                  |
+|:--------------------------|:--------|:--------------------------|:---------------------------------------------|
+| `testFile` **(required)** | string  |                           | Path to test file for conversion             |
+| `testType` **(required)** | string  |                           | Test report type                             |
+| `reportDir`               | string  | ./report                  | Converted report output path                 |
+| `reportFilename`          | string  | mochawesome.json          | Mochawesome report name                      |
+| `junit`                   | boolean | false                     | Create JUnit report?                         |
+| `junitReportFilename`     | string  | `testFile.name`-junit.xml | JUnit report file name                       |
+| `html`                    | boolean | false                     | Create Mochawesome HTML?                     |
+| `htmlReportFilename`      | string  | mochawesome.html          | Mochawesome HTML file name                   |
+| `skippedAsPending`        | boolean | true                      | Show skipped tests as pending in Mochawesome |
+| `switchClassnameAndName`  | boolean | false                     | Switch test case classname and name          |
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
@@ -130,7 +129,7 @@ convert(options).then(() => console.log(`Report created: ${options.reportDir}/${
 
 | `testType` | File Type         |
 |:-----------|:------------------|
-| JUnit      | JUnit             |
+| JUnit      | JUnit/xUnit       |
 | NUnit      | NUnit 3.0+ XML    |
 | xUnit      | xUnit.net v2+ XML |
 | TRX        | Visual Studio TRX |

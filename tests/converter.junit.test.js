@@ -6,28 +6,28 @@ const common = require("./common");
 
 describe("JUnit converter tests", () => {
 
-    test('convert junit-jenkins.xml', async() => {
+    test('junit-jenkins.xml', async() => {
         let options = common.createOptions('junit-jenkins.xml', 'junit');
 
         await converter(options);
         common.compare(options);
     });
 
-    test('convert junit-notestsuites.xml', async() => {
+    test('junit-notestsuites.xml', async() => {
         let options = common.createOptions('junit-notestsuites.xml', 'junit');
 
         await converter(options);
         common.compare(options, 'junit-jenkins-mochawesome.json');
     });
 
-    test('convert junit-testsuites-noattributes.xml', async() => {
+    test('junit-testsuites-noattributes.xml', async() => {
         let options = common.createOptions('junit-testsuites-noattributes.xml', 'junit');
 
         await converter(options);
         common.compare(options, 'junit-jenkins-mochawesome.json');
     });
 
-    test('convert junit-mocha-xunit.xml', async() => {
+    test('junit-mocha-xunit.xml', async() => {
         let options = common.createOptions('junit-mocha-xunit.xml', 'junit')
 
         await converter(options);

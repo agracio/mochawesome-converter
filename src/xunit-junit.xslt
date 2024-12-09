@@ -34,7 +34,7 @@
 
   <xsl:template match="collection">
     <xsl:if test="test">
-      <testsuite name="{replace(replace(@name, 'Test collection for ', ''),'TestSuite.','')}" tests="{@total}" time="{@time}" passed="{@passed}" failed="{@failed}" skipped="{@skipped}">
+      <testsuite name="{replace(replace(@name, 'Test collection for ', ''),'TestSuite.','')}" tests="{@total}" time="{@time}" passed="{@passed}" failures="{@failed}" skipped="{@skipped}">
         <xsl:apply-templates select="test"/>
         <xsl:apply-templates select="traits"/>
         <xsl:apply-templates select="output"/>

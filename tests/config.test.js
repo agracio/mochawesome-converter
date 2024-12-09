@@ -56,6 +56,7 @@ describe("Config tests", () => {
         expect(result.html).toBe(false);
         expect(result.htmlReportFilename).toBe('mochawesome.html');
         expect(result.saveIntermediateFiles).toBe(false);
+        expect(result.transformJunit).toBe(false);
     });
 
     test('return correct values from assigned options', () => {
@@ -70,7 +71,8 @@ describe("Config tests", () => {
             junitReportFilename: 'xunit-j.xml',
             html: true,
             htmlReportFilename: 'mochawesome1.html',
-            saveIntermediateFiles: true
+            saveIntermediateFiles: true,
+            transformJunit: true
         }
 
         let result = config.config(options)
@@ -86,6 +88,7 @@ describe("Config tests", () => {
         expect(result.html).toBe(true);
         expect(result.htmlReportFilename).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
+        expect(result.transformJunit).toBe(true);
 
         expect(fs.existsSync(result.reportDir)).toBe(true)
 
