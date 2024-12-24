@@ -78,6 +78,59 @@
         <traits />
       </test>
     </collection>
+    <collection total="7" passed="5" failed="1" skipped="1" name="Test collection for TestSuite.T_AsianOptions" time="0.083">
+      <test name="TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePriceGreeks" type="TestSuite.T_AsianOptions" method="testAnalyticContinuousGeometricAveragePriceGreeks" time="0.0261092" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testMCDiscreteGeometricAveragePrice" type="TestSuite.T_AsianOptions" method="testMCDiscreteGeometricAveragePrice" time="0.0010000" result="Skip">
+        <reason><![CDATA[Incomplete]]></reason>
+        <output>Incomplete</output>
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticDiscreteGeometricAveragePrice" type="TestSuite.T_AsianOptions" method="testAnalyticDiscreteGeometricAveragePrice" time="0.0033230" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testIssue115" type="TestSuite.T_AsianOptions" method="testIssue115" time="0.0116095" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticDiscreteGeometricAveragePriceGreeks" type="TestSuite.T_AsianOptions" method="testAnalyticDiscreteGeometricAveragePriceGreeks" time="0.0371806" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticDiscreteGeometricAverageStrike" type="TestSuite.T_AsianOptions" method="testAnalyticDiscreteGeometricAverageStrike" time="0.0013519" result="Pass">
+        <traits />
+      </test>
+      <test name="TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice" type="TestSuite.T_AsianOptions" method="testAnalyticContinuousGeometricAveragePrice" time="0.0023712" result="Fail">
+        <failure exception-type="exception-type asfafgasg">
+          <message>QLNet.EuropeanExercise QLNet.EuropeanExercise Asian option with Geometric and QLNet.PlainVanillaPayoff payoff:
+            running variable:
+            past fixings:
+            future fixings:   0
+            underlying value: 80
+            strike:           85
+            dividend yield:   -0.03
+            risk-free rate:   0.055
+            reference date:   27/09/2024
+            maturity:         26/12/2024
+            volatility:       0.2
+
+            expected   value: 4.6922
+            calculated value: 4.64631729808559
+            error:            0.04588270191440991
+            tolerance:        0.0001
+            Expected: True
+            Actual:   False
+          </message>
+          <stack-trace>   at TestSuite.QAssert.Fail(String message) in C:\projects\QLNet\tests\QLNet.Tests\Utilities.cs:line 187
+            at TestSuite.T_AsianOptions.REPORT_FAILURE(String greekName, Type averageType, Nullable`1 runningAccumulator, Nullable`1 pastFixings, List`1 fixingDates, StrikedTypePayoff payoff, Exercise exercise, Double s, Double q, Double r, Date today, Double v, Double expected, Double calculated, Double tolerance) in C:\projects\Dev\QLNet\tests\QLNet.Tests\T_AsianOptions.cs:line 39
+            at TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice() in C:\projects\QLNet\tests\QLNet.Tests\T_AsianOptions.cs:line 122
+            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+          </stack-trace>
+        </failure>
+        <traits />
+      </test>
+    </collection>
+
     <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for TestSuite.T_CapFlooredCoupon" time="0.011">
       <test name="TestSuite.T_CapFlooredCoupon.testDecomposition" type="TestSuite.T_CapFlooredCoupon" method="testDecomposition" time="0.0096121" result="Pass">
         <traits />

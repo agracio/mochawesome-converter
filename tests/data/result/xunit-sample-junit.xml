@@ -1,5 +1,5 @@
 <testsuites name="C:\Users\calliopeuser\projects\LiveResults\MWM2.LiveResults.Tests\bin\Debug\MWM2.LiveResults.Tests.dll" tests="329" time="8.004" errors="0" failures="13" skipped="0" timestamp="2019-06-06T11:58:16">
-    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" tests="7" time="0.054" passed="7" failed="0" skipped="0">
+    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" tests="7" time="0.054" passed="7" failures="0" skipped="0">
         <testcase name="OpenQuestion_WithoutLabel_NullValue_MissingValueReturned" classname="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" time="0.0010000" status="Passed"/>
         <testcase name="OpenQuestion_WithoutLabel_OpenValueReturned" classname="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" time="0.0480000" status="Passed"/>
         <testcase name="OpenQuestion_WithAnswerLabel_AnswerLabelReturned" classname="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" time="0.0010000" status="Passed"/>
@@ -8,19 +8,19 @@
         <testcase name="OpenQuestion_NotGiven_MissingValueReturned" classname="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" time="0.0010000" status="Passed"/>
         <testcase name="OpenQuestion_WithoutLabel_CorrectColumnName" classname="MWM2.LiveResults.Tests.Schema.Export.OpenQuestionExportColumnTests" time="0.0010000" status="Passed"/>
     </testsuite>
-    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests" tests="4" time="0.213" passed="4" failed="0" skipped="0">
+    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests" tests="4" time="0.213" passed="4" failures="0" skipped="0">
         <testcase name="PointDistributionQuestion_WithAnswerLabels_GetValues" classname="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests" time="0.0260000" status="Passed"/>
         <testcase name="PointDistributionQuestion_GetColumnNames" classname="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests" time="0.0010000" status="Passed"/>
         <testcase name="PointDistributionQuestion_GetValues" classname="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests" time="0.1850000" status="Passed"/>
         <testcase name="PointDistributionQuestion_WithQuestionLabel_GetColumnNames" classname="MWM2.LiveResults.Tests.Schema.Export.PointDistributionExportTests" time="0.0010000" status="Passed"/>
     </testsuite>
-    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests" tests="4" time="0.210" passed="4" failed="0" skipped="0">
+    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests" tests="4" time="0.210" passed="4" failures="0" skipped="0">
         <testcase name="RankingQuestionWithoutLabels_GetColumnNames" classname="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests" time="0.0250000" status="Passed"/>
         <testcase name="RankingQuestionWithLabels_GetColumnNames" classname="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests" time="0.0010000" status="Passed"/>
         <testcase name="RankingQuestion_WithAnswerLabels_GetValues" classname="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests" time="0.0010000" status="Passed"/>
         <testcase name="RankingQuestion_GetValues" classname="MWM2.LiveResults.Tests.Schema.Export.RankingQuestionExportColumnTests" time="0.1830000" status="Passed"/>
     </testsuite>
-    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" tests="6" time="0.006" passed="6" failed="0" skipped="0">
+    <testsuite name="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" tests="6" time="0.006" passed="6" failures="0" skipped="0">
         <testcase name="GetRuntimeType(dbType: &quot;nvarchar(max)&quot;, type: typeof(string))" classname="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" time="0.0010000" status="Passed"/>
         <testcase name="GetRuntimeType(dbType: &quot;datetime&quot;, type: typeof(System.DateTime))" classname="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" time="0.0010000" status="Passed"/>
         <testcase name="GetRuntimeType(dbType: &quot;varchar(50)&quot;, type: typeof(string))" classname="MWM2.LiveResults.Tests.Schema.Export.ResultColumnTests" time="0.0010000" status="Passed"/>

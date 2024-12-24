@@ -1,6 +1,6 @@
 {
   "stats": {
-    "suites": 8,
+    "suites": 9,
     "tests": 476,
     "passes": 462,
     "pending": 13,
@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "2bbb422a-af67-41ae-99c3-51527987b213",
+      "uuid": "ccbe69ec-2ba8-4189-b0e7-14822b48c87c",
       "title": "C:\\projecrs\\QLNet\\tests\\QLNet.Tests\\bin\\Debug\\net8.0\\QLNet.Tests.dll",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+          "uuid": "731f9ead-1148-4380-a2af-04b30edf1fc0",
           "title": "QLNet.Tests.T_DayCounters",
           "file": "",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4fec5490-3737-4aa2-af6d-ac29a6596121",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "de98ff64-6af7-49c3-8d25-2976cdb8f5bd",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "cb36b1ee-4f38-4de1-857c-8e431f185c42",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "3c8f89dc-7763-4ca1-abc1-ae2e28a86797",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -77,8 +77,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a18f37a7-cd53-402d-8d3a-3471128b0fb3",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "493a6027-e9d3-4010-b8c9-f75888f905d3",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -94,8 +94,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d7fe064c-6673-49c1-b239-97c4b4c34663",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "1d6d5514-e0ad-474a-a20b-2e143f50420f",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -111,8 +111,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5d7af9e9-6a1d-43a3-824a-ae06de321e23",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "21ad44a9-fa4f-4ee1-b40b-805bdeadfb73",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -128,8 +128,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "118e5b08-9ff7-47d8-922b-d16b08660d50",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "d6e6b24e-ac0d-43e7-8bc4-ccb0593506c9",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -145,8 +145,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "253f35e1-b83f-4e64-ba1f-1960f4f0d934",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "f3ee2934-94d8-4107-bba5-129ae91ec3bc",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -162,8 +162,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b84ba769-6006-45c8-9efd-80955c357f24",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "604a755c-3f78-4d7a-a2c7-a8ca23af90d8",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -179,8 +179,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "902be8e9-2564-46b2-a6b9-5c532c242e5c",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "c8c901c9-1ba7-4eec-94a1-5d9210cb2267",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -196,8 +196,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c3284376-1c2d-46f2-99f1-dbfaa3d12ba3",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "ed75abe1-77a3-43fc-a997-d759703217ef",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -213,8 +213,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "67ba1668-ee10-40b7-8755-76687b95d57e",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "59a98858-ccab-4f6d-a526-08b1f655fae8",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -230,8 +230,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "fca4725b-4f81-4f31-b0bd-792da031c978",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "e7c3880f-d8bb-42cd-89f7-2da70498f8b6",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -247,8 +247,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5a1e49b7-7bfd-4c8f-b596-49cc663d7fac",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "feff93f9-7002-4479-95d2-b49412614e47",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -264,8 +264,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "00de704e-6eda-4b98-88a2-1f8bf4d4427e",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "0b9dcb0a-a157-4159-ace4-7a5f8a3ce760",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -281,8 +281,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "68c8099a-0f1d-44cc-98da-0d8eb62d4db7",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "55c564b9-33d4-43df-9836-ec90201bc8a8",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -298,8 +298,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "13043c7b-8aac-4d0d-b30b-28886ca5a60b",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "0ec77c00-aa5b-4dee-88e0-666e184eba8c",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -315,8 +315,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "349193a9-30a5-4cb7-b003-41952f8f3dd0",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "9995b72a-52e8-48c8-a773-00f281725b70",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -332,8 +332,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9ec14710-f887-4fc4-8a8d-eef5e1ad5e07",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "3804c171-9cd9-45a1-b0b4-c4a345eb7a3b",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -349,8 +349,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "76f3895c-5e3c-44a5-8b1e-2d6744198d15",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "cb9310a5-c8f0-4760-8d52-d1e660561b72",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -366,8 +366,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0116a6b6-ae1c-41db-8ab9-988e46dd8342",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "82cd21a3-9a88-4466-9c08-55332d949c8f",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -383,8 +383,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2cc75f2a-4acf-450c-844a-3901f394bc9d",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "e98b0195-e503-4efc-81a1-a2a9d8e419e0",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -400,8 +400,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ccc0c9a9-df94-47fb-9cb9-cc315657bbce",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "c13d8f08-bb7b-494b-8466-360862b202ee",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -417,8 +417,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "fdb0117d-3fca-4364-a5ab-357357199f5f",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "fed5e43f-c36b-4517-a246-d26eca7a4c18",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -434,8 +434,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "150eb2c5-28df-4fd1-8152-f90566d287d1",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "b0d44a74-d697-455d-b2fe-291aa4b76bd2",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             },
@@ -451,39 +451,39 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7a0b52e1-d139-4cba-a559-37c4189f6d9b",
-              "parentUUID": "9be37dd8-26b5-4bba-9766-932e575e84a9",
+              "uuid": "53626d10-fb1e-4d12-980d-302bc5039e95",
+              "parentUUID": "731f9ead-1148-4380-a2af-04b30edf1fc0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4fec5490-3737-4aa2-af6d-ac29a6596121",
-            "cb36b1ee-4f38-4de1-857c-8e431f185c42",
-            "a18f37a7-cd53-402d-8d3a-3471128b0fb3",
-            "d7fe064c-6673-49c1-b239-97c4b4c34663",
-            "5d7af9e9-6a1d-43a3-824a-ae06de321e23",
-            "118e5b08-9ff7-47d8-922b-d16b08660d50",
-            "253f35e1-b83f-4e64-ba1f-1960f4f0d934",
-            "b84ba769-6006-45c8-9efd-80955c357f24",
-            "902be8e9-2564-46b2-a6b9-5c532c242e5c",
-            "c3284376-1c2d-46f2-99f1-dbfaa3d12ba3",
-            "67ba1668-ee10-40b7-8755-76687b95d57e",
-            "fca4725b-4f81-4f31-b0bd-792da031c978",
-            "5a1e49b7-7bfd-4c8f-b596-49cc663d7fac",
-            "00de704e-6eda-4b98-88a2-1f8bf4d4427e",
-            "68c8099a-0f1d-44cc-98da-0d8eb62d4db7",
-            "13043c7b-8aac-4d0d-b30b-28886ca5a60b",
-            "349193a9-30a5-4cb7-b003-41952f8f3dd0",
-            "9ec14710-f887-4fc4-8a8d-eef5e1ad5e07",
-            "76f3895c-5e3c-44a5-8b1e-2d6744198d15",
-            "0116a6b6-ae1c-41db-8ab9-988e46dd8342",
-            "2cc75f2a-4acf-450c-844a-3901f394bc9d",
-            "ccc0c9a9-df94-47fb-9cb9-cc315657bbce",
-            "fdb0117d-3fca-4364-a5ab-357357199f5f",
-            "150eb2c5-28df-4fd1-8152-f90566d287d1",
-            "7a0b52e1-d139-4cba-a559-37c4189f6d9b"
+            "de98ff64-6af7-49c3-8d25-2976cdb8f5bd",
+            "3c8f89dc-7763-4ca1-abc1-ae2e28a86797",
+            "493a6027-e9d3-4010-b8c9-f75888f905d3",
+            "1d6d5514-e0ad-474a-a20b-2e143f50420f",
+            "21ad44a9-fa4f-4ee1-b40b-805bdeadfb73",
+            "d6e6b24e-ac0d-43e7-8bc4-ccb0593506c9",
+            "f3ee2934-94d8-4107-bba5-129ae91ec3bc",
+            "604a755c-3f78-4d7a-a2c7-a8ca23af90d8",
+            "c8c901c9-1ba7-4eec-94a1-5d9210cb2267",
+            "ed75abe1-77a3-43fc-a997-d759703217ef",
+            "59a98858-ccab-4f6d-a526-08b1f655fae8",
+            "e7c3880f-d8bb-42cd-89f7-2da70498f8b6",
+            "feff93f9-7002-4479-95d2-b49412614e47",
+            "0b9dcb0a-a157-4159-ace4-7a5f8a3ce760",
+            "55c564b9-33d4-43df-9836-ec90201bc8a8",
+            "0ec77c00-aa5b-4dee-88e0-666e184eba8c",
+            "9995b72a-52e8-48c8-a773-00f281725b70",
+            "3804c171-9cd9-45a1-b0b4-c4a345eb7a3b",
+            "cb9310a5-c8f0-4760-8d52-d1e660561b72",
+            "82cd21a3-9a88-4466-9c08-55332d949c8f",
+            "e98b0195-e503-4efc-81a1-a2a9d8e419e0",
+            "c13d8f08-bb7b-494b-8466-360862b202ee",
+            "fed5e43f-c36b-4517-a246-d26eca7a4c18",
+            "b0d44a74-d697-455d-b2fe-291aa4b76bd2",
+            "53626d10-fb1e-4d12-980d-302bc5039e95"
           ],
           "failures": [],
           "pending": [],
@@ -494,7 +494,158 @@
           "_timeout": 10000
         },
         {
-          "uuid": "d7c4bad6-c38f-4698-8a57-06efbcc29a67",
+          "uuid": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+          "title": "T_AsianOptions",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "testAnalyticContinuousGeometricAveragePriceGreeks",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "a7e967fc-d9dd-4bf9-8cfb-fefcff6121ed",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "testMCDiscreteGeometricAveragePrice",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 1,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[\"skipped: Incomplete\"]",
+              "code": null,
+              "err": {},
+              "uuid": "25dc8925-c733-4cdc-9073-5019e875fdc1",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "testAnalyticDiscreteGeometricAveragePrice",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "3edee08b-0666-4442-b4de-415bef77bd79",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "testIssue115",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 12,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "b97e2fcf-4fb2-4b2f-8dc7-1ca648b9b4ff",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "testAnalyticDiscreteGeometricAveragePriceGreeks",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 38,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "b928b714-e676-4f2e-b2f2-5ddeb876652a",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "testAnalyticDiscreteGeometricAverageStrike",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {},
+              "uuid": "372119b3-5bfb-4bc5-b72d-fd73088c9cbe",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "testAnalyticContinuousGeometricAveragePrice",
+              "fullTitle": "TestSuite.T_AsianOptions",
+              "duration": 3,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": null,
+              "err": {
+                "message": "exception-type asfafgasg: QLNet.EuropeanExercise QLNet.EuropeanExercise Asian option with Geometric and QLNet.PlainVanillaPayoff payoff:             running variable:             past fixings:             future fixings:   0             underlying value: 80             strike:           85             dividend yield:   -0.03             risk-free rate:   0.055             reference date:   27/09/2024             maturity:         26/12/2024             volatility:       0.2              expected   value: 4.6922             calculated value: 4.64631729808559             error:            0.04588270191440991             tolerance:        0.0001             Expected: True             Actual:   False           ",
+                "estack": "at TestSuite.QAssert.Fail(String message) in C:\\projects\\QLNet\\tests\\QLNet.Tests\\Utilities.cs:line 187\n            at TestSuite.T_AsianOptions.REPORT_FAILURE(String greekName, Type averageType, Nullable`1 runningAccumulator, Nullable`1 pastFixings, List`1 fixingDates, StrikedTypePayoff payoff, Exercise exercise, Double s, Double q, Double r, Date today, Double v, Double expected, Double calculated, Double tolerance) in C:\\projects\\Dev\\QLNet\\tests\\QLNet.Tests\\T_AsianOptions.cs:line 39\n            at TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice() in C:\\projects\\QLNet\\tests\\QLNet.Tests\\T_AsianOptions.cs:line 122\n            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
+                "diff": null
+              },
+              "uuid": "ea10053b-4b1e-4d32-bca6-dffa18b13622",
+              "parentUUID": "8a0dd630-f36a-4398-b73d-28cb74a3a10e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a7e967fc-d9dd-4bf9-8cfb-fefcff6121ed",
+            "3edee08b-0666-4442-b4de-415bef77bd79",
+            "b97e2fcf-4fb2-4b2f-8dc7-1ca648b9b4ff",
+            "b928b714-e676-4f2e-b2f2-5ddeb876652a",
+            "372119b3-5bfb-4bc5-b72d-fd73088c9cbe"
+          ],
+          "failures": [
+            "ea10053b-4b1e-4d32-bca6-dffa18b13622"
+          ],
+          "pending": [
+            "25dc8925-c733-4cdc-9073-5019e875fdc1"
+          ],
+          "skipped": [],
+          "duration": 83,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "83d04837-a6c6-457b-8b92-58e7c393871c",
           "title": "T_CapFlooredCoupon",
           "file": "",
           "beforeHooks": [],
@@ -512,8 +663,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9bbb7019-c49c-47e1-9305-aa9f7e1e9edb",
-              "parentUUID": "d7c4bad6-c38f-4698-8a57-06efbcc29a67",
+              "uuid": "88c383e3-a3c0-4ac4-95a4-7525452f5de8",
+              "parentUUID": "83d04837-a6c6-457b-8b92-58e7c393871c",
               "isHook": false,
               "skipped": false
             },
@@ -529,16 +680,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "412d4944-c783-47bc-bf0d-81afb90be3be",
-              "parentUUID": "d7c4bad6-c38f-4698-8a57-06efbcc29a67",
+              "uuid": "e3103e37-2b45-40ff-998b-e16fca256356",
+              "parentUUID": "83d04837-a6c6-457b-8b92-58e7c393871c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9bbb7019-c49c-47e1-9305-aa9f7e1e9edb",
-            "412d4944-c783-47bc-bf0d-81afb90be3be"
+            "88c383e3-a3c0-4ac4-95a4-7525452f5de8",
+            "e3103e37-2b45-40ff-998b-e16fca256356"
           ],
           "failures": [],
           "pending": [],
@@ -549,7 +700,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "7b0bb6e5-6c4f-4882-9576-81a8a5e489fc",
+          "uuid": "ce852f57-200d-4f6b-9ea8-3442843e8867",
           "title": "T_CashFlows",
           "file": "",
           "beforeHooks": [],
@@ -567,8 +718,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "44e45cd6-1784-44e3-9458-f7a3a5fe5a65",
-              "parentUUID": "7b0bb6e5-6c4f-4882-9576-81a8a5e489fc",
+              "uuid": "799daea5-abb1-4d37-b37d-e750f14369b1",
+              "parentUUID": "ce852f57-200d-4f6b-9ea8-3442843e8867",
               "isHook": false,
               "skipped": false
             },
@@ -584,8 +735,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c6a0f1a3-dbd4-4245-b430-25498eeb9667",
-              "parentUUID": "7b0bb6e5-6c4f-4882-9576-81a8a5e489fc",
+              "uuid": "a0362295-1aea-44b7-a9e3-f76e9c5bf0ad",
+              "parentUUID": "ce852f57-200d-4f6b-9ea8-3442843e8867",
               "isHook": false,
               "skipped": false
             },
@@ -601,8 +752,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7d4c018a-7f47-48e0-ab9b-e9602e516e4c",
-              "parentUUID": "7b0bb6e5-6c4f-4882-9576-81a8a5e489fc",
+              "uuid": "0a47f22d-44d9-4860-885f-d4e9a51b04b9",
+              "parentUUID": "ce852f57-200d-4f6b-9ea8-3442843e8867",
               "isHook": false,
               "skipped": false
             },
@@ -618,18 +769,18 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "6c304acf-cb71-4fa0-8e53-390c0dbfddae",
-              "parentUUID": "7b0bb6e5-6c4f-4882-9576-81a8a5e489fc",
+              "uuid": "433bb029-0cb8-485d-98ff-0ea24302988d",
+              "parentUUID": "ce852f57-200d-4f6b-9ea8-3442843e8867",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "44e45cd6-1784-44e3-9458-f7a3a5fe5a65",
-            "c6a0f1a3-dbd4-4245-b430-25498eeb9667",
-            "7d4c018a-7f47-48e0-ab9b-e9602e516e4c",
-            "6c304acf-cb71-4fa0-8e53-390c0dbfddae"
+            "799daea5-abb1-4d37-b37d-e750f14369b1",
+            "a0362295-1aea-44b7-a9e3-f76e9c5bf0ad",
+            "0a47f22d-44d9-4860-885f-d4e9a51b04b9",
+            "433bb029-0cb8-485d-98ff-0ea24302988d"
           ],
           "failures": [],
           "pending": [],
@@ -640,7 +791,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "1e63b7f5-cd77-4a59-89a3-58557dc1ff5e",
+          "uuid": "17e3dabc-0ebc-4a10-b5e4-b7b30831f59d",
           "title": "T_CliquetOption",
           "file": "",
           "beforeHooks": [],
@@ -658,8 +809,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "70603917-4411-4e2e-a4e9-2c611d4b7e27",
-              "parentUUID": "1e63b7f5-cd77-4a59-89a3-58557dc1ff5e",
+              "uuid": "729d5017-1252-44ab-ab58-9df5b2ad2065",
+              "parentUUID": "17e3dabc-0ebc-4a10-b5e4-b7b30831f59d",
               "isHook": false,
               "skipped": false
             },
@@ -675,8 +826,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d8f8f764-3302-4d18-8dab-e4b58575eb21",
-              "parentUUID": "1e63b7f5-cd77-4a59-89a3-58557dc1ff5e",
+              "uuid": "cd782c9f-d5a5-44d5-8aab-f608386d350e",
+              "parentUUID": "17e3dabc-0ebc-4a10-b5e4-b7b30831f59d",
               "isHook": false,
               "skipped": false
             },
@@ -692,17 +843,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "744348c6-3a28-48b5-8a12-f8f822d2b2c1",
-              "parentUUID": "1e63b7f5-cd77-4a59-89a3-58557dc1ff5e",
+              "uuid": "2725ab0e-7de8-4610-bdf0-72e5cea3c6a7",
+              "parentUUID": "17e3dabc-0ebc-4a10-b5e4-b7b30831f59d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "70603917-4411-4e2e-a4e9-2c611d4b7e27",
-            "d8f8f764-3302-4d18-8dab-e4b58575eb21",
-            "744348c6-3a28-48b5-8a12-f8f822d2b2c1"
+            "729d5017-1252-44ab-ab58-9df5b2ad2065",
+            "cd782c9f-d5a5-44d5-8aab-f608386d350e",
+            "2725ab0e-7de8-4610-bdf0-72e5cea3c6a7"
           ],
           "failures": [],
           "pending": [],
@@ -713,7 +864,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "2f71ad39-3886-47f9-bc54-026dcd5cf169",
+          "uuid": "93dd683b-6093-42f9-942a-5c12104a9897",
           "title": "T_Cms",
           "file": "",
           "beforeHooks": [],
@@ -731,8 +882,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b25bad28-9aa9-4867-89e6-916ee552369b",
-              "parentUUID": "2f71ad39-3886-47f9-bc54-026dcd5cf169",
+              "uuid": "7bc751c9-f90c-426b-80f8-aec53f01fb5b",
+              "parentUUID": "93dd683b-6093-42f9-942a-5c12104a9897",
               "isHook": false,
               "skipped": false
             },
@@ -748,8 +899,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "af352eff-ca1f-41b5-9708-c323eb42db01",
-              "parentUUID": "2f71ad39-3886-47f9-bc54-026dcd5cf169",
+              "uuid": "e68ec681-5670-40c9-96f1-5da818e54d42",
+              "parentUUID": "93dd683b-6093-42f9-942a-5c12104a9897",
               "isHook": false,
               "skipped": false
             },
@@ -765,17 +916,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2a4ef92b-b73d-4373-85b7-980725be3e22",
-              "parentUUID": "2f71ad39-3886-47f9-bc54-026dcd5cf169",
+              "uuid": "4b067c48-cc38-4fce-a535-413da305fdff",
+              "parentUUID": "93dd683b-6093-42f9-942a-5c12104a9897",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b25bad28-9aa9-4867-89e6-916ee552369b",
-            "af352eff-ca1f-41b5-9708-c323eb42db01",
-            "2a4ef92b-b73d-4373-85b7-980725be3e22"
+            "7bc751c9-f90c-426b-80f8-aec53f01fb5b",
+            "e68ec681-5670-40c9-96f1-5da818e54d42",
+            "4b067c48-cc38-4fce-a535-413da305fdff"
           ],
           "failures": [],
           "pending": [],
@@ -786,7 +937,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c6465af0-fe8c-46d5-8c36-9bbe8647da29",
+          "uuid": "b52b69f9-267c-47af-8045-2dc98763cf1d",
           "title": "T_ConvertibleBond",
           "file": "",
           "beforeHooks": [],
@@ -804,8 +955,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c18043ca-4181-497e-83a2-f914c45f817e",
-              "parentUUID": "c6465af0-fe8c-46d5-8c36-9bbe8647da29",
+              "uuid": "c186834d-ea78-487e-85f3-b86fb9615ab7",
+              "parentUUID": "b52b69f9-267c-47af-8045-2dc98763cf1d",
               "isHook": false,
               "skipped": false
             },
@@ -821,8 +972,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "1f651fa2-e7ef-4224-bd0c-1d0d9aea79dc",
-              "parentUUID": "c6465af0-fe8c-46d5-8c36-9bbe8647da29",
+              "uuid": "dc71962a-e304-4d93-bf8f-c17e0e09aba2",
+              "parentUUID": "b52b69f9-267c-47af-8045-2dc98763cf1d",
               "isHook": false,
               "skipped": false
             },
@@ -838,17 +989,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "760f9cbd-2976-4dca-a59f-67e97bca1ef2",
-              "parentUUID": "c6465af0-fe8c-46d5-8c36-9bbe8647da29",
+              "uuid": "e13d0702-ae4a-4943-9c02-f343e5b45821",
+              "parentUUID": "b52b69f9-267c-47af-8045-2dc98763cf1d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c18043ca-4181-497e-83a2-f914c45f817e",
-            "1f651fa2-e7ef-4224-bd0c-1d0d9aea79dc",
-            "760f9cbd-2976-4dca-a59f-67e97bca1ef2"
+            "c186834d-ea78-487e-85f3-b86fb9615ab7",
+            "dc71962a-e304-4d93-bf8f-c17e0e09aba2",
+            "e13d0702-ae4a-4943-9c02-f343e5b45821"
           ],
           "failures": [],
           "pending": [],
@@ -859,7 +1010,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c09638b6-25b3-4745-8c4a-37fcf9588413",
+          "uuid": "c3c07dff-ba0e-42ed-b81e-12c027b715f6",
           "title": "T_CPISwap",
           "file": "",
           "beforeHooks": [],
@@ -877,8 +1028,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ff0c8e02-6f2e-4271-86e4-9420c5435fd6",
-              "parentUUID": "c09638b6-25b3-4745-8c4a-37fcf9588413",
+              "uuid": "ec824e4b-3c1a-4e78-888d-8c0bfa613c11",
+              "parentUUID": "c3c07dff-ba0e-42ed-b81e-12c027b715f6",
               "isHook": false,
               "skipped": false
             },
@@ -894,8 +1045,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b7fd6802-f8aa-4b8d-94b5-99bf234585d4",
-              "parentUUID": "c09638b6-25b3-4745-8c4a-37fcf9588413",
+              "uuid": "e585316c-6cf7-4bda-83ac-fb1427a89063",
+              "parentUUID": "c3c07dff-ba0e-42ed-b81e-12c027b715f6",
               "isHook": false,
               "skipped": false
             },
@@ -911,17 +1062,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c37c086f-80c1-43ce-a952-a15f7aa56aea",
-              "parentUUID": "c09638b6-25b3-4745-8c4a-37fcf9588413",
+              "uuid": "3c11010d-3caf-461a-961b-d099a2b7aa64",
+              "parentUUID": "c3c07dff-ba0e-42ed-b81e-12c027b715f6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ff0c8e02-6f2e-4271-86e4-9420c5435fd6",
-            "b7fd6802-f8aa-4b8d-94b5-99bf234585d4",
-            "c37c086f-80c1-43ce-a952-a15f7aa56aea"
+            "ec824e4b-3c1a-4e78-888d-8c0bfa613c11",
+            "e585316c-6cf7-4bda-83ac-fb1427a89063",
+            "3c11010d-3caf-461a-961b-d099a2b7aa64"
           ],
           "failures": [],
           "pending": [],
@@ -932,7 +1083,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+          "uuid": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
           "title": "T_CreditDefaultSwap",
           "file": "",
           "beforeHooks": [],
@@ -950,8 +1101,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "84a4c5f3-34cf-4ec9-8a60-2441564ed710",
-              "parentUUID": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+              "uuid": "4fc67258-98c5-4c5f-8369-30b2726ea2a8",
+              "parentUUID": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
               "isHook": false,
               "skipped": false
             },
@@ -967,8 +1118,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "12fca5f8-cc9c-4cd8-8418-d8644bc1ecaa",
-              "parentUUID": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+              "uuid": "43b0cc90-50e1-488c-9e31-d1c0b1520e02",
+              "parentUUID": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
               "isHook": false,
               "skipped": false
             },
@@ -984,8 +1135,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "6e70da08-9083-479e-8431-e658cd7c43c7",
-              "parentUUID": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+              "uuid": "3d62acb6-6e4b-4c13-b826-8a84b442a0d7",
+              "parentUUID": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
               "isHook": false,
               "skipped": false
             },
@@ -1001,8 +1152,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d54903fc-e41a-4516-889d-6dc7ba345204",
-              "parentUUID": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+              "uuid": "cfc8f2cc-8d26-4ca1-a111-0dd5267983dc",
+              "parentUUID": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
               "isHook": false,
               "skipped": false
             },
@@ -1018,8 +1169,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "59bb2e00-2c50-4145-ab0c-27b44a6e630c",
-              "parentUUID": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+              "uuid": "0e00265d-4947-404e-a255-4d26e09f3768",
+              "parentUUID": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
               "isHook": false,
               "skipped": false
             },
@@ -1035,20 +1186,20 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "562eac8f-32dc-4934-80ec-02beea073e12",
-              "parentUUID": "e6c06f12-174c-43e0-9dec-46159f8160aa",
+              "uuid": "57043744-d1f0-4b9c-be5d-8f1dfa1f6348",
+              "parentUUID": "90d7a8bc-7fa8-4911-ac03-b2b2ba972f66",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "84a4c5f3-34cf-4ec9-8a60-2441564ed710",
-            "12fca5f8-cc9c-4cd8-8418-d8644bc1ecaa",
-            "6e70da08-9083-479e-8431-e658cd7c43c7",
-            "d54903fc-e41a-4516-889d-6dc7ba345204",
-            "59bb2e00-2c50-4145-ab0c-27b44a6e630c",
-            "562eac8f-32dc-4934-80ec-02beea073e12"
+            "4fc67258-98c5-4c5f-8369-30b2726ea2a8",
+            "43b0cc90-50e1-488c-9e31-d1c0b1520e02",
+            "3d62acb6-6e4b-4c13-b826-8a84b442a0d7",
+            "cfc8f2cc-8d26-4ca1-a111-0dd5267983dc",
+            "0e00265d-4947-404e-a255-4d26e09f3768",
+            "57043744-d1f0-4b9c-be5d-8f1dfa1f6348"
           ],
           "failures": [],
           "pending": [],
