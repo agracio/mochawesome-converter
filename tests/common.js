@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const reportDir= './tests/data/result';
 const outDir= './tests/data/tmp';
+const outDirWrite= './tests/data/tmpWrite';
 const compareDir = './tests/data/compare';
 
 function removeTempDir(){
@@ -12,6 +13,9 @@ function removeTempDir(){
     }
     if(fs.existsSync(compareDir)){
         fs.rmSync(compareDir, { recursive: true, force: true });
+    }
+    if(fs.existsSync(outDirWrite)){
+        fs.rmSync(outDirWrite, { recursive: true, force: true });
     }
 }
 
@@ -41,6 +45,9 @@ function createCompareFiles(options, reportFilename, compareJunit){
     if(!fs.existsSync(compareDir)){
         fs.mkdirSync(compareDir);
     }
+    if(!fs.existsSync(outDirWrite)){
+        fs.mkdirSync(outDirWrite);
+    }
 
     let report = fs.readFileSync(path.join(reportDir, reportFilename ?? options.reportFilename), 'utf8');
     fs.writeFileSync(path.join(compareDir, reportFilename ?? options.reportFilename), report, 'utf8')
@@ -63,6 +70,8 @@ function compare(options, reportFilename, compareJunit){
     // rewrite compare files for test system compatibility
 
     let createdReport = fs.readFileSync(path.join(outDir, reportFilename ?? options.reportFilename), 'utf8');
+    fs.writeFileSync(path.join(outDirWrite, reportFilename ?? options.reportFilename), createdReport, 'utf8');
+    createdReport = fs.readFileSync(path.join(outDirWrite, reportFilename ?? options.reportFilename), 'utf8');
 
     let report = fs.readFileSync(path.join(compareDir, reportFilename ?? options.reportFilename), 'utf8');
 
@@ -70,6 +79,8 @@ function compare(options, reportFilename, compareJunit){
 
     if(compareJunit){
         let junitCreatedReport = fs.readFileSync(path.join(outDir, options.junitReportFilename), 'utf8');
+        fs.writeFileSync(path.join(outDirWrite, options.junitReportFilename), junitCreatedReport, 'utf8');
+        junitCreatedReport = fs.readFileSync(path.join(outDirWrite, options.junitReportFilename), 'utf8');
         let junitReport = fs.readFileSync(path.join(compareDir, options.junitReportFilename), 'utf8');
 
         expect(junitCreatedReport).toBe(junitReport);
