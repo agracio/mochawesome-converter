@@ -193,14 +193,14 @@ function getContext(testcase){
         }
 
         if(testcase.skipped && testcase.skipped[0].message){
-            skipped = testcase.skipped[0].message;
-            context.push(`skipped: ${testcase.skipped[0].message}`);
+            skipped = testcase.skipped[0].message.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
+            context.push(`skipped: ${skipped}`);
         }
 
         if(testcase["system-out"] && testcase["system-out"].length !== 0){
             let systemout = testcase["system-out"][0];
             if(systemout.$t){
-                systemout = systemout.$t;
+                systemout = systemout.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
             }
             if(systemout !== skipped){
                 context.push(
@@ -243,6 +243,7 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
         let pending = [];
 
         let parentUUID = crypto.randomUUID();
+        let suiteDuration = 0;
         suite.testcase.forEach((testcase) => {
 
             let context = getContext(testcase);
@@ -263,6 +264,7 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
             let speed = "fast";
             let duration = testcase.time ? Math.ceil(testcase.time * 1000) : 0;
+            suiteDuration += duration;
 
             if(totalSuitTime && totalSuitTime !==0 && testcase.time){
                 if(duration >= avgSuitTime){
@@ -317,12 +319,11 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
             "failures": failures,
             "pending": options.skippedAsPending ? pending : [],
             "skipped": options.skippedAsPending ? [] : pending,
-            "duration": suite.time ? Math.ceil(suite.time * 1000) : 0,
+            "duration": suite.time && Number(suite.time) !== 0 ? Math.ceil(suite.time * 1000) : suiteDuration,
             "root": false,
             "rootEmpty": false,
             "_timeout": 10000
         });
-
     });
 }
 

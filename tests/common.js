@@ -31,6 +31,7 @@ function createOptions(file, type){
 }
 
 /**
+ * Re-writing reports to file system
  * @param {TestReportConverterOptions} options
  * @param {string?} reportFilename
  * @param {Boolean?} compareJunit
@@ -57,18 +58,19 @@ function createCompareFiles(options, reportFilename, compareJunit){
  */
 function compare(options, reportFilename, compareJunit){
 
-    // rewrite compare files for test system compatibility
     createCompareFiles(options, reportFilename, compareJunit);
 
-    let createdReport = fs.readFileSync(path.join(compareDir, reportFilename ?? options.reportFilename), 'utf8');
-    let report = fs.readFileSync(path.join(reportDir, reportFilename ?? options.reportFilename), 'utf8');
+    // rewrite compare files for test system compatibility
 
+    let createdReport = fs.readFileSync(path.join(outDir, reportFilename ?? options.reportFilename), 'utf8');
+
+    let report = fs.readFileSync(path.join(compareDir, reportFilename ?? options.reportFilename), 'utf8');
 
     expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
 
     if(compareJunit){
-        let junitCreatedReport = fs.readFileSync(path.join(compareDir, options.junitReportFilename), 'utf8');
-        let junitReport = fs.readFileSync(path.join(reportDir, options.junitReportFilename), 'utf8');
+        let junitCreatedReport = fs.readFileSync(path.join(outDir, options.junitReportFilename), 'utf8');
+        let junitReport = fs.readFileSync(path.join(compareDir, options.junitReportFilename), 'utf8');
 
         expect(junitCreatedReport).toBe(junitReport);
     }

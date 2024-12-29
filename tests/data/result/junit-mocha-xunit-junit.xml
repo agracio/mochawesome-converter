@@ -1,5 +1,5 @@
 <testsuites tests="14" errors="5" failures="0" skipped="2" time="0.056">
-    <testsuite name="Mocha Tests" tests="14" errors="5" failures="0" skipped="2" time="0.056">
+    <testsuite name="Mocha Tests" tests="14" errors="5" failures="0" skipped="2" time="0.056" timestamp="Mon, 23 Sep 2024 14:37:42 GMT">
         <testcase name="[CoreCLR] exists" classname="edge.func" file="C:\project\edge-js\test\101_edge_func.js" time="0"/>
         <testcase name="[CoreCLR] succeeds with assemblyFile as string" classname="edge.func" file="C:\project\edge-js\test\101_edge_func.js" time="0">
             <skipped/>

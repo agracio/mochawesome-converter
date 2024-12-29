@@ -1,0 +1,18 @@
+<testsuites tests="10" errors="0" failures="0" skipped="0" assertions="0" time="0.04">
+    <testsuite name="async call from node.js to .net" tests="8" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.000" failures="0" timestamp="2024-12-29T20:31:26">
+        <testcase name="[.NET] successfuly marshals data from .net to node.js" classname="async call from node.js to .net" time="0.245"/>
+        <testcase name="[.NET] successfuly marshals .net exception thrown on v8 thread from .net to node.js" classname="async call from node.js to .net" time="0.009"/>
+        <testcase name="[.NET] successfuly marshals .net exception thrown on CLR thread from .net to node.js" classname="async call from node.js to .net" time="0.215"/>
+        <testcase name="[.NET] successfuly marshals structured .net exception from .net to node.js" classname="async call from node.js to .net" time="0.212"/>
+        <testcase name="[.NET] successfuly marshals empty buffer" classname="async call from node.js to .net" time="0.005"/>
+        <testcase name="[.NET] successfuly roundtrips unicode characters" classname="async call from node.js to .net" time="0.001"/>
+        <testcase name="[.NET] successfuly roundtrips empty string" classname="async call from node.js to .net" time="0.000"/>
+        <testcase name="[.NET] successfuly handles process.nextTick in the callback" classname="async call from node.js to .net" time="0.001"/>
+    </testsuite>
+    <testsuite name="async call from node.js to .net.nesting 1.nesting 2" tests="1" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.000" failures="0" timestamp="2024-12-29T20:31:27">
+        <testcase name="[.NET] succeeds for hello world" classname="async call from node.js to .net.nesting 1.nesting 2" time="0.039"/>
+    </testsuite>
+    <testsuite name="async call from node.js to .net.nesting 1.nesting 2.nesting 3" tests="1" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.040" failures="0" timestamp="2024-12-29T20:31:27">
+        <testcase name="[.NET] successfuly marshals data from node.js to .net" classname="async call from node.js to .net.nesting 1.nesting 2.nesting 3" time="0.040"/>
+    </testsuite>
+</testsuites>

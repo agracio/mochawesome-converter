@@ -33,5 +33,11 @@ describe("JUnit converter tests", () => {
         await converter(options);
         common.compare(options, undefined, true);
     });
+    test('junit-nested.xml', async() => {
+        let options = common.createOptions('junit-nested.xml', 'junit')
+
+        await converter(options);
+        common.compare(options, undefined, true);
+    });
 
 });

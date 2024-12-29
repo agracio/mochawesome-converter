@@ -23,8 +23,8 @@
    at NUnit.Tests.Assemblies.MockTestFixture.FailingTest() in D:\Dev\NUnit\nunit-3.0\work\NUnitFramework\src\mock-assembly\MockAssembly.cs:line 121
             </failure>
         </testcase>
-        <testcase name="InconclusiveTest" classname="NUnit.Tests.Assemblies.MockTestFixture.InconclusiveTest" time="0.001" status="Failed">
-            <error message="Inconclusive test"/>
+        <testcase name="InconclusiveTest" classname="NUnit.Tests.Assemblies.MockTestFixture.InconclusiveTest" time="0.001" status="Skipped">
+            <skipped message="Inconclusive test"/>
         </testcase>
         <testcase name="MockTest1" classname="NUnit.Tests.Assemblies.MockTestFixture.MockTest1" time="0.000" status="Passed">
             <properties>

@@ -51,7 +51,6 @@
         </testcase>
         <testcase classname="NUnitSample.SimpleTests" name="Ignored_test" status="Skipped" time="0.0002930">
             <skipped message="Ignoring for testing ;-)"/>
-            <skipped message="Ignoring for testing ;-)"/>
             <system-out>
                 Ignoring for testing ;-)
             </system-out>
@@ -64,7 +63,6 @@
             </system-out>
         </testcase>
         <testcase classname="NUnitSample.SimpleTests" name="Test_with_failed_assumption" status="Skipped" time="0.0008150">
-            <skipped message="  Expected: True   But was:  False "/>
             <skipped message="Expected: True&#xD;   But was:  False"/>
             <system-out>
                 Expected: True&#xD;

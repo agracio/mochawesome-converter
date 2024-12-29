@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="10" failures="0" time="0.04">
+  <testsuite name="" timestamp="2024-12-29T20:31:26" tests="0" time="0.000" failures="0"/>
+  <testsuite name="Root Suite.async call from node.js to .net" timestamp="2024-12-29T20:31:26" tests="8" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.000" failures="0">
+    <testcase name="[.NET] successfuly marshals data from .net to node.js" time="0.245" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly marshals .net exception thrown on v8 thread from .net to node.js" time="0.009" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly marshals .net exception thrown on CLR thread from .net to node.js" time="0.215" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly marshals structured .net exception from .net to node.js" time="0.212" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly marshals empty buffer" time="0.005" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly roundtrips unicode characters" time="0.001" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly roundtrips empty string" time="0.000" classname="async call from node.js to .net"/>
+    <testcase name="[.NET] successfuly handles process.nextTick in the callback" time="0.001" classname="async call from node.js to .net"/>
+  </testsuite>
+  <testsuite name="Root Suite.async call from node.js to .net.nesting 1" timestamp="2024-12-29T20:31:27" tests="0" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.000" failures="0">
+    <testsuite name="Root Suite.async call from node.js to .net.nesting 1.nesting 2" timestamp="2024-12-29T20:31:27" tests="1" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.000" failures="0">
+      <testcase name="[.NET] succeeds for hello world" time="0.039" classname="async call from node.js to .net.nesting 1.nesting 2"/>
+      <testsuite name="Root Suite.async call from node.js to .net.nesting 1.nesting 2.nesting 3" timestamp="2024-12-29T20:31:27" tests="1" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.040" failures="0">
+        <testcase name="[.NET] successfuly marshals data from node.js to .net" time="0.040" classname="async call from node.js to .net.nesting 1.nesting 2.nesting 3"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
