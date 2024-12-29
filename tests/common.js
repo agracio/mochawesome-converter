@@ -35,7 +35,7 @@ function createOptions(file, type){
 }
 
 /**
- * Re-writing reports to file system
+ * Re-writing compare for test system compatibility
  * @param {TestReportConverterOptions} options
  * @param {string?} reportFilename
  * @param {Boolean?} compareJunit
@@ -71,19 +71,19 @@ function compare(options, reportFilename, compareJunit){
 
     let createdReport = fs.readFileSync(path.join(outDir, reportFilename ?? options.reportFilename), 'utf8');
     fs.writeFileSync(path.join(outDirWrite, reportFilename ?? options.reportFilename), createdReport, 'utf8');
-    createdReport = fs.readFileSync(path.join(outDirWrite, reportFilename ?? options.reportFilename), 'utf8');
+    let testMochaReport = fs.readFileSync(path.join(outDirWrite, reportFilename ?? options.reportFilename), 'utf8');
 
     let report = fs.readFileSync(path.join(compareDir, reportFilename ?? options.reportFilename), 'utf8');
 
-    expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
+    expect(testMochaReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
 
     if(compareJunit){
         let junitCreatedReport = fs.readFileSync(path.join(outDir, options.junitReportFilename), 'utf8');
         fs.writeFileSync(path.join(outDirWrite, options.junitReportFilename), junitCreatedReport, 'utf8');
-        junitCreatedReport = fs.readFileSync(path.join(outDirWrite, options.junitReportFilename), 'utf8');
+        let testReport = fs.readFileSync(path.join(outDirWrite, options.junitReportFilename), 'utf8');
         let junitReport = fs.readFileSync(path.join(compareDir, options.junitReportFilename), 'utf8');
 
-        expect(junitCreatedReport).toBe(junitReport);
+        expect(testReport).toBe(junitReport);
     }
 }
 
