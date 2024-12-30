@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:csl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 <!--  <xsl:template match="/assemblies">-->
-<!--    <xsl:variable name="tests" select="sum(assembly/@total)"/>-->
-<!--    <xsl:variable name="time" select="format-number(sum(assembly/@time), '0.0000')"/>-->
-<!--    <xsl:variable name="errors" select="sum(assembly/@errors)"/>-->
-<!--    <xsl:variable name="failed" select="sum(assembly/@failed)"/>-->
-<!--    <xsl:variable name="skipped" select="sum(assembly/@skipped)"/>-->
-<!--    <testsuites tests="{$tests}" time="{$time}" errors="{$errors}" failures="{$failed}" skipped="{$skipped}">-->
-<!--      <xsl:for-each select="assembly">-->
-<!--        <xsl:sort  select="name"/>-->
-<!--        <xsl:variable name="assemblyFileName">-->
-<!--          <xsl:call-template name="substring-after-last">-->
-<!--            <xsl:with-param name="string" select="@name" />-->
-<!--            <xsl:with-param name="delimiter" select="'\'" />-->
-<!--          </xsl:call-template>-->
-<!--        </xsl:variable>-->
-<!--        <xsl:apply-templates select="collection"/>-->
-<!--      </xsl:for-each>-->
-<!--    </testsuites>-->
+<!--    <xsl:apply-templates/>-->
 <!--  </xsl:template>-->
 
+<!--  <xsl:template match="assembly">-->
   <xsl:template match="assemblies/assembly">
     <xsl:variable name="timeStamp">
       <xsl:value-of select="concat(@run-date, 'T', translate(@run-time, ',', '.'))" />

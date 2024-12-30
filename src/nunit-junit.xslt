@@ -61,6 +61,7 @@
       </xsl:if>
       <xsl:apply-templates select="properties"/>
       <xsl:apply-templates select="output"/>
+      <xsl:apply-templates select="test-case"/>
     </testcase>
   </xsl:template>
 
