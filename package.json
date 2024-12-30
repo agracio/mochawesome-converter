@@ -5,7 +5,7 @@
   "main": "src/converter.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "jest --json --outputFile=jest.json"
+    "test": "jest"
   },
   "author": "agracio",
   "license": "MIT",
