@@ -308,7 +308,7 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
 
         suites.push({
             "uuid": parentUUID,
-            "title": suite.name,
+            "title": suite.name.replaceAll('Root Suite.', ''),
             "fullFile": suite.file,
             "file": suiteFile ?? '',
             "beforeHooks": [],
@@ -352,7 +352,12 @@ async function convert(options, suitesRoot){
     let duration =
         suitesRoot.time
             ? Number(suitesRoot.time)
-            : _.sumBy(testSuites, suite => _.sumBy(suite.testcase, function(testCase) { return Number(testCase.time); }));
+            : _.sumBy(testSuites,function(suite) { return Number(suite.time); });
+
+    if(duration === 0){
+        duration = _.sumBy(testSuites, suite => _.sumBy(suite.testcase, function(testCase) { return Number(testCase.time); }));
+
+    }
 
     let tests = suitesRoot.tests
         ? Number(suitesRoot.tests)
@@ -367,10 +372,6 @@ async function convert(options, suitesRoot){
     parseTestSuites(options, testSuites, duration, avg);
 
     let name = suitesRoot.name;
-
-    // if(!name && suitesRoot.testsuite.length === 1){
-    //     name = suitesRoot.testsuite[0].name;
-    // }
 
     results.push(
         {
