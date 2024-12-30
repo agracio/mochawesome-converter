@@ -303,7 +303,7 @@ function parseTestSuites(options, testSuites, totalSuitTime, avgSuitTime){
             if(test.pending || test.skipped){pending.push(uuid);}
         });
 
-        let suiteFile = suite.file ? path.basename(suite.file) : undefined
+        let suiteFile = suite.file ? path.basename(suite.file.replaceAll('\\', '/')) : undefined
         if(!suiteFile && suite.classname){suiteFile = suite.classname; }
 
         suites.push({
