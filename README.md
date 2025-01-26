@@ -108,7 +108,7 @@ convert(options).then(() => console.log(`Mochawesome report created`));
 | Option                    | Type    | Default                   | Description                                       |
 |:--------------------------|:--------|:--------------------------|:--------------------------------------------------|
 | `testFile` **(required)** | string  |                           | Path to test file for conversion                  |
-| `testType` **(required)** | string  |                           | Test report type                                  |
+| `testType` **(required)** | string  |                           | [Test report type](https://github.com/agracio/mochawesome-converter#supported-testtype-options)|
 | `reportDir`               | string  | ./report                  | Converted report output path                      |
 | `reportFilename`          | string  | mochawesome.json          | Mochawesome report name                           |
 | `junit`                   | boolean | false                     | Create JUnit report?                              |
