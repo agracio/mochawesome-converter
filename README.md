@@ -7,7 +7,7 @@
 
 ### Overview
 
-- Convert your XML/TRX test report files to Mochawesome for easy viewing and troubleshooting.
+- Convert your XML/TRX test report files to Mochawesome JSON/HTML for easy viewing and troubleshooting.
 - Convert test report files to JUnit format.
 
 ### Supported report formats
