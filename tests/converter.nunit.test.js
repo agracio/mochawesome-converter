@@ -23,5 +23,11 @@ describe("NUnit converter tests", () => {
         await converter(options);
         common.compare(options, undefined, true);
     });
+    
+    test('nunit-errors.xml', async() => {
+        let options = common.createOptions('nunit-errors.xml', 'nunit')
+        await converter(options);
+        common.compare(options, undefined, true);
+    });
 
 });

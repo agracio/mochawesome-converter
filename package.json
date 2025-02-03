@@ -38,8 +38,8 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "mochawesome-report-generator": "^6.2.0",
-    "p3x-xml2json": "^2025.4.103",
-    "xml-formatter": "^3.6.3",
+    "p3x-xml2json": "^2025.4.121",
+    "xml-formatter": "^3.6.4",
     "xslt-processor": "^3.3.1"
   },
   "devDependencies": {
