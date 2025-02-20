@@ -76,6 +76,7 @@
                 <xsl:apply-templates select="testcase"/>
                 <xsl:apply-templates select="properties"/>
                 <xsl:apply-templates select="system-out"/>
+                <xsl:apply-templates select="system-err"/>
             </testsuite>
             <xsl:apply-templates select="testsuite"/>
         </xsl:if>
@@ -108,6 +109,7 @@
             </xsl:if>
             <xsl:apply-templates select="properties"/>
             <xsl:apply-templates select="system-out"/>
+            <xsl:apply-templates select="system-err"/>
             <xsl:apply-templates select="testcase"/>
         </testcase>
     </xsl:template>
@@ -117,6 +119,12 @@
         <system-out>
             <xsl:value-of select="."/>
         </system-out>
+    </xsl:template>
+
+    <xsl:template match="system-err">
+        <system-err>
+            <xsl:value-of select="."/>
+        </system-err>
     </xsl:template>
 
     <xsl:template match="properties">

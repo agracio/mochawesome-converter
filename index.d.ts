@@ -1,4 +1,4 @@
-export declare type TestReportConverterOptions = {
+interface TestReportConverterOptions {
     testFile: string
     testType: string
     reportDir? : string
@@ -12,7 +12,7 @@ export declare type TestReportConverterOptions = {
     switchClassnameAndName?: boolean
     saveIntermediateFiles?: boolean
 
-};
+}
 
 declare function convert(options: TestReportConverterOptions): Promise<void>;
 

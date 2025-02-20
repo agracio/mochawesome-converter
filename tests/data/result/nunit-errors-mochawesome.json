@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "d4cfdfa0-fdd5-41de-b253-5845f836db30",
+      "uuid": "38829995-8883-4aa7-b097-75c904a361ef",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "096a990d-dc2e-4f12-912c-f7776e07a00e",
+          "uuid": "af177065-c6f1-471c-8ed7-6cc93d0cc387",
           "title": "EditTeamCrest",
           "file": "EditTeamCrest",
           "beforeHooks": [],
@@ -47,8 +47,8 @@
                 "estack": "SimpleFudbal.MasterClasses.Lambda.MasterClient:LogError(String) (at Assets/Scripts/Network/Lambda/MasterClient.cs:2068)\nSimpleFudbal.MasterClasses.Lambda.MasterClient:ParseLoginData(JToken) (at Assets/Scripts/Network/Lambda/MasterClient.cs:858)\nSimpleFudbal.MasterClasses.Lambda.Requests.LogInWithUsername:HandleResponse(MasterClient, ServerStatusCode, String, String, JToken, JToken, DateTime, Int32) (at Assets/Scripts/Network/Lambda/MasterRequests/LogInWithUsername.cs:43)\nSimpleFudbal.MasterClasses.Lambda.LambdaRequest:PutResponse(MasterClient, ServerRequest, ServerResponse) (at Assets/Scripts/Network/Lambda/LambdaRequest.cs:128)\nSimpleFudbal.MasterClasses.Lambda.LambdaRequestManager:responseHandler(ServerRequest, ServerResponse) (at Assets/Scripts/Network/Lambda/LambdaRequestManager.cs:173)\nSimpleFudbal.BaseClasses.NetWrapper:updateUnityRequest(ServerRequest) (at Assets/Scripts/Network/NetWrapper.cs:508)\nSimpleFudbal.BaseClasses.NetWrapper:UpdateHttpRequests(NetworkHelper) (at Assets/Scripts/Network/NetWrapper.cs:262)\nNetworkHelper:Update() (at Assets/Scripts/Utility/NetworkHelper.cs:25)",
                 "diff": null
               },
-              "uuid": "72cf7aa4-d4fd-4167-92b5-716bd1f7d4b4",
-              "parentUUID": "096a990d-dc2e-4f12-912c-f7776e07a00e",
+              "uuid": "ba52ec87-de6d-4d68-98f3-4f1f847dac88",
+              "parentUUID": "af177065-c6f1-471c-8ed7-6cc93d0cc387",
               "isHook": false,
               "skipped": false
             },
@@ -68,8 +68,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "e059d1cf-bb39-4f93-8457-60e8a15c0676",
-              "parentUUID": "096a990d-dc2e-4f12-912c-f7776e07a00e",
+              "uuid": "729d9ff0-4d3a-4147-a6ca-882094d9aa38",
+              "parentUUID": "af177065-c6f1-471c-8ed7-6cc93d0cc387",
               "isHook": false,
               "skipped": false
             }
@@ -77,8 +77,8 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "72cf7aa4-d4fd-4167-92b5-716bd1f7d4b4",
-            "e059d1cf-bb39-4f93-8457-60e8a15c0676"
+            "ba52ec87-de6d-4d68-98f3-4f1f847dac88",
+            "729d9ff0-4d3a-4147-a6ca-882094d9aa38"
           ],
           "pending": [],
           "skipped": [],
@@ -88,7 +88,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "c0b830eb-c6c3-4940-ab0a-fb3fabd979b3",
+          "uuid": "02f0b1bb-8ede-40a9-808b-e3349ab2b088",
           "title": "EditTeamFormation",
           "file": "EditTeamFormation",
           "beforeHooks": [],
@@ -110,8 +110,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "43ee1c49-76ae-4d6e-b975-05fc5995b1c5",
-              "parentUUID": "c0b830eb-c6c3-4940-ab0a-fb3fabd979b3",
+              "uuid": "ed9d9ffb-33c2-4b58-b504-eebc2237ddd9",
+              "parentUUID": "02f0b1bb-8ede-40a9-808b-e3349ab2b088",
               "isHook": false,
               "skipped": false
             },
@@ -131,8 +131,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "96298dcf-e13d-4bbb-a6a1-73f4d5cc6f41",
-              "parentUUID": "c0b830eb-c6c3-4940-ab0a-fb3fabd979b3",
+              "uuid": "af24caf5-cb2b-4820-a633-f996c3602fbe",
+              "parentUUID": "02f0b1bb-8ede-40a9-808b-e3349ab2b088",
               "isHook": false,
               "skipped": false
             }
@@ -140,8 +140,8 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "43ee1c49-76ae-4d6e-b975-05fc5995b1c5",
-            "96298dcf-e13d-4bbb-a6a1-73f4d5cc6f41"
+            "ed9d9ffb-33c2-4b58-b504-eebc2237ddd9",
+            "af24caf5-cb2b-4820-a633-f996c3602fbe"
           ],
           "pending": [],
           "skipped": [],
@@ -151,7 +151,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "917dc568-c438-4d21-9e7b-08ea36e5a510",
+          "uuid": "df3577d8-d433-4bc6-ac97-5074900d3ec4",
           "title": "EditTeamKit",
           "file": "EditTeamKit",
           "beforeHooks": [],
@@ -173,8 +173,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "445bf8f2-a857-4bac-a909-41b57a1dddc8",
-              "parentUUID": "917dc568-c438-4d21-9e7b-08ea36e5a510",
+              "uuid": "d5509000-98db-4bdc-b89e-08039fc56c05",
+              "parentUUID": "df3577d8-d433-4bc6-ac97-5074900d3ec4",
               "isHook": false,
               "skipped": false
             },
@@ -194,8 +194,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "89e5859c-6455-42df-8100-02472d42ea1b",
-              "parentUUID": "917dc568-c438-4d21-9e7b-08ea36e5a510",
+              "uuid": "1adbd42f-f5d9-4c97-b2e3-b31c413c908b",
+              "parentUUID": "df3577d8-d433-4bc6-ac97-5074900d3ec4",
               "isHook": false,
               "skipped": false
             }
@@ -203,8 +203,8 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "445bf8f2-a857-4bac-a909-41b57a1dddc8",
-            "89e5859c-6455-42df-8100-02472d42ea1b"
+            "d5509000-98db-4bdc-b89e-08039fc56c05",
+            "1adbd42f-f5d9-4c97-b2e3-b31c413c908b"
           ],
           "pending": [],
           "skipped": [],
@@ -214,7 +214,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "ed9c4861-074b-4664-aec2-314502a2002f",
+          "uuid": "a28ba4b4-b1a6-4338-b12e-dccc980c81c3",
           "title": "HappyPath",
           "file": "HappyPath",
           "beforeHooks": [],
@@ -236,8 +236,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "f37caf6e-8529-4b2c-9a52-777b5b42b119",
-              "parentUUID": "ed9c4861-074b-4664-aec2-314502a2002f",
+              "uuid": "eb286266-a41e-4116-8c72-13c0f861370b",
+              "parentUUID": "a28ba4b4-b1a6-4338-b12e-dccc980c81c3",
               "isHook": false,
               "skipped": false
             },
@@ -257,8 +257,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "04d40651-6236-4945-a8ee-2f30fc9fa1c8",
-              "parentUUID": "ed9c4861-074b-4664-aec2-314502a2002f",
+              "uuid": "2f90ec6f-c298-4a4f-8167-b5189a320fcc",
+              "parentUUID": "a28ba4b4-b1a6-4338-b12e-dccc980c81c3",
               "isHook": false,
               "skipped": false
             },
@@ -278,8 +278,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "cf00d7b2-16f0-463a-ac9f-929f3bd5469d",
-              "parentUUID": "ed9c4861-074b-4664-aec2-314502a2002f",
+              "uuid": "739e69c2-2cfc-4246-ae6e-ac4384c40a50",
+              "parentUUID": "a28ba4b4-b1a6-4338-b12e-dccc980c81c3",
               "isHook": false,
               "skipped": false
             }
@@ -287,9 +287,9 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "f37caf6e-8529-4b2c-9a52-777b5b42b119",
-            "04d40651-6236-4945-a8ee-2f30fc9fa1c8",
-            "cf00d7b2-16f0-463a-ac9f-929f3bd5469d"
+            "eb286266-a41e-4116-8c72-13c0f861370b",
+            "2f90ec6f-c298-4a4f-8167-b5189a320fcc",
+            "739e69c2-2cfc-4246-ae6e-ac4384c40a50"
           ],
           "pending": [],
           "skipped": [],
@@ -299,114 +299,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "2d28e0c9-a4e9-44c0-8681-a6ff6fb2a5b3",
-          "title": "PlayPanelUITests",
-          "file": "PlayPanelUITests",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "GoToMyProfile",
-              "fullTitle": "PlayPanelUITests.GoToMyProfile",
-              "duration": 37,
-              "state": "failed",
-              "speed": "fast",
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 90000\"]},{\"title\":\"system-out\",\"value\":\"Exception: Operation timed out: UITestBase+PanelShown ''\\n  at System.Environment.get_StackTrace () [0x00000] in <ac823e2bb42b41bda67924a45a0173c3>:0\\n  at UITestBase.WaitFor (UITestBase+Condition condition, System.Single timeout) [0x00008] in /arena/Assets/UITestBase/UITestBase.cs:38\\n  at EditTeamCrest+<ChangeCrestColors>d__0.MoveNext () [0x0011c] in /arena/Assets/Scripts/UITest/TeamEdit/EditTeamCrest.cs:30\\n  at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x00031] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:29\\n  at UnityEngine.TestTools.EnumerableTestMethodCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x000ec] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableTestMethodCommand.cs:36\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.UnityLogCheckDelegatingCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00153] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityLogCheckDelegatingCommand.cs:67\\n  at UnityEngine.TestTools.SetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x0017a] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/SetUpTearDownCommand.cs:55\\n  at UnityEngine.TestTools.EnumerableSetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00289] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableSetUpTearDownCommand.cs:101\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CoroutineTestWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x001b2] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CoroutineTestWorkItem.cs:67\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73\\n  at UnityEngine.TestTools.TestRunner.PlaymodeTestsController+<TestRunnerCorotine>c__Iterator1.MoveNext () [0x00062] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/TestRunner/PlaymodeTestsController.cs:69\\n  at UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) [0x00028] in /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17\"}]",
-              "code": null,
-              "err": {
-                "message": "Unhandled log message: '[Exception] Exception: Operation timed out: UITestBase+PanelShown ''   at System.Environment.get_StackTrace () [0x00000] in <ac823e2bb42b41bda67924a45a0173c3>:0   at UITestBase.WaitFor (UITestBase+Condition condition, System.Single timeout) [0x00008] in /arena/Assets/UITestBase/UITestBase.cs:38   at EditTeamCrest+<ChangeCrestColors>d__0.MoveNext () [0x0011c] in /arena/Assets/Scripts/UITest/TeamEdit/EditTeamCrest.cs:30   at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x00031] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:29   at UnityEngine.TestTools.EnumerableTestMethodCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x000ec] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableTestMethodCommand.cs:36   at UnityEngine.TestRunner.NUnitExtensions.Runner.UnityLogCheckDelegatingCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00153] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityLogCheckDelegatingCommand.cs:67   at UnityEngine.TestTools.SetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x0017a] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/SetUpTearDownCommand.cs:55   at UnityEngine.TestTools.EnumerableSetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00289] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableSetUpTearDownCommand.cs:101   at UnityEngine.TestRunner.NUnitExtensions.Runner.CoroutineTestWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x001b2] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CoroutineTestWorkItem.cs:67   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73   at UnityEngine.TestTools.TestRunner.PlaymodeTestsController+<TestRunnerCorotine>c__Iterator1.MoveNext () [0x00062] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/TestRunner/PlaymodeTestsController.cs:69   at UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) [0x00028] in /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17 '. Use UnityEngine.TestTools.LogAssert.Expect",
-                "estack": "UITestBase+<WaitForInternal>d__13.MoveNext () (at Assets/UITestBase/UITestBase.cs:106)\nUnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)",
-                "diff": null
-              },
-              "uuid": "97b62c45-2670-4394-acc8-aa4e96146f28",
-              "parentUUID": "2d28e0c9-a4e9-44c0-8681-a6ff6fb2a5b3",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "GoToOthersProfile",
-              "fullTitle": "PlayPanelUITests.GoToOthersProfile",
-              "duration": 1197,
-              "state": "failed",
-              "speed": "fast",
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 120000\"]},{\"title\":\"system-out\",\"value\":\"The referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'RewardCardTemplate') is missing!\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'CrestDisplay') is missing!\\ntow manager is exists delete the second\\nUsing MANAGED ZLib\\nScene FrontEndScene is loaded\\n<E> Front-end started\\nTimestamp: 22.02.2019. 16:04:48 UTC+0\\nApp version: 0.9.166\\nBuild: 1902011800 / develop / Android\\nBuild time: 01.02.2019. 18:00 UTC+0\\nDevice model: PC\\nScreen resolution: 640 x 480 (0 dpi)\\nScreen safe area: 0, 0 -> 640, 480 (640 x 480)\\nVertical safe ratio: 1\\n<E> GUI switch: login\\nSKIP_SOCIAL override is set, won't use social plugins for login\\nCommand line argument count : 12\\n[0] /opt/Unity/Editor/Unity\\n[1] -accept-apiupdate\\n[2] -projectPath\\n[3] /arena\\n[4] -batchmode\\n[5] -nographics\\n[6] -logfile\\n[7] -runTests\\n[8] -testPlatform\\n[9] playmode\\n[10] -testResults\\n[11] /arena/UnityUiResults.xml\\nThere are no matches on record!\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nCanceling all notifications\\nFader: loading panel is initally shown\"}]",
-              "code": null,
-              "err": {
-                "message": "Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect",
-                "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
-                "diff": null
-              },
-              "uuid": "55ce238b-b936-4519-9f96-4099c5eea7fb",
-              "parentUUID": "2d28e0c9-a4e9-44c0-8681-a6ff6fb2a5b3",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "OpenFreePack",
-              "fullTitle": "PlayPanelUITests.OpenFreePack",
-              "duration": 2278,
-              "state": "failed",
-              "speed": "fast",
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 90000\"]},{\"title\":\"system-out\",\"value\":\"<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'RewardCardTemplate') is missing!\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'CrestDisplay') is missing!\\ntow manager is exists delete the second\\nUsing MANAGED ZLib\\nScene FrontEndScene is loaded\\n<E> Front-end started\\nTimestamp: 22.02.2019. 16:04:50 UTC+0\\nApp version: 0.9.166\\nBuild: 1902011800 / develop / Android\\nBuild time: 01.02.2019. 18:00 UTC+0\\nDevice model: PC\\nScreen resolution: 640 x 480 (0 dpi)\\nScreen safe area: 0, 0 -> 640, 480 (640 x 480)\\nVertical safe ratio: 1\\n<E> GUI switch: login\\nSKIP_SOCIAL override is set, won't use social plugins for login\\nCommand line argument count : 12\\n[0] /opt/Unity/Editor/Unity\\n[1] -accept-apiupdate\\n[2] -projectPath\\n[3] /arena\\n[4] -batchmode\\n[5] -nographics\\n[6] -logfile\\n[7] -runTests\\n[8] -testPlatform\\n[9] playmode\\n[10] -testResults\\n[11] /arena/UnityUiResults.xml\\nThere are no matches on record!\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nCanceling all notifications\\nFader: loading panel is initally shown\"}]",
-              "code": null,
-              "err": {
-                "message": "Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect",
-                "estack": "SimpleFudbal.MasterClasses.Lambda.MasterClient.get_MyGroup () (at Assets/Scripts/Network/Lambda/MasterClient.cs:2110)\nSimpleFudbal.MasterClasses.Lambda.MasterClient.get_MyDivision () (at Assets/Scripts/Network/Lambda/MasterClient.cs:2123)\nPlayPanel.PrepareToShow (ManagedPanel+SwitchType stype, System.Collections.Generic.Dictionary`2[TKey,TValue] data) (at Assets/Scripts/FrontEnd/PlayPanel.cs:179)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2277)\nUIManager.Update () (at Assets/Scripts/UI-Generic/UIManager.cs:953)",
-                "diff": null
-              },
-              "uuid": "58f01da8-f2c1-42f6-b5ae-faae1bb63719",
-              "parentUUID": "2d28e0c9-a4e9-44c0-8681-a6ff6fb2a5b3",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "StartMatchmakingAndCancel",
-              "fullTitle": "PlayPanelUITests.StartMatchmakingAndCancel",
-              "duration": 1223,
-              "state": "failed",
-              "speed": "fast",
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 90000\"]},{\"title\":\"system-out\",\"value\":\"The referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'RewardCardTemplate') is missing!\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'CrestDisplay') is missing!\\ntow manager is exists delete the second\\nUsing MANAGED ZLib\\nScene FrontEndScene is loaded\\n<E> Front-end started\\nTimestamp: 22.02.2019. 16:04:52 UTC+0\\nApp version: 0.9.166\\nBuild: 1902011800 / develop / Android\\nBuild time: 01.02.2019. 18:00 UTC+0\\nDevice model: PC\\nScreen resolution: 640 x 480 (0 dpi)\\nScreen safe area: 0, 0 -> 640, 480 (640 x 480)\\nVertical safe ratio: 1\\n<E> GUI switch: login\\nSKIP_SOCIAL override is set, won't use social plugins for login\\nCommand line argument count : 12\\n[0] /opt/Unity/Editor/Unity\\n[1] -accept-apiupdate\\n[2] -projectPath\\n[3] /arena\\n[4] -batchmode\\n[5] -nographics\\n[6] -logfile\\n[7] -runTests\\n[8] -testPlatform\\n[9] playmode\\n[10] -testResults\\n[11] /arena/UnityUiResults.xml\\nThere are no matches on record!\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nCanceling all notifications\\nFader: loading panel is initally shown\"}]",
-              "code": null,
-              "err": {
-                "message": "Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect",
-                "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
-                "diff": null
-              },
-              "uuid": "61ed37b8-23b0-4df3-ad0a-3001596d95bd",
-              "parentUUID": "2d28e0c9-a4e9-44c0-8681-a6ff6fb2a5b3",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [],
-          "failures": [
-            "97b62c45-2670-4394-acc8-aa4e96146f28",
-            "55ce238b-b936-4519-9f96-4099c5eea7fb",
-            "58f01da8-f2c1-42f6-b5ae-faae1bb63719",
-            "61ed37b8-23b0-4df3-ad0a-3001596d95bd"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 6041,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
-        },
-        {
-          "uuid": "272aaca6-02d2-41f7-b9da-0602c482563a",
+          "uuid": "418d0bdc-3c3f-4fcf-bf3b-cb1e7050121f",
           "title": "PlayMatch",
           "file": "PlayPanelUITests.PlayMatch",
           "beforeHooks": [],
@@ -428,8 +321,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "fcf966a9-23e7-4b83-96ef-66145227d9e6",
-              "parentUUID": "272aaca6-02d2-41f7-b9da-0602c482563a",
+              "uuid": "ab103356-e4cb-416d-9223-675fe351fd9e",
+              "parentUUID": "418d0bdc-3c3f-4fcf-bf3b-cb1e7050121f",
               "isHook": false,
               "skipped": false
             }
@@ -437,7 +330,7 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "fcf966a9-23e7-4b83-96ef-66145227d9e6"
+            "ab103356-e4cb-416d-9223-675fe351fd9e"
           ],
           "pending": [],
           "skipped": [],
@@ -447,7 +340,114 @@
           "_timeout": 10000
         },
         {
-          "uuid": "8fcdd9d9-cea1-478e-a57a-e21f0bc62642",
+          "uuid": "e11be79a-7d25-437a-9c6e-5ffbd852f14f",
+          "title": "PlayPanelUITests",
+          "file": "PlayPanelUITests",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GoToMyProfile",
+              "fullTitle": "PlayPanelUITests.GoToMyProfile",
+              "duration": 37,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 90000\"]},{\"title\":\"system-out\",\"value\":\"Exception: Operation timed out: UITestBase+PanelShown ''\\n  at System.Environment.get_StackTrace () [0x00000] in <ac823e2bb42b41bda67924a45a0173c3>:0\\n  at UITestBase.WaitFor (UITestBase+Condition condition, System.Single timeout) [0x00008] in /arena/Assets/UITestBase/UITestBase.cs:38\\n  at EditTeamCrest+<ChangeCrestColors>d__0.MoveNext () [0x0011c] in /arena/Assets/Scripts/UITest/TeamEdit/EditTeamCrest.cs:30\\n  at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x00031] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:29\\n  at UnityEngine.TestTools.EnumerableTestMethodCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x000ec] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableTestMethodCommand.cs:36\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.UnityLogCheckDelegatingCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00153] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityLogCheckDelegatingCommand.cs:67\\n  at UnityEngine.TestTools.SetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x0017a] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/SetUpTearDownCommand.cs:55\\n  at UnityEngine.TestTools.EnumerableSetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00289] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableSetUpTearDownCommand.cs:101\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CoroutineTestWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x001b2] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CoroutineTestWorkItem.cs:67\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190\\n  at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73\\n  at UnityEngine.TestTools.TestRunner.PlaymodeTestsController+<TestRunnerCorotine>c__Iterator1.MoveNext () [0x00062] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/TestRunner/PlaymodeTestsController.cs:69\\n  at UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) [0x00028] in /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17\"}]",
+              "code": null,
+              "err": {
+                "message": "Unhandled log message: '[Exception] Exception: Operation timed out: UITestBase+PanelShown ''   at System.Environment.get_StackTrace () [0x00000] in <ac823e2bb42b41bda67924a45a0173c3>:0   at UITestBase.WaitFor (UITestBase+Condition condition, System.Single timeout) [0x00008] in /arena/Assets/UITestBase/UITestBase.cs:38   at EditTeamCrest+<ChangeCrestColors>d__0.MoveNext () [0x0011c] in /arena/Assets/Scripts/UITest/TeamEdit/EditTeamCrest.cs:30   at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x00031] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:29   at UnityEngine.TestTools.EnumerableTestMethodCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x000ec] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableTestMethodCommand.cs:36   at UnityEngine.TestRunner.NUnitExtensions.Runner.UnityLogCheckDelegatingCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00153] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityLogCheckDelegatingCommand.cs:67   at UnityEngine.TestTools.SetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x0017a] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/SetUpTearDownCommand.cs:55   at UnityEngine.TestTools.EnumerableSetUpTearDownCommand+<ExecuteEnumerable>c__Iterator0.MoveNext () [0x00289] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableSetUpTearDownCommand.cs:101   at UnityEngine.TestRunner.NUnitExtensions.Runner.CoroutineTestWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x001b2] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CoroutineTestWorkItem.cs:67   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<RunChildren>c__Iterator1.MoveNext () [0x000fe] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:190   at UnityEngine.TestRunner.NUnitExtensions.Runner.CompositeWorkItem+<PerformWork>c__Iterator0.MoveNext () [0x0023b] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs:73   at UnityEngine.TestTools.TestRunner.PlaymodeTestsController+<TestRunnerCorotine>c__Iterator1.MoveNext () [0x00062] in /home/builduser/buildslave/unity/build/Extensions/TestRunner/UnityEngine.TestRunner/TestRunner/PlaymodeTestsController.cs:69   at UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) [0x00028] in /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17 '. Use UnityEngine.TestTools.LogAssert.Expect",
+                "estack": "UITestBase+<WaitForInternal>d__13.MoveNext () (at Assets/UITestBase/UITestBase.cs:106)\nUnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)",
+                "diff": null
+              },
+              "uuid": "bb0e335c-0b2b-45a2-aadf-1bc1f11ccb3c",
+              "parentUUID": "e11be79a-7d25-437a-9c6e-5ffbd852f14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GoToOthersProfile",
+              "fullTitle": "PlayPanelUITests.GoToOthersProfile",
+              "duration": 1197,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 120000\"]},{\"title\":\"system-out\",\"value\":\"The referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'RewardCardTemplate') is missing!\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'CrestDisplay') is missing!\\ntow manager is exists delete the second\\nUsing MANAGED ZLib\\nScene FrontEndScene is loaded\\n<E> Front-end started\\nTimestamp: 22.02.2019. 16:04:48 UTC+0\\nApp version: 0.9.166\\nBuild: 1902011800 / develop / Android\\nBuild time: 01.02.2019. 18:00 UTC+0\\nDevice model: PC\\nScreen resolution: 640 x 480 (0 dpi)\\nScreen safe area: 0, 0 -> 640, 480 (640 x 480)\\nVertical safe ratio: 1\\n<E> GUI switch: login\\nSKIP_SOCIAL override is set, won't use social plugins for login\\nCommand line argument count : 12\\n[0] /opt/Unity/Editor/Unity\\n[1] -accept-apiupdate\\n[2] -projectPath\\n[3] /arena\\n[4] -batchmode\\n[5] -nographics\\n[6] -logfile\\n[7] -runTests\\n[8] -testPlatform\\n[9] playmode\\n[10] -testResults\\n[11] /arena/UnityUiResults.xml\\nThere are no matches on record!\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nCanceling all notifications\\nFader: loading panel is initally shown\"}]",
+              "code": null,
+              "err": {
+                "message": "Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect",
+                "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
+                "diff": null
+              },
+              "uuid": "6d631da1-cbc4-49d3-a0cb-e1f308e8a172",
+              "parentUUID": "e11be79a-7d25-437a-9c6e-5ffbd852f14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "OpenFreePack",
+              "fullTitle": "PlayPanelUITests.OpenFreePack",
+              "duration": 2278,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 90000\"]},{\"title\":\"system-out\",\"value\":\"<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'RewardCardTemplate') is missing!\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'CrestDisplay') is missing!\\ntow manager is exists delete the second\\nUsing MANAGED ZLib\\nScene FrontEndScene is loaded\\n<E> Front-end started\\nTimestamp: 22.02.2019. 16:04:50 UTC+0\\nApp version: 0.9.166\\nBuild: 1902011800 / develop / Android\\nBuild time: 01.02.2019. 18:00 UTC+0\\nDevice model: PC\\nScreen resolution: 640 x 480 (0 dpi)\\nScreen safe area: 0, 0 -> 640, 480 (640 x 480)\\nVertical safe ratio: 1\\n<E> GUI switch: login\\nSKIP_SOCIAL override is set, won't use social plugins for login\\nCommand line argument count : 12\\n[0] /opt/Unity/Editor/Unity\\n[1] -accept-apiupdate\\n[2] -projectPath\\n[3] /arena\\n[4] -batchmode\\n[5] -nographics\\n[6] -logfile\\n[7] -runTests\\n[8] -testPlatform\\n[9] playmode\\n[10] -testResults\\n[11] /arena/UnityUiResults.xml\\nThere are no matches on record!\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nCanceling all notifications\\nFader: loading panel is initally shown\"}]",
+              "code": null,
+              "err": {
+                "message": "Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect",
+                "estack": "SimpleFudbal.MasterClasses.Lambda.MasterClient.get_MyGroup () (at Assets/Scripts/Network/Lambda/MasterClient.cs:2110)\nSimpleFudbal.MasterClasses.Lambda.MasterClient.get_MyDivision () (at Assets/Scripts/Network/Lambda/MasterClient.cs:2123)\nPlayPanel.PrepareToShow (ManagedPanel+SwitchType stype, System.Collections.Generic.Dictionary`2[TKey,TValue] data) (at Assets/Scripts/FrontEnd/PlayPanel.cs:179)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2277)\nUIManager.Update () (at Assets/Scripts/UI-Generic/UIManager.cs:953)",
+                "diff": null
+              },
+              "uuid": "558d032b-7dee-4c86-81a9-f99e3d26dc94",
+              "parentUUID": "e11be79a-7d25-437a-9c6e-5ffbd852f14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "StartMatchmakingAndCancel",
+              "fullTitle": "PlayPanelUITests.StartMatchmakingAndCancel",
+              "duration": 1223,
+              "state": "failed",
+              "speed": "fast",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"_JOINTYPE: UnityCombinatorial\",\"Timeout: 90000\"]},{\"title\":\"system-out\",\"value\":\"The referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'RewardCardTemplate') is missing!\\nThe referenced script (Unknown) on this Behaviour is missing!\\nThe referenced script on this Behaviour (Game Object 'CrestDisplay') is missing!\\ntow manager is exists delete the second\\nUsing MANAGED ZLib\\nScene FrontEndScene is loaded\\n<E> Front-end started\\nTimestamp: 22.02.2019. 16:04:52 UTC+0\\nApp version: 0.9.166\\nBuild: 1902011800 / develop / Android\\nBuild time: 01.02.2019. 18:00 UTC+0\\nDevice model: PC\\nScreen resolution: 640 x 480 (0 dpi)\\nScreen safe area: 0, 0 -> 640, 480 (640 x 480)\\nVertical safe ratio: 1\\n<E> GUI switch: login\\nSKIP_SOCIAL override is set, won't use social plugins for login\\nCommand line argument count : 12\\n[0] /opt/Unity/Editor/Unity\\n[1] -accept-apiupdate\\n[2] -projectPath\\n[3] /arena\\n[4] -batchmode\\n[5] -nographics\\n[6] -logfile\\n[7] -runTests\\n[8] -testPlatform\\n[9] playmode\\n[10] -testResults\\n[11] /arena/UnityUiResults.xml\\nThere are no matches on record!\\n<E> GUI switch: play\\nNullReferenceException: Object reference not set to an instance of an object\\nCanceling all notifications\\nFader: loading panel is initally shown\"}]",
+              "code": null,
+              "err": {
+                "message": "Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect",
+                "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
+                "diff": null
+              },
+              "uuid": "20582bfb-a27b-429e-9357-11e2013b58db",
+              "parentUUID": "e11be79a-7d25-437a-9c6e-5ffbd852f14f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bb0e335c-0b2b-45a2-aadf-1bc1f11ccb3c",
+            "6d631da1-cbc4-49d3-a0cb-e1f308e8a172",
+            "558d032b-7dee-4c86-81a9-f99e3d26dc94",
+            "20582bfb-a27b-429e-9357-11e2013b58db"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6041,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "fc2ba1ed-d39d-4d97-ba7c-77905b9710fd",
           "title": "StoreUITests",
           "file": "StoreUITests",
           "beforeHooks": [],
@@ -469,8 +469,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "1d33843c-1ce8-4747-8e9c-6ce6fb8e17f2",
-              "parentUUID": "8fcdd9d9-cea1-478e-a57a-e21f0bc62642",
+              "uuid": "0a417e3f-e62e-492c-9673-5b9cc94f7a4a",
+              "parentUUID": "fc2ba1ed-d39d-4d97-ba7c-77905b9710fd",
               "isHook": false,
               "skipped": false
             },
@@ -490,8 +490,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "cc30ea6a-3868-41b5-bc79-504a98c044a4",
-              "parentUUID": "8fcdd9d9-cea1-478e-a57a-e21f0bc62642",
+              "uuid": "e3117888-9e5a-4e9e-a060-cf045b4dbef4",
+              "parentUUID": "fc2ba1ed-d39d-4d97-ba7c-77905b9710fd",
               "isHook": false,
               "skipped": false
             },
@@ -511,8 +511,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "f0022def-acb3-43b4-849c-1a6e20a8259d",
-              "parentUUID": "8fcdd9d9-cea1-478e-a57a-e21f0bc62642",
+              "uuid": "608d307c-d09b-42d1-b964-f7d54752a371",
+              "parentUUID": "fc2ba1ed-d39d-4d97-ba7c-77905b9710fd",
               "isHook": false,
               "skipped": false
             },
@@ -532,8 +532,8 @@
                 "estack": "PlayPanel.SetupArenas () (at Assets/Scripts/FrontEnd/PlayPanel.cs:151)\nPlayPanel.Initialize (System.Boolean initialLogin) (at Assets/Scripts/FrontEnd/PlayPanel.cs:142)\nManagedPanel.Load (System.Boolean initialLogin) (at Assets/Scripts/UI-Generic/ManagedPanel.cs:51)\nUIManager.ShowNextPanel (System.Boolean instant) (at Assets/Scripts/UI-Generic/UIManager.cs:2276)\nUIManager.SwitchTo (ManagedPanel nextPanel, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2151)\nUIManager.SwitchTo (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous, ManagedPanel+SwitchType switchType) (at Assets/Scripts/UI-Generic/UIManager.cs:2096)\nUIManager.SwitchToPanel (System.String panelName, System.Collections.Generic.Dictionary`2[TKey,TValue] data, System.Boolean force, System.Boolean simultaneous) (at Assets/Scripts/UI-Generic/UIManager.cs:1987)\nBootPanel.ReturnToFrontEnd () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:364)\nBootPanel.Start () (at Assets/Scripts/FrontEnd/Loading/BootPanel.cs:241)",
                 "diff": null
               },
-              "uuid": "a089bd80-de96-4f08-9e76-db59c6032f33",
-              "parentUUID": "8fcdd9d9-cea1-478e-a57a-e21f0bc62642",
+              "uuid": "83fc8ddd-5686-4a4e-a018-efa5e8900f5d",
+              "parentUUID": "fc2ba1ed-d39d-4d97-ba7c-77905b9710fd",
               "isHook": false,
               "skipped": false
             },
@@ -553,8 +553,8 @@
                 "estack": "UITestBase+<WaitForInternal>d__13.MoveNext () (at Assets/UITestBase/UITestBase.cs:106)\nUnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at /home/builduser/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)",
                 "diff": null
               },
-              "uuid": "c817bac3-d82e-46cd-bd61-db49379a97de",
-              "parentUUID": "8fcdd9d9-cea1-478e-a57a-e21f0bc62642",
+              "uuid": "2efb59c6-a9c3-4360-8834-8ae597491016",
+              "parentUUID": "fc2ba1ed-d39d-4d97-ba7c-77905b9710fd",
               "isHook": false,
               "skipped": false
             }
@@ -562,11 +562,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "1d33843c-1ce8-4747-8e9c-6ce6fb8e17f2",
-            "cc30ea6a-3868-41b5-bc79-504a98c044a4",
-            "f0022def-acb3-43b4-849c-1a6e20a8259d",
-            "a089bd80-de96-4f08-9e76-db59c6032f33",
-            "c817bac3-d82e-46cd-bd61-db49379a97de"
+            "0a417e3f-e62e-492c-9673-5b9cc94f7a4a",
+            "e3117888-9e5a-4e9e-a060-cf045b4dbef4",
+            "608d307c-d09b-42d1-b964-f7d54752a371",
+            "83fc8ddd-5686-4a4e-a018-efa5e8900f5d",
+            "2efb59c6-a9c3-4360-8834-8ae597491016"
           ],
           "pending": [],
           "skipped": [],

@@ -114,11 +114,11 @@ function parseXml(options, xml){
     }
 
     // sort test suites
-    if(json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].classname){
-        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'classname'])
+    if(json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].name){
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'name'])
     }
-    else if(json.testsuites[0].testsuite[0].classname){
-        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['classname'])
+    else if(json.testsuites[0].testsuite[0].name){
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['name'])
     }
     else{
         //json.testsuites[0].testsuite.sort((a,b) => a.name - b.name);
@@ -198,30 +198,41 @@ function getContext(testcase){
         }
 
         if(testcase["system-out"] && testcase["system-out"].length !== 0){
-            let systemout = testcase["system-out"][0];
-            if(systemout.$t){
-                systemout = systemout.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
-            }
-            if(systemout !== skipped){
-                context.push(
-                    {
-                        title: 'system-out',
-                        value: systemout
-                    }
-                );
-            }
+            extractSystemMessage('system-out', skipped, testcase["system-out"][0], context)
+            // let systemout = testcase["system-out"][0];
+            // if(systemout.$t){
+            //     systemout = systemout.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
+            // }
+            // if(systemout !== skipped){
+            //     context.push(
+            //         {
+            //             title: 'system-out',
+            //             value: systemout
+            //         }
+            //     );
+            // }
         }
 
         if(testcase["system-err"] && testcase["system-err"].length !== 0){
-            context.push(
-                {
-                    title: 'system-err',
-                    value: testcase["system-err"][0]
-                }
-            );
+            extractSystemMessage('system-err', skipped, testcase["system-err"][0], context)
         }
     }
     return context;
+}
+
+function extractSystemMessage(name, skipped, systemMessage, context){
+    if(systemMessage.$t){
+        systemMessage = systemMessage.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
+    }
+    if(systemMessage !== skipped){
+        context.push(
+            {
+                title: name,
+                value: systemMessage
+            }
+        );
+    }
+
 }
 
 /**
