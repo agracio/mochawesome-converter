@@ -17,19 +17,7 @@ async function xsltConverter(config) {
 async function convert(options){
 
     let config = conf.config(options);
-
-    //console.log(`Converting file ${options.testFile} using '${options.testType}' converter.`);
-
-    switch (config.testType) {
-        case 'junit':
-            config.transformJunit ? await xsltConverter(config) : await junit.convert(config, null);
-            break;
-        case 'nunit':
-        case 'xunit':
-        case 'trx':
-            await xsltConverter(config);
-            break;
-    }
+    await xsltConverter(config);
 }
 
 module.exports = convert;
