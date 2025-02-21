@@ -43,7 +43,6 @@
     "xslt-processor": "^3.3.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "jest-html-reporters": "^3.1.7"
+    "jest": "^29.7.0"
   }
 }
