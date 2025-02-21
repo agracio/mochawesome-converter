@@ -1,6 +1,6 @@
 {
   "name": "mochawesome-converter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Test report files to Mochawesome and JUnit converter",
   "main": "src/converter.js",
   "types": "index.d.ts",
