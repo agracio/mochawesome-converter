@@ -59,7 +59,7 @@ interface CaseFailure{
     $t?: string
 }
 
-interface CaseError extends CaseFailure{}
+type CaseError = CaseFailure
 
 interface ErrorMessage{
     message: string,

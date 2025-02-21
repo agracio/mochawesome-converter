@@ -4,8 +4,8 @@ on:
   push:
     paths-ignore:
       - '.github/FUNDING.YML'
+      - '.github/dependabot.yml'
       - '**/*.md'
-      - '**/*.d.ts'
       - '.gitconfig'
       - '.gitignore'
       - '.npmignore'
@@ -13,8 +13,7 @@ on:
       - '.idea/**'
       - '.vscode/**'
       - 'README.md'
-      - '.github/dependabot.yml'
-      - '.github/FUNDING.yml'
+      - 'gulpfile.js'
 
 jobs:
   test:

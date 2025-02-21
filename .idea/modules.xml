@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/xml2mochawesome.iml" filepath="$PROJECT_DIR$/.idea/xml2mochawesome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mochawesome-converter.iml" filepath="$PROJECT_DIR$/.idea/mochawesome-converter.iml" />
     </modules>
   </component>
 </project>

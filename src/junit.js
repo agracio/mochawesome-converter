@@ -151,7 +151,7 @@ function getError(testcase){
         message = `${prefix}${fail.message.replaceAll('&#xD;', '').replaceAll('&#xA;', '')}`;
     }
     if(fail.$t){
-        estack = fail.$t.replaceAll('&#xD;', '\n').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
+        estack = fail.$t.replaceAll('&#xD;', '\n').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '"');
     }
     else if(typeof fail === 'string'){
         estack = fail;
@@ -193,7 +193,7 @@ function getContext(testcase){
         }
 
         if(testcase.skipped && testcase.skipped[0].message){
-            skipped = testcase.skipped[0].message.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
+            skipped = testcase.skipped[0].message.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '"');
             context.push(`skipped: ${skipped}`);
         }
 
@@ -222,7 +222,7 @@ function getContext(testcase){
 
 function extractSystemMessage(name, skipped, systemMessage, context){
     if(systemMessage.$t){
-        systemMessage = systemMessage.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
+        systemMessage = systemMessage.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '"');
     }
     if(systemMessage !== skipped){
         context.push(
