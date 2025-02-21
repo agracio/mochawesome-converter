@@ -21,7 +21,6 @@ function createOptions(file, type){
         reportDir: outDir,
         reportFilename:`${path.parse(file).name}-mochawesome.json`,
         junit: true,
-        transformJunit: true,
         junitReportFilename: `${path.parse(file).name}-junit.xml`,
     }
 }

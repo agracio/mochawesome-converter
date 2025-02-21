@@ -44,7 +44,6 @@ function config (options) {
   let htmlReportFilename = 'mochawesome.html';
   let saveIntermediateFiles = false;
   let junit = false;
-  let transformJunit = false;
   let junitReportFilename = `${path.parse(options.testFile).name}-junit.xml`;
 
   if(options.skippedAsPending === false || options.skippedAsPending === 'false'){
@@ -79,10 +78,6 @@ function config (options) {
     junit = true;
   }
 
-  if(options.transformJunit === true || options.transformJunit === 'true'){
-    transformJunit = true;
-  }
-
   if(options.junitReportFilename){
     junitReportFilename = options.junitReportFilename;
   }
@@ -100,7 +95,6 @@ function config (options) {
     reportPath: path.join(reportDir, reportFilename),
     junit: junit,
     junitReportFilename: junitReportFilename,
-    transformJunit: transformJunit,
     html: html,
     htmlReportFilename: htmlReportFilename,
     saveIntermediateFiles: saveIntermediateFiles,
