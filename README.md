@@ -63,7 +63,7 @@ https://github.com/adamgruber/mochawesome
 
 ### NUnit
 
-- NUnit XML version 3 and higher is supported.
+- NUnit v3+ XML is supported.
 - Converts **&lt;properties&gt;** elements to JUnit **&lt;properties&gt;**.
 - Converts **&lt;output&gt;** elements to JUnit **&lt;system-out&gt;**.
 
