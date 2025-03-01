@@ -69,7 +69,7 @@ jobs:
 
       - name: publish test-summary Linux
         if: runner.os == 'Linux'
-        uses: publish-unit-test-result-action@v2
+        uses: EnricoMi/publish-unit-test-result-action@v2
         with:
           check_run_annotations: 'none'
           check_name: 'test-summary-${{ matrix.os }}'
