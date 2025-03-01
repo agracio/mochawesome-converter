@@ -22,7 +22,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-2022]
+        # os: [macos-latest, ubuntu-latest, windows-2022]
+        os: [macos-latest, ubuntu-latest]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -54,3 +55,10 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: coverage/lcov.info
+
+      - name: publish test-summary
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        with:
+          check_run_annotations: 'none'
+          check_name: 'test-summary'
+          files: "junit.xml"

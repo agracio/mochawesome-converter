@@ -25,6 +25,7 @@
     "JUnit",
     "NUnit",
     "xUnit",
+    "xUnit.net",
     "TRX"
   ],
   "tags": [
@@ -33,6 +34,7 @@
     "JUnit",
     "NUnit",
     "xUnit",
+    "xUnit.net",
     "TRX"
   ],
   "dependencies": {
@@ -43,6 +45,7 @@
     "xslt-processor": "^3.3.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0"
   }
 }
