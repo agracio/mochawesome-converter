@@ -39,9 +39,9 @@ function config (options) {
   let skippedAsPending = true;
   let switchClassnameAndName = false;
   let reportDir = './report';
-  let reportFilename = 'mochawesome.json';
+  let reportFilename = `${path.parse(options.testFile).name}-mochawesome.json`;
   let html = false;
-  let htmlReportFilename = 'mochawesome.html';
+  let htmlReportFilename = `${path.parse(options.testFile).name}-mochawesome.html`;
   let saveIntermediateFiles = false;
   let junit = false;
   let junitReportFilename = `${path.parse(options.testFile).name}-junit.xml`;

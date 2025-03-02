@@ -105,18 +105,18 @@ convert(options).then(() => console.log(`Mochawesome report created`));
 
 ### Options
 
-| Option                    | Type    | Default                   | Description                                                                                     |
-|:--------------------------|:--------|:--------------------------|:------------------------------------------------------------------------------------------------|
-| `testFile` **(required)** | string  |                           | Path to test file for conversion                                                                |
-| `testType` **(required)** | string  |                           | [Test report type](https://github.com/agracio/mochawesome-converter#supported-testtype-options) |
-| `reportDir`               | string  | ./report                  | Converted report output path                                                                    |
-| `reportFilename`          | string  | mochawesome.json          | Mochawesome report name                                                                         |
-| `junit`                   | boolean | false                     | Create JUnit report?                                                                            |
-| `junitReportFilename`     | string  | `testFile.name`-junit.xml | JUnit report file name                                                                          |
-| `html`                    | boolean | false                     | Create Mochawesome HTML?                                                                        |
-| `htmlReportFilename`      | string  | mochawesome.html          | Mochawesome HTML file name                                                                      |
-| `skippedAsPending`        | boolean | true                      | Show skipped tests as pending in Mochawesome                                                    |
-| `switchClassnameAndName`  | boolean | false                     | Switch test case classname and name                                                             |
+| Option                    | Type    | Default                          | Description                                                                                     |
+|:--------------------------|:--------|:---------------------------------|:------------------------------------------------------------------------------------------------|
+| `testFile` **(required)** | string  |                                  | Path to test file for conversion                                                                |
+| `testType` **(required)** | string  |                                  | [Test report type](https://github.com/agracio/mochawesome-converter#supported-testtype-options) |
+| `reportDir`               | string  | ./report                         | Converted report output path                                                                    |
+| `reportFilename`          | string  | `testFile.name`-mochawesome.json | Mochawesome report name                                                                         |
+| `junit`                   | boolean | false                            | Create JUnit report?                                                                            |
+| `junitReportFilename`     | string  | `testFile.name`-junit.xml        | JUnit report file name                                                                          |
+| `html`                    | boolean | false                            | Create Mochawesome HTML?                                                                        |
+| `htmlReportFilename`      | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                                                                      |
+| `skippedAsPending`        | boolean | true                             | Show skipped tests as pending in Mochawesome                                                    |
+| `switchClassnameAndName`  | boolean | false                            | Switch test case classname and name                                                             |
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.

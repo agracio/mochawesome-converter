@@ -50,11 +50,11 @@ describe("Config tests", () => {
         expect(result.skippedAsPending).toBe(true);
         expect(result.switchClassnameAndName).toBe(false);
         expect(result.reportDir).toBe('./report');
-        expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome.json'));
+        expect(result.reportPath).toBe(path.join(result.reportDir, 'xunit-qlnet-mochawesome.json'));
         expect(result.junit).toBe(false);
         expect(result.junitReportFilename).toBe('xunit-qlnet-junit.xml');
         expect(result.html).toBe(false);
-        expect(result.htmlReportFilename).toBe('mochawesome.html');
+        expect(result.htmlReportFilename).toBe('xunit-qlnet-mochawesome.html');
         expect(result.saveIntermediateFiles).toBe(false);
     });
 
