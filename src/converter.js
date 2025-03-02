@@ -1,5 +1,4 @@
 const conf = require('./config');
-const junit = require('./junit');
 const xslt = require('./xslt');
 
 /**

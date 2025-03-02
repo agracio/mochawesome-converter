@@ -4,7 +4,7 @@ const describe = require('@jest/globals').describe;
 const converter = require('../src/converter');
 const common = require("./common");
 
-describe("JUnit converter tests", () => {
+describe.only("JUnit converter tests", () => {
 
     test('junit-jenkins.xml', async() => {
         let options = common.createOptions('junit-jenkins.xml', 'junit');
@@ -33,11 +33,14 @@ describe("JUnit converter tests", () => {
         await converter(options);
         common.compare(options, undefined, true);
     });
+
     test('junit-nested.xml', async() => {
-        let options = common.createOptions('junit-nested.xml', 'junit')
+        let options = common.createOptions('junit-nested.xml', 'junit', true)
 
         await converter(options);
-        common.compare(options, undefined, true);
+        common.compare(options, undefined, true, true);
+
     });
+
 
 });

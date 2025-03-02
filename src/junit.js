@@ -89,18 +89,13 @@ function parseXml(options, xml){
         throw `\nCould not parse JSON from converted XML ${options.testFile}.\n ${e.message}`;
     }
 
+    if(json && json.testsuites && json.testsuites.length && json.testsuites.length === 0){
+        console.log('No test suites found, skipping Mochawesome file creation.');
+        return null;
+    }
+
     if(!json || !json.testsuites || !json.testsuites.length){
-        if(json && json.testsuite){
-            json.testsuites = [{testsuite: json.testsuite}];
-            delete json['testsuite'];
-        }
-        if(json && json.testsuites && json.testsuites.length && json.testsuites.length === 0){
-            console.log('No test suites found, skipping Mochawesome file creation.');
-            return undefined;
-        }
-        else if(!json || !json.testsuites || !json.testsuites.length){
-            throw `\nCould not find valid <testsuites> or <testsuite> root element in converted ${options.testFile}`;
-        }
+        throw `\nCould not find valid <testsuites> or <testsuite> root element in converted ${options.testFile}`;
     }
 
     if(options.saveIntermediateFiles){

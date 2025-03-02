@@ -58,6 +58,20 @@ TypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex
 --------------------------------------------------------------------------------
 ]]>
             </system-out>
+            <system-err>
+                <![CDATA[
+Failing step: When I change the patient name to "John Doe" on the host ... failed in 0.001s
+Location: tests/features/PatientRegistration.feature:20
+Traceback (most recent call last):
+  File "D:\dev\bdd_demo_behave\.venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "D:\dev\bdd_demo_behave\.venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "tests\features\steps\step_patient_registration.py", line 33, in step_impl
+    context.patient.edit(first_name="John", last_name="Doe")
+TypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'
+]]>
+            </system-err>
         </testcase>
     </testsuite>
 </testsuites>
