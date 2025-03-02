@@ -89,13 +89,17 @@ function parseXml(options, xml){
         throw `\nCould not parse JSON from converted XML ${options.testFile}.\n ${e.message}`;
     }
 
-    if(json && json.testsuites && json.testsuites.length && json.testsuites.length === 0){
+    if((json && json.testsuites && json.testsuites.length && json.testsuites.length === 0)
+        || (!json
+            || !json.testsuites
+            || !json.testsuites.length
+            || !json.testsuites[0].testsuite
+            || !json.testsuites[0].testsuite.length
+            || json.testsuites[0].testsuite.length === 0)
+
+    ){
         console.log('No test suites found, skipping Mochawesome file creation.');
         return null;
-    }
-
-    if(!json || !json.testsuites || !json.testsuites.length){
-        throw `\nCould not find valid <testsuites> or <testsuite> root element in converted ${options.testFile}`;
     }
 
     if(options.saveIntermediateFiles){
@@ -103,10 +107,6 @@ function parseXml(options, xml){
         fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8');
     }
 
-    if(!json.testsuites[0].testsuite || !json.testsuites[0].testsuite.length || json.testsuites[0].testsuite.length === 0){
-        console.log('No test suites found, skipping Mochawesome file creation.');
-        return undefined;
-    }
 
     // sort test suites
     if(json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].name){
@@ -194,18 +194,6 @@ function getContext(testcase){
 
         if(testcase["system-out"] && testcase["system-out"].length !== 0){
             extractSystemMessage('system-out', skipped, testcase["system-out"][0], context)
-            // let systemout = testcase["system-out"][0];
-            // if(systemout.$t){
-            //     systemout = systemout.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '\"');
-            // }
-            // if(systemout !== skipped){
-            //     context.push(
-            //         {
-            //             title: 'system-out',
-            //             value: systemout
-            //         }
-            //     );
-            // }
         }
 
         if(testcase["system-err"] && testcase["system-err"].length !== 0){
