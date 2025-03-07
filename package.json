@@ -1,6 +1,6 @@
 {
   "name": "mochawesome-converter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Test report files to Mochawesome and JUnit converter",
   "main": "src/converter.js",
   "types": "index.d.ts",
@@ -26,7 +26,8 @@
     "NUnit",
     "xUnit",
     "xUnit.net",
-    "TRX"
+    "TRX",
+    "MSTest"
   ],
   "tags": [
     "mochawesome",
@@ -35,7 +36,8 @@
     "NUnit",
     "xUnit",
     "xUnit.net",
-    "TRX"
+    "TRX",
+    "MSTest"
   ],
   "dependencies": {
     "lodash": "^4.17.21",

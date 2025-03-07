@@ -66,4 +66,10 @@ describe("TRX converter tests", () => {
         common.compare(options, undefined, true);
     });
 
+    test('trx-properties.trx', async() => {
+        let options = common.createOptions('trx-properties.trx', 'trx')
+        await converter(options);
+        common.compare(options, undefined, true);
+    });
+
 });

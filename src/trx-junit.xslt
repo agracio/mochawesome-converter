@@ -90,6 +90,9 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:variable>
+<!--                                    <xsl:if test="vs:Properties" >-->
+<!--                                        <xsl:variable name="properties" select="node()"/>-->
+<!--                                    </xsl:if>-->
                                     <testcase
                                             classname="{$className}"
                                             name="{$name}"
@@ -120,15 +123,6 @@
                                                     <skipped message="{$message}"/>
                                                 </xsl:otherwise>
                                             </xsl:choose>
-<!--                                            <xsl:if test="$message != ''">-->
-<!--                                                <skipped message="{$message}"/>-->
-<!--                                            </xsl:if>-->
-<!--                                            <xsl:if test="$stdout != ''">-->
-<!--                                                <skipped message="{$stdout}"/>-->
-<!--                                            </xsl:if>-->
-<!--                                            <xsl:if test="$stdout = '' and $message = ''">-->
-<!--                                                <skipped/>-->
-<!--                                            </xsl:if>-->
                                         </xsl:if>
                                         <xsl:if test="$stderr">
                                             <system-err>
@@ -139,6 +133,20 @@
                                             <system-out>
                                                 <xsl:value-of select="$stdout" />
                                             </system-out>
+                                        </xsl:if>
+                                        <xsl:if test="Properties">
+                                            <properties>
+                                                <xsl:for-each select="Properties/Property">
+                                                    <xsl:variable name="propertyName">
+                                                        <xsl:value-of select="Key"/>
+                                                    </xsl:variable>
+                                                    <xsl:variable name="propertyValue">
+                                                        <xsl:value-of select="Value"/>
+                                                    </xsl:variable>
+                                                    <property name="{$propertyName}" value="{$propertyValue}"/>
+                                                </xsl:for-each>
+                                            </properties>
+
                                         </xsl:if>
                                     </testcase>
                                 </xsl:if>

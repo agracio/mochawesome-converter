@@ -14,9 +14,9 @@
 ### Supported report formats
 
 - JUnit/xUnit XML Format  
-- NUnit 3.0+ XML Format  
+- NUnit v3+ XML Format  
 - xUnit.net v2+ XML Format  
-- Visual Studio TRX Format  
+- MSTest TRX Format  
 
 ### What is Mochawesome
 
@@ -130,9 +130,9 @@ convert(options).then(() => console.log(`Mochawesome report created`));
 | `testType` | File Type         |
 |:-----------|:------------------|
 | JUnit      | JUnit/xUnit       |
-| NUnit      | NUnit 3.0+ XML    |
+| NUnit      | NUnit v3+ XML     |
 | xUnit      | xUnit.net v2+ XML |
-| TRX        | Visual Studio TRX |
+| TRX        | MSTest TRX        |
 
 
 

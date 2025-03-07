@@ -4,7 +4,7 @@ const describe = require('@jest/globals').describe;
 const converter = require('../src/converter');
 const common = require("./common");
 
-describe.only("JUnit converter tests", () => {
+describe("JUnit converter tests", () => {
 
     test('junit-jenkins.xml', async() => {
         let options = common.createOptions('junit-jenkins.xml', 'junit');

@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 140
+  },
+  "results": [
+    {
+      "uuid": "ff43b9d3-0a6c-449f-9c5f-6dca050d0177",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6f1c311-f9eb-46fc-8baa-f43e5019a9c9",
+          "title": "Pickles.TestHarness.MSTest.AdditionFeature",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AddTwoNumbers",
+              "fullTitle": "Pickles.TestHarness.MSTest.AdditionFeature",
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 50 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)\\n          And I have entered 70 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(70) (0.0s)\\n          When I press add\\n          -&gt; done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be 120 on the screen\\n          -&gt; done: Steps.ThenTheResultShouldBePass(120) (0.0s)\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "035f609c-a551-4276-b4e5-4aceecda119d",
+              "parentUUID": "f6f1c311-f9eb-46fc-8baa-f43e5019a9c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AddingSeveralNumbers_40",
+              "fullTitle": "Pickles.TestHarness.MSTest.AdditionFeature",
+              "duration": 77,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\",\"VariantName: 40\",\"Parameter:Second Number: 50\",\"Parameter:Result: 90\",\"Parameter:First Number: 40\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 40 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(40) (0.0s)\\n          And I have entered 50 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)\\n          When I press add\\n          -&gt; done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be 90 on the screen\\n          -&gt; done: Steps.ThenTheResultShouldBePass(90) (0.0s)\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "4d415df8-ec95-4424-93bf-329d01193452",
+              "parentUUID": "f6f1c311-f9eb-46fc-8baa-f43e5019a9c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AddingSeveralNumbers_60",
+              "fullTitle": "Pickles.TestHarness.MSTest.AdditionFeature",
+              "duration": 12,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\",\"VariantName: 60\",\"Parameter:Second Number: 70\",\"Parameter:Result: 130\",\"Parameter:First Number: 60\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 60 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(60) (0.0s)\\n          And I have entered 70 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(70) (0.0s)\\n          When I press add\\n          -&gt; done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be 130 on the screen\\n          -&gt; done: Steps.ThenTheResultShouldBePass(130) (0.0s)\"}]",
+              "code": null,
+              "err": {},
+              "uuid": "47325d6c-2d7c-4bf3-8583-26d3eea5b2ab",
+              "parentUUID": "f6f1c311-f9eb-46fc-8baa-f43e5019a9c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "FailToAddTwoNumbers",
+              "fullTitle": "Pickles.TestHarness.MSTest.AdditionFeature",
+              "duration": 46,
+              "state": "failed",
+              "speed": "slow",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 50 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)\\n          And I have entered -1 into the calculator\\n          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(-1) (0.0s)\\n          When I press add\\n          -&gt; done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be -50 on the screen\\n          -&gt; error: Assert.NotEqual() Failure\"}]",
+              "code": null,
+              "err": {
+                "message": "             Test method Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers threw exception:             Should.Core.Exceptions.NotEqualException: Assert.NotEqual() Failure           ",
+                "estack": "at Pickles.TestHarness.MSTest.Steps.ThenTheResultShouldBePass(Int32 result) in C:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Steps.cs:line 28\n            at lambda_method(Closure , IContextManager , Int32 )\n            at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpanamp; duration)\n            at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpanamp; duration)\n            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\n            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)\n            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\n            at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\n            at Pickles.TestHarness.MSTest.AdditionFeature.ScenarioCleanup() in C:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Addition.feature.cs:line 0\n            at Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers() in c:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Addition.feature:line 18",
+                "diff": null
+              },
+              "uuid": "099c5d85-9c7b-4a77-8d5d-a578942ade05",
+              "parentUUID": "f6f1c311-f9eb-46fc-8baa-f43e5019a9c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "035f609c-a551-4276-b4e5-4aceecda119d",
+            "4d415df8-ec95-4424-93bf-329d01193452",
+            "47325d6c-2d7c-4bf3-8583-26d3eea5b2ab"
+          ],
+          "failures": [
+            "099c5d85-9c7b-4a77-8d5d-a578942ade05"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 140,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

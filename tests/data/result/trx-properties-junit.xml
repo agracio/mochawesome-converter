@@ -1,0 +1,84 @@
+<testsuites tests="4" failures="1" errors="0" skipped="0" time="0.1395124">
+    <testsuite name="Pickles.TestHarness.MSTest.AdditionFeature" tests="4" time="0.1395124" failures="1" errors="0" skipped="0">
+        <testcase classname="Pickles.TestHarness.MSTest.AdditionFeature" name="AddTwoNumbers" status="Passed" time="0.0055623">
+            <system-out>
+                Given I have entered 50 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)
+          And I have entered 70 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(70) (0.0s)
+          When I press add
+          -&gt; done: Steps.WhenIPressAdd() (0.0s)
+          Then the result should be 120 on the screen
+          -&gt; done: Steps.ThenTheResultShouldBePass(120) (0.0s)
+            </system-out>
+            <properties>
+                <property name="FeatureTitle" value="Addition"/>
+            </properties>
+        </testcase>
+        <testcase classname="Pickles.TestHarness.MSTest.AdditionFeature" name="AddingSeveralNumbers_40" status="Passed" time="0.0768910">
+            <system-out>
+                Given I have entered 40 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(40) (0.0s)
+          And I have entered 50 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)
+          When I press add
+          -&gt; done: Steps.WhenIPressAdd() (0.0s)
+          Then the result should be 90 on the screen
+          -&gt; done: Steps.ThenTheResultShouldBePass(90) (0.0s)
+            </system-out>
+            <properties>
+                <property name="FeatureTitle" value="Addition"/>
+                <property name="VariantName" value="40"/>
+                <property name="Parameter:Second Number" value="50"/>
+                <property name="Parameter:Result" value="90"/>
+                <property name="Parameter:First Number" value="40"/>
+            </properties>
+        </testcase>
+        <testcase classname="Pickles.TestHarness.MSTest.AdditionFeature" name="AddingSeveralNumbers_60" status="Passed" time="0.0111534">
+            <system-out>
+                Given I have entered 60 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(60) (0.0s)
+          And I have entered 70 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(70) (0.0s)
+          When I press add
+          -&gt; done: Steps.WhenIPressAdd() (0.0s)
+          Then the result should be 130 on the screen
+          -&gt; done: Steps.ThenTheResultShouldBePass(130) (0.0s)
+            </system-out>
+            <properties>
+                <property name="FeatureTitle" value="Addition"/>
+                <property name="VariantName" value="60"/>
+                <property name="Parameter:Second Number" value="70"/>
+                <property name="Parameter:Result" value="130"/>
+                <property name="Parameter:First Number" value="60"/>
+            </properties>
+        </testcase>
+        <testcase classname="Pickles.TestHarness.MSTest.AdditionFeature" name="FailToAddTwoNumbers" status="Failed" time="0.0459057">
+            <failure message="             Test method Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers threw exception:             Should.Core.Exceptions.NotEqualException: Assert.NotEqual() Failure           ">
+                at Pickles.TestHarness.MSTest.Steps.ThenTheResultShouldBePass(Int32 result) in C:\dev\pickles-results-harness\Pickles.TestHarness\Pickles.TestHarness.MSTest\Steps.cs:line 28
+            at lambda_method(Closure , IContextManager , Int32 )
+            at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpanamp; duration)
+            at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpanamp; duration)
+            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+            at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+            at Pickles.TestHarness.MSTest.AdditionFeature.ScenarioCleanup() in C:\dev\pickles-results-harness\Pickles.TestHarness\Pickles.TestHarness.MSTest\Addition.feature.cs:line 0
+            at Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers() in c:\dev\pickles-results-harness\Pickles.TestHarness\Pickles.TestHarness.MSTest\Addition.feature:line 18
+            </failure>
+            <system-out>
+                Given I have entered 50 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)
+          And I have entered -1 into the calculator
+          -&gt; done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(-1) (0.0s)
+          When I press add
+          -&gt; done: Steps.WhenIPressAdd() (0.0s)
+          Then the result should be -50 on the screen
+          -&gt; error: Assert.NotEqual() Failure
+            </system-out>
+            <properties>
+                <property name="FeatureTitle" value="Addition"/>
+            </properties>
+        </testcase>
+    </testsuite>
+</testsuites>
