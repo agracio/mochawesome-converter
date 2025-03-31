@@ -103,6 +103,16 @@ let options = {
 convert(options).then(() => console.log(`Mochawesome report created`));
 ```
 
+### CLI usage
+
+```bash
+npm i -g mochawesome-converter
+```
+
+```bash
+mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
+```
+
 ### Options
 
 | Option                    | Type    | Default                          | Description                                                                                     |
