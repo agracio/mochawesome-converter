@@ -139,7 +139,7 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 
 | `testType` | File Type         |
 |:-----------|:------------------|
-| JUnit      | JUnit/xUnit       |
+| JUnit      | JUnit/xUnit XML   |
 | NUnit      | NUnit v3+ XML     |
 | xUnit      | xUnit.net v2+ XML |
 | TRX        | MSTest TRX        |
