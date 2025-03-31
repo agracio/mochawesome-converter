@@ -7,6 +7,9 @@
   "scripts": {
     "test": "jest --coverage"
   },
+  "bin": {
+    "mochawesome-converter": "./bin/cli.js"
+  },
   "author": "agracio",
   "license": "MIT",
   "repository": {

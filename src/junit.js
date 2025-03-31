@@ -430,6 +430,7 @@ async function convert(options, suitesRoot){
             reportFilename: options.htmlReportFilename,
             reportDir: options.reportDir,
             showSkipped: true,
+            reportTitle: path.basename(options.testFile),
         }
 
         marge.create(mochawesome, margeOptions).then(() => {
