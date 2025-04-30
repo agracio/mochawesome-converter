@@ -1,4 +1,4 @@
-<testsuites tests="10" errors="0" failures="0" skipped="0" assertions="0" time="0.04">
+<testsuites tests="10" errors="0" failures="0" skipped="0" disabled="0" assertions="0" time="0.04">
     <testsuite name="async call from node.js to .net" tests="8" file="C:\projects\Dev\edge-js\test\102_node2net.js" time="0.000" failures="0" timestamp="2024-12-29T20:31:26">
         <testcase name="[.NET] successfuly marshals data from .net to node.js" classname="async call from node.js to .net" time="0.245"/>
         <testcase name="[.NET] successfuly marshals .net exception thrown on v8 thread from .net to node.js" classname="async call from node.js to .net" time="0.009"/>

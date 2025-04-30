@@ -39,6 +39,14 @@
                         </xsl:otherwise>
                     </xsl:choose>
                     <xsl:choose>
+                        <xsl:when test="@disabled">
+                            <xsl:attribute name="disabled"><xsl:value-of select="@disabled"/></xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="disabled"><xsl:value-of select="sum(testsuite/@disabled)" /></xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:choose>
                         <xsl:when test="@assertions">
                             <xsl:attribute name="assertions"><xsl:value-of select="@assertions"/></xsl:attribute>
                         </xsl:when>
@@ -60,8 +68,8 @@
                 </testsuites>
             </xsl:when>
             <xsl:otherwise>
-                <testsuites tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" assertions="{@assertions}" time="{@time}">
-                    <testsuite name="{replace(@name, 'Root Suite.', '')}" classname="{replace(@classname, 'Root Suite.', '')}" file="{@file}" tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" assertions="{@assertions}" time="{@time}" timestamp="{@timestamp}" hostname="{@hostname}" id="{@id}" package="{@package}">
+                <testsuites tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" disabled="{@disabled}" assertions="{@assertions}" time="{@time}">
+                    <testsuite name="{replace(@name, 'Root Suite.', '')}" classname="{replace(@classname, 'Root Suite.', '')}" file="{@file}" tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" disabled="{@disabled}" assertions="{@assertions}" time="{@time}" timestamp="{@timestamp}" hostname="{@hostname}" id="{@id}" package="{@package}">
                         <xsl:apply-templates/>
                     </testsuite>
                 </testsuites>
@@ -72,7 +80,7 @@
 
     <xsl:template match="testsuite">
         <xsl:if test="testcase">
-            <testsuite name="{replace(@name, 'Root Suite.', '')}" classname="{replace(@classname, 'Root Suite.', '')}" tests="{@tests}" file="{@file}" time="{@time}" passed="{@passed}" failures="{@failures}" errors="{@errors}" skipped="{@skipped}" timestamp="{@timestamp}">
+            <testsuite name="{replace(@name, 'Root Suite.', '')}" classname="{replace(@classname, 'Root Suite.', '')}" tests="{@tests}" file="{@file}" time="{@time}" passed="{@passed}" failures="{@failures}" errors="{@errors}" skipped="{@skipped}" disabled="{@disabled}" timestamp="{@timestamp}">
                 <xsl:apply-templates select="testcase"/>
                 <xsl:apply-templates select="properties"/>
                 <xsl:apply-templates select="system-out"/>

@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "3462860e-511e-4da1-8d21-0a69cae35a3e",
+      "uuid": "90b22e31-cb06-4bce-b8e9-2d4d5c8ed04f",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+          "uuid": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
           "title": "async call from node.js to .net",
           "fullFile": "C:\\projects\\Dev\\edge-js\\test\\102_node2net.js",
           "file": "102_node2net.js",
@@ -44,8 +44,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f45c7b14-8bf7-4f89-a860-67eaa36b7526",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "da2f6dc5-7804-46d4-aabe-5e7dfee33d86",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -61,8 +61,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "53f350f6-0901-4f47-9b2b-5ad61c7bab50",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "b64788bf-5075-4deb-8c87-62c11993d454",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -78,8 +78,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "32cec09f-6491-4f6e-86aa-34c2612cf125",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "48e9a1e3-a1e3-49f7-917b-8140510f86a9",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -95,8 +95,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "96270cd8-2750-436f-b1c4-cdb3543e64a9",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "1024d98c-3112-415c-9144-17a37aa9512b",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -112,8 +112,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a46262e2-63f8-468a-bad3-e32689876446",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "a040e158-2e1f-490d-8117-67f4e6650811",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -129,8 +129,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c073c6dd-c59b-4634-9d57-89ac458a3949",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "2e21b285-7b00-4291-b9da-06f3dccd1704",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -146,8 +146,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d4908146-7623-45a9-8009-0efafb1fbbe7",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "36df11ca-bd79-44e1-9c20-880eaa467e93",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             },
@@ -163,22 +163,22 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "96f6d292-6800-4cc8-a5a0-898f10c1beb6",
-              "parentUUID": "c6e4f80e-c995-4483-b965-94efeb0826b5",
+              "uuid": "cb012aaf-f4cc-4ffb-aa1c-4315b3316fab",
+              "parentUUID": "1362eb9a-5c87-4fc7-8a78-94596c3db8d0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f45c7b14-8bf7-4f89-a860-67eaa36b7526",
-            "53f350f6-0901-4f47-9b2b-5ad61c7bab50",
-            "32cec09f-6491-4f6e-86aa-34c2612cf125",
-            "96270cd8-2750-436f-b1c4-cdb3543e64a9",
-            "a46262e2-63f8-468a-bad3-e32689876446",
-            "c073c6dd-c59b-4634-9d57-89ac458a3949",
-            "d4908146-7623-45a9-8009-0efafb1fbbe7",
-            "96f6d292-6800-4cc8-a5a0-898f10c1beb6"
+            "da2f6dc5-7804-46d4-aabe-5e7dfee33d86",
+            "b64788bf-5075-4deb-8c87-62c11993d454",
+            "48e9a1e3-a1e3-49f7-917b-8140510f86a9",
+            "1024d98c-3112-415c-9144-17a37aa9512b",
+            "a040e158-2e1f-490d-8117-67f4e6650811",
+            "2e21b285-7b00-4291-b9da-06f3dccd1704",
+            "36df11ca-bd79-44e1-9c20-880eaa467e93",
+            "cb012aaf-f4cc-4ffb-aa1c-4315b3316fab"
           ],
           "failures": [],
           "pending": [],
@@ -189,7 +189,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "89071926-9977-4081-9fb6-d3abca65d6e5",
+          "uuid": "6255fe9d-da4b-4b7a-9eb9-9c41af16b9e5",
           "title": "async call from node.js to .net.nesting 1.nesting 2",
           "fullFile": "C:\\projects\\Dev\\edge-js\\test\\102_node2net.js",
           "file": "102_node2net.js",
@@ -208,15 +208,15 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e4724b86-c594-4b4a-981b-c2c6db78a14d",
-              "parentUUID": "89071926-9977-4081-9fb6-d3abca65d6e5",
+              "uuid": "f052019a-06d7-4871-b41b-548601b367c3",
+              "parentUUID": "6255fe9d-da4b-4b7a-9eb9-9c41af16b9e5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e4724b86-c594-4b4a-981b-c2c6db78a14d"
+            "f052019a-06d7-4871-b41b-548601b367c3"
           ],
           "failures": [],
           "pending": [],
@@ -227,7 +227,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "252b6ded-54c8-45f2-bf3a-78f93c49a753",
+          "uuid": "8ad0b984-1993-48cb-ba7b-603abd63c4f8",
           "title": "async call from node.js to .net.nesting 1.nesting 2.nesting 3",
           "fullFile": "C:\\projects\\Dev\\edge-js\\test\\102_node2net.js",
           "file": "102_node2net.js",
@@ -246,15 +246,15 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c9b77263-ec56-4e5f-b8c6-7a317f9b73ca",
-              "parentUUID": "252b6ded-54c8-45f2-bf3a-78f93c49a753",
+              "uuid": "d0de9603-8fc3-4bf6-ad11-c11c7e2047c9",
+              "parentUUID": "8ad0b984-1993-48cb-ba7b-603abd63c4f8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c9b77263-ec56-4e5f-b8c6-7a317f9b73ca"
+            "d0de9603-8fc3-4bf6-ad11-c11c7e2047c9"
           ],
           "failures": [],
           "pending": [],
