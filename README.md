@@ -74,7 +74,7 @@ https://github.com/adamgruber/mochawesome
 - Converts `test` **&lt;reason&gt;** elements to JUnit **&lt;skipped&gt;**.
 - Supports single **&lt;assembly&gt;** per file, if multiple assemblies are present only first will be converted.
 
-### Visual Studio TRX
+### MSTest TRX
 
 - Converts `Output/ErrorInfo/Message` to JUnit **&lt;failure&gt;** message.
 - Converts `Output/ErrorInfo/StackTrace` to JUnit **&lt;failure&gt;** stack trace.

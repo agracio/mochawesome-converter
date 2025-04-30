@@ -61,7 +61,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <testsuites tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" assertions="{@assertions}" time="{@time}">
-                    <testsuite name="{replace(@name, 'Root Suite.', '')}" classname="{replace(@classname, 'Root Suite.', '')}" file="{@file}" tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" assertions="{@assertions}" time="{@time}" timestamp="{@timestamp}">
+                    <testsuite name="{replace(@name, 'Root Suite.', '')}" classname="{replace(@classname, 'Root Suite.', '')}" file="{@file}" tests="{@tests}" errors="{@errors}" failures="{@failures}" skipped="{@skipped}" assertions="{@assertions}" time="{@time}" timestamp="{@timestamp}" hostname="{@hostname}" id="{@id}" package="{@package}">
                         <xsl:apply-templates/>
                     </testsuite>
                 </testsuites>
@@ -86,7 +86,7 @@
     </xsl:template>
 
     <xsl:template match="testcase">
-        <testcase name="{@name}" classname="{@classname}" file="{@file}" time="{@time}">
+        <testcase name="{@name}" classname="{@classname}" file="{@file}" time="{@time}" status="{@status}">
             <xsl:if test="skipped">
                 <xsl:choose>
                     <xsl:when test="message">

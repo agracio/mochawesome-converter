@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs');
-const { yargsOptions } = require('../src/options');
+const { yargsOptions } = require('./options');
 const { config } = require('../src/config');
 const convert = require('../src/converter');
 

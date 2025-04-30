@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "88a0cea8-2feb-4795-a17e-9f21196e3e5d",
+      "uuid": "7d36423c-ac3b-424d-ac6c-1f6683f28f61",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+          "uuid": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
           "title": "Mocha Tests",
           "file": "",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "cb1b86d0-706f-4c14-b529-2eef4ca2c16e",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "3c9a37b4-daae-4df5-b9ea-ef94cbaefd6e",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "29eb25f1-f24a-47fe-98c2-9c8bc8cbf3ff",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "fe5a0c42-690a-4c38-9aae-f073940fde99",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -77,8 +77,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "8fc57157-c2ff-41aa-bdb1-c9c82a88a2a2",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "f1956e99-95f2-4be4-8a18-b0502b731cb7",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -97,8 +97,8 @@
                 "estack": "Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\nError: Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\n    at exports.func (lib\\edge.js:174:17)\n    at Context.<anonymous> (test\\101_edge_func.js:82:19)\n    at process.processImmediate (node:internal/timers:491:21)",
                 "diff": null
               },
-              "uuid": "d364f11a-bc4b-469e-89cb-282293ad8aa5",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "156e143c-9e70-4209-ae58-2e5f662ea114",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -117,8 +117,8 @@
                 "estack": "The input did not match the regular expression /Could not load type 'Edge.Tests.idontexist'/. Input:\n\n\"System.IO.FileNotFoundException: Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\"\n\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /Could not load type 'Edge.Tests.idontexist'/. Input:\n\n\"System.IO.FileNotFoundException: Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\"\n\n    at Context.<anonymous> (test\\101_edge_func.js:90:10)\n    at process.processImmediate (node:internal/timers:491:21)",
                 "diff": null
               },
-              "uuid": "d99e98db-acdc-433b-929a-ade3917b9f3b",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "d0cf538b-237f-49e7-805e-f38077d71e1f",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -137,8 +137,8 @@
                 "estack": "Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\nError: Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\n    at exports.func (lib\\edge.js:174:17)\n    at Context.<anonymous> (test\\101_edge_func.js:102:19)\n    at process.processImmediate (node:internal/timers:491:21)",
                 "diff": null
               },
-              "uuid": "f19492eb-9f03-4ebf-943a-02e62b14d160",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "7fa956d3-a3e4-4766-889a-4074db7d0630",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -157,8 +157,8 @@
                 "estack": "The input did not match the regular expression /Unable to access the CLR method to wrap through reflection/. Input:\n\n\"System.IO.FileNotFoundException: Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\"\n\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /Unable to access the CLR method to wrap through reflection/. Input:\n\n\"System.IO.FileNotFoundException: Could not load file or assembly 'test, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.\"\n\n    at Context.<anonymous> (test\\101_edge_func.js:111:10)\n    at process.processImmediate (node:internal/timers:491:21)",
                 "diff": null
               },
-              "uuid": "43ee8512-f197-4a88-ba23-e52f89ba3ab4",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "bd4f3d31-204c-4002-bcb9-aa3a2b9f2a38",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -174,8 +174,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "207fe453-29cd-4410-b7c5-b08e4e1fa05d",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "6e49bedf-3610-47e6-8ea5-531e59587b50",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -191,8 +191,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c9329d0e-72a6-412a-92fb-c48301e7d796",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "a73823d1-c294-426b-8684-f55c6c1e1e2e",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -208,8 +208,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5afc81fa-96ef-4d1e-b5ba-8fed5331ac40",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "01c62622-d379-431a-ba92-ae2623b9f22a",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -225,8 +225,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "36faf8fb-35a2-4e80-ad05-7a5abe9727ad",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "9f724395-d410-4c7b-8454-3ad1f0f3afa3",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -242,8 +242,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f81192aa-5e1f-42a2-abe9-68da7932c816",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "749796e1-b962-4449-a102-75ac59cd7c67",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -259,8 +259,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0134d44a-84e7-4493-961b-0c4ee7bd8222",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "a4beaf4b-22a1-4a90-babb-988d3a462fce",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             },
@@ -279,32 +279,32 @@
                 "estack": "the string \"new exception\" was thrown, throw an Error :)\nError: the string \"new exception\" was thrown, throw an Error :)\n    at process.processImmediate (node:internal/timers:491:21)",
                 "diff": null
               },
-              "uuid": "6284c806-51b2-4390-a313-e80cf5054d82",
-              "parentUUID": "aee49f2a-4e1d-445d-a2fb-7676943bf312",
+              "uuid": "ca1ea0d5-8896-4724-a420-ace481dd4cb6",
+              "parentUUID": "08e073b3-2683-4ec4-bd23-a0b5bce62399",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cb1b86d0-706f-4c14-b529-2eef4ca2c16e",
-            "207fe453-29cd-4410-b7c5-b08e4e1fa05d",
-            "c9329d0e-72a6-412a-92fb-c48301e7d796",
-            "5afc81fa-96ef-4d1e-b5ba-8fed5331ac40",
-            "36faf8fb-35a2-4e80-ad05-7a5abe9727ad",
-            "f81192aa-5e1f-42a2-abe9-68da7932c816",
-            "0134d44a-84e7-4493-961b-0c4ee7bd8222"
+            "3c9a37b4-daae-4df5-b9ea-ef94cbaefd6e",
+            "6e49bedf-3610-47e6-8ea5-531e59587b50",
+            "a73823d1-c294-426b-8684-f55c6c1e1e2e",
+            "01c62622-d379-431a-ba92-ae2623b9f22a",
+            "9f724395-d410-4c7b-8454-3ad1f0f3afa3",
+            "749796e1-b962-4449-a102-75ac59cd7c67",
+            "a4beaf4b-22a1-4a90-babb-988d3a462fce"
           ],
           "failures": [
-            "d364f11a-bc4b-469e-89cb-282293ad8aa5",
-            "d99e98db-acdc-433b-929a-ade3917b9f3b",
-            "f19492eb-9f03-4ebf-943a-02e62b14d160",
-            "43ee8512-f197-4a88-ba23-e52f89ba3ab4",
-            "6284c806-51b2-4390-a313-e80cf5054d82"
+            "156e143c-9e70-4209-ae58-2e5f662ea114",
+            "d0cf538b-237f-49e7-805e-f38077d71e1f",
+            "7fa956d3-a3e4-4766-889a-4074db7d0630",
+            "bd4f3d31-204c-4002-bcb9-aa3a2b9f2a38",
+            "ca1ea0d5-8896-4724-a420-ace481dd4cb6"
           ],
           "pending": [
-            "29eb25f1-f24a-47fe-98c2-9c8bc8cbf3ff",
-            "8fc57157-c2ff-41aa-bdb1-c9c82a88a2a2"
+            "fe5a0c42-690a-4c38-9aae-f073940fde99",
+            "f1956e99-95f2-4be4-8a18-b0502b731cb7"
           ],
           "skipped": [],
           "duration": 56,
