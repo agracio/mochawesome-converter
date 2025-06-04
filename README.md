@@ -44,7 +44,7 @@ https://github.com/adamgruber/mochawesome
 
 ### Conversion process
 
- - All test reports are first converted to JUnit format [junit-converter](https://www.npmjs.com/package/junit-converter).
+ - All test reports are first converted to JUnit format using [junit-converter](https://www.npmjs.com/package/junit-converter).
  - Set `junit` option to `true` to get JUnit conversion results.
  - If you only require JUnit conversion, you can use [junit-converter](https://github.com/agracio/junit-converter).
 
