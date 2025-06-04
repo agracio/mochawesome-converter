@@ -1,12 +1,6 @@
+const junitConvert = require('junit-converter');
 const conf = require('./config');
-const xslt = require('./xslt');
-
-/**
- * @param {ConverterOptions} config
- */
-async function xsltConverter(config) {
-    await xslt(config, `${config.testType}-junit.xslt`);
-}
+const junit = require('./junit');
 
 /**
  * Convert test report to mochawesome.
@@ -16,7 +10,24 @@ async function xsltConverter(config) {
 async function convert(options){
 
     let config = conf.config(options);
-    await xsltConverter(config);
+    let junitConvertOptions = {
+        testFile: config.testFile,
+        testType: config.testType,
+        switchClassnameAndName: config.switchClassnameAndName,
+        reportDir: config.reportDir,
+        reportFilename: config.junitReportFilename,
+        splitByClassname: config.splitByClassname || config.testType === 'trx',
+        saveIntermediateFiles: config.saveIntermediateFiles,
+    };
+
+    if(options.junit){
+        await junitConvert.toFile(junitConvertOptions);
+    }
+    const json = await junitConvert.toJson(junitConvertOptions);
+
+    let suitesRoot = junit.prepareJson(config, json)
+
+    await junit.convert(config, suitesRoot);
 }
 
 module.exports = convert;

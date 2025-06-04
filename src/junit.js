@@ -1,94 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require("crypto");
-const parser = require('p3x-xml2json');
 const marge = require('mochawesome-report-generator');
-const xmlFormat = require('xml-formatter');
 const _ = require('lodash');
 
 let skippedTests = 0;
 let failedTests = 0;
 let suites = [];
 
-/**
-* @param {ConverterOptions} options
-* @param {any} json
-* @returns {any}
-*/
-function parseTrx(options, json){
-
-    json.testsuites[0].testsuite[0].testcase = _.sortBy(json.testsuites[0].testsuite[0].testcase, ['classname' ,'name']);
-
-    let classnames = _.map(json.testsuites[0].testsuite[0].testcase, 'classname')
-        .filter((value, index, array) => array.indexOf(value) === index);
-
-    classnames = _.sortBy(classnames, [function(o) { return o; }]);
-
-    let time = _.sumBy(json.testsuites[0].testsuite, suite => _.sumBy(suite.testcase, function(testCase) { return Number(testCase.time); }));
-
-    json.testsuites[0].time = time;
-    json.testsuites[0].testsuite[0].time = time;
-
-    if(classnames.length > 1){
-
-        let testSuites = [];
-        classnames.forEach((classname) =>  {
-
-            let testcases = _.filter(json.testsuites[0].testsuite[0].testcase, { 'classname': classname});
-            let time = _.sumBy(testcases, function(testCase) { return Number(testCase.time); });
-            const failures = testcases.filter((testCase) => testCase.status === 'Failed').length;
-            const skipped = testcases.filter((testCase) => testCase.status === 'Skipped').length;
-
-            testSuites.push(
-                {
-                    name: classname,
-                    tests: `${testcases.length}`,
-                    failures: `${failures}`,
-                    skipped: `${skipped}`,
-                    time: `${time}`,
-                    testcase: testcases,
-                }
-            );
-        });
-
-        json.testsuites[0].testsuite = testSuites;
-    }
-
-    else{
-        json.testsuites[0].testsuite[0].time = time;
-        json.testsuites[0].testsuite[0].name = json.testsuites[0].testsuite[0].testcase[0].classname;
-    }
-
-    if(options.junit){
-        fs.writeFileSync(path.join(options.reportDir, options.junitReportFilename), xmlFormat(parser.toXml(json), {forceSelfClosingEmptyTag: true}), 'utf8');
-    }
-
-    return json;
-}
-
-/**
- * @param {ConverterOptions} options
- * @param {string|Buffer} xml
- * @returns {TestSuites}
- */
-function parseXml(options, xml){
-
-    let xmlParserOptions = {
-        object: true,
-        arrayNotation: true,
-        sanitize: false,
-        reversible: true,
-    }
-
-    let json;
-
-    try{
-        json = parser.toJson(xml, xmlParserOptions);
-    }
-    catch (e){
-        throw `\nCould not parse JSON from converted XML ${options.testFile}.\n ${e.message}`;
-    }
-
+function prepareJson(options, json){
     if((json && json.testsuites && json.testsuites.length && json.testsuites.length === 0)
         || (!json
             || !json.testsuites
@@ -107,7 +27,6 @@ function parseXml(options, xml){
         fs.writeFileSync(path.join(options.reportDir, fileName), JSON.stringify(json, null, 2), 'utf8');
     }
 
-
     // sort test suites
     if(json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].name){
         json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'name'])
@@ -120,9 +39,6 @@ function parseXml(options, xml){
         //json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['name'])
     }
 
-    if(options.testType === 'trx' && json.testsuites[0].testsuite[0].testcase.length !== 0){
-        json = parseTrx(options, json);
-    }
     return json.testsuites[0];
 }
 
@@ -336,10 +252,10 @@ async function convert(options, suitesRoot){
     let pendingPercent = 0;
     let suiteFailures = 0;
 
-    if(!suitesRoot){
-        suitesRoot = parseXml(options, fs.readFileSync(options.testFile, 'utf8'));
-    }
-    if(!suitesRoot) return;
+    // if(!suitesRoot){
+    //     suitesRoot = parseXml(options, fs.readFileSync(options.testFile, 'utf8'));
+    // }
+    // if(!suitesRoot) return;
 
     let testSuites = suitesRoot.testsuite.filter((suite) => suite.tests !== '0');
 
@@ -441,5 +357,5 @@ async function convert(options, suitesRoot){
 
 module.exports = {
     convert,
-    parseXml
+    prepareJson
 };

@@ -28,14 +28,14 @@ describe("JUnit converter tests", () => {
     });
 
     test('junit-mocha-xunit.xml', async() => {
-        let options = common.createOptions('junit-mocha-xunit.xml', 'junit')
+        let options = common.createOptions('junit-mocha-xunit.xml', 'junit');
 
         await converter(options);
         common.compare(options, undefined, true);
     });
 
     test('junit-nested.xml', async() => {
-        let options = common.createOptions('junit-nested.xml', 'junit', true)
+        let options = common.createOptions('junit-nested.xml', 'junit', true);
 
         await converter(options);
         common.compare(options, undefined, true, true);
