@@ -1,0 +1,720 @@
+<testsuites tests="501" errors="0" failures="1" skipped="13" disabled="0" assertions="0" time="120.39617860000006">
+    <testsuite name="QLNet.Tests.T_DayCounters" tests="25" failures="0" skipped="0" time="0.03114389999999999">
+        <testcase name="testAct36525" classname="QLNet.Tests.T_DayCounters" time="0.0004436"/>
+        <testcase name="testAct366" classname="QLNet.Tests.T_DayCounters" time="0.0006197"/>
+        <testcase name="testActual365_Canadian" classname="QLNet.Tests.T_DayCounters" time="0.0005476"/>
+        <testcase name="testActualActual" classname="QLNet.Tests.T_DayCounters" time="0.0010466"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-02-01&quot;, d2AsString: &quot;1999-07-01&quot;, expectedYearFraction: 0.41095890410958902)" classname="QLNet.Tests.T_DayCounters" time="0.0000075"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-07-01&quot;, d2AsString: &quot;2000-07-01&quot;, expectedYearFraction: 1)" classname="QLNet.Tests.T_DayCounters" time="0.0000085"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41944444444444445)" classname="QLNet.Tests.T_DayCounters" time="0.0002496"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;1999-07-30&quot;, d2AsString: &quot;2000-01-30&quot;, expectedYearFraction: 0.5)" classname="QLNet.Tests.T_DayCounters" time="0.0010816"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;2000-01-30&quot;, d2AsString: &quot;2000-06-30&quot;, expectedYearFraction: 0.4175824175824176)" classname="QLNet.Tests.T_DayCounters" time="0.0000071"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2002-08-15&quot;, d2AsString: &quot;2003-07-15&quot;, expectedYearFraction: 0.91576086956521741)" classname="QLNet.Tests.T_DayCounters" time="0.0000130"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2003-07-15&quot;, d2AsString: &quot;2004-01-15&quot;, expectedYearFraction: 0.5)" classname="QLNet.Tests.T_DayCounters" time="0.0000108"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2003-05-01&quot;, maturityDateAsString: &quot;2005-05-01&quot;, firstCouponDateAsString: &quot;2003-11-01&quot;, penultimateCouponDateAsString: &quot;2004-11-01&quot;, d1AsString: &quot;2003-11-01&quot;, d2AsString: &quot;2004-05-01&quot;, expectedYearFraction: 0.5)" classname="QLNet.Tests.T_DayCounters" time="0.0000075"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: True, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41576086956521741)" classname="QLNet.Tests.T_DayCounters" time="0.0000127"/>
+        <testcase name="testActualActualOutOfScheduleRange" classname="QLNet.Tests.T_DayCounters" time="0.0012973"/>
+        <testcase name="testActualActualWithAnnualSchedule" classname="QLNet.Tests.T_DayCounters" time="0.0005587"/>
+        <testcase name="testActualActualWithSchedule" classname="QLNet.Tests.T_DayCounters" time="0.0010005"/>
+        <testcase name="testActualActualWithSemiannualSchedule" classname="QLNet.Tests.T_DayCounters" time="0.0167813"/>
+        <testcase name="testBusiness252" classname="QLNet.Tests.T_DayCounters" time="0.0030859"/>
+        <testcase name="testIntraday" classname="QLNet.Tests.T_DayCounters" time="0.0001678"/>
+        <testcase name="testOne" classname="QLNet.Tests.T_DayCounters" time="0.0004472"/>
+        <testcase name="testSimple" classname="QLNet.Tests.T_DayCounters" time="0.0006487"/>
+        <testcase name="testThirty360_BondBasis" classname="QLNet.Tests.T_DayCounters" time="0.0006531"/>
+        <testcase name="testThirty360_EurobondBasis" classname="QLNet.Tests.T_DayCounters" time="0.0007720"/>
+        <testcase name="testThirty360_ISDA" classname="QLNet.Tests.T_DayCounters" time="0.0012230"/>
+        <testcase name="testThirty365" classname="QLNet.Tests.T_DayCounters" time="0.0004526"/>
+    </testsuite>
+    <testsuite name="TestSuite.CallableBondsTests" tests="8" failures="0" skipped="0" time="1.8037074">
+        <testcase name="testBlackEngine" classname="TestSuite.CallableBondsTests" time="0.0005223"/>
+        <testcase name="testCached" classname="TestSuite.CallableBondsTests" time="0.3141208"/>
+        <testcase name="testConsistency" classname="TestSuite.CallableBondsTests" time="0.2210543"/>
+        <testcase name="testDegenerate" classname="TestSuite.CallableBondsTests" time="0.4395830"/>
+        <testcase name="testImpliedVol" classname="TestSuite.CallableBondsTests" time="0.0050582">
+            <failure type="failure" message="System.ArgumentException : root not bracketed: f[0.0001,1] -&gt; [713.0585008622056,24.93951038996056]">
+                at QLNet.Utils.QL_REQUIRE(Boolean condition, Func`1 message, QLNetExceptionEnum exEnum) in C:\Users\anton\Dev\QLNet\src\QLNet\Utils.cs:line 118
+   at QLNet.Solver1D.solve(ISolver1d f, Double accuracy, Double guess, Double xMin, Double xMax) in C:\Users\anton\Dev\QLNet\src\QLNet\Math\Solver1d.cs:line 175
+   at QLNet.CallableBond.impliedVolatility(Price targetPrice, Handle`1 discountCurve, Double accuracy, Int32 maxEvaluations, Double minVol, Double maxVol) in C:\Users\anton\Dev\QLNet\src\QLNet\Instruments\Bonds\CallableBond.cs:line 212
+   at TestSuite.CallableBondsTests.testImpliedVol() in C:\Users\anton\Dev\QLNet\tests\QLNet.Tests\T_CallableBonds.cs:line 640
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+        <testcase name="testInterplay" classname="TestSuite.CallableBondsTests" time="0.5970121"/>
+        <testcase name="testObservability" classname="TestSuite.CallableBondsTests" time="0.2253567"/>
+        <testcase name="testSnappingExerciseDate2ClosestCouponDate" classname="TestSuite.CallableBondsTests" time="0.0010000">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_AmericanOption" tests="8" failures="0" skipped="0" time="7.4183542000000005">
+        <testcase name="testBaroneAdesiWhaleyValues" classname="TestSuite.T_AmericanOption" time="0.0021066"/>
+        <testcase name="testBjerksundStenslandValues" classname="TestSuite.T_AmericanOption" time="0.0016089"/>
+        <testcase name="testFDDividendAmericanEngine" classname="TestSuite.T_AmericanOption" time="0.0182288"/>
+        <testcase name="testFdAmericanGreeks" classname="TestSuite.T_AmericanOption" time="3.7714635"/>
+        <testcase name="testFdImpliedVol" classname="TestSuite.T_AmericanOption" time="0.0295908"/>
+        <testcase name="testFdShoutGreeks" classname="TestSuite.T_AmericanOption" time="3.4294768"/>
+        <testcase name="testFdValues" classname="TestSuite.T_AmericanOption" time="0.1470599"/>
+        <testcase name="testJuValues" classname="TestSuite.T_AmericanOption" time="0.0188189"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_AsianOptions" tests="7" failures="0" skipped="0" time="0.07663820000000002">
+        <testcase name="testAnalyticContinuousGeometricAveragePrice" classname="TestSuite.T_AsianOptions" time="0.0004838"/>
+        <testcase name="testAnalyticContinuousGeometricAveragePriceGreeks" classname="TestSuite.T_AsianOptions" time="0.0242494"/>
+        <testcase name="testAnalyticDiscreteGeometricAveragePrice" classname="TestSuite.T_AsianOptions" time="0.0030967"/>
+        <testcase name="testAnalyticDiscreteGeometricAveragePriceGreeks" classname="TestSuite.T_AsianOptions" time="0.0345742"/>
+        <testcase name="testAnalyticDiscreteGeometricAverageStrike" classname="TestSuite.T_AsianOptions" time="0.0014152"/>
+        <testcase name="testIssue115" classname="TestSuite.T_AsianOptions" time="0.0118189"/>
+        <testcase name="testMCDiscreteGeometricAveragePrice" classname="TestSuite.T_AsianOptions" time="0.0010000">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_AssetSwap" tests="9" failures="0" skipped="0" time="0.25975570000000003">
+        <testcase name="testConsistency" classname="TestSuite.T_AssetSwap" time="0.0070376"/>
+        <testcase name="testGenericBondImplied" classname="TestSuite.T_AssetSwap" time="0.0209658"/>
+        <testcase name="testImpliedValue" classname="TestSuite.T_AssetSwap" time="0.0234714"/>
+        <testcase name="testMASWWithGenericBond" classname="TestSuite.T_AssetSwap" time="0.0160157"/>
+        <testcase name="testMarketASWSpread" classname="TestSuite.T_AssetSwap" time="0.0164981"/>
+        <testcase name="testSpecializedBondVsGenericBond" classname="TestSuite.T_AssetSwap" time="0.0276776"/>
+        <testcase name="testSpecializedBondVsGenericBondUsingAsw" classname="TestSuite.T_AssetSwap" time="0.1071592"/>
+        <testcase name="testZSpread" classname="TestSuite.T_AssetSwap" time="0.0204822"/>
+        <testcase name="testZSpreadWithGenericBond" classname="TestSuite.T_AssetSwap" time="0.0204481"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BarrierOption" tests="5" failures="0" skipped="0" time="10.584934800000001">
+        <testcase name="testBabsiriValues" classname="TestSuite.T_BarrierOption" time="2.9452755"/>
+        <testcase name="testBeagleholeValues" classname="TestSuite.T_BarrierOption" time="0.2244595"/>
+        <testcase name="testHaugValues" classname="TestSuite.T_BarrierOption" time="5.9504200"/>
+        <testcase name="testLocalVolAndHestonComparison" classname="TestSuite.T_BarrierOption" time="1.4378654"/>
+        <testcase name="testVannaVolgaSimpleBarrierValues" classname="TestSuite.T_BarrierOption" time="0.0269144"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BasisSwapRateHelpers" tests="4" failures="0" skipped="0" time="0.521986">
+        <testcase name="testIborIborBaseCurveBootstrap" classname="TestSuite.T_BasisSwapRateHelpers" time="0.0264572"/>
+        <testcase name="testIborIborOtherCurveBootstrap" classname="TestSuite.T_BasisSwapRateHelpers" time="0.0155259"/>
+        <testcase name="testOvernightIborBootstrapNoDiscountCurve" classname="TestSuite.T_BasisSwapRateHelpers" time="0.2549742"/>
+        <testcase name="testOvernightIborBootstrapWithDiscountCurve" classname="TestSuite.T_BasisSwapRateHelpers" time="0.2250287"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BasketOption" tests="1" failures="0" skipped="0" time="0.0116814">
+        <testcase name="testEuroTwoValues" classname="TestSuite.T_BasketOption" time="0.0116814"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Batch" tests="5" failures="0" skipped="0" time="0.47832830000000004">
+        <testcase name="testBatchAccruedDaysAndAmountCalculation" classname="TestSuite.T_Batch" time="0.0205219">
+            <system-out>
+                Calculated 2 accrued days and amount in 2ms
+            </system-out>
+        </testcase>
+        <testcase name="testBatchAllBondFunctionsCalculation" classname="TestSuite.T_Batch" time="0.0168675">
+            <system-out>
+                Calculated 2 bond functions in 3ms
+            </system-out>
+        </testcase>
+        <testcase name="testBatchDurationCalculation" classname="TestSuite.T_Batch" time="0.4091247">
+            <system-out>
+                Calculated 2 duration in 4ms
+            </system-out>
+        </testcase>
+        <testcase name="testBatchWalCalculation" classname="TestSuite.T_Batch" time="0.0146506">
+            <system-out>
+                Calculated 2 wal in 3ms
+            </system-out>
+        </testcase>
+        <testcase name="testBatchYieldCalculation" classname="TestSuite.T_Batch" time="0.0171636">
+            <system-out>
+                Calculated 2 yields in 4ms
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_Bermudanswaption" tests="1" failures="0" skipped="0" time="0.1992806">
+        <testcase name="testCachedValues" classname="TestSuite.T_Bermudanswaption" time="0.1992806"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BinaryOption" tests="2" failures="0" skipped="0" time="0.004218400000000001">
+        <testcase name="testAssetOrNothingHaugValues" classname="TestSuite.T_BinaryOption" time="0.0022254"/>
+        <testcase name="testCashOrNothingHaugValues" classname="TestSuite.T_BinaryOption" time="0.0019930"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BlackDeltaCalculator" tests="4" failures="0" skipped="0" time="0.0042885">
+        <testcase name="testAtmCalcs" classname="TestSuite.T_BlackDeltaCalculator" time="0.0006441"/>
+        <testcase name="testDeltaPriceConsistency" classname="TestSuite.T_BlackDeltaCalculator" time="0.0011619"/>
+        <testcase name="testDeltaValues" classname="TestSuite.T_BlackDeltaCalculator" time="0.0010695"/>
+        <testcase name="testPutCallParity" classname="TestSuite.T_BlackDeltaCalculator" time="0.0014130"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BlackFormula" tests="2" failures="0" skipped="0" time="0.030768999999999998">
+        <testcase name="testBachelierImpliedVol" classname="TestSuite.T_BlackFormula" time="0.0007953"/>
+        <testcase name="testChambersImpliedVol" classname="TestSuite.T_BlackFormula" time="0.0299737"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Bonds" tests="44" failures="0" skipped="0" time="0.7635306000000001">
+        <testcase name="testAccruedInterest(Coupon: 0, AccrualDate: &quot;3/15/2018&quot;, MaturityDate: &quot;1/1/2054&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 0, expectedAccruedDays: 0)" classname="TestSuite.T_Bonds" time="0.0001715"/>
+        <testcase name="testAccruedInterest(Coupon: 1.8500000000000001, AccrualDate: &quot;2/1/2018&quot;, MaturityDate: &quot;2/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 2.8300000000000001, expectedAccruedDays: 55)" classname="TestSuite.T_Bonds" time="0.0000662"/>
+        <testcase name="testAccruedInterest(Coupon: 2.2000000000000002, AccrualDate: &quot;3/1/2018&quot;, MaturityDate: &quot;3/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 1.53, expectedAccruedDays: 25)" classname="TestSuite.T_Bonds" time="0.0000688"/>
+        <testcase name="testAccruedInterest(Coupon: 2.25, AccrualDate: &quot;3/1/2018&quot;, MaturityDate: &quot;3/1/2021&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 1.5600000000000001, expectedAccruedDays: 25)" classname="TestSuite.T_Bonds" time="0.0000777"/>
+        <testcase name="testAccruedInterest(Coupon: 2.8500000000000001, AccrualDate: &quot;2/15/2018&quot;, MaturityDate: &quot;2/15/2031&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 3.25, expectedAccruedDays: 41)" classname="TestSuite.T_Bonds" time="0.0000994"/>
+        <testcase name="testAccruedInterest(Coupon: 3, AccrualDate: &quot;2/15/2018&quot;, MaturityDate: &quot;2/15/2031&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 3.4199999999999999, expectedAccruedDays: 41)" classname="TestSuite.T_Bonds" time="0.0000933"/>
+        <testcase name="testAccruedInterest(Coupon: 4, AccrualDate: &quot;2/1/2018&quot;, MaturityDate: &quot;2/15/2027&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;08/15/2018&quot;, expectedAccruedInterest: 6.1100000000000003, expectedAccruedDays: 55)" classname="TestSuite.T_Bonds" time="0.0000922"/>
+        <testcase name="testAccruedInterest(Coupon: 4, AccrualDate: &quot;2/20/2018&quot;, MaturityDate: &quot;10/1/2036&quot;, SettlementDate: &quot;3/26/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 4, expectedAccruedDays: 36)" classname="TestSuite.T_Bonds" time="0.0000889"/>
+        <testcase name="testAccruedInterest(Coupon: 5.25, AccrualDate: &quot;2/13/2018&quot;, MaturityDate: &quot;12/01/2032&quot;, SettlementDate: &quot;3/23/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 5.8330000000000002, expectedAccruedDays: 40)" classname="TestSuite.T_Bonds" time="0.0003250"/>
+        <testcase name="testAccruedInterest(Coupon: 5.375, AccrualDate: &quot;08/26/2010&quot;, MaturityDate: &quot;03/01/2023&quot;, SettlementDate: &quot;7/16/2018&quot;, FirstCouponDate: &quot;&quot;, expectedAccruedInterest: 20.155999999999999, expectedAccruedDays: 135)" classname="TestSuite.T_Bonds" time="0.0012065"/>
+        <testcase name="testAmortizingBond1" classname="TestSuite.T_Bonds" time="0.0015699"/>
+        <testcase name="testAmortizingBond2" classname="TestSuite.T_Bonds" time="0.0012505"/>
+        <testcase name="testAmortizingFixedBond" classname="TestSuite.T_Bonds" time="0.0005610"/>
+        <testcase name="testAmortizingFixedRateBond" classname="TestSuite.T_Bonds" time="0.0112599"/>
+        <testcase name="testBasisPointValue(settlementDate: &quot;&quot;, bpv: -795.459834, yvbp: -0.0012571287)" classname="TestSuite.T_Bonds" time="0.0018030"/>
+        <testcase name="testBasisPointValue(settlementDate: &quot;01/30/2024&quot;, bpv: -795.459834, yvbp: -0.0012571287)" classname="TestSuite.T_Bonds" time="0.0008173"/>
+        <testcase name="testBasisPointValue(settlementDate: &quot;02/12/2024&quot;, bpv: -793.14903300000003, yvbp: -0.0012607912999999999)" classname="TestSuite.T_Bonds" time="0.0006137"/>
+        <testcase name="testBondEquivalentYield(price: 96.323, IssueDate: &quot;02/22/2023&quot;, MaturityDate: &quot;02/22/2024&quot;, SettlementDate: &quot;05/17/2023&quot;, expectedYield: 0.049161389999999999)" classname="TestSuite.T_Bonds" time="0.0003122"/>
+        <testcase name="testBondEquivalentYield(price: 98.5826771, IssueDate: &quot;02/23/2022&quot;, MaturityDate: &quot;02/23/2023&quot;, SettlementDate: &quot;02/01/2023&quot;, expectedYield: 0.23852746)" classname="TestSuite.T_Bonds" time="0.0000841"/>
+        <testcase name="testBondEquivalentYield(price: 98.5826771, IssueDate: &quot;02/23/2023&quot;, MaturityDate: &quot;02/23/2023&quot;, SettlementDate: &quot;05/20/2022&quot;, expectedYield: 0.01874783)" classname="TestSuite.T_Bonds" time="0.0000800"/>
+        <testcase name="testBondEquivalentYield(price: 99.5947639, IssueDate: &quot;09/08/2021&quot;, MaturityDate: &quot;09/08/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0091112299999999997)" classname="TestSuite.T_Bonds" time="0.0000781"/>
+        <testcase name="testBondEquivalentYield(price: 99.9195, IssueDate: &quot;06/09/2021&quot;, MaturityDate: &quot;06/09/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0040841899999999997)" classname="TestSuite.T_Bonds" time="0.0009392"/>
+        <testcase name="testBondEquivalentYield(price: 99.9788542, IssueDate: &quot;01/01/2022&quot;, MaturityDate: &quot;05/10/2022&quot;, SettlementDate: &quot;03/29/2022&quot;, expectedYield: 0.0018380600000000001)" classname="TestSuite.T_Bonds" time="0.0007126"/>
+        <testcase name="testBondFromScheduleWithDateVector" classname="TestSuite.T_Bonds" time="0.0012544"/>
+        <testcase name="testBrazilianCached" classname="TestSuite.T_Bonds" time="0.0087268"/>
+        <testcase name="testCached" classname="TestSuite.T_Bonds" time="0.0027900"/>
+        <testcase name="testCachedFixed" classname="TestSuite.T_Bonds" time="0.0005403"/>
+        <testcase name="testCachedFloating" classname="TestSuite.T_Bonds" time="0.0010539"/>
+        <testcase name="testCachedZero" classname="TestSuite.T_Bonds" time="0.0004045"/>
+        <testcase name="testDurations(Cusip: &quot;546415L40&quot;, MaturityDate: &quot;05/15/2033&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 104.239, ExpectedModifiedDuration: 11.154, ExpectedOASDuration: 7.71)" classname="TestSuite.T_Bonds" time="0.0061803"/>
+        <testcase name="testDurations(Cusip: &quot;646140CN1&quot;, MaturityDate: &quot;01/01/2035&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 105.262, ExpectedModifiedDuration: 12.118, ExpectedOASDuration: 10.59)" classname="TestSuite.T_Bonds" time="0.0008074"/>
+        <testcase name="testDurations(Cusip: &quot;64990C4X6&quot;, MaturityDate: &quot;07/01/2035&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 106.599, ExpectedModifiedDuration: 12.417, ExpectedOASDuration: 10.24)" classname="TestSuite.T_Bonds" time="0.0010861"/>
+        <testcase name="testDurations(Cusip: &quot;64990C5B3&quot;, MaturityDate: &quot;07/01/2047&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 103.90000000000001, ExpectedModifiedDuration: 17.295999999999999, ExpectedOASDuration: 12.869999999999999)" classname="TestSuite.T_Bonds" time="0.0012516"/>
+        <testcase name="testDurations(Cusip: &quot;70024PCW7&quot;, MaturityDate: &quot;06/15/2028&quot;, Coupon: 4, SettlementDate: &quot;07/10/2018&quot;, Price: 110.839, ExpectedModifiedDuration: 8.2569999999999997, ExpectedOASDuration: 7.8200000000000003)" classname="TestSuite.T_Bonds" time="0.0005091"/>
+        <testcase name="testExCouponAustralianBond" classname="TestSuite.T_Bonds" time="0.0036732"/>
+        <testcase name="testExCouponGilt" classname="TestSuite.T_Bonds" time="0.0040684"/>
+        <testcase name="testMBSFixedBondCached" classname="TestSuite.T_Bonds" time="0.0074180"/>
+        <testcase name="testQLNetExceptions(Coupon: 1.8500000000000001, AccrualDate: &quot;11/23/2015&quot;, MaturityDate: &quot;11/23/2018&quot;, SettlementDate: &quot;11/23/2018&quot;, FirstCouponDate: &quot;5/23/2016&quot;, Price: 100.85469999999999)" classname="TestSuite.T_Bonds" time="0.0005423"/>
+        <testcase name="testQLNetExceptions(Coupon: 2.2000000000000002, AccrualDate: &quot;10/22/2014&quot;, MaturityDate: &quot;10/22/2019&quot;, SettlementDate: &quot;12/24/2018&quot;, FirstCouponDate: &quot;4/22/2015&quot;, Price: 994.26300000000003)" classname="TestSuite.T_Bonds" time="0.0018097"/>
+        <testcase name="testSteppedCoupon" classname="TestSuite.T_Bonds" time="0.0057827"/>
+        <testcase name="testTheoretical" classname="TestSuite.T_Bonds" time="0.0382194"/>
+        <testcase name="testThirty360BondWithSettlementOn31st" classname="TestSuite.T_Bonds" time="0.0007222"/>
+        <testcase name="testWeightedAverageLife" classname="TestSuite.T_Bonds" time="0.0006368"/>
+        <testcase name="testYield" classname="TestSuite.T_Bonds" time="0.6536825"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_BusinessDayConvention" tests="1" failures="0" skipped="0" time="0.0019673">
+        <testcase name="testConventions" classname="TestSuite.T_BusinessDayConvention" time="0.0019673"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CPISwap" tests="3" failures="0" skipped="0" time="0.0259712">
+        <testcase name="consistency" classname="TestSuite.T_CPISwap" time="0.0068668"/>
+        <testcase name="cpibondconsistency" classname="TestSuite.T_CPISwap" time="0.0165513"/>
+        <testcase name="zciisconsistency" classname="TestSuite.T_CPISwap" time="0.0025531"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Calendars" tests="41" failures="0" skipped="0" time="0.14478019999999997">
+        <testcase name="testBespokeCalendars" classname="TestSuite.T_Calendars" time="0.0021941"/>
+        <testcase name="testBrazil" classname="TestSuite.T_Calendars" time="0.0006267"/>
+        <testcase name="testBusinessDaysBetween" classname="TestSuite.T_Calendars" time="0.0013555"/>
+        <testcase name="testChileCalendar2025(expectedHolidaysArray: [&quot;2025/01/01&quot;, &quot;2025/04/18&quot;, &quot;2025/05/01&quot;, &quot;2025/05/21&quot;, &quot;2025/06/20&quot;, ···])" classname="TestSuite.T_Calendars" time="0.0010038"/>
+        <testcase name="testChinaIB" classname="TestSuite.T_Calendars" time="0.0171413"/>
+        <testcase name="testChinaSSE" classname="TestSuite.T_Calendars" time="0.0023666"/>
+        <testcase name="testDenmark" classname="TestSuite.T_Calendars" time="0.0007871"/>
+        <testcase name="testEndOfMonth" classname="TestSuite.T_Calendars" time="0.0422870"/>
+        <testcase name="testGermanyEurex" classname="TestSuite.T_Calendars" time="0.0007815"/>
+        <testcase name="testGermanyFrankfurt" classname="TestSuite.T_Calendars" time="0.0006896"/>
+        <testcase name="testGermanyXetra" classname="TestSuite.T_Calendars" time="0.0006472"/>
+        <testcase name="testItalyExchange" classname="TestSuite.T_Calendars" time="0.0009512"/>
+        <testcase name="testJointCalendars" classname="TestSuite.T_Calendars" time="0.0019191"/>
+        <testcase name="testKoreaStockExchange" classname="TestSuite.T_Calendars" time="0.0011490"/>
+        <testcase name="testMexicoInaugurationDay" classname="TestSuite.T_Calendars" time="0.0004746"/>
+        <testcase name="testModifiedCalendars" classname="TestSuite.T_Calendars" time="0.0006708"/>
+        <testcase name="testNZIB_matarikiDay(day: &quot;2022-06-24&quot;, expectedIsBusinessDay: False, expectedIsHoliday: True)" classname="TestSuite.T_Calendars" time="0.0000089"/>
+        <testcase name="testNZIB_matarikiDay(day: &quot;2022-06-25&quot;, expectedIsBusinessDay: False, expectedIsHoliday: True)" classname="TestSuite.T_Calendars" time="0.0007805"/>
+        <testcase name="testNZIB_matarikiDay(day: &quot;2022-07-08&quot;, expectedIsBusinessDay: True, expectedIsHoliday: False)" classname="TestSuite.T_Calendars" time="0.0002106"/>
+        <testcase name="testSouthKoreanSettlement" classname="TestSuite.T_Calendars" time="0.0019081"/>
+        <testcase name="testStartOfMonth" classname="TestSuite.T_Calendars" time="0.0603294"/>
+        <testcase name="testTARGET" classname="TestSuite.T_Calendars" time="0.0011151"/>
+        <testcase name="testUKExchange" classname="TestSuite.T_Calendars" time="0.0006572"/>
+        <testcase name="testUKMetals" classname="TestSuite.T_Calendars" time="0.0011000"/>
+        <testcase name="testUKSettlement" classname="TestSuite.T_Calendars" time="0.0006373"/>
+        <testcase name="testUSGovernmentBondMarket" classname="TestSuite.T_Calendars" time="0.0004861"/>
+        <testcase name="testUSNewYorkStockExchange" classname="TestSuite.T_Calendars" time="0.0011290"/>
+        <testcase name="testUSSettlement" classname="TestSuite.T_Calendars" time="0.0008647"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2022/12/30&quot;)" classname="TestSuite.T_Calendars" time="0.0000014"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/04/07&quot;)" classname="TestSuite.T_Calendars" time="0.0000016"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/05/26&quot;)" classname="TestSuite.T_Calendars" time="0.0000017"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/07/03&quot;)" classname="TestSuite.T_Calendars" time="0.0000014"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/11/24&quot;)" classname="TestSuite.T_Calendars" time="0.0000018"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/12/22&quot;)" classname="TestSuite.T_Calendars" time="0.0001510"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2023/12/29&quot;)" classname="TestSuite.T_Calendars" time="0.0000016"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/03/28&quot;)" classname="TestSuite.T_Calendars" time="0.0003365"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/05/24&quot;)" classname="TestSuite.T_Calendars" time="0.0000026"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/07/03&quot;)" classname="TestSuite.T_Calendars" time="0.0000015"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/11/29&quot;)" classname="TestSuite.T_Calendars" time="0.0000018"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/12/24&quot;)" classname="TestSuite.T_Calendars" time="0.0000040"/>
+        <testcase name="testUsGovernmentBondMarketEarlyClose(expectedEarlyClose: &quot;2024/12/31&quot;)" classname="TestSuite.T_Calendars" time="0.0000013"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CapFloor" tests="7" failures="0" skipped="0" time="0.9687029">
+        <testcase name="testATMRate" classname="TestSuite.T_CapFloor" time="0.0661966"/>
+        <testcase name="testCachedValue" classname="TestSuite.T_CapFloor" time="0.0010726"/>
+        <testcase name="testConsistency" classname="TestSuite.T_CapFloor" time="0.3305493"/>
+        <testcase name="testImpliedVolatility" classname="TestSuite.T_CapFloor" time="0.0508671"/>
+        <testcase name="testParity" classname="TestSuite.T_CapFloor" time="0.0987359"/>
+        <testcase name="testStrikeDependency" classname="TestSuite.T_CapFloor" time="0.0498675"/>
+        <testcase name="testVega" classname="TestSuite.T_CapFloor" time="0.3714139"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CapFlooredCoupon" tests="2" failures="0" skipped="0" time="0.0095103">
+        <testcase name="testDecomposition" classname="TestSuite.T_CapFlooredCoupon" time="0.0085332"/>
+        <testcase name="testLargeRates" classname="TestSuite.T_CapFlooredCoupon" time="0.0009771"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CashFlows" tests="4" failures="0" skipped="0" time="0.0024515">
+        <testcase name="testAccessViolation" classname="TestSuite.T_CashFlows" time="0.0008201"/>
+        <testcase name="testDefaultSettlementDate" classname="TestSuite.T_CashFlows" time="0.0007499"/>
+        <testcase name="testNullFixingDays" classname="TestSuite.T_CashFlows" time="0.0001621"/>
+        <testcase name="testSettings" classname="TestSuite.T_CashFlows" time="0.0007194"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CatBonds" tests="7" failures="0" skipped="0" time="0.0138788">
+        <testcase name="testCatBondInDoomScenario" classname="TestSuite.T_CatBonds" time="0.0016056"/>
+        <testcase name="testCatBondWithDoomOnceInTenYears" classname="TestSuite.T_CatBonds" time="0.0061526"/>
+        <testcase name="testCatBondWithDoomOnceInTenYearsProportional" classname="TestSuite.T_CatBonds" time="0.0021262"/>
+        <testcase name="testEventSetForIrregularPeriods" classname="TestSuite.T_CatBonds" time="0.0002148"/>
+        <testcase name="testEventSetForNoEvents" classname="TestSuite.T_CatBonds" time="0.0001325"/>
+        <testcase name="testEventSetForWholeYears" classname="TestSuite.T_CatBonds" time="0.0019980"/>
+        <testcase name="testRiskFreeAgainstFloatingRateBond" classname="TestSuite.T_CatBonds" time="0.0016491"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CliquetOption" tests="3" failures="0" skipped="0" time="0.28821620000000003">
+        <testcase name="testGreeks" classname="TestSuite.T_CliquetOption" time="0.1342516"/>
+        <testcase name="testPerformanceGreeks" classname="TestSuite.T_CliquetOption" time="0.1535757"/>
+        <testcase name="testValues" classname="TestSuite.T_CliquetOption" time="0.0003889"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Cms" tests="3" failures="0" skipped="0" time="0.5295667000000001">
+        <testcase name="testCmsSwap" classname="TestSuite.T_Cms" time="0.3089470"/>
+        <testcase name="testFairRate" classname="TestSuite.T_Cms" time="0.0048731"/>
+        <testcase name="testParity" classname="TestSuite.T_Cms" time="0.2157466"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_ConvertibleBond" tests="3" failures="0" skipped="0" time="0.4302976">
+        <testcase name="testBond" classname="TestSuite.T_ConvertibleBond" time="0.2952244"/>
+        <testcase name="testOption" classname="TestSuite.T_ConvertibleBond" time="0.1238691"/>
+        <testcase name="testRegression" classname="TestSuite.T_ConvertibleBond" time="0.0112041"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_CreditDefaultSwap" tests="6" failures="0" skipped="0" time="0.0972192">
+        <testcase name="testCachedMarketValue" classname="TestSuite.T_CreditDefaultSwap" time="0.0095978"/>
+        <testcase name="testCachedValue" classname="TestSuite.T_CreditDefaultSwap" time="0.0151601"/>
+        <testcase name="testFairSpread" classname="TestSuite.T_CreditDefaultSwap" time="0.0070483"/>
+        <testcase name="testFairUpfront" classname="TestSuite.T_CreditDefaultSwap" time="0.0104551"/>
+        <testcase name="testImpliedHazardRate" classname="TestSuite.T_CreditDefaultSwap" time="0.0122206"/>
+        <testcase name="testIsdaEngine" classname="TestSuite.T_CreditDefaultSwap" time="0.0427373"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Dates" tests="5" failures="0" skipped="0" time="6.838128299999999">
+        <testcase name="testASXDates" classname="TestSuite.T_Dates" time="5.2004056"/>
+        <testcase name="testConsistency" classname="TestSuite.T_Dates" time="0.0104845"/>
+        <testcase name="testECBDates" classname="TestSuite.T_Dates" time="0.0031336"/>
+        <testcase name="testIMMDates" classname="TestSuite.T_Dates" time="1.6236181"/>
+        <testcase name="testIntraday" classname="TestSuite.T_Dates" time="0.0004865"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_DefaultProbabilityCurves" tests="3" failures="0" skipped="0" time="0.0007179">
+        <testcase name="testDefaultProbability" classname="TestSuite.T_DefaultProbabilityCurves" time="0.0005339"/>
+        <testcase name="testFlatHazardConsistency" classname="TestSuite.T_DefaultProbabilityCurves" time="0.0000209"/>
+        <testcase name="testFlatHazardRate" classname="TestSuite.T_DefaultProbabilityCurves" time="0.0001631"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_DigitalCoupon" tests="8" failures="0" skipped="0" time="0.0809005">
+        <testcase name="testAssetOrNothing" classname="TestSuite.T_DigitalCoupon" time="0.0037169"/>
+        <testcase name="testAssetOrNothingDeepInTheMoney" classname="TestSuite.T_DigitalCoupon" time="0.0030565"/>
+        <testcase name="testAssetOrNothingDeepOutTheMoney" classname="TestSuite.T_DigitalCoupon" time="0.0014508"/>
+        <testcase name="testCallPutParity" classname="TestSuite.T_DigitalCoupon" time="0.0182769"/>
+        <testcase name="testCashOrNothing" classname="TestSuite.T_DigitalCoupon" time="0.0128649"/>
+        <testcase name="testCashOrNothingDeepInTheMoney" classname="TestSuite.T_DigitalCoupon" time="0.0020485"/>
+        <testcase name="testCashOrNothingDeepOutTheMoney" classname="TestSuite.T_DigitalCoupon" time="0.0016662"/>
+        <testcase name="testReplicationType" classname="TestSuite.T_DigitalCoupon" time="0.0378198"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_DigitalOption" tests="8" failures="0" skipped="0" time="0.027424999999999998">
+        <testcase name="testAssetAtExpiryOrNothingAmericanValues" classname="TestSuite.T_DigitalOption" time="0.0005334"/>
+        <testcase name="testAssetAtHitOrNothingAmericanValues" classname="TestSuite.T_DigitalOption" time="0.0004628"/>
+        <testcase name="testAssetOrNothingEuropeanValues" classname="TestSuite.T_DigitalOption" time="0.0003208"/>
+        <testcase name="testCashAtExpiryOrNothingAmericanValues" classname="TestSuite.T_DigitalOption" time="0.0011753"/>
+        <testcase name="testCashAtHitOrNothingAmericanGreeks" classname="TestSuite.T_DigitalOption" time="0.0234305"/>
+        <testcase name="testCashAtHitOrNothingAmericanValues" classname="TestSuite.T_DigitalOption" time="0.0004689"/>
+        <testcase name="testCashOrNothingEuropeanValues" classname="TestSuite.T_DigitalOption" time="0.0004361"/>
+        <testcase name="testGapEuropeanValues" classname="TestSuite.T_DigitalOption" time="0.0005972"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_DividendOption" tests="8" failures="0" skipped="0" time="21.309716599999998">
+        <testcase name="testEuropeanGreeks" classname="TestSuite.T_DividendOption" time="6.4278872"/>
+        <testcase name="testEuropeanStartLimit" classname="TestSuite.T_DividendOption" time="0.0173099"/>
+        <testcase name="testEuropeanValues" classname="TestSuite.T_DividendOption" time="0.0173186"/>
+        <testcase name="testFdAmericanDegenerate" classname="TestSuite.T_DividendOption" time="0.3041796"/>
+        <testcase name="testFdAmericanGreeks" classname="TestSuite.T_DividendOption" time="7.4988135"/>
+        <testcase name="testFdEuropeanDegenerate" classname="TestSuite.T_DividendOption" time="0.2488209"/>
+        <testcase name="testFdEuropeanGreeks" classname="TestSuite.T_DividendOption" time="5.8748010"/>
+        <testcase name="testFdEuropeanValues" classname="TestSuite.T_DividendOption" time="0.9205859"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_DoubleBarrierOption" tests="2" failures="0" skipped="0" time="0.0667813">
+        <testcase name="testEuropeanHaugValues" classname="TestSuite.T_DoubleBarrierOption" time="0.0186440"/>
+        <testcase name="testVannaVolgaDoubleBarrierValues" classname="TestSuite.T_DoubleBarrierOption" time="0.0481373"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_DoubleBinaryOption" tests="1" failures="0" skipped="0" time="1.0457232">
+        <testcase name="testHaugValues" classname="TestSuite.T_DoubleBinaryOption" time="1.0457232"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_EuropeanOption" tests="8" failures="0" skipped="0" time="1.7561718000000002">
+        <testcase name="testCRRBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.2572035"/>
+        <testcase name="testEQPBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.2609923"/>
+        <testcase name="testFdEngines" classname="TestSuite.T_EuropeanOption" time="0.8753549"/>
+        <testcase name="testJOSHIBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.0734650"/>
+        <testcase name="testJRBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.0713768"/>
+        <testcase name="testLRBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.0728063"/>
+        <testcase name="testTGEOBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.0718902"/>
+        <testcase name="testTIANBinomialEngines" classname="TestSuite.T_EuropeanOption" time="0.0730828"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_ExchangeRate" tests="5" failures="0" skipped="0" time="0.0057882">
+        <testcase name="testDerived" classname="TestSuite.T_ExchangeRate" time="0.0001975"/>
+        <testcase name="testDirect" classname="TestSuite.T_ExchangeRate" time="0.0001613"/>
+        <testcase name="testDirectLookup" classname="TestSuite.T_ExchangeRate" time="0.0003601"/>
+        <testcase name="testSmartLookup" classname="TestSuite.T_ExchangeRate" time="0.0013046"/>
+        <testcase name="testTriangulatedLookup" classname="TestSuite.T_ExchangeRate" time="0.0037647"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_FastFourierTransform" tests="2" failures="0" skipped="0" time="0.0020369999999999997">
+        <testcase name="testFFTInverse" classname="TestSuite.T_FastFourierTransform" time="0.0015374"/>
+        <testcase name="testFFTSimple" classname="TestSuite.T_FastFourierTransform" time="0.0004996"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_FdmLinearOp" tests="10" failures="0" skipped="0" time="2.0096157000000003">
+        <testcase name="testCrankNicolsonWithDamping" classname="TestSuite.T_FdmLinearOp" time="0.0066137"/>
+        <testcase name="testDerivativeWeightsOnNonUniformGrids" classname="TestSuite.T_FdmLinearOp" time="0.3280073"/>
+        <testcase name="testFdmLinearOpLayout" classname="TestSuite.T_FdmLinearOp" time="0.0006096"/>
+        <testcase name="testFdmMesherIntegral" classname="TestSuite.T_FdmLinearOp" time="0.0014323"/>
+        <testcase name="testFirstDerivativesMapApply" classname="TestSuite.T_FdmLinearOp" time="0.8676966"/>
+        <testcase name="testSecondDerivativesMapApply" classname="TestSuite.T_FdmLinearOp" time="0.1372939"/>
+        <testcase name="testSecondOrderMixedDerivativesMapApply" classname="TestSuite.T_FdmLinearOp" time="0.5753511"/>
+        <testcase name="testSpareMatrixReference" classname="TestSuite.T_FdmLinearOp" time="0.0025919"/>
+        <testcase name="testTripleBandMapSolve" classname="TestSuite.T_FdmLinearOp" time="0.0894987"/>
+        <testcase name="testUniformGridMesher" classname="TestSuite.T_FdmLinearOp" time="0.0005206"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_ForwardOption" tests="5" failures="0" skipped="0" time="2.3047174000000004">
+        <testcase name="testGreeks" classname="TestSuite.T_ForwardOption" time="1.1840539"/>
+        <testcase name="testGreeksInitialization" classname="TestSuite.T_ForwardOption" time="0.0029733"/>
+        <testcase name="testPerformanceGreeks" classname="TestSuite.T_ForwardOption" time="1.1166659"/>
+        <testcase name="testPerformanceValues" classname="TestSuite.T_ForwardOption" time="0.0004845"/>
+        <testcase name="testValues" classname="TestSuite.T_ForwardOption" time="0.0005398"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Functions" tests="5" failures="0" skipped="0" time="0.0617983">
+        <testcase name="testFactorial" classname="TestSuite.T_Functions" time="0.0002656"/>
+        <testcase name="testGammaFunction" classname="TestSuite.T_Functions" time="0.0007054"/>
+        <testcase name="testGammaValues" classname="TestSuite.T_Functions" time="0.0003542"/>
+        <testcase name="testModifiedBesselFunctions" classname="TestSuite.T_Functions" time="0.0010567"/>
+        <testcase name="testWeightedModifiedBesselFunctions" classname="TestSuite.T_Functions" time="0.0594164"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_HestonModel" tests="10" failures="0" skipped="0" time="11.6988446">
+        <testcase name="testAlanLewisReferencePrices" classname="TestSuite.T_HestonModel" time="0.0782236"/>
+        <testcase name="testAnalyticPiecewiseTimeDependent" classname="TestSuite.T_HestonModel" time="0.0120568"/>
+        <testcase name="testAnalyticVsCached" classname="TestSuite.T_HestonModel" time="0.0287170"/>
+        <testcase name="testBlackCalibration" classname="TestSuite.T_HestonModel" time="0.4420431"/>
+        <testcase name="testDAXCalibration" classname="TestSuite.T_HestonModel" time="0.5906131"/>
+        <testcase name="testDAXCalibrationOfTimeDependentModel" classname="TestSuite.T_HestonModel" time="4.3343934"/>
+        <testcase name="testDifferentIntegrals" classname="TestSuite.T_HestonModel" time="5.8002687"/>
+        <testcase name="testExpansionOnAlanLewisReference" classname="TestSuite.T_HestonModel" time="0.0014376"/>
+        <testcase name="testExpansionOnFordeReference" classname="TestSuite.T_HestonModel" time="0.0074667"/>
+        <testcase name="testMcVsCached" classname="TestSuite.T_HestonModel" time="0.4036246"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_HybridHestonHullWhiteProcess" tests="9" failures="0" skipped="0" time="9.679937500000001">
+        <testcase name="testAnalyticHestonHullWhitePricing" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.1161766"/>
+        <testcase name="testBsmHullWhiteEngine" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.0019661"/>
+        <testcase name="testCallableEquityPricing" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.8532932"/>
+        <testcase name="testCompareBsmHWandHestonHW" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.0306692"/>
+        <testcase name="testDiscretizationError" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="1.7184733"/>
+        <testcase name="testH1HWPricingEngine" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.0734479"/>
+        <testcase name="testMcPureHestonPricing" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.5530360"/>
+        <testcase name="testMcVanillaPricing" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="0.4946013"/>
+        <testcase name="testZeroBondPricing" classname="TestSuite.T_HybridHestonHullWhiteProcess" time="5.8382739"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Inflation" tests="4" failures="0" skipped="0" time="0.0324769">
+        <testcase name="testYYIndex" classname="TestSuite.T_Inflation" time="0.0050533"/>
+        <testcase name="testYYTermStructure" classname="TestSuite.T_Inflation" time="0.0108102"/>
+        <testcase name="testZeroIndex" classname="TestSuite.T_Inflation" time="0.0018062"/>
+        <testcase name="testZeroTermStructure" classname="TestSuite.T_Inflation" time="0.0148072"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_InflationCPICapFloor" tests="2" failures="0" skipped="0" time="0.0202832">
+        <testcase name="cpicapfloorpricer" classname="TestSuite.T_InflationCPICapFloor" time="0.0049317"/>
+        <testcase name="cpicapfloorpricesurface" classname="TestSuite.T_InflationCPICapFloor" time="0.0153515"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_InflationCapFloorTest" tests="3" failures="0" skipped="0" time="2.9453911">
+        <testcase name="testCachedValue" classname="TestSuite.T_InflationCapFloorTest" time="0.0141719"/>
+        <testcase name="testConsistency" classname="TestSuite.T_InflationCapFloorTest" time="2.7764883"/>
+        <testcase name="testParity" classname="TestSuite.T_InflationCapFloorTest" time="0.1547309"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_InflationCapFlooredCouponTest" tests="2" failures="0" skipped="0" time="0.3067784">
+        <testcase name="testDecomposition" classname="TestSuite.T_InflationCapFlooredCouponTest" time="0.0126149"/>
+        <testcase name="testInstrumentEquality" classname="TestSuite.T_InflationCapFlooredCouponTest" time="0.2941635"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Instruments" tests="1" failures="0" skipped="0" time="0.0007311">
+        <testcase name="testObservable" classname="TestSuite.T_Instruments" time="0.0007311"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_InterestRate" tests="1" failures="0" skipped="0" time="0.0016333">
+        <testcase name="testConversions" classname="TestSuite.T_InterestRate" time="0.0016333"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Interpolations" tests="18" failures="0" skipped="0" time="1.7183040000000003">
+        <testcase name="testAsFunctor" classname="TestSuite.T_Interpolations" time="0.0004447"/>
+        <testcase name="testBackwardFlat" classname="TestSuite.T_Interpolations" time="0.0007904"/>
+        <testcase name="testBicubicDerivatives" classname="TestSuite.T_Interpolations" time="0.7404448"/>
+        <testcase name="testBicubicUpdate" classname="TestSuite.T_Interpolations" time="0.0003601"/>
+        <testcase name="testDerivativeEndConditions" classname="TestSuite.T_Interpolations" time="0.0008804"/>
+        <testcase name="testForwardFlat" classname="TestSuite.T_Interpolations" time="0.0010080"/>
+        <testcase name="testKernelInterpolation" classname="TestSuite.T_Interpolations" time="0.0028528"/>
+        <testcase name="testKernelInterpolation2D" classname="TestSuite.T_Interpolations" time="0.0068572"/>
+        <testcase name="testNonRestrictiveHymanFilter" classname="TestSuite.T_Interpolations" time="0.0003094"/>
+        <testcase name="testNormalSabrInterpolation" classname="TestSuite.T_Interpolations" time="0.2968076"/>
+        <testcase name="testRichardsonExtrapolation" classname="TestSuite.T_Interpolations" time="0.0007056"/>
+        <testcase name="testSabrInterpolation" classname="TestSuite.T_Interpolations" time="0.6528617"/>
+        <testcase name="testSabrSingleCases" classname="TestSuite.T_Interpolations" time="0.0098412"/>
+        <testcase name="testSimmetricEndConditions" classname="TestSuite.T_Interpolations" time="0.0007992"/>
+        <testcase name="testSplineErrorOnGaussianValues" classname="TestSuite.T_Interpolations" time="0.0020639"/>
+        <testcase name="testSplineOnGaussianValues" classname="TestSuite.T_Interpolations" time="0.0002945"/>
+        <testcase name="testSplineOnGenericValues" classname="TestSuite.T_Interpolations" time="0.0004368"/>
+        <testcase name="testSplineOnRPN15AValues" classname="TestSuite.T_Interpolations" time="0.0005457"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_LiborMarketModel" tests="4" failures="0" skipped="0" time="0.004">
+        <testcase name="testCalibration" classname="TestSuite.T_LiborMarketModel" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testCapletPricing" classname="TestSuite.T_LiborMarketModel" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testSimpleCovarianceModels" classname="TestSuite.T_LiborMarketModel" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testSwaptionPricing" classname="TestSuite.T_LiborMarketModel" time="0.0010000">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_LiborMarketModelProcess" tests="3" failures="0" skipped="0" time="0.003">
+        <testcase name="testInitialisation" classname="TestSuite.T_LiborMarketModelProcess" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testLambdaBootstrapping" classname="TestSuite.T_LiborMarketModelProcess" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testMonteCarloCapletPricing" classname="TestSuite.T_LiborMarketModelProcess" time="0.0010000">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_LinearLeastSquaresRegression" tests="3" failures="0" skipped="0" time="1.3686563999999999">
+        <testcase name="test1dLinearRegression" classname="TestSuite.T_LinearLeastSquaresRegression" time="0.0009970"/>
+        <testcase name="testMultiDimRegression" classname="TestSuite.T_LinearLeastSquaresRegression" time="0.3044582"/>
+        <testcase name="testRegression" classname="TestSuite.T_LinearLeastSquaresRegression" time="1.0632012"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_LookbackOption" tests="4" failures="0" skipped="0" time="0.011668399999999999">
+        <testcase name="testAnalyticContinuousFixedLookback" classname="TestSuite.T_LookbackOption" time="0.0033788"/>
+        <testcase name="testAnalyticContinuousFloatingLookback" classname="TestSuite.T_LookbackOption" time="0.0019187"/>
+        <testcase name="testAnalyticContinuousPartialFixedLookback" classname="TestSuite.T_LookbackOption" time="0.0030578"/>
+        <testcase name="testAnalyticContinuousPartialFloatingLookback" classname="TestSuite.T_LookbackOption" time="0.0033131"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_LowDiscrepancySequences" tests="4" failures="0" skipped="0" time="4.040580100000001">
+        <testcase name="testHalton" classname="TestSuite.T_LowDiscrepancySequences" time="0.0951986"/>
+        <testcase name="testPolynomialsModuloTwo" classname="TestSuite.T_LowDiscrepancySequences" time="0.0002917"/>
+        <testcase name="testSobol" classname="TestSuite.T_LowDiscrepancySequences" time="0.1380620"/>
+        <testcase name="testSobolSkipping" classname="TestSuite.T_LowDiscrepancySequences" time="3.8070278"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Matrices" tests="7" failures="0" skipped="0" time="0.23378890000000002">
+        <testcase name="testEigenvectors" classname="TestSuite.T_Matrices" time="0.0002336"/>
+        <testcase name="testHighamSqrt" classname="TestSuite.T_Matrices" time="0.0011036"/>
+        <testcase name="testInverse" classname="TestSuite.T_Matrices" time="0.0002053"/>
+        <testcase name="testQRDecomposition" classname="TestSuite.T_Matrices" time="0.0003517"/>
+        <testcase name="testQRSolve" classname="TestSuite.T_Matrices" time="0.2304451"/>
+        <testcase name="testSVD" classname="TestSuite.T_Matrices" time="0.0003641"/>
+        <testcase name="testSqrt" classname="TestSuite.T_Matrices" time="0.0010855"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Money" tests="3" failures="0" skipped="0" time="0.0014096999999999998">
+        <testcase name="testAutomated" classname="TestSuite.T_Money" time="0.0002181"/>
+        <testcase name="testBaseCurrency" classname="TestSuite.T_Money" time="0.0010554"/>
+        <testcase name="testNone" classname="TestSuite.T_Money" time="0.0001362"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Operators" tests="2" failures="0" skipped="0" time="0.006527">
+        <testcase name="testBSMOperatorConsistency" classname="TestSuite.T_Operators" time="0.0010774"/>
+        <testcase name="testOperatorConsistency" classname="TestSuite.T_Operators" time="0.0054496"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Optimizers" tests="4" failures="0" skipped="0" time="6.5367701">
+        <testcase name="OptimizersTest" classname="TestSuite.T_Optimizers" time="0.0041937"/>
+        <testcase name="nestedOptimizationTest" classname="TestSuite.T_Optimizers" time="0.0004406"/>
+        <testcase name="testDifferentialEvolution" classname="TestSuite.T_Optimizers" time="6.5302003"/>
+        <testcase name="testFunctionValueEqualsCostFunctionAtCurrentValue" classname="TestSuite.T_Optimizers" time="0.0019355"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_OptionletStripper" tests="4" failures="0" skipped="0" time="1.2556084">
+        <testcase name="testFlatTermVolatilityStripping1" classname="TestSuite.T_OptionletStripper" time="0.0526437"/>
+        <testcase name="testFlatTermVolatilityStripping2" classname="TestSuite.T_OptionletStripper" time="0.0488856"/>
+        <testcase name="testTermVolatilityStripping1" classname="TestSuite.T_OptionletStripper" time="0.6194484"/>
+        <testcase name="testTermVolatilityStripping2" classname="TestSuite.T_OptionletStripper" time="0.5346307"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_OvernightIndexedCoupon" tests="9" failures="0" skipped="0" time="0.3131041">
+        <testcase name="testAccruedAmountInTheFuture" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0317858"/>
+        <testcase name="testAccruedAmountInThePast" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0325578"/>
+        <testcase name="testAccruedAmountOnFutureHoliday" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0327751"/>
+        <testcase name="testAccruedAmountOnPastHoliday" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0331730"/>
+        <testcase name="testAccruedAmountSpanningToday" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0360392"/>
+        <testcase name="testCurrentCouponRate" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0341235"/>
+        <testcase name="testFutureCouponRate" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0334221"/>
+        <testcase name="testPastCouponRate" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0317628"/>
+        <testcase name="testRateWhenTodayIsHoliday" classname="TestSuite.T_OvernightIndexedCoupon" time="0.0474648"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_OvernightIndexedSwap" tests="4" failures="0" skipped="0" time="5.994547799999999">
+        <testcase name="testBootstrap" classname="TestSuite.T_OvernightIndexedSwap" time="1.6248600"/>
+        <testcase name="testCachedValue" classname="TestSuite.T_OvernightIndexedSwap" time="0.0527729"/>
+        <testcase name="testFairRate" classname="TestSuite.T_OvernightIndexedSwap" time="2.3046592"/>
+        <testcase name="testFairSpread" classname="TestSuite.T_OvernightIndexedSwap" time="2.0122557"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_PSACurve" tests="1" failures="0" skipped="0" time="0.000534">
+        <testcase name="testCashedValues" classname="TestSuite.T_PSACurve" time="0.0005340"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Pathgenerator" tests="2" failures="0" skipped="0" time="0.002">
+        <testcase name="testMultiPathGenerator" classname="TestSuite.T_Pathgenerator" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testPathGenerator" classname="TestSuite.T_Pathgenerator" time="0.0010000">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_PiecewiseZeroSpreadedTermStructure" tests="10" failures="0" skipped="0" time="0.0634812">
+        <testcase name="testBackwardFlatInterpolation" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0051218"/>
+        <testcase name="testDefaultInterpolation" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0145894"/>
+        <testcase name="testFlatInterpolationLeft" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0048086"/>
+        <testcase name="testFlatInterpolationRight" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0058898"/>
+        <testcase name="testForwardFlatInterpolation" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0059741"/>
+        <testcase name="testLinearInterpolation" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0053412"/>
+        <testcase name="testLinearInterpolationMultipleSpreads" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0054289"/>
+        <testcase name="testMaxDate" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0050450"/>
+        <testcase name="testQuoteChanging" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0054338"/>
+        <testcase name="testSetInterpolationFactory" classname="TestSuite.T_PiecewiseZeroSpreadedTermStructure" time="0.0058486"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_PiecewiseyieldCurve" tests="16" failures="0" skipped="0" time="5.112410200000001">
+        <testcase name="testConvexMonotoneForwardConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.7463155"/>
+        <testcase name="testDiscountCopy" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0471266"/>
+        <testcase name="testFlatForwardConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.1986086"/>
+        <testcase name="testForwardCopy" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0467549"/>
+        <testcase name="testForwardRateDayCounter" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0396641"/>
+        <testcase name="testJpyLibor" classname="TestSuite.T_PiecewiseyieldCurve" time="0.1055816"/>
+        <testcase name="testLiborFixing" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0556612"/>
+        <testcase name="testLinearDiscountConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="1.3600606"/>
+        <testcase name="testLinearForwardConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.2042226"/>
+        <testcase name="testLinearZeroConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.7540435"/>
+        <testcase name="testLocalBootstrapConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.6824967"/>
+        <testcase name="testLogLinearDiscountConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.3216377"/>
+        <testcase name="testLogLinearZeroConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0001860"/>
+        <testcase name="testObservability" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0010000">
+            <skipped/>
+        </testcase>
+        <testcase name="testSplineZeroConsistency" classname="TestSuite.T_PiecewiseyieldCurve" time="0.4993168"/>
+        <testcase name="testZeroCopy" classname="TestSuite.T_PiecewiseyieldCurve" time="0.0497338"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Quotes" tests="4" failures="0" skipped="0" time="0.0012499999999999998">
+        <testcase name="testComposite" classname="TestSuite.T_Quotes" time="0.0005246"/>
+        <testcase name="testDerived" classname="TestSuite.T_Quotes" time="0.0005147"/>
+        <testcase name="testObservable" classname="TestSuite.T_Quotes" time="0.0000838"/>
+        <testcase name="testObservableHandle" classname="TestSuite.T_Quotes" time="0.0001269"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_RNGTraits" tests="3" failures="0" skipped="0" time="0.0012154000000000002">
+        <testcase name="testCustomPoisson" classname="TestSuite.T_RNGTraits" time="0.0008885"/>
+        <testcase name="testDefaultPoisson" classname="TestSuite.T_RNGTraits" time="0.0001583"/>
+        <testcase name="testGaussian" classname="TestSuite.T_RNGTraits" time="0.0001686"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_RiskStats" tests="1" failures="0" skipped="0" time="0.8275152">
+        <testcase name="RiskStatisticsTest" classname="TestSuite.T_RiskStats" time="0.8275152"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Rounding" tests="5" failures="0" skipped="0" time="0.0011149">
+        <testcase name="testCeiling" classname="TestSuite.T_Rounding" time="0.0001449"/>
+        <testcase name="testClosest" classname="TestSuite.T_Rounding" time="0.0001434"/>
+        <testcase name="testDown" classname="TestSuite.T_Rounding" time="0.0005049"/>
+        <testcase name="testFloor" classname="TestSuite.T_Rounding" time="0.0001606"/>
+        <testcase name="testUp" classname="TestSuite.T_Rounding" time="0.0001611"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_SVI" tests="1" failures="0" skipped="0" time="0.001">
+        <testcase name="testCalibration" classname="TestSuite.T_SVI" time="0.0010000">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="TestSuite.T_SampledCurve" tests="1" failures="0" skipped="0" time="0.0007266">
+        <testcase name="testConstruction" classname="TestSuite.T_SampledCurve" time="0.0007266"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Schedule" tests="28" failures="0" skipped="0" time="0.0183848">
+        <testcase name="testAccrualDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0002068"/>
+        <testcase name="testBackwardDatesWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0001386"/>
+        <testcase name="testCDS2015Convention" classname="TestSuite.T_Schedule" time="0.0002893"/>
+        <testcase name="testCDS2015ConventionGrid" classname="TestSuite.T_Schedule" time="0.0029264"/>
+        <testcase name="testCDS2015ConventionSampleDates" classname="TestSuite.T_Schedule" time="0.0003884"/>
+        <testcase name="testCDS2015ZeroMonthsMatured" classname="TestSuite.T_Schedule" time="0.0004696"/>
+        <testcase name="testCDSConventionGrid" classname="TestSuite.T_Schedule" time="0.0030841"/>
+        <testcase name="testCDSConventionSampleDates" classname="TestSuite.T_Schedule" time="0.0003203"/>
+        <testcase name="testDailySchedule" classname="TestSuite.T_Schedule" time="0.0001396"/>
+        <testcase name="testDateConstructor" classname="TestSuite.T_Schedule" time="0.0005917"/>
+        <testcase name="testDatesPastEndDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0002198"/>
+        <testcase name="testDatesSameAsEndDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0001450"/>
+        <testcase name="testDoubleFirstDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0001585"/>
+        <testcase name="testEffectiveDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0003780"/>
+        <testcase name="testEndDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0002246"/>
+        <testcase name="testFirstDateOnMaturity" classname="TestSuite.T_Schedule" time="0.0001584"/>
+        <testcase name="testFirstDateWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0001754"/>
+        <testcase name="testForwardDatesWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0001303"/>
+        <testcase name="testFourWeeksTenor" classname="TestSuite.T_Schedule" time="0.0001419"/>
+        <testcase name="testNextToLastDateOnStart" classname="TestSuite.T_Schedule" time="0.0001659"/>
+        <testcase name="testNextToLastWithEomAdjustment" classname="TestSuite.T_Schedule" time="0.0002094"/>
+        <testcase name="testOldCDSConventionGrid" classname="TestSuite.T_Schedule" time="0.0043631"/>
+        <testcase name="testOldCDSConventionSampleDates" classname="TestSuite.T_Schedule" time="0.0002788"/>
+        <testcase name="testOnceFrequency" classname="TestSuite.T_Schedule" time="0.0001043"/>
+        <testcase name="testPreviousDateAndNextDate" classname="TestSuite.T_Schedule" time="0.0007278"/>
+        <testcase name="testScheduleAlwaysHasAStartDate" classname="TestSuite.T_Schedule" time="0.0002784"/>
+        <testcase name="testShortEomSchedule" classname="TestSuite.T_Schedule" time="0.0001214"/>
+        <testcase name="testTruncation" classname="TestSuite.T_Schedule" time="0.0018490"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_ShortRateModels" tests="3" failures="0" skipped="0" time="1.2632662000000001">
+        <testcase name="testCachedHullWhite" classname="TestSuite.T_ShortRateModels" time="0.0194009"/>
+        <testcase name="testFuturesConvexityBias" classname="TestSuite.T_ShortRateModels" time="0.0003505"/>
+        <testcase name="testSwaps" classname="TestSuite.T_ShortRateModels" time="1.2435148"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_SofrFutures" tests="1" failures="0" skipped="0" time="0.0038241">
+        <testcase name="testBootstrap" classname="TestSuite.T_SofrFutures" time="0.0038241"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Solvers" tests="6" failures="0" skipped="0" time="0.0012571000000000001">
+        <testcase name="testBisection" classname="TestSuite.T_Solvers" time="0.0001825"/>
+        <testcase name="testBrent" classname="TestSuite.T_Solvers" time="0.0003021"/>
+        <testcase name="testFalsePosition" classname="TestSuite.T_Solvers" time="0.0002005"/>
+        <testcase name="testNewton" classname="TestSuite.T_Solvers" time="0.0000594"/>
+        <testcase name="testRidder" classname="TestSuite.T_Solvers" time="0.0003245"/>
+        <testcase name="testSecant" classname="TestSuite.T_Solvers" time="0.0001881"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_SpreadOption" tests="1" failures="0" skipped="0" time="0.0015574">
+        <testcase name="testKirkEngine" classname="TestSuite.T_SpreadOption" time="0.0015574"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Stats" tests="4" failures="0" skipped="0" time="0.045423700000000004">
+        <testcase name="testConvergenceStatistics" classname="TestSuite.T_Stats" time="0.0018289"/>
+        <testcase name="testIncrementalStatistics" classname="TestSuite.T_Stats" time="0.0412592"/>
+        <testcase name="testSequenceStatistics" classname="TestSuite.T_Stats" time="0.0018445"/>
+        <testcase name="testStatistics" classname="TestSuite.T_Stats" time="0.0004911"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Swaps" tests="8" failures="0" skipped="0" time="0.0506799">
+        <testcase name="testCachedValue" classname="TestSuite.T_Swaps" time="0.0008776"/>
+        <testcase name="testFairRate" classname="TestSuite.T_Swaps" time="0.0074812"/>
+        <testcase name="testFairSpread" classname="TestSuite.T_Swaps" time="0.0051376"/>
+        <testcase name="testFixing" classname="TestSuite.T_Swaps" time="0.0011145"/>
+        <testcase name="testInArrears" classname="TestSuite.T_Swaps" time="0.0010554"/>
+        <testcase name="testRateDependency" classname="TestSuite.T_Swaps" time="0.0170541"/>
+        <testcase name="testSpreadDependency" classname="TestSuite.T_Swaps" time="0.0173495"/>
+        <testcase name="testThirdWednesdayAdjustment" classname="TestSuite.T_Swaps" time="0.0006100"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Swaption" tests="7" failures="0" skipped="0" time="6.420168">
+        <testcase name="testCachedValue" classname="TestSuite.T_Swaption" time="0.0009594"/>
+        <testcase name="testCashSettledSwaptions" classname="TestSuite.T_Swaption" time="0.0622309"/>
+        <testcase name="testImpliedVolatility" classname="TestSuite.T_Swaption" time="4.9007221"/>
+        <testcase name="testSpreadDependency" classname="TestSuite.T_Swaption" time="0.1447427"/>
+        <testcase name="testSpreadTreatment" classname="TestSuite.T_Swaption" time="0.2942976"/>
+        <testcase name="testStrikeDependency" classname="TestSuite.T_Swaption" time="0.1412227"/>
+        <testcase name="testVega" classname="TestSuite.T_Swaption" time="0.8759926"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_SwaptionVolatilityMatrix" tests="2" failures="0" skipped="0" time="0.10801229999999999">
+        <testcase name="testSwaptionVolMatrixCoherence" classname="TestSuite.T_SwaptionVolatilityMatrix" time="0.1046612"/>
+        <testcase name="testSwaptionVolMatrixObservability" classname="TestSuite.T_SwaptionVolatilityMatrix" time="0.0033511"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_TermStructures" tests="9" failures="0" skipped="0" time="0.0794029">
+        <testcase name="testCompositeZeroYieldStructures" classname="TestSuite.T_TermStructures" time="0.0048270"/>
+        <testcase name="testFSpreaded" classname="TestSuite.T_TermStructures" time="0.0096609"/>
+        <testcase name="testFSpreadedObs" classname="TestSuite.T_TermStructures" time="0.0259994"/>
+        <testcase name="testImplied" classname="TestSuite.T_TermStructures" time="0.0085243"/>
+        <testcase name="testImpliedObs" classname="TestSuite.T_TermStructures" time="0.0050400"/>
+        <testcase name="testInterpolatedZeroCurveWithRefDateAndTenorDates" classname="TestSuite.T_TermStructures" time="0.0041113"/>
+        <testcase name="testReferenceChange" classname="TestSuite.T_TermStructures" time="0.0054837"/>
+        <testcase name="testZSpreaded" classname="TestSuite.T_TermStructures" time="0.0061720"/>
+        <testcase name="testZSpreadedObs" classname="TestSuite.T_TermStructures" time="0.0095843"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_TimeGrid" tests="8" failures="0" skipped="0" time="0.0058257">
+        <testcase name="testClosestIndex" classname="TestSuite.T_TimeGrid" time="0.0000979"/>
+        <testcase name="testClosestTime" classname="TestSuite.T_TimeGrid" time="0.0000955"/>
+        <testcase name="testConstructorAdditionalSteps" classname="TestSuite.T_TimeGrid" time="0.0048838"/>
+        <testcase name="testConstructorEmptyIterator" classname="TestSuite.T_TimeGrid" time="0.0001240"/>
+        <testcase name="testConstructorEvenSteps" classname="TestSuite.T_TimeGrid" time="0.0000816"/>
+        <testcase name="testConstructorMandatorySteps" classname="TestSuite.T_TimeGrid" time="0.0000773"/>
+        <testcase name="testConstructorNegativeValuesInIterator" classname="TestSuite.T_TimeGrid" time="0.0003551"/>
+        <testcase name="testMandatoryTimes" classname="TestSuite.T_TimeGrid" time="0.0001105"/>
+    </testsuite>
+    <testsuite name="TestSuite.T_Vector" tests="4" failures="0" skipped="0" time="0.0023879">
+        <testcase name="testClone" classname="TestSuite.T_Vector" time="0.0000985"/>
+        <testcase name="testCloneICloneable" classname="TestSuite.T_Vector" time="0.0010950"/>
+        <testcase name="testEquals" classname="TestSuite.T_Vector" time="0.0003124"/>
+        <testcase name="testHashCode" classname="TestSuite.T_Vector" time="0.0008820"/>
+    </testsuite>
+</testsuites>

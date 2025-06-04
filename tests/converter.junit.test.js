@@ -42,5 +42,11 @@ describe("JUnit converter tests", () => {
 
     });
 
+    test('junit-qlnet.xml', async() => {
+        let options = common.createOptions('junit-qlnet.xml', 'junit');
+        options.splitByClassname = true;
 
+        await converter(options);
+        common.compare(options, undefined, true);
+    });
 });

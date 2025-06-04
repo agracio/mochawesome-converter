@@ -1,3 +1,4 @@
+'use strict';
 const fs = require('fs');
 const path = require('path');
 const crypto = require("crypto");
@@ -62,7 +63,7 @@ function getError(testcase){
         message = `${prefix}${fail.message.replaceAll('&#xD;', '').replaceAll('&#xA;', '')}`;
     }
     if(fail.$t){
-        estack = fail.$t.replaceAll('&#xD;', '\n').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '"');
+        estack = fail.$t.replaceAll('&#xD;', '').replaceAll('&#x27;', '\'').replaceAll('&#x3C;', '<').replaceAll('&#x3E;', '>').replaceAll('&#x22;', '"');
     }
     else if(typeof fail === 'string'){
         estack = fail;

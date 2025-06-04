@@ -1,3 +1,4 @@
+'use strict';
 const path = require('path');
 const fs = require('fs');
 
@@ -43,6 +44,7 @@ function config (options) {
   let html = false;
   let htmlReportFilename = `${path.parse(options.testFile).name}-mochawesome.html`;
   let saveIntermediateFiles = false;
+  let splitByClassname = false;
   let junit = false;
   let junitReportFilename = `${path.parse(options.testFile).name}-junit.xml`;
 
@@ -60,6 +62,10 @@ function config (options) {
 
   if(options.saveIntermediateFiles === true || options.saveIntermediateFiles === 'true'){
     saveIntermediateFiles = true;
+  }
+
+  if(options.splitByClassname === true || options.splitByClassname === 'true'){
+    splitByClassname = true;
   }
 
   if(options.reportDir){
@@ -97,6 +103,7 @@ function config (options) {
     junitReportFilename: junitReportFilename,
     html: html,
     htmlReportFilename: htmlReportFilename,
+    splitByClassname: splitByClassname,
     saveIntermediateFiles: saveIntermediateFiles,
   }
 }

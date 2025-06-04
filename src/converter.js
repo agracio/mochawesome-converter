@@ -1,3 +1,4 @@
+'use strict';
 const junitConvert = require('junit-converter');
 const conf = require('./config');
 const junit = require('./junit');

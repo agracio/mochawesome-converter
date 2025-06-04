@@ -365,7 +365,7 @@
               "pass": false,
               "fail": false,
               "pending": true,
-              "context": "[\"skipped: Expected: True\\r   But was:  False\",{\"title\":\"system-out\",\"value\":\"Expected: True\\r\\n  But was:  False\"}]",
+              "context": "[\"skipped: Expected: True   But was:  False\",{\"title\":\"system-out\",\"value\":\"Expected: True\\n  But was:  False\"}]",
               "code": null,
               "err": {},
               "uuid": "16a00afd-6104-4a01-8014-5faa60c65797",

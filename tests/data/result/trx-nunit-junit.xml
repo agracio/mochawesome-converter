@@ -63,9 +63,9 @@
             </system-out>
         </testcase>
         <testcase classname="NUnitSample.SimpleTests" name="Test_with_failed_assumption" status="Skipped" time="0.0008150">
-            <skipped message="Expected: True&#xD;   But was:  False"/>
+            <skipped message="Expected: True   But was:  False"/>
             <system-out>
-                Expected: True&#xD;
+                Expected: True
   But was:  False
             </system-out>
         </testcase>

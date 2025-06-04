@@ -11,6 +11,7 @@ interface ConverterOptions{
     junitReportFilename? : string
     html?: boolean
     htmlReportFilename? : string
+    splitByClassname?: boolean
     saveIntermediateFiles?: boolean
 }
 

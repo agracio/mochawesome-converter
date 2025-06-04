@@ -9,6 +9,7 @@ interface TestReportConverterOptions {
     htmlReportFilename? : string
     skippedAsPending?: boolean
     switchClassnameAndName?: boolean
+    splitByClassname?: boolean
     saveIntermediateFiles?: boolean
 
 }
