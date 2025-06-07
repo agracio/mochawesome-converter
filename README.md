@@ -56,33 +56,13 @@ https://github.com/adamgruber/mochawesome
 - Tests suites without any tests are excluded from Mochawesome and JUnit.
 - Attachments are not supported.
 
+### Conversion process to JUnit
+
+- **Full conversion process is described in [junit-converter](https://github.com/agracio/junit-converter)**
+
 ### JUnit
 
 - Converts  **&lt;properties&gt;**, **&lt;system-out&gt;** and **&lt;system-err&gt;** elements to Mochawesome test context.
-
-### NUnit
-
-- NUnit v3+ XML is supported.
-- Converts **&lt;properties&gt;** elements to JUnit **&lt;properties&gt;**.
-- Converts **&lt;output&gt;** elements to JUnit **&lt;system-out&gt;**.
-
-### xUnit.net  
-
-- xUnit.net v2+ XML is supported.
-- Converts **&lt;traits&gt;** elements to  to JUnit **&lt;properties&gt;**.
-- Converts `test` **&lt;reason&gt;** elements to JUnit **&lt;skipped&gt;**.
-- Supports single **&lt;assembly&gt;** per file, if multiple assemblies are present only first will be converted.
-
-### MSTest TRX
-
-- Converts `Output/ErrorInfo/Message` to JUnit **&lt;failure&gt;** message.
-- Converts `Output/ErrorInfo/StackTrace` to JUnit **&lt;failure&gt;** stack trace.
-- Converts `Output/StdErr` to JUnit **&lt;system-err&gt;**.
-- Converts `Output/StdOut` to JUnit **&lt;system-out&gt;**.
-- Converts Inconclusive and NotExecuted tests to **&lt;skipped&gt;** with message.
-- Test suites are split into multiple **&lt;testsuite&gt;** elements by test classname.
-- Tests are ordered by name.
-- Test suit times are not 100% accurate - displayed as a sum() of all test times. 
 
 ### Usage
 
