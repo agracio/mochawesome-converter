@@ -14,6 +14,19 @@ on:
       - '.vscode/**'
       - 'README.md'
       - 'gulpfile.js'
+  pull_request:
+    paths-ignore:
+      - '.github/FUNDING.YML'
+      - '.github/dependabot.yml'
+      - '**/*.md'
+      - '.gitconfig'
+      - '.gitignore'
+      - '.npmignore'
+      - 'LICENSE*'
+      - '.idea/**'
+      - '.vscode/**'
+      - 'README.md'
+      - 'gulpfile.js'
 
 jobs:
   test:
