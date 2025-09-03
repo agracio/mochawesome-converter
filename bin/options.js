@@ -39,6 +39,11 @@ export const yargsOptions = {
         describe: 'Mochawesome HTML file name',
         string: true,
     },
+    splitByClassname: {
+        default: false,
+        describe: 'Split into multiple test suites by test classname',
+        boolean: true,
+    },
     skippedAsPending: {
         default: true,
         describe: 'Show skipped tests as pending in Mochawesome report',
