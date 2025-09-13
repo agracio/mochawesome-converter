@@ -16,7 +16,7 @@
 - JUnit/xUnit XML Format  
 - NUnit v3+ XML Format  
 - xUnit.net v2+ XML Format  
-- MSTest TRX Format  
+- MSTest TRX Format (this is default `dotnet test` report output)  
 
 ### What is Mochawesome
 
@@ -48,7 +48,7 @@ https://github.com/adamgruber/mochawesome
  - Set `junit` option to `true` to get JUnit conversion results.
  - If you only require JUnit conversion, you can use [junit-converter](https://github.com/agracio/junit-converter).
 
-### All test types
+### JUnit to Mochawesome conversion
 
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 - Converts &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; to Mochawesome context values.
@@ -59,10 +59,6 @@ https://github.com/adamgruber/mochawesome
 ### Conversion process to JUnit
 
 - **Full conversion process is described in [junit-converter](https://github.com/agracio/junit-converter)**
-
-### JUnit
-
-- Converts  **&lt;properties&gt;**, **&lt;system-out&gt;** and **&lt;system-err&gt;** elements to Mochawesome test context.
 
 ### Usage
 
@@ -94,19 +90,19 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 
 ### Options
 
-| Option                    | Type    | Default                          | Description                                                                                     |
-|:--------------------------|:--------|:---------------------------------|:------------------------------------------------------------------------------------------------|
-| `testFile` **(required)** | string  |                                  | Path to test file for conversion                                                                |
-| `testType` **(required)** | string  |                                  | [Test report type](https://github.com/agracio/mochawesome-converter#supported-testtype-options) |
-| `reportDir`               | string  | ./report                         | Converted report output path                                                                    |
-| `reportFilename`          | string  | `testFile.name`-mochawesome.json | Mochawesome report name                                                                         |
-| `junit`                   | boolean | false                            | Create JUnit report?                                                                            |
-| `junitReportFilename`     | string  | `testFile.name`-junit.xml        | JUnit report file name                                                                          |
-| `html`                    | boolean | false                            | Create Mochawesome HTML?                                                                        |
-| `htmlReportFilename`      | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                                                                      |
-| `splitByClassname`        | boolean | false                            | Split into multiple test suites by test classname                                               |
-| `skippedAsPending`        | boolean | true                             | Show skipped tests as pending in Mochawesome                                                    |
-| `switchClassnameAndName`  | boolean | false                            | Switch test case classname and name                                                             |
+| Option                    | Type    | Default                          | Description                                       |
+|:--------------------------|:--------|:---------------------------------|:--------------------------------------------------|
+| `testFile` **(required)** | string  |                                  | Path to test file for conversion                  |
+| `testType` **(required)** | string  |                                  | [Test report type](#supported-testtype-options)   |
+| `reportDir`               | string  | ./report                         | Converted report output path                      |
+| `reportFile`              | string  | `testFile.name`-mochawesome.json | Mochawesome JSON report name                      |
+| `junit`                   | boolean | false                            | Create JUnit report?                              |
+| `junitReportFile`         | string  | `testFile.name`-junit.xml        | JUnit report file name                            |
+| `html`                    | boolean | false                            | Create Mochawesome HTML?                          |
+| `htmlReportFile`          | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                        |
+| `splitByClassname`        | boolean | false                            | Split into multiple test suites by test classname |
+| `skippedAsPending`        | boolean | true                             | Show skipped tests as pending in Mochawesome      |
+| `switchClassnameAndName`  | boolean | false                            | Switch test case classname and name               |
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
@@ -120,12 +116,12 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 
 #### Supported `testType` options.
 
-| `testType` | File Type         |
-|:-----------|:------------------|
-| JUnit      | JUnit/xUnit XML   |
-| NUnit      | NUnit v3+ XML     |
-| xUnit      | xUnit.net v2+ XML |
-| TRX        | MSTest TRX        |
+| `testType` | File Type                  |
+|:-----------|:---------------------------|
+| JUnit      | JUnit/xUnit XML            |
+| NUnit      | NUnit v3+ XML              |
+| xUnit      | xUnit.net v2+ XML          |
+| TRX        | MSTest TRX (`dotnet test`) |
 
 
 

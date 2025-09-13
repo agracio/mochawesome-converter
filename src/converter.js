@@ -16,7 +16,7 @@ async function convert(options){
         testType: config.testType,
         switchClassnameAndName: config.switchClassnameAndName,
         reportDir: config.reportDir,
-        reportFilename: config.junitReportFilename,
+        reportFile: config.junitReportFile,
         splitByClassname: config.splitByClassname || config.testType === 'trx',
         saveIntermediateFiles: config.saveIntermediateFiles,
     };

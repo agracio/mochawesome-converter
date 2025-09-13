@@ -6,11 +6,11 @@ interface ConverterOptions{
     switchClassnameAndName?: boolean
     reportDir? : string
     reportPath: string
-    reportFilename? : string
+    reportFile? : string
     junit?: boolean
-    junitReportFilename? : string
+    junitReportFile? : string
     html?: boolean
-    htmlReportFilename? : string
+    htmlReportFile? : string
     splitByClassname?: boolean
     saveIntermediateFiles?: boolean
 }

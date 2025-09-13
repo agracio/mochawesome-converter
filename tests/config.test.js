@@ -52,13 +52,49 @@ describe("Config tests", () => {
         expect(result.reportDir).toBe('./report');
         expect(result.reportPath).toBe(path.join(result.reportDir, 'xunit-qlnet-mochawesome.json'));
         expect(result.junit).toBe(false);
-        expect(result.junitReportFilename).toBe('xunit-qlnet-junit.xml');
+        expect(result.junitReportFile).toBe('xunit-qlnet-junit.xml');
         expect(result.html).toBe(false);
-        expect(result.htmlReportFilename).toBe('xunit-qlnet-mochawesome.html');
+        expect(result.htmlReportFile).toBe('xunit-qlnet-mochawesome.html');
         expect(result.saveIntermediateFiles).toBe(false);
     });
 
     test('return correct values from assigned options', () => {
+        let options = {
+            testFile: path.join(__dirname, 'data/source/xunit-qlnet.xml'),
+            testType: 'xunit',
+            skippedAsPending: false,
+            switchClassnameAndName: true,
+            reportDir: './report1',
+            reportFile: 'mochawesome1.json',
+            junit: true,
+            junitReportFile: 'xunit-j.xml',
+            html: true,
+            htmlReportFile: 'mochawesome1.html',
+            saveIntermediateFiles: true,
+        }
+
+        let result = config.config(options)
+
+        expect(result.testFile).toBe(path.join(__dirname, 'data/source/xunit-qlnet.xml'));
+        expect(result.testType).toBe('xunit');
+        expect(result.skippedAsPending).toBe(false);
+        expect(result.switchClassnameAndName).toBe(true);
+        expect(result.reportDir).toBe('./report1');
+        expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome1.json'));
+        expect(result.junit).toBe(true);
+        expect(result.junitReportFile).toBe('xunit-j.xml');
+        expect(result.html).toBe(true);
+        expect(result.htmlReportFile).toBe('mochawesome1.html');
+        expect(result.saveIntermediateFiles).toBe(true);
+
+        expect(fs.existsSync(result.reportDir)).toBe(true)
+
+        if(fs.existsSync(result.reportDir)){
+            fs.rmdirSync(result.reportDir);
+        }
+    });
+
+    test('return correct values from assigned options using deprecated parameters', () => {
         let options = {
             testFile: path.join(__dirname, 'data/source/xunit-qlnet.xml'),
             testType: 'xunit',
@@ -82,9 +118,9 @@ describe("Config tests", () => {
         expect(result.reportDir).toBe('./report1');
         expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome1.json'));
         expect(result.junit).toBe(true);
-        expect(result.junitReportFilename).toBe('xunit-j.xml');
+        expect(result.junitReportFile).toBe('xunit-j.xml');
         expect(result.html).toBe(true);
-        expect(result.htmlReportFilename).toBe('mochawesome1.html');
+        expect(result.htmlReportFile).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
 
         expect(fs.existsSync(result.reportDir)).toBe(true)

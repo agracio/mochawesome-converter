@@ -344,7 +344,7 @@ async function convert(options, suitesRoot){
 
     if(options.html){
         const margeOptions = {
-            reportFilename: options.htmlReportFilename,
+            reportFilename: options.htmlReportFile,
             reportDir: options.reportDir,
             showSkipped: true,
             reportTitle: path.basename(options.testFile),

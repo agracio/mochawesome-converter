@@ -40,13 +40,13 @@ function config (options) {
   let skippedAsPending = true;
   let switchClassnameAndName = false;
   let reportDir = './report';
-  let reportFilename = `${path.parse(options.testFile).name}-mochawesome.json`;
+  let reportFile = `${path.parse(options.testFile).name}-mochawesome.json`;
   let html = false;
-  let htmlReportFilename = `${path.parse(options.testFile).name}-mochawesome.html`;
+  let htmlReportFile = `${path.parse(options.testFile).name}-mochawesome.html`;
   let saveIntermediateFiles = false;
   let splitByClassname = false;
   let junit = false;
-  let junitReportFilename = `${path.parse(options.testFile).name}-junit.xml`;
+  let junitReportFile = `${path.parse(options.testFile).name}-junit.xml`;
 
   if(options.skippedAsPending === false || options.skippedAsPending === 'false'){
     skippedAsPending = false;
@@ -73,11 +73,19 @@ function config (options) {
   }
 
   if(options.reportFilename){
-    reportFilename = options.reportFilename;
+    reportFile = options.reportFilename;
+  }
+
+  if(options.reportFile){
+    reportFile = options.reportFile;
   }
 
   if(options.htmlReportFilename){
-    htmlReportFilename = options.htmlReportFilename;
+    htmlReportFile = options.htmlReportFilename;
+  }
+
+  if(options.htmlReportFile){
+    htmlReportFile = options.htmlReportFile;
   }
 
   if(options.junit === true || options.junit === 'true'){
@@ -85,7 +93,11 @@ function config (options) {
   }
 
   if(options.junitReportFilename){
-    junitReportFilename = options.junitReportFilename;
+    junitReportFile = options.junitReportFilename;
+  }
+
+  if(options.junitReportFile){
+    junitReportFile = options.junitReportFile;
   }
 
   if(!fs.existsSync(reportDir)){
@@ -98,11 +110,11 @@ function config (options) {
     skippedAsPending: skippedAsPending,
     switchClassnameAndName: switchClassnameAndName,
     reportDir: reportDir,
-    reportPath: path.join(reportDir, reportFilename),
+    reportPath: path.join(reportDir, reportFile),
     junit: junit,
-    junitReportFilename: junitReportFilename,
+    junitReportFile: junitReportFile,
     html: html,
-    htmlReportFilename: htmlReportFilename,
+    htmlReportFile: htmlReportFile,
     splitByClassname: splitByClassname,
     saveIntermediateFiles: saveIntermediateFiles,
   }

@@ -14,9 +14,9 @@ export const yargsOptions = {
         describe: 'Report output directory',
         string: true,
     },
-    reportFilename: {
+    reportFile: {
         default: undefined,
-        describe: 'Mochawesome report name',
+        describe: 'Mochawesome json report file name',
         string: true,
     },
     junit: {
@@ -24,8 +24,8 @@ export const yargsOptions = {
         describe: 'Create JUnit XML report?',
         boolean: true,
     },
-    junitReportFilename: {
-        describe: 'JUnit report name',
+    junitReportFile: {
+        describe: 'JUnit report file name',
         string: true,
         default: undefined,
     },
@@ -34,7 +34,7 @@ export const yargsOptions = {
         describe: 'Create Mochawesome HTML?',
         boolean: true,
     },
-    htmlReportFilename: {
+    htmlReportFile: {
         default: undefined,
         describe: 'Mochawesome HTML file name',
         string: true,

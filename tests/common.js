@@ -22,29 +22,29 @@ function createOptions(file, type, saveIntermediateFiles){
         testFile: path.join(__dirname, `data/source/${file}`),
         testType: type,
         reportDir: outDir,
-        reportFilename:`${path.parse(file).name}-mochawesome.json`,
+        reportFile:`${path.parse(file).name}-mochawesome.json`,
         junit: true,
-        junitReportFilename: `${path.parse(file).name}-junit.xml`,
+        junitReportFile: `${path.parse(file).name}-junit.xml`,
         saveIntermediateFiles: saveIntermediateFiles,
     }
 }
 
 /**
  * @param {TestReportConverterOptions} options
- * @param {string?} reportFilename
+ * @param {string?} reportFile
  * @param {Boolean?} compareJunit
  * @param {Boolean?} checkIntermediateFiles
  */
-function compare(options, reportFilename, compareJunit, checkIntermediateFiles){
+function compare(options, reportFile, compareJunit, checkIntermediateFiles){
 
-    let createdReport = fs.readFileSync(path.join(outDir, reportFilename ?? options.reportFilename), 'utf8').replaceAll('\r', '');
-    let report = fs.readFileSync(path.join(reportDir, reportFilename ?? options.reportFilename), 'utf8').replaceAll('\r', '') ;
+    let createdReport = fs.readFileSync(path.join(outDir, reportFile ?? options.reportFile), 'utf8').replaceAll('\r', '');
+    let report = fs.readFileSync(path.join(reportDir, reportFile ?? options.reportFile), 'utf8').replaceAll('\r', '') ;
 
     expect(createdReport.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,'')).toBe(report.replaceAll(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,''));
 
     if(compareJunit){
-        let junitCreatedReport = fs.readFileSync(path.join(outDir, options.junitReportFilename), 'utf8').replaceAll('\r', '');
-        let junitReport = fs.readFileSync(path.join(reportDir, options.junitReportFilename), 'utf8').replaceAll('\r', '');
+        let junitCreatedReport = fs.readFileSync(path.join(outDir, options.junitReportFile), 'utf8').replaceAll('\r', '');
+        let junitReport = fs.readFileSync(path.join(reportDir, options.junitReportFile), 'utf8').replaceAll('\r', '');
 
         expect(junitCreatedReport).toBe(junitReport);
     }
