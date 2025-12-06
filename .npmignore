@@ -1,17 +1,16 @@
 node_modules/
 
 coverage.json
-lib/
 coverage/
 publish/
 *.tgz
 .idea
 .github
-out/
+dist/
 report/
 report1/
 tests/
-index.js
+tester.js
 jest.config.js
 jest.json
 junit.xml

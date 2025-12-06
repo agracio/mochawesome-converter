@@ -23,7 +23,6 @@ interface TestReportConverterOptions {
     switchClassnameAndName?: boolean
     splitByClassname?: boolean
     saveIntermediateFiles?: boolean
-
 }
 
 declare function convert(options: TestReportConverterOptions): Promise<void>;

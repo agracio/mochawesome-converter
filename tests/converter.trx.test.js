@@ -2,7 +2,7 @@ const test = require('@jest/globals').test;
 const describe = require('@jest/globals').describe;
 
 const common = require('./common');
-const converter = require('../src/converter');
+const converter = require('../lib/converter');
 
 describe("TRX converter tests", () => {
 

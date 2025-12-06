@@ -1,4 +1,4 @@
-## Test report files to Mochawesome and JUnit converter
+## Test report files to HTML and JUnit converter
 
 [![Actions Status][github-img]][github-url]
 [![Codacy Badge][codacy-img]][codacy-url]
@@ -46,7 +46,7 @@ https://github.com/adamgruber/mochawesome
 
  - All test reports are first converted to JUnit format using [junit-converter](https://github.com/agracio/junit-converter).
  - Set `junit` option to `true` to get JUnit conversion results.
- - If you only require JUnit conversion, you can use [junit-converter](https://github.com/agracio/junit-converter).
+ - If you only require JUnit conversion, use [junit-converter](https://github.com/agracio/junit-converter).
 
 ### JUnit to Mochawesome conversion
 
@@ -98,7 +98,7 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | `reportFile`              | string  | `testFile.name`-mochawesome.json | Mochawesome JSON report name                      |
 | `junit`                   | boolean | false                            | Create JUnit report?                              |
 | `junitReportFile`         | string  | `testFile.name`-junit.xml        | JUnit report file name                            |
-| `html`                    | boolean | false                            | Create Mochawesome HTML?                          |
+| `html`                    | boolean | true                             | Create Mochawesome HTML?                          |
 | `htmlReportFile`          | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                        |
 | `splitByClassname`        | boolean | false                            | Split into multiple test suites by test classname |
 | `skippedAsPending`        | boolean | true                             | Show skipped tests as pending in Mochawesome      |

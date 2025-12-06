@@ -1,0 +1,377 @@
+import * as fs from 'fs';
+import * as path from 'path';
+import * as crypto from 'crypto';
+import { create as margeCreate } from 'mochawesome-report-generator';
+import * as _ from 'lodash';
+import {
+    TestSuites,
+    TestSuite,
+    TestCase,
+    ConverterOptions,
+    ErrorMessage,
+} from './interfaces';
+
+let skippedTests: number = 0;
+let failedTests: number = 0;
+let suites: any[] = [];
+
+export function prepareJson(options: ConverterOptions, json: any): TestSuites | null {
+    if (
+        (json && json.testsuites && json.testsuites.length && json.testsuites.length === 0) ||
+        !json ||
+        !json.testsuites ||
+        !json.testsuites.length ||
+        !json.testsuites[0].testsuite ||
+        !json.testsuites[0].testsuite.length ||
+        json.testsuites[0].testsuite.length === 0
+    ) {
+        console.log('No test suites found, skipping Mochawesome file creation.');
+        return null;
+    }
+
+    if (options.saveIntermediateFiles) {
+        const fileName = `${path.parse(options.testFile).name}-converted.json`;
+        fs.writeFileSync(path.join(options.reportDir!, fileName), JSON.stringify(json, null, 2), 'utf8');
+    }
+
+    // sort test suites
+    if (json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].name) {
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'name']);
+    } else if (json.testsuites[0].testsuite[0].name) {
+        json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['name']);
+    }
+
+    return json.testsuites[0];
+}
+
+/**
+ * @param {TestCase} testcase
+ * @returns {ErrorMessage|{}}
+ */
+function getError(testcase: TestCase): Partial<ErrorMessage> | object {
+    if (!testcase.failure && !testcase.error) {
+        return {};
+    }
+    let estack: string | undefined;
+    let message: string | undefined;
+    const failure = testcase.failure ? testcase.failure : testcase.error;
+    const fail = failure![0];
+    const prefix = fail.type ? `${fail.type}: ` : '';
+    const diff = null;
+
+    if (fail.message) {
+        message = `${prefix}${fail.message.replaceAll('&#xD;', '').replaceAll('&#xA;', '')}`;
+    }
+    if (fail.$t) {
+        estack = fail.$t
+            .replaceAll('&#xD;', '')
+            .replaceAll('&#x27;', "'")
+            .replaceAll('&#x3C;', '<')
+            .replaceAll('&#x3E;', '>')
+            .replaceAll('&#x22;', '"');
+    } else if (typeof fail === 'string') {
+        estack = fail;
+    }
+
+    return {
+        message: message,
+        estack: estack,
+        diff: diff,
+    };
+}
+
+/**
+ * @param {TestCase} testcase
+ */
+function getContext(testcase: TestCase): any {
+    let context: any;
+
+    if (
+        (testcase.skipped && testcase.skipped[0].message) ||
+        (testcase.properties && testcase.properties.length !== 0 && testcase.properties[0].property) ||
+        (testcase['system-out'] && testcase['system-out'].length !== 0) ||
+        (testcase['system-err'] && testcase['system-err'].length !== 0)
+    ) {
+        context = [];
+        let skipped = '';
+
+        if (testcase.properties && testcase.properties.length !== 0 && testcase.properties[0].property) {
+            const properties: string[] = [];
+            testcase.properties[0].property.forEach((property: any) => {
+                properties.push(`${property.name}: ${property.value}`);
+            });
+            context.push({
+                title: 'Properties',
+                value: properties,
+            });
+        }
+
+        if (testcase.skipped && testcase.skipped[0].message) {
+            skipped = testcase.skipped[0].message
+                .replaceAll('&#xD;', '')
+                .replaceAll('&#x27;', "'")
+                .replaceAll('&#x3C;', '<')
+                .replaceAll('&#x3E;', '>')
+                .replaceAll('&#x22;', '"');
+            context.push(`skipped: ${skipped}`);
+        }
+
+        if (testcase['system-out'] && testcase['system-out'].length !== 0) {
+            extractSystemMessage('system-out', skipped, testcase['system-out'][0], context);
+        }
+
+        if (testcase['system-err'] && testcase['system-err'].length !== 0) {
+            extractSystemMessage('system-err', skipped, testcase['system-err'][0], context);
+        }
+    }
+    return context;
+}
+
+function extractSystemMessage(name: string, skipped: string, systemMessage: any, context: any[]): void {
+    let message = systemMessage;
+    if (systemMessage.$t) {
+        message = systemMessage.$t
+            .replaceAll('&#xD;', '')
+            .replaceAll('&#x27;', "'")
+            .replaceAll('&#x3C;', '<')
+            .replaceAll('&#x3E;', '>')
+            .replaceAll('&#x22;', '"');
+    }
+    if (message !== skipped) {
+        context.push({
+            title: name,
+            value: message,
+        });
+    }
+}
+
+/**
+ * @param {ConverterOptions} options
+ * @param {[TestSuite]} testSuites
+ * @param {Number} totalSuitTime
+ * @param {Number} avgSuitTime
+ */
+function parseTestSuites(options: ConverterOptions, testSuites: TestSuite[], totalSuitTime: number, avgSuitTime: number): void {
+    const mediumTime = Math.ceil(avgSuitTime / 2);
+
+    testSuites.forEach((suite: TestSuite) => {
+        const tests: any[] = [];
+        const passes: string[] = [];
+        const failures: string[] = [];
+        const pending: string[] = [];
+
+        const parentUUID = crypto.randomUUID();
+        let suiteDuration: number = 0;
+
+        suite.testcase.forEach((testcase: TestCase) => {
+            const context = getContext(testcase);
+            let err: any = {};
+
+            const uuid = crypto.randomUUID();
+            let state = 'passed';
+
+            if ((testcase.status && testcase.status.toLowerCase() === 'failed') || testcase.failure || testcase.error) {
+                err = getError(testcase);
+                state = 'failed';
+                failedTests++;
+            }
+
+            if ((testcase.status && testcase.status.toLowerCase() === 'skipped') || testcase.skipped) {
+                state = options.skippedAsPending ? 'pending' : 'skipped';
+                skippedTests++;
+            }
+
+            let speed = 'fast';
+            const duration = testcase.time ? Math.ceil(Number(testcase.time) * 1000) : 0;
+            suiteDuration += duration;
+
+            if (totalSuitTime && totalSuitTime !== 0 && testcase.time) {
+                if (duration >= avgSuitTime) {
+                    speed = 'slow';
+                } else if (duration >= mediumTime) {
+                    speed = 'medium';
+                } else {
+                    speed = 'fast';
+                }
+            }
+
+            const test = {
+                title: options.switchClassnameAndName ? testcase.classname : testcase.name,
+                fullTitle: options.switchClassnameAndName ? testcase.name : testcase.classname,
+                duration: duration,
+                state: state,
+                speed: speed,
+                pass: !(testcase.failure || testcase.error || testcase.skipped),
+                fail: testcase.failure || testcase.error ? true : false,
+                pending: options.skippedAsPending ? (testcase.skipped ? true : false) : false,
+                context: context ? JSON.stringify(context) : null,
+                code: null,
+                err: err,
+                uuid: uuid,
+                parentUUID: parentUUID,
+                isHook: false,
+                skipped: !options.skippedAsPending ? (testcase.skipped ? true : false) : false,
+            };
+
+            tests.push(test);
+
+            if (test.fail) {
+                failures.push(uuid);
+            }
+
+            if (test.pass) {
+                passes.push(uuid);
+            }
+
+            if (test.pending || test.skipped) {
+                pending.push(uuid);
+            }
+        });
+
+        let suiteFile = suite.file ? path.basename(suite.file.replaceAll('\\', '/')) : undefined;
+        if (!suiteFile && suite.classname) {
+            suiteFile = suite.classname;
+        }
+
+        suites.push({
+            uuid: parentUUID,
+            title: suite.name.replaceAll('Root Suite.', ''),
+            fullFile: suite.file,
+            file: suiteFile ?? '',
+            beforeHooks: [],
+            afterHooks: [],
+            tests: tests,
+            suites: [],
+            passes: passes,
+            failures: failures,
+            pending: options.skippedAsPending ? pending : [],
+            skipped: options.skippedAsPending ? [] : pending,
+            duration: suite.time && Number(suite.time) !== 0 ? Math.ceil(Number(suite.time) * 1000) : suiteDuration,
+            root: false,
+            rootEmpty: false,
+            _timeout: 10000,
+        });
+    });
+}
+
+/**
+ * @param {ConverterOptions} options
+ * @param {TestSuites} suitesRoot
+ */
+export async function convert(options: ConverterOptions, suitesRoot: TestSuites | null): Promise<void> {
+    if (!suitesRoot) {
+        return;
+    }
+
+    const results: any[] = [];
+
+    skippedTests = 0;
+    failedTests = 0;
+    suites = [];
+    let pending = 0;
+    let pendingPercent = 0;
+    let suiteFailures = 0;
+
+    const testSuites = suitesRoot.testsuite.filter((suite: TestSuite) => suite.tests !== '0');
+
+    let duration =
+        suitesRoot.time
+            ? Number(suitesRoot.time)
+            : _.sumBy(testSuites, function (suite: TestSuite) {
+                  return Number(suite.time);
+              });
+
+    if (duration === 0) {
+        duration = _.sumBy(testSuites, (suite: TestSuite) =>
+            _.sumBy(suite.testcase, function (testCase: TestCase) {
+                return Number(testCase.time);
+            })
+        );
+    }
+
+    let tests = suitesRoot.tests
+        ? Number(suitesRoot.tests)
+        : _.sumBy(testSuites, function (suite: TestSuite) {
+              return Number(suite.tests);
+          });
+
+    let avg = 0;
+
+    if (tests !== 0) {
+        avg = Math.ceil((duration * 1000) / tests);
+    }
+
+    parseTestSuites(options, testSuites, duration, avg);
+
+    const name = suitesRoot.name;
+
+    results.push({
+        uuid: crypto.randomUUID(),
+        title: name ?? '',
+        fullFile: '',
+        file: '',
+        beforeHooks: [],
+        afterHooks: [],
+        tests: [],
+        suites: suites,
+        passes: [],
+        failures: [],
+        pending: [],
+        skipped: [],
+        duration: 0,
+        root: true,
+        rootEmpty: true,
+        _timeout: 10000,
+    });
+
+    pending = suitesRoot.skipped ? Number(suitesRoot.skipped) : skippedTests;
+
+    if (suitesRoot.failures) {
+        suiteFailures += Number(suitesRoot.failures);
+    }
+    if (suitesRoot.errors) {
+        suiteFailures += Number(suitesRoot.errors);
+    }
+    if (!suitesRoot.failures && !suitesRoot.errors) {
+        suiteFailures = failedTests;
+    }
+
+    if (tests !== 0) {
+        pendingPercent = (pending / tests) * 100;
+    }
+
+    const mochawesome = {
+        stats: {
+            suites: suites.length,
+            tests: tests,
+            passes: tests - suiteFailures - pending,
+            pending: options.skippedAsPending ? pending : 0,
+            failures: Number(suiteFailures),
+            testsRegistered: tests,
+            passPercent: Math.abs((suiteFailures / tests) * 100 - 100) - pendingPercent,
+            pendingPercent: pendingPercent,
+            other: 0,
+            hasOther: false,
+            skipped: !options.skippedAsPending ? pending : 0,
+            hasSkipped: !options.skippedAsPending && pending > 0,
+            duration: Math.ceil(duration * 1000),
+        },
+        results: results,
+    };
+
+    fs.writeFileSync(options.reportPath, JSON.stringify(mochawesome, null, 2), 'utf8');
+
+    if (options.html) {
+        const margeOptions = {
+            reportFilename: options.htmlReportFile,
+            reportDir: options.reportDir,
+            showSkipped: true,
+            reportTitle: path.basename(options.testFile),
+        };
+
+        margeCreate(mochawesome, margeOptions).then(() => {
+            // Report created
+        });
+    }
+}
+

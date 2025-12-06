@@ -1,7 +1,7 @@
 const test = require('@jest/globals').test;
 const describe = require('@jest/globals').describe;
 
-const converter = require('../src/converter');
+const converter = require('../lib/converter');
 const common = require('./common');
 
 describe("NUnit converter tests", () => {

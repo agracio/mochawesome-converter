@@ -1,5 +1,5 @@
 const path = require('path');
-const config = require('../src/config');
+const config = require('../lib/config');
 const fs = require('fs');
 const expect = require('@jest/globals').expect;
 const test = require('@jest/globals').test;
@@ -53,7 +53,7 @@ describe("Config tests", () => {
         expect(result.reportPath).toBe(path.join(result.reportDir, 'xunit-qlnet-mochawesome.json'));
         expect(result.junit).toBe(false);
         expect(result.junitReportFile).toBe('xunit-qlnet-junit.xml');
-        expect(result.html).toBe(false);
+        expect(result.html).toBe(true);
         expect(result.htmlReportFile).toBe('xunit-qlnet-mochawesome.html');
         expect(result.saveIntermediateFiles).toBe(false);
     });
@@ -68,7 +68,7 @@ describe("Config tests", () => {
             reportFile: 'mochawesome1.json',
             junit: true,
             junitReportFile: 'xunit-j.xml',
-            html: true,
+            html: false,
             htmlReportFile: 'mochawesome1.html',
             saveIntermediateFiles: true,
         }
@@ -83,7 +83,7 @@ describe("Config tests", () => {
         expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome1.json'));
         expect(result.junit).toBe(true);
         expect(result.junitReportFile).toBe('xunit-j.xml');
-        expect(result.html).toBe(true);
+        expect(result.html).toBe(false);
         expect(result.htmlReportFile).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
 
@@ -104,7 +104,7 @@ describe("Config tests", () => {
             reportFilename: 'mochawesome1.json',
             junit: true,
             junitReportFilename: 'xunit-j.xml',
-            html: true,
+            html: false,
             htmlReportFilename: 'mochawesome1.html',
             saveIntermediateFiles: true,
         }
@@ -119,7 +119,7 @@ describe("Config tests", () => {
         expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome1.json'));
         expect(result.junit).toBe(true);
         expect(result.junitReportFile).toBe('xunit-j.xml');
-        expect(result.html).toBe(true);
+        expect(result.html).toBe(false);
         expect(result.htmlReportFile).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
 
