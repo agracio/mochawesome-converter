@@ -10,5 +10,8 @@ module.exports = {
     ],
     testMatch: ["<rootDir>/tests/**/*.test.{js,jsx,ts,tsx}"],
     collectCoverage: true,
+    "collectCoverageFrom": [
+        "lib/**/*.js"
+    ],
     coverageDirectory: "coverage",
 }
