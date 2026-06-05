@@ -19,6 +19,7 @@ interface TestReportConverterOptions {
      */
     htmlReportFilename? : string
     htmlReportFile? : string
+    htmlReportTitle? : string
     skippedAsPending?: boolean
     switchClassnameAndName?: boolean
     splitByClassname?: boolean

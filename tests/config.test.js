@@ -55,6 +55,7 @@ describe("Config tests", () => {
         expect(result.junitReportFile).toBe('xunit-qlnet-junit.xml');
         expect(result.html).toBe(true);
         expect(result.htmlReportFile).toBe('xunit-qlnet-mochawesome.html');
+        expect(result.htmlReportTitle).toBe('xunit-qlnet.xml');
         expect(result.saveIntermediateFiles).toBe(false);
     });
 
@@ -70,6 +71,7 @@ describe("Config tests", () => {
             junitReportFile: 'xunit-j.xml',
             html: false,
             htmlReportFile: 'mochawesome1.html',
+            htmlReportTitle: 'My Report',
             saveIntermediateFiles: true,
         }
 
@@ -85,6 +87,7 @@ describe("Config tests", () => {
         expect(result.junitReportFile).toBe('xunit-j.xml');
         expect(result.html).toBe(false);
         expect(result.htmlReportFile).toBe('mochawesome1.html');
+        expect(result.htmlReportTitle).toBe('My Report');
         expect(result.saveIntermediateFiles).toBe(true);
 
         expect(fs.existsSync(result.reportDir)).toBe(true)

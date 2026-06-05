@@ -6,7 +6,8 @@ export enum TestType {
     junit = 'junit',
     nunit = 'nunit',
     xunit = 'xunit',
-    trx = 'trx'
+    trx = 'trx',
+    ctrf = 'ctrf',
 }
 
 export class ConfigService {
@@ -41,6 +42,7 @@ export class ConfigService {
         let reportFile: string = `${path.parse(options.testFile).name}-mochawesome.json`;
         let html: boolean = true;
         let htmlReportFile: string = `${path.parse(options.testFile).name}-mochawesome.html`;
+        let htmlReportTitle: string = path.basename(options.testFile);
         let saveIntermediateFiles: boolean = false;
         let splitByClassname: boolean = false;
         let junit: boolean = false;
@@ -90,6 +92,10 @@ export class ConfigService {
             htmlReportFile = options.htmlReportFile;
         }
 
+        if (options.htmlReportTitle) {
+            htmlReportTitle = options.htmlReportTitle;
+        }
+
         if (options.junit === true || options.junit === 'true') {
             junit = true;
         }
@@ -116,6 +122,7 @@ export class ConfigService {
             junit: junit,
             junitReportFile: junitReportFile,
             html: html,
+            htmlReportTitle: htmlReportTitle,
             htmlReportFile: htmlReportFile,
             splitByClassname: splitByClassname,
             saveIntermediateFiles: saveIntermediateFiles,

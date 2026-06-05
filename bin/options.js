@@ -30,13 +30,18 @@ export const yargsOptions = {
         default: undefined,
     },
     html: {
-        default: false,
+        default: true,
         describe: 'Create Mochawesome HTML?',
         boolean: true,
     },
     htmlReportFile: {
         default: undefined,
         describe: 'Mochawesome HTML file name',
+        string: true,
+    },
+    htmlReportTitle: {
+        default: undefined,
+        describe: 'Mochawesome HTML report title',
         string: true,
     },
     splitByClassname: {

@@ -7,7 +7,7 @@
 
 ### Overview
 
-- Convert your XML/TRX test report files to Mochawesome JSON/HTML for easy viewing and troubleshooting.
+- Convert your XML/TRX/JSON test report files to Mochawesome JSON/HTML for easy viewing and troubleshooting.
 - Convert test report files to JUnit format.
 - Convert JUnit to HTML using Mochawesome.
 
@@ -100,6 +100,7 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | `junitReportFile`         | string  | `testFile.name`-junit.xml        | JUnit report file name                            |
 | `html`                    | boolean | true                             | Create Mochawesome HTML?                          |
 | `htmlReportFile`          | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                        |
+| `htmlReportTitle`         | string  | `testFile`                       | Mochawesome HTML report title                     |
 | `splitByClassname`        | boolean | false                            | Split into multiple test suites by test classname |
 | `skippedAsPending`        | boolean | true                             | Show skipped tests as pending in Mochawesome      |
 | `switchClassnameAndName`  | boolean | false                            | Switch test case classname and name               |

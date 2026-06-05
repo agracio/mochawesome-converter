@@ -1,7 +1,7 @@
 module.exports = {
     verbose: true,
     globalTeardown: "./tests/teardown.js",
-    preset: "ts-jest",
+    //preset: "ts-jest",
     reporters: [
         'default',
         ['github-actions', {silent: false}], 

@@ -24,6 +24,7 @@
     "node": ">= 18"
   },
   "keywords": [
+    "test",
     "mochawesome",
     "mocha",
     "JUnit",
@@ -32,10 +33,12 @@
     "xUnit.net",
     "TRX",
     "MSTest",
+    "dotnet",
     "converter",
     "html"
   ],
   "tags": [
+    "test",
     "mochawesome",
     "mocha",
     "JUnit",
@@ -44,20 +47,25 @@
     "xUnit.net",
     "TRX",
     "MSTest",
+    "dotnet",
     "converter",
     "html"
   ],
   "dependencies": {
-    "junit-converter": "^1.0.5",
-    "lodash": "^4.17.21",
+    "junit-converter": "^1.0.6",
+    "lodash": "^4.18.1",
     "mochawesome-report-generator": "^6.3.2",
     "yargs": "^18.0.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.21",
-    "jest": "^30.2.0",
-    "jest-junit": "^16.0.0",
-    "ts-jest": "^29.4.6",
-    "typescript": "^5.9.3"
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^25.9.1",
+    "jest": "^30.4.2",
+    "jest-junit": "^17.0.0",
+    "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "ag-node-expat@2.4.6": true,
+    "unrs-resolver@1.12.2": true
   }
 }

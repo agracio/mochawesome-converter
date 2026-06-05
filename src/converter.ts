@@ -1,6 +1,7 @@
-import { toFile, toJson } from 'junit-converter';
+import { toFile, toJson, TestSuites as JunitReport } from 'junit-converter';
 import { config } from './config';
-import { prepareJson, convert as junitConvert } from './junit';
+import { convert as junitConvert } from './junitConverter';
+import { convert as ctrfConvert } from './ctrfConverter';
 import { TestReportConverterOptions, ConverterOptions } from './interfaces';
 
 export class TestReportConverter {
@@ -18,16 +19,16 @@ export class TestReportConverter {
             saveIntermediateFiles: configOptions.saveIntermediateFiles,
         };
 
-        if (options.junit) {
-            await toFile(junitConvertOptions);
+        if (configOptions.testType !== 'ctrf') {
+            if (options.junit) {
+                await toFile(junitConvertOptions);
+            }
+            const json: JunitReport = await toJson(junitConvertOptions);
+            await junitConvert(configOptions, json);
+        } else {
+            await ctrfConvert(configOptions);
         }
-        const json = await toJson(junitConvertOptions);
-
-        const suitesRoot = prepareJson(configOptions, json);
-
-        await junitConvert(configOptions, suitesRoot);
     }
 }
 
 module.exports = TestReportConverter.convert;
-

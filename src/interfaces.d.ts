@@ -8,6 +8,7 @@ export interface TestReportConverterOptions {
     reportFile?: string;
     htmlReportFilename?: string;
     htmlReportFile?: string;
+    htmlReportTitle?: string;
     junit?: boolean | string;
     junitReportFilename?: string;
     junitReportFile?: string;
@@ -28,70 +29,79 @@ export interface ConverterOptions {
     junitReportFile?: string;
     html?: boolean;
     htmlReportFile?: string;
+    htmlReportTitle?: string;
     splitByClassname?: boolean;
     saveIntermediateFiles?: boolean;
 }
 
-export interface TestSuites {
-    name: string;
-    tests: string;
-    failures: string;
-    errors: string;
-    skipped: string;
-    time: string;
-    testsuite: TestSuite[];
+export interface JunitTestSuites {
+    name?: string;
+    classname?: string;
+    tests: string | number;
+    failures: string | number;
+    errors?: string | number;
+    skipped: string | number;
+    disabled?: string | number;
+    assertions?: string | number;
+    time: string | number;
+    timestamp?: string;
+    testsuite: JunitTestSuite[];
 }
 
-export interface TestSuite {
+export interface JunitTestSuite {
     name: string;
-    classname: string;
+    classname?: string;
     file?: string;
-    tests: string;
-    failures: string;
-    skipped: string;
-    time: string;
-    testcase: TestCase[];
+    tests: string | number;
+    passed?: string | number;
+    failures: string | number;
+    errors?: string | number;
+    skipped: string | number;
+    disabled?: string | number;
+    time: string | number;
+    timestamp?: string;
+    testcase: JunitTestCase[];
 }
 
-export interface TestCase {
+export interface JunitTestCase {
     name: string;
     classname: string;
     status: string;
     time: string;
-    failure?: CaseFailure[];
-    error?: CaseError[];
-    properties?: Property[];
-    skipped?: SkippedInfo[];
-    'system-out'?: SystemInfo[];
-    'system-err'?: SystemInfo[];
+    failure?: JunitCaseFailure[];
+    error?: JunitCaseError[];
+    properties?: JunitProperty[];
+    skipped?: JunitSkippedInfo[];
+    'system-out'?: JunitSystemInfo[];
+    'system-err'?: JunitSystemInfo[];
 }
 
-export interface CaseFailure {
+export interface JunitCaseFailure {
     type?: string;
     message?: string;
     $t?: string;
 }
 
-export type CaseError = CaseFailure;
+export type JunitCaseError = JunitCaseFailure;
 
-export interface Property {
-    property: PropertyItem[];
+export interface JunitProperty {
+    property: JunitPropertyItem[];
 }
 
-export interface PropertyItem {
+export interface JunitPropertyItem {
     name: string;
     value: string;
 }
 
-export interface SkippedInfo {
+export interface JunitSkippedInfo {
     message?: string;
 }
 
-export interface SystemInfo {
+export interface JunitSystemInfo {
     $t?: string;
 }
 
-export interface ErrorMessage {
+export interface JunitErrorMessage {
     message: string;
     estack: string;
     diff: string | null;

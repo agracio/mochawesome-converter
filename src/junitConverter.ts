@@ -1,56 +1,33 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';
-import { create as margeCreate } from 'mochawesome-report-generator';
-import * as _ from 'lodash';
-import {
-    TestSuites,
-    TestSuite,
-    TestCase,
-    ConverterOptions,
-    ErrorMessage,
-} from './interfaces';
+import _ from 'lodash';
+import { TestSuites as JunitReport } from 'junit-converter';
+import { JunitTestSuites, JunitTestSuite, JunitTestCase, ConverterOptions, JunitErrorMessage} from './interfaces';
+import { MochawesomeStats, MochawesomeResult, MochawesomeSuite, MochawesomeTest, MochawesomeErr, MochawesomeRoot,} from './mochawesome';
+import { MochawesomeCommon as mochaCommon} from './mochawesomeCommon';
 
-export class JsonProcessor {
+export class JunitConverter {
 
     private skippedTests: number = 0;
     private failedTests: number = 0;
-    private suites: any[] = [];
+    private suites: MochawesomeSuite[] = [];
 
-    prepareJson(options: ConverterOptions, json: any): TestSuites | null {
-        if (
-            (json && json.testsuites && json.testsuites.length && json.testsuites.length === 0) ||
-            !json ||
-            !json.testsuites ||
-            !json.testsuites.length ||
-            !json.testsuites[0].testsuite ||
-            !json.testsuites[0].testsuite.length ||
-            json.testsuites[0].testsuite.length === 0
-        ) {
-            console.log('No test suites found, skipping Mochawesome file creation.');
-            return null;
-        }
-
-        if (options.saveIntermediateFiles) {
-            const fileName = `${path.parse(options.testFile).name}-converted.json`;
-            fs.writeFileSync(path.join(options.reportDir!, fileName), JSON.stringify(json, null, 2), 'utf8');
-        }
-
-        // sort test suites
-        if (json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].name) {
-            json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'name']);
-        } else if (json.testsuites[0].testsuite[0].name) {
-            json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['name']);
-        }
-
-        return json.testsuites[0];
+    private sanitizeXml(xml: string): string {
+        return xml
+            .replaceAll('&#xD;', '')
+            .replaceAll('&#xA;', '')
+            .replaceAll('&#x27;', "'")
+            .replaceAll('&#x3C;', '<')
+            .replaceAll('&#x3E;', '>')
+            .replaceAll('&#x22;', '"');
     }
 
     /**
-     * @param {TestCase} testcase
-     * @returns {ErrorMessage|{}}
+     * @param {JunitTestCase} testcase
+     * @returns {JunitErrorMessage|{}}
      */
-    private getError(testcase: TestCase): Partial<ErrorMessage> | object {
+    private getError(testcase: JunitTestCase): Partial<JunitErrorMessage> {
         if (!testcase.failure && !testcase.error) {
             return {};
         }
@@ -65,12 +42,8 @@ export class JsonProcessor {
             message = `${prefix}${fail.message.replaceAll('&#xD;', '').replaceAll('&#xA;', '')}`;
         }
         if (fail.$t) {
-            estack = fail.$t
-                .replaceAll('&#xD;', '')
-                .replaceAll('&#x27;', "'")
-                .replaceAll('&#x3C;', '<')
-                .replaceAll('&#x3E;', '>')
-                .replaceAll('&#x22;', '"');
+            estack = this.sanitizeXml(fail.$t);
+
         } else if (typeof fail === 'string') {
             estack = fail;
         }
@@ -83,9 +56,9 @@ export class JsonProcessor {
     }
 
     /**
-     * @param {TestCase} testcase
+     * @param {JunitTestCase} testcase
      */
-    private getContext(testcase: TestCase): any {
+    private getContext(testcase: JunitTestCase): any {
         let context: any;
 
         if (
@@ -109,12 +82,7 @@ export class JsonProcessor {
             }
 
             if (testcase.skipped && testcase.skipped[0].message) {
-                skipped = testcase.skipped[0].message
-                    .replaceAll('&#xD;', '')
-                    .replaceAll('&#x27;', "'")
-                    .replaceAll('&#x3C;', '<')
-                    .replaceAll('&#x3E;', '>')
-                    .replaceAll('&#x22;', '"');
+                skipped = this.sanitizeXml(testcase.skipped[0].message);
                 context.push(`skipped: ${skipped}`);
             }
 
@@ -132,12 +100,7 @@ export class JsonProcessor {
     private extractSystemMessage(name: string, skipped: string, systemMessage: any, context: any[]): void {
         let message = systemMessage;
         if (systemMessage.$t) {
-            message = systemMessage.$t
-                .replaceAll('&#xD;', '')
-                .replaceAll('&#x27;', "'")
-                .replaceAll('&#x3C;', '<')
-                .replaceAll('&#x3E;', '>')
-                .replaceAll('&#x22;', '"');
+            message = this.sanitizeXml(systemMessage.$t);
         }
         if (message !== skipped) {
             context.push({
@@ -149,15 +112,15 @@ export class JsonProcessor {
 
     /**
      * @param {ConverterOptions} options
-     * @param {[TestSuite]} testSuites
-     * @param {Number} totalSuitTime
-     * @param {Number} avgSuitTime
+     * @param {[JunitTestSuite]} testSuites
+     * @param {Number} totalSuiteTime
+     * @param {Number} avgSuiteTime
      */
-    private parseTestSuites(options: ConverterOptions, testSuites: TestSuite[], totalSuitTime: number, avgSuitTime: number): void {
-        const mediumTime = Math.ceil(avgSuitTime / 2);
+    private parseTestSuites(options: ConverterOptions, testSuites: JunitTestSuite[], totalSuiteTime: number, avgSuiteTime: number): void {
+        const mediumTime = Math.ceil(avgSuiteTime / 2);
 
-        testSuites.forEach((suite: TestSuite) => {
-            const tests: any[] = [];
+        testSuites.forEach((suite: JunitTestSuite) => {
+            const tests: MochawesomeTest[] = [];
             const passes: string[] = [];
             const failures: string[] = [];
             const pending: string[] = [];
@@ -165,7 +128,7 @@ export class JsonProcessor {
             const parentUUID = crypto.randomUUID();
             let suiteDuration: number = 0;
 
-            suite.testcase.forEach((testcase: TestCase) => {
+            suite.testcase.forEach((testcase: JunitTestCase) => {
                 const context = this.getContext(testcase);
                 let err: any = {};
 
@@ -187,8 +150,8 @@ export class JsonProcessor {
                 const duration = testcase.time ? Math.ceil(Number(testcase.time) * 1000) : 0;
                 suiteDuration += duration;
 
-                if (totalSuitTime && totalSuitTime !== 0 && testcase.time) {
-                    if (duration >= avgSuitTime) {
+                if (totalSuiteTime && totalSuiteTime !== 0 && testcase.time) {
+                    if (duration >= avgSuiteTime) {
                         speed = 'slow';
                     } else if (duration >= mediumTime) {
                         speed = 'medium';
@@ -197,7 +160,7 @@ export class JsonProcessor {
                     }
                 }
 
-                const test = {
+                const test: MochawesomeTest = {
                     title: options.switchClassnameAndName ? testcase.classname : testcase.name,
                     fullTitle: options.switchClassnameAndName ? testcase.name : testcase.classname,
                     duration: duration,
@@ -256,16 +219,46 @@ export class JsonProcessor {
         });
     }
 
-    /**
-     * @param {ConverterOptions} options
-     * @param {TestSuites} suitesRoot
-     */
-    async convert(options: ConverterOptions, suitesRoot: TestSuites | null): Promise<void> {
-        if (!suitesRoot) {
-            return;
+    private prepareJson(options: ConverterOptions, json: JunitReport): JunitTestSuites | null {
+        if (
+            (json && json.testsuites && json.testsuites.length && json.testsuites.length === 0) ||
+            !json ||
+            !json.testsuites ||
+            !json.testsuites.length ||
+            !json.testsuites[0].testsuite ||
+            !json.testsuites[0].testsuite.length ||
+            json.testsuites[0].testsuite.length === 0
+        ) {
+            console.log('No test suites found, skipping Mochawesome file creation.');
+            return null;
         }
 
-        const results: any[] = [];
+        if (options.saveIntermediateFiles) {
+            const fileName = `${path.parse(options.testFile).name}-converted.json`;
+            fs.writeFileSync(path.join(options.reportDir!, fileName), JSON.stringify(json, null, 2), 'utf8');
+        }
+
+        // sort test suites
+        if (json.testsuites[0].testsuite[0].file && json.testsuites[0].testsuite[0].name) {
+            json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['file', 'name']);
+        } else if (json.testsuites[0].testsuite[0].name) {
+            json.testsuites[0].testsuite = _.sortBy(json.testsuites[0].testsuite, ['name']);
+        }
+
+        return json.testsuites[0];
+    }
+
+    /**
+     * @param {ConverterOptions} options
+     * @param {JunitTestSuites} suitesRoot
+     */
+    async convert(options: ConverterOptions, json: JunitReport): Promise<void> {
+        let suitesRoot: JunitTestSuites | null = this.prepareJson(options, json);
+        if (!suitesRoot) {
+            return Promise.resolve();
+        }
+
+        const results: MochawesomeResult[] = [];
 
         this.skippedTests = 0;
         this.failedTests = 0;
@@ -274,18 +267,18 @@ export class JsonProcessor {
         let pendingPercent = 0;
         let suiteFailures = 0;
 
-        const testSuites = suitesRoot.testsuite.filter((suite: TestSuite) => suite.tests !== '0');
+        const testSuites = suitesRoot.testsuite.filter((suite: JunitTestSuite) => suite.tests !== '0');
 
         let duration =
             suitesRoot.time
                 ? Number(suitesRoot.time)
-                : _.sumBy(testSuites, function (suite: TestSuite) {
+                : _.sumBy(testSuites, function (suite: JunitTestSuite) {
                     return Number(suite.time);
                 });
 
         if (duration === 0) {
-            duration = _.sumBy(testSuites, (suite: TestSuite) =>
-                _.sumBy(suite.testcase, function (testCase: TestCase) {
+            duration = _.sumBy(testSuites, (suite: JunitTestSuite) =>
+                _.sumBy(suite.testcase, function (testCase: JunitTestCase) {
                     return Number(testCase.time);
                 })
             );
@@ -293,7 +286,7 @@ export class JsonProcessor {
 
         let tests = suitesRoot.tests
             ? Number(suitesRoot.tests)
-            : _.sumBy(testSuites, function (suite: TestSuite) {
+            : _.sumBy(testSuites, function (suite: JunitTestSuite) {
                 return Number(suite.tests);
             });
 
@@ -307,24 +300,7 @@ export class JsonProcessor {
 
         const name = suitesRoot.name;
 
-        results.push({
-            uuid: crypto.randomUUID(),
-            title: name ?? '',
-            fullFile: '',
-            file: '',
-            beforeHooks: [],
-            afterHooks: [],
-            tests: [],
-            suites: this.suites,
-            passes: [],
-            failures: [],
-            pending: [],
-            skipped: [],
-            duration: 0,
-            root: true,
-            rootEmpty: true,
-            _timeout: 10000,
-        });
+        results.push(mochaCommon.createResult(null, name || '', this.suites));
 
         pending = suitesRoot.skipped ? Number(suitesRoot.skipped) : this.skippedTests;
 
@@ -341,47 +317,29 @@ export class JsonProcessor {
         if (tests !== 0) {
             pendingPercent = (pending / tests) * 100;
         }
+        const stats: MochawesomeStats = mochaCommon.createStats(
+            this.suites.length, 
+            tests, 
+            suiteFailures, 
+            options.skippedAsPending ? pending : 0, 
+            !options.skippedAsPending ? pending : 0, 
+            options, 
+            pendingPercent, 
+            0, 
+            Math.ceil(duration * 1000));
 
-        const mochawesome = {
-            stats: {
-                suites: this.suites.length,
-                tests: tests,
-                passes: tests - suiteFailures - pending,
-                pending: options.skippedAsPending ? pending : 0,
-                failures: Number(suiteFailures),
-                testsRegistered: tests,
-                passPercent: Math.abs((suiteFailures / tests) * 100 - 100) - pendingPercent,
-                pendingPercent: pendingPercent,
-                other: 0,
-                hasOther: false,
-                skipped: !options.skippedAsPending ? pending : 0,
-                hasSkipped: !options.skippedAsPending && pending > 0,
-                duration: Math.ceil(duration * 1000),
-            },
+        const mochawesome: MochawesomeRoot = {
+            stats: stats,
             results: results,
         };
 
-        fs.writeFileSync(options.reportPath, JSON.stringify(mochawesome, null, 2), 'utf8');
-
-        if (options.html) {
-            const margeOptions = {
-                reportFilename: options.htmlReportFile,
-                reportDir: options.reportDir,
-                showSkipped: true,
-                reportTitle: path.basename(options.testFile),
-            };
-
-            margeCreate(mochawesome, margeOptions).then(() => {
-                // Report created
-            });
-        }
+        return mochaCommon.createMargeReport(mochawesome, options);
     }
 }
 
-const processor = new JsonProcessor();
+const processor = new JunitConverter();
 
-export const prepareJson = (options: ConverterOptions, json: any): TestSuites | null => processor.prepareJson(options, json);
-export const convert = (options: ConverterOptions, suitesRoot: TestSuites | null): Promise<void> => processor.convert(options, suitesRoot);
+export const convert = (options: ConverterOptions, json: JunitReport): Promise<void> => processor.convert(options, json);
 
 //export default { prepareJson, convert };
 
