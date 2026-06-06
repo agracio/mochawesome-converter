@@ -65,7 +65,13 @@ export class CtrfConverter {
         if(test.message || test.trace){
             return {
                 message: test.message,
-                estack: test.trace?.replace(/^[\r\n]+|[\r\n]+$/g, '').replaceAll('                ', '').replaceAll('            ', '').replaceAll('\r\n   ', '\r\n'),
+                estack: test.trace
+                    ?.replace(/^[\r\n]+|[\r\n]+$/g, '')
+                    ?.replace(/^[\n]+|[\n]+$/g, '')
+                    ?.replaceAll('                ', '')
+                    ?.replaceAll('            ', '')
+                    ?.replaceAll('\r\n   ', '\r\n')
+                    ?.replaceAll('\n   ', '\n'),
                 diff: null,
             };
         }

@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 5700
+  },
+  "results": [
+    {
+      "uuid": "7c4e1c20-7c89-4f30-9b52-1f6f9d6b8f21",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "file": "",
+          "uuid": "b3e7055b-0626-4011-882d-19e770f8b134",
+          "title": "Root Suite",
+          "tests": [
+            {
+              "title": "login test",
+              "fullTitle": "login test",
+              "duration": 2500,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "d84c7383-dcf2-4524-8e42-1fb6815d68c1",
+              "parentUUID": "b3e7055b-0626-4011-882d-19e770f8b134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checkout test",
+              "fullTitle": "checkout test",
+              "duration": 3200,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "389fd3ac-0f4a-4014-924f-526d57224983",
+              "parentUUID": "b3e7055b-0626-4011-882d-19e770f8b134",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [
+            "d84c7383-dcf2-4524-8e42-1fb6815d68c1",
+            "389fd3ac-0f4a-4014-924f-526d57224983"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5700,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

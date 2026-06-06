@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "af2d8a16-8134-43a0-85ea-51f57143db31",
+      "uuid": "c6c505ff-2401-4c53-b9f5-523f9ef22942",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8e237b9c-c2ef-49b4-bdc7-a5c45a88b378",
+          "uuid": "c72443f5-66d9-462d-a14c-ca1c7f769820",
           "title": "PatientRegistration.Patient Registration (Example)",
           "file": "",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n\\n  @tc:62\\n  Scenario: Create patient\\n    When I create a patient with name \\\"John Doe\\\" on the host ... passed in 0.005s\\n    Then the patient \\\"John Doe\\\" should also be created in the application. ... passed in 0.011s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
               "code": null,
               "err": {},
-              "uuid": "eed681d6-5618-4ced-8547-7060745fe6b7",
-              "parentUUID": "8e237b9c-c2ef-49b4-bdc7-a5c45a88b378",
+              "uuid": "ef754215-c088-4a7d-95e0-1fc5b7346e39",
+              "parentUUID": "c72443f5-66d9-462d-a14c-ca1c7f769820",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": "[{\"title\":\"system-out\",\"value\":\"@scenario.begin\\n\\n  @tc:63\\n  Scenario: Close patient\\n    Given a patient is opened in the application ... passed in 0.005s\\n    When I close the patient on the host ... passed in 0.005s\\n    Then the patient should also be closed in the application. ... passed in 0.005s\\n\\n@scenario.end\\n--------------------------------------------------------------------------------\"}]",
               "code": null,
               "err": {},
-              "uuid": "20314944-e58b-4846-a6e5-af955b190a66",
-              "parentUUID": "8e237b9c-c2ef-49b4-bdc7-a5c45a88b378",
+              "uuid": "fca96d4a-e194-44ab-ba6f-fd793adf182e",
+              "parentUUID": "c72443f5-66d9-462d-a14c-ca1c7f769820",
               "isHook": false,
               "skipped": false
             },
@@ -78,22 +78,22 @@
               "code": null,
               "err": {
                 "message": "TypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
-                "estack": "Failing step: When I change the patient name to \"John Doe\" on the host ... failed in 0.001s\nLocation: tests/features/PatientRegistration.feature:20\nTraceback (most recent call last):\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"tests\\features\\steps\\step_patient_registration.py\", line 33, in step_impl\n    context.patient.edit(first_name=\"John\", last_name=\"Doe\")\nTypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
+                "estack": "Failing step: When I change the patient name to \"John Doe\" on the host ... failed in 0.001s\nLocation: tests/features/PatientRegistration.feature:20\nTraceback (most recent call last):\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n match.run(runner.context)\n  File \"D:\\dev\\bdd_demo_behave\\.venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n self.func(context, *args, **kwargs)\n  File \"tests\\features\\steps\\step_patient_registration.py\", line 33, in step_impl\n context.patient.edit(first_name=\"John\", last_name=\"Doe\")\nTypeError: edit() missing 2 required positional arguments: 'birth_date' and 'sex'",
                 "diff": null
               },
-              "uuid": "c172b4e3-5b18-4e72-9fdf-e7e7efbc2463",
-              "parentUUID": "8e237b9c-c2ef-49b4-bdc7-a5c45a88b378",
+              "uuid": "da36bf26-27f3-4ada-b661-d56b194d3522",
+              "parentUUID": "c72443f5-66d9-462d-a14c-ca1c7f769820",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "eed681d6-5618-4ced-8547-7060745fe6b7",
-            "20314944-e58b-4846-a6e5-af955b190a66"
+            "ef754215-c088-4a7d-95e0-1fc5b7346e39",
+            "fca96d4a-e194-44ab-ba6f-fd793adf182e"
           ],
           "failures": [
-            "c172b4e3-5b18-4e72-9fdf-e7e7efbc2463"
+            "da36bf26-27f3-4ada-b661-d56b194d3522"
           ],
           "pending": [],
           "skipped": [],

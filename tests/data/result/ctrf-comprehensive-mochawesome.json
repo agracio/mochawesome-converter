@@ -1,0 +1,151 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666667,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 20000
+  },
+  "results": [
+    {
+      "uuid": "9d2c6a10-3f7a-4e22-9a8f-1a2b3c4d5e6f",
+      "title": "PR #123 E2E Tests",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "file": "",
+          "uuid": "f98e439f-46dc-4c22-b9c4-9e79713aa7b0",
+          "title": "Authentication > Login",
+          "tests": [
+            {
+              "title": "user can login",
+              "fullTitle": "user can login",
+              "duration": 3500,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "d9c55575-4256-414e-969f-34f0a0f64a37",
+              "parentUUID": "f98e439f-46dc-4c22-b9c4-9e79713aa7b0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [
+            "d9c55575-4256-414e-969f-34f0a0f64a37"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3500,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "file": "",
+          "uuid": "782c836f-dc2d-4814-8e9a-db1e8932375c",
+          "title": "Checkout",
+          "tests": [
+            {
+              "title": "user can checkout",
+              "fullTitle": "user can checkout",
+              "duration": 5200,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "c2ccf291-dbd4-49d8-a08d-35cbb74de967",
+              "parentUUID": "782c836f-dc2d-4814-8e9a-db1e8932375c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [
+            "c2ccf291-dbd4-49d8-a08d-35cbb74de967"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5200,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "file": "",
+          "uuid": "e53b66c1-9a3a-4aee-b10a-ac72424f9329",
+          "title": "Admin > Dashboard",
+          "tests": [
+            {
+              "title": "admin dashboard loads",
+              "fullTitle": "admin dashboard loads",
+              "duration": 8000,
+              "state": "failed",
+              "speed": "slow",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"Parameters\",\"value\":\"{\\n  \\\"userRole\\\": \\\"admin\\\",\\n  \\\"environment\\\": \\\"staging\\\"\\n}\"},{\"title\":\"Steps\",\"value\":\"[\\n  {\\n    \\\"name\\\": \\\"Navigate to dashboard\\\",\\n    \\\"status\\\": \\\"passed\\\"\\n  },\\n  {\\n    \\\"name\\\": \\\"Wait for metrics\\\",\\n    \\\"status\\\": \\\"failed\\\"\\n  }\\n]\"},{\"title\":\"stdout\",\"value\":\"Loading admin dashboard\\nChecking authentication\"},{\"title\":\"stderr\",\"value\":\"Warning: Slow network detected\\nError: Timeout waiting for .dashboard-metrics\"}]",
+              "code": "const metrics = await page.locator('.dashboard-metrics');\nawait expect(metrics).toBeVisible();",
+              "err": {
+                "message": "Element not found: .dashboard-metrics",
+                "estack": "Error: Element not found: .dashboard-metrics\n at waitForElement (test.js:45:10)\n at Object.<anonymous> (dashboard.test.js:42:5)",
+                "diff": null
+              },
+              "uuid": "2405622f-6097-4794-9ab6-99da89f8e3a4",
+              "parentUUID": "e53b66c1-9a3a-4aee-b10a-ac72424f9329",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [],
+          "failures": [
+            "2405622f-6097-4794-9ab6-99da89f8e3a4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8000,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

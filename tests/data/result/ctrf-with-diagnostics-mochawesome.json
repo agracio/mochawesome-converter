@@ -1,0 +1,78 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "duration": 5000
+  },
+  "results": [
+    {
+      "uuid": "8768b785-aa4f-4096-8518-278f7d3ae31e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "file": "",
+          "uuid": "82d1c9c5-949b-48b3-a024-efacd619b391",
+          "title": "Root Suite",
+          "tests": [
+            {
+              "title": "should render homepage",
+              "fullTitle": "should render homepage",
+              "duration": 5000,
+              "state": "failed",
+              "speed": "slow",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[{\"title\":\"stdout\",\"value\":\"Starting test execution\\nLoading page: https://example.com\\nWaiting for element: .hero-section\"},{\"title\":\"stderr\",\"value\":\"Warning: Network slow\\nError: Element not found after 5000ms\"}]",
+              "err": {
+                "message": "Expected element to be visible",
+                "estack": "Error: Expected element to be visible\n at checkVisibility (test.js:45:10)\n at Object.<anonymous> (test.js:12:5)",
+                "diff": null
+              },
+              "uuid": "2398e88a-b436-4d79-b550-828007532e68",
+              "parentUUID": "82d1c9c5-949b-48b3-a024-efacd619b391",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [],
+          "failures": [
+            "2398e88a-b436-4d79-b550-828007532e68"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5000,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ]
+}

@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "4a320ca3-5e6c-4a9d-b76a-dd817cb04169",
+      "uuid": "ee813ac7-6e46-44ab-8cd2-fcd11214e3b0",
       "title": "C:\\projecrs\\QLNet\\tests\\QLNet.Tests\\bin\\Debug\\net8.0\\QLNet.Tests.dll",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+          "uuid": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
           "title": "QLNet.Tests.T_DayCounters",
           "file": "",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "abb53f79-c2d2-4fa2-a783-21783297fd1c",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "dbfd348d-7b98-455f-b6bd-944bd27e50fc",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "73678096-344d-4681-a4f3-3f5ae7ee8a19",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "607c589b-2634-4471-b332-6fe01f588734",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -77,8 +77,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "ebb8ad6b-9c20-4893-8b7b-fd058382972b",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "11a79a6a-fbeb-4b15-90b7-52b5a0294703",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -94,8 +94,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "fa413284-2c04-40d2-a73e-3baa1932a847",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "0a2b2e2f-4d21-4787-b830-9d9862042a9f",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -111,8 +111,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "faee71ea-aab3-4be3-b098-acd350a3637d",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "edb88560-1bdb-48c6-8695-790c3b039304",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -128,8 +128,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "cd895e12-ef8d-4900-be96-d3bbc54dc06c",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "1d4b795e-c162-414b-b2bb-f8d3b127bcd1",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -145,8 +145,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2ee16f14-da62-4ad7-b03f-910b4d86129e",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "749a1e84-0841-4591-86a4-823fedcf5268",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -162,8 +162,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "87867620-51b5-48d4-9cd1-ee12acd593e2",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "b89707a0-fc35-4bde-b651-8e0d5653cae0",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -179,8 +179,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a570f9aa-e0a3-4edb-8565-569c9d0158da",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "b743cdf6-a789-448b-9fbd-1121562505cd",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -196,8 +196,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "bfd7bbe8-d9b0-41fa-a181-37d43ddcb5d8",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "fa4bcb8a-cb50-49d9-a094-e75682d80477",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -213,8 +213,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c96cf7ff-6771-4e05-b7f0-26432db7c014",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "292eac21-56e7-435c-bcda-0c3772d870b8",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -230,8 +230,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "070150b2-2765-4995-8e16-3817a0382876",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "6c275241-9a61-4d43-a080-c9d100dfe7d4",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -247,8 +247,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "5eae56b5-a8fc-46af-9b66-f270c5e459bc",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "575fcca6-731f-4607-ae70-02621774064a",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -264,8 +264,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "48208a69-acf3-48eb-9b0a-5700df8077d4",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "05e3880a-dc84-4550-add8-113ed22e0166",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -281,8 +281,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f1fc9005-faae-4e85-94e4-2c5ec6147984",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "ebb0787c-99ba-4f47-90b4-914703dce27f",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -298,8 +298,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4417b1d0-4083-49a9-ae65-52b661d78f0c",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "bb633888-89b6-4b14-a53e-e3524c280267",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -315,8 +315,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e54bb94b-4d89-4d29-8faf-e16ff126a312",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "369b4584-86e0-496c-bafe-aacae47358a0",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -332,8 +332,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "81fa6454-8e8b-4711-897f-45b4ebaafbcf",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "97af2097-5b50-4773-9ff6-deb86a97a3f7",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -349,8 +349,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d24e3932-a70d-4357-8223-a9c47d9c84ac",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "e832bdda-d052-4256-8820-bbd87767bb20",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -366,8 +366,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9796cc7c-1370-45bf-9f3b-ffc9458191ed",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "beab4ad1-495f-4f68-98e4-fae17dad72b4",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -383,8 +383,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "166aef5b-852d-4bf0-a2a3-2ea4406fdcad",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "8db7fd0d-5a03-4869-b11e-6c9b34944093",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -400,8 +400,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "817f9c92-48fd-4a8d-9d67-fc153e73c4ee",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "87c9d86c-3f45-400b-8f9e-94b9d5d725ec",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -417,8 +417,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "cb0ec065-fefb-42d1-bcb3-e70b72856e17",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "70673132-b695-4f81-970d-bc96f1052eeb",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -434,8 +434,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "46e5445b-e10e-4fd7-9f78-da9c1501853c",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "c81c75f7-753b-4728-9a5a-bd642c6a0a54",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             },
@@ -451,39 +451,39 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "86d622ab-5072-4ac6-9ee8-f9fc5b62d2ce",
-              "parentUUID": "50c15309-f3ef-4bba-8cfc-e19a0e582b24",
+              "uuid": "652fe499-bc32-47f6-89af-18857f6e125b",
+              "parentUUID": "425a1d0b-36e3-4d65-9194-5399fdf3bb4a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "abb53f79-c2d2-4fa2-a783-21783297fd1c",
-            "73678096-344d-4681-a4f3-3f5ae7ee8a19",
-            "ebb8ad6b-9c20-4893-8b7b-fd058382972b",
-            "fa413284-2c04-40d2-a73e-3baa1932a847",
-            "faee71ea-aab3-4be3-b098-acd350a3637d",
-            "cd895e12-ef8d-4900-be96-d3bbc54dc06c",
-            "2ee16f14-da62-4ad7-b03f-910b4d86129e",
-            "87867620-51b5-48d4-9cd1-ee12acd593e2",
-            "a570f9aa-e0a3-4edb-8565-569c9d0158da",
-            "bfd7bbe8-d9b0-41fa-a181-37d43ddcb5d8",
-            "c96cf7ff-6771-4e05-b7f0-26432db7c014",
-            "070150b2-2765-4995-8e16-3817a0382876",
-            "5eae56b5-a8fc-46af-9b66-f270c5e459bc",
-            "48208a69-acf3-48eb-9b0a-5700df8077d4",
-            "f1fc9005-faae-4e85-94e4-2c5ec6147984",
-            "4417b1d0-4083-49a9-ae65-52b661d78f0c",
-            "e54bb94b-4d89-4d29-8faf-e16ff126a312",
-            "81fa6454-8e8b-4711-897f-45b4ebaafbcf",
-            "d24e3932-a70d-4357-8223-a9c47d9c84ac",
-            "9796cc7c-1370-45bf-9f3b-ffc9458191ed",
-            "166aef5b-852d-4bf0-a2a3-2ea4406fdcad",
-            "817f9c92-48fd-4a8d-9d67-fc153e73c4ee",
-            "cb0ec065-fefb-42d1-bcb3-e70b72856e17",
-            "46e5445b-e10e-4fd7-9f78-da9c1501853c",
-            "86d622ab-5072-4ac6-9ee8-f9fc5b62d2ce"
+            "dbfd348d-7b98-455f-b6bd-944bd27e50fc",
+            "607c589b-2634-4471-b332-6fe01f588734",
+            "11a79a6a-fbeb-4b15-90b7-52b5a0294703",
+            "0a2b2e2f-4d21-4787-b830-9d9862042a9f",
+            "edb88560-1bdb-48c6-8695-790c3b039304",
+            "1d4b795e-c162-414b-b2bb-f8d3b127bcd1",
+            "749a1e84-0841-4591-86a4-823fedcf5268",
+            "b89707a0-fc35-4bde-b651-8e0d5653cae0",
+            "b743cdf6-a789-448b-9fbd-1121562505cd",
+            "fa4bcb8a-cb50-49d9-a094-e75682d80477",
+            "292eac21-56e7-435c-bcda-0c3772d870b8",
+            "6c275241-9a61-4d43-a080-c9d100dfe7d4",
+            "575fcca6-731f-4607-ae70-02621774064a",
+            "05e3880a-dc84-4550-add8-113ed22e0166",
+            "ebb0787c-99ba-4f47-90b4-914703dce27f",
+            "bb633888-89b6-4b14-a53e-e3524c280267",
+            "369b4584-86e0-496c-bafe-aacae47358a0",
+            "97af2097-5b50-4773-9ff6-deb86a97a3f7",
+            "e832bdda-d052-4256-8820-bbd87767bb20",
+            "beab4ad1-495f-4f68-98e4-fae17dad72b4",
+            "8db7fd0d-5a03-4869-b11e-6c9b34944093",
+            "87c9d86c-3f45-400b-8f9e-94b9d5d725ec",
+            "70673132-b695-4f81-970d-bc96f1052eeb",
+            "c81c75f7-753b-4728-9a5a-bd642c6a0a54",
+            "652fe499-bc32-47f6-89af-18857f6e125b"
           ],
           "failures": [],
           "pending": [],
@@ -494,7 +494,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+          "uuid": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
           "title": "T_AsianOptions",
           "file": "",
           "beforeHooks": [],
@@ -512,8 +512,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9bb3a440-091c-401a-b0a9-e92b65b5e2a1",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "1d18b263-3243-42e4-89ca-4feb40b58662",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             },
@@ -529,8 +529,8 @@
               "context": "[\"skipped: Incomplete\"]",
               "code": null,
               "err": {},
-              "uuid": "592934cb-8c43-4f2b-847e-be8d288b2734",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "3435cf6c-29b5-4bde-ad4b-7be72d0a7eee",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             },
@@ -546,8 +546,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e77230e7-1a88-48eb-afa8-908eb1d5109f",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "cb71d3dd-4920-4d78-9cb1-906f776c5ca7",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             },
@@ -563,8 +563,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d9f9349f-90e7-4b55-9f19-548752039094",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "51a60dc4-22bb-4c2b-ac14-2289eb2f8e2a",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             },
@@ -580,8 +580,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "56f35a82-f578-4476-b311-6999d3cb2493",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "9af6fc6d-3d2f-4980-bd73-46e3bcf1c505",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             },
@@ -597,8 +597,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "a0508fd9-04fb-4325-8578-c7c47ced1194",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "07e3790c-e357-4061-8c59-2a803809fb1c",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             },
@@ -618,25 +618,25 @@
                 "estack": "at TestSuite.QAssert.Fail(String message) in C:\\projects\\QLNet\\tests\\QLNet.Tests\\Utilities.cs:line 187\nat TestSuite.T_AsianOptions.REPORT_FAILURE(String greekName, Type averageType, Nullable`1 runningAccumulator, Nullable`1 pastFixings, List`1 fixingDates, StrikedTypePayoff payoff, Exercise exercise, Double s, Double q, Double r, Date today, Double v, Double expected, Double calculated, Double tolerance) in C:\\projects\\Dev\\QLNet\\tests\\QLNet.Tests\\T_AsianOptions.cs:line 39\nat TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice() in C:\\projects\\QLNet\\tests\\QLNet.Tests\\T_AsianOptions.cs:line 122\nat System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\nat System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)",
                 "diff": null
               },
-              "uuid": "ab5032ea-e707-494d-bd9a-bb34d67d9eab",
-              "parentUUID": "f7faed31-5eee-4757-b755-2f2ea4b1f646",
+              "uuid": "2eaa3fb2-dbe2-43c3-8ef6-b0036ff2e27e",
+              "parentUUID": "53d65bf1-ca0c-41f6-9bb7-4b2632c692fb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9bb3a440-091c-401a-b0a9-e92b65b5e2a1",
-            "e77230e7-1a88-48eb-afa8-908eb1d5109f",
-            "d9f9349f-90e7-4b55-9f19-548752039094",
-            "56f35a82-f578-4476-b311-6999d3cb2493",
-            "a0508fd9-04fb-4325-8578-c7c47ced1194"
+            "1d18b263-3243-42e4-89ca-4feb40b58662",
+            "cb71d3dd-4920-4d78-9cb1-906f776c5ca7",
+            "51a60dc4-22bb-4c2b-ac14-2289eb2f8e2a",
+            "9af6fc6d-3d2f-4980-bd73-46e3bcf1c505",
+            "07e3790c-e357-4061-8c59-2a803809fb1c"
           ],
           "failures": [
-            "ab5032ea-e707-494d-bd9a-bb34d67d9eab"
+            "2eaa3fb2-dbe2-43c3-8ef6-b0036ff2e27e"
           ],
           "pending": [
-            "592934cb-8c43-4f2b-847e-be8d288b2734"
+            "3435cf6c-29b5-4bde-ad4b-7be72d0a7eee"
           ],
           "skipped": [],
           "duration": 83,
@@ -645,7 +645,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "4b768fce-52b0-42a9-a99f-b2c92e28f5bf",
+          "uuid": "10e7ea20-04db-44f8-a045-c8afe67ccae0",
           "title": "T_CPISwap",
           "file": "",
           "beforeHooks": [],
@@ -663,8 +663,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "fe18983f-5808-4beb-8104-a8ce1eca9c14",
-              "parentUUID": "4b768fce-52b0-42a9-a99f-b2c92e28f5bf",
+              "uuid": "b824e5f9-45e3-49ee-b680-c4909a4fa411",
+              "parentUUID": "10e7ea20-04db-44f8-a045-c8afe67ccae0",
               "isHook": false,
               "skipped": false
             },
@@ -680,8 +680,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4902f5e3-4de6-4622-ad95-46419fa21b13",
-              "parentUUID": "4b768fce-52b0-42a9-a99f-b2c92e28f5bf",
+              "uuid": "adae1069-1d9e-42cc-9830-756b3e3e989a",
+              "parentUUID": "10e7ea20-04db-44f8-a045-c8afe67ccae0",
               "isHook": false,
               "skipped": false
             },
@@ -697,17 +697,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "f9a619dc-d56b-484b-b475-669a4207ab15",
-              "parentUUID": "4b768fce-52b0-42a9-a99f-b2c92e28f5bf",
+              "uuid": "59b2f45c-cc52-4b42-9e8d-c813abb5fc41",
+              "parentUUID": "10e7ea20-04db-44f8-a045-c8afe67ccae0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fe18983f-5808-4beb-8104-a8ce1eca9c14",
-            "4902f5e3-4de6-4622-ad95-46419fa21b13",
-            "f9a619dc-d56b-484b-b475-669a4207ab15"
+            "b824e5f9-45e3-49ee-b680-c4909a4fa411",
+            "adae1069-1d9e-42cc-9830-756b3e3e989a",
+            "59b2f45c-cc52-4b42-9e8d-c813abb5fc41"
           ],
           "failures": [],
           "pending": [],
@@ -718,7 +718,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "1d3eb999-71fd-46a1-9dd3-315b06d95dd0",
+          "uuid": "4e8fadc2-2058-4d95-81a1-2f3f2bf7faed",
           "title": "T_CapFlooredCoupon",
           "file": "",
           "beforeHooks": [],
@@ -736,8 +736,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "9f0b41ce-bd43-47b6-aa38-649baea411eb",
-              "parentUUID": "1d3eb999-71fd-46a1-9dd3-315b06d95dd0",
+              "uuid": "2ee90cff-816d-42a4-afbe-787b5c2d38b2",
+              "parentUUID": "4e8fadc2-2058-4d95-81a1-2f3f2bf7faed",
               "isHook": false,
               "skipped": false
             },
@@ -753,16 +753,16 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2d852ddc-aaff-46f3-874e-d3bbfd5fa2fb",
-              "parentUUID": "1d3eb999-71fd-46a1-9dd3-315b06d95dd0",
+              "uuid": "16769763-8919-4bfb-b4c0-2e7c44b0d64c",
+              "parentUUID": "4e8fadc2-2058-4d95-81a1-2f3f2bf7faed",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9f0b41ce-bd43-47b6-aa38-649baea411eb",
-            "2d852ddc-aaff-46f3-874e-d3bbfd5fa2fb"
+            "2ee90cff-816d-42a4-afbe-787b5c2d38b2",
+            "16769763-8919-4bfb-b4c0-2e7c44b0d64c"
           ],
           "failures": [],
           "pending": [],
@@ -773,7 +773,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "6f2b412c-ad23-48ad-a554-dacb55c1ceda",
+          "uuid": "0901faf4-914f-41a0-90fa-7049c7c53487",
           "title": "T_CashFlows",
           "file": "",
           "beforeHooks": [],
@@ -791,8 +791,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "914da720-bbdc-4706-b2ae-58e25af35d3b",
-              "parentUUID": "6f2b412c-ad23-48ad-a554-dacb55c1ceda",
+              "uuid": "d90eb0e1-a71c-4286-b578-95dd27a10cd1",
+              "parentUUID": "0901faf4-914f-41a0-90fa-7049c7c53487",
               "isHook": false,
               "skipped": false
             },
@@ -808,8 +808,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "0a6d5d0d-c686-48c0-b4a8-ccc7eb8eb8b5",
-              "parentUUID": "6f2b412c-ad23-48ad-a554-dacb55c1ceda",
+              "uuid": "ddd51c74-ec80-4580-9668-2fa3bfb1373f",
+              "parentUUID": "0901faf4-914f-41a0-90fa-7049c7c53487",
               "isHook": false,
               "skipped": false
             },
@@ -825,8 +825,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c22c8988-e724-41f6-8e0e-489ddbd31ef7",
-              "parentUUID": "6f2b412c-ad23-48ad-a554-dacb55c1ceda",
+              "uuid": "b7993738-f172-4419-9478-e1b1f210e57c",
+              "parentUUID": "0901faf4-914f-41a0-90fa-7049c7c53487",
               "isHook": false,
               "skipped": false
             },
@@ -842,18 +842,18 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "1d0a2513-cbd4-4577-a89e-91c2e06239d5",
-              "parentUUID": "6f2b412c-ad23-48ad-a554-dacb55c1ceda",
+              "uuid": "76526278-afb5-496d-9dce-e36f3b2cc5cf",
+              "parentUUID": "0901faf4-914f-41a0-90fa-7049c7c53487",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "914da720-bbdc-4706-b2ae-58e25af35d3b",
-            "0a6d5d0d-c686-48c0-b4a8-ccc7eb8eb8b5",
-            "c22c8988-e724-41f6-8e0e-489ddbd31ef7",
-            "1d0a2513-cbd4-4577-a89e-91c2e06239d5"
+            "d90eb0e1-a71c-4286-b578-95dd27a10cd1",
+            "ddd51c74-ec80-4580-9668-2fa3bfb1373f",
+            "b7993738-f172-4419-9478-e1b1f210e57c",
+            "76526278-afb5-496d-9dce-e36f3b2cc5cf"
           ],
           "failures": [],
           "pending": [],
@@ -864,7 +864,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "376cbe09-bd80-4ccb-a484-16fa564dcd3d",
+          "uuid": "5ab1ab4e-263f-492c-b85c-22c5ef224770",
           "title": "T_CliquetOption",
           "file": "",
           "beforeHooks": [],
@@ -882,8 +882,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7289e756-5f88-41b6-b6e3-2454afe6a790",
-              "parentUUID": "376cbe09-bd80-4ccb-a484-16fa564dcd3d",
+              "uuid": "4219dcd5-493b-4390-a677-94f32a8286d4",
+              "parentUUID": "5ab1ab4e-263f-492c-b85c-22c5ef224770",
               "isHook": false,
               "skipped": false
             },
@@ -899,8 +899,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "e3db0d54-a5c0-46e9-8bef-a951f3194c39",
-              "parentUUID": "376cbe09-bd80-4ccb-a484-16fa564dcd3d",
+              "uuid": "3f305b46-64dd-431b-a459-36549e3543d5",
+              "parentUUID": "5ab1ab4e-263f-492c-b85c-22c5ef224770",
               "isHook": false,
               "skipped": false
             },
@@ -916,17 +916,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "21514f71-f858-45d3-962c-97bde537cf12",
-              "parentUUID": "376cbe09-bd80-4ccb-a484-16fa564dcd3d",
+              "uuid": "3718e773-5148-4b3a-be36-40f311c2df9b",
+              "parentUUID": "5ab1ab4e-263f-492c-b85c-22c5ef224770",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7289e756-5f88-41b6-b6e3-2454afe6a790",
-            "e3db0d54-a5c0-46e9-8bef-a951f3194c39",
-            "21514f71-f858-45d3-962c-97bde537cf12"
+            "4219dcd5-493b-4390-a677-94f32a8286d4",
+            "3f305b46-64dd-431b-a459-36549e3543d5",
+            "3718e773-5148-4b3a-be36-40f311c2df9b"
           ],
           "failures": [],
           "pending": [],
@@ -937,7 +937,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "2bc3f1c5-1146-47ea-8c80-ec840ceb827f",
+          "uuid": "b63e8264-9517-41f5-b8ac-ec040a889117",
           "title": "T_Cms",
           "file": "",
           "beforeHooks": [],
@@ -955,8 +955,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "8acd5f38-92e1-4991-903b-736a98bc0222",
-              "parentUUID": "2bc3f1c5-1146-47ea-8c80-ec840ceb827f",
+              "uuid": "cb186d18-4099-4308-b204-6213f6d78e6b",
+              "parentUUID": "b63e8264-9517-41f5-b8ac-ec040a889117",
               "isHook": false,
               "skipped": false
             },
@@ -972,8 +972,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "d4c985f9-10a2-4826-b6a4-d58ea6aaec18",
-              "parentUUID": "2bc3f1c5-1146-47ea-8c80-ec840ceb827f",
+              "uuid": "0cf512cb-3852-4d07-a6d9-dcc559578cdc",
+              "parentUUID": "b63e8264-9517-41f5-b8ac-ec040a889117",
               "isHook": false,
               "skipped": false
             },
@@ -989,17 +989,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7dfe4f27-6f5b-4a84-95ff-62eed6d65c72",
-              "parentUUID": "2bc3f1c5-1146-47ea-8c80-ec840ceb827f",
+              "uuid": "714c58de-7b1f-4046-ad3e-4e318ec57498",
+              "parentUUID": "b63e8264-9517-41f5-b8ac-ec040a889117",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8acd5f38-92e1-4991-903b-736a98bc0222",
-            "d4c985f9-10a2-4826-b6a4-d58ea6aaec18",
-            "7dfe4f27-6f5b-4a84-95ff-62eed6d65c72"
+            "cb186d18-4099-4308-b204-6213f6d78e6b",
+            "0cf512cb-3852-4d07-a6d9-dcc559578cdc",
+            "714c58de-7b1f-4046-ad3e-4e318ec57498"
           ],
           "failures": [],
           "pending": [],
@@ -1010,7 +1010,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "e638c721-0933-4019-bb81-2acb50ce43f8",
+          "uuid": "99025af5-2590-4695-b648-7685ae0cca39",
           "title": "T_ConvertibleBond",
           "file": "",
           "beforeHooks": [],
@@ -1028,8 +1028,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "899043cc-80e2-4763-9fb1-10998b46acee",
-              "parentUUID": "e638c721-0933-4019-bb81-2acb50ce43f8",
+              "uuid": "19e7ddf2-9713-472e-ae37-3e817bc06013",
+              "parentUUID": "99025af5-2590-4695-b648-7685ae0cca39",
               "isHook": false,
               "skipped": false
             },
@@ -1045,8 +1045,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "452608cd-771a-4eec-baed-a9095527bb59",
-              "parentUUID": "e638c721-0933-4019-bb81-2acb50ce43f8",
+              "uuid": "eaad979f-0bb4-4f90-8c18-b1cdad3c3a76",
+              "parentUUID": "99025af5-2590-4695-b648-7685ae0cca39",
               "isHook": false,
               "skipped": false
             },
@@ -1062,17 +1062,17 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "4226ed85-0bfd-4be6-bd1a-99d6bb244dcc",
-              "parentUUID": "e638c721-0933-4019-bb81-2acb50ce43f8",
+              "uuid": "605c1086-fbf7-489c-9cc3-e6e7972e313a",
+              "parentUUID": "99025af5-2590-4695-b648-7685ae0cca39",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "899043cc-80e2-4763-9fb1-10998b46acee",
-            "452608cd-771a-4eec-baed-a9095527bb59",
-            "4226ed85-0bfd-4be6-bd1a-99d6bb244dcc"
+            "19e7ddf2-9713-472e-ae37-3e817bc06013",
+            "eaad979f-0bb4-4f90-8c18-b1cdad3c3a76",
+            "605c1086-fbf7-489c-9cc3-e6e7972e313a"
           ],
           "failures": [],
           "pending": [],
@@ -1083,7 +1083,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+          "uuid": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
           "title": "T_CreditDefaultSwap",
           "file": "",
           "beforeHooks": [],
@@ -1101,8 +1101,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "7703c288-ad39-41af-ac9a-9700fa2ddb5d",
-              "parentUUID": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+              "uuid": "950bfdca-0668-48b1-8cdb-7b9402fce5d2",
+              "parentUUID": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
               "isHook": false,
               "skipped": false
             },
@@ -1118,8 +1118,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "46904767-22e6-45cd-8673-3c1045d173a0",
-              "parentUUID": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+              "uuid": "e52d3be7-173e-41f8-98c3-228bf9574dbd",
+              "parentUUID": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
               "isHook": false,
               "skipped": false
             },
@@ -1135,8 +1135,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "3e6ceb14-3463-497c-b624-8afd9af40d18",
-              "parentUUID": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+              "uuid": "35eb8647-300a-4a41-935e-7387efdf3d1a",
+              "parentUUID": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
               "isHook": false,
               "skipped": false
             },
@@ -1152,8 +1152,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "b36a25e7-0114-45e0-bfa1-ac73efff81b8",
-              "parentUUID": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+              "uuid": "bd0d5b5c-1263-46ec-8131-e1451b42fd6a",
+              "parentUUID": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
               "isHook": false,
               "skipped": false
             },
@@ -1169,8 +1169,8 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "c448078c-56f8-4938-8a80-8d6a32e78572",
-              "parentUUID": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+              "uuid": "8a2662e4-0b39-4e77-a8db-9b5e44e5b1a7",
+              "parentUUID": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
               "isHook": false,
               "skipped": false
             },
@@ -1186,20 +1186,20 @@
               "context": null,
               "code": null,
               "err": {},
-              "uuid": "2f5bfd29-c3f9-42e4-baf3-40794f30e514",
-              "parentUUID": "406a755e-7e4d-4ad5-a512-b98c1f3090fe",
+              "uuid": "26efc147-7596-476f-939d-2d33927cf81b",
+              "parentUUID": "28ba6bcc-47bd-4983-afc8-59c44458b82e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7703c288-ad39-41af-ac9a-9700fa2ddb5d",
-            "46904767-22e6-45cd-8673-3c1045d173a0",
-            "3e6ceb14-3463-497c-b624-8afd9af40d18",
-            "b36a25e7-0114-45e0-bfa1-ac73efff81b8",
-            "c448078c-56f8-4938-8a80-8d6a32e78572",
-            "2f5bfd29-c3f9-42e4-baf3-40794f30e514"
+            "950bfdca-0668-48b1-8cdb-7b9402fce5d2",
+            "e52d3be7-173e-41f8-98c3-228bf9574dbd",
+            "35eb8647-300a-4a41-935e-7387efdf3d1a",
+            "bd0d5b5c-1263-46ec-8131-e1451b42fd6a",
+            "8a2662e4-0b39-4e77-a8db-9b5e44e5b1a7",
+            "26efc147-7596-476f-939d-2d33927cf81b"
           ],
           "failures": [],
           "pending": [],
