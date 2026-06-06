@@ -26,7 +26,7 @@
       "suites": [
         {
           "file": "",
-          "uuid": "788879b8-258b-4e51-b8b0-3733e86accb3",
+          "uuid": "da8fd48c-b3ef-4a6f-8834-99a3b61bf764",
           "title": "Authentication > Login",
           "tests": [
             {
@@ -40,8 +40,8 @@
               "pending": false,
               "context": null,
               "err": {},
-              "uuid": "da2f8a78-b8f1-49c3-8ffd-0a4fdb285a6b",
-              "parentUUID": "788879b8-258b-4e51-b8b0-3733e86accb3",
+              "uuid": "b3c15d69-5693-409b-ba2e-a3a5f3faec5a",
+              "parentUUID": "da8fd48c-b3ef-4a6f-8834-99a3b61bf764",
               "isHook": false,
               "skipped": false
             }
@@ -50,7 +50,7 @@
           "beforeHooks": [],
           "afterHooks": [],
           "passes": [
-            "da2f8a78-b8f1-49c3-8ffd-0a4fdb285a6b"
+            "b3c15d69-5693-409b-ba2e-a3a5f3faec5a"
           ],
           "failures": [],
           "pending": [],
@@ -62,7 +62,7 @@
         },
         {
           "file": "",
-          "uuid": "7d0185a7-0392-4545-b00c-f8eea5a7d511",
+          "uuid": "8231edb2-65f9-49b5-b796-1433566e2ee2",
           "title": "Checkout",
           "tests": [
             {
@@ -76,8 +76,8 @@
               "pending": false,
               "context": null,
               "err": {},
-              "uuid": "a8483c18-e146-4eb3-ac09-0eaa3465285a",
-              "parentUUID": "7d0185a7-0392-4545-b00c-f8eea5a7d511",
+              "uuid": "d76a9f63-91d9-44ce-966d-f5d88940ba2e",
+              "parentUUID": "8231edb2-65f9-49b5-b796-1433566e2ee2",
               "isHook": false,
               "skipped": false
             }
@@ -86,7 +86,7 @@
           "beforeHooks": [],
           "afterHooks": [],
           "passes": [
-            "a8483c18-e146-4eb3-ac09-0eaa3465285a"
+            "d76a9f63-91d9-44ce-966d-f5d88940ba2e"
           ],
           "failures": [],
           "pending": [],
@@ -98,7 +98,7 @@
         },
         {
           "file": "",
-          "uuid": "ecd4a9ef-4e1c-4444-8ef1-b7020619bf7f",
+          "uuid": "f9335d07-61ba-45d6-878d-68a1a17bb887",
           "title": "Admin > Dashboard",
           "tests": [
             {
@@ -117,8 +117,8 @@
                 "estack": "Error: Element not found: .dashboard-metrics\n at waitForElement (test.js:45:10)\n at Object.<anonymous> (dashboard.test.js:42:5)",
                 "diff": null
               },
-              "uuid": "53a08a8c-4541-4f39-b3d5-8645fae31acb",
-              "parentUUID": "ecd4a9ef-4e1c-4444-8ef1-b7020619bf7f",
+              "uuid": "1504627f-6915-455c-8eb7-a6cdef34da9c",
+              "parentUUID": "f9335d07-61ba-45d6-878d-68a1a17bb887",
               "isHook": false,
               "skipped": false
             }
@@ -128,7 +128,7 @@
           "afterHooks": [],
           "passes": [],
           "failures": [
-            "53a08a8c-4541-4f39-b3d5-8645fae31acb"
+            "1504627f-6915-455c-8eb7-a6cdef34da9c"
           ],
           "pending": [],
           "skipped": [],

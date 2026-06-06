@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "ef9d48b0-d81c-4b9b-907e-8c8275bf269e",
+      "uuid": "0761661d-d627-403b-a4be-09f0b053509e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -38,8 +38,8 @@
             "estack": "Error: Expected element to be visible\n at checkVisibility (test.js:45:10)\n at Object.<anonymous> (test.js:12:5)",
             "diff": null
           },
-          "uuid": "4c7d773e-68a8-44a6-8d34-a931fe69312e",
-          "parentUUID": "ef9d48b0-d81c-4b9b-907e-8c8275bf269e",
+          "uuid": "2c9896d3-3434-4f8a-845f-209959a7c34d",
+          "parentUUID": "0761661d-d627-403b-a4be-09f0b053509e",
           "isHook": false,
           "skipped": false
         }
@@ -47,7 +47,7 @@
       "suites": [],
       "passes": [],
       "failures": [
-        "4c7d773e-68a8-44a6-8d34-a931fe69312e"
+        "2c9896d3-3434-4f8a-845f-209959a7c34d"
       ],
       "pending": [],
       "skipped": [],

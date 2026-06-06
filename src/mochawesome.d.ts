@@ -28,10 +28,10 @@ export interface MochawesomeResult {
     afterHooks: any[]
     tests: any[]
     suites: MochawesomeSuite[]
-    passes: any[]
-    failures: any[]
-    pending: any[]
-    skipped: any[]
+    passes: string[]
+    failures: string[]
+    pending: string[]
+    skipped: string[]
     duration: number
     root: boolean
     rootEmpty: boolean
@@ -49,8 +49,8 @@ export interface MochawesomeSuite {
     suites: any[]
     passes: string[]
     failures: string[]
-    pending: any[]
-    skipped: any[]
+    pending: string[]
+    skipped: string[]
     duration: number
     root: boolean
     rootEmpty: boolean
