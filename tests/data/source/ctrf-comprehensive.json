@@ -17,11 +17,11 @@
       }
     },
     "summary": {
-      "tests": 3,
+      "tests": 6,
       "passed": 2,
       "failed": 1,
-      "pending": 0,
-      "skipped": 0,
+      "skipped": 1,
+      "pending": 1,
       "other": 0,
       "flaky": 1,
       "suites": 2,
@@ -64,6 +64,75 @@
         }
       },
       {
+        "id": "550e8400-e29b-41d4-a716-446655440044",
+        "name": "sorted user can login",
+        "status": "passed",
+        "duration": 3500,
+        "start": 1609459200000,
+        "stop": 1609459203500,
+        "suite": ["Authentication", "Login"],
+        "type": "e2e",
+        "tags": ["smoke", "critical"],
+        "labels": {
+          "priority": "P1",
+          "severity": 2,
+          "automated": true,
+          "externalId": 45678
+        },
+        "filePath": "tests/auth/login.test.js",
+        "browser": "chromium",
+        "threadId": "worker-1",
+        "insights": {
+          "passRate": {
+            "current": 1.0,
+            "baseline": 0.95,
+            "change": 0.05
+          },
+          "averageTestDuration": {
+            "current": 3500,
+            "baseline": 3200,
+            "change": 300
+          },
+          "executedInRuns": 15
+        }
+      },
+       {
+        "id": "550e8400-e29b-41d4-a716-446655440022",
+        "name": "skipped user can login",
+        "status": "skipped",
+        "duration": 10,
+        "start": 1609459200000,
+        "stop": 1609459200010,
+        "suite": ["Authentication", "Login"],
+        "type": "e2e",
+        "tags": ["smoke", "critical"],
+        "labels": {
+          "priority": "P1",
+          "severity": 2,
+          "automated": true,
+          "externalId": 45678
+        },
+        "filePath": "tests/auth/login.test.js",
+        "browser": "chromium",
+        "threadId": "worker-1",
+        "insights": {
+          "passRate": {
+            "current": 1.0,
+            "baseline": 0.95,
+            "change": 0.05
+          },
+          "averageTestDuration": {
+            "current": 3500,
+            "baseline": 3200,
+            "change": 300
+          },
+          "executedInRuns": 15
+        },
+        "stdout": [
+          "Skipped for testing purposes"
+        ]
+      },
+     {
         "id": "550e8400-e29b-41d4-a716-446655440001",
         "name": "user can checkout",
         "status": "passed",
@@ -194,7 +263,61 @@
           },
           "executedInRuns": 15
         }
+      },
+      {
+        "id": "550e8400-e29b-41d4-a716-446655440002",
+        "name": "admin dashboard loads (pending)",
+        "status": "pending",
+        "duration": 10,
+        "start": 1609459213900,
+        "stop": 1609459213910,
+        "suite": ["Admin", "Dashboard"],
+        "type": "e2e",
+        "tags": ["regression"],
+        "labels": {
+          "priority": "P3",
+          "severity": 2,
+          "automated": true,
+          "externalId": 45677
+        },
+        "filePath": "tests/admin/dashboard.test.js",
+        "line": 42,
+        "browser": "chromium",
+        "threadId": "worker-1",
+        "stdout": [
+          "Pending for testing purposes"
+        ],
+        "attachments": [
+          {
+            "name": "failure-screenshot.png",
+            "contentType": "image/png",
+            "path": "/artifacts/screenshots/admin-dashboard-fail.png"
+          },
+          {
+            "name": "trace.zip",
+            "contentType": "application/zip",
+            "path": "/artifacts/traces/admin-dashboard.trace.zip"
+          },
+          {
+            "name": "video.webm",
+            "contentType": "video/webm",
+            "path": "/artifacts/videos/admin-dashboard.webm"
+          }
+        ],
+        "parameters": {
+          "userRole": "admin",
+          "environment": "staging"
+        },
+        "insights": {
+          "passRate": {
+            "current": 0.0,
+            "baseline": 0.8,
+            "change": -0.8
+          },
+          "executedInRuns": 15
+        }
       }
+
     ],
     "environment": {
       "reportName": "PR #123 E2E Tests",

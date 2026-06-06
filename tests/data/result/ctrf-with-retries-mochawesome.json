@@ -16,29 +16,13 @@
   },
   "results": [
     {
-      "uuid": "c51ffd18-5e58-4ae0-a722-b0b8ef3f3336",
+      "uuid": "77d77203-950c-4d4b-b084-f4971e65f1fc",
       "title": "",
       "fullFile": "",
       "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [
-        {
-          "title": "stable test",
-          "fullTitle": "stable test",
-          "duration": 150,
-          "state": "passed",
-          "speed": "medium",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "err": {},
-          "uuid": "f9a10392-b9bc-42da-897d-cd943dc96bf9",
-          "parentUUID": "c51ffd18-5e58-4ae0-a722-b0b8ef3f3336",
-          "isHook": false,
-          "skipped": false
-        },
         {
           "title": "flaky test",
           "fullTitle": "flaky test",
@@ -50,16 +34,32 @@
           "pending": false,
           "context": null,
           "err": {},
-          "uuid": "fe281b55-901f-43d5-9804-cf0984fc4ff1",
-          "parentUUID": "c51ffd18-5e58-4ae0-a722-b0b8ef3f3336",
+          "uuid": "029f48c6-ee78-48e4-96e9-21235d9a3a87",
+          "parentUUID": "77d77203-950c-4d4b-b084-f4971e65f1fc",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "stable test",
+          "fullTitle": "stable test",
+          "duration": 150,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "err": {},
+          "uuid": "21f4288a-7c6a-4709-98a7-2d2b20779ecf",
+          "parentUUID": "77d77203-950c-4d4b-b084-f4971e65f1fc",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "f9a10392-b9bc-42da-897d-cd943dc96bf9",
-        "fe281b55-901f-43d5-9804-cf0984fc4ff1"
+        "21f4288a-7c6a-4709-98a7-2d2b20779ecf",
+        "029f48c6-ee78-48e4-96e9-21235d9a3a87"
       ],
       "failures": [],
       "pending": [],

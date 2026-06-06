@@ -24,22 +24,6 @@
       "afterHooks": [],
       "tests": [
         {
-          "title": "login test",
-          "fullTitle": "login test",
-          "duration": 2500,
-          "state": "passed",
-          "speed": "medium",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "err": {},
-          "uuid": "32e31b68-71d2-43b0-aad6-0f59d2c57062",
-          "parentUUID": "7c4e1c20-7c89-4f30-9b52-1f6f9d6b8f21",
-          "isHook": false,
-          "skipped": false
-        },
-        {
           "title": "checkout test",
           "fullTitle": "checkout test",
           "duration": 3200,
@@ -50,7 +34,23 @@
           "pending": false,
           "context": null,
           "err": {},
-          "uuid": "a3f44833-873c-47ae-9bc7-05ddda684529",
+          "uuid": "3b5c4a30-ff6a-4fab-8a81-82da53b9b0af",
+          "parentUUID": "7c4e1c20-7c89-4f30-9b52-1f6f9d6b8f21",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "login test",
+          "fullTitle": "login test",
+          "duration": 2500,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "err": {},
+          "uuid": "0df71d34-2ac6-4d59-83c2-53f288ac848a",
           "parentUUID": "7c4e1c20-7c89-4f30-9b52-1f6f9d6b8f21",
           "isHook": false,
           "skipped": false
@@ -58,8 +58,8 @@
       ],
       "suites": [],
       "passes": [
-        "32e31b68-71d2-43b0-aad6-0f59d2c57062",
-        "a3f44833-873c-47ae-9bc7-05ddda684529"
+        "0df71d34-2ac6-4d59-83c2-53f288ac848a",
+        "3b5c4a30-ff6a-4fab-8a81-82da53b9b0af"
       ],
       "failures": [],
       "pending": [],

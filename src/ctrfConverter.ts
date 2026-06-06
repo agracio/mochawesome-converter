@@ -88,7 +88,7 @@ export class CtrfConverter {
 
         report.results.tests.forEach((test: Test) => {
 
-            let uuid = crypto.randomUUID();
+            let uuid = test.id || crypto.randomUUID();
             let err: any = {};
             if(test.suite && test.suite.length > 0){
                 suiteName = test.suite.join(' > ');
@@ -164,9 +164,17 @@ export class CtrfConverter {
             }
         });
 
-        Object.values(this.suites).forEach(suite => {
+        let suites = _.sortBy(Object.values(this.suites), ['title']);
+
+        suites.forEach(suite => {
+            let sortedTests = _.sortBy(suite.tests, ['title']);
+            suite.tests = sortedTests;
             this.results[0].suites.push(suite);
         });
+
+        if(this.results[0].tests.length > 0){
+            this.results[0].tests = _.sortBy(this.results[0].tests, ['title']);
+        }
     }
 
     /**

@@ -1,17 +1,17 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 3,
-    "passes": 2,
-    "pending": 0,
+    "tests": 6,
+    "passes": 3,
+    "pending": 1,
     "failures": 1,
-    "testsRegistered": 3,
-    "passPercent": 66.66666666666667,
-    "pendingPercent": 0,
+    "testsRegistered": 6,
+    "passPercent": 66.66666666666669,
+    "pendingPercent": 16.666666666666664,
     "other": 0,
     "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false,
+    "skipped": 1,
+    "hasSkipped": true,
     "duration": 20000
   },
   "results": [
@@ -26,79 +26,7 @@
       "suites": [
         {
           "file": "",
-          "uuid": "da8fd48c-b3ef-4a6f-8834-99a3b61bf764",
-          "title": "Authentication > Login",
-          "tests": [
-            {
-              "title": "user can login",
-              "fullTitle": "user can login",
-              "duration": 3500,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "err": {},
-              "uuid": "b3c15d69-5693-409b-ba2e-a3a5f3faec5a",
-              "parentUUID": "da8fd48c-b3ef-4a6f-8834-99a3b61bf764",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "beforeHooks": [],
-          "afterHooks": [],
-          "passes": [
-            "b3c15d69-5693-409b-ba2e-a3a5f3faec5a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 3500,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
-        },
-        {
-          "file": "",
-          "uuid": "8231edb2-65f9-49b5-b796-1433566e2ee2",
-          "title": "Checkout",
-          "tests": [
-            {
-              "title": "user can checkout",
-              "fullTitle": "user can checkout",
-              "duration": 5200,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "err": {},
-              "uuid": "d76a9f63-91d9-44ce-966d-f5d88940ba2e",
-              "parentUUID": "8231edb2-65f9-49b5-b796-1433566e2ee2",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "beforeHooks": [],
-          "afterHooks": [],
-          "passes": [
-            "d76a9f63-91d9-44ce-966d-f5d88940ba2e"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 5200,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
-        },
-        {
-          "file": "",
-          "uuid": "f9335d07-61ba-45d6-878d-68a1a17bb887",
+          "uuid": "39dced88-249f-48c1-a36b-4797c9cadffe",
           "title": "Admin > Dashboard",
           "tests": [
             {
@@ -117,8 +45,24 @@
                 "estack": "Error: Element not found: .dashboard-metrics\n at waitForElement (test.js:45:10)\n at Object.<anonymous> (dashboard.test.js:42:5)",
                 "diff": null
               },
-              "uuid": "1504627f-6915-455c-8eb7-a6cdef34da9c",
-              "parentUUID": "f9335d07-61ba-45d6-878d-68a1a17bb887",
+              "uuid": "550e8400-e29b-41d4-a716-446655440002",
+              "parentUUID": "39dced88-249f-48c1-a36b-4797c9cadffe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "admin dashboard loads (pending)",
+              "fullTitle": "admin dashboard loads (pending)",
+              "duration": 10,
+              "state": "pending",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": "[{\"title\":\"Parameters\",\"value\":\"{\\n  \\\"userRole\\\": \\\"admin\\\",\\n  \\\"environment\\\": \\\"staging\\\"\\n}\"},{\"title\":\"stdout\",\"value\":\"Pending for testing purposes\"}]",
+              "err": {},
+              "uuid": "550e8400-e29b-41d4-a716-446655440002",
+              "parentUUID": "39dced88-249f-48c1-a36b-4797c9cadffe",
               "isHook": false,
               "skipped": false
             }
@@ -128,11 +72,120 @@
           "afterHooks": [],
           "passes": [],
           "failures": [
-            "1504627f-6915-455c-8eb7-a6cdef34da9c"
+            "550e8400-e29b-41d4-a716-446655440002"
           ],
+          "pending": [
+            "550e8400-e29b-41d4-a716-446655440002"
+          ],
+          "skipped": [],
+          "duration": 8010,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "file": "",
+          "uuid": "91c134d3-92c5-4bef-9f35-7fb418308415",
+          "title": "Authentication > Login",
+          "tests": [
+            {
+              "title": "skipped user can login",
+              "fullTitle": "skipped user can login",
+              "duration": 10,
+              "state": "skipped",
+              "speed": "fast",
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": "[{\"title\":\"stdout\",\"value\":\"Skipped for testing purposes\"}]",
+              "err": {},
+              "uuid": "550e8400-e29b-41d4-a716-446655440022",
+              "parentUUID": "91c134d3-92c5-4bef-9f35-7fb418308415",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "sorted user can login",
+              "fullTitle": "sorted user can login",
+              "duration": 3500,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "550e8400-e29b-41d4-a716-446655440044",
+              "parentUUID": "91c134d3-92c5-4bef-9f35-7fb418308415",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user can login",
+              "fullTitle": "user can login",
+              "duration": 3500,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "550e8400-e29b-41d4-a716-446655440000",
+              "parentUUID": "91c134d3-92c5-4bef-9f35-7fb418308415",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [
+            "550e8400-e29b-41d4-a716-446655440000",
+            "550e8400-e29b-41d4-a716-446655440044"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "550e8400-e29b-41d4-a716-446655440022"
+          ],
+          "duration": 7010,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "file": "",
+          "uuid": "2b5f6459-0eb9-473c-8517-95ac621c10c9",
+          "title": "Checkout",
+          "tests": [
+            {
+              "title": "user can checkout",
+              "fullTitle": "user can checkout",
+              "duration": 5200,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "err": {},
+              "uuid": "550e8400-e29b-41d4-a716-446655440001",
+              "parentUUID": "2b5f6459-0eb9-473c-8517-95ac621c10c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "beforeHooks": [],
+          "afterHooks": [],
+          "passes": [
+            "550e8400-e29b-41d4-a716-446655440001"
+          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8000,
+          "duration": 5200,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000

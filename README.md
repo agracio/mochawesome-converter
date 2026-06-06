@@ -17,6 +17,7 @@
 - NUnit v3+ XML Format  
 - xUnit.net v2+ XML Format  
 - MSTest TRX Format (this is default `dotnet test` report output)  
+- CTRF JSON  
 
 ### What is Mochawesome
 
@@ -41,11 +42,12 @@ https://github.com/adamgruber/mochawesome
 - Support for test and suite nesting
 - Displays before and after hooks
 - Review test code inline
+- Attachments
 
 ### Conversion process
 
- - All test reports are first converted to JUnit format using [junit-converter](https://github.com/agracio/junit-converter).
- - Set `junit` option to `true` to get JUnit conversion results.
+ - All test reports except CTRF are first converted to JUnit format using [junit-converter](https://github.com/agracio/junit-converter).
+ - Set `junit` option to `true` to get JUnit conversion results. Not supported for CTRF resports.
  - If you only require JUnit conversion, use [junit-converter](https://github.com/agracio/junit-converter).
 
 ### JUnit to Mochawesome conversion
@@ -54,7 +56,11 @@ https://github.com/adamgruber/mochawesome
 - Converts &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; to Mochawesome context values.
 - Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
 - Tests suites without any tests are excluded from Mochawesome and JUnit.
-- Attachments are not supported.
+
+### CTRF to Mochawesome conversion
+
+- Converts `parameters`, `steps`, `stdout` and `stderr` to Mochawesome context values.
+- Converts `message` and `trace` elements to Mochawesome error stack.
 
 ### Conversion process to JUnit
 
@@ -96,7 +102,7 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | `testType` **(required)** | string  |                                  | [Test report type](#supported-testtype-options)   |
 | `reportDir`               | string  | ./report                         | Converted report output path                      |
 | `reportFile`              | string  | `testFile.name`-mochawesome.json | Mochawesome JSON report name                      |
-| `junit`                   | boolean | false                            | Create JUnit report?                              |
+| `junit`                   | boolean | false                            | Create JUnit report? (Not supported for CTRF)                              |
 | `junitReportFile`         | string  | `testFile.name`-junit.xml        | JUnit report file name                            |
 | `html`                    | boolean | true                             | Create Mochawesome HTML?                          |
 | `htmlReportFile`          | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                        |
@@ -110,10 +116,13 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 - `reportDir` - will be created if path does not exist.
 - `splitByClassname` - If true, splits test cases into multiple test suites by classname.  
   This is useful for test runners that generate tests under a single test suite such as `dotnet test` when using JUnit loggers.  
-  TRX report files are always split by classname, so this option is ignored for TRX files.
-- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter. 
-  Set to `false` to display tests as skipped.
-- `switchClassnameAndName` - Switches classname and name attributes of testcase if your test naming data is generated in reverse order.
+  TRX report files are always split by classname, so this option is ignored for TRX files.  
+  Not applicable to CTRF reports.
+- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter.  
+  Set to `false` to display tests as skipped.  
+  Not applicable to CTRF - it supports both skipped and pending in single view.
+- `switchClassnameAndName` - Switches classname and name attributes of testcase if your test naming data is generated in reverse order.  
+Not applicable to CTRF reports.
 
 #### Supported `testType` options.
 
@@ -123,6 +132,7 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | NUnit      | NUnit v3+ XML              |
 | xUnit      | xUnit.net v2+ XML          |
 | TRX        | MSTest TRX (`dotnet test`) |
+| CTRF       | CTRF JSON                  |
 
 
 

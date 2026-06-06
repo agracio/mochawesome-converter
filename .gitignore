@@ -16,3 +16,5 @@ jest.json
 junit.xml
 tester.js
 .idea/copilot*.*
+tests/data/result/assets/
+*.html

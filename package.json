@@ -34,6 +34,8 @@
     "TRX",
     "MSTest",
     "dotnet",
+    "dotnet test",
+    "ctrf",
     "converter",
     "html"
   ],
@@ -48,6 +50,8 @@
     "TRX",
     "MSTest",
     "dotnet",
+    "dotnet test",
+    "ctrf",
     "converter",
     "html"
   ],

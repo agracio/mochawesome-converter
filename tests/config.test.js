@@ -107,7 +107,7 @@ describe("Config tests", () => {
             reportFilename: 'mochawesome1.json',
             junit: true,
             junitReportFilename: 'xunit-j.xml',
-            html: false,
+            html: true,
             htmlReportFilename: 'mochawesome1.html',
             saveIntermediateFiles: true,
         }
@@ -122,7 +122,7 @@ describe("Config tests", () => {
         expect(result.reportPath).toBe(path.join(result.reportDir, 'mochawesome1.json'));
         expect(result.junit).toBe(true);
         expect(result.junitReportFile).toBe('xunit-j.xml');
-        expect(result.html).toBe(false);
+        expect(result.html).toBe(true);
         expect(result.htmlReportFile).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
 
