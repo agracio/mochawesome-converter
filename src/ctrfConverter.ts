@@ -1,7 +1,5 @@
 import * as fs from 'fs';
-import * as path from 'path';
 import * as crypto from 'crypto';
-import {create as margeCreate} from 'mochawesome-report-generator';
 import _ from 'lodash';
 import {CTRFReport, Results, Summary, Test, Step} from './ctrf';
 import { ConverterOptions} from './interfaces';
@@ -11,7 +9,6 @@ import { MochawesomeCommon as mochaCommon} from './mochawesomeCommon';
 export class CtrfConverter {
 
     private suites: Record<string, MochawesomeSuite> = {};
-    private tests: MochawesomeTest[] = [];
     private results: MochawesomeResult[] = [];
     private avg: number = 0;
 
@@ -65,12 +62,7 @@ export class CtrfConverter {
         if(test.message || test.trace){
             return {
                 message: test.message,
-                estack: test.trace
-                    ?.replace(/^[\r\n]+|[\r\n]+$/g, '')
-                    ?.replaceAll('                ', '')
-                    ?.replaceAll('            ', '')
-                    ?.replaceAll('\r\n   ', '\r\n')
-                    ?.replaceAll('\n   ', '\n'),
+                estack: test.trace ? mochaCommon.sanitizeStackTrace(test.trace) : undefined,
                 diff: null,
             };
         }
@@ -79,7 +71,7 @@ export class CtrfConverter {
 
     private parseTests(report: CTRFReport, totalSuiteTime: number){
         const mediumTime = Math.ceil(this.avg / 2);
-        let suiteName: string = 'Root Suite';
+        let suiteName: string | null = null;
 
         report.results.tests.forEach((test: Test) => {
 
@@ -88,6 +80,8 @@ export class CtrfConverter {
             if(test.suite && test.suite.length > 0){
                 suiteName = test.suite.join(' > ');
             }
+
+            if(suiteName){
 
             if(!this.suites[suiteName]){
                 this.suites[suiteName] = {
@@ -108,6 +102,7 @@ export class CtrfConverter {
                     _timeout: 10000,
                 };
             }
+        }
 
             let speed = 'fast';
             const duration = test.duration ? Math.ceil(test.duration) : 0;
@@ -138,24 +133,43 @@ export class CtrfConverter {
                 code: test.snippet,
                 err: err,
                 uuid: uuid,
-                parentUUID: this.suites[suiteName].uuid,
+                parentUUID: suiteName ? this.suites[suiteName].uuid : this.results[0].uuid,
                 isHook: false,
                 skipped: test.status === 'skipped',
             };
-            this.suites[suiteName].tests.push(mochaTest);
-            if(test.status === 'failed'){
-                this.suites[suiteName].failures.push(mochaTest.uuid);
+            if(suiteName){
+                this.suites[suiteName].tests.push(mochaTest);
+                if(test.status === 'failed'){
+                    this.suites[suiteName].failures.push(mochaTest.uuid);
+                }
+                else if(test.status === 'pending'){
+                    this.suites[suiteName].pending.push(mochaTest.uuid);
+                }
+                else if(test.status === 'skipped'){
+                    this.suites[suiteName].skipped.push(mochaTest.uuid);
+                }
+                else if(test.status === 'passed'){
+                    this.suites[suiteName].passes.push(mochaTest.uuid);
+                }
+                this.suites[suiteName].duration += duration;
             }
-            else if(test.status === 'pending'){
-                this.suites[suiteName].pending.push(mochaTest.uuid);
-            }
-            else if(test.status === 'skipped'){
-                this.suites[suiteName].skipped.push(mochaTest.uuid);
-            }
-            else if(test.status === 'passed'){
-                this.suites[suiteName].passes.push(mochaTest.uuid);
-            }
-            this.suites[suiteName].duration += duration;
+            else{
+                this.results[0].tests.push(mochaTest);
+                if(test.status === 'failed'){
+                    this.results[0].failures.push(mochaTest.uuid);
+                }
+                else if(test.status === 'pending'){
+                    this.results[0].pending.push(mochaTest.uuid);
+                }
+                else if(test.status === 'skipped'){
+                    this.results[0].skipped.push(mochaTest.uuid);
+                }
+                else if(test.status === 'passed'){
+                    this.results[0].passes.push(mochaTest.uuid);
+                }
+                this.results[0].rootEmpty = false;
+                this.results[0].duration += duration;}
+
         });
 
         Object.values(this.suites).forEach(suite => {
@@ -179,7 +193,6 @@ export class CtrfConverter {
 
         this.suites = {};
         this.results = [];
-        this.tests = [];
 
         this.results.push(mochaCommon.createResult(report.reportId || null, report.results.environment?.reportName || '', []));
 

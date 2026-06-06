@@ -1,6 +1,6 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 0,
     "tests": 1,
     "passes": 0,
     "pending": 0,
@@ -16,62 +16,44 @@
   },
   "results": [
     {
-      "uuid": "8768b785-aa4f-4096-8518-278f7d3ae31e",
+      "uuid": "ef9d48b0-d81c-4b9b-907e-8c8275bf269e",
       "title": "",
       "fullFile": "",
       "file": "",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "file": "",
-          "uuid": "82d1c9c5-949b-48b3-a024-efacd619b391",
-          "title": "Root Suite",
-          "tests": [
-            {
-              "title": "should render homepage",
-              "fullTitle": "should render homepage",
-              "duration": 5000,
-              "state": "failed",
-              "speed": "slow",
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[{\"title\":\"stdout\",\"value\":\"Starting test execution\\nLoading page: https://example.com\\nWaiting for element: .hero-section\"},{\"title\":\"stderr\",\"value\":\"Warning: Network slow\\nError: Element not found after 5000ms\"}]",
-              "err": {
-                "message": "Expected element to be visible",
-                "estack": "Error: Expected element to be visible\n at checkVisibility (test.js:45:10)\n at Object.<anonymous> (test.js:12:5)",
-                "diff": null
-              },
-              "uuid": "2398e88a-b436-4d79-b550-828007532e68",
-              "parentUUID": "82d1c9c5-949b-48b3-a024-efacd619b391",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "beforeHooks": [],
-          "afterHooks": [],
-          "passes": [],
-          "failures": [
-            "2398e88a-b436-4d79-b550-828007532e68"
-          ],
-          "pending": [],
-          "skipped": [],
+          "title": "should render homepage",
+          "fullTitle": "should render homepage",
           "duration": 5000,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
+          "state": "failed",
+          "speed": "slow",
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "[{\"title\":\"stdout\",\"value\":\"Starting test execution\\nLoading page: https://example.com\\nWaiting for element: .hero-section\"},{\"title\":\"stderr\",\"value\":\"Warning: Network slow\\nError: Element not found after 5000ms\"}]",
+          "err": {
+            "message": "Expected element to be visible",
+            "estack": "Error: Expected element to be visible\n at checkVisibility (test.js:45:10)\n at Object.<anonymous> (test.js:12:5)",
+            "diff": null
+          },
+          "uuid": "4c7d773e-68a8-44a6-8d34-a931fe69312e",
+          "parentUUID": "ef9d48b0-d81c-4b9b-907e-8c8275bf269e",
+          "isHook": false,
+          "skipped": false
         }
       ],
+      "suites": [],
       "passes": [],
-      "failures": [],
+      "failures": [
+        "4c7d773e-68a8-44a6-8d34-a931fe69312e"
+      ],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 5000,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 10000
     }
   ]

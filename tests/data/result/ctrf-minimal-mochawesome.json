@@ -1,6 +1,6 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 0,
     "tests": 1,
     "passes": 1,
     "pending": 0,
@@ -16,58 +16,40 @@
   },
   "results": [
     {
-      "uuid": "851b4755-00cd-4f76-b580-c28554e0c6b9",
+      "uuid": "384e1f1a-c22b-4a82-8488-29f2010ec33f",
       "title": "",
       "fullFile": "",
       "file": "",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "file": "",
-          "uuid": "dddef9dc-aa7c-4761-ba59-77ced8e15a08",
-          "title": "Root Suite",
-          "tests": [
-            {
-              "title": "should pass",
-              "fullTitle": "should pass",
-              "duration": 100,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "err": {},
-              "uuid": "aacd8a4a-cac3-469d-b338-c242d9ecd5d8",
-              "parentUUID": "dddef9dc-aa7c-4761-ba59-77ced8e15a08",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "beforeHooks": [],
-          "afterHooks": [],
-          "passes": [
-            "aacd8a4a-cac3-469d-b338-c242d9ecd5d8"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
+          "title": "should pass",
+          "fullTitle": "should pass",
           "duration": 100,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "err": {},
+          "uuid": "c798fcdf-00f1-4418-b8fa-657b24145342",
+          "parentUUID": "384e1f1a-c22b-4a82-8488-29f2010ec33f",
+          "isHook": false,
+          "skipped": false
         }
       ],
-      "passes": [],
+      "suites": [],
+      "passes": [
+        "c798fcdf-00f1-4418-b8fa-657b24145342"
+      ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 100,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 10000
     }
   ]

@@ -61,6 +61,15 @@ export class MochawesomeCommon {
             _timeout: 10000,
         };
     }
+
+    static sanitizeStackTrace(stackTrace: string): string {
+        return stackTrace
+            .replace(/^[\r\n]+|[\r\n]+$/g, '')
+            .replaceAll('                ', '')
+            .replaceAll('            ', '')
+            .replaceAll('\r\n   ', '\r\n')
+            .replaceAll('\n   ', '\n') 
+    }
 }
 
 const common = new MochawesomeCommon();

@@ -1,6 +1,6 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 0,
     "tests": 2,
     "passes": 2,
     "pending": 0,
@@ -16,75 +16,57 @@
   },
   "results": [
     {
-      "uuid": "f652dd30-8fd0-4d4b-ae41-4116c8f0ed69",
+      "uuid": "94b3efdc-46f1-4381-8a10-c424c8fdac84",
       "title": "",
       "fullFile": "",
       "file": "",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "file": "",
-          "uuid": "a5734630-19c9-4557-9fcc-ccb9bb0a3eed",
-          "title": "Root Suite",
-          "tests": [
-            {
-              "title": "stable test",
-              "fullTitle": "stable test",
-              "duration": 150,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "err": {},
-              "uuid": "2bddfef4-5121-47bb-bdbe-6c9a3e116833",
-              "parentUUID": "a5734630-19c9-4557-9fcc-ccb9bb0a3eed",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "flaky test",
-              "fullTitle": "flaky test",
-              "duration": 300,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "err": {},
-              "uuid": "d97e7956-2dc5-4b4b-9b94-913410b52725",
-              "parentUUID": "a5734630-19c9-4557-9fcc-ccb9bb0a3eed",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "beforeHooks": [],
-          "afterHooks": [],
-          "passes": [
-            "2bddfef4-5121-47bb-bdbe-6c9a3e116833",
-            "d97e7956-2dc5-4b4b-9b94-913410b52725"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 450,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
+          "title": "stable test",
+          "fullTitle": "stable test",
+          "duration": 150,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "err": {},
+          "uuid": "10858fcc-48f9-4413-86fa-250b25a6d92e",
+          "parentUUID": "94b3efdc-46f1-4381-8a10-c424c8fdac84",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "flaky test",
+          "fullTitle": "flaky test",
+          "duration": 300,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "err": {},
+          "uuid": "e8c07bf1-de44-48d1-b8bc-f52d9061c2f4",
+          "parentUUID": "94b3efdc-46f1-4381-8a10-c424c8fdac84",
+          "isHook": false,
+          "skipped": false
         }
       ],
-      "passes": [],
+      "suites": [],
+      "passes": [
+        "10858fcc-48f9-4413-86fa-250b25a6d92e",
+        "e8c07bf1-de44-48d1-b8bc-f52d9061c2f4"
+      ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 450,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 10000
     }
   ]
