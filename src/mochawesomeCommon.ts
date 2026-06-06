@@ -64,5 +64,3 @@ export class MochawesomeCommon {
 }
 
 const common = new MochawesomeCommon();
-
-// export const createStats = (suites: number, tests: number, failures: number, pending: number, options: ConverterOptions, pendingPercent: number, duration: number): MochawesomeStats => common.createStats(suites, tests, failures, pending, options, pendingPercent, duration);

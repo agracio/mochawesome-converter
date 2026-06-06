@@ -16,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "1cdbc98a-29d0-4d61-a647-7c006ef899ca",
+      "uuid": "7dfd809a-f747-4397-85d4-4d181600927f",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -25,7 +25,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e8982bd4-e75b-4a19-b38d-e1240f45ca7c",
+          "uuid": "32511273-f5dc-490d-9d26-7d6452776e0e",
           "title": "Pickles.TestHarness.MSTest.AdditionFeature",
           "file": "",
           "beforeHooks": [],
@@ -43,8 +43,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 50 into the calculator\\n          -> done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)\\n          And I have entered 70 into the calculator\\n          -> done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(70) (0.0s)\\n          When I press add\\n          -> done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be 120 on the screen\\n          -> done: Steps.ThenTheResultShouldBePass(120) (0.0s)\"}]",
               "code": null,
               "err": {},
-              "uuid": "60714091-7759-4996-a107-2a50ef68f7b0",
-              "parentUUID": "e8982bd4-e75b-4a19-b38d-e1240f45ca7c",
+              "uuid": "ecf74b0b-eebe-45f5-8a69-5e3bc321f5bc",
+              "parentUUID": "32511273-f5dc-490d-9d26-7d6452776e0e",
               "isHook": false,
               "skipped": false
             },
@@ -60,8 +60,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\",\"VariantName: 40\",\"Parameter:Second Number: 50\",\"Parameter:Result: 90\",\"Parameter:First Number: 40\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 40 into the calculator\\n          -> done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(40) (0.0s)\\n          And I have entered 50 into the calculator\\n          -> done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(50) (0.0s)\\n          When I press add\\n          -> done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be 90 on the screen\\n          -> done: Steps.ThenTheResultShouldBePass(90) (0.0s)\"}]",
               "code": null,
               "err": {},
-              "uuid": "ff664343-5ed9-463b-8dea-ba1a25266233",
-              "parentUUID": "e8982bd4-e75b-4a19-b38d-e1240f45ca7c",
+              "uuid": "735d716a-c7d6-48c5-aec4-1a8d092b9e8e",
+              "parentUUID": "32511273-f5dc-490d-9d26-7d6452776e0e",
               "isHook": false,
               "skipped": false
             },
@@ -77,8 +77,8 @@
               "context": "[{\"title\":\"Properties\",\"value\":[\"FeatureTitle: Addition\",\"VariantName: 60\",\"Parameter:Second Number: 70\",\"Parameter:Result: 130\",\"Parameter:First Number: 60\"]},{\"title\":\"system-out\",\"value\":\"Given I have entered 60 into the calculator\\n          -> done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(60) (0.0s)\\n          And I have entered 70 into the calculator\\n          -> done: Steps.GivenIHaveEnteredSomethingIntoTheCalculator(70) (0.0s)\\n          When I press add\\n          -> done: Steps.WhenIPressAdd() (0.0s)\\n          Then the result should be 130 on the screen\\n          -> done: Steps.ThenTheResultShouldBePass(130) (0.0s)\"}]",
               "code": null,
               "err": {},
-              "uuid": "44ac4b7e-2d84-4fc9-a378-9fc6604bda88",
-              "parentUUID": "e8982bd4-e75b-4a19-b38d-e1240f45ca7c",
+              "uuid": "32322910-962a-4531-af47-ab3e581840f6",
+              "parentUUID": "32511273-f5dc-490d-9d26-7d6452776e0e",
               "isHook": false,
               "skipped": false
             },
@@ -95,23 +95,23 @@
               "code": null,
               "err": {
                 "message": "             Test method Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers threw exception:             Should.Core.Exceptions.NotEqualException: Assert.NotEqual() Failure           ",
-                "estack": "at Pickles.TestHarness.MSTest.Steps.ThenTheResultShouldBePass(Int32 result) in C:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Steps.cs:line 28\n            at lambda_method(Closure , IContextManager , Int32 )\n            at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpanamp; duration)\n            at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpanamp; duration)\n            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\n            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)\n            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\n            at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\n            at Pickles.TestHarness.MSTest.AdditionFeature.ScenarioCleanup() in C:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Addition.feature.cs:line 0\n            at Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers() in c:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Addition.feature:line 18",
+                "estack": "at Pickles.TestHarness.MSTest.Steps.ThenTheResultShouldBePass(Int32 result) in C:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Steps.cs:line 28\nat lambda_method(Closure , IContextManager , Int32 )\nat TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpanamp; duration)\nat TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpanamp; duration)\nat TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\nat TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)\nat TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\nat TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\nat Pickles.TestHarness.MSTest.AdditionFeature.ScenarioCleanup() in C:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Addition.feature.cs:line 0\nat Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers() in c:\\dev\\pickles-results-harness\\Pickles.TestHarness\\Pickles.TestHarness.MSTest\\Addition.feature:line 18",
                 "diff": null
               },
-              "uuid": "02072add-fcd3-4dd2-8162-a0bc896d13b7",
-              "parentUUID": "e8982bd4-e75b-4a19-b38d-e1240f45ca7c",
+              "uuid": "d23fdbdd-f2de-4296-958f-5f03e2eca9d2",
+              "parentUUID": "32511273-f5dc-490d-9d26-7d6452776e0e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "60714091-7759-4996-a107-2a50ef68f7b0",
-            "ff664343-5ed9-463b-8dea-ba1a25266233",
-            "44ac4b7e-2d84-4fc9-a378-9fc6604bda88"
+            "ecf74b0b-eebe-45f5-8a69-5e3bc321f5bc",
+            "735d716a-c7d6-48c5-aec4-1a8d092b9e8e",
+            "32322910-962a-4531-af47-ab3e581840f6"
           ],
           "failures": [
-            "02072add-fcd3-4dd2-8162-a0bc896d13b7"
+            "d23fdbdd-f2de-4296-958f-5f03e2eca9d2"
           ],
           "pending": [],
           "skipped": [],

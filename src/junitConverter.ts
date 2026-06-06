@@ -42,7 +42,7 @@ export class JunitConverter {
             message = `${prefix}${fail.message.replaceAll('&#xD;', '').replaceAll('&#xA;', '')}`;
         }
         if (fail.$t) {
-            estack = this.sanitizeXml(fail.$t);
+            estack = this.sanitizeXml(fail.$t).replace(/^[\r\n]+|[\r\n]+$/g, '').replaceAll('                ', '').replaceAll('            ', '').replaceAll('\r\n   ', '\r\n');
 
         } else if (typeof fail === 'string') {
             estack = fail;
