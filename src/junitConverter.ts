@@ -44,7 +44,6 @@ export class JunitConverter {
         if (fail.$t) {
             estack = this.sanitizeXml(fail.$t)
             .replace(/^[\r\n]+|[\r\n]+$/g, '')
-            .replace(/^[\n]+|[\n]+$/g, '')
             .replaceAll('                ', '')
             .replaceAll('            ', '')
             .replaceAll('\r\n   ', '\r\n')

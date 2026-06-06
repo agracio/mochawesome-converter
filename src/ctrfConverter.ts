@@ -67,7 +67,6 @@ export class CtrfConverter {
                 message: test.message,
                 estack: test.trace
                     ?.replace(/^[\r\n]+|[\r\n]+$/g, '')
-                    ?.replace(/^[\n]+|[\n]+$/g, '')
                     ?.replaceAll('                ', '')
                     ?.replaceAll('            ', '')
                     ?.replaceAll('\r\n   ', '\r\n')
