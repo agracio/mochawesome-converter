@@ -47,6 +47,7 @@ export class ConfigService {
         let splitByClassname: boolean = false;
         let junit: boolean = false;
         let junitReportFile: string = `${path.parse(options.testFile).name}-junit.xml`;
+        let charts: boolean = false;
 
         if (options.skippedAsPending === false || options.skippedAsPending === 'false') {
             skippedAsPending = false;
@@ -70,6 +71,10 @@ export class ConfigService {
 
         if (options.splitByClassname === true || options.splitByClassname === 'true') {
             splitByClassname = true;
+        }
+
+        if (options.charts === true || options.charts === 'true') {
+            charts = true;
         }
 
         if (options.reportDir) {
@@ -126,6 +131,7 @@ export class ConfigService {
             htmlReportFile: htmlReportFile,
             splitByClassname: splitByClassname,
             saveIntermediateFiles: saveIntermediateFiles,
+            charts: charts,
         };
     }
 }

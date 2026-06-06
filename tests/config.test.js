@@ -57,6 +57,7 @@ describe("Config tests", () => {
         expect(result.htmlReportFile).toBe('xunit-qlnet-mochawesome.html');
         expect(result.htmlReportTitle).toBe('xunit-qlnet.xml');
         expect(result.saveIntermediateFiles).toBe(false);
+        expect(result.charts).toBe(false);
     });
 
     test('return correct values from assigned options', () => {
@@ -73,6 +74,7 @@ describe("Config tests", () => {
             htmlReportFile: 'mochawesome1.html',
             htmlReportTitle: 'My Report',
             saveIntermediateFiles: true,
+            charts: true
         }
 
         let result = config.config(options)
@@ -89,7 +91,7 @@ describe("Config tests", () => {
         expect(result.htmlReportFile).toBe('mochawesome1.html');
         expect(result.htmlReportTitle).toBe('My Report');
         expect(result.saveIntermediateFiles).toBe(true);
-
+        expect(result.charts).toBe(true);
         expect(fs.existsSync(result.reportDir)).toBe(true)
 
         if(fs.existsSync(result.reportDir)){
@@ -110,6 +112,7 @@ describe("Config tests", () => {
             html: true,
             htmlReportFilename: 'mochawesome1.html',
             saveIntermediateFiles: true,
+            charts: true
         }
 
         let result = config.config(options)
@@ -125,7 +128,7 @@ describe("Config tests", () => {
         expect(result.html).toBe(true);
         expect(result.htmlReportFile).toBe('mochawesome1.html');
         expect(result.saveIntermediateFiles).toBe(true);
-
+        expect(result.charts).toBe(true);
         expect(fs.existsSync(result.reportDir)).toBe(true)
 
         if(fs.existsSync(result.reportDir)){

@@ -15,6 +15,7 @@ export interface TestReportConverterOptions {
     saveIntermediateFiles?: boolean | string;
     splitByClassname?: boolean | string;
     html?: boolean | string;
+    charts?: boolean | string;
 }
 
 export interface ConverterOptions {
@@ -32,6 +33,7 @@ export interface ConverterOptions {
     htmlReportTitle?: string;
     splitByClassname?: boolean;
     saveIntermediateFiles?: boolean;
+    charts?: boolean;
 }
 
 export interface JunitTestSuites {

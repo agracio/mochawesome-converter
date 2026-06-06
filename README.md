@@ -110,19 +110,25 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | `splitByClassname`        | boolean | false                            | Split into multiple test suites by test classname |
 | `skippedAsPending`        | boolean | true                             | Show skipped tests as pending in Mochawesome      |
 | `switchClassnameAndName`  | boolean | false                            | Switch test case classname and name               |
+| `charts`                  | boolean | false                            | Display Suite charts                              |
 
 - `testFile` - relative or absolute path to input test file.
 - `testType` - type of test report, not case-sensitive.
-- `reportDir` - will be created if path does not exist.
+- `reportDir` - will be created if path does not exist.  
+  
 - `splitByClassname` - If true, splits test cases into multiple test suites by classname.  
   This is useful for test runners that generate tests under a single test suite such as `dotnet test` when using JUnit loggers.  
   TRX report files are always split by classname, so this option is ignored for TRX files.  
-  Not applicable to CTRF reports.
+  Not applicable to CTRF reports.  
+    
 - `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter.  
   Set to `false` to display tests as skipped.  
-  Not applicable to CTRF - it supports both skipped and pending in single view.
+  Not applicable to CTRF - it supports both skipped and pending.  
+    
 - `switchClassnameAndName` - Switches classname and name attributes of testcase if your test naming data is generated in reverse order.  
-Not applicable to CTRF reports.
+  Not applicable to CTRF reports.  
+  
+- `charts` - Display Suite charts (see screenshot).  
 
 #### Supported `testType` options.
 

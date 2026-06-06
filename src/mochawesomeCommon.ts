@@ -31,7 +31,8 @@ export class MochawesomeCommon {
                 reportFilename: options.htmlReportFile,
                 reportDir: options.reportDir,
                 showSkipped: true,
-                reportTitle: options.htmlReportTitle
+                reportTitle: options.htmlReportTitle,
+                charts: options.charts,
             };
 
             return margeCreate(mochawesome, margeOptions);
