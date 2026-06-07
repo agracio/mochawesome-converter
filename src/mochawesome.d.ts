@@ -80,3 +80,8 @@ export interface MochawesomeErr {
     estack?: string
     diff: any
 }
+
+export interface MochawesomeContext {
+    title?: string
+    value?: string
+}

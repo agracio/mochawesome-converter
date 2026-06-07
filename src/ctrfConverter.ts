@@ -3,7 +3,7 @@ import * as crypto from 'crypto';
 import _ from 'lodash';
 import {CTRFReport, Test} from './ctrf';
 import { ConverterOptions} from './interfaces';
-import { MochawesomeStats, MochawesomeResult, MochawesomeSuite, MochawesomeTest, MochawesomeErr, MochawesomeRoot,} from './mochawesome';
+import { MochawesomeStats, MochawesomeResult, MochawesomeSuite, MochawesomeTest, MochawesomeErr, MochawesomeRoot, MochawesomeContext,} from './mochawesome';
 import { MochawesomeCommon as mochaCommon} from './mochawesomeCommon';
 
 export class CtrfConverter {
@@ -29,7 +29,7 @@ export class CtrfConverter {
         });
     }
 
-    private getProperties(title: string, value: Record<string, any> | null | undefined, context: any[]): any {
+    private getProperties(title: string, value: Record<string, any> | null | undefined, context: MochawesomeContext[]): void {
         if(value){
             context.push({
                 title: title,
@@ -38,7 +38,7 @@ export class CtrfConverter {
         }
     }
 
-    private getStdOut(title: string, value: string[] | null | undefined, context: any[]): any {
+    private getStdOut(title: string, value: string[] | null | undefined, context: MochawesomeContext[]): void {
         if(value){
             context.push({
                 title: title,
@@ -47,7 +47,7 @@ export class CtrfConverter {
         }
     }
 
-    private getContext(test: Test): any{
+    private getContext(test: Test): MochawesomeContext[] | null {
         let context: any;
         if(test.stdout || test.stderr || test.parameters || test.steps){
             context = [];
@@ -222,10 +222,14 @@ export class CtrfConverter {
 
         let pending = Number(report.results.summary.pending);
         let skipped = Number(report.results.summary.skipped);
+        let failed = Number(report.results.summary.failed);
+        let other = Number(report.results.summary.other);
+        let passes = Number(report.results.summary.passed);
 
         report.results.tests.forEach((test: Test) => {
             if(test.status === 'other' && (test.rawStatus === 'NotExecuted' || test.rawStatus === 'Inconclusive')){
                 skipped++;
+                other--;
             }
         });
             
@@ -234,9 +238,6 @@ export class CtrfConverter {
         if (tests !== 0) {
             pendingPercent = (pending / tests) * 100;
         }
-        let failed = Number(report.results.summary.failed);
-        let other = Number(report.results.summary.other);
-        let passes = Number(report.results.summary.passed);
 
         this.parseTests(report);
 

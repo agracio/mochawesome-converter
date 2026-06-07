@@ -8,8 +8,8 @@
     "testsRegistered": 534,
     "passPercent": 99.812734082397,
     "pendingPercent": 0,
-    "other": 12,
-    "hasOther": true,
+    "other": 0,
+    "hasOther": false,
     "skipped": 12,
     "hasSkipped": true,
     "duration": 94303
