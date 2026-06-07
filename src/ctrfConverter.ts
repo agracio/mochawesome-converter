@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as crypto from 'crypto';
 import _ from 'lodash';
-import {CTRFReport, Results, Summary, Test, Step} from './ctrf';
+import {CTRFReport, Test} from './ctrf';
 import { ConverterOptions} from './interfaces';
 import { MochawesomeStats, MochawesomeResult, MochawesomeSuite, MochawesomeTest, MochawesomeErr, MochawesomeRoot,} from './mochawesome';
 import { MochawesomeCommon as mochaCommon} from './mochawesomeCommon';

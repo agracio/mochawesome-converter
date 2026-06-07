@@ -54,13 +54,14 @@ https://github.com/adamgruber/mochawesome
 
 - Converts &lt;skipped&gt; test messages to Mochawesome test context values.
 - Converts &lt;properties&gt;, &lt;system-out&gt; and &lt;system-err&gt; to Mochawesome context values.
-- Converts &lt;failure&gt; and &lt;error&gt; elements to Mochawesome error stack.
+- Converts &lt;failure&gt; and &lt;error&gt; to Mochawesome error stack.
 - Tests suites without any tests are excluded from Mochawesome and JUnit.
 
 ### CTRF to Mochawesome conversion
 
 - Converts `parameters`, `steps`, `stdout` and `stderr` to Mochawesome context values.
-- Converts `message` and `trace` elements to Mochawesome error stack.
+- Converts `message` and `trace` to Mochawesome error stack.
+- Converts `snippet` to Mochawesome code context.
 
 ### Conversion process to JUnit
 
