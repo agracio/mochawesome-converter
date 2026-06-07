@@ -5,11 +5,11 @@ import { MochawesomeStats, MochawesomeResult, MochawesomeSuite, MochawesomeTest,
 import { ConverterOptions} from './interfaces';
 
 export class MochawesomeCommon {
-    static createStats(suites: number, tests: number, failures: number, pending: number, skipped: number, options: ConverterOptions, pendingPercent: number, other: number, duration: number): MochawesomeStats {
+    static createStats(suites: number, tests: number, passes: number | null = null, failures: number, pending: number, skipped: number, options: ConverterOptions, pendingPercent: number, other: number, duration: number): MochawesomeStats {
         return {
             suites: suites,
             tests: tests,
-            passes: tests - failures - pending - skipped - other,
+            passes: passes !== null ? passes : tests - failures - pending - skipped - other,
             pending: pending,
             failures: failures,
             testsRegistered: tests,

@@ -319,6 +319,7 @@ export class JunitConverter {
         const stats: MochawesomeStats = mochaCommon.createStats(
             this.suites.length, 
             tests, 
+            null,
             suiteFailures, 
             options.skippedAsPending ? pending : 0, 
             !options.skippedAsPending ? pending : 0, 

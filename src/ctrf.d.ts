@@ -144,7 +144,7 @@ export interface Test {
   /** Stop timestamp (Unix epoch milliseconds) */
   stop?: number
   /** Test suite hierarchy */
-  suite?: string[]
+  suite?: string[] | string | null
   /** Error message (for failed tests) */
   message?: string
   /** Stack trace (for failed tests) */

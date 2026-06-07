@@ -79,6 +79,8 @@ export class CtrfConverter {
             status.skipped.push(mochaTest.uuid);
         } else if(test.status === 'passed'){
             status.passes.push(mochaTest.uuid);
+        } else if(test.status === 'other' && test.rawStatus === 'NotExecuted'){
+            status.skipped.push(mochaTest.uuid);
         }
     }
 
@@ -91,7 +93,12 @@ export class CtrfConverter {
             let uuid = test.id || crypto.randomUUID();
             let err: any = {};
             if(test.suite && test.suite.length > 0){
-                suiteName = test.suite.join(' > ');
+                if(typeof test.suite === 'string'){
+                    suiteName = test.suite;
+                }
+                else if(Array.isArray(test.suite)){
+                    suiteName = test.suite.join(' > ');
+                }
             }
 
             if(suiteName){
@@ -148,7 +155,7 @@ export class CtrfConverter {
                 uuid: uuid,
                 parentUUID: suiteName ? this.suites[suiteName].uuid : this.results[0].uuid,
                 isHook: false,
-                skipped: test.status === 'skipped',
+                skipped: test.status === 'skipped' || (test.status === 'other' && test.rawStatus === 'NotExecuted'),
             };
 
             if(suiteName){
@@ -216,15 +223,24 @@ export class CtrfConverter {
         let pending = Number(report.results.summary.pending);
         let skipped = Number(report.results.summary.skipped);
 
+        report.results.tests.forEach((test: Test) => {
+            if(test.status === 'other' && test.rawStatus === 'NotExecuted'){
+                skipped++;
+            }
+        });
+            
+ 
+
         if (tests !== 0) {
             pendingPercent = (pending / tests) * 100;
         }
         let failed = Number(report.results.summary.failed);
         let other = Number(report.results.summary.other);
+        let passes = Number(report.results.summary.passed);
 
         this.parseTests(report);
 
-        const stats: MochawesomeStats = mochaCommon.createStats(Object.values(this.suites).length, tests, failed, pending, skipped, options, pendingPercent, other, Math.ceil(this.duration));
+        const stats: MochawesomeStats = mochaCommon.createStats(Object.values(this.suites).length, tests, passes, failed, pending, skipped, options, pendingPercent, other, Math.ceil(this.duration));
 
         const mochawesome: MochawesomeRoot = {
             stats: stats,
