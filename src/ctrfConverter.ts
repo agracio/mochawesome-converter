@@ -79,7 +79,7 @@ export class CtrfConverter {
             status.skipped.push(mochaTest.uuid);
         } else if(test.status === 'passed'){
             status.passes.push(mochaTest.uuid);
-        } else if(test.status === 'other' && test.rawStatus === 'NotExecuted'){
+        } else if(test.status === 'other' && (test.rawStatus === 'NotExecuted' || test.rawStatus === 'Inconclusive')){
             status.skipped.push(mochaTest.uuid);
         }
     }
@@ -122,7 +122,7 @@ export class CtrfConverter {
                         _timeout: 10000,
                     };
                 }
-        }
+            }
 
             let speed = 'fast';
             const duration = test.duration ? Math.ceil(test.duration) : 0;
@@ -155,7 +155,7 @@ export class CtrfConverter {
                 uuid: uuid,
                 parentUUID: suiteName ? this.suites[suiteName].uuid : this.results[0].uuid,
                 isHook: false,
-                skipped: test.status === 'skipped' || (test.status === 'other' && test.rawStatus === 'NotExecuted'),
+                skipped: test.status === 'skipped' || (test.status === 'other' && (test.rawStatus === 'NotExecuted' || test.rawStatus === 'Inconclusive')),
             };
 
             if(suiteName){
@@ -174,8 +174,8 @@ export class CtrfConverter {
         let suites = _.sortBy(Object.values(this.suites), ['title']);
 
         suites.forEach(suite => {
-            let sortedTests = _.sortBy(suite.tests, ['title']);
-            suite.tests = sortedTests;
+            let tests = _.sortBy(suite.tests, ['title']);
+            suite.tests = tests;
             this.results[0].suites.push(suite);
         });
 
@@ -224,7 +224,7 @@ export class CtrfConverter {
         let skipped = Number(report.results.summary.skipped);
 
         report.results.tests.forEach((test: Test) => {
-            if(test.status === 'other' && test.rawStatus === 'NotExecuted'){
+            if(test.status === 'other' && (test.rawStatus === 'NotExecuted' || test.rawStatus === 'Inconclusive')){
                 skipped++;
             }
         });
