@@ -48,7 +48,7 @@ https://github.com/adamgruber/mochawesome
 
  - All test reports except CTRF are first converted to JUnit format using [junit-converter](https://github.com/agracio/junit-converter).
  - Set `junit` option to `true` to get JUnit conversion results. Not supported for CTRF resports.
- - If you only require JUnit conversion, use [junit-converter](https://github.com/agracio/junit-converter).
+ - If you only require JUnit conversion use [junit-converter](https://github.com/agracio/junit-converter).
 
 ### JUnit to Mochawesome conversion
 
@@ -117,12 +117,12 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 - `testType` - type of test report, not case-sensitive.
 - `reportDir` - will be created if path does not exist.  
   
-- `splitByClassname` - If true, splits test cases into multiple test suites by classname.  
+- `splitByClassname` - If true splits test cases into multiple test suites by classname.  
   This is useful for test runners that generate tests under a single test suite such as `dotnet test` when using JUnit loggers.  
   TRX report files are always split by classname, so this option is ignored for TRX files.  
   Not applicable to CTRF reports.  
     
-- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behaviour of converter.  
+- `skippedAsPending` - Mocha always reports skipped tests as pending and this is default behavior of converter.  
   Set to `false` to display tests as skipped.  
   Not applicable to CTRF - it supports both skipped and pending.  
     
