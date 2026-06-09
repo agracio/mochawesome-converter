@@ -85,13 +85,16 @@ let options = {
 convert(options).then(() => console.log(`Mochawesome report created`));
 ```
 
-### CLI usage
+### CLI via NPX
+
+```bash
+npx --yes mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true --html true
+```
+
+### CLI using global module
 
 ```bash
 npm i -g mochawesome-converter
-```
-
-```bash
 mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true --html true
 ```
 
@@ -113,8 +116,8 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | `switchClassnameAndName`  | boolean | false                            | Switch test case classname and name               |
 | `charts`                  | boolean | false                            | Display Suite charts                              |
 
-- `testFile` - relative or absolute path to input test file.
-- `testType` - type of test report, not case-sensitive.
+- `testFile` - relative or absolute path to input test file.  
+- `testType` - type of test report, not case-sensitive.  
 - `reportDir` - will be created if path does not exist.  
   
 - `splitByClassname` - If true splits test cases into multiple test suites by classname.  
