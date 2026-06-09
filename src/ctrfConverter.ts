@@ -141,7 +141,7 @@ export class CtrfConverter {
             err = this.getError(test);
 
             const mochaTest: MochawesomeTest = {
-                title: test.name,
+                title: suiteName ? test.name.replace(`${suiteName}: `, '') : test.name,
                 fullTitle: test.name,
                 duration: test.duration,
                 state: test.status,
