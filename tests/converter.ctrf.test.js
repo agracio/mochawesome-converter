@@ -75,6 +75,13 @@ describe("CTRF converter tests", () => {
         common.compare(options, undefined, false);
     });
 
+    test('ctrf-mudblazor.json', async() => {
+        let options = common.createOptions('ctrf-mudblazor.json', 'ctrf');
+
+        await converter(options);
+        common.compare(options, undefined, false);
+    });
+
     test('ctrf-qlnet.json', async() => {
         let options = common.createOptions('ctrf-qlnet.json', 'ctrf');
 
