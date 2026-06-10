@@ -33,10 +33,10 @@
         <testcase name="testDegenerate" classname="TestSuite.CallableBondsTests" time="0.4395830"/>
         <testcase name="testImpliedVol" classname="TestSuite.CallableBondsTests" time="0.0050582">
             <failure type="failure" message="System.ArgumentException : root not bracketed: f[0.0001,1] -&gt; [713.0585008622056,24.93951038996056]">
-                at QLNet.Utils.QL_REQUIRE(Boolean condition, Func`1 message, QLNetExceptionEnum exEnum) in C:\Users\anton\Dev\QLNet\src\QLNet\Utils.cs:line 118
-   at QLNet.Solver1D.solve(ISolver1d f, Double accuracy, Double guess, Double xMin, Double xMax) in C:\Users\anton\Dev\QLNet\src\QLNet\Math\Solver1d.cs:line 175
-   at QLNet.CallableBond.impliedVolatility(Price targetPrice, Handle`1 discountCurve, Double accuracy, Int32 maxEvaluations, Double minVol, Double maxVol) in C:\Users\anton\Dev\QLNet\src\QLNet\Instruments\Bonds\CallableBond.cs:line 212
-   at TestSuite.CallableBondsTests.testImpliedVol() in C:\Users\anton\Dev\QLNet\tests\QLNet.Tests\T_CallableBonds.cs:line 640
+                at QLNet.Utils.QL_REQUIRE(Boolean condition, Func`1 message, QLNetExceptionEnum exEnum) in C:\projects\QLNet\src\QLNet\Utils.cs:line 118
+   at QLNet.Solver1D.solve(ISolver1d f, Double accuracy, Double guess, Double xMin, Double xMax) in C:\projects\QLNet\src\QLNet\Math\Solver1d.cs:line 175
+   at QLNet.CallableBond.impliedVolatility(Price targetPrice, Handle`1 discountCurve, Double accuracy, Int32 maxEvaluations, Double minVol, Double maxVol) in C:\projects\QLNet\src\QLNet\Instruments\Bonds\CallableBond.cs:line 212
+   at TestSuite.CallableBondsTests.testImpliedVol() in C:\projects\QLNet\tests\QLNet.Tests\T_CallableBonds.cs:line 640
    at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
    at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
             </failure>
