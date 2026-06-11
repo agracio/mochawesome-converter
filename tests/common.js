@@ -24,6 +24,7 @@ function createOptions(file, type, saveIntermediateFiles){
         reportDir: outDir,
         reportFile:`${path.parse(file).name}-mochawesome.json`,
         junit: true,
+        html: false,
         junitReportFile: `${path.parse(file).name}-junit.xml`,
         saveIntermediateFiles: saveIntermediateFiles,
     }
