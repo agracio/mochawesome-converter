@@ -23,7 +23,7 @@ describe("CTRF converter tests", () => {
         try {
             await converter(options);
         } catch (error) {
-            expect(error.message.replaceAll('\n', '')).toMatch(/SyntaxError: Unexpected token '<'/);
+            expect(error.message.replaceAll('\n', '')).toMatch(/Unexpected token '<'/);
         }
 
     });
@@ -43,28 +43,28 @@ describe("CTRF converter tests", () => {
         let options = common.createOptions('ctrf-comprehensive.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
     });
 
     test('ctrf-minimal.json', async() => {
         let options = common.createOptions('ctrf-minimal.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
     });
 
     test('ctrf-with-diagnostics.json', async() => {
         let options = common.createOptions('ctrf-with-diagnostics.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
     });
 
     test('ctrf-with-insights.json', async() => {
         let options = common.createOptions('ctrf-with-insights.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
 
     });
 
@@ -72,20 +72,20 @@ describe("CTRF converter tests", () => {
         let options = common.createOptions('ctrf-with-retries.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
     });
 
     test('ctrf-mudblazor.json', async() => {
         let options = common.createOptions('ctrf-mudblazor.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
     });
 
     test('ctrf-qlnet.json', async() => {
         let options = common.createOptions('ctrf-qlnet.json', 'ctrf');
 
         await converter(options);
-        common.compare(options, undefined, false);
+        common.compare(options, undefined, true);
     });
 });

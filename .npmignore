@@ -15,3 +15,4 @@ jest.config.js
 jest.json
 junit.xml
 *.html
+tsconfig.json

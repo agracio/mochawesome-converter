@@ -26,7 +26,7 @@
       "suites": [
         {
           "file": "",
-          "uuid": "39dced88-249f-48c1-a36b-4797c9cadffe",
+          "uuid": "a254873f-798e-41c3-9a11-fbb844a5cd88",
           "title": "Admin > Dashboard",
           "tests": [
             {
@@ -46,7 +46,7 @@
                 "diff": null
               },
               "uuid": "550e8400-e29b-41d4-a716-446655440002",
-              "parentUUID": "39dced88-249f-48c1-a36b-4797c9cadffe",
+              "parentUUID": "a254873f-798e-41c3-9a11-fbb844a5cd88",
               "isHook": false,
               "skipped": false
             },
@@ -62,7 +62,7 @@
               "context": "[{\"title\":\"Parameters\",\"value\":\"{\\n  \\\"userRole\\\": \\\"admin\\\",\\n  \\\"environment\\\": \\\"staging\\\"\\n}\"},{\"title\":\"stdout\",\"value\":\"Pending for testing purposes\"}]",
               "err": {},
               "uuid": "550e8400-e29b-41d4-a716-446655440002",
-              "parentUUID": "39dced88-249f-48c1-a36b-4797c9cadffe",
+              "parentUUID": "a254873f-798e-41c3-9a11-fbb844a5cd88",
               "isHook": false,
               "skipped": false
             }
@@ -85,7 +85,7 @@
         },
         {
           "file": "",
-          "uuid": "91c134d3-92c5-4bef-9f35-7fb418308415",
+          "uuid": "5491edd9-6d94-4d7f-91c8-2c9a9dabb166",
           "title": "Authentication > Login",
           "tests": [
             {
@@ -100,7 +100,7 @@
               "context": "[{\"title\":\"stdout\",\"value\":\"Skipped for testing purposes\"}]",
               "err": {},
               "uuid": "550e8400-e29b-41d4-a716-446655440022",
-              "parentUUID": "91c134d3-92c5-4bef-9f35-7fb418308415",
+              "parentUUID": "5491edd9-6d94-4d7f-91c8-2c9a9dabb166",
               "isHook": false,
               "skipped": true
             },
@@ -116,7 +116,7 @@
               "context": null,
               "err": {},
               "uuid": "550e8400-e29b-41d4-a716-446655440044",
-              "parentUUID": "91c134d3-92c5-4bef-9f35-7fb418308415",
+              "parentUUID": "5491edd9-6d94-4d7f-91c8-2c9a9dabb166",
               "isHook": false,
               "skipped": false
             },
@@ -132,7 +132,7 @@
               "context": null,
               "err": {},
               "uuid": "550e8400-e29b-41d4-a716-446655440000",
-              "parentUUID": "91c134d3-92c5-4bef-9f35-7fb418308415",
+              "parentUUID": "5491edd9-6d94-4d7f-91c8-2c9a9dabb166",
               "isHook": false,
               "skipped": false
             }
@@ -156,7 +156,7 @@
         },
         {
           "file": "",
-          "uuid": "2b5f6459-0eb9-473c-8517-95ac621c10c9",
+          "uuid": "d1e9a42d-9913-45ee-a66c-239cffd997ba",
           "title": "Checkout",
           "tests": [
             {
@@ -171,7 +171,7 @@
               "context": null,
               "err": {},
               "uuid": "550e8400-e29b-41d4-a716-446655440001",
-              "parentUUID": "2b5f6459-0eb9-473c-8517-95ac621c10c9",
+              "parentUUID": "d1e9a42d-9913-45ee-a66c-239cffd997ba",
               "isHook": false,
               "skipped": false
             }

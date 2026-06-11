@@ -1,0 +1,106 @@
+<testsuites name="CTRF Test Suite" tests="56" failures="1" skipped="1" errors="0" time="1.6659999999999993">
+    <testsuite name="QLNet.Tests.T_DayCounters" tests="25" failures="0" skipped="0" errors="0" time="0.030000000000000006">
+        <testcase name="testThirty365" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;1999-07-30&quot;, d2AsString: &quot;2000-01-30&quot;, expectedYearFraction: 0.5)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2003-05-01&quot;, maturityDateAsString: &quot;2005-05-01&quot;, firstCouponDateAsString: &quot;2003-11-01&quot;, penultimateCouponDateAsString: &quot;2004-11-01&quot;, d1AsString: &quot;2003-11-01&quot;, d2AsString: &quot;2004-05-01&quot;, expectedYearFraction: 0.5)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41944444444444445)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: True, frequency: Quarterly, interestAccrualDateAsString: &quot;1999-05-31&quot;, maturityDateAsString: &quot;2000-04-30&quot;, firstCouponDateAsString: &quot;1999-08-31&quot;, penultimateCouponDateAsString: &quot;1999-11-30&quot;, d1AsString: &quot;1999-11-30&quot;, d2AsString: &quot;2000-04-30&quot;, expectedYearFraction: 0.41576086956521741)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2002-08-15&quot;, d2AsString: &quot;2003-07-15&quot;, expectedYearFraction: 0.91576086956521741)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-07-01&quot;, d2AsString: &quot;2000-07-01&quot;, expectedYearFraction: 1)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;1999-01-30&quot;, maturityDateAsString: &quot;2000-06-30&quot;, firstCouponDateAsString: &quot;1999-07-30&quot;, penultimateCouponDateAsString: &quot;2000-01-30&quot;, d1AsString: &quot;2000-01-30&quot;, d2AsString: &quot;2000-06-30&quot;, expectedYearFraction: 0.4175824175824176)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Annual, interestAccrualDateAsString: &quot;1999-02-01&quot;, maturityDateAsString: &quot;2002-07-01&quot;, firstCouponDateAsString: &quot;1999-07-01&quot;, penultimateCouponDateAsString: &quot;2001-07-01&quot;, d1AsString: &quot;1999-02-01&quot;, d2AsString: &quot;1999-07-01&quot;, expectedYearFraction: 0.41095890410958902)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualIsma(isEndOfMonth: False, frequency: Semiannual, interestAccrualDateAsString: &quot;2002-08-15&quot;, maturityDateAsString: &quot;2005-07-15&quot;, firstCouponDateAsString: &quot;2003-07-15&quot;, penultimateCouponDateAsString: &quot;2004-07-15&quot;, d1AsString: &quot;2003-07-15&quot;, d2AsString: &quot;2004-01-15&quot;, expectedYearFraction: 0.5)" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualOutOfScheduleRange" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testThirty360_ISDA" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testThirty360_EurobondBasis" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testActualActualWithSchedule" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testIntraday" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testAct36525" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActualWithSemiannualSchedule" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.017"/>
+        <testcase name="testAct366" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testActualActualWithAnnualSchedule" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testOne" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testActualActual" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testSimple" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+        <testcase name="testBusiness252" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.003"/>
+        <testcase name="testActual365_Canadian" classname="QLNet.Tests.T_DayCounters" status="passed" time="0"/>
+        <testcase name="testThirty360_BondBasis" classname="QLNet.Tests.T_DayCounters" status="passed" time="0.001"/>
+    </testsuite>
+    <testsuite name="T_AsianOptions" tests="7" failures="1" skipped="1" errors="0" time="0.08199999999999999">
+        <testcase name="testAnalyticContinuousGeometricAveragePriceGreeks" classname="T_AsianOptions" status="passed" time="0.026"/>
+        <testcase name="testMCDiscreteGeometricAveragePrice" classname="T_AsianOptions" status="skipped" time="0.001">
+            <system-out>
+                Incomplete
+            </system-out>
+        </testcase>
+        <testcase name="testAnalyticDiscreteGeometricAveragePrice" classname="T_AsianOptions" status="passed" time="0.003"/>
+        <testcase name="testIssue115" classname="T_AsianOptions" status="passed" time="0.012"/>
+        <testcase name="testAnalyticDiscreteGeometricAveragePriceGreeks" classname="T_AsianOptions" status="passed" time="0.037"/>
+        <testcase name="testAnalyticDiscreteGeometricAverageStrike" classname="T_AsianOptions" status="passed" time="0.001"/>
+        <testcase name="testAnalyticContinuousGeometricAveragePrice" classname="T_AsianOptions" status="failed" time="0.002">
+            <failure message="QLNet.EuropeanExercise QLNet.EuropeanExercise Asian option with Geometric and QLNet.PlainVanillaPayoff payoff:
+            running variable:
+            past fixings:
+            future fixings:   0
+            underlying value: 80
+            strike:           85
+            dividend yield:   -0.03
+            risk-free rate:   0.055
+            reference date:   27/09/2024
+            maturity:         26/12/2024
+            volatility:       0.2
+
+            expected   value: 4.6922
+            calculated value: 4.64631729808559
+            error:            0.04588270191440991
+            tolerance:        0.0001
+            Expected: True
+            Actual:   False
+          ">
+                at TestSuite.QAssert.Fail(String message) in C:\projects\QLNet\tests\QLNet.Tests\Utilities.cs:line 187
+            at TestSuite.T_AsianOptions.REPORT_FAILURE(String greekName, Type averageType, Nullable`1 runningAccumulator, Nullable`1 pastFixings, List`1 fixingDates, StrikedTypePayoff payoff, Exercise exercise, Double s, Double q, Double r, Date today, Double v, Double expected, Double calculated, Double tolerance) in C:\projects\Dev\QLNet\tests\QLNet.Tests\T_AsianOptions.cs:line 39
+            at TestSuite.T_AsianOptions.testAnalyticContinuousGeometricAveragePrice() in C:\projects\QLNet\tests\QLNet.Tests\T_AsianOptions.cs:line 122
+            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="T_CapFlooredCoupon" tests="2" failures="0" skipped="0" errors="0" time="0.011">
+        <testcase name="testDecomposition" classname="T_CapFlooredCoupon" status="passed" time="0.01"/>
+        <testcase name="testLargeRates" classname="T_CapFlooredCoupon" status="passed" time="0.001"/>
+    </testsuite>
+    <testsuite name="T_CashFlows" tests="4" failures="0" skipped="0" errors="0" time="0.003">
+        <testcase name="testSettings" classname="T_CashFlows" status="passed" time="0.001"/>
+        <testcase name="testDefaultSettlementDate" classname="T_CashFlows" status="passed" time="0.001"/>
+        <testcase name="testAccessViolation" classname="T_CashFlows" status="passed" time="0.001"/>
+        <testcase name="testNullFixingDays" classname="T_CashFlows" status="passed" time="0"/>
+    </testsuite>
+    <testsuite name="T_CliquetOption" tests="3" failures="0" skipped="0" errors="0" time="0.436">
+        <testcase name="testPerformanceGreeks" classname="T_CliquetOption" status="passed" time="0.224"/>
+        <testcase name="testGreeks" classname="T_CliquetOption" status="passed" time="0.212"/>
+        <testcase name="testValues" classname="T_CliquetOption" status="passed" time="0"/>
+    </testsuite>
+    <testsuite name="T_Cms" tests="3" failures="0" skipped="0" errors="0" time="0.545">
+        <testcase name="testCmsSwap" classname="T_Cms" status="passed" time="0.322"/>
+        <testcase name="testParity" classname="T_Cms" status="passed" time="0.218"/>
+        <testcase name="testFairRate" classname="T_Cms" status="passed" time="0.005"/>
+    </testsuite>
+    <testsuite name="T_ConvertibleBond" tests="3" failures="0" skipped="0" errors="0" time="0.427">
+        <testcase name="testBond" classname="T_ConvertibleBond" status="passed" time="0.295"/>
+        <testcase name="testRegression" classname="T_ConvertibleBond" status="passed" time="0.011"/>
+        <testcase name="testOption" classname="T_ConvertibleBond" status="passed" time="0.121"/>
+    </testsuite>
+    <testsuite name="T_CPISwap" tests="3" failures="0" skipped="0" errors="0" time="0.025">
+        <testcase name="cpibondconsistency" classname="T_CPISwap" status="passed" time="0.016"/>
+        <testcase name="zciisconsistency" classname="T_CPISwap" status="passed" time="0.002"/>
+        <testcase name="consistency" classname="T_CPISwap" status="passed" time="0.007"/>
+    </testsuite>
+    <testsuite name="T_CreditDefaultSwap" tests="6" failures="0" skipped="0" errors="0" time="0.107">
+        <testcase name="testIsdaEngine" classname="T_CreditDefaultSwap" status="passed" time="0.042"/>
+        <testcase name="testFairUpfront" classname="T_CreditDefaultSwap" status="passed" time="0.014"/>
+        <testcase name="testCachedValue" classname="T_CreditDefaultSwap" status="passed" time="0.017"/>
+        <testcase name="testCachedMarketValue" classname="T_CreditDefaultSwap" status="passed" time="0.011"/>
+        <testcase name="testImpliedHazardRate" classname="T_CreditDefaultSwap" status="passed" time="0.014"/>
+        <testcase name="testFairSpread" classname="T_CreditDefaultSwap" status="passed" time="0.009"/>
+    </testsuite>
+</testsuites>

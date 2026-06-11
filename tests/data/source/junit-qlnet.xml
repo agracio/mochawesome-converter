@@ -1,5 +1,5 @@
 <testsuites>
-  <testsuite name="QLNet.Tests.dll" tests="501" skipped="13" failures="1" errors="0" time="120.39617860000006" timestamp="2025-04-29T21:43:25" hostname="ANTON-DESKTOP" id="0" package="QLNet.Tests.dll">
+  <testsuite name="QLNet.Tests.dll" tests="501" skipped="13" failures="1" errors="0" time="120.39617860000006" timestamp="2025-04-29T21:43:25" hostname="projects-DESKTOP" id="0" package="QLNet.Tests.dll">
     <properties />
     <testcase classname="TestSuite.T_AmericanOption" name="testJuValues" time="0.0188189" />
     <testcase classname="TestSuite.T_AmericanOption" name="testBjerksundStenslandValues" time="0.0016089" />

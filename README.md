@@ -47,7 +47,7 @@ https://github.com/adamgruber/mochawesome
 ### Conversion process
 
  - All test reports except CTRF are first converted to JUnit format using [junit-converter](https://github.com/agracio/junit-converter).
- - Set `junit` option to `true` to get JUnit conversion results. Not supported for CTRF resports.
+ - Set `junit` option to `true` to get JUnit conversion results. 
  - If you only require JUnit conversion use [junit-converter](https://github.com/agracio/junit-converter).
 
 ### JUnit to Mochawesome conversion
@@ -106,7 +106,7 @@ mochawesome-converter --testFile mytests/nunit.xml --testType nunit --junit true
 | `testType` **(required)** | string  |                                  | [Test report type](#supported-testtype-options)   |
 | `reportDir`               | string  | ./report                         | Converted report output path                      |
 | `reportFile`              | string  | `testFile.name`-mochawesome.json | Mochawesome JSON report name                      |
-| `junit`                   | boolean | false                            | Create JUnit report? (Not supported for CTRF)                              |
+| `junit`                   | boolean | false                            | Create JUnit report?                              |
 | `junitReportFile`         | string  | `testFile.name`-junit.xml        | JUnit report file name                            |
 | `html`                    | boolean | true                             | Create Mochawesome HTML?                          |
 | `htmlReportFile`          | string  | `testFile.name`-mochawesome.html | Mochawesome HTML file name                        |

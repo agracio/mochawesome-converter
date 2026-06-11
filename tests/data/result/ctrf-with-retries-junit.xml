@@ -1,0 +1,6 @@
+<testsuites name="CTRF Test Suite" tests="2" failures="0" skipped="0" errors="0" time="0.44999999999999996">
+    <testsuite name="Root Suite" tests="2" failures="0" skipped="0" errors="0" time="0.44999999999999996">
+        <testcase name="stable test" classname="Root Suite" status="passed" time="0.15"/>
+        <testcase name="flaky test" classname="Root Suite" status="passed" time="0.3"/>
+    </testsuite>
+</testsuites>

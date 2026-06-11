@@ -1,0 +1,20 @@
+<testsuites name="CTRF Test Suite" tests="1" failures="1" skipped="0" errors="0" time="5">
+    <testsuite name="Root Suite" tests="1" failures="1" skipped="0" errors="0" time="5">
+        <testcase name="should render homepage" classname="Root Suite" status="failed" time="5">
+            <failure message="Expected element to be visible">
+                Error: Expected element to be visible
+    at checkVisibility (test.js:45:10)
+    at Object.&lt;anonymous&gt; (test.js:12:5)
+            </failure>
+            <system-out>
+                Starting test execution
+Loading page: https://example.com
+Waiting for element: .hero-section
+            </system-out>
+            <system-err>
+                Warning: Network slow
+Error: Element not found after 5000ms
+            </system-err>
+        </testcase>
+    </testsuite>
+</testsuites>

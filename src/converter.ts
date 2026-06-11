@@ -19,10 +19,11 @@ export class TestReportConverter {
             saveIntermediateFiles: configOptions.saveIntermediateFiles,
         };
 
+        if (options.junit) {
+            await toFile(junitConvertOptions);
+        }
+
         if (configOptions.testType !== 'ctrf') {
-            if (options.junit) {
-                await toFile(junitConvertOptions);
-            }
             const json: JunitReport = await toJson(junitConvertOptions);
             await junitConvert(configOptions, json);
         } else {

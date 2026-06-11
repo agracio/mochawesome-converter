@@ -1,0 +1,44 @@
+<testsuites name="PR #123 E2E Tests" tests="6" failures="1" skipped="2" errors="0" time="20">
+    <testsuite name="Authentication &gt; Login" tests="3" failures="0" skipped="1" errors="0" time="7.01">
+        <testcase name="user can login" classname="Authentication &gt; Login" status="passed" time="3.5"/>
+        <testcase name="sorted user can login" classname="Authentication &gt; Login" status="passed" time="3.5"/>
+        <testcase name="skipped user can login" classname="Authentication &gt; Login" status="skipped" time="0.01">
+            <system-out>
+                Skipped for testing purposes
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="Checkout" tests="1" failures="0" skipped="0" errors="0" time="5.2">
+        <testcase name="user can checkout" classname="Checkout" status="passed" time="5.2"/>
+    </testsuite>
+    <testsuite name="Admin &gt; Dashboard" tests="2" failures="1" skipped="1" errors="0" time="8.01">
+        <testcase name="admin dashboard loads" classname="Admin &gt; Dashboard" status="failed" time="8">
+            <failure message="Element not found: .dashboard-metrics">
+                Error: Element not found: .dashboard-metrics
+    at waitForElement (test.js:45:10)
+    at Object.&lt;anonymous&gt; (dashboard.test.js:42:5)
+            </failure>
+            <system-out>
+                Loading admin dashboard
+Checking authentication
+            </system-out>
+            <system-err>
+                Warning: Slow network detected
+Error: Timeout waiting for .dashboard-metrics
+            </system-err>
+            <properties>
+                <property name="userRole" value="admin"/>
+                <property name="environment" value="staging"/>
+            </properties>
+        </testcase>
+        <testcase name="admin dashboard loads (pending)" classname="Admin &gt; Dashboard" status="skipped" time="0.01">
+            <system-out>
+                Pending for testing purposes
+            </system-out>
+            <properties>
+                <property name="userRole" value="admin"/>
+                <property name="environment" value="staging"/>
+            </properties>
+        </testcase>
+    </testsuite>
+</testsuites>

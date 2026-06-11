@@ -1,0 +1,6 @@
+<testsuites name="CTRF Test Suite" tests="2" failures="0" skipped="0" errors="0" time="5.7">
+    <testsuite name="Root Suite" tests="2" failures="0" skipped="0" errors="0" time="5.7">
+        <testcase name="login test" classname="Root Suite" status="passed" time="2.5"/>
+        <testcase name="checkout test" classname="Root Suite" status="passed" time="3.2"/>
+    </testsuite>
+</testsuites>
